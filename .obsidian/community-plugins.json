@@ -13,5 +13,7 @@
   "obsidian-timeline",
   "obsidian-icon-folder",
   "obsidian-style-settings",
-  "sheet-plus"
+  "sheet-plus",
+  "templater-obsidian",
+  "obsidian-meta-bind-plugin"
 ]

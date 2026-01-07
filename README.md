@@ -15,26 +15,6 @@ Les campagnes sont conçues pour utiliser le système Pathfinder 2e (remaster).
 
 ### L'Expédition des Fendeurs de Glace
 
-- Pitch général : *(À rédiger)*
-- Contexte de départ : *(À préciser)*
-- Journal de campagne : *(À lister)*
-- Personnages joueurs : *(À compléter)*
-- Personnages non joueurs : *(À compléter)*
-- Lieux clés : *(À détailler)*
-- Artefacts et objets importants : *(À décrire)*
+Depuis des générations, vos peuples ont prospéré sur Kaerith, à l’abri derrière la Couronne Blanche, cette muraille de glace que l’on croyait infranchissable. Mais voilà que les terres s’assèchent, les nuits deviennent trop claires, et les sages parlent d’un âge de cendres : la Saison du Feu revient. Devant cette menace, les royaumes se sont unis et ont percé la barrière glacée pour atteindre les terres inexplorées de Nyssor, un continent vaste et mystérieux dont on ne connaît que les légendes. Une expédition a été organisée : bâtir des ports, tracer des routes, sécuriser ces contrées encore sauvages… et offrir un refuge à ceux qui fuient le brasier qui s’annonce. Vous êtes de ces éclaireurs envoyés en avant-garde, chargés d’ouvrir la voie.
 
-## Organisation du lore
-
-- Mythologie et cosmogonie : *(À rédiger)*
-- Histoire et chronologie majeure : *(À compléter)*
-- Géographie et régions : *(À cartographier)*
-- Factions et organisations : *(À documenter)*
-- Bestiaire et menaces : *(À détailler)*
-- Magie, rites et technologies : *(À préciser)*
-
-## Méthodologie de prise de notes
-
-- conventions de nommage : *(À définir)*
-- balises et métadonnées : *(À documenter)*
-- liens inter-notes : *(À organiser)*
-- routine d'archivage après session : *(À formaliser)*
+[[L'Expédition des Fendeurs de Glace]]

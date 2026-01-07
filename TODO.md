@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## Todo
 
+- [ ] Rappatrier le lore de Legend Keeper
 
 
 ## In progress
