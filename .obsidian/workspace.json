@@ -33,24 +33,14 @@
             "id": "0db777145091d983",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Lore/Astronomie.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Astronomie"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -224,11 +214,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Lore/Astronomie.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "File properties for Astronomie"
+              "title": "File properties"
             }
           }
         ],
@@ -300,10 +288,10 @@
   "active": "0db777145091d983",
   "lastOpenFiles": [
     "TODO.md",
+    "Lore/Astronomie.md",
     "Lore/Astronomie.md~",
     "README.md",
     "AGENTS.md",
-    "Lore/Astronomie.md",
     "Campaigns/L'Expédition des Fendeurs de Glace/L'Expédition des Fendeurs de Glace.md",
     "Lore/Astrmonomie.md~",
     "Spreadsheets/Downtime tracking.md",
