@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Lore/Astronomie.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -50,7 +50,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Astronomie"
             }
           }
         ],
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"id\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +120,7 @@
       {
         "id": "b83162bbcaabbe3c",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 25,
         "children": [
           {
             "id": "d7a6bea1813f2cb2",
@@ -156,6 +156,20 @@
             }
           },
           {
+            "id": "2b15e82dc659c93a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
             "id": "5196b62e0e75e235",
             "type": "leaf",
             "state": {
@@ -168,20 +182,6 @@
               },
               "icon": "lucide-tags",
               "title": "Tags"
-            }
-          },
-          {
-            "id": "5ba09f5b4386c0ef",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
             }
           },
           {
@@ -202,11 +202,9 @@
           {
             "id": "8884ec69975e88fa",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "git-view",
               "state": {},
-              "pinned": true,
               "icon": "git-pull-request",
               "title": "Source Control"
             }
@@ -220,9 +218,40 @@
               "icon": "d20",
               "title": "RPG Manager"
             }
+          },
+          {
+            "id": "537d47d198cc581a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Lore/Astronomie.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Astronomie"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
+      },
+      {
+        "id": "cd36a2407235d843",
+        "type": "tabs",
+        "dimension": 25,
+        "children": [
+          {
+            "id": "4f6c6f1bcb97ff7f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "pinned": true,
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ]
       },
       {
         "id": "b4fa56e5e14b3310",
@@ -264,15 +293,20 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "sheet-plus:Create excel file": false,
-      "calendarium:Open Calendarium": false
+      "calendarium:Open Calendarium": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "0db777145091d983",
   "lastOpenFiles": [
     "TODO.md",
+    "Lore/Astronomie.md~",
     "README.md",
-    "Spreadsheets/Downtime tracking.md",
+    "AGENTS.md",
+    "Lore/Astronomie.md",
     "Campaigns/L'Expédition des Fendeurs de Glace/L'Expédition des Fendeurs de Glace.md",
+    "Lore/Astrmonomie.md~",
+    "Spreadsheets/Downtime tracking.md",
     "Lore/Untitled.md",
     "Spreadsheets",
     "Untitled.md",

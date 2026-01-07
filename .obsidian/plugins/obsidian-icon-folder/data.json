@@ -6,6 +6,8 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBot",
+      "🤖",
       "LiSquareKanban",
       "LiImages",
       "LiLayoutTemplate"
@@ -34,5 +36,6 @@
   },
   "templates": "LiLayoutTemplate",
   "assets": "LiImages",
-  "TODO.md": "LiSquareKanban"
+  "TODO.md": "LiSquareKanban",
+  "AGENTS.md": "LiBot"
 }
