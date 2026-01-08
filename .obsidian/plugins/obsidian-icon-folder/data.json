@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiMessageCircleQuestion",
       "LiCalendarRange",
       "LiHexagon",
       "LiMap",
-      "LiFileCheck2",
-      "LiHammer"
+      "LiFileCheck2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -47,5 +47,6 @@
   "Cartes": "LiMap",
   "Hexagones": "LiHexagon",
   "Sessions/Timeline des sessions.md": "LiCalendarRange",
-  "Lore/Chronologie.md": "LiCalendarRange"
+  "Lore/Chronologie.md": "LiCalendarRange",
+  "Sessions/Liste des rumeurs.md": "LiMessageCircleQuestion"
 }

@@ -119,7 +119,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Elements/PF2/PF2e - PNJ.md",
+                "file": "Sessions/Liste des rumeurs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -134,7 +134,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PF2e - PNJ"
+              "title": "Liste des rumeurs"
             }
           }
         ],
@@ -298,10 +298,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "templates/Elements/PF2/PF2e - PNJ.md"
+                "file": "Sessions/Liste des rumeurs.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for PF2e - PNJ"
+              "title": "File properties for Liste des rumeurs"
             }
           }
         ],
@@ -410,15 +410,17 @@
   },
   "active": "7eeecb30e62b3e3d",
   "lastOpenFiles": [
-    "Règles/Influence.md",
+    "templates/Elements/Rumeur.md",
+    "Règles/PF2/Activités et actions/Fortifier le camp.md",
+    "Règles/PF2/Activités et actions/Cartographier la zone.md",
+    "Règles/PF2/Activités et actions/Découvrir.md",
     "Règles/PF2/Activités et actions/Influencer.md",
-    "Règles/Hexploration.md",
+    "Sessions/Liste des rumeurs.md",
     "templates/Elements/PF2/PF2e - PNJ.md",
+    "Règles/Influence.md",
+    "Règles/Hexploration.md",
     "templates/Elements/PF2/PF2e - Activité, Action.md",
     "templates/Callouts/Callout - Rule.md",
-    "Règles/PF2/Activités et actions/Découvrir.md",
-    "Règles/PF2/Activités et actions/Cartographier la zone.md",
-    "Règles/PF2/Activités et actions/Fortifier le camp.md",
     "Règles/PF2/Activités et actions/Voyager.md",
     "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
     "Règles/PF2/Activités et actions",
@@ -438,9 +440,7 @@
     "templates/Callouts/Callout - Info.md",
     "templates/Callouts/Callout - Danger.md",
     "templates/Callouts/Callout - Abstract.md",
-    "Sessions/Timeline des sessions.md",
     "Règles",
-    "Lore/Panthéon.md",
     "assets/astro-map.webp",
     "assets/astro-symbol.png",
     "assets/foundry-thumbnail.webp",
