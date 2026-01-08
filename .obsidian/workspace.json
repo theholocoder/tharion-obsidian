@@ -119,7 +119,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Règles/Influence.md",
+                "file": "templates/Elements/PF2/PF2e - PNJ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -134,7 +134,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Influence"
+              "title": "PF2e - PNJ"
             }
           }
         ],
@@ -298,10 +298,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Règles/Influence.md"
+                "file": "templates/Elements/PF2/PF2e - PNJ.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Influence"
+              "title": "File properties for PF2e - PNJ"
             }
           }
         ],
@@ -410,14 +410,14 @@
   },
   "active": "7eeecb30e62b3e3d",
   "lastOpenFiles": [
-    "templates/Elements/PF2/PF2e - PNJ.md",
     "Règles/Influence.md",
+    "Règles/PF2/Activités et actions/Influencer.md",
+    "Règles/Hexploration.md",
+    "templates/Elements/PF2/PF2e - PNJ.md",
     "templates/Elements/PF2/PF2e - Activité, Action.md",
     "templates/Callouts/Callout - Rule.md",
     "Règles/PF2/Activités et actions/Découvrir.md",
-    "Règles/PF2/Activités et actions/Influencer.md",
     "Règles/PF2/Activités et actions/Cartographier la zone.md",
-    "Règles/Hexploration.md",
     "Règles/PF2/Activités et actions/Fortifier le camp.md",
     "Règles/PF2/Activités et actions/Voyager.md",
     "Règles/PF2/Activités et actions/Partir en reconnaissance.md",

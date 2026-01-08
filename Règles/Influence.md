@@ -16,9 +16,9 @@
 
 > [!question]+ Point de règle
 >**Source** [GM Core - Sources - Archives of Nethys: Pathfinder 2nd Edition Database](https://2e.aonprd.com/Sources.aspx?ID=218)
->NPCs in the influence subsystem have little need for many of the statistics you'll find in an ordinary creature stat block. However, it might help you to prepare for the social encounter by creating an influence stat block for each prominent NPC. These are optional; if you can keep most information straight in your head, you might skip this step or just write down the first three categories to keep the numbers straight.  
+>Les PNJ du sous-système d'influence ont peu besoin de nombreuses statistiques que vous trouveriez dans un bloc de statistiques de créature ordinaire. Cependant, il peut vous aider à préparer la rencontre sociale en créant un bloc de statistiques d'influence pour chaque PNJ important. Ceux-ci sont optionnels ; si vous pouvez garder la plupart des informations en tête, vous pouvez sauter cette étape ou simplement noter les trois premières catégories pour garder les chiffres en ordre.
  > 
->Influence stat blocks are flexible and contain only the stats that you are essential to running the NPC during a social encounter, leaving the rest out. The main stats that matter are the NPC's Perception and Will modifiers.
+>Les blocs de statistiques d'influence sont flexibles et ne contiennent que les statistiques essentielles pour faire jouer le PNJ durant une rencontre sociale, en omettant le reste. Les statistiques principales qui comptent sont les modificateurs de [[Perception]] et de [[Volonté]] du PNJ.
 
 ### Stat Block
 ```pf2e-stats
@@ -28,21 +28,21 @@
 
 ==Traits==
 
-A succinct description of the NPC, such as “Famous musician” or “Popular baron.”  
-**Perception** The NPC's Perception modifier, plus potentially relevant abilities such as scent or truesight.  
-**Will** The NPC's Will modifier, plus any special adjustments.  
-**Discovery** The Perception DC to Discover information about the NPC, as well as any skill checks to Discover their DCs.  
-**Influence Skills** The skills the PCs can use to Influence the NPC are listed here with their DCs, in order from the lowest DC (the skill that works best) to the highest DC. If a skill isn't listed but a player gives a strong narrative explanation for using it, you can add it as an appropriate DC (usually the highest listed DC). Diplomacy should usually be on this list, but should rarely be the best skill to Influence an NPC, in order to encourage and reward using Discover to learn and cater to an NPC's interests.  
-**Influence Thresholds** The number of Influence Points required to Influence the PC, and the benefits for meeting them. Some NPCs might have multiple influence thresholds, granting the PCs additional benefits or favors as they cross more thresholds.  
-**Resistances** Some NPCs are resistant to certain tactics, biased against certain types of people, or may get defensive when a certain topic comes up. Any of these makes it harder for a PC to convince them. For instance, an NPC might find flattery inane, dislike wizards, or bristle at any mention of their ex-spouse. Typically, an NPC's resistance increases the DC of the associated check to Influence by 2 (or 5 for stronger resistances), but it could have farther-ranging consequences, such as losing Influence Points or angering the NPC enough that attempting to Influence them again is impossible.  
-**Weaknesses** Most NPCs have at least one weakness that clever and observant PCs can use to their advantage, whether it's a deep-seated insecurity, a desire for power, a favorite hobby, a bias toward a certain group, or a hidden secret the PCs could threaten to expose. When a PC incorporates an NPC's weakness, it typically decreases the associated Influence check's DC by 2 (or 5 for stronger weaknesses), but it could have farther-ranging effects, such as gaining automatic Influence Points or even automatically influencing the NPC regardless of how many Influence Points the PCs have achieved so far.
+Une description succincte du PNJ, tel que "Musicien célèbre" ou "Baron populaire".  
+**Perception** Le modificateur de Perception du PNJ, plus potentiellement des capacités pertinentes telles qu'odorat ou vision véritable.  
+**Volonté** Le modificateur de Volonté du PNJ, plus tout ajustement spécial.  
+**Découverte** Le DD de Perception pour Découvrir des informations sur le PNJ, ainsi que tout test de compétence pour Découvrir leurs DD.  
+**Compétences d'influence** Les compétences que les PJ peuvent utiliser pour Influencer le PNJ sont listées ici avec leurs DD, dans l'ordre du DD le plus bas (la compétence qui fonctionne le mieux) au DD le plus élevé. Si une compétence n'est pas listée mais qu'un joueur donne une explication narrative solide pour l'utiliser, vous pouvez l'ajouter avec un DD approprié (généralement le DD le plus élevé listé). Diplomatie devrait généralement être sur cette liste, mais devrait rarement être la meilleure compétence pour Influencer un PNJ, afin d'encourager et récompenser l'utilisation de Découvrir pour apprendre et répondre aux intérêts d'un PNJ.  
+**Seuils d'influence** Le nombre de Points d'influence requis pour Influencer le PNJ, et les bénéfices pour les atteindre. Certains PNJ peuvent avoir plusieurs seuils d'influence, accordant aux PJ des bénéfices ou faveurs supplémentaires alors qu'ils franchissent plus de seuils.  
+**Résistances** Certains PNJ sont résistants à certaines tactiques, biaisés contre certains types de personnes, ou peuvent devenir défensifs lorsqu'un certain sujet est abordé. Tout cela rend plus difficile pour un PJ de les convaincre. Par exemple, un PNJ peut trouver la flatterie inepte, détester les magiciens, ou s'hérisser à toute mention de son ex-conjoint. Typiquement, une résistance de PNJ augmente le DD du test associé pour Influencer de 2 (ou 5 pour des résistances plus fortes), mais cela peut avoir des conséquences plus vastes, comme perdre des Points d'influence ou mettre le PNJ suffisamment en colère pour rendre toute tentative future d'Influence impossible.  
+**Faiblesses** La plupart des PNJ ont au moins une faiblesse que des PJ rusés et observateurs peuvent utiliser à leur avantage, qu'il s'agisse d'une insécurité profonde, d'un désir de pouvoir, d'un passe-temps favori, d'un biais envers un certain groupe, ou d'un secret caché que les PJ pourraient menacer d'exposer. Lorsqu'un PJ incorpore une faiblesse de PNJ, cela réduit typiquement le DD du test d'Influence associé de 2 (ou 5 pour des faiblesses plus fortes), mais cela peut avoir des effets plus vastes, comme gagner des Points d'influence automatiques ou même influencer automatiquement le PNJ peu importe combien de Points d'influence les PJ ont accumulés jusqu'à présent.
 ```
 
 > [!question]+ Point de règle
-> After the influence stat block, you might want to list important information to help you roleplay the NPC and incorporate the NPC into your influence encounter. You can list any of the following details that are relevant to your NPC: their background (a brief bio focusing on information relevant to the encounter), appearance, personality (this can just be a list of adjectives), affiliations, public goals, hidden agendas, or the penalty for antagonizing the NPC (or possibly for failing to Influence the NPC, depending on the way you structure the encounter).
+> Après le bloc de statistiques d'influence, vous pourriez vouloir lister des informations importantes pour vous aider à incarner le PNJ et l'incorporer dans votre rencontre d'influence. Vous pouvez lister tous les détails suivants qui sont pertinents pour votre PNJ : leur historique (une brève biographie se concentrant sur les informations pertinentes pour la rencontre), apparence, personnalité (cela peut être juste une liste d'adjectifs), affiliations, objectifs publics, agendas cachés, ou la pénalité pour avoir antagonisé le PNJ (ou possiblement pour avoir échoué à Influencer le PNJ, selon la façon dont vous structurez la rencontre).
 
->[!info]- Sample Stat Block
-> In this example, the PCs try to convince a grizzled landlord to not evict a theatrical troupe from a dilapidated building he owns. It's a 3rd-level challenge. He is a busy, practical man and gives the PCs only 45 minutes (3 rounds) to make their case.
+>[!info]- Exemple de bloc de statistiques
+> Dans cet exemple, les PJ tentent de convaincre un propriétaire bourru de ne pas expulser une troupe de théâtre d'un bâtiment délabré qu'il possède. C'est un défi de niveau 3. C'est un homme occupé et pratique qui ne donne aux PJ que 45 minutes (3 rounds) pour présenter leur argument.
 >
 >```pf2e-stats
 ># Danphy Mollwether
@@ -51,34 +51,34 @@ A succinct description of the NPC, such as “Famous musician” or “Popular b
 >
 >==Unique== ==Medium== ==Human== ==Humanoid==
 >
->Penny-pinching landlord
+>Propriétaire radin
 >**Perception** +9
->**Will** +12  
->**Discovery** DC 13 Mercantile Lore, DC 18 Perception, DC 16 Society  
->**Influence Skills** DC 16 Accounting Lore (noting how the theater could be made profitable), DC 16 Crafting (volunteering to repair the building), DC 20 Intimidation, DC 20 Performance, DC 22 Diplomacy, DC 24 Deception  
->**Influence 4** Mr. Mollwether gives the troupe 1 week to get him his back rent, with interest, before evicting them.  
->**Influence 6** Mr. Mollwether gives the troupe 1 month to get him his back rent before evicting them.  
->**Influence 8** Mr. Mollwether allows the troupe to stay, reduces their rent, and forgives half their debt.  
->**Resistances** The landlord thinks in practical terms, with little patience for the “good-for-nothings” of the troupe. Appeals directed at sympathy alone increase the check's DC by 2.  
->**Weaknesses** Mr. Mollwether used to visit the theater often as a small child, and performing one of his favorite old songs or plays brings tears to his eyes and reduces the Performance DC by 2.  
->**Background** Mollwether was raised by wealthy parents who loved the arts and took him to the theater often. A scandal left the family broke, and Danphy clawed his way back up to a decent living. Becoming something of a slumlord, he owns several properties now and still feels he must exploit others to survive.  
->**Appearance** An elderly man in cheap dress clothes, Mr. Mollwether looks like he's never felt a moment of love for anyone in his entire life.  
->**Personality** Impatient, crotchety, skeptical  
->**Penalty** Antagonizing Mr. Mollwether by “sermonizing” or “wasting his time” causes him to cut the meeting short, reducing it to 2 rounds instead of 3.
+>**Volonté** +12  
+>**Découverte** DD 13 Connaissance du commerce, DD 18 Perception, DD 16 Société  
+>**Compétences d'influence** DD 16 Connaissance de la comptabilité (noter comment le théâtre pourrait être rentable), DD 16 Artisanat (se porter volontaire pour réparer le bâtiment), DD 20 Intimidation, DD 20 Représentation, DD 22 Diplomatie, DD 24 Duperie  
+>**Influence 4** M. Mollwether donne à la troupe 1 semaine pour lui donner son loyer en retard, avec intérêts, avant de les expulser.  
+>**Influence 6** M. Mollwether donne à la troupe 1 mois pour lui donner son loyer en retard avant de les expulser.  
+>**Influence 8** M. Mollwether permet à la troupe de rester, réduit leur loyer, et pardonne la moitié de leur dette.  
+>**Résistances** Le propriétaire pense en termes pratiques, avec peu de patience pour les "bons à rien" de la troupe. Les appels dirigés uniquement vers la sympathie augmentent le DD du test de 2.  
+>**Faiblesses** M. Mollwether visitait souvent le théâtre lorsqu'il était petit enfant, et interpréter une de ses anciennes chansons ou pièces favorites lui fait monter les larmes aux yeux et réduit le DD de Représentation de 2.  
+>**Historique** Mollwether a été élevé par des parents riches qui aimaient les arts et l'emmenaient souvent au théâtre. Un scandale a laissé la famille ruinée, et Danphy s'est battu pour revenir à une vie décente. Devenant une sorte de marchand de sommeil, il possède maintenant plusieurs propriétés et sent toujours qu'il doit exploiter les autres pour survivre.  
+>**Apparence** Un homme âgé en vêtements de ville bon marché, M. Mollwether semble n'avoir jamais ressenti un moment d'amour pour qui que ce soit dans toute sa vie.  
+>**Personnalité** Impatient, grincheux, sceptique  
+>**Pénalité** Antagoniser M. Mollwether en "faisant la morale" ou en "lui faisant perdre son temps" le pousse à écourter la réunion, la réduisant à 2 rounds au lieu de 3.
 >```
 
-### Setting DC
+### Définir les DD
 
 > [!question]+ Point de règle
 >**Source** [GM Core - Sources - Archives of Nethys: Pathfinder 2nd Edition Database](https://2e.aonprd.com/Sources.aspx?ID=218)
-> When setting DCs, it's often good to start with a noncombat level or “social level” for the NPC and set their DCs accordingly. Use the DC adjustments from page 53 just like you normally would. A good starting place is setting the NPC's Will modifier, then taking that DC and adjusting it for skills that are more or less likely to work.  
+> Lors de la définition des DD, il est souvent bon de commencer avec un niveau hors-combat ou "niveau social" pour le PNJ et de définir leurs DD en conséquence. Utilisez les ajustements de DD de la page 53 comme vous le feriez normalement. Un bon point de départ est de définir le modificateur de [[Volonté]] du PNJ, puis de prendre ce DD et de l'ajuster pour les compétences qui sont plus ou moins susceptibles de fonctionner.  
 >
->For instance, for a 3rd-level challenge, you might give an NPC a +12 Will modifier and use 22 as the base DC. You might say that's the DC for Diplomacy but then determine that the NPC is difficult to intimidate, and so you apply the hard DC adjustment to make the Intimidation DC 24. Maybe you also determine that she loves different varieties of wine, resulting in an incredibly easy DC adjustment to get DC 12 for Alcohol Lore.
+>Par exemple, pour un défi de niveau 3, vous pourriez donner à un PNJ un modificateur de Volonté de +12 et utiliser 22 comme DD de base. Vous pourriez dire que c'est le DD pour [[Diplomatie]] mais déterminer ensuite que le PNJ est difficile à intimider, et donc vous appliquez l'ajustement de DD difficile pour rendre le DD d'[[Intimidation]] à 24. Peut-être déterminez-vous aussi qu'elle aime différentes variétés de vin, résultant en un ajustement de DD incroyablement facile pour obtenir un DD de 12 pour [[Connaissance de l'alcool]].
 
-## Running an influence encounter
+## Mener une rencontre d'influence
 
 > [!question]+ Point de règle
 >**Source** [GM Core - Sources - Archives of Nethys: Pathfinder 2nd Edition Database](https://2e.aonprd.com/Sources.aspx?ID=218)
-> When running an influence encounter, let the PCs be creative and use a diverse set of skills whenever possible. Be open to improvisation, and change the structure of the encounter if something interesting presents itself. The PCs set the pace and choose with whom they interact. It's up to you to make sure every NPC is distinct, react to the PCs' interactions with the NPCs, and lend overall structure to the encounter by making sure it feels like a living, breathing event rather than just a series of skill checks.  
+> Lors de la menée d'une rencontre d'influence, laissez les PJ être créatifs et utiliser un ensemble diversifié de compétences autant que possible. Soyez ouvert à l'improvisation, et changez la structure de la rencontre si quelque chose d'intéressant se présente. Les PJ donnent le rythme et choisissent avec qui ils interagissent. C'est à vous de vous assurer que chaque PNJ est distinct, de réagir aux interactions des PJ avec les PNJ, et de donner une structure globale à la rencontre en vous assurant qu'elle ressemble à un événement vivant et respirant plutôt qu'à une simple série de tests de compétence.  
 >
->Think about how the number of rounds of a social encounter relate to the overall event. For instance, if you have a four-course banquet and 6 rounds, you could have 1 round for introductions before the food arrives, 1 round for each of the courses, and 1 last round of conversations after the final course. NPCs might filter in and out or become unavailable for conversations as they are occupied by various tasks, or become particularly eager to engage a PC. That sort of change help makes the NPC feel a bit more real and helps break up any repetition in your encounter.
+>Réfléchissez à la façon dont le nombre de rounds d'une rencontre sociale se rapporte à l'événement global. Par exemple, si vous avez un banquet de quatre plats et 6 rounds, vous pourriez avoir 1 round pour les présentations avant l'arrivée de la nourriture, 1 round pour chacun des plats, et 1 dernier round de conversations après le plat final. Les PNJ peuvent aller et venir ou devenir indisponibles pour des conversations alors qu'ils sont occupés par diverses tâches, ou devenir particulièrement désireux d'interagir avec un PJ. Ce genre de changement aide à rendre le PNJ plus réel et aide à briser toute répétition dans votre rencontre.
