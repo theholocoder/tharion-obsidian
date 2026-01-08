@@ -19,6 +19,10 @@
       "template": "templates/Événement Calendrier (Templater).md"
     },
     {
+      "folder": "Lore/Organisations",
+      "template": "templates/Organisation - Faction (Templater).md"
+    },
+    {
       "folder": "Lore",
       "template": "templates/Lore (Templater).md"
     }

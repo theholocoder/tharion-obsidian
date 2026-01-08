@@ -7,7 +7,7 @@ Les campagnes sont conçues pour utiliser le système Pathfinder 2e (remaster).
 
 - `Lore/` : encyclopédie vivante du monde (cultures, peuples, chronologies).
   - `Lore/PNJ/` : personnages non-joueurs.
-  - `Lore/Factions/` : factions, organisations, guildes.
+  - `Lore/Organisations/` : organisations (factions, guildes, conseils, sociétés secrètes, etc.).
   - `Lore/Lieux/` : lieux, régions, points d’intérêt.
 - `Campagnes/` : chaque campagne de jeu et ses notes associées.
 - `Sessions/` : notes de séances (global, sans sous-dossiers profonds).

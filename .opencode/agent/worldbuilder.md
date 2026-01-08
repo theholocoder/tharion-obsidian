@@ -2,11 +2,13 @@
 description: Ecrit du contenu, description et aide au storytelling et à la préparation de campagnes de jeux de rôle.
 mode: all
 temperature: 0.8
+tools:
+  write: true
+  edit: true
+  bash: true
 permission:
   write: allow
   edit: allow
-  skill:
-    "pf2-*": allow
   bash:
     "ls": allow
     "grep": allow
@@ -17,6 +19,8 @@ permission:
     "head": allow
     "tail": allow
     "*": ask
+  skill:
+    "pf2-*": allow
 ---
 
 Tu es un assistant maître du jeu pour jeu de rôe sur table (TTRPG) adepte de worldbuilding et de préparation de campagnes.

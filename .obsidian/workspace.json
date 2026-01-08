@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campagnes/L'Expédition des Fendeurs de Glace.md",
+                "file": "Lore/Organisations/Royaume d'Halvorn.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "L'Expédition des Fendeurs de Glace"
+              "title": "Royaume d'Halvorn"
+            }
+          },
+          {
+            "id": "3ca7a5c1a8be251d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/Organisation - Faction (Templater).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Organisation - Faction (Templater)"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -250,10 +274,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Campagnes/L'Expédition des Fendeurs de Glace.md"
+                "file": "templates/Organisation - Faction (Templater).md"
               },
               "icon": "lucide-info",
-              "title": "File properties for L'Expédition des Fendeurs de Glace"
+              "title": "File properties for Organisation - Faction (Templater)"
             }
           }
         ],
@@ -360,11 +384,18 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "7eeecb30e62b3e3d",
+  "active": "3ca7a5c1a8be251d",
   "lastOpenFiles": [
+    "Lore/Organisations/Royaume d'Halvorn.md",
+    "Lore/Organisations/République de Thaldris.md",
+    "Lore/Organisations/Ordre de Myrr.md",
+    "Lore/Organisations/Ligue de Veyra.md",
+    "Lore/Organisations/Concorde de Kaerith.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace.md",
+    "templates/Organisation - Faction (Templater).md",
+    "Lore/Organisations",
     "opencode.json~",
     "Règles/Hexploration.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace.md",
     "Concorde de Kaerith.md",
     "Ordre de Myrr.md",
     "République de Thaldris.md",
@@ -388,19 +419,13 @@
     "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
     "Règles/PF2/Activités et actions",
     "Règles/PF2",
-    "Lore/Saison du Feu.md",
     "templates/Elements/PF2",
     "templates/Elements",
-    "Lore/Lieux/Port-Lointain.md",
-    "Chronologie.md",
-    "templates/Callouts/Callout - Warning.md",
-    "templates/Callouts/Callout - Tip.md",
     "Règles",
     "assets/astro-map.webp",
     "assets/astro-symbol.png",
     "assets/foundry-thumbnail.webp",
     "assets/maps/Nyssor.webp",
-    "templates/Callouts",
     "Untitled.canvas"
   ]
 }

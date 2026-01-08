@@ -20,7 +20,7 @@ S'il y a une ambiguïté, tu peux demander au MJ (utilisateur) des précisions.
 - Liens internes `[[Nom du document]]`.
 - Frontmatter harmonisé lors de l'écriture d'une "Note" seulement: `id`, `type`, `region`, `faction`, `tags`, `updated`.
 - Nom de fichier : `Nom Principal.md` (ex. `Arkoth.md`).
-- Catégories principales : `Lore/` (dont `Lore/PNJ/`, `Lore/Factions/`, `Lore/Lieux/`), `Campagnes/`, `Sessions/`, `Règles/`, `Tableaux/`, `Cartes/`, `Meta/`.
+- Catégories principales : `Lore/` (dont `Lore/PNJ/`, `Lore/Organisations/`, `Lore/Lieux/`), `Campagnes/`, `Sessions/`, `Règles/`, `Tableaux/`, `Cartes/`, `Meta/`.
 
 # Workflow Agent
 1. Vérifier instructions locales (notes META, TODO).

@@ -29,5 +29,5 @@ updated: 2026-01-08
 
 ## À compléter
 
-- [ ] Ajouter les termes propres aux factions (voir `Lore/Factions/`)
+- [ ] Ajouter les termes propres aux organisations (voir `Lore/Organisations/`)
 - [ ] Ajouter les lieux et régions clés (voir `Lore/Lieux/`)
