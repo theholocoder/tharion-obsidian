@@ -16,7 +16,7 @@ height: 850px
 width: 95%
 lat: 45
 long: 35
-unit: km
+unit: mi
 scale: 33 # px/units
 defaultZoom: 7
 ```

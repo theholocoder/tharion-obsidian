@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/Timeline.md",
+                "file": "Lore/Chronologie.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Timeline"
+              "title": "Chronologie"
             }
           },
           {
@@ -95,7 +95,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/Timeline des sessions.md",
+                "file": "Règles/Hexploration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -110,11 +110,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Timeline des sessions"
+              "title": "Hexploration"
+            }
+          },
+          {
+            "id": "7eeecb30e62b3e3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Règles/Influence.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Influence"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -274,10 +298,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Sessions/Timeline des sessions.md"
+                "file": "Règles/Influence.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Timeline des sessions"
+              "title": "File properties for Influence"
             }
           }
         ],
@@ -384,48 +408,48 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "d0700adcbef80a42",
+  "active": "7eeecb30e62b3e3d",
   "lastOpenFiles": [
-    "Lore/Timeline.md",
+    "templates/Elements/PF2/PF2e - PNJ.md",
+    "Règles/Influence.md",
+    "templates/Elements/PF2/PF2e - Activité, Action.md",
+    "templates/Callouts/Callout - Rule.md",
+    "Règles/PF2/Activités et actions/Découvrir.md",
+    "Règles/PF2/Activités et actions/Influencer.md",
+    "Règles/PF2/Activités et actions/Cartographier la zone.md",
+    "Règles/Hexploration.md",
+    "Règles/PF2/Activités et actions/Fortifier le camp.md",
+    "Règles/PF2/Activités et actions/Voyager.md",
+    "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
+    "Règles/PF2/Activités et actions",
+    "Règles/PF2",
+    "Lore/Saison du Feu.md",
+    "templates/Elements/PF2",
+    "templates/Elements",
+    "Lore/Lieux/Port-Lointain.md",
+    "Chronologie.md",
+    "templates/Callouts/Callout - Warning.md",
+    "templates/Callouts/Callout - Tip.md",
+    "templates/Callouts/Callout - Success.md",
+    "templates/Callouts/Callout - Quote.md",
+    "templates/Callouts/Callout - Question.md",
+    "templates/Callouts/Callout - Note Expand.md",
+    "templates/Callouts/Callout - Note.md",
+    "templates/Callouts/Callout - Info.md",
+    "templates/Callouts/Callout - Danger.md",
+    "templates/Callouts/Callout - Abstract.md",
     "Sessions/Timeline des sessions.md",
-    "Lore/Calendrier/Les Guerres de Ressources.md",
-    "Saison du Feu.md",
-    "Lore/Le Souffle d'Aranys.md",
-    "Lore/Calendrier/L'Exode.md",
-    "Lore/Calendrier/Les Signes Annonciateurs.md",
-    "Lore/Calendrier/Découverte de Nyssor.md",
-    "Lore/Calendrier/Fondation de Port-Lointain.md",
-    "Lore/Calendrier/Création de la Concorde de Kaerith.md",
-    "Lore/Calendrier/Recherche d'un passage dans la Couronne de Glace.md",
-    "Lore/Calendrier/Era Concorda.md",
-    "Lore/Calendrier/Era Displomatis.md",
-    "Lore/Calendrier/La Consolidation.md",
-    "Lore/Calendrier/La Refondation.md",
-    "Lore/Calendrier/L’Éclat des Étoiles.md",
-    "Cartes/Nyssor.md",
-    "Lore/Calendrier/Les Guerres de Religion.md",
-    "templates/Événement Calendrier (Templater).md",
+    "Règles",
+    "Lore/Panthéon.md",
     "assets/astro-map.webp",
     "assets/astro-symbol.png",
     "assets/foundry-thumbnail.webp",
     "assets/maps/Nyssor.webp",
-    "Lore/Calendrier/Le Voile d'Aranys.md",
-    "Lore/Calendrier/Le Jugement d’Ignaris.md",
-    "Lore/Calendrier/La Nuit des Ancêtres.md",
-    "Lore/Calendrier/La Flamme de Pyrrhos.md",
-    "Lore/Panthéon.md",
-    "Aranys.md",
-    "TODO.md",
     "templates/Callouts",
     "assets/maps",
     "Tableaux",
     "Sessions",
     "Lore/PNJ",
-    "Lore/Lieux",
-    "Lore/Factions",
-    "Lore/Calendrier",
-    "Hexagones",
-    "Cartes",
     "Untitled.canvas"
   ]
 }

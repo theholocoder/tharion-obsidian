@@ -1,3 +1,3 @@
-> [!note]+ Expanded
-> This is my text
+> [!note]+ Note
+> TEXT
 
