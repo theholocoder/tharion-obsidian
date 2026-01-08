@@ -1,0 +1,11 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "fc-date": "text",
+    "fc-end": "text",
+    "timelines": "multitext",
+    "aat-render-enabled": "checkbox"
+  }
+}

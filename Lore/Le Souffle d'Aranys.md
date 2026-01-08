@@ -14,7 +14,7 @@ updated: 2026-01-07
 # Le Souffle d'Aranys
 
 ## Description
-Le Souffle d'Aranys est connu comme étant une prophécie écrite par Aranys à propos d'un cataclysme à venir : [[La Saison du Feu]]
+Le Souffle d'Aranys est connu comme étant une prophécie écrite par Aranys à propos d'un cataclysme à venir : la [[Saison du Feu]]
 
 ## Le texte
 _(Traduction canonique du texte original, vénérée par l’Ordre de Myr)_
@@ -65,7 +65,7 @@ _(Traduction canonique du texte original, vénérée par l’Ordre de Myr)_
 > Le feu n’est pas la fin, mais la mémoire du commencement.
 
 ## Ce que "tout le monde" sait
-- L' [[Ordre de Myrr]] lit ce texte comme une prophécie annonçant [[La Saison du Feu]].
+- L' [[Ordre de Myrr]] lit ce texte comme une prophécie annonçant la [[Saison du Feu]].
 - Ce texte est vénéré par nombre de prêtres.
 
 ## Ce qui est vrai (Notes MJ)

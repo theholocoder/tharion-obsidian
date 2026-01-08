@@ -2,5 +2,6 @@
   "vimMode": true,
   "propertiesInDocument": "hidden",
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
 }

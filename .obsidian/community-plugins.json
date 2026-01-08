@@ -15,5 +15,6 @@
   "sheet-plus",
   "templater-obsidian",
   "obsidian-meta-bind-plugin",
-  "vim-yank-highlight"
+  "vim-yank-highlight",
+  "aprils-automatic-timelines"
 ]
