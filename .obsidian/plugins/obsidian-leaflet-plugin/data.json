@@ -1,5 +1,38 @@
 {
-  "mapMarkers": [],
+  "mapMarkers": [
+    {
+      "id": "MapExample",
+      "lastAccessed": 1767835147614,
+      "markers": [
+        {
+          "id": "ID_99ba5ad93b2b",
+          "type": "default",
+          "loc": [
+            -3.58324619336725,
+            0.9915426880840591
+          ],
+          "link": "Port-Lointain",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.12394283601050739,
+            0.44790577417090627
+          ],
+          "description": null,
+          "minZoom": null,
+          "maxZoom": null,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "templates/Map (Templater).md",
+        "Cartes/Nyssor.md"
+      ]
+    }
+  ],
   "defaultMarker": {
     "type": "default",
     "iconName": "map-marker",
@@ -29,7 +62,47 @@
   "displayOverlayTooltips": true,
   "configDirectory": null,
   "mapViewEnabled": true,
-  "mapViewParameters": {},
+  "mapViewParameters": {
+    "darkMode": "false",
+    "defaultZoom": 7,
+    "distanceMultiplier": 1,
+    "drawColor": "#3388ff",
+    "geojson": [],
+    "geojsonColor": "#3388ff",
+    "gpx": [],
+    "gpxColor": "#3388ff",
+    "height": "850px",
+    "image": "[[Nyssor.webp]]",
+    "imageOverlay": [],
+    "isMapView": false,
+    "layers": [
+      "[[Nyssor.webp]]"
+    ],
+    "linksFrom": [],
+    "linksTo": [],
+    "marker": [],
+    "commandMarker": [],
+    "markerFile": [],
+    "markerFolder": [],
+    "markerTag": [],
+    "maxZoom": 10,
+    "minZoom": 1,
+    "osmLayer": true,
+    "overlay": [],
+    "overlayColor": "blue",
+    "scale": 0.03,
+    "showAllMarkers": false,
+    "tileServer": [],
+    "verbose": false,
+    "zoomDelta": 1,
+    "zoomFeatures": false,
+    "id": "MapExample",
+    "width": "95%",
+    "lat": 200,
+    "long": 2048,
+    "unit": "km",
+    "filterTag": []
+  },
   "enableDraw": true,
   "defaultUnitType": "metric",
   "defaultTile": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",

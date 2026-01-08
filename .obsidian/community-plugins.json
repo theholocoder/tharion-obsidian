@@ -3,7 +3,6 @@
   "obsidian-git",
   "obsidian-kanban",
   "obsidian-auto-link-title",
-  "rpg-manager",
   "pf2e-statblocks",
   "pf2-action-icons",
   "fantasy-content-generator",
@@ -15,5 +14,6 @@
   "obsidian-style-settings",
   "sheet-plus",
   "templater-obsidian",
-  "obsidian-meta-bind-plugin"
+  "obsidian-meta-bind-plugin",
+  "vim-yank-highlight"
 ]

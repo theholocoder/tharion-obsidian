@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiBot",
-      "🤖",
-      "LiSquareKanban",
-      "LiImages",
-      "LiLayoutTemplate"
+      "LiHexagon",
+      "LiMap",
+      "LiFileCheck2",
+      "LiHammer",
+      "LiGlobe"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -37,5 +37,13 @@
   "templates": "LiLayoutTemplate",
   "assets": "LiImages",
   "TODO.md": "LiSquareKanban",
-  "AGENTS.md": "LiBot"
+  "AGENTS.md": "LiBot",
+  "Bestiaire": "LiDog",
+  "Tableaux": "LiTable2",
+  "Campagnes": "LiBook",
+  "Lore": "LiGlobe",
+  "Règles": "LiHammer",
+  "Sessions": "LiFileCheck2",
+  "Cartes": "LiMap",
+  "Hexagones": "LiHexagon"
 }

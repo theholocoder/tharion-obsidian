@@ -5,11 +5,17 @@ Les campagnes sont conçues pour utiliser le système Pathfinder 2e (remaster).
 
 ## Structure du vault
 
-- `Lore/` : encyclopédie vivante du monde, de ses cultures, peuples et chronologies.
-- `Campaigns/` : chaque campagne de jeu et ses sous-dossiers dédiés.
-- `Rules/` : matériel mécanique, variantes maison, tables de référence.
-- `assets/` : ressources visuelles, sonores ou autres supports multimédias.
-- `templates/` : modèles de notes pour sessions, personnages, lieux, etc.
+- `Lore/` : encyclopédie vivante du monde (cultures, peuples, chronologies).
+  - `Lore/PNJ/` : personnages non-joueurs.
+  - `Lore/Factions/` : factions, organisations, guildes.
+  - `Lore/Lieux/` : lieux, régions, points d’intérêt.
+- `Campagnes/` : chaque campagne de jeu et ses notes associées.
+- `Sessions/` : notes de séances (global, sans sous-dossiers profonds).
+- `Règles/` : matériel mécanique, variantes maison, tables de référence.
+- `Tableaux/` : tables de tirage, trackers, aides de jeu.
+- `Cartes/` : cartes, plans, exports.
+- `assets/` : ressources visuelles/sonores et supports multimédias.
+- `templates/` : modèles de notes (sessions, personnages, lieux, etc.).
 
 ## Campagnes
 

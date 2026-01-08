@@ -8,7 +8,6 @@ tags:
   - cosmologie
 updated: 2026-01-07
 ---
-
 # Astronomie de Tharion
 
 ## Aperçu du système

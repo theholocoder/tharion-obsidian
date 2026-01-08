@@ -30,21 +30,67 @@
             }
           },
           {
-            "id": "0db777145091d983",
+            "id": "b829cf950f3321b2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "a9e4e794f9b385d2",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Hexagones/0312.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "0312"
+            }
+          },
+          {
+            "id": "bc7c6885f468b173",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cartes/Nyssor.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Nyssor"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +156,6 @@
       {
         "id": "b83162bbcaabbe3c",
         "type": "tabs",
-        "dimension": 25,
         "children": [
           {
             "id": "d7a6bea1813f2cb2",
@@ -200,32 +245,58 @@
             }
           },
           {
-            "id": "4e0ec8dbd99aa592",
-            "type": "leaf",
-            "state": {
-              "type": "rpg-manager-options",
-              "state": {},
-              "icon": "d20",
-              "title": "RPG Manager"
-            }
-          },
-          {
             "id": "537d47d198cc581a",
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Cartes/Nyssor.md"
+              },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for Nyssor"
+            }
+          },
+          {
+            "id": "9294bbd48fa51349",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "CALENDARIUM",
+              "state": {
+                "calendar": "ID_492bfa5b2bc9",
+                "ephemeral": {
+                  "viewing": {
+                    "day": 1,
+                    "month": 0,
+                    "year": 2943
+                  },
+                  "viewState": 1,
+                  "displaying": {
+                    "day": 8,
+                    "month": 4,
+                    "year": 2942
+                  },
+                  "displayDayNumber": false,
+                  "displaySeasonColors": false,
+                  "interpolateColors": true,
+                  "displayMoons": false,
+                  "displayWeather": true,
+                  "location": ""
+                },
+                "id": "ID_ebf95a0afb6a",
+                "child": "ID_d8888858499b"
+              },
+              "pinned": true,
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
             }
           }
         ],
         "currentTab": 7
       },
       {
-        "id": "cd36a2407235d843",
+        "id": "eb414f56f9b3a09f",
         "type": "tabs",
-        "dimension": 25,
         "children": [
           {
             "id": "4f6c6f1bcb97ff7f",
@@ -242,33 +313,31 @@
         ]
       },
       {
-        "id": "b4fa56e5e14b3310",
+        "id": "4bb7e2eb16d39b18",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "7a8b55ac1149a667",
+            "id": "8a9fd28ef3ab85dc",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "rpg-manager-options",
-              "state": {},
-              "pinned": true,
-              "icon": "d20",
-              "title": "RPG Manager"
+              "type": "CALENDARIUM_AGENDA",
+              "state": {
+                "calendar": "ID_492bfa5b2bc9",
+                "id": "ID_d8888858499b",
+                "parent": "ID_ebf95a0afb6a"
+              },
+              "icon": "CALENDARIUM_AGENDA",
+              "title": "Agenda"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 494.5
+    "width": 476.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "rpg-manager:RPG Manager": false,
-      "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -280,33 +349,56 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
+      "fantasy-content-generator:Fantasy Generators": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "sheet-plus:Create excel file": false,
-      "calendarium:Open Calendarium": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "0db777145091d983",
+  "active": "bc7c6885f468b173",
   "lastOpenFiles": [
+    "Hexagones/0312.md",
+    "Cartes/Nyssor.md",
+    "Hexagones",
+    "Port-Lointain.md",
     "TODO.md",
+    "templates/Lore (Templater).md",
+    "templates/Map (Templater).md",
+    "assets/maps/Nyssor.webp",
+    "assets/maps",
+    "assets/astro-symbol.png",
+    "assets/astro-map.webp",
+    "Lore/Calendrier/La Flamme de Pyrrhos.md",
+    "Lore/Calendrier/La Nuit des Ancêtres.md",
+    "Lore/Calendrier/L’Éclat des Étoiles.md",
+    "Lore/Calendrier/Le Voile d'Aranys.md",
+    "Lore/Calendrier/Le Jugement d’Ignaris.md",
+    "templates/Lore (simple).md",
+    "Lore/Calendrier",
+    "assets/foundry-thumbnail.webp",
+    "Lexique.md",
+    "Chronologie.md",
+    "Changelog.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace.md",
+    "Lore/Lieux",
+    "Lore/Factions",
+    "Règles",
+    "Rules",
+    "foundry-thumbnail.webp",
+    "Lore/PNJ",
+    "Cartes",
+    "Maps",
+    "templates/Callouts/Callout - Note.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/08. Player Characters/Test.md",
     "Lore/Astronomie.md",
-    "Lore/Astronomie.md~",
-    "README.md",
-    "AGENTS.md",
-    "Campaigns/L'Expédition des Fendeurs de Glace/L'Expédition des Fendeurs de Glace.md",
-    "Lore/Astrmonomie.md~",
-    "Spreadsheets/Downtime tracking.md",
-    "Lore/Untitled.md",
-    "Spreadsheets",
-    "Untitled.md",
-    "create a link.md",
-    "Campaigns/L'Expédition des Fendeurs de Glace",
-    "Campaigns",
-    "assets",
-    "Untitled.canvas",
-    "2026-01-07.md",
-    "Excalidraw/Drawing 2026-01-07 11.04.33.excalidraw.md",
-    "Excalidraw",
-    "templates",
-    "Lore"
+    "templates/Callouts/Callout - Quote.md",
+    "templates/Callouts/Callout - Danger.md",
+    "templates/Callouts/Callout - Warning.md",
+    "templates/Callouts/Callout - Question.md",
+    "templates/Callouts/Callout - Success.md",
+    "templates/Callouts/Callout - Tip.md",
+    "Lore/Le Souffle d'Aranys.md",
+    "Untitled.canvas"
   ]
 }

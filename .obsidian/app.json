@@ -1,4 +1,6 @@
 {
   "vimMode": true,
-  "propertiesInDocument": "hidden"
+  "propertiesInDocument": "hidden",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }

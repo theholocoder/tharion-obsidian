@@ -16,7 +16,7 @@
 - Liens internes `[[Nom du document]]`.
 - Frontmatter harmonisé : `id`, `type`, `region`, `faction`, `tags`, `updated`.
 - Nom de fichier : `NomPrincipal.md` (ex. `Arkoth.md`).
-- Catégories principales : `Lore/`, `Personnages/`, `Lieux/`, `Quêtes/`, `Bestiaire/`, `Règles/`, `Meta/`.
+- Catégories principales : `Lore/` (dont `Lore/PNJ/`, `Lore/Factions/`, `Lore/Lieux/`), `Campagnes/`, `Sessions/`, `Règles/`, `Tableaux/`, `Cartes/`, `Meta/`.
 
 # Workflow Agent
 1. Vérifier instructions locales (notes META, TODO).

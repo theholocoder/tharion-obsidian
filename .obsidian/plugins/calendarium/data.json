@@ -1,11 +1,357 @@
 {
-  "autoParse": false,
-  "calendars": [],
+  "autoParse": true,
+  "calendars": [
+    {
+      "name": "Era Renovatis",
+      "description": "Calendrier de Tharion",
+      "id": "ID_492bfa5b2bc9",
+      "showIntercalarySeparately": true,
+      "static": {
+        "incrementDay": false,
+        "firstWeekDay": 0,
+        "overflow": false,
+        "weekdays": [
+          {
+            "type": "day",
+            "name": "Aubain",
+            "id": "ID_09c978780999",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Pyrrhin",
+            "id": "ID_abb99af98a89",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Ignain",
+            "id": "ID_a84a286b3beb",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Aranain",
+            "id": "ID_da59fa5bd84a",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Croissain",
+            "id": "ID_0868ea588bc8",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Voilain",
+            "id": "ID_68983868987b",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Ombrin",
+            "id": "ID_98282a896b99",
+            "number": null
+          }
+        ],
+        "months": [
+          {
+            "name": "Flamme de Pyrrhos",
+            "type": "month",
+            "length": 1,
+            "id": "ID_faf9097998e8",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Pyrrhal",
+            "type": "month",
+            "length": 35,
+            "id": "ID_8a1ad97b285b",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Clairval",
+            "type": "month",
+            "length": 35,
+            "id": "ID_ba187a0b5ae8",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Voile d'Aranys",
+            "type": "month",
+            "length": 1,
+            "id": "ID_9b18eabbe858",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Grivaille",
+            "type": "month",
+            "length": 35,
+            "id": "ID_7a4acb1a59fb",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Mandaille",
+            "type": "month",
+            "length": 35,
+            "id": "ID_6ada2bd87829",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Le Jugement d'Ignaris",
+            "type": "month",
+            "length": 1,
+            "id": "ID_4b89493a2979",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Fermine",
+            "type": "month",
+            "length": 35,
+            "id": "ID_68f93a4b283a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Cendrine",
+            "type": "month",
+            "length": 35,
+            "id": "ID_39185acacb5a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "L'Eclat des Etoiles",
+            "type": "month",
+            "length": 1,
+            "id": "ID_5889091a4958",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Giraudre",
+            "type": "month",
+            "length": 35,
+            "id": "ID_a86b28c9c8c8",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Maraudre",
+            "type": "month",
+            "length": 35,
+            "id": "ID_7bcb3b8bc908",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "La Nuit des Ancêtres",
+            "type": "month",
+            "length": 1,
+            "id": "ID_1b7a0adb09e9",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Morlin",
+            "type": "month",
+            "length": 35,
+            "id": "ID_da4aeb49c9f9",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Gavrin",
+            "type": "month",
+            "length": 35,
+            "id": "ID_69cb78594849",
+            "interval": 1,
+            "offset": 0
+          }
+        ],
+        "moons": [],
+        "displayMoons": true,
+        "displayDayNumber": false,
+        "leapDays": [],
+        "eras": [
+          {
+            "id": "ID_fb3b6aca1a1a",
+            "isEvent": false,
+            "isStartingEra": false,
+            "name": "Era Renovatis",
+            "description": "",
+            "format": "Year {{year}} - {{era_name}}",
+            "date": {
+              "year": 1,
+              "month": 0,
+              "day": 1
+            },
+            "type": "era",
+            "category": null
+          }
+        ]
+      },
+      "seasonal": {
+        "seasons": [],
+        "offset": 0,
+        "type": "Periodic",
+        "displayColors": false,
+        "interpolateColors": true,
+        "weather": {
+          "enabled": false,
+          "seed": 1,
+          "tempUnits": "Imperial",
+          "windUnits": "Metric",
+          "primaryWindDirection": "E",
+          "freezingPoint": 0
+        }
+      },
+      "locations": {
+        "locations": [],
+        "defaultLocation": ""
+      },
+      "current": {
+        "day": 8,
+        "month": 4,
+        "year": 2942
+      },
+      "events": [
+        {
+          "name": "Le Voile d'Aranys",
+          "description": "Célébration de la lune protectrice",
+          "date": {
+            "day": 1,
+            "month": 3,
+            "year": [
+              1,
+              4000
+            ]
+          },
+          "id": "ID_7babca58fbb9",
+          "note": "Le Voile d'Aranys.md",
+          "category": "ID_bb390b6a3b79",
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Recurring"
+        },
+        {
+          "name": "La Flamme de Pyrrhos",
+          "description": "Fête du feu",
+          "date": {
+            "day": 1,
+            "month": 0,
+            "year": [
+              1,
+              4000
+            ]
+          },
+          "id": "ID_1ae8bbfaca08",
+          "note": "Lore/Calendrier/La Flamme de Pyrrhos.md",
+          "category": "ID_bb390b6a3b79",
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Recurring"
+        },
+        {
+          "name": "Le Jugement d’Ignaris",
+          "description": "Cérémonie de justice et de serments",
+          "date": {
+            "day": 1,
+            "month": 6,
+            "year": [
+              1,
+              4000
+            ]
+          },
+          "id": "ID_98f89abba809",
+          "note": "Lore/Calendrier/Le Jugement d’Ignaris.md",
+          "category": "ID_bb390b6a3b79",
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Recurring"
+        },
+        {
+          "name": "L’Éclat des Étoiles",
+          "description": "Fête des conteurs et des voyageurs",
+          "date": {
+            "day": 1,
+            "month": 9,
+            "year": [
+              1,
+              4000
+            ]
+          },
+          "id": "ID_4a49abdb9aca",
+          "note": "Lore/Calendrier/L’Éclat des Étoiles.md",
+          "category": "ID_bb390b6a3b79",
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Recurring"
+        },
+        {
+          "name": "La Nuit des Ancêtres",
+          "description": "Fête des morts et des disparus",
+          "date": {
+            "day": 1,
+            "month": 12,
+            "year": [
+              1,
+              4000
+            ]
+          },
+          "id": "ID_3a1b28886aba",
+          "note": "Lore/Calendrier/La Nuit des Ancêtres.md",
+          "category": "ID_bb390b6a3b79",
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Recurring"
+        }
+      ],
+      "categories": [
+        {
+          "id": "ID_8a9949eb3848",
+          "color": "#8f4ab5",
+          "name": "Historique"
+        },
+        {
+          "id": "ID_592b9b381a9b",
+          "color": "#c1496d",
+          "name": "Campagne"
+        },
+        {
+          "id": "ID_bb390b6a3b79",
+          "color": "#f936ab",
+          "name": "Fêtes"
+        }
+      ],
+      "path": [],
+      "supportInlineEvents": false,
+      "inlineEventTag": "#inline-events",
+      "dateFormat": "D MMM, YYYY"
+    }
+  ],
   "configDirectory": null,
   "dailyNotes": false,
   "dateFormat": "YYYY-MM-DD",
-  "defaultCalendar": null,
-  "eventPreview": false,
+  "defaultCalendar": "ID_492bfa5b2bc9",
+  "eventPreview": true,
   "exit": {
     "saving": false,
     "event": false,
