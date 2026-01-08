@@ -42,30 +42,6 @@
             }
           },
           {
-            "id": "6e34ddb4d0b9c2d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Chronologie.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Chronologie"
-            }
-          },
-          {
             "id": "c2463c9999eeb4e1",
             "type": "leaf",
             "state": {
@@ -90,36 +66,12 @@
             }
           },
           {
-            "id": "d0700adcbef80a42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Règles/Hexploration.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Hexploration"
-            }
-          },
-          {
             "id": "7eeecb30e62b3e3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/Liste des rumeurs.md",
+                "file": "Campagnes/L'Expédition des Fendeurs de Glace.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -134,11 +86,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Liste des rumeurs"
+              "title": "L'Expédition des Fendeurs de Glace"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -298,10 +250,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Sessions/Liste des rumeurs.md"
+                "file": "Campagnes/L'Expédition des Fendeurs de Glace.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Liste des rumeurs"
+              "title": "File properties for L'Expédition des Fendeurs de Glace"
             }
           }
         ],
@@ -410,16 +362,27 @@
   },
   "active": "7eeecb30e62b3e3d",
   "lastOpenFiles": [
+    "opencode.json~",
+    "Règles/Hexploration.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace.md",
+    "Concorde de Kaerith.md",
+    "Ordre de Myrr.md",
+    "République de Thaldris.md",
+    "Royaume d'Halvorn.md",
+    "Ligue de Veyra.md",
+    "Halvorn.md",
+    "templates/Elements/PF2/PF2e - Activité, Action.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace.md~",
+    "opencode.json",
+    "AGENTS.md~",
+    "templates/Elements/PF2/PF2e - PNJ.md",
+    "Règles/Influence.md",
+    "Sessions/Liste des rumeurs.md",
     "templates/Elements/Rumeur.md",
     "Règles/PF2/Activités et actions/Fortifier le camp.md",
     "Règles/PF2/Activités et actions/Cartographier la zone.md",
     "Règles/PF2/Activités et actions/Découvrir.md",
     "Règles/PF2/Activités et actions/Influencer.md",
-    "Sessions/Liste des rumeurs.md",
-    "templates/Elements/PF2/PF2e - PNJ.md",
-    "Règles/Influence.md",
-    "Règles/Hexploration.md",
-    "templates/Elements/PF2/PF2e - Activité, Action.md",
     "templates/Callouts/Callout - Rule.md",
     "Règles/PF2/Activités et actions/Voyager.md",
     "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
@@ -432,24 +395,12 @@
     "Chronologie.md",
     "templates/Callouts/Callout - Warning.md",
     "templates/Callouts/Callout - Tip.md",
-    "templates/Callouts/Callout - Success.md",
-    "templates/Callouts/Callout - Quote.md",
-    "templates/Callouts/Callout - Question.md",
-    "templates/Callouts/Callout - Note Expand.md",
-    "templates/Callouts/Callout - Note.md",
-    "templates/Callouts/Callout - Info.md",
-    "templates/Callouts/Callout - Danger.md",
-    "templates/Callouts/Callout - Abstract.md",
     "Règles",
     "assets/astro-map.webp",
     "assets/astro-symbol.png",
     "assets/foundry-thumbnail.webp",
     "assets/maps/Nyssor.webp",
     "templates/Callouts",
-    "assets/maps",
-    "Tableaux",
-    "Sessions",
-    "Lore/PNJ",
     "Untitled.canvas"
   ]
 }

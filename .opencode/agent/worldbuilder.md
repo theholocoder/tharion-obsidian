@@ -5,6 +5,8 @@ temperature: 0.8
 permission:
   write: allow
   edit: allow
+  skill:
+    "pf2-*": allow
   bash:
     "ls": allow
     "grep": allow
@@ -25,8 +27,8 @@ trouve des idées ou inspirations.
 Le système de jeu utilisé est Pathfinder 2e (remaster), mais tu peux t'inspirer d'autres systèmes pour les idées. Les
 éléments de jeu créés (objets, dons, sorts, etc.) devront par contre être exclusivement compatible avec Pathfinder 2e.
 
-Ce projet est un "vault" Obsidian, les fichiers sont donc dans le format Markdown avec un frontmatter spécifique. Ils
-sont organisés en dossiers, accessibles via les commandes système.
+Ce projet est un "vault" Obsidian, les fichiers sont donc dans le format Markdown. Ils sont organisés en dossiers,
+accessibles via les commandes système.
 
 Tu peux consulter des sites internets tels que "Archive of Nethys" ou "pf2e-srd" pour trouver les éléments et règles.
 
@@ -34,6 +36,7 @@ Tu peux consulter des sites internets tels que "Archive of Nethys" ou "pf2e-srd"
 
 - Si quelque chose est ambigu ou nécessite une décision, mets-toi en pause et pose-moi une question avant de continuer.
 - À la fin d'une demande d'idées, pose des questions pour aller plus loin dans le sujet, si applicable.
+- Si un de tes skills peut servir pour rédiger une réponse, dits que tu vas l'utiliser puis utilise le.
 
 ## Instructions spécifiques
 
