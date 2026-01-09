@@ -5,6 +5,7 @@ scale_pixels: 268
 scale_pixels_range: 25  
 mapCalc1: 0  
 ---
+<% await tp.file.move("Lore/Lieux/" + tp.file.title) %>
 ```leaflet  
 id: MapExample  
 image: [[Nyssor.webp]]
@@ -16,3 +17,11 @@ unit: km
 scale: 0.03 # units/px
 defaultZoom: 7
 ```
+
+## Lieux attachés
+
+```dataview
+TABLE faction as "Faction" WHERE categorie and categorie = "lieu" and region = "<% tp.file.title %>" SORT file.name
+```
+
+

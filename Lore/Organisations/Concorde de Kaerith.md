@@ -12,9 +12,6 @@ tags:
   - concorde
 updated: 2026-01-08
 ---
-
-# Concorde de Kaerith
-
 > Coalition inter-factions formée pour survivre aux bouleversements climatiques et organiser l’exode vers [[Nyssor]].
 
 ## Identité

@@ -16,7 +16,7 @@ updated: 2026-01-08
 ## Monde
 
 - **Couronne Blanche** : voir [[La Couronne Blanche]].
-- **Nyssor** : continent au-delà de la Couronne Blanche (campagne [[L'Expédition des Fendeurs de Glace]]).
+- **Nyssor** : continent au-delà de la Couronne Blanche (campagne [[EFG Intro|Expédition des Fendeurs de Glace]]).
 
 ## PJ / PNJ
 

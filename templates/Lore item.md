@@ -1,6 +1,7 @@
 <%*
 // Template Lore interactif (Templater)
 let title = tp.file.title;
+tp.file.move("Lore/" + title);
 
 // Si la note vient d’être créée avec un nom par défaut, on demande un vrai titre
 // (sinon l'id + le H1 restent "Untitled").
@@ -45,9 +46,9 @@ tR += `faction: ${faction}\n`;
 tR += `tags:\n`;
 for (const t of tags) tR += `  - ${t}\n`;
 tR += `updated: ${updated}\n`;
-tR += `---\n\n`;
+tR += `---\n`;
 %>
-# <% title %>
+![[foundry-thumbnail.webp|banner]]
 
 > *Pitch en 1 phrase (ce que c'est, en quoi c'est important).*  
 > *Ex : \"Une barrière de glace permanente séparant Kaerith et Nyssor.\"*

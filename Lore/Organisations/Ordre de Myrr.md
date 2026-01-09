@@ -11,9 +11,6 @@ tags:
   - categorie/faction
 updated: 2026-01-08
 ---
-
-# Ordre de Myrr
-
 > Théocratie guidée par le [[Synode d’Aranys]] et la [[Grande Oracle Serelith]], convaincue d’accomplir une mission sacrée sur [[Nyssor]].
 
 ## Identité

@@ -69,3 +69,4 @@ tR += `aat-render-enabled: true\n`;
 tR += `aat-event-picture: "[[foundry-thumbnail.webp]]"\n`;
 tR += `---\n`;
 %>
+![[foundry-thumbnail.webp|banner]]

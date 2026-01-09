@@ -90,10 +90,8 @@ for (const t of tags) tR += `  - ${t}\n`;
 
 tR += `updated: ${updated}\n`;
 
-tR += `---\n\n`;
+tR += `---\n`;
 %>
-# <% title %>
-
 > *Pitch en 1 phrase : ce que c’est + pourquoi c’est important pour l’Expédition.*
 
 ## Identité

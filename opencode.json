@@ -3,5 +3,5 @@
   "model": "github-copilot/gpt-5.2",
   "default_agent": "worldbuilder",
   "autoupdate": true,
-  "instructions": [ "AGENTS.md", "Campagnes/L'Expédition des Fendeurs de Glace.md" ]
+  "instructions": [ "AGENTS.md", "Campagnes/L'Expédition des Fendeurs de Glace/EFG-Intro.md" ]
 }

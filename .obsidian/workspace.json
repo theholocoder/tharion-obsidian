@@ -25,12 +25,12 @@
                 }
               },
               "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "kanban"
+              "icon": "lucide-trello",
+              "title": "TODO"
             }
           },
           {
-            "id": "35cc0b3272515923",
+            "id": "b829cf950f3321b2",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -42,12 +42,12 @@
             }
           },
           {
-            "id": "c2463c9999eeb4e1",
+            "id": "d8151745c56b8fd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/Calendrier/Les Guerres de Ressources.md",
+                "file": "Sessions/Timeline des sessions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,16 +62,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Les Guerres de Ressources"
+              "title": "Timeline des sessions"
             }
           },
           {
-            "id": "7eeecb30e62b3e3d",
+            "id": "10c352d478bc9a2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/Organisations/Royaume d'Halvorn.md",
+                "file": "Lore/Le Souffle d'Aranys.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,16 +86,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Royaume d'Halvorn"
+              "title": "Le Souffle d'Aranys"
             }
           },
           {
-            "id": "3ca7a5c1a8be251d",
+            "id": "c770b2d8308bda0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/Organisations/Ligue de Veyra.md",
+                "file": "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -110,11 +110,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ligue de Veyra"
+              "title": "EFG Intro"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"id\"]",
+                "query": "\"Expédition des Fendeurs de Glace\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -264,49 +264,26 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
             "id": "537d47d198cc581a",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Lore/Organisations/Ligue de Veyra.md"
+                "file": "templates/Événement Calendrier.md"
               },
-              "icon": "lucide-info",
-              "title": "File properties for Ligue de Veyra"
-            }
-          }
-        ],
-        "currentTab": 6
-      },
-      {
-        "id": "cd36a2407235d843",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4f6c6f1bcb97ff7f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "git-view",
-              "state": {},
               "pinned": true,
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-info",
+              "title": "File properties for Événement Calendrier"
             }
-          }
-        ]
-      },
-      {
-        "id": "c0dd600b25849c4a",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "b5bf6ec03ae601a5",
+            "id": "9294bbd48fa51349",
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM",
@@ -331,28 +308,59 @@
                   "displayWeather": true,
                   "location": ""
                 },
-                "id": "ID_0b7a7a895bf8",
-                "child": "ID_a90ad9588b3a"
+                "id": "ID_ebf95a0afb6a",
+                "child": "ID_d8888858499b"
               },
               "icon": "CALENDARIUM",
               "title": "Calendarium"
+            }
+          },
+          {
+            "id": "2331b0153b6fe05b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Lore/Le Souffle d'Aranys.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Le Souffle d'Aranys"
+            }
+          }
+        ],
+        "currentTab": 8
+      },
+      {
+        "id": "eb414f56f9b3a09f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f6c6f1bcb97ff7f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "pinned": true,
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ]
       },
       {
-        "id": "a4d5cc6667aaac5d",
+        "id": "4bb7e2eb16d39b18",
         "type": "tabs",
         "children": [
           {
-            "id": "f113d0e4610f4384",
+            "id": "8a9fd28ef3ab85dc",
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM_AGENDA",
               "state": {
                 "calendar": "ID_492bfa5b2bc9",
-                "id": "ID_a90ad9588b3a",
-                "parent": "ID_0b7a7a895bf8"
+                "id": "ID_d8888858499b",
+                "parent": "ID_ebf95a0afb6a"
               },
               "icon": "CALENDARIUM_AGENDA",
               "title": "Agenda"
@@ -362,7 +370,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 494.5
+    "width": 476.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -378,54 +386,60 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "fantasy-content-generator:Fantasy Generators": false,
-      "calendarium:Open Calendarium": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "sheet-plus:Create excel file": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "3ca7a5c1a8be251d",
+  "active": "10c352d478bc9a2d",
   "lastOpenFiles": [
-    "templates/Organisation - Faction (Templater).md",
+    "assets/souffle-d-aranys/souffle-aranys-7.webp",
+    "assets/souffle-d-aranys/souffle-aranys-6.webp",
+    "assets/souffle-d-aranys/souffle-aranys-5.webp",
+    "assets/souffle-d-aranys/souffle-aranys-4.webp",
+    "assets/souffle-d-aranys/souffle-aranys-3.webp",
+    "assets/souffle-d-aranys/souffle-aranys-2.webp",
+    "assets/souffle-d-aranys/souffle-aranys-1.webp",
+    "assets/souffle-d-aranys/1.webp",
+    "Lore/Lieux/Nyssor.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/Untitled.md",
+    "Expédition des Fendeurs de Glace.md",
+    "Lore/Le Souffle d'Aranys.md",
+    "assets/maps/Port-Lointain.webp",
+    "assets/Port-Lointain.webp",
+    "assets/campain-logo.webp",
+    "opencode.json~",
+    "assets/pantheon",
+    "assets/souffle-d-aranys",
+    "Lore/Panthéon.md",
+    "Lore/Panthéon (PF2e).md",
+    "templates/Lieu.md",
+    "Lore/Lieux/Port-Lointain.md",
+    "templates/Événement Calendrier.md",
+    "templates/Organisation - Faction.md",
+    "templates/Lore item.md",
+    "Cartes/Carte de Port-Lointain.md",
+    "Sessions/Timeline des sessions.md",
+    "Lore/Test.md",
+    "Lore/Test Nouveau fichier.md",
+    "Lore/Organisations/Ligue de Veyra.md",
+    "Lore/Organisations/Concorde de Kaerith.md",
+    "Hexagones/0312.md",
+    "README.md",
+    "Lexique.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace",
+    "templates/Elements/Rumeur.md",
     "Lore/Organisations/Royaume d'Halvorn.md",
     "Lore/Organisations/République de Thaldris.md",
     "Lore/Organisations/Ordre de Myrr.md",
-    "Lore/Organisations/Ligue de Veyra.md",
-    "Lore/Organisations/Concorde de Kaerith.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace.md",
-    "Lore/Organisations",
-    "opencode.json~",
-    "Règles/Hexploration.md",
-    "Concorde de Kaerith.md",
-    "Ordre de Myrr.md",
-    "République de Thaldris.md",
-    "Royaume d'Halvorn.md",
-    "Ligue de Veyra.md",
-    "Halvorn.md",
-    "templates/Elements/PF2/PF2e - Activité, Action.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace.md~",
-    "opencode.json",
-    "AGENTS.md~",
-    "templates/Elements/PF2/PF2e - PNJ.md",
-    "Règles/Influence.md",
-    "Sessions/Liste des rumeurs.md",
-    "templates/Elements/Rumeur.md",
-    "Règles/PF2/Activités et actions/Fortifier le camp.md",
-    "Règles/PF2/Activités et actions/Cartographier la zone.md",
-    "Règles/PF2/Activités et actions/Découvrir.md",
-    "Règles/PF2/Activités et actions/Influencer.md",
-    "templates/Callouts/Callout - Rule.md",
-    "Règles/PF2/Activités et actions/Voyager.md",
-    "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
-    "Règles/PF2/Activités et actions",
-    "Règles/PF2",
+    "Handouts",
     "templates/Elements/PF2",
     "templates/Elements",
-    "Règles",
-    "assets/astro-map.webp",
-    "assets/astro-symbol.png",
-    "assets/foundry-thumbnail.webp",
-    "assets/maps/Nyssor.webp",
+    "opencode.json",
+    "Règles/PF2/Activités et actions",
+    "Règles/PF2",
     "Untitled.canvas"
   ]
 }

@@ -23,4 +23,4 @@ Les campagnes sont conçues pour utiliser le système Pathfinder 2e (remaster).
 
 Depuis des générations, vos peuples ont prospéré sur Kaerith, à l’abri derrière la Couronne Blanche, cette muraille de glace que l’on croyait infranchissable. Mais voilà que les terres s’assèchent, les nuits deviennent trop claires, et les sages parlent d’un âge de cendres : la Saison du Feu revient. Devant cette menace, les royaumes se sont unis et ont percé la barrière glacée pour atteindre les terres inexplorées de Nyssor, un continent vaste et mystérieux dont on ne connaît que les légendes. Une expédition a été organisée : bâtir des ports, tracer des routes, sécuriser ces contrées encore sauvages… et offrir un refuge à ceux qui fuient le brasier qui s’annonce. Vous êtes de ces éclaireurs envoyés en avant-garde, chargés d’ouvrir la voie.
 
-[[L'Expédition des Fendeurs de Glace]]
+[[EFG Intro]]

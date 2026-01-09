@@ -1,19 +1,7 @@
----
-id: ligue-de-veyra
-type: organisation
-categorie: faction
-region: Kaerith / Nyssor
-faction:
-aliases:
-  - Veyra
-tags:
-  - organisation
-  - categorie/faction
-updated: 2026-01-08
----
+# Ligue de Veyra
+
 > Confédération marchande dirigée par le [[Le Conseil des Cinq Clés|Conseil des Cinq Clés]], obsédée par le monopole des ressources rares et des routes commerciales.
 
-![[foundry-thumbnail.webp|banner]]
 ## Identité
 - **Catégorie :** faction
 
@@ -35,8 +23,6 @@ Le pouvoir de la Ligue est détenu par cinq **méga-guildes**. Chacune contrôle
 #### Les Forges de Valmorne
 **Guilde métallurgique**.
 Influence : contrôle du prix du métal, contrats militaires, chantiers navals.
->[!warning]- GM
->En Nyssor, ils veulent sécuriser les mines, carrières et gisements rares.
 
 #### La Clef des Lanternes
 **Guilde des Tavernes & Lieux de Plaisance.**
@@ -51,14 +37,10 @@ Influence : la dette est leur arme. Même les autres royaumes leur doivent des c
 #### Les Mille Voiles
 **Guilde du Commerce & Logistique.** Routes, caravanes, flotte marchande, entrepôt.
 Influence : contrôle des routes, des ports et des flux de marchandises. 
->[!warning]- GM
->Leur objectif à Nyssor : imposer **leurs** axes commerciaux avant tous les autres.
 
 #### L’Œil de Verre
 **Guilde des Ressources Rares.** Pierres précieuses, artéfacts, alchimie, composants magiques.
 Influence : tout ce qui est rare, magique ou exotique.
->[!warning]- GM
-> Ce sont eux qui veulent le monopole sur les reliques de Nyssor.
 
 ### La Loi
 
@@ -69,7 +51,7 @@ Il n’existe pas de « loi royale » :   **le contrat fait loi**.
 
 ### Le Peuple
 
-Les habitants ne sont pas des citoyens, mais des  **sociétaires**    (**actionnaires, employés ou sous-traitants**).
+Les habitants ne sont pas des citoyens, mais des  **sociétaires**.
 - Avantages : stabilité, travail, protection économique.
 - Inconvénients : dettes héréditaires, peu de liberté politique.
 
@@ -169,39 +151,3 @@ Marchés, entrepôts, routes commerciales.
 #### 💎 **Azurys**
 Centre du commerce des ressources rares.  Construite sur des mines de pierres précieuses.
 Artefacts, gemmes, magie, marchés fermés au public.
-
-
-
-___
-
-## Buts & méthodes
-- **Objectifs (publics) :** financer la colonisation, stabiliser l’économie de l’exode, ouvrir des marchés.
-- **Objectifs (réels) :** contrôler l’accès aux ressources de [[Nyssor]], imposer ses contrats comme loi.
-- **Méthodes :** crédit, contrats, pression économique, agents et intermédiaires.
-
-## Territoire & influence
-- **Base / siège :** Kaerith (réseau bancaire et comptoirs).
-- **Ressources clés :** capitaux, navires affrétés, logistique commerciale.
-
-## Relations
-- **Alliés :** pragmatiques (ceux qui signent).
-- **Rivaux :** toute organisation pouvant casser un monopole ou refuser les termes.
-
-## Accroches (prêtes à jouer)
-- Un contrat vital pour [[Port-Lointain]] a une clause toxique… mais légale.
-- Une cargaison “assurée” disparaît sur Nyssor : sabotage ou fraude interne ?
-
-## Notes MJ
-
-> [!warning]- Leviers
-> - Dettes, garanties, lettres de crédit, contrats piégés.
-> - Pour la Ligue :
->	- Nyssor n’est pas une terre à coloniser,
->	- c’est un **portefeuille de ressources**.
->
->Objectifs :
->- sécuriser les mines, forêts, artefacts,
->- contrôler les routes,
->- créer des comptoirs,
->- rendre les autres factions **dépendantes de leur logistique**.
-

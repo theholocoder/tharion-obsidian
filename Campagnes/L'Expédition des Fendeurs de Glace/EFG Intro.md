@@ -1,6 +1,8 @@
 *Document à l'intention des joueurs*
 
-# L'Expédition des Fendeurs de Glace
+![[campain-logo.webp]]
+
+# L'[[Expédition des Fendeurs de Glace]]
 
 Depuis des générations, le monde de [[Kaerith]] a vécu dans une lumière familière… mais quelque chose change. Les terres s'assèchent, les récoltes meurent plus vite qu'elles ne poussent, les nuits ne sont plus aussi sombres qu'avant.
 Les oracles murmurent des prophéties de [[Saison du Feu]] qu'ils n'osaient plus prononcer depuis des siècles, et les savants s'accordent à dire que ce n'est pas un simple caprice du monde. Il y a tension dans l'air, une inquiétude partagée par les rois comme par les paysans.

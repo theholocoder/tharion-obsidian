@@ -20,3 +20,10 @@ unit: mi
 scale: 33 # px/units
 defaultZoom: 7
 ```
+
+## Lieux attachés
+
+```dataview
+TABLE faction as "Faction" WHERE categorie and categorie = "lieu" and region = "Nyssor" SORT file.name
+```
+

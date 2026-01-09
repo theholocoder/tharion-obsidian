@@ -18,19 +18,21 @@ Le Souffle d'Aranys est connu comme étant une prophécie écrite par Aranys à 
 
 ## Le texte
 _(Traduction canonique du texte original, vénérée par l’Ordre de Myr)_
-
+![[souffle-aranys-1.webp|banner]]
 > **I.**  
 > Quand la lumière cessa de dormir,  
 > Et que les rivières se retirèrent du monde,  
 > Les hommes levèrent les yeux vers le ciel brûlant,  
 > Et virent le Soleil grandir comme une plaie ouverte.
 
+![[souffle-aranys-2.webp|banner]]
 > **II.**  
 > Les champs se fendirent, la rosée se mua en cendre,  
 > Les bêtes beuglèrent dans les plaines vides,  
 > Et les ombres elles-mêmes cherchaient à s’enfuir.  
 > Car il n’était plus de nuit, mais un jour sans fin.
 
+![[souffle-aranys-3.webp|banner]]
 > **III.**  
 > Alors je vis, dans mes songes, la Lune voilée,  
 > Elle pleurait des larmes de glace,  
@@ -38,12 +40,14 @@ _(Traduction canonique du texte original, vénérée par l’Ordre de Myr)_
 > « Ceux qui marcheront vers le nord trouveront le souffle,  
 > Ceux qui resteront verront la fin. »
 
+![[souffle-aranys-4.webp|banner]]
 > **IV.**  
 > Et les peuples se rassemblèrent,  
 > Sous des bannières oubliées, ils partirent vers la Couronne blanche.  
 > Ils fendirent le gel,  
 > Et le sang fit fondre la glace.
 
+![[souffle-aranys-5.webp|banner]]
 > **V.**  
 > Mais tous ne suivirent pas le chemin.  
 > Certains restèrent dans la clarté — par foi, par orgueil, ou par oubli.  
@@ -51,6 +55,7 @@ _(Traduction canonique du texte original, vénérée par l’Ordre de Myr)_
 > Leurs cris devinrent vent,  
 > Et le vent nourrit les flammes.
 
+![[souffle-aranys-6.webp|banner]]
 > **VI.**  
 > Ainsi parla la Lune :  
 > « Le feu reviendra, et nul ne s’en souviendra.  
@@ -58,6 +63,7 @@ _(Traduction canonique du texte original, vénérée par l’Ordre de Myr)_
 > Et que la nuit portera la lumière,  
 > Les enfants du Passage devront de nouveau marcher. »
 
+![[souffle-aranys-7.webp|banner]]
 > **VII.**  
 > Car le monde tourne, mais ne revient point.  
 > Ceux qui oublieront la route perdront le souffle.  

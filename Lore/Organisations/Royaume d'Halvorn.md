@@ -11,9 +11,6 @@ tags:
   - categorie/faction
 updated: 2026-01-08
 ---
-
-# Royaume d'Halvorn
-
 > Monarchie féodale dirigée par [[Reine Ydris Halvorn|Ydris Halvorn]], puissance navale et métallurgique cherchant à sécuriser ports et routes maritimes.
 
 ## Identité
