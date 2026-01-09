@@ -25,8 +25,8 @@
                 }
               },
               "pinned": true,
-              "icon": "lucide-trello",
-              "title": "TODO"
+              "icon": "lucide-ghost",
+              "title": "kanban"
             }
           },
           {
@@ -95,7 +95,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Organisation - Faction (Templater).md",
+                "file": "Lore/Organisations/Ligue de Veyra.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -110,7 +110,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Organisation - Faction (Templater)"
+              "title": "Ligue de Veyra"
             }
           }
         ],
@@ -264,8 +264,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -274,10 +274,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "templates/Organisation - Faction (Templater).md"
+                "file": "Lore/Organisations/Ligue de Veyra.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Organisation - Faction (Templater)"
+              "title": "File properties for Ligue de Veyra"
             }
           }
         ],
@@ -366,8 +366,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -379,20 +377,22 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
+      "fantasy-content-generator:Fantasy Generators": false,
+      "calendarium:Open Calendarium": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "sheet-plus:Create excel file": false,
-      "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "3ca7a5c1a8be251d",
   "lastOpenFiles": [
+    "templates/Organisation - Faction (Templater).md",
     "Lore/Organisations/Royaume d'Halvorn.md",
     "Lore/Organisations/République de Thaldris.md",
     "Lore/Organisations/Ordre de Myrr.md",
     "Lore/Organisations/Ligue de Veyra.md",
     "Lore/Organisations/Concorde de Kaerith.md",
     "Campagnes/L'Expédition des Fendeurs de Glace.md",
-    "templates/Organisation - Faction (Templater).md",
     "Lore/Organisations",
     "opencode.json~",
     "Règles/Hexploration.md",
