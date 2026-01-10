@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Session.md",
+                "file": "Handouts/Handout - Dons d'Animanthrope.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Session"
+              "title": "Handout - Dons d'Animanthrope"
             }
           },
           {
@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
+                "file": "Règles/PF2/Dons/Héritage/Colosse du crétacé.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "00 - Hub"
+              "title": "Colosse du crétacé"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -297,14 +297,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md"
+                "file": "Handouts/Handout - Dons d'Animanthrope.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 00 - Hub"
+              "title": "File properties for Handout - Dons d'Animanthrope"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       },
       {
         "id": "eb414f56f9b3a09f",
@@ -368,16 +368,37 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "8a9fd28ef3ab85dc",
+  "active": "d8151745c56b8fd1",
   "lastOpenFiles": [
+    "Handouts/Handout - Dons d'Animanthrope.md",
+    "Règles/PF2/Dons/Héritage/Colosse du crétacé.md",
+    "templates/Elements/PF2/PF2e - Activité, Action.md",
+    "templates/Elements/PF2/PF2e - Don.md",
+    "templates/Elements/PF2/PF2e - PNJ.md",
+    "Règles/PF2/Dons/Héritage/Sauve qui queue.md",
+    "Règles/PF2/Dons/Héritage",
+    "Règles/PF2/Dons/Héritage/Dildosaure.md",
+    "Règles/PF2/Dons/Héritage/Godzilla.md",
+    "Règles/PF2/Dons/Héritage/Légende sanglante vivante.md",
+    "Règles/PF2/Dons/Héritage/Colosse inarrêtable.md",
+    "Règles/PF2/Dons/Héritage/La légende de la gueule sanglante.md",
+    "Règles/PF2/Dons/Héritage/Réputation de la bête.md",
+    "Règles/PF2/Dons/Héritage/Rage furieuse.md",
+    "Règles/PF2/Dons/Héritage/Rage bestiale.md",
+    "Règles/PF2/Dons/Héritage/Prédateur silencieux.md",
+    "Règles/PF2/Dons/Héritage/Magie-garou.md",
+    "Règles/PF2/Dons/Héritage/Mâchoire de prédateur.md",
+    "Règles/PF2/Dons/Héritage/L'odeur de la peur.md",
+    "Règles/PF2/Dons/Héritage/L'incarnation de la peur.md",
+    "Règles/PF2/Dons/Héritage/Foulée colossale.md",
+    "Règles/PF2/Dons/Héritage/Sourire \"charmeur\".md",
+    "Règles/Influence.md",
+    "Règles/Hexploration.md",
+    "Règles/PF2/Activités et actions/Voyager.md",
+    "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
+    "Règles/PF2/Activités et actions/Influencer.md",
+    "Règles/PF2/Dons",
     "opencode.json~",
-    "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
-    "Sessions/S001 - Troopers.md",
-    "templates/Session.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
-    "Sessions/S002 - TOTO.md",
-    "Sessions/Timeline des sessions.md",
-    "Lore/Le Souffle d'Aranys.md",
     "assets/souffle-d-aranys/souffle-aranys-7.webp",
     "assets/souffle-d-aranys/souffle-aranys-6.webp",
     "assets/souffle-d-aranys/souffle-aranys-5.webp",
@@ -386,35 +407,15 @@
     "assets/souffle-d-aranys/souffle-aranys-2.webp",
     "assets/souffle-d-aranys/souffle-aranys-1.webp",
     "assets/souffle-d-aranys/1.webp",
-    "Lore/Lieux/Nyssor.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace/Untitled.md",
-    "Expédition des Fendeurs de Glace.md",
     "assets/maps/Port-Lointain.webp",
     "assets/Port-Lointain.webp",
     "assets/pantheon",
     "assets/souffle-d-aranys",
-    "Lore/Panthéon.md",
-    "Lore/Panthéon (PF2e).md",
-    "templates/Lieu.md",
-    "Lore/Lieux/Port-Lointain.md",
-    "templates/Événement Calendrier.md",
-    "templates/Organisation - Faction.md",
-    "templates/Lore item.md",
-    "Cartes/Carte de Port-Lointain.md",
-    "Lore/Test.md",
-    "Lore/Test Nouveau fichier.md",
-    "Lore/Organisations/Ligue de Veyra.md",
-    "Lore/Organisations/Concorde de Kaerith.md",
-    "Hexagones/0312.md",
-    "README.md",
-    "Lexique.md",
     "Campagnes/L'Expédition des Fendeurs de Glace",
     "Handouts",
     "templates/Elements/PF2",
     "templates/Elements",
     "opencode.json",
-    "Règles/PF2/Activités et actions",
-    "Règles/PF2",
     "Untitled.canvas"
   ]
 }

@@ -1,3 +1,15 @@
+---
+type: pf2-activity
+pf2-mode: social
+pf2-action-cost: activity
+pf2-traits: [concentration, linguistique]
+pf2-primary-skills: [Diplomatie]
+pf2-check: true
+pf2-secret: false
+pf2-source: "GM Core 187"
+tags: [pf2, activite]
+---
+
 ```pf2e-stats
 # Influencer
 ---

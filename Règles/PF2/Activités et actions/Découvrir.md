@@ -1,3 +1,15 @@
+---
+type: pf2-activity
+pf2-mode: social
+pf2-action-cost: activity
+pf2-traits: [concentration, secret]
+pf2-primary-skills: [Perception]
+pf2-check: true
+pf2-secret: true
+pf2-source: "GM Core 187"
+tags: [pf2, activite]
+---
+
 ```pf2e-stats
 # Découvrir
 ---

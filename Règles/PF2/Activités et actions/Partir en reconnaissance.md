@@ -1,3 +1,15 @@
+---
+type: pf2-activity
+pf2-mode: hexploration
+pf2-action-cost: activity
+pf2-traits: [concentration]
+pf2-primary-skills: [Perception]
+pf2-check: true
+pf2-secret: false
+pf2-source: "Gamemastery Guide 172"
+tags: [pf2, activite]
+---
+
 ```pf2e-stats
 # Partir en reconnaissance
 ---

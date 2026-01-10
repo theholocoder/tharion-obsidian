@@ -1,3 +1,15 @@
+---
+type: pf2-activity
+pf2-mode: camp
+pf2-action-cost: activity
+pf2-traits: []
+pf2-primary-skills: [Artisanat]
+pf2-check: true
+pf2-secret: false
+pf2-source: "Gamemastery Guide 173"
+tags: [pf2, activite]
+---
+
 ```pf2e-stats
 # Fortifier le camp
 ---

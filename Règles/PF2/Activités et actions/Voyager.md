@@ -1,3 +1,15 @@
+---
+type: pf2-activity
+pf2-mode: travel
+pf2-action-cost: activity
+pf2-traits: [déplacement]
+pf2-primary-skills: []
+pf2-check: false
+pf2-secret: false
+pf2-source: "Gamemastery Guide 172"
+tags: [pf2, activite]
+---
+
 ```pf2e-stats
 # Voyager
 ---
