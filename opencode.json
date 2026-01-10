@@ -3,5 +3,21 @@
   "model": "github-copilot/gpt-5.2",
   "default_agent": "worldbuilder",
   "autoupdate": true,
+  "agent": {
+    "worldbuilder": {
+      "permissions": {
+        "bash": {
+          "ls": "allow",
+          "grep": "allow",
+          "find": "allow",
+          "rg": "allow",
+          "cd": "allow",
+          "cat": "allow",
+          "head": "allow",
+          "tail": "allow"
+        }
+      },
+    }
+  },
   "instructions": [ "AGENTS.md", "Campagnes/L'Expédition des Fendeurs de Glace/EFG-Intro.md" ]
 }

@@ -6,6 +6,8 @@
     "fc-date": "text",
     "fc-end": "text",
     "timelines": "multitext",
-    "aat-render-enabled": "checkbox"
+    "aat-render-enabled": "checkbox",
+    "date_ig_debut": "text",
+    "date_ig_fin": "text"
   }
 }

@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/Timeline des sessions.md",
+                "file": "templates/Session.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,31 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Timeline des sessions"
-            }
-          },
-          {
-            "id": "10c352d478bc9a2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Le Souffle d'Aranys.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Le Souffle d'Aranys"
+              "title": "Session"
             }
           },
           {
@@ -95,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
+                "file": "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -110,7 +86,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "EFG Intro"
+              "title": "00 - Hub"
             }
           }
         ],
@@ -321,14 +297,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Lore/Le Souffle d'Aranys.md"
+                "file": "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Le Souffle d'Aranys"
+              "title": "File properties for 00 - Hub"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       },
       {
         "id": "eb414f56f9b3a09f",
@@ -392,8 +368,16 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "10c352d478bc9a2d",
+  "active": "8a9fd28ef3ab85dc",
   "lastOpenFiles": [
+    "opencode.json~",
+    "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
+    "Sessions/S001 - Troopers.md",
+    "templates/Session.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
+    "Sessions/S002 - TOTO.md",
+    "Sessions/Timeline des sessions.md",
+    "Lore/Le Souffle d'Aranys.md",
     "assets/souffle-d-aranys/souffle-aranys-7.webp",
     "assets/souffle-d-aranys/souffle-aranys-6.webp",
     "assets/souffle-d-aranys/souffle-aranys-5.webp",
@@ -403,14 +387,10 @@
     "assets/souffle-d-aranys/souffle-aranys-1.webp",
     "assets/souffle-d-aranys/1.webp",
     "Lore/Lieux/Nyssor.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
     "Campagnes/L'Expédition des Fendeurs de Glace/Untitled.md",
     "Expédition des Fendeurs de Glace.md",
-    "Lore/Le Souffle d'Aranys.md",
     "assets/maps/Port-Lointain.webp",
     "assets/Port-Lointain.webp",
-    "assets/campain-logo.webp",
-    "opencode.json~",
     "assets/pantheon",
     "assets/souffle-d-aranys",
     "Lore/Panthéon.md",
@@ -421,7 +401,6 @@
     "templates/Organisation - Faction.md",
     "templates/Lore item.md",
     "Cartes/Carte de Port-Lointain.md",
-    "Sessions/Timeline des sessions.md",
     "Lore/Test.md",
     "Lore/Test Nouveau fichier.md",
     "Lore/Organisations/Ligue de Veyra.md",
@@ -430,10 +409,6 @@
     "README.md",
     "Lexique.md",
     "Campagnes/L'Expédition des Fendeurs de Glace",
-    "templates/Elements/Rumeur.md",
-    "Lore/Organisations/Royaume d'Halvorn.md",
-    "Lore/Organisations/République de Thaldris.md",
-    "Lore/Organisations/Ordre de Myrr.md",
     "Handouts",
     "templates/Elements/PF2",
     "templates/Elements",
