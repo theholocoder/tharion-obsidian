@@ -1,4 +1,3 @@
-
 ```pf2e-stats
 # Nom
 ## Niveau 1

@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Handouts/Handout - Dons d'Animanthrope.md",
+                "file": "templates/Elements/PF2/PF2e - PNJ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,23 +62,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Handout - Dons d'Animanthrope"
+              "title": "PF2e - PNJ"
             }
           },
           {
             "id": "c770b2d8308bda0a",
             "type": "leaf",
             "state": {
-              "type": "excel-pro-view",
+              "type": "markdown",
               "state": {
-                "file": "Tableaux/Marketplace.md"
+                "file": "Règles/PF2/Dons/Héritage/Sourire \"charmeur\".md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "Marketplace"
+              "title": "Sourire \"charmeur\""
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -285,10 +297,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Tableaux/Marketplace.md"
+                "file": "templates/Elements/PF2/PF2e - PNJ.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Marketplace"
+              "title": "File properties for PF2e - PNJ"
             }
           }
         ],
@@ -334,7 +346,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 576.5
+    "width": 367.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -356,15 +368,18 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "c770b2d8308bda0a",
+  "active": "d8151745c56b8fd1",
   "lastOpenFiles": [
-    "Tableaux/XP et Trésors par session.md",
-    "Tableaux/Marketplace.md",
-    "TODO.md",
+    "Règles/Hexploration.md",
     "Handouts/Handout - Dons d'Animanthrope.md",
+    "TODO.md",
+    "Règles/PF2/Dons/Héritage/Sourire \"charmeur\".md",
+    "assets/feats/feat-sourire-charmeur.webp",
+    "assets/feats",
+    "Tableaux/Marketplace.md",
+    "Tableaux/XP et Trésors par session.md",
     "Règles/PF2/Dons/Héritage/Rage bestiale.md",
     "Règles/PF2/Dons/Héritage/Réputation de la bête.md",
-    "Règles/PF2/Dons/Héritage/Sourire \"charmeur\".md",
     "Règles/PF2/Dons/Héritage/Sauve qui queue.md",
     "Règles/PF2/Dons/Héritage/Rage furieuse.md",
     "Règles/PF2/Dons/Héritage/Prédateur silencieux.md",
@@ -395,14 +410,12 @@
     "assets/souffle-d-aranys/souffle-aranys-1.webp",
     "assets/souffle-d-aranys/1.webp",
     "assets/maps/Port-Lointain.webp",
-    "assets/Port-Lointain.webp",
     "assets/pantheon",
     "assets/souffle-d-aranys",
     "Campagnes/L'Expédition des Fendeurs de Glace",
     "Handouts",
     "templates/Elements/PF2",
     "templates/Elements",
-    "opencode.json",
     "Untitled.canvas"
   ]
 }

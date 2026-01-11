@@ -6,7 +6,6 @@ kanban-plugin: board
 
 ## Todo
 
-- [ ] Dons Animanthrope niveau 1 sur foundry
 - [ ] Dons Animanthrope niveau 5 sur foundry
 - [ ] Dons Animanthrope niveau 9 sur foundry
 - [ ] Dons Animanthrope niveau 13 sur foundry
@@ -22,6 +21,7 @@ kanban-plugin: board
 
 **Complete**
 - [x] Rappatrier le lore de Legend Keeper
+- [x] Dons Animanthrope niveau 1 sur foundry
 
 
 
