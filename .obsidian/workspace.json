@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Elements/PF2/PF2e - PNJ.md",
+                "file": "Règles/PF2/Dons/Héritage/Sourire charmeur.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PF2e - PNJ"
+              "title": "Sourire charmeur"
             }
           },
           {
@@ -297,10 +297,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "templates/Elements/PF2/PF2e - PNJ.md"
+                "file": "Règles/PF2/Dons/Héritage/Sourire charmeur.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for PF2e - PNJ"
+              "title": "File properties for Sourire charmeur"
             }
           }
         ],
@@ -370,10 +370,11 @@
   },
   "active": "d8151745c56b8fd1",
   "lastOpenFiles": [
+    "templates/Elements/PF2/PF2e - PNJ.md",
     "Règles/Hexploration.md",
     "Handouts/Handout - Dons d'Animanthrope.md",
     "TODO.md",
-    "Règles/PF2/Dons/Héritage/Sourire \"charmeur\".md",
+    "Règles/PF2/Dons/Héritage/Sourire charmeur.md",
     "assets/feats/feat-sourire-charmeur.webp",
     "assets/feats",
     "Tableaux/Marketplace.md",
@@ -397,7 +398,6 @@
     "Règles/PF2/Dons/Héritage/Colosse du crétacé.md",
     "Règles/PF2/Activités et actions/Fortifier le camp.md",
     "templates/Elements/PF2/PF2e - Activité, Action.md",
-    "templates/Elements/PF2/PF2e - Don.md",
     "Règles/PF2/Dons/Héritage",
     "Règles/PF2/Dons",
     "opencode.json~",

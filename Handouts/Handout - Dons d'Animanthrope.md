@@ -12,7 +12,7 @@ SORT pf2-level ASC, file.name ASC
 ## Niveau 1
 
 ![[Mâchoire de prédateur]]
-![[Sourire "charmeur"]]
+![[Sourire charmeur]]
 ![[Magie-garou]]
 
 ## Niveau 5
