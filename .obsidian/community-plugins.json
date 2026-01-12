@@ -7,7 +7,6 @@
   "pf2-action-icons",
   "fantasy-content-generator",
   "fantasy-name",
-  "calendarium",
   "obsidian-leaflet-plugin",
   "obsidian-timeline",
   "obsidian-icon-folder",
@@ -16,5 +15,8 @@
   "templater-obsidian",
   "obsidian-meta-bind-plugin",
   "vim-yank-highlight",
-  "dataview"
+  "dataview",
+  "calendarium",
+  "aprils-automatic-timelines",
+  "system3-relay"
 ]

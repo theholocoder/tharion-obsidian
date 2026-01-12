@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## Todo
 
+- [ ] Checklist post session pour vérifier que tout est dans les journaux, dans Obsidian, etc.
 - [ ] Dons Animanthrope niveau 5 sur foundry
 - [ ] Dons Animanthrope niveau 9 sur foundry
 - [ ] Dons Animanthrope niveau 13 sur foundry

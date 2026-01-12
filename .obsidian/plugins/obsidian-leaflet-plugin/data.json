@@ -2,7 +2,7 @@
   "mapMarkers": [
     {
       "id": "MapExample",
-      "lastAccessed": 1767977139499,
+      "lastAccessed": 1768216313579,
       "markers": [
         {
           "id": "ID_99ba5ad93b2b",
@@ -28,8 +28,7 @@
       "overlays": [],
       "shapes": [],
       "files": [
-        "Lore/Lieux/Nyssor.md",
-        "templates/Lieu.md"
+        "Lore/Lieux/Nyssor.md"
       ]
     }
   ],

@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Règles/PF2/Dons/Héritage/Sourire charmeur.md",
+                "file": "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,16 +62,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sourire charmeur"
+              "title": "00 - Hub"
             }
           },
           {
-            "id": "c770b2d8308bda0a",
+            "id": "594afd25155639bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Règles/PF2/Dons/Héritage/Sourire \"charmeur\".md",
+                "file": "Lore/Astronomie.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sourire \"charmeur\""
+              "title": "Astronomie"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -259,7 +259,19 @@
             }
           },
           {
-            "id": "9294bbd48fa51349",
+            "id": "2331b0153b6fe05b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "TODO.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for TODO"
+            }
+          },
+          {
+            "id": "ce6559cb43ceec37",
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM",
@@ -284,23 +296,11 @@
                   "displayWeather": true,
                   "location": ""
                 },
-                "id": "ID_ebf95a0afb6a",
-                "child": "ID_d8888858499b"
+                "id": "ID_9a19ea180aeb",
+                "child": "ID_da589868ab2a"
               },
               "icon": "CALENDARIUM",
               "title": "Calendarium"
-            }
-          },
-          {
-            "id": "2331b0153b6fe05b",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "Règles/PF2/Dons/Héritage/Sourire charmeur.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for Sourire charmeur"
             }
           }
         ],
@@ -325,18 +325,18 @@
         ]
       },
       {
-        "id": "4bb7e2eb16d39b18",
+        "id": "3c82d17590e25ec8",
         "type": "tabs",
         "children": [
           {
-            "id": "8a9fd28ef3ab85dc",
+            "id": "bf66ddc65304831b",
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM_AGENDA",
               "state": {
                 "calendar": "ID_492bfa5b2bc9",
-                "id": "ID_d8888858499b",
-                "parent": "ID_ebf95a0afb6a"
+                "id": "ID_da589868ab2a",
+                "parent": "ID_9a19ea180aeb"
               },
               "icon": "CALENDARIUM_AGENDA",
               "title": "Agenda"
@@ -346,10 +346,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.5
+    "width": 499.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "system3-relay:Relay": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -368,36 +369,36 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "d8151745c56b8fd1",
+  "active": "b829cf950f3321b2",
   "lastOpenFiles": [
-    "templates/Elements/PF2/PF2e - PNJ.md",
-    "Règles/Hexploration.md",
-    "Handouts/Handout - Dons d'Animanthrope.md",
     "TODO.md",
-    "Règles/PF2/Dons/Héritage/Sourire charmeur.md",
+    "tharion-obsidian.zip",
+    "Lore/Astronomie.md",
+    "Lore/Chronologie.md",
+    "Sessions/S002 - Maximus.md",
+    "Lore/Calendrier/Era Concorda.md",
+    "Lore/Calendrier/Création de la Concorde de Kaerith.md",
+    "Sessions/Timeline des sessions.md",
+    "Sessions/Liste des rumeurs.md",
+    "Lore/Panthéon.md",
+    "Lore/Panthéon (PF2e).md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
+    "AGENTS.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
+    "Handouts/Handout - Dons d'Animanthrope.md",
+    "Handouts/Handout - Ligue de Veyra.md",
+    "templates/Elements/PF2/PF2e - Activité, Action.md",
+    "templates/Elements/PF2/PF2e - PNJ.md",
+    "templates/Elements/PF2/PF2e - Don.md",
+    "Règles/PF2/Dons/Héritage/Mâchoire de prédateur.md",
+    "Lore/Calendrier/Découverte de Nyssor.md",
+    "Kaerith.md",
+    "Lore/Lieux/Port-Lointain.md",
+    "Lore/Lieux/Nyssor.md",
+    "Lore/La Couronne Blanche.md",
+    "Sessions/S001 - Troopers.md",
     "assets/feats/feat-sourire-charmeur.webp",
     "assets/feats",
-    "Tableaux/Marketplace.md",
-    "Tableaux/XP et Trésors par session.md",
-    "Règles/PF2/Dons/Héritage/Rage bestiale.md",
-    "Règles/PF2/Dons/Héritage/Réputation de la bête.md",
-    "Règles/PF2/Dons/Héritage/Sauve qui queue.md",
-    "Règles/PF2/Dons/Héritage/Rage furieuse.md",
-    "Règles/PF2/Dons/Héritage/Prédateur silencieux.md",
-    "Règles/PF2/Dons/Héritage/Magie-garou.md",
-    "Règles/PF2/Dons/Héritage/Mâchoire de prédateur.md",
-    "Règles/PF2/Dons/Héritage/Légende sanglante vivante.md",
-    "Règles/PF2/Dons/Héritage/La légende de la gueule sanglante.md",
-    "Règles/PF2/Dons/Héritage/L'odeur de la peur.md",
-    "Règles/PF2/Dons/Héritage/L'incarnation de la peur.md",
-    "Règles/PF2/Dons/Héritage/Godzilla.md",
-    "Règles/PF2/Activités et actions/Partir en reconnaissance.md",
-    "Règles/PF2/Dons/Héritage/Foulée colossale.md",
-    "Règles/PF2/Dons/Héritage/Dildosaure.md",
-    "Règles/PF2/Dons/Héritage/Colosse inarrêtable.md",
-    "Règles/PF2/Dons/Héritage/Colosse du crétacé.md",
-    "Règles/PF2/Activités et actions/Fortifier le camp.md",
-    "templates/Elements/PF2/PF2e - Activité, Action.md",
     "Règles/PF2/Dons/Héritage",
     "Règles/PF2/Dons",
     "opencode.json~",
@@ -415,7 +416,6 @@
     "Campagnes/L'Expédition des Fendeurs de Glace",
     "Handouts",
     "templates/Elements/PF2",
-    "templates/Elements",
     "Untitled.canvas"
   ]
 }

@@ -1,0 +1,144 @@
+{
+  "release": {
+    "channel": "stable"
+  },
+  "sharedFolders": [
+    {
+      "path": "assets",
+      "guid": "88a457d5-d057-4232-aaf6-20f0cf7ec69c",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Campagnes",
+      "guid": "3f08a36f-d92d-490f-89f5-5006fd969e16",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Handouts",
+      "guid": "938810ba-e93d-4d49-9729-2515eb1bc5ad",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Hexagones",
+      "guid": "d1ac9501-d66a-49cb-8e2a-906c6c164136",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Lore",
+      "guid": "9bda6b76-7c41-4f2d-ad33-cf122be2ef36",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Règles",
+      "guid": "73a36ec3-98e8-48f9-a3ec-7db02da3efda",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Sessions",
+      "guid": "35f77c69-0f97-4fc6-8ac2-6f27cbf852a8",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Tableaux",
+      "guid": "92686f61-a0d2-4e0f-82bb-8480e10c4a0d",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "templates",
+      "guid": "e6ba94b0-4293-4ff5-9b47-1be7467f3d65",
+      "relay": "28478b29-9b42-4727-9ff3-828039ad3665",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    }
+  ],
+  "endpoints": {},
+  "enableDocumentStatus": false,
+  "enableNewLinkFormat": false,
+  "enableDeltaLogging": false,
+  "enableDocumentHistory": false,
+  "enableEditorTweens": false,
+  "enableSyncModal": false,
+  "enableNetworkLogging": false,
+  "enableCanvasSync": false,
+  "enableVerifyUploads": false,
+  "enableAutomaticDiffResolution": true,
+  "enableDiscordLogin": false,
+  "enableSelfManageHosts": true,
+  "enableToasts": true,
+  "enablePresenceAvatars": true,
+  "enableLiveEmbeds": true,
+  "enablePreviewViewHooks": true,
+  "enableMetadataViewHooks": true,
+  "enableKanbanView": true,
+  "debugging": false,
+  "login": {
+    "provider": "google"
+  },
+  "enableSyncMenu": true,
+  "enableAttachmentSync": true,
+  "enableDocumentServer": true,
+  "enableMicrosoftLogin": true,
+  "enableGitHubLogin": true,
+  "enableOIDCLogin": true
+}
