@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"Expédition des Fendeurs de Glace\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -347,12 +347,11 @@
   },
   "active": "d8151745c56b8fd1",
   "lastOpenFiles": [
+    "Session 01 - L'Essaim de Nyssor.md",
+    "Sessions/S001 - Port-Lointain.md",
     "Sessions/Liste des rumeurs.md",
-    "Sessions/S001 - Port-Lointain.md",
-    "Sessions/S001 - Port-Lointain.md",
     "IMAGES A GENERER.md",
     "TODO.md",
-    "Session 01 - L'Essaim de Nyssor.md",
     "Sessions/Timeline des sessions.md",
     "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
     "Lore/PNJ/Commandant Aelys Tarn.md",

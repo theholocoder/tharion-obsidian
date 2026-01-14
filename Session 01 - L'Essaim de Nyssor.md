@@ -11,7 +11,7 @@ tags:
   - cisarelles
 ---
 
-# Session 01 : L'Essaim de Nyssor
+# Session 01 : Port-Lointain — L’Essaim de Nyssor
 
 > **Synopsis :** Alors que les héros profitent de l'abondance inespérée de Port-Lointain, une attaque soudaine de créatures insectoïdes, les Cisarelles, plonge la ville dans le chaos. Ils doivent faire leurs preuves pour protéger la colonie naissante.
 
@@ -22,10 +22,10 @@ tags:
 
 ---
 
-## 1. Salle 1 : L'Âtre des Pionniers (Introduction & RP)
-**Rôle : Le Gardien (Ici, social)**
+## Room 1 — [[Port-Lointain]] : **L’Hydre à Deux Choppes** (Introduction & RP)
+**Rôle : l’Entrée (contraste + ancrage émotionnel)**
 
-Les PJ sont rassemblés à l'auberge **"L'Âtre des Pionniers"**. C'est un bâtiment en bois robuste, récemment construit.
+Les PJ sont rassemblés à l’auberge **« L’Hydre à Deux Choppes »**, une construction récente en bois sombre, encore imprégnée d’odeur de résine et de goudron. C’est l’un des rares endroits de [[Port-Lointain]] où l’on s’autorise à rire sans guetter la palissade.
 
 **Description sensorielle :**
 - **Odeur :** Une odeur incroyable de viande rôtie, de ragoût de tubercules épicés et de pain frais. Pour des personnages venant de Kaerith (famine), c'est presque écœurant ou divin.
@@ -35,115 +35,129 @@ Les PJ sont rassemblés à l'auberge **"L'Âtre des Pionniers"**. C'est un bâti
 **Action :**
 - Laisser les joueurs se présenter (apparence, ce qu'ils font).
 - **Intrigue :** Jorel dépose un plat énorme au centre de la table (ex: un jambon entier). *"Mangez, mes amis ! Ici, la terre ne brûle pas. Ici, tout pousse plus vite qu'on ne peut le récolter !"*
-- **PNJ clé :** Le **Capitaine Valerius** (leur supérieur ou contact militaire) est présent, détendu, sans son casque. Il lève son verre à leur santé.
-
+- **Présence d’autorité :** en sortant prendre l’air ou via la fenêtre donnant sur la rue, on aperçoit des silhouettes en manteaux de pluie et brigandines neutres : une section de la Concorde en patrouille.
+- **PNJ clé (hors-champ immédiat) :** [[Commandant Aelys Tarn]] est signalée en inspection dans le quartier (vu par des soldats, pas forcément identifiée par les PJ).
 ## 2. L'Incident Déclencheur
 Soudain, le bruit change.
 1.  Un **bourdonnement** grave, vibratoire, qui fait trembler les verres sur les tables.
 2.  Le son des cloches d'alarme du port : *trois coups rapides, pause, trois coups rapides*.
 3.  Un cri à l'extérieur, coupé net.
 
-Valerius se lève d'un bond, visage fermé. *"Aux armes ! Ce n'est pas un exercice !"*
+À peine la porte franchie, l’air est plein d’un **bourdonnement lourd**, comme si la nuit vibrait. Les cloches du port sonnent l’alarme.
 
-## 3. Salle 2 : Le Parvis du Chaos (Combat Tutoriel)
-**Rôle : Le Puzzle / Le Défi tactique**
+Sur les pavés, des civils trébuchent, certains avec des entailles nettes, d’autres comme “vidés” de leur souffle. Au-dessus des toits, des silhouettes chitineuses passent en rafales.
 
-En sortant de l'auberge, la scène est cauchemardesque. Des formes chitineuses de la taille de poneys descendent du ciel crépusculaire.
+C’est là que la voix tombe, froide et claire, au milieu de la panique.
 
-**La Scène :**
-- Une immense **Cisarelle Prétorienne** (la "femelle imposante", taille Large) atterrit sur un chariot de ravitaillement, le broyant.
-- Plusieurs **Cisarelles Éclaireuses** (taille Moyenne) s'attaquent aux passants.
+[[Commandant Aelys Tarn]] se tient dehors, déjà entourée de quelques soldats. Elle ne crie pas, elle **ordonne**.
 
-**L'Ordre :**
-Le Capitaine Valerius dégaine son épée longue.
-*"Je m'occupe de la Matriarche ! Vous, formez un périmètre ! Repoussez les petites, ne les laissez pas entrer dans l'auberge !"*
+> *« Vous. Les Fendeurs. Vous ne poursuivez rien au hasard. On tient la ville. »*
+> 
+> *« Trois points de crise sont signalés. Vous vous répartissez comme vous voulez, mais vous les traitez — vite. »*
 
-**Rencontre (Facile/Moyenne) :**
-- **Ennemis :** 2 ou 3 **Cisarelles Éclaireuses** (voir Statblock plus bas).
-- **Objectif :** Les empêcher de franchir la porte de l'auberge pendant 3 rounds ou les tuer.
-- **Ambiance :** En arrière-plan, décrivez Valerius qui pare des coups de mandibules géantes, son armure étincelant sous les coups.
+### Structure de session (semi-ouverte)
+Après ce point, les PJ peuvent choisir **l’ordre** dans lequel ils abordent les 3 rooms suivantes (**Room 2, Room 3, Room 4**). Chaque room apporte un **indice** exploitable immédiatement ou plus tard.
 
-## 4. Salle 3 : Le Choix Cornélien (Le Dilemme)
-**Rôle : Le Revers / La décision difficile**
+**Principe : le temps passe vraiment.** Si les PJ laissent une room “pour plus tard”, ils y arrivent quand le pire a déjà eu le temps de se produire (morts, enlèvements, pertes de matériel, propagation du feu…).
 
-Une fois les premiers ennemis vaincus, le chaos s'étend. Deux situations d'urgence se présentent simultanément à environ 30 mètres de distance, dans des directions opposées. Le groupe doit choisir ou se séparer (risqué).
+**Règle pratique (pour improviser) :** après chaque room résolue, fais avancer les autres rooms d’un cran sur une piste **Léger → Grave → Catastrophe**. Si les PJ arrivent dans une room au stade *Catastrophe*, ils ne peuvent plus “sauver” l’objectif : ils ne peuvent que limiter la casse et récolter des indices.
 
-*   **Option A : Le Feu aux Vivres.**
-    *   Une lanterne renversée a mis le feu à une réserve de grain temporaire. Si ça brûle, la nourriture sera perdue.
-    *   **Compétences :** *Athlétisme* (déplacer les sacs), *Survie/Artisanat* (étouffer le feu).
-    *   **Conséquence si ignoré :** Rationnement futur, grogne de la population.
+- **Room 2 :** une menace immédiate au contact des civils (tutoriel de chaos urbain).
+- **Room 3 :** un dilemme qui coûte quelque chose (ressources vs vies).
+- **Room 4 :** un point d’attraction de l’essaim (l’entrepôt).
+Aelys donne un dernier regard qui semble peser les PJ comme des outils.
 
-*   **Option B : Les Civils Piégés.**
-    *   Une Cisarelle tente de forcer la porte d'une habitation où une famille s'est barricadée. On entend des pleurs d'enfants.
-    *   **Compétences :** *Intimidation* (attirer l'aggro), *Attaque*, *Médecine* (si blessés).
-    *   **Conséquence si ignoré :** Mort de PNJ innocents, baisse de moral des troupes.
+> *« Ramenez-moi des faits. Pas des impressions. »*
 
-## 5. Salle 4 : La Dernière Vague (Le Climax)
-**Rôle : La Grande Bataille**
+## Room 2 — Point de crise : **le carrefour des quais**
+**Rôle : le Gardien (tenir une ligne, apprendre le tempo)**
 
-Peu importe leur choix, les PJ se retrouvent encerclés près de la place du marché. Le Capitaine Valerius est blessé (il tient son flanc en sang) mais la grosse femelle a reculé.
+Le quartier des quais est un désordre d’ombres et de cordages. Des caisses éventrées, des poissons qui battent encore, des cris. Une patrouille tente de contenir une brèche dans la foule.
 
-Cependant, un groupe de Cisarelles coordonnées fonce sur la position des PJ.
+- Enjeu : empêcher l’essaim de s’enfoncer vers les habitations.
+- Terrain : passerelles glissantes, chariots renversés, filets, coins étroits.
+- Indice : une Cisarelle capturée/assommée se met à **vibrer** ; à chaque vibration, celles plus loin changent de cap comme si elles recevaient un ordre muet.
 
-**Rencontre (Modérée) :**
-- **Ennemis :** Autant de **Cisarelles Éclaireuses** que de PJ (ou PJ + 1 si le groupe est à l'aise).
-- **Terrain :** Utiliser des caisses, des étals renversés comme couverture légère.
+**Si les PJ arrivent en dernier :**
+- La patrouille a reculé ; les quais sont perdus pour la nuit.
+- Plusieurs dockers/civils ont été **enlevés** (traînés vers l’eau ou les ruelles), et la rumeur se répand qu’“ils ont été pris vivants”.
+- Les pertes matérielles (cordages, salaisons, caisse d’outils) compliquent la logistique de la colonie.
 
-## 6. Salle 5 : Le Silence des Ailes (Conclusion & Récompense)
-**Rôle : La Révélation**
+## Room 3 — Le dilemme : **vivres ou vies**
+**Rôle : le Revers (ressource perdue, sang ou réputation)**
 
-Une corne de brume puissante retentit depuis le fort principal. Les Cisarelles restantes s'arrêtent, leurs antennes vibrent à l'unisson, et elles s'envolent brusquement vers le nord-ouest, disparaissant dans la nuit.
+Cette room représente une décision coûteuse. Les PJ peuvent la faire à n’importe quel moment, mais **plus ils tardent, plus la conséquence devient irréversible**.
 
-**Dénouement :**
-- Le silence retombe, brisé seulement par les gémissements des blessés et le crépitement du feu.
-- Valerius s'approche, essuyant sa lame. *"Bien battu. Vous avez du fer dans le sang."*
-- **Loot/Récompense :**
-    - Le Capitaine leur offre une prime immédiate (quelques pièces d'or).
-    - Accès à l'armurerie de la Concorde pour une pièce d'équipement de niveau 1.
-- **Accroche Acte 1 :** Valerius observe le ciel. *"Elles ne cherchaient pas à tuer. Elles testaient nos défenses. Et cette grosse... elle semblait obéir à quelque chose de plus grand."*
+### Option A — Le feu aux vivres (dépôt temporaire)
+Une lanterne brisée lèche déjà des **sacs de grain** et des caisses de salaisons. Le feu n’est pas grand, mais il est **rapide** et il mord dans ce qui maintient une colonie en vie.
 
+- Enjeu : sauver des rations = stabilité future de [[Port-Lointain]].
+- À jouer : évacuation, étouffement, triage des caisses, gestion de foule.
+- Indice : certaines Cisarelles ne cherchent pas à tuer ; elles tentent de **s’emparer** de morceaux précis (chair, abats, réserves), comme si l’essaim suivait un besoin logistique.
+
+**Si les PJ arrivent en dernier :**
+- Le dépôt a déjà brûlé : rations perdues, fumée âcre sur tout le quartier.
+- Les survivants accusent la Concorde d’avoir “laissé faire”, ce qui dégrade l’ambiance (et nourrit les tensions de faction).
+
+### Option B — Civils piégés (baraque de nouveaux arrivants)
+Une porte tient à peine. Une famille s’est barricadée ; à l’intérieur, un blessé gémit, et un enfant répète un prénom comme une prière.
+
+- Enjeu : sauver des vies = moral + confiance envers l’Expédition.
+- À jouer : extraction sous pression, premiers soins, protéger une retraite.
+- Indice : au moment où une Cisarelle est blessée, **toutes** celles aux alentours marquent une micro-pause (antennes figées), puis se repositionnent **en même temps**, comme si une décision unique avait traversé l’air.
+
+**Si les PJ arrivent en dernier :**
+- La porte a cédé. Les traces au sol montrent une lutte courte.
+- Les adultes sont probablement **morts** ; au moins une personne (un enfant ou un blessé) a été **enlevée**.
+- Un voisin choqué raconte avoir vu des silhouettes insectoïdes traîner quelqu’un “encore vivant”, sans se presser.
+
+> Note MJ : cet indice doit suggérer un **hive mind** sans l’expliquer. Décris une synchronisation “impossible” (silence, arrêt, pivot simultané), puis la panique reprend.
+## Room 4 — Point d’attraction : **l’entrepôt des salaisons**
+**Rôle : le Puzzle / découverte (pourquoi ici ?)**
+
+Quelque chose attire les Cisarelles vers un entrepôt de salaisons : barils, crochets, tables de découpe. On n’y trouve pas seulement de la nourriture : on y trouve des **traces d’organisation** chez l’ennemi.
+
+- Enjeu : comprendre le “pourquoi” (sans révéler le secret du Rituel).
+- À jouer : repousser une incursion **ciblée**, sécuriser les lieux, interroger témoins.
+- Indice : au plus fort de l’affrontement, l’essaim fait une chose contre-intuitive : il **se retire** de proies faciles pour converger sur un point précis (une carcasse, un tas d’abats, une viande saignée). Ce n’est pas la rage : c’est une **collecte**.
+
+**Si les PJ arrivent en dernier :**
+- L’entrepôt a été “vidé” : une partie des salaisons a disparu, mais surtout les bacs d’abats et de chair fraîche.
+- Les traces au sol dessinent des traînées parallèles, comme si plusieurs corps/charges avaient été tirés en cadence.
+- Indice fort hive mind : un survivant jure que, pendant une seconde, les Cisarelles se sont arrêtées *toutes ensemble*, puis ont repris “comme une seule bête”.
+> Lien de faction : les créatures sont des [[Cisarelles]] (page à créer/importer).
+## Room 5 — Climax : **la place du marché, puis le silence**
+**Rôle : le Boss + Révélation**
+
+Quand les PJ ont traité les rooms 2/3/4 (dans l’ordre qu’ils souhaitent), Aelys les fait converger vers la place du marché : c’est là qu’on tente de stabiliser la nuit.
+
+Au-dessus des étals renversés, une Cisarelle plus massive coordonne les attaques par micro-signaux (antennes, vibrations, stridulations), et les éclaireuses se déplacent comme des doigts d’une même main.
+
+### Révélation “hive mind” (à montrer, pas à dire)
+Au moment où cette “cheffe” est touchée/repoussée, **tout l’essaim stoppe**.
+- Les combats, les courses, les poursuites : arrêt net.
+- Une seconde de silence total — même les chiens ne jappent plus.
+- Puis, à l’unisson, les Cisarelles tournent la tête vers le nord-ouest… et décrochent.
+
+Une corne de brume retentit depuis le fort. Mais ce n’est pas cette corne qui les a rappelées : c’est juste le signal humain qui arrive **après** la décision de l’essaim.
+
+### Dénouement
+[[Commandant Aelys Tarn]] rejoint les PJ, inspecte les blessés, l’état des stocks, la panique.
+
+> *« Vous avez tenu. »* (pause)
+> 
+> *« Maintenant, vous allez me dire ce que vous avez vu. Et ce que vous n’arrivez pas à expliquer. »*
+
+- Récompenses : à définir plus tard (tu gèreras loot/XP).
+- Accroche : l’essaim n’a pas “attaqué” la ville ; il a **prélevé** quelque chose et testé les réactions.
+
+> Note MJ : ne révèle pas le “Rituel de Transmission”. Laisse seulement une impression de logistique, d’urgence, et de coordination.
 ---
 
-# Bestiaire de la Session
+# Notes combat (à faire plus tard)
+- Statblocks Cisarelles : à finaliser plus tard.
+- **À inclure : poison léthargique** (effets “ralentissement/somnolence”) dans les statblocks Cisarelles.
+- Adapter la difficulté à **Modérée**.
+- Prévoir terrains (quais, dépôt, entrepôt, marché).
 
-```pf2e-stats
-# Cisarelle Éclaireuse
-## Créature 0
----
-==N== ==Moyenne== ==Animal==
-
-**Perception** +6; vision nocturne
-**Compétences** Acrobaties +6, Athlétisme +5, Discrétion +6
-**For** +2, **Dex** +3, **Con** +1, **Int** -4, **Sag** +1, **Cha** -2
-
-**CA** 16; **Réf** +8, **Vig** +6, **Vol** +4
-**PV** 16
-
-**Vitesse** 9m, vol 6m
-
-**Corps à corps** [one-action] mandibules +7 (agile, finesse), **Dégâts** 1d6+2 tranchant
-**Corps à corps** [one-action] patte ravisseuse +7 (finesse), **Dégâts** 1d4+2 perforant plus saisie
-
-**Saisie de la Mante** [one-action] **Condition** La Cisarelle tente de saisir une créature qu'elle a touchée avec ses pattes ravisseuses lors du même tour (voir Saisie).
-
-**Bond Ailé** [two-actions] La Cisarelle Vole jusqu'à sa vitesse et porte une Frappe de mandibules à la fin du mouvement.
-```
-
-```pf2e-stats
-# Capitaine Valerius (Allié)
-## Niveau 3
----
-==LN== ==Moyenne== ==Humain== ==Humanoïde==
-
-**Perception** +9
-**Compétences** Athlétisme +10, Diplomatie +8, Guerre +7, Intimidation +8
-**For** +4, **Dex** +1, **Con** +3, **Int** +0, **Sag** +1, **Cha** +2
-
-**CA** 20 (cotte de mailles, bouclier); **Réf** +6, **Vig** +10, **Vol** +8
-**PV** 45
-
-**Vitesse** 7,5m
-
-**Corps à corps** [one-action] épée longue +11 (polyvalent P), **Dégâts** 1d8+4 tranchant
-**Réaction** [reaction] **Blocage au bouclier**
-```
+> Note MJ : les [[Cisarelles]] sont une **faction** (page à créer/importer).
