@@ -1,0 +1,36 @@
+{
+  "move-tags": true,
+  "tag-colors": [
+    {
+      "tagKey": "#priorite/faible",
+      "color": "",
+      "backgroundColor": "rgba(74, 119, 68, 1)"
+    },
+    {
+      "tagKey": "#priorite/moyenne",
+      "color": "",
+      "backgroundColor": "rgba(177, 105, 56, 1)"
+    },
+    {
+      "tagKey": "#priorite/forte",
+      "color": "",
+      "backgroundColor": "rgba(192, 16, 16, 1)"
+    },
+    {
+      "tagKey": "",
+      "color": "",
+      "backgroundColor": ""
+    }
+  ],
+  "tag-sort": [
+    {
+      "tag": "#priorite/forte"
+    },
+    {
+      "tag": "#priorite/moyenne"
+    },
+    {
+      "tag": "#priorite/faible"
+    }
+  ]
+}

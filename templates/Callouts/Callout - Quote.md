@@ -1,2 +1,2 @@
-> [!quote]- Quote
+> [!quote]+ Quote
 > TEXT

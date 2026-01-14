@@ -8,6 +8,8 @@
     "timelines": "multitext",
     "aat-render-enabled": "checkbox",
     "date_ig_debut": "text",
-    "date_ig_fin": "text"
+    "date_ig_fin": "text",
+    "region": "text",
+    "faction": "text"
   }
 }

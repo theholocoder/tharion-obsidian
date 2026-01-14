@@ -6,16 +6,23 @@ kanban-plugin: board
 
 ## Todo
 
-- [ ] Checklist post session pour vérifier que tout est dans les journaux, dans Obsidian, etc.
-- [ ] Dons Animanthrope niveau 5 sur foundry
-- [ ] Dons Animanthrope niveau 9 sur foundry
-- [ ] Dons Animanthrope niveau 13 sur foundry
-- [ ] Dons Animanthrope niveau 17 sur foundry
+- [ ] Reprendre la map sur Obsidian :
+	- importer des pins
+	- marquer les POI connus
+	- mettre les zones des factions 
+	
+	#priorite/moyenne
+- [ ] Checklist post session pour vérifier que tout est dans les journaux, dans Obsidian, etc. #priorite/moyenne
+- [ ] Dons Animanthrope niveau 5 sur foundry #priorite/faible
+- [ ] Dons Animanthrope niveau 9 sur foundry #priorite/faible
+- [ ] Dons Animanthrope niveau 13 sur foundry #priorite/faible
+- [ ] Dons Animanthrope niveau 17 sur foundry #priorite/faible
 
 
 ## In progress
 
-- [ ] IA : ajouter des "skills" pour chaque type de bloc pathfinder avec l'exemple markdown approprié
+- [ ] S001 première session #priorite/forte
+- [ ] IA : ajouter des "skills" pour chaque type de bloc pathfinder avec l'exemple markdown approprié #priorite/faible
 
 
 ## Done

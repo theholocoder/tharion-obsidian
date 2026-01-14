@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
+                "file": "Sessions/S001 - Port-Lointain.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,35 +62,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "00 - Hub"
-            }
-          },
-          {
-            "id": "594afd25155639bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Astronomie.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Astronomie"
+              "title": "S001 - Port-Lointain"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -259,19 +235,7 @@
             }
           },
           {
-            "id": "2331b0153b6fe05b",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "TODO.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for TODO"
-            }
-          },
-          {
-            "id": "ce6559cb43ceec37",
+            "id": "9294bbd48fa51349",
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM",
@@ -296,11 +260,23 @@
                   "displayWeather": true,
                   "location": ""
                 },
-                "id": "ID_9a19ea180aeb",
-                "child": "ID_da589868ab2a"
+                "id": "ID_ebf95a0afb6a",
+                "child": "ID_d8888858499b"
               },
               "icon": "CALENDARIUM",
               "title": "Calendarium"
+            }
+          },
+          {
+            "id": "2331b0153b6fe05b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Sessions/S001 - Port-Lointain.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for S001 - Port-Lointain"
             }
           }
         ],
@@ -325,18 +301,18 @@
         ]
       },
       {
-        "id": "3c82d17590e25ec8",
+        "id": "4bb7e2eb16d39b18",
         "type": "tabs",
         "children": [
           {
-            "id": "bf66ddc65304831b",
+            "id": "8a9fd28ef3ab85dc",
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM_AGENDA",
               "state": {
                 "calendar": "ID_492bfa5b2bc9",
-                "id": "ID_da589868ab2a",
-                "parent": "ID_9a19ea180aeb"
+                "id": "ID_d8888858499b",
+                "parent": "ID_ebf95a0afb6a"
               },
               "icon": "CALENDARIUM_AGENDA",
               "title": "Agenda"
@@ -346,7 +322,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 499.5
+    "width": 367.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -369,36 +345,37 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "b829cf950f3321b2",
+  "active": "d8151745c56b8fd1",
   "lastOpenFiles": [
-    "TODO.md",
-    "tharion-obsidian.zip",
-    "Lore/Astronomie.md",
-    "Lore/Chronologie.md",
-    "Sessions/S002 - Maximus.md",
-    "Lore/Calendrier/Era Concorda.md",
-    "Lore/Calendrier/Création de la Concorde de Kaerith.md",
-    "Sessions/Timeline des sessions.md",
     "Sessions/Liste des rumeurs.md",
-    "Lore/Panthéon.md",
-    "Lore/Panthéon (PF2e).md",
+    "Sessions/S001 - Port-Lointain.md",
+    "Sessions/S001 - Port-Lointain.md",
+    "IMAGES A GENERER.md",
+    "TODO.md",
+    "Session 01 - L'Essaim de Nyssor.md",
+    "Sessions/Timeline des sessions.md",
     "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
-    "AGENTS.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace/00 - Hub.md",
-    "Handouts/Handout - Dons d'Animanthrope.md",
-    "Handouts/Handout - Ligue de Veyra.md",
-    "templates/Elements/PF2/PF2e - Activité, Action.md",
+    "Lore/PNJ/Commandant Aelys Tarn.md",
+    "templates/PNJ.md",
+    "templates/Callouts/Callout - Quote.md",
+    "templates/PNJ/PNJ.md",
+    "templates/PNJ",
+    "Règles/PF2/Dons/Héritage/Sourire charmeur.md",
     "templates/Elements/PF2/PF2e - PNJ.md",
-    "templates/Elements/PF2/PF2e - Don.md",
-    "Règles/PF2/Dons/Héritage/Mâchoire de prédateur.md",
-    "Lore/Calendrier/Découverte de Nyssor.md",
-    "Kaerith.md",
-    "Lore/Lieux/Port-Lointain.md",
-    "Lore/Lieux/Nyssor.md",
-    "Lore/La Couronne Blanche.md",
-    "Sessions/S001 - Troopers.md",
+    "Règles/Hexploration.md",
+    "Handouts/Handout - Dons d'Animanthrope.md",
     "assets/feats/feat-sourire-charmeur.webp",
     "assets/feats",
+    "Tableaux/Marketplace.md",
+    "Tableaux/XP et Trésors par session.md",
+    "Règles/PF2/Dons/Héritage/Rage bestiale.md",
+    "Règles/PF2/Dons/Héritage/Réputation de la bête.md",
+    "Règles/PF2/Dons/Héritage/Sauve qui queue.md",
+    "Règles/PF2/Dons/Héritage/Rage furieuse.md",
+    "Règles/PF2/Dons/Héritage/Prédateur silencieux.md",
+    "Règles/PF2/Dons/Héritage/Magie-garou.md",
+    "Règles/PF2/Dons/Héritage/Mâchoire de prédateur.md",
+    "Règles/PF2/Dons/Héritage/Légende sanglante vivante.md",
     "Règles/PF2/Dons/Héritage",
     "Règles/PF2/Dons",
     "opencode.json~",

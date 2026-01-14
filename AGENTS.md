@@ -30,14 +30,14 @@ S'il y a une ambiguïté, tu peux demander au MJ (utilisateur) des précisions.
 5. Journaliser décisions majeures dans `[[Changelog]]`.
 
 # Pathfinder 2e (remaster)
-- Toujours préciser Niveau, Rareté, Alignement, Traits.
+- Toujours préciser Niveau, Rareté, Traits (JAMAIS d'alignement).
 - Utiliser blocs statiques PF2e (héritage, background, objet).
 - Citer sources officielles au besoin (`Source: GMG`).
 - Adapter créations (créatures, dons) aux mathématiques PF2e.
 - On utilise le remaster, alors **pas d'alignement** !
 
 # Campaign Notes
-- Ton « Âge des Glaces héroïque ».
+- Exploration du continent perdu de Nyssor (climats variés : forêts, plaines, arides, toundras) au-delà de la Couronne Blanche.
 - Thèmes : exploration, survie, chasse à reliques, rivalités de guildes.
 - Factions clés (à compléter depuis migration) : Fendeurs de Glace, etc.
 
