@@ -1,11 +1,11 @@
 <%*
 /**
  * Session template
- * - campagne: EFG
+ * - campagne: [[L'Expédition des Fendeurs de Glace]]
  * - numéro auto (max numero + 1) parmi Sessions/ de cette campagne
  * - nom final: "S### - <titre>"
  */
-const CAMP = "EFG";
+const CAMP = "[[L'Expédition des Fendeurs de Glace]]";
 const sessionsFolder = "Sessions/";
 
 // calcule prochain numéro
@@ -54,7 +54,7 @@ INPUT[textArea(title('Résumé de la session en 2-5 phrases max. ')):resume]
 ```
 
 ```meta-bind
-INPUT[listSuggester(title('Personnages'), useLinks(partial), allowOther):persos]
+INPUT[listSuggester(title('Personnages'), optionQuery('Campagnes/EFG/PJ'), useLinks(partial)):pjs]
 ```
 
 ---
@@ -65,7 +65,7 @@ INPUT[listSuggester(title('Personnages'), useLinks(partial), allowOther):persos]
 TABLE choice(length(resume) > 0, resume, "*Aucun résumé renseigné pour la session précédente.*") AS "Résumé"
 FROM "Sessions"
 WHERE type = "session"
-  AND campagne = "EFG"
+  AND campagne = "[[L'Expédition des Fendeurs de Glace]]"
   AND numero = this.numero - 1
 LIMIT 1
 ```

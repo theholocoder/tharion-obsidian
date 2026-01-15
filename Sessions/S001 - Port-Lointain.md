@@ -1,15 +1,16 @@
 ---
 type: session
-campagne: EFG
+campagne: "[[L'Expédition des Fendeurs de Glace]]"
 numero: 1
 code: S001
 date_irl: 2026-02-01
 date_ig_debut: 08/11/42
 date_ig_fin: 08/11/42
-persos: []
+pjs:
+  - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
 resume: ""
 updated: 2026-01-09
-termine: true
+termine: false
 ---
 ## Informations sur la session
 
@@ -20,7 +21,7 @@ INPUT[textArea(title('Résumé de la session en 2-5 phrases max. ')):resume]
 ```
 
 ```meta-bind
-INPUT[listSuggester(title('Personnages'), useLinks(partial), allowOther):persos]
+INPUT[listSuggester(title('Personnages'), optionQuery("Campagnes/EFG/PJ")):pjs]
 ```
 
 ---

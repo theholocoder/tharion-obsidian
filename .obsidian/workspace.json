@@ -42,7 +42,31 @@
             }
           },
           {
-            "id": "d8151745c56b8fd1",
+            "id": "c536bf5d73ff57ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Campagnes/EFG/00 - Hub.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "00 - Hub"
+            }
+          },
+          {
+            "id": "60272d37437277f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -273,10 +297,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain.md"
+                "file": "Campagnes/EFG/00 - Hub.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for S001 - Port-Lointain"
+              "title": "File properties for 00 - Hub"
             }
           }
         ],
@@ -326,7 +350,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "system3-relay:Relay": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -345,36 +368,38 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "d8151745c56b8fd1",
+  "active": "c536bf5d73ff57ca",
   "lastOpenFiles": [
-    "Session 01 - L'Essaim de Nyssor.md",
+    "Campagnes/EFG/PJ/Sylis et Sylorn.md",
+    "Campagnes/EFG/00 - Hub.md",
+    "Campagnes/EFG/PJ/Noctis.md",
+    "Campagnes/EFG/EFG Intro.md",
+    "Campagnes/EFG/PJ/Yoko.md",
+    "Campagnes/EFG/PJ/Voss Vitriox.md",
+    "Campagnes/EFG/PJ/Chiro Kono.md",
+    "Campagnes/EFG/PJ/Théobald Greyheart.md",
+    "Campagnes/EFG/PJ/Myca Libre-Spore.md",
+    "Campagnes/EFG/PJ/Lyra.md",
+    "Campagnes/EFG/PJ/Korvax Oeil-de-fer.md",
+    "Campagnes/EFG/PJ/Logan.md",
     "Sessions/S001 - Port-Lointain.md",
+    "Handouts/Handout - Dons d'Animanthrope.md",
+    "templates/PJ.md",
+    "templates/Session.md",
+    "templates/PNJ.md",
+    "Sessions/S002 - Sans titre.md",
+    "Campagnes/L'Expédition des Fendeurs de Glace/PJ/Hask.md",
+    "Campagnes/EFG/PJ",
+    "Session 01 - L'Essaim de Nyssor.md",
     "Sessions/Liste des rumeurs.md",
     "IMAGES A GENERER.md",
     "TODO.md",
     "Sessions/Timeline des sessions.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace/EFG Intro.md",
     "Lore/PNJ/Commandant Aelys Tarn.md",
-    "templates/PNJ.md",
     "templates/Callouts/Callout - Quote.md",
-    "templates/PNJ/PNJ.md",
     "templates/PNJ",
-    "Règles/PF2/Dons/Héritage/Sourire charmeur.md",
-    "templates/Elements/PF2/PF2e - PNJ.md",
-    "Règles/Hexploration.md",
-    "Handouts/Handout - Dons d'Animanthrope.md",
     "assets/feats/feat-sourire-charmeur.webp",
     "assets/feats",
-    "Tableaux/Marketplace.md",
-    "Tableaux/XP et Trésors par session.md",
-    "Règles/PF2/Dons/Héritage/Rage bestiale.md",
-    "Règles/PF2/Dons/Héritage/Réputation de la bête.md",
-    "Règles/PF2/Dons/Héritage/Sauve qui queue.md",
-    "Règles/PF2/Dons/Héritage/Rage furieuse.md",
-    "Règles/PF2/Dons/Héritage/Prédateur silencieux.md",
-    "Règles/PF2/Dons/Héritage/Magie-garou.md",
-    "Règles/PF2/Dons/Héritage/Mâchoire de prédateur.md",
-    "Règles/PF2/Dons/Héritage/Légende sanglante vivante.md",
     "Règles/PF2/Dons/Héritage",
     "Règles/PF2/Dons",
     "opencode.json~",
@@ -389,9 +414,8 @@
     "assets/maps/Port-Lointain.webp",
     "assets/pantheon",
     "assets/souffle-d-aranys",
-    "Campagnes/L'Expédition des Fendeurs de Glace",
+    "Campagnes/EFG",
     "Handouts",
-    "templates/Elements/PF2",
     "Untitled.canvas"
   ]
 }
