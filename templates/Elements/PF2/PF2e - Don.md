@@ -2,9 +2,11 @@
 type: pf2-feat
 pf2-feat-category: heritage
 pf2-level: 1
-pf2-traits: [homebrew]
-pf2-source: ""
-tags: [pf2, don]
+pf2-traits:
+pf2-source: Homebrew
+tags:
+  - pf2
+  - don
 ---
 
 ```pf2e-stats

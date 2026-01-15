@@ -25,8 +25,8 @@
                 }
               },
               "pinned": true,
-              "icon": "lucide-trello",
-              "title": "TODO"
+              "icon": "lucide-ghost",
+              "title": "kanban"
             }
           },
           {
@@ -240,8 +240,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -287,8 +287,8 @@
                 "id": "ID_ebf95a0afb6a",
                 "child": "ID_d8888858499b"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-ghost",
+              "title": "CALENDARIUM"
             }
           },
           {
@@ -370,8 +370,20 @@
   },
   "active": "c536bf5d73ff57ca",
   "lastOpenFiles": [
-    "Campagnes/EFG/PJ/Sylis et Sylorn.md",
+    "Sessions/S001 - Port-Lointain.md",
     "Campagnes/EFG/00 - Hub.md",
+    "Handouts/Handout - Historique Chasseur de Démons.md",
+    "Règles/PF2/Historiques/Chasseur de démons.md",
+    "templates/Elements/PF2/PF2e - Historique.md",
+    "templates/Elements/PF2/Chasseur de démons.md",
+    "templates/Session.md",
+    "templates/Elements/Rumeur.md",
+    "templates/Elements/PF2/PF2e - PNJ.md",
+    "templates/Elements/PF2/PF2e - Don.md",
+    "templates/Elements/PF2/PF2e - Activité, Action.md",
+    "Règles/PF2/Historiques",
+    "Handouts/Handout - Dons d'Animanthrope.md",
+    "Campagnes/EFG/PJ/Sylis et Sylorn.md",
     "Campagnes/EFG/PJ/Noctis.md",
     "Campagnes/EFG/EFG Intro.md",
     "Campagnes/EFG/PJ/Yoko.md",
@@ -382,21 +394,10 @@
     "Campagnes/EFG/PJ/Lyra.md",
     "Campagnes/EFG/PJ/Korvax Oeil-de-fer.md",
     "Campagnes/EFG/PJ/Logan.md",
-    "Sessions/S001 - Port-Lointain.md",
-    "Handouts/Handout - Dons d'Animanthrope.md",
     "templates/PJ.md",
-    "templates/Session.md",
     "templates/PNJ.md",
     "Sessions/S002 - Sans titre.md",
-    "Campagnes/L'Expédition des Fendeurs de Glace/PJ/Hask.md",
     "Campagnes/EFG/PJ",
-    "Session 01 - L'Essaim de Nyssor.md",
-    "Sessions/Liste des rumeurs.md",
-    "IMAGES A GENERER.md",
-    "TODO.md",
-    "Sessions/Timeline des sessions.md",
-    "Lore/PNJ/Commandant Aelys Tarn.md",
-    "templates/Callouts/Callout - Quote.md",
     "templates/PNJ",
     "assets/feats/feat-sourire-charmeur.webp",
     "assets/feats",
@@ -415,7 +416,6 @@
     "assets/pantheon",
     "assets/souffle-d-aranys",
     "Campagnes/EFG",
-    "Handouts",
     "Untitled.canvas"
   ]
 }
