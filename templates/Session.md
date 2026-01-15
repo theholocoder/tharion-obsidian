@@ -9,6 +9,7 @@ const CAMP = "[[L'Expédition des Fendeurs de Glace]]";
 const sessionsFolder = "Sessions/";
 
 // calcule prochain numéro
+// getMarkdownFiles renvoie TOUS les fichiers du vault, on filtre ceux qui sont dans Sessions/ (y compris sous-dossiers)
 const files = app.vault.getMarkdownFiles().filter(f => f.path.startsWith(sessionsFolder));
 
 let maxNum = 0;
@@ -16,7 +17,12 @@ for (const f of files) {
   const fm = app.metadataCache.getFileCache(f)?.frontmatter;
   if (!fm) continue;
   if (fm.type !== "session") continue;
-  if (fm.campagne !== CAMP) continue;
+  // On nettoie les guillemets éventuels autour du nom de campagne pour la comparaison
+  const fmCampagne = fm.campagne ? fm.campagne.replace(/^"|"$/g, '') : "";
+  const targetCamp = CAMP.replace(/^"|"$/g, '');
+  
+  if (fmCampagne !== targetCamp) continue;
+  
   const n = Number(fm.numero);
   if (!Number.isNaN(n)) maxNum = Math.max(maxNum, n);
 }
@@ -27,8 +33,16 @@ const code = "S" + String(numero).padStart(3, "0");
 const titre = await tp.system.prompt("Titre de la session (court, stable)", "");
 const safeTitre = (titre && titre.trim().length) ? titre.trim() : "Sans titre";
 
-// rename
-await tp.file.rename(`${code} - ${safeTitre}`);
+const baseName = `${code} - ${safeTitre}`;
+const newFolderPath = `${sessionsFolder}${baseName}`;
+
+// Création du dossier s'il n'existe pas
+if (!app.vault.getAbstractFileByPath(newFolderPath)) {
+    await app.vault.createFolder(newFolderPath);
+}
+
+// Déplacement du fichier courant dans le nouveau dossier
+await tp.file.move(`${newFolderPath}/${baseName}`);
 -%>
 ---
 type: session

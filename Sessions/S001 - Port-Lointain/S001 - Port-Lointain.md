@@ -8,6 +8,12 @@ date_ig_debut: 08/11/42
 date_ig_fin: 08/11/42
 pjs:
   - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
+  - "[[Campagnes/EFG/PJ/Chiro Kono.md|Chiro Kono]]"
+  - "[[Campagnes/EFG/PJ/Théobald Greyheart.md|Théobald Greyheart]]"
+  - "[[Campagnes/EFG/PJ/Voss Vitriox.md|Voss Vitriox]]"
+  - "[[Campagnes/EFG/PJ/Yoko.md|Yoko]]"
+  - "[[Campagnes/EFG/PJ/Lyra.md|Lyra]]"
+  - "[[Campagnes/EFG/PJ/Noctis.md|Noctis]]"
 resume: ""
 updated: 2026-01-09
 termine: false
@@ -103,6 +109,6 @@ Deux sous-sites, au choix (ou les PJ essaient de tout faire, au prix du temps) :
 - 
 
 ## À reporter / Prépa prochaine
-- Créer/importer la page [[Cisarelles]] (faction) + éléments sur le **Rituel de Transmission** (secret MJ).
+- Créer/importer la page [[Cisarelles]] (faction) + éléments sur le [[Rituel de Transmission]] (secret MJ).
 - Finaliser rencontres/terrains + statblocks (inclure poison léthargique).
 - Compléter [[Port-Lointain]] (note actuellement vide) avec quartiers/lieux utiles (quais, marché, entrepôts, palissade).

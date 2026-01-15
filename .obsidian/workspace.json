@@ -42,31 +42,7 @@
             }
           },
           {
-            "id": "c536bf5d73ff57ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Organisations/Cisarelles.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Cisarelles"
-            }
-          },
-          {
-            "id": "60272d37437277f5",
+            "id": "204aedc5ecb4dfd5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -90,7 +66,7 @@
             }
           },
           {
-            "id": "204aedc5ecb4dfd5",
+            "id": "85a264ba6ef01306",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -114,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -180,6 +156,7 @@
       {
         "id": "b83162bbcaabbe3c",
         "type": "tabs",
+        "dimension": 45.29058116232465,
         "children": [
           {
             "id": "d7a6bea1813f2cb2",
@@ -244,21 +221,6 @@
             }
           },
           {
-            "id": "a50b5c25152e53e2",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "TODO.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of TODO"
-            }
-          },
-          {
             "id": "8884ec69975e88fa",
             "type": "leaf",
             "state": {
@@ -266,20 +228,6 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
-            }
-          },
-          {
-            "id": "537d47d198cc581a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "templates/Événement Calendrier.md"
-              },
-              "pinned": true,
-              "icon": "lucide-info",
-              "title": "File properties for Événement Calendrier"
             }
           },
           {
@@ -308,32 +256,72 @@
                   "displayWeather": true,
                   "location": ""
                 },
-                "id": "ID_ebf95a0afb6a",
-                "child": "ID_d8888858499b"
+                "id": "ID_ebf95a0afb6a"
               },
               "icon": "CALENDARIUM",
               "title": "Calendarium"
             }
           },
           {
-            "id": "2331b0153b6fe05b",
+            "id": "89120b7eeed09030",
             "type": "leaf",
             "state": {
-              "type": "file-properties",
+              "type": "localgraph",
               "state": {
-                "file": "Lore/Lieux/Nyssor.md"
+                "file": "Lore/Lieux/Nyssor.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
               },
-              "icon": "lucide-info",
-              "title": "File properties for Nyssor"
+              "icon": "lucide-git-fork",
+              "title": "Graph of Nyssor"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       },
       {
         "id": "eb414f56f9b3a09f",
         "type": "tabs",
+        "dimension": 54.70941883767535,
         "children": [
+          {
+            "id": "a50b5c25152e53e2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Lore/Lieux/Nyssor.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Nyssor"
+            }
+          },
           {
             "id": "4f6c6f1bcb97ff7f",
             "type": "leaf",
@@ -346,30 +334,12 @@
               "title": "Source Control"
             }
           }
-        ]
-      },
-      {
-        "id": "4bb7e2eb16d39b18",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8a9fd28ef3ab85dc",
-            "type": "leaf",
-            "state": {
-              "type": "CALENDARIUM_AGENDA",
-              "state": {
-                "id": "ID_d8888858499b",
-                "parent": "ID_ebf95a0afb6a"
-              },
-              "icon": "CALENDARIUM_AGENDA",
-              "title": "Agenda"
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 367.5
+    "width": 409.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -385,17 +355,33 @@
       "obsidian-kanban:Create new board": false,
       "sheet-plus:Create excel file": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
-      "calendarium:Open Calendarium": false,
       "obsidian-git:Open Git source control": false,
       "fantasy-content-generator:Fantasy Generators": true,
-      "templater-obsidian:Templater": true
+      "templater-obsidian:Templater": true,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "6726be930f10ebb2",
+  "active": "4f6c6f1bcb97ff7f",
   "lastOpenFiles": [
-    "templates/Organisation - Faction.md",
+    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
     "Lore/Lieux/Port-Lointain.md",
     "Lore/Lieux/Nyssor.md",
+    "Lore/Astronomie.md",
+    "Campagnes/EFG/EFG Intro.md",
+    "assets/maps/Nyssor-small.webp",
+    "Campagnes/EFG/00 - Hub.md",
+    "Sessions/Liste des rumeurs.md",
+    "Sessions/S002 - Test/S002 - Test.md",
+    "Sessions/S002 - Test",
+    "templates/Session - Combat.md",
+    "templates/Session - Scène.md",
+    "Sessions/S001 - Port-Lointain",
+    "S001 - Port-Lointain",
+    "templates/Lieu.md",
+    "Règles/Hexploration.md",
+    "Lore/Panthéon.md",
+    "kelasha.md",
+    "templates/Organisation - Faction.md",
     "Campagnes/EFG/PJ/Chiro Kono.md",
     "assets/icons/Pins - You're Here, red (tower).png",
     "assets/icons/Pins - You're Here, red (tent).png",
@@ -406,7 +392,6 @@
     "assets/icons/Pins - You're Here, red (paw print sharp).png",
     "assets/icons/Pins - You're Here, red (paw print round).png",
     "assets/icons/Pins - You're Here, red (house).png",
-    "assets/icons/Pins - You're Here, red (coins).png",
     "assets/icons",
     "Règles/PF2/Historiques/Chasseur de démons.md",
     "Lore/Organisations/Cisarelles.md",
@@ -422,23 +407,8 @@
     "image1.md",
     "assets/organisations",
     "templates/Session.md",
-    "Sessions/S001 - Port-Lointain.md",
-    "Campagnes/EFG/00 - Hub.md",
-    "templates/Elements/PF2/PF2e - Historique.md",
     "Règles/PF2/Historiques",
-    "Handouts/Handout - Historique Chasseur de Démons.md",
-    "Campagnes/EFG/PJ/Sylis et Sylorn.md",
-    "Campagnes/EFG/PJ/Noctis.md",
-    "Campagnes/EFG/EFG Intro.md",
-    "Campagnes/EFG/PJ/Yoko.md",
-    "Campagnes/EFG/PJ/Voss Vitriox.md",
-    "Campagnes/EFG/PJ/Théobald Greyheart.md",
-    "Campagnes/EFG/PJ/Myca Libre-Spore.md",
-    "Campagnes/EFG/PJ/Lyra.md",
     "Campagnes/EFG/PJ",
-    "templates/PNJ",
-    "assets/feats",
-    "Règles/PF2/Dons/Héritage",
     "Untitled.canvas"
   ]
 }
