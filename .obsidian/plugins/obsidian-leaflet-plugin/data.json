@@ -1,53 +1,57 @@
 {
-  "mapMarkers": [
-    {
-      "id": "MapExample",
-      "lastAccessed": 1768216313579,
-      "markers": [
-        {
-          "id": "ID_99ba5ad93b2b",
-          "type": "default",
-          "loc": [
-            -3.58324619336725,
-            0.9915426880840591
-          ],
-          "link": "Port-Lointain",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.12394283601050739,
-            0.44790577417090627
-          ],
-          "description": null,
-          "minZoom": null,
-          "maxZoom": null,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [],
-      "files": [
-        "Lore/Lieux/Nyssor.md"
-      ]
-    }
-  ],
+  "mapMarkers": [],
   "defaultMarker": {
     "type": "default",
-    "iconName": "map-marker",
+    "iconName": "map-marker-alt",
     "color": "#dddddd",
     "transform": {
-      "size": 6,
+      "size": 15,
       "x": 0,
       "y": -2
     },
-    "isImage": false
+    "isImage": true,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAYCAYAAAAs7gcTAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7OHOkAAAM8SURBVDhPXZJbSBRhFMfPN7ed2dndmXUv7rrjaJukmZdKI9eMMAqiot56sId6iQgiMBC6PPgQ3XvooZcKgiDqoacQoSIkSjEsQS3pYkjaqpm3dLXV3Z2Zzje6Un3LNx+z8zv/8z/nOwT+XTy+5rhZx5YMMUpMgL6lTKYL/5vDbZIVlp55BYpyJNfpPLFW9WlOUYaJhdmlL5M/e+Kz89fmjVRrFtaiqvdMXUQ7UpsXdrk5FiRWAItY8HlmGl5+j4+8in8/T2G+SPE2bdMi57blRWTVIQDPMMACAQs/WvibWUrBnfe9wyQgy6FYKO/tLj1fy3XJIDCcjWVTUpsWRn2Zm10kqigePVFZda9E8RCP6ACC1N9gtv5kOp0miiC0Xt+xc6/C8+BAr5Sk6eliVk6qnLQMg4Rl13BzbHt+UBKBMNThMr2cYTnMxB4mTcMkutvz63R1jaK5JGAI1cIAGya4LTAtAhnDhGQGlQsU7+SxiipfseqyvTIImVQKFw2g2mnDgETGSJF1gdDAweINRdWK0/5I89Mg+qRnxjJRHaB9dGSBFKq+tkMV1fUb3QKwdurlXlioTnGDloCJbrzr+kFkQTjbsDl2scYjE5fArU6KbcUOJJBC+uTzp9eIKsuVMb3oTX0oJOZLPDB4e3QZWKXtCsfnzfiYdbP7bYyGymUhvWVfdG19mSoDt+J5tUAckFu93YPt8XgphbmgW2msCIauHtA14pOc9v2yLGMXODKfsG739TZ/np6+YFcjcVws6g89aCgujhY4EbZbiBsfT74OGK9Hv9XG55Jd2THwrfGHL28NBI7t1jTgUZXCeKXw+NPH522DA4cTAJOrM+MR5YaoP3Dr+Poyr8Iz2FsLvs3NWs+Ghk69jg/dpnfz94AFC/3BR3VhrX6/rhPTMqBzbHT84cf+hqnFxTa74NXGokUnJzTrOYGmxk2VEoN9bh8da7nf33scmbH/YfpelOtRX9SGIwXVAX/qTv+HuzmF+iVRFGc6OzuTtnJpaamgqmo4nRa8w8Nf95i/E0d1t5ub5MUrmqb1mObSIMLTWRtseXmdR5IYlWEs79TUr5zF+QSbG/EPOByOiY6OjgXUNP8A4Vol0cxUeSAAAAAASUVORK5CYII="
   },
-  "markerIcons": [],
+  "markerIcons": [
+    {
+      "type": "cave",
+      "iconName": "map-marker-alt",
+      "color": "#dddddd",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 2,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": true,
+      "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAYCAYAAAAs7gcTAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7OHOkAAAORSURBVDhPXZN9aBt1GMef313uLZd7y0svaZIlabIa0zc3abElVYuKssnAv5RN2BDGEERUGPjyxxDRacH/htAJgiCo/wljWusYw660a1fWTt1oI7FmWdKy2Ca5ZE0uuTt/F62oBw/H8/w+z3PP8/09h+C/D4Vdt8Aww23DSJoAN5vt9iKOVbGZ6G/WfndHJOm4ynEvJ9y+EMMwsF3Tmmt/lFbyNW2ypusX9+BQj6y8mQ6GjqcDfpeTYoAhCEAEwNpOGa7kc3dn79x5x4aphKKcHusOvZ3uDvAKw+IQAcXdOogUBRJNQUXXYWp1NYd8PO8f8weXngiHQ6rLCS3c6Ey1DMHBPjAqGijFTdjPC5DVKg3kYdkTJ4cOftYnK6hutuA6rtY7ngaKY8EyTCisZ4DGNujkW8hNMxfPPvbkIZki4dK9EiSeOwxOlwimaQHgJrUaLjDzLTwv8Aby867cu4+MhwWOgR8JE+KPpkFvtiGbzYMoS+ByKnBj6Ro8rVdMFBHk8hsPD0uMi4Ot/T0gR6Pw3fQPoPrjwLIM0A4a7tfvg/vWNQNFRXfppaGHPATjAO3BfnB6vDB1/hM40HcQzIatCA29ogTcdklHSZ8/c6Q3lfCzDliuVkHkBGDMJuzjnECaBiDcuoIvaKFYrKOQ4r384sDIRL9Agd5uAYkvgyFJPJtlz4cHxVpi3SeXlzaRQNNvvXBg7P1hyYnsTwLChxYuZ5t9hTipidNe+X56Esk8PzQaji887lfZMM8A2QEwYldEf23D0uaW9fHy4qjt8f3d+y4cisUnBiUXhjvydsyGLYuwzq1cz169m0/ZMUeXIL0+6FM/OhKJIDfW2x6KJPEi4cO8VrPOr66cWStvv9cpwDkco3GP+sWxB5I9YbwfNmx3QBIIvslkjNncxlh+d3dxb0U9MW/g7EiX7+RT4SCwyFbDFoGAr9Zvz1z5NXNMAyjtwSCy/NEer+/cqWRSkWhbFYDfdirW9MbGq7OF36dwausfGDtdEY/65XjAP/FsNIZMy4SFQmHr69s/H91qNC535v3XL0iwNH0mpnhOvzY0zBGWDlcLhQuf/3LzFGaK/4dtP6GK8qXRQDAy4vXoU7d++tQdjX7AsuzO/Pz8bqdyKpWiZVkOtFq0kttYf8ZoaCcigugoUdyHoVBsxTRrWQxv77VBDgykRY4jZMOwlGq17G40NFJVQxmGse7Nzc3V7TX5E3K8PkUrYcVyAAAAAElFTkSuQmCC",
+      "tags": [],
+      "minZoom": null,
+      "maxZoom": null
+    },
+    {
+      "type": "house",
+      "iconName": "map-marker-alt",
+      "color": "#dddddd",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 1,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": true,
+      "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAYCAYAAAAs7gcTAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7OHOkAAAOgSURBVDhPXVRbbBtFFD3jtXfXXtu7Xide21k/2hiSGqVGCUFJE0BRW2iLKvoHTYFWQlUFHwiQKvH4KBKCQvngpz8FgYQEAv4QVdQqhSrQVEncIJr0oSYOqZzYTlzs1Imdxs9dxhZGgtGMRmfmzNG5984MwX+biULZxnC9VVLr1IDZUrUapWsbdGjkH2599gZE8ahitrwacsgqx5mR3cyX5rOZ64lC/kyhXB5pktWQJL09oPqPDrg9VouRAcswYAjBXC6HsUQi+dty/L062RQSHScHVPXdQa9XcLAcKkTD7EYBEiU7ORY6CL68cWOJtAqCu9/ddm23z6d6LRYwVPFCOoUt70PIphLgtCr2igIeVMtF4uT5Y8cj3V+FRYnYOBNi63ncVlSk19ZRLNWQubeClz0iVKulQmSWGzn91J4DosmA1eIWflp/gNagD4cPH8Lk1Axmp/+Edz2OvV6lRtyCden9vid8Fo7BD4sLEMM9OPLSAdhsHJKpTUQv/gpH8i7aBYtGAjYp91ZPr9hi4fFLYhme3YPYf/BJxGIpMEYRy1fGod7LQNcqNRK0y5lXIhFnh2hHplSC64VnILcpuDAyjVBnB9JXx+G/n0OpVi2Th1vdsUMdO0LdohW5chWlgTCKBgajo9dgqpXRQXPbI8mYWkluElVyXh7e2TP0qI1HtVpDGhoEA0BqOugEljDgaTo//X1qldhY9p3nu/s/7LMJxGoyos6oV0rXNOiEAh2o6hpeu3TxDJEEIdLnb58cUtx8gAZJaNVAdOg6HY1TBNH0qv7ZdLS/DoVHvP7zzwbbh3ZS3wxVI7Tc9dbg0n525o/F8UQiXMdGl018s6tV+eS5gJ/IZjMVpn4ZQ8NzMr+hn5uZPTWXW/ugcevMRmP/dqfyzYsdndt9VkvdBVUHGAPBj7H52pWl+K7E1la0eUWd21qU070u1/GnVRU8TV1jg0p/P39ndGxh4UgeyDTJsPPCMFU/e2JHp0NkaVaolbsb6/qlePz1sUT8HD1a+ZdMgSvoVL4b8HqGDvqDNEQNk8lU+ts7N4ezxeLlZsDNV2jgWfbUNkk++UbkcbMBFYynls9/fevmCUpY+T+5jkOKXfx5l9sXeKzVWf781uwXvBL8SJb5+xMTE1sNG+FwmJUkyVOpsI6lpfl92mbhmN9uN2ZMpo8VJXCdKZQWJ25PrDU9M11dg3ZiNkgmg+7YyObkYiHPKG0tsXye+2tu7upm/Sv4Gws1TMlqfBO7AAAAAElFTkSuQmCC",
+      "tags": [],
+      "minZoom": null,
+      "maxZoom": null
+    }
+  ],
   "color": "#dddddd",
   "lat": 39.983334,
   "long": -82.98333,
-  "notePreview": false,
+  "notePreview": true,
   "layerMarkers": true,
   "previousVersion": "6.0.5",
   "version": {
@@ -89,7 +93,7 @@
     "osmLayer": true,
     "overlay": [],
     "overlayColor": "blue",
-    "scale": 0.03,
+    "scale": 33,
     "showAllMarkers": false,
     "tileServer": [],
     "verbose": false,
@@ -97,9 +101,9 @@
     "zoomFeatures": false,
     "id": "MapExample",
     "width": "95%",
-    "lat": 200,
-    "long": 2048,
-    "unit": "km",
+    "lat": 45,
+    "long": 35,
+    "unit": "mi",
     "filterTag": []
   },
   "enableDraw": true,

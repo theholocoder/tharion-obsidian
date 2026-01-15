@@ -1,4 +1,7 @@
 {
   "cssTheme": "ITS Theme",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "bigger-markers"
+  ]
 }

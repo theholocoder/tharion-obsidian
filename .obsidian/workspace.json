@@ -25,8 +25,8 @@
                 }
               },
               "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "kanban"
+              "icon": "lucide-trello",
+              "title": "TODO"
             }
           },
           {
@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campagnes/EFG/00 - Hub.md",
+                "file": "Lore/Organisations/Cisarelles.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "00 - Hub"
+              "title": "Cisarelles"
             }
           },
           {
@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain.md",
+                "file": "Lore/Lieux/Nyssor.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "S001 - Port-Lointain"
+              "title": "Nyssor"
+            }
+          },
+          {
+            "id": "204aedc5ecb4dfd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/Lieux/Port-Lointain.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Port-Lointain"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +146,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Cisarelles",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -240,8 +264,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -287,8 +311,8 @@
                 "id": "ID_ebf95a0afb6a",
                 "child": "ID_d8888858499b"
               },
-              "icon": "lucide-ghost",
-              "title": "CALENDARIUM"
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
             }
           },
           {
@@ -297,10 +321,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Campagnes/EFG/00 - Hub.md"
+                "file": "Lore/Lieux/Nyssor.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 00 - Hub"
+              "title": "File properties for Nyssor"
             }
           }
         ],
@@ -334,7 +358,6 @@
             "state": {
               "type": "CALENDARIUM_AGENDA",
               "state": {
-                "calendar": "ID_492bfa5b2bc9",
                 "id": "ID_d8888858499b",
                 "parent": "ID_ebf95a0afb6a"
               },
@@ -351,71 +374,71 @@
   "left-ribbon": {
     "hiddenItems": {
       "templates:Insert template": false,
-      "switcher:Open quick switcher": false,
+      "switcher:Open quick switcher": true,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
-      "fantasy-content-generator:Fantasy Generators": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "sheet-plus:Create excel file": false,
-      "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
+      "calendarium:Open Calendarium": false,
+      "obsidian-git:Open Git source control": false,
+      "fantasy-content-generator:Fantasy Generators": true,
+      "templater-obsidian:Templater": true
     }
   },
-  "active": "c536bf5d73ff57ca",
+  "active": "6726be930f10ebb2",
   "lastOpenFiles": [
+    "templates/Organisation - Faction.md",
+    "Lore/Lieux/Port-Lointain.md",
+    "Lore/Lieux/Nyssor.md",
+    "Campagnes/EFG/PJ/Chiro Kono.md",
+    "assets/icons/Pins - You're Here, red (tower).png",
+    "assets/icons/Pins - You're Here, red (tent).png",
+    "assets/icons/Pins - You're Here, red (swords).png",
+    "assets/icons/Pins - You're Here, red (star).png",
+    "assets/icons/Pins - You're Here, red (skull).png",
+    "assets/icons/Pins - You're Here, red (ruins).png",
+    "assets/icons/Pins - You're Here, red (paw print sharp).png",
+    "assets/icons/Pins - You're Here, red (paw print round).png",
+    "assets/icons/Pins - You're Here, red (house).png",
+    "assets/icons/Pins - You're Here, red (coins).png",
+    "assets/icons",
+    "Règles/PF2/Historiques/Chasseur de démons.md",
+    "Lore/Organisations/Cisarelles.md",
+    "Session 01 - L'Essaim de Nyssor.md",
+    "Lore/Organisations/Royaume d'Halvorn.md",
+    "Lore/Organisations/République de Thaldris.md",
+    "Lore/Organisations/Ordre de Myrr.md",
+    "Lore/Organisations/Concorde de Kaerith.md",
+    "Lore/Organisations/Ligue de Veyra.md",
+    "assets/factions/cisarelles",
+    "assets/factions",
+    "assets/organisations/cisarelles",
+    "image1.md",
+    "assets/organisations",
+    "templates/Session.md",
     "Sessions/S001 - Port-Lointain.md",
     "Campagnes/EFG/00 - Hub.md",
-    "Handouts/Handout - Historique Chasseur de Démons.md",
-    "Règles/PF2/Historiques/Chasseur de démons.md",
     "templates/Elements/PF2/PF2e - Historique.md",
-    "templates/Elements/PF2/Chasseur de démons.md",
-    "templates/Session.md",
-    "templates/Elements/Rumeur.md",
-    "templates/Elements/PF2/PF2e - PNJ.md",
-    "templates/Elements/PF2/PF2e - Don.md",
-    "templates/Elements/PF2/PF2e - Activité, Action.md",
     "Règles/PF2/Historiques",
-    "Handouts/Handout - Dons d'Animanthrope.md",
+    "Handouts/Handout - Historique Chasseur de Démons.md",
     "Campagnes/EFG/PJ/Sylis et Sylorn.md",
     "Campagnes/EFG/PJ/Noctis.md",
     "Campagnes/EFG/EFG Intro.md",
     "Campagnes/EFG/PJ/Yoko.md",
     "Campagnes/EFG/PJ/Voss Vitriox.md",
-    "Campagnes/EFG/PJ/Chiro Kono.md",
     "Campagnes/EFG/PJ/Théobald Greyheart.md",
     "Campagnes/EFG/PJ/Myca Libre-Spore.md",
     "Campagnes/EFG/PJ/Lyra.md",
-    "Campagnes/EFG/PJ/Korvax Oeil-de-fer.md",
-    "Campagnes/EFG/PJ/Logan.md",
-    "templates/PJ.md",
-    "templates/PNJ.md",
-    "Sessions/S002 - Sans titre.md",
     "Campagnes/EFG/PJ",
     "templates/PNJ",
-    "assets/feats/feat-sourire-charmeur.webp",
     "assets/feats",
     "Règles/PF2/Dons/Héritage",
-    "Règles/PF2/Dons",
-    "opencode.json~",
-    "assets/souffle-d-aranys/souffle-aranys-7.webp",
-    "assets/souffle-d-aranys/souffle-aranys-6.webp",
-    "assets/souffle-d-aranys/souffle-aranys-5.webp",
-    "assets/souffle-d-aranys/souffle-aranys-4.webp",
-    "assets/souffle-d-aranys/souffle-aranys-3.webp",
-    "assets/souffle-d-aranys/souffle-aranys-2.webp",
-    "assets/souffle-d-aranys/souffle-aranys-1.webp",
-    "assets/souffle-d-aranys/1.webp",
-    "assets/maps/Port-Lointain.webp",
-    "assets/pantheon",
-    "assets/souffle-d-aranys",
-    "Campagnes/EFG",
     "Untitled.canvas"
   ]
 }

@@ -10,7 +10,7 @@ mapCalc1: 0
 ## Carte
 
 ```leaflet  
-id: MapExample  
+id: nyssor-map  
 image: [[Nyssor.webp]]
 height: 850px
 width: 95%
@@ -19,6 +19,8 @@ long: 35
 unit: mi
 scale: 33 # px/units
 defaultZoom: 7
+marker:
+  - default,-3.600968306175209,1.0433735307798118,[[Port-Lointain]],,,
 ```
 
 ## Lieux attachés
