@@ -89,40 +89,69 @@ tR += `tags:\n`;
 for (const t of tags) tR += `  - ${t}\n`;
 
 tR += `updated: ${updated}\n`;
+tR += `reputation: 0\n`;
 
 tR += `---\n`;
 %>
-> *Pitch en 1 phrase : ce que c’est + pourquoi c’est important pour l’Expédition.*
 
-## Identité
-- **Catégorie :** `<% categorie %>`
-- **Symbole / couleurs :** 
-- **Devise :** 
+```meta-bind
+INPUT[progressBar(title('Réputation de la Concorde'), minValue(-100), maxValue(100), defaultValue(0), stepSize(1)):reputation]
+```
+
+> *« Citation ou rumeur définissant la faction. »*
+
+![[Image.webp|banner]]
+
+## Résumé
+
+![[Image.webp|loc left profile medium]]
+
+| Type de faction   | Cohésion | Méthodes |
+| ----------------- | -------- | -------- |
+| <% categorie %> | Moyenne  | ...      |
+*Description générale de la faction, son apparence et sa "vibe".*
 
 ## Buts & méthodes
-- **Objectifs (publics) :**
-- **Objectifs (réels) :**
-- **Méthodes :**
-- **Lignes rouges :**
+
+|                            |                                                                                                  |
+| -------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Court terme**            | - <br>-                                                                                          |
+| **Long terme**             | - <br>-                                                                                          |
+| **Tabous / lignes rouges** | -                                                                                                |
 
 ## Territoire & influence
-- **Base / siège :**
-- **Zone d’influence :**
-- **Ressources clés :**
+
+```leaflet  
+id: <% id %>-map  
+lock: true
+darkMode: false
+image: [[Nyssor.webp]]
+bounds: [[0,0], [4096,4096]]
+height: 400px
+width: 95%
+lat: 2048
+long: 2048
+unit: km
+scale: 1
+minZoom: -2
+maxZoom: 2
+defaultZoom: 0
+zoomDelta: 0.5
+```
 
 ## Organisation interne
-- **Dirigeant(e) :**
-- **Figures importantes :**
-- **Rangs / titres :**
+
+*Description de la structure hiérarchique et du fonctionnement interne.*
+
+| Caste / Rang | Rôle | Description | Particularité |
+| ------------ | ---- | ----------- | ------------- |
+| **Chef**     | ...  | ...         | ...           |
+| **Membre**   | ...  | ...         | ...           |
 
 ## Relations
 - **Alliés :**
 - **Rivaux :**
 - **Neutres / opportunistes :**
-
-## Accroches (prêtes à jouer)
-- 
-- 
 
 ## Notes MJ
 > [!gm] Secrets, leviers, plans

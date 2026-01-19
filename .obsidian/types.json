@@ -10,6 +10,8 @@
     "date_ig_debut": "text",
     "date_ig_fin": "text",
     "region": "text",
-    "faction": "text"
+    "faction": "text",
+    "pv": "number",
+    "ca": "number"
   }
 }

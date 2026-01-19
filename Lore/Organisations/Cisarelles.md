@@ -21,13 +21,12 @@ INPUT[progressBar(title('Réputation de la Concorde'), minValue(-100), maxValue(
 
 ## Résumé
 
+![[blason-cisarelles.webp|loc left profile medium]]
+
+| Type de faction | Cohésion | Méthodes              |
+| --------------- | -------- | --------------------- |
+| clan            | forte    | intimidation, pillage |
 Les Cisarelles sont une faction de Mantes Géantes, organisées selon un système matriarcal strict. Ces insectes intelligents se perçoivent comme un seul être réparti en milliers de corps. Chaque Mantis remplit sa fonction sans ambition ni individualité : le concept même de “moi” leur est étranger.
-
-## Identité
-
-| Blason                           | Type de faction | Cohésion | Méthodes              |
-| -------------------------------- | --------------- | -------- | --------------------- |
-| ![[blason-cisarelles.webp\|100]] | clan            | forte    | intimidation, pillage |
 
 ## Buts & méthodes
 
@@ -38,9 +37,24 @@ Les Cisarelles sont une faction de Mantes Géantes, organisées selon un systèm
 | **Tabous / lignes rouges** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## Territoire & influence
-- **Base / siège :**
-- **Zone d’influence :**
-- **Ressources clés :**
+
+```leaflet  
+id: cisarelles-influence-map  
+lock: true
+darkMode: false
+image: [[Nyssor.webp]]
+bounds: [[0,0], [4096,4096]]
+height: 400px
+width: 95%
+lat: 1639.1682
+long: 1059.3901
+unit: km
+scale: 0.16853932584269662
+minZoom: -2
+maxZoom: 2
+defaultZoom: 0
+zoomDelta: 0.5
+```
 
 ## Organisation interne
 
@@ -70,10 +84,6 @@ Les mâles, eux, sont considérés comme plus sacrifiables. Leurs droits sont qu
 - **Alliés :**
 - **Rivaux :**
 - **Neutres / opportunistes :**
-
-## Accroches (prêtes à jouer)
-- 
-- 
 
 ## Notes MJ
 > [!gm] Secrets, leviers, plans
