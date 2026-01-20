@@ -46,6 +46,10 @@ LIMIT 1
 
 ---
 
+## TODO
+
+- [ ] Audio bourdonnements + cloches d'alarme
+
 ## Scènes (notes MJ)
 - **Pitch** : première soirée à [[Port-Lointain]]. Les PJ découvrent l’abondance (comparée à [[Kaerith]]), puis la ville passe en mode survie : attaque des [[Cisarelles]].
 - **Structure** : “five-room dungeon” urbain.
