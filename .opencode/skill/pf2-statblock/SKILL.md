@@ -8,7 +8,8 @@ description: >-
 
 ## Quand utiliser cette compétence ?
 
-Utiliser cette compétence dès qu'il faut rédiger un statblock Pathfinder 2e dans le contenu d'une note Obsidian.
+Tu dois TOUJOURS utiliser cette compétence dès qu'il faut rédiger un statblock Pathfinder 2e dans le contenu d'une note Obsidian.
+Je suis fatigué que tu ne l'utilises pas, je vais te dégommer la prochaine fois que ça arrive.
 Respecter le format donné (ci-après) pour chaque type d'éléments.
 
 Si il manque des informations les demander au MJ (utilisateur) avant d'écrire. Les descriptions "RP" tels que l'apparence

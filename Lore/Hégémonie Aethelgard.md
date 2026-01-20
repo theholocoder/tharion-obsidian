@@ -36,7 +36,7 @@ Lorsque les astronomes, menés par le Haut-Architecte [[Varkesh, le Héraut du S
 ### 1. Les Ascensionnistes
 L'élite intellectuelle, les scientifiques et l'armée.
 *   **Credo :** "La technologie peut vaincre les astres."
-*   **Projet :** Ils refusaient de fuir. Ils voulaient mettre en œuvre le **Projet Silence** (détruire ou repousser le soleil) ou, à défaut, survivre dans des bunkers de stase et des stations orbitales.
+*   **Projet :** Ils refusaient de fuir. Ils voulaient mettre en œuvre le **Projet Silence** (détruire ou repousser le soleil). Ils acceptaient l'idée de sacrifier la population biologique ("le bétail") pour ne sauver que l'élite intellectuelle sous forme d'esprit numérisé ou d'ADN stocké, attendant des millénaires que la planète se régénère.
 *   **Leader :** [[Varkesh, le Héraut du Silence]].
 
 ### 2. Les Pèlerins (Ancêtres de la Concorde)

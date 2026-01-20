@@ -25,7 +25,9 @@ mapCalc1: 0
 > Scale: `VIEW[1/({scale_pixels}/{scale_pixels_range})][math:mapCalc1]`
 
 ```leaflet  
-id: MapExample  
+id: example-map
+lock: true
+darkMode: false
 image: [[Nyssor.webp]]
 bounds: [[0,0], [4096,4096]]
 height: 850px

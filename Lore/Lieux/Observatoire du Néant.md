@@ -30,6 +30,7 @@ C'est ici que [[Varkesh, le Héraut du Silence]] s'est réveillé de son stase e
 
 *   **Le Sarcophage d'Ether** : La salle où Varkesh a dormi pendant 2500 ans.
 *   **Le Grand Télescope** : Une arme autant qu'un instrument scientifique. Il permet à Varkesh de calculer la trajectoire exacte pour le [[Mangeur d'Astre]].
+*   **L'Arche Génétique** : Une banque de données immense contenant l'ADN de millions d'espèces (éteintes et actuelles) ainsi que les "Schémas d'Esprit" des citoyens d'Aethelgard. C'est la seule chose que Varkesh compte sauver de l'apocalypse thermique.
 *   **Les Laboratoires de Vide** : Des zones dépressurisées où l'on étudie les effets du vide spatial sur la matière organique.
 
 ## Notes MJ

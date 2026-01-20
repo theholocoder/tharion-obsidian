@@ -335,6 +335,198 @@
         "Lore/Lieux/Nyssor.md",
         "Lore/Organisations/Cisarelles.md"
       ]
+    },
+    {
+      "id": "map-port-lointain",
+      "locked": false,
+      "lastAccessed": 1768871807072,
+      "markers": [
+        {
+          "id": "ID_9bfa9bdba9cb",
+          "type": "Bourg - Quartier",
+          "loc": [
+            892.568402006821,
+            651.8328680651646
+          ],
+          "link": "Port-Lointain#Le Rempart (Centre-Ville)",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.6365555352198873,
+            -1.162198440113048
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_9b99594978da",
+          "type": "Bourg - Quartier",
+          "loc": [
+            1048.3665745347419,
+            465.44014914582647
+          ],
+          "link": "Port-Lointain#L'Ancrage (Les Docks)",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.45453139565022116,
+            -1.3650606439254451
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ca0888182aeb",
+          "type": "Bourg - Quartier",
+          "loc": [
+            1169.4640373591199,
+            922.8719933880682
+          ],
+          "link": "Port-Lointain#La Citadelle Blanche",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.9012421810430353,
+            -1.5227396319780206
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_89e958b8ea59",
+          "type": "Bourg - Quartier",
+          "loc": [
+            1471.4537350406854,
+            1174.5771042973183
+          ],
+          "link": "Port-Lointain#[[Fosse-Claire]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            1.14704795341535,
+            -1.9159553841675592
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_3acad9da29aa",
+          "type": "Bourg - Quartier",
+          "loc": [
+            888.0505692508874,
+            238.1159498005366
+          ],
+          "link": "Port-Lointain#Les Hautes-Terrasses",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.23253510722708653,
+            -1.1563158453787596
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_d80a6a19881a",
+          "type": "Bourg - Quartier",
+          "loc": [
+            677.4276055971031,
+            797.9620557247783
+          ],
+          "link": "Port-Lointain#[[La Noue]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.7792598200437288,
+            -0.8820671947878947
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_1b5a3a289a0a",
+          "type": "Bourg - Quartier",
+          "loc": [
+            337.81333728161195,
+            416.2437372458067
+          ],
+          "link": "Port-Lointain#[[Bois-Moulin]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.4064880246541081,
+            -0.4398611162520989
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_a8c8cb498be9",
+          "type": "Bourg - Quartier",
+          "loc": [
+            581.0805726396864,
+            1901.0131732495997
+          ],
+          "link": "Port-Lointain#[[Brèche-Rive]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            1.8564581770015622,
+            -0.7566153289579249
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_2af84b8aea39",
+          "type": "Bourg - Taverne",
+          "loc": [
+            909.7442412945985,
+            736.3068048647713
+          ],
+          "link": "L'Hydre à Deux Choppes",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.7190496141257532,
+            -1.1845628141856752
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Lore/Lieux/Port-Lointain.md"
+      ]
     }
   ],
   "defaultMarker": {
@@ -429,6 +621,38 @@
       "tags": [],
       "minZoom": null,
       "maxZoom": null
+    },
+    {
+      "type": "Bourg - Quartier",
+      "iconName": "map-pin",
+      "color": "#ffffff",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 15,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": 0,
+      "maxZoom": 3
+    },
+    {
+      "type": "Bourg - Taverne",
+      "iconName": "beer",
+      "color": "#2edc50",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 15,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": 0,
+      "maxZoom": 3
     }
   ],
   "color": "#dddddd",
