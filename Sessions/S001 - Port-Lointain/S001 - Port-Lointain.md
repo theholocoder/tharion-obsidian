@@ -94,7 +94,12 @@ Deux sous-sites, au choix (ou les PJ essaient de tout faire, au prix du temps) :
 
 ### Notes combat (à faire plus tard)
 - Difficulté visée : **Modérée**.
-- **À inclure dans les statblocks Cisarelles : poison léthargique** (somnolence/ralentissement).
+
+#### Snatchers
+1 [[Arracheuse Cisarelle]], 2 [[Chasseur Cisarelle]] et 1 [[Brute Cisarelle]]
+
+#### Mutalide
+
 
 ## Événements / Décisions
 - Les PJ choisissent l’ordre de résolution des crises (Room 2/3/4).

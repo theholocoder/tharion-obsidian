@@ -34,7 +34,7 @@ Les Cisarelles sont une faction de Mantes Géantes, organisées selon un systèm
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Court terme**            | - Assurer la survie du Psylith.<br>- Récupérer de la nourriture pour la colonie et pour la Primus.                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Long terme**             | - Détruire ceux qui ne peuvent entrer dans le Psylith, sauf s'ils lui sont utile.<br>- Dominer Nyssor en implantant des colonies dans chaque région.<br>- La [Primus](app://obsidian.md/Primus) est mourrante, les [Mentalides](app://obsidian.md/Mentalides) se préparent au [Rituel de Transmission](app://obsidian.md/Rituel%20de%20Transmission), elles ont besoin d'amasser une énorme quantité de matière organique afin d'assurer la résurrection de la [Primus](app://obsidian.md/Primus).. |
-| **Tabous / lignes rouges** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Tabous / lignes rouges** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Territoire & influence
 
@@ -55,6 +55,8 @@ maxZoom: 2
 defaultZoom: 0
 zoomDelta: 0.5
 ```
+
+Le territoire des Cisarelles est constitué du [[Lieu-Cendre]], une ancienne forêt brûlée, et leur influence s'étend sur les territoires à l'ouest et au nord incluant une bonne partie des rivières des [[Croass-golls]].
 
 ## Organisation interne
 

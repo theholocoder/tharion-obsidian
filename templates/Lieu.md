@@ -1,4 +1,12 @@
 ---
+id:
+type: ville
+categorie: lieu
+region: "[[Nyssor]]"
+faction:
+tags:
+  - categorie/lieu
+  - ville
 map_height_y: 2048
 map_width_x: 1642
 scale_pixels: 268

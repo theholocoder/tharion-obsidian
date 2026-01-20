@@ -2,7 +2,7 @@
 id: port-lointain
 type: ville
 categorie: lieu
-region: Nyssor
+region: "[[Nyssor]]"
 faction: Concore de Kaerith
 tags:
   - ville

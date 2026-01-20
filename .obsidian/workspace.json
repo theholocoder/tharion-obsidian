@@ -30,7 +30,7 @@
             }
           },
           {
-            "id": "85a264ba6ef01306",
+            "id": "bae8f8375b5ed258",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,12 +54,12 @@
             }
           },
           {
-            "id": "f9c4bcf9e793a726",
+            "id": "c5138aa269c7ad14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Handouts/Handout - Alchimiste familier.md",
+                "file": "Campagnes/EFG/01 - Intrigue.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -74,11 +74,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Handout - Alchimiste familier"
+              "title": "01 - Intrigue"
+            }
+          },
+          {
+            "id": "aad617b31ac8ae87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/Lieux/Observatoire du Néant.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Observatoire du Néant"
+            }
+          },
+          {
+            "id": "5239d0c477bb68a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/Lieux/Lieu-Cendre.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Lieu-Cendre"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -256,7 +304,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Handouts/Handout - Alchimiste familier.md",
+                "file": "Lore/Lieux/Observatoire du Néant.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -284,7 +332,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphique de Handout - Alchimiste familier"
+              "title": "Graphique de Observatoire du Néant"
             }
           }
         ],
@@ -301,13 +349,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Handouts/Handout - Alchimiste familier.md",
+                "file": "Lore/Lieux/Observatoire du Néant.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Handout - Alchimiste familier"
+              "title": "Plan de Observatoire du Néant"
             }
           },
           {
@@ -349,34 +397,42 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "4f6c6f1bcb97ff7f",
+  "active": "aad617b31ac8ae87",
   "lastOpenFiles": [
+    "Lore/Astronomie.md",
+    "Lore/Hégémonie Aethelgard.md",
+    "Lore/La Couronne Blanche.md",
+    "Campagnes/EFG/01 - Intrigue.md",
+    "Lore/Lieux/Lieu-Cendre.md",
+    "Lore/Organisations/Cisarelles.md",
+    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
+    "Lore/PNJ/Commandant Aelys Tarn.md",
+    "Lore/PNJ/Varkesh, le Héraut du Silence.md",
+    "Lore/PNJ/Kaelen, l'Architecte de Fer.md",
+    "Lore/PNJ/Vespera, la Sibylle des Cendres.md",
+    "templates/Lieu.md",
+    "Lore/Lieux/Observatoire du Néant.md",
+    "Lore/Lieux/Port-Lointain.md",
     "Bestiaire/Cisarelles/00-Cisarelles Warband.md",
-    "Handouts/Handout - Alchimiste familier.md",
+    "Sessions/S001 - Port-Lointain/Handouts.md",
+    "templates/PNJ.md",
+    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+    "assets/factions/cisarelles/cisarelle-raid.webp",
+    "Bestiaire/Cisarelles/Arracheuse Cisarelle.md",
     "Bestiaire/Cisarelles/Brute Cisarelle.md",
+    "Handouts/Handout - Artificier de Chair et d’Acier.md",
+    "TODO.md",
+    "Handouts/Handout - Alchimiste familier.md",
+    "assets/factions/cisarelles/token-illustration-mutalide.webp",
+    "assets/factions/cisarelles/token-illustration-male.webp",
+    "assets/factions/cisarelles/token-illustration-female.webp",
+    "assets/factions/cisarelles/sentinaile2.webp",
+    "assets/factions/cisarelles/mutalide2.webp",
+    "assets/factions/cisarelles/cisarelle-hunter2.webp",
+    "assets/factions/cisarelles/cisarelle-hunter.webp",
     "Bestiaire/Cisarelles/Chasseur Cisarelle.md",
     "templates/Elements/PF2/PF2e - Monstre.md",
     "Règles/PF2/États/Entravé.md",
-    "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
-    "Bestiaire/Gobe'liés/00-Gobe'liés Warband.md",
-    "Campagnes/EFG/00 - Hub.md",
-    "Lore/Organisations/Cisarelles.md",
-    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Session 01 - L'Essaim de Nyssor.md",
-    "Règles/PF2/États/Index des États.md",
-    "Règles/PF2/États/À terre.md",
-    "Règles/PF2/États/Accéléré.md",
-    "Règles/PF2/États/Fatigué.md",
-    "Règles/PF2/États/Hostile.md",
-    "Règles/PF2/États/Ralenti.md",
-    "Règles/PF2/États/Pétrifié.md",
-    "Règles/PF2/États/Paralysé.md",
-    "Règles/PF2/États/Blessé.md",
-    "Règles/PF2/États/Inaperçu.md",
-    "Règles/PF2/États/Inamical.md",
-    "Règles/PF2/États/Non détecté.md",
-    "Règles/PF2/États/Inconscient.md",
-    "Règles/PF2/États/Stupéfié.md",
     "Règles/PF2/États",
     "Bestiaire/Gobe'liés",
     "Bestiaire/Cisarelles",
@@ -387,14 +443,6 @@
     "Sessions/S001 - Port-Lointain",
     "S001 - Port-Lointain",
     "assets/icons/Pins - You're Here, red (tower).png",
-    "assets/icons/Pins - You're Here, red (tent).png",
-    "assets/icons/Pins - You're Here, red (swords).png",
-    "assets/icons/Pins - You're Here, red (star).png",
-    "assets/icons/Pins - You're Here, red (skull).png",
-    "assets/icons/Pins - You're Here, red (ruins).png",
-    "assets/icons/Pins - You're Here, red (paw print sharp).png",
-    "assets/icons/Pins - You're Here, red (paw print round).png",
-    "assets/icons/Pins - You're Here, red (house).png",
     "assets/icons",
     "assets/factions/cisarelles",
     "Untitled.canvas"
