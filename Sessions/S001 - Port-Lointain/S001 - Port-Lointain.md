@@ -14,6 +14,7 @@ pjs:
   - "[[Campagnes/EFG/PJ/Yoko.md|Yoko]]"
   - "[[Campagnes/EFG/PJ/Lyra.md|Lyra]]"
   - "[[Campagnes/EFG/PJ/Noctis.md|Noctis]]"
+  - "[[Myca Libre-Spore]]"
 resume: ""
 updated: 2026-01-09
 termine: false
