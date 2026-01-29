@@ -60,24 +60,10 @@
             "id": "aad617b31ac8ae87",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Organisations/Conseil de la Brèche.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Conseil de la Brèche"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -465,7 +451,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lore/Organisations/Conseil de la Brèche.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -493,7 +478,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Conseil de la Brèche"
+              "title": "Graph view"
             }
           }
         ],
@@ -558,10 +543,11 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "6726be930f10ebb2",
+  "active": "aad617b31ac8ae87",
   "lastOpenFiles": [
-    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
     "Lore/Organisations/Conseil de la Brèche.md",
+    "TODO.md",
+    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "Lore/Lieux/Port-Lointain.md",
     "Lore/Lieux/Nyssor.md",
@@ -596,7 +582,6 @@
     "Lore/PNJ/Kaelen, l'Architecte de Fer.md",
     "Lore/PNJ/Golgotha, la Mère des Chairs.md",
     "assets/pnj",
-    "Sessions/Liste des rumeurs.md",
     "Rumeurs",
     "Sessions/S001 - Port-Lointain/scenes",
     "opencode.json~",
