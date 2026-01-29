@@ -31,7 +31,7 @@
     {
       "id": "cisarelles-influence-map",
       "locked": false,
-      "lastAccessed": 1769709667447,
+      "lastAccessed": 1769721546915,
       "markers": [
         {
           "id": "ID_0b8858e87a88",
@@ -259,9 +259,86 @@
       ]
     },
     {
+      "id": "nyssor-map",
+      "locked": true,
+      "lastAccessed": 1769728970848,
+      "markers": [
+        {
+          "id": "ID_ab89894bda28",
+          "type": "Bourg",
+          "loc": [
+            2281.027471383691,
+            490.3833953281717
+          ],
+          "link": "Port-Lointain",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_b9f91819b98b",
+          "type": "Cisarelles",
+          "loc": [
+            1637.8897859486378,
+            1043.2049759023785
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Lieu-Cendre",
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_28380b6b9ada",
+          "type": "Camp",
+          "loc": [
+            1812.3955013475643,
+            425.4868441652089
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Silk'Arak",
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ab4b3b3ba889",
+          "type": "Forêt",
+          "loc": [
+            2050.569369385283,
+            319.1872748446251
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Forêt à nommer",
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Lore/Lieux/Nyssor.md"
+      ]
+    },
+    {
       "id": "map-port-lointain",
       "locked": false,
-      "lastAccessed": 1769710501280,
+      "lastAccessed": 1769728970848,
       "markers": [
         {
           "id": "ID_9bfa9bdba9cb",
@@ -448,83 +525,6 @@
       "shapes": [],
       "files": [
         "Lore/Lieux/Port-Lointain.md"
-      ]
-    },
-    {
-      "id": "nyssor-map",
-      "locked": true,
-      "lastAccessed": 1769710504952,
-      "markers": [
-        {
-          "id": "ID_ab89894bda28",
-          "type": "Bourg",
-          "loc": [
-            2281.027471383691,
-            490.3833953281717
-          ],
-          "link": "Port-Lointain",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_b9f91819b98b",
-          "type": "Cisarelles",
-          "loc": [
-            1637.8897859486378,
-            1043.2049759023785
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Lieu-Cendre",
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_28380b6b9ada",
-          "type": "Camp",
-          "loc": [
-            1812.3955013475643,
-            425.4868441652089
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Silk'Arak",
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_ab4b3b3ba889",
-          "type": "Forêt",
-          "loc": [
-            2050.569369385283,
-            319.1872748446251
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Forêt à nommer",
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [],
-      "files": [
-        "Lore/Lieux/Nyssor.md"
       ]
     }
   ],

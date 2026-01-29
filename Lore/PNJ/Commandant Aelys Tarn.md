@@ -23,6 +23,7 @@ updated: 2026-01-14
 
 ## Aperçu rapide
 
+![[aelys-tarn.webp|loc left portrait+tall]]
 > [!info] But / Motivation
 > Maintenir la cohésion de l'Expédition et assurer la survie de la colonie, tout en naviguant dans les eaux troubles de la politique.
 

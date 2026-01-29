@@ -6,13 +6,13 @@ kanban-plugin: board
 
 ## Todo
 
-- [ ] Auberge "L'Hydre à deux choppes" #priorite/forte
-- [ ] Portrait [[Commandant Aelys Tarn]] #priorite/forte
 
 
 ## Done
 
 **Complete**
+- [x] Auberge "L'Hydre à deux choppes" #priorite/forte
+- [x] Portrait [[Commandant Aelys Tarn]] #priorite/forte
 
 
 

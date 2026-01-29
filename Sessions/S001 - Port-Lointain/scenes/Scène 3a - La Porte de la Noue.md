@@ -9,7 +9,7 @@ tags:
 updated: 2026-01-20
 ---
 
-# Scène : La Porte de la Dernière Chance
+# Scène : La Porte de la Noue
 
 **Type :** Défi de Compétences / Dilemme Moral
 **Enjeu :** Sécuriser la ville intérieure tout en gérant le flux de réfugiés.

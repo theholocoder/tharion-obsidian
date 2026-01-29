@@ -23,6 +23,7 @@ updated: 2026-01-20
 
 ## Aperçu rapide
 
+![[bruna.webp|loc left portrait+tall]]
 > [!info] But / Motivation
 > Faire prospérer l'auberge et empêcher [[Olgar Le Borgne|Olgar]] de trop boire ou de se battre inutilement.
 

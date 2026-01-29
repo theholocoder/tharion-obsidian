@@ -54,6 +54,7 @@ LIMIT 1
 - [ ] Audio bourdonnements + cloches d'alarme
 - [ ] Battlemaps
 - [ ] Intro + musique d'intro pour la campagne
+- [ ] Handout: document du [[Conseil de la Brèche]] indiquant que si le PJ permet la destruction des Mantes Géantes, le conseil lui accordera un droit de propriété sur la parcelle de son choix dans le quartier des Hautes-Terrasses ou le terrain de son choix au delà des murs de la ville. Ils gagneront également le rang d'Eclaireur
 
 ## Intro
 
@@ -70,6 +71,8 @@ TABLE WHERE type = "scene" AND contains(file.folder, this.file.folder) SORT file
 ```
 
 ![[Scène 1 - L'Hydre à Deux Choppes]]
+
+![[Scène 2 - Commandant Aelys Tarn]]
 
 
 
@@ -139,3 +142,13 @@ Deux sous-sites, au choix (ou les PJ essaient de tout faire, au prix du temps) :
 - Créer/importer la page [[Cisarelles]] (faction) + éléments sur le [[Rituel de Transmission]] (secret MJ).
 - Finaliser rencontres/terrains + statblocks (inclure poison léthargique).
 - Compléter [[Port-Lointain]] (note actuellement vide) avec quartiers/lieux utiles (quais, marché, entrepôts, palissade).
+
+>D'abord, c'est juste une vibration lointaine, un murmure presque imperceptible sous les conversations animées de la taverne. Quelques missionnaires lèvent tête un instant, cherchant la source de cette vibration dans l'air, puis retournent à leurs choppes. Mais le son grandit, s'amplifie, devient un bourdonnement sourd et continu qui fait trembler les verres sur les tables. Le sol commence à vibrer sous vos pieds, le plafond en bois grince dans une plainte inconfortable. Les conversations toutes simultanément, remplacées par un silence de plus en plus lourd.
+>Puis le bourdonnement explose en un assaut sonore déchirant, comme des milliers d'ailes de géant qui lacèrent le ciel simultanément. C'est un bruit qui éveille des terreur anciennes au fond de vos tripes. Les vitres des fenêtres se mettent à vibrer dangereusement, des objets tombent des étagères, et vous sentez la pression changer dans vos tympans. C'est à ce moment que la première cloche d'alarme se met à retentir depuis la Caserne, immédiatement rejoint par une deuxième, puis une troisième.
+>Le bruit est partout maintenant, un vacarme qui semble venir de toutes les directions à la fois. Olgar a déjà disparu sous le comptoir pour attraper son marteau de guerre, tandis que Bruna se fige au milieu de la salle, son visage tourné vers l'extérieur comme si elle pouvait voir l'invisible apocalypse qui s'abat sur Port-Lointain. Les cloches continuent leur appel désespéré. C'est alors que les premiers cris commencent à percer les mur de la taverne - des cris de surprise, puis de terreur, venant de la rue dehors. Quelque chose est arrivé. Et le bourdonnement continue.
+
+*Lorsque les joueurs sortent de la taverne, ils tombent nez à nez avec une [[Cisarelles|Cisarelle]] immense, Aelys Tarn la découpe en deux*
+
+>En poussant la porte de la taverne, le PJ qui sort en premier se retrouve nez à nez avec l'horreur : un insecte, une mante religieuse géante, haute de trois mètres, sa carapace verte et noire brillant sous le soleil. Ses multiples yeux composés fixent leur nouvelle cible avec une curiosité glaciale, et ses faucilles tranchantes, longues comme des épées, se lèvent dans un mouvement sinistre, sur le point de s'abattre sur le PJ.
+>Vous n'avez même pas le temps de sortir une arme qu'une silhouette déchire l'air sur votre gauche. Une épée bâtarde dessine un arc d'argent dans le dos de la créature, la lame s'enfonçant dans l'articulation entre le thorax et l'abdomen avec un bruit déchirant de carapace brisée. L'insecte pousse un cri strident. Le vacarme de mandibules frottantes s'arrête net quand l'épée achève sa rotation, découpant la créature en deux avec une puissance incroyable. Les deux moitiés du monstre s'effondrent sur le pavé dans un fracas glissant de fluides et de viscères, révélant votre [[Commandant Aelys Tarn]] debout, son visage impassible, son épée dégoulinante de sang verdâtre. Son regard se tourne vers vous.
+>*"La ville est attaquée, vous êtes réquisitionnés"*

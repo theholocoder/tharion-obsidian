@@ -62,7 +62,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "file": "Lore/Organisations/Conseil de la Brèche.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -77,7 +77,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "S001 - Port-Lointain"
+              "title": "Conseil de la Brèche"
+            }
+          },
+          {
+            "id": "bca659d6c39b3af5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/Lieux/Port-Lointain.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Port-Lointain"
             }
           },
           {
@@ -142,7 +166,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -157,7 +181,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Scène 1 - L'Hydre à Deux Choppes"
+              "title": "Scène 2 - Commandant Aelys Tarn"
             }
           },
           {
@@ -166,7 +190,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/PNJ/Olgar Le Borgne.md",
+                "file": "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -181,7 +205,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Olgar Le Borgne"
+              "title": "Bestiaire - S001"
             }
           },
           {
@@ -441,7 +465,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "file": "Lore/Organisations/Conseil de la Brèche.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -469,7 +493,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of S001 - Port-Lointain"
+              "title": "Graph of Conseil de la Brèche"
             }
           }
         ],
@@ -534,54 +558,54 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "aad617b31ac8ae87",
+  "active": "6726be930f10ebb2",
   "lastOpenFiles": [
-    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
-    "Lore/PNJ/Olgar Le Borgne.md",
-    "Lore/PNJ/Bruna.md",
-    "Sessions/Liste des rumeurs.md",
-    "Rumeurs/Le Marché Secret.md",
-    "templates/Rumeur.md",
-    "Rumeurs/La Route de Soif.md",
-    "Rumeurs/Le Fer Trompeur.md",
-    "Rumeurs/Les Abandons Précipités.md",
-    "Rumeurs/Les Moutons Merveilleux.md",
-    "Rumeurs/Les Murmures des Racines.md",
-    "Rumeurs/Les Pillards.md",
-    "Hexagones/0312.md",
-    "Lore/Lieux/Nyssor.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+    "Lore/Organisations/Conseil de la Brèche.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "Lore/Lieux/Port-Lointain.md",
-    "0213.md",
+    "Lore/Lieux/Nyssor.md",
+    "IMAGES A GENERER.md",
+    "README.md",
+    "Session 01 - L'Essaim de Nyssor.md",
+    "Lore/Organisations/Expédition des Fendeurs de Glace.md",
+    "Lore/Organisations/Concorde de Kaerith.md",
+    "assets/factions/sceau-expedition-fendeurs-de-glace.webp",
+    "assets/factions/sceau-conseil-de-la-breche.webp",
+    "assets/factions/seau-expedition-fendeurs-de-glace.webp",
+    "assets/factions/seau-conseil-de-la-breche.webp",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+    "Scene 2 - Commandant Aelys Tarn.md",
+    "Sessions/S001 - Port-Lointain/Mecanique - Jauges de Crise.md",
+    "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
+    "Sessions/S001 - Port-Lointain/Handouts.md",
+    "Lore/PNJ/Olgar Le Borgne.md",
     "Lore/Organisations/Cisarelles.md",
-    "Campagnes/EFG/00 - Hub.md",
-    "templates/PNJ.md",
-    "templates/Lieu.md",
-    "templates/PJ.md",
-    "Rumeurs/Tour aux Gravures.md",
-    "templates/Session.md",
-    "templates/Elements/Rumeur.md",
+    "assets/factions/cisarelles/cisarelle-greffe.webp",
+    "assets/factions/cisarelles/cisarelle-hunter.webp",
+    "assets/factions/cisarelles/cisarelle-brute.webp",
+    "assets/factions/cisarelles/sentinaile.webp",
+    "Lore/PNJ/Bruna.md",
     "Lore/PNJ/Commandant Aelys Tarn.md",
+    "assets/pnj/olgar.webp",
+    "assets/pnj/bruna.webp",
+    "Lore/PNJ/Vespera, la Sibylle des Cendres.md",
+    "Lore/PNJ/Varkesh, le Héraut du Silence.md",
+    "Lore/PNJ/Mangeur d'Astre.md",
+    "Lore/PNJ/Kaelen, l'Architecte de Fer.md",
+    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
+    "assets/pnj",
+    "Sessions/Liste des rumeurs.md",
     "Rumeurs",
     "Sessions/S001 - Port-Lointain/scenes",
-    "assets/hydre-a-deux-choppes.webp",
     "opencode.json~",
-    "assets/factions/cisarelles/cisarelle-raid.webp",
-    "assets/factions/cisarelles/token-illustration-mutalide.webp",
-    "assets/factions/cisarelles/token-illustration-male.webp",
-    "assets/factions/cisarelles/token-illustration-female.webp",
-    "assets/factions/cisarelles/sentinaile2.webp",
-    "assets/factions/cisarelles/mutalide2.webp",
-    "assets/factions/cisarelles/cisarelle-hunter2.webp",
-    "assets/factions/cisarelles/cisarelle-hunter.webp",
     "Règles/PF2/États",
     "Bestiaire/Gobe'liés",
     "Bestiaire/Cisarelles",
     "undefined.json",
     "//undefined.json",
-    "assets/maps/Nyssor-small.webp",
     "Sessions/S002 - Test",
-    "Sessions/S001 - Port-Lointain",
     "Untitled.canvas"
   ]
 }

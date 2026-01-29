@@ -23,6 +23,7 @@ updated: 2026-01-20
 
 ## Aperçu rapide
 
+![[olgar.webp|loc left portrait+tall]]
 > [!info] But / Motivation
 > Maintenir l'ordre dans sa taverne et assurer un avenir sûr à sa fille adoptive, [[Bruna]].
 

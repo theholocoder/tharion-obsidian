@@ -7,7 +7,26 @@ tags:
 ---
 # Scène 1 - L'Hydre à Deux Choppes
 
-[[S001 - Port-Lointain|Retour à la session]]
+`BUTTON[btn-001-home]` `BUTTON[btn-001-scene2]`
+```meta-bind-button
+style: primary
+label: Scene 2 - Commandant Aelys Tarn >
+id: btn-001-scene2
+hidden: true
+actions:
+  - type: open
+    link: "Scène 2 - Commandant Aelys Tarn"
+```
+```meta-bind-button
+style: primary
+label: S001 - Port-Lointain
+id: btn-001-home
+hidden: true
+actions:
+  - type: open
+    link: "../S001 - Port-Lointain"
+```
+
 
 ## Description
 
@@ -33,10 +52,9 @@ tags:
 **Plat du jour.** Jarret de cochon ou galette de pomme de terres, légumes variés.
 
 *Interrompre brutalement avec l'arrivée des Cisarelles, jouer les sons de "swarm" et "cloches d'alarme"*
+[[Scène 2 - Commandant Aelys Tarn]]
 
->D'abord, c'est juste une vibration lointaine, un murmure presque imperceptible sous les conversations animées de la taverne. Quelques missionnaires lèvent tête un instant, cherchant la source de cette vibration dans l'air, puis retournent à leurs choppes. Mais le son grandit, s'amplifie, devient un bourdonnement sourd et continu qui fait trembler les verres sur les tables. Le sol commence à vibrer sous vos pieds, le plafond en bois grince dans une plainte inconfortable. Les conversations toutes simultanément, remplacées par un silence de plus en plus lourd.
->Puis le bourdonnement explose en un assaut sonore déchirant, comme des milliers d'ailes de géant qui lacèrent le ciel simultanément. C'est un bruit qui éveille des terreur anciennes au fond de vos tripes. Les vitres des fenêtres se mettent à vibrer dangereusement, des objets tombent des étagères, et vous sentez la pression changer dans vos tympans. C'est à ce moment que la première cloche d'alarme se met à retentir depuis la Caserne, immédiatement rejoint par une deuxième, puis une troisième.
->Le bruit est partout maintenant, un vacarme qui semble venir de toutes les directions à la fois. Olgar a déjà disparu sous le comptoir pour attraper son marteau de guerre, tandis que Bruna se fige au milieu de la salle, son visage tourné vers l'extérieur comme si elle pouvait voir l'invisible apocalypse qui s'abat sur Port-Lointain. Les cloches continuent leur appel désespéré. C'est alors que les premiers cris commencent à percer les mur de la taverne - des cris de surprise, puis de terreur, venant de la rue dehors. Quelque chose est arrivé. Et le bourdonnement continue.
+
 
 ## PNJ
 
