@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiEar",
+      "🗣",
       "LiKanbanSquare",
       "LiHandHeart",
-      "LiHexagon",
-      "LiMap",
-      "LiFileCheck2"
+      "LiHexagon"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -46,5 +46,6 @@
   "Sessions": "LiFileCheck2",
   "Hexagones": "LiHexagon",
   "Handouts": "LiHandHeart",
-  "IMAGES A GENERER.md": "LiKanbanSquare"
+  "IMAGES A GENERER.md": "LiKanbanSquare",
+  "Rumeurs": "LiEar"
 }

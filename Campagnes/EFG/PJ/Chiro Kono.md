@@ -33,7 +33,7 @@ updated: 2026-01-15
 >*   Signe distinctif : Le tatouage de Phénix rouge, partagé avec sa sœur. Symbole de résilience, mais aussi rappel constant de son serment.
 
 ## Relations Clés
-- **[[PNJ ou PJ]]** : [[Voss Vitriox]] (associé)
+- **[[Voss Vitriox]]** : associé
 - **[[Organisation]]** : Affiliation ou conflit.
 
 ## Accomplissements

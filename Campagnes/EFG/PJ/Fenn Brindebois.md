@@ -1,18 +1,16 @@
 ---
-id: Logan
+id: Fenn Brindebois
 type: PJ
 campagne: "[[L'Expédition des Fendeurs de Glace]]"
-joueur: Shadz
-ascendance: Humain (Animanthrope)
-classe: Guerrier
+joueur: Rofeul
+ascendance: Halfelin
+classe: Rôdeur
 niveau: 1
 statut: Vivant
-faction: "[[Ligue de Veyra]]"
+faction: "[[Royaume d'Halvorn]]"
 tags:
-  - humain
-  - animanthrope
   - pj
-updated: 2026-01-15
+updated: 2026-01-29
 ---
 
 > [!infobox]
@@ -28,8 +26,9 @@ updated: 2026-01-15
 > *Résumé de l'histoire du personnage avant l'aventure. Origines, événements marquants.*
 
 ## Relations Clés
-- **[[Théobald Greyheart]]** : associé.
-- **[[Ligue de Veyra]]** : TBD.
+- **Compagnon animal** : [[Biscotte]]
+- **[[PNJ ou PJ]]** : Nature de la relation.
+- **[[Organisation]]** : Affiliation ou conflit.
 
 ## Accomplissements
 *Titres gagnés, hauts faits héroïques ou réputation acquise.*
@@ -51,7 +50,7 @@ updated: 2026-01-15
 ```dataview
 TABLE date_irl as "Date", resume as "Résumé"
 FROM "Sessions"
-WHERE type = "session" 
-AND (contains(pjs, this.file.link) OR contains(file.outlinks, this.file.link))
+WHERE contains(persos, this.file.link) OR contains(file.outlinks, this.file.link)
 SORT date_irl DESC
 ```
+  

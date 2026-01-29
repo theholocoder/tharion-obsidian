@@ -86,8 +86,21 @@ LIMIT 1
 
 ---
 
-## Scènes (notes MJ)
+## TODO
+
+- [ ] item
+
+## Intro
+
+> Todo
+
+## Aperçu de la session
 - 
+
+### Scènes
+```dataview
+TABLE WHERE type = "scene" AND contains(file.folder, this.file.folder) SORT file.name
+```
 
 ## Événements / Décisions
 - 

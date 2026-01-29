@@ -42,12 +42,25 @@ updated: 2026-01-20
 ==Unique== ==Nain== ==Humanoïde==
 
 Ancien légionnaire borgne reconverti en tavernier rigide mais protecteur.
+
 **Perception** +9
 **Volonté** +8
+
+---
 **Historique** Ancien soldat de la [[Concorde de Kaerith|Concorde]], Olgar a perdu son œil lors d'une escarmouche il y a vingt ans. Il a pris sa retraite pour ouvrir cette taverne à [[Port-Lointain]] dès les premières vagues de colonisation. Il a trouvé [[Bruna]], orpheline, lors d'un raid de bandits sur un convoi et l'a élevée comme sa propre fille.
 **Apparence** Visage marqué par une cicatrice traversant l'orbite gauche vide, cachée par un bandeau de cuir. Porte un tablier épais sur des vêtements simples. Bras noueux.
 **Personnalité** Strict, Loyal, Protecteur
-**Oral, signe distinctif** Voix grave et rocailleuse, tape du poing sur le comptoir pour réclamer le silence.
+**Oral, signe distinctif** Accent allemand. Voix grave et rocailleuse, tape du poing sur le comptoir pour réclamer le silence. Expression: "Ouvrir un oeil, et le bon!"
+
+---
+**Découverte** Connaissances de la Guerre DD 13, Médecine DD 14, Perception DD 18, Société DD 16
+**Compétences d'influence** Connaissances de la Guerre DD 16, Intimidation DD 25, Diplomatie DD 22, Duperie DD 24
+**Influence 3.** Rumeur [[La Route de Soif]].
+**Influence 4.** Rumeur [[Les Pillards]].
+**Influence 4.** Rumeur [[Le Fer Trompeur]].
+**Influence 8.** Tournée gratuite.
+**Résistances.** Ce qui augmente de 2-5 le DD.
+**Faiblesses.** Ce qui réduit de 2-5 le DD.
 ```
 
 ## Histoire Détaillée

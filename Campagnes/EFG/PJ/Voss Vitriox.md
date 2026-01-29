@@ -33,7 +33,7 @@ updated: 2026-01-15
 >*   Morale Pragmatique : Ni bon, ni cruel. Il peut se montrer impitoyable si la logique de survie ou le succès de l'expérience l'exige.
 
 ## Relations Clés
-- **[[PNJ ou PJ]]** : Nature de la relation.
+- **[[Chiro Kono]]** : associé.
 - **[[Organisation]]** : Affiliation ou conflit.
 
 ## Accomplissements

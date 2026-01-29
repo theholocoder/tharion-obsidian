@@ -15,6 +15,8 @@ pjs:
   - "[[Campagnes/EFG/PJ/Lyra.md|Lyra]]"
   - "[[Campagnes/EFG/PJ/Noctis.md|Noctis]]"
   - "[[Myca Libre-Spore]]"
+  - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
+  - "[[Campagnes/EFG/PJ/Korvax Oeil-de-fer.md|Korvax Oeil-de-fer]]"
 resume: ""
 updated: 2026-01-09
 termine: false
@@ -50,13 +52,28 @@ LIMIT 1
 ## TODO
 
 - [ ] Audio bourdonnements + cloches d'alarme
+- [ ] Battlemaps
+- [ ] Intro + musique d'intro pour la campagne
 
-## Scènes (notes MJ)
-- **Pitch** : première soirée à [[Port-Lointain]]. Les PJ découvrent l’abondance (comparée à [[Kaerith]]), puis la ville passe en mode survie : attaque des [[Cisarelles]].
-- **Structure** : “five-room dungeon” urbain.
-  - **Room 1** (intro) : taverne **L’Hydre à Deux Choppes**.
-  - **Room 2/3/4** (semi-ouvert) : trois crises à résoudre **dans l’ordre voulu**.
-  - **Room 5** : convergence sur la place du marché, climax et retrait coordonné.
+## Intro
+
+> TODO
+
+
+
+## Aperçu de la session
+Les joueurs sont arrivés depuis peu à [[Port-Lointain]], ils sont réunis dans la taverne [[L'Hydre à Deux Choppes]]. Ils sociabilisent et découvrent l'abondance de [[Nyssor]] lorsqu'ils sont interrompus par un bourdonnement et les cloches d'alarmes : les [[Cisarelles]] attaquent la ville.
+
+### Scènes
+```dataview
+TABLE WHERE type = "scene" AND contains(file.folder, this.file.folder) SORT file.name
+```
+
+![[Scène 1 - L'Hydre à Deux Choppes]]
+
+
+
+---
 
 ### Room 1 — L’Hydre à Deux Choppes (Intro & RP)
 - Décrire odeurs (viande rôtie, pain), bruit, optimisme des colons.

@@ -28,8 +28,8 @@ updated: 2026-01-15
 > *Résumé de l'histoire du personnage avant l'aventure. Origines, événements marquants.*
 
 ## Relations Clés
-- **[[PNJ ou PJ]]** : Nature de la relation.
-- **[[Organisation]]** : Affiliation ou conflit.
+- **[[Logan]]** : associé.
+- **[[Ligue de Veyra]]** : Négociateur, espion.
 
 ## Accomplissements
 *Titres gagnés, hauts faits héroïques ou réputation acquise.*

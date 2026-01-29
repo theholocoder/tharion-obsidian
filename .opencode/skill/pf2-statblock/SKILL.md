@@ -62,12 +62,25 @@ PNJ.
 ==<TRAIT 1>== ==<TRAIT 2>==
 
 <DESCRIPTION>
+
 **Perception** <SCORE PERCEPTION>
+**Compétence X** +0, **Compétence Y** +0
 **Volonté** <SCORE VOLONTE>
+
+---
 **Historique** <HISTORIQUE>
 **Apparence** <APPEARANCE>
 **Personnalité** <ADJECTIF 1>, <ADJECTIF 2>
 **Oral, signe distinctif** <ACCENT OU VOIX>, <SIGNE>
+
+---
+**Découverte** Connaissances XXX DD 13, Perception DD 18, Société DD 16
+**Compétences d'influence** Connaissances XXX DD 16, Intimidation DD 20, Diplomatie DD 22, Duperie DD 24
+**Influence 4.** Information ou avantage.
+**Influence 6.** Information ou avantage.
+**Influence 8.** Information ou avantage.
+**Résistances.** Ce qui augmente de 2-5 le DD.
+**Faiblesses.** Ce qui réduit de 2-5 le DD.
 ```
 
 ### Monstre

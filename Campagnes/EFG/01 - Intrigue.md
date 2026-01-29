@@ -1,6 +1,6 @@
 ---
 id: 01_intrigue_bbeg
-type: meta
+type: PJ
 tags:
   - campagne
   - intrigue

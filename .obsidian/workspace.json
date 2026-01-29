@@ -6,6 +6,7 @@
       {
         "id": "a75a33fc85f846ec",
         "type": "tabs",
+        "dimension": 37.01780415430267,
         "children": [
           {
             "id": "d5d4e39e2c1b70cb",
@@ -25,17 +26,43 @@
                 }
               },
               "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "kanban"
+              "icon": "lucide-trello",
+              "title": "TODO"
             }
           },
           {
-            "id": "bae8f8375b5ed258",
+            "id": "c0e681947fe10ba4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Campagnes/EFG/00 - Hub.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "00 - Hub"
+            }
+          },
+          {
+            "id": "aad617b31ac8ae87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bestiaire/Cisarelles/00-Cisarelles Warband.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -50,9 +77,168 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "00-Cisarelles Warband"
+              "title": "S001 - Port-Lointain"
             }
           },
+          {
+            "id": "730e5f7dfc102601",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/Lieux/Nyssor.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Nyssor"
+            }
+          },
+          {
+            "id": "1a088d702bbe8301",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sessions/Liste des rumeurs.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Liste des rumeurs"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "3579a91a2f405f90",
+        "type": "tabs",
+        "dimension": 40.57863501483679,
+        "children": [
+          {
+            "id": "c0e88caa7e2d940d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Scène 1 - L'Hydre à Deux Choppes"
+            }
+          },
+          {
+            "id": "e45ecfd4502fbe55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/PNJ/Olgar Le Borgne.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Olgar Le Borgne"
+            }
+          },
+          {
+            "id": "1d965136fd4b4c38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lore/PNJ/Bruna.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Bruna"
+            }
+          },
+          {
+            "id": "425d1fd4fd4560f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rumeurs/La Route de Soif.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "La Route de Soif"
+            }
+          }
+        ]
+      },
+      {
+        "id": "9aa9e74260a0ab64",
+        "type": "tabs",
+        "dimension": 22.403560830860535,
+        "children": [
           {
             "id": "c5138aa269c7ad14",
             "type": "leaf",
@@ -76,33 +262,8 @@
               "icon": "lucide-file",
               "title": "01 - Intrigue"
             }
-          },
-          {
-            "id": "aad617b31ac8ae87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Bestiaire - S001"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -280,7 +441,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -308,7 +469,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Bestiaire - S001"
+              "title": "Graph of S001 - Port-Lointain"
             }
           }
         ],
@@ -375,33 +536,36 @@
   },
   "active": "aad617b31ac8ae87",
   "lastOpenFiles": [
-    "Lore/Lieux/L'Hydre à Deux Choppes.md",
-    "Campagnes/EFG/01 - Intrigue.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
     "Lore/PNJ/Olgar Le Borgne.md",
-    "assets/hydre-a-deux-choppes.webp",
     "Lore/PNJ/Bruna.md",
-    "Lore/Lieux/Port-Lointain.md",
-    "opencode.json~",
-    "Lore/Lieux/Observatoire du Néant.md",
-    "templates/Lore item.md",
-    "templates/Lieu.md",
+    "Sessions/Liste des rumeurs.md",
+    "Rumeurs/Le Marché Secret.md",
+    "templates/Rumeur.md",
+    "Rumeurs/La Route de Soif.md",
+    "Rumeurs/Le Fer Trompeur.md",
+    "Rumeurs/Les Abandons Précipités.md",
+    "Rumeurs/Les Moutons Merveilleux.md",
+    "Rumeurs/Les Murmures des Racines.md",
+    "Rumeurs/Les Pillards.md",
+    "Hexagones/0312.md",
     "Lore/Lieux/Nyssor.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "IMAGES A GENERER.md",
-    "Lore/PNJ/Mangeur d'Astre.md",
-    "Mentalides.md",
-    "Lore/Hégémonie Aethelgard.md",
-    "Lore/Astronomie.md",
-    "Lore/La Couronne Blanche.md",
-    "Lore/Lieux/Lieu-Cendre.md",
+    "Lore/Lieux/Port-Lointain.md",
+    "0213.md",
     "Lore/Organisations/Cisarelles.md",
-    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
+    "Campagnes/EFG/00 - Hub.md",
+    "templates/PNJ.md",
+    "templates/Lieu.md",
+    "templates/PJ.md",
+    "Rumeurs/Tour aux Gravures.md",
+    "templates/Session.md",
+    "templates/Elements/Rumeur.md",
     "Lore/PNJ/Commandant Aelys Tarn.md",
-    "Lore/PNJ/Varkesh, le Héraut du Silence.md",
-    "Lore/PNJ/Kaelen, l'Architecte de Fer.md",
-    "Lore/PNJ/Vespera, la Sibylle des Cendres.md",
-    "Bestiaire/Cisarelles/00-Cisarelles Warband.md",
-    "Sessions/S001 - Port-Lointain/Handouts.md",
+    "Rumeurs",
+    "Sessions/S001 - Port-Lointain/scenes",
+    "assets/hydre-a-deux-choppes.webp",
+    "opencode.json~",
     "assets/factions/cisarelles/cisarelle-raid.webp",
     "assets/factions/cisarelles/token-illustration-mutalide.webp",
     "assets/factions/cisarelles/token-illustration-male.webp",
@@ -418,8 +582,6 @@
     "assets/maps/Nyssor-small.webp",
     "Sessions/S002 - Test",
     "Sessions/S001 - Port-Lointain",
-    "S001 - Port-Lointain",
-    "assets/icons",
     "Untitled.canvas"
   ]
 }

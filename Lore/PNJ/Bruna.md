@@ -42,12 +42,25 @@ updated: 2026-01-20
 ==Unique== ==Humain== ==Humanoïde==
 
 Fille adoptive d'Olgar, elle gère la taverne avec une efficacité redoutable.
+
 **Perception** +7
+**Athlétisme** +7
 **Volonté** +7
+
+---
 **Historique** Adoptée par [[Olgar Le Borgne|Olgar]] alors qu'elle était tout enfant, Bruna n'a connu que la vie de taverne et de garnison. Elle considère les habitués comme sa famille éloignée mais garde une distance professionnelle.
-**Apparence** Robuste, cheveux châtains tirés en une natte stricte. Tenue de travail pratique souvent tachée. Regard vif.
+**Apparence** Robuste, cheveux châtains tirés en une natte stricte. Porte un dirndl (robe bavaroise) souvent tachée. Regard vif.
 **Personnalité** Efficace, Directe, Ambitieuse
-**Oral, signe distinctif** Parle vite et sèchement quand elle travaille. A un rire franc mais rare.
+**Oral, signe distinctif** Accent allemand. Parle vite et sèchement quand elle travaille. A un rire franc mais rare.
+
+---
+**Découverte** Connaissances des alcools DD 10, Perception DD 18, Société DD 16
+**Compétences d'influence** Connaissances des alcools DD 12 (nouveaux alcools), Nature DD 14 (lieux inconnus), Duperie DD 14, Diplomatie DD 15, Intimidation DD 17
+**Influence 2.** Rumeur [[La Route de Soif]].
+**Influence 4.** Rumeur [[Les Moutons Merveilleux]].
+**Influence 6.** Rumeur [[Le Marché Secret]].
+**Résistances.** Perdre au bras de fer contre elle augmente le DD de 3.
+**Faiblesses.** Lui parler d'un lieu/paysage naturel inconnu, lui raconter une histoire d'aventure diminue le DD de 3. Gagner au bras de fer contre elle diminue le DD de 2.
 ```
 
 ## Histoire Détaillée

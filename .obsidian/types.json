@@ -10,8 +10,15 @@
     "date_ig_debut": "text",
     "date_ig_fin": "text",
     "region": "text",
-    "faction": "text",
+    "faction": "multitext",
     "pv": "number",
-    "ca": "number"
+    "ca": "number",
+    "updated": "date",
+    "hex": "text",
+    "organisations": "multitext",
+    "sessions": "multitext",
+    "exploree": "checkbox",
+    "revelee": "checkbox",
+    "arc": "number"
   }
 }
