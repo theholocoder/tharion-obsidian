@@ -49,7 +49,7 @@ L'Expédition des Fendeurs de Glace est une structure militaire hybride qui comb
 | **Lieutenant d'Expédition**   | Commandement intermédiaire | Coordonne les escouades, influence les décisions stratégiques                         | Plus haut grade accessible aux PJ (Acte 3)            |
 | **Vétéran du Silence Blanc**  | Expertise terrain          | Maîtrise complète des dangers de [[Nyssor]], mentorat                                 | Siège consultatif au Conseil, accès équipements rares |
 | **Sentinelle des Frontières** | Exploration avancée        | Sécurise les territoires éloignés, étend l'influence                                  | Droit de recrutement, bonus de réputation             |
-| **Guettes du Rempart**        | Défense locale             | Protège [[Port-Lointain]] et ses environs immédiats                                   | Influence accrue, avantages pratiques en ville        |
+| **Guetteurs du Rempart**      | Défense locale             | Protège [[Port-Lointain]] et ses environs immédiats                                   | Influence accrue, avantages pratiques en ville        |
 | **Éclaireur**                 | Initiation terrain         | Premiers pas dans l'exploration de [[Nyssor]]                                         | Accès prioritaire aux missions de base                |
 | **Recrue**                    | Fraîchement débarqué       |                                                                                       |                                                       |
 

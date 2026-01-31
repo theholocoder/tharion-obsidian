@@ -53,12 +53,13 @@ LIMIT 1
 
 - [ ] Audio bourdonnements + cloches d'alarme
 - [ ] Intro + musique d'intro pour la campagne
-- [ ] Handout: document du [[Conseil de la Brèche]] indiquant que si le PJ permet la destruction des Mantes Géantes, le conseil lui accordera un droit de propriété sur la parcelle de son choix dans le quartier des Hautes-Terrasses ou le terrain de son choix au delà des murs de la ville. Ils gagneront également le rang d'Eclaireur
+- [ ] Statblock [[Commandant Aelys Tarn]]
+- [x] Handout: document du [[Conseil de la Brèche]] indiquant que si le PJ permet la destruction des Mantes Géantes, le conseil lui accordera un droit de propriété sur la parcelle de son choix dans le quartier des Hautes-Terrasses ou le terrain de son choix au delà des murs de la ville. Ils gagneront également le rang d'Eclaireur
 - [ ] FoundryVTT: configurer un timer ou un resource bar pour la limite de temps après Aelys Tarn
 - [ ] FoundryVTT: battlemap rue Gelevrod
 - [ ] FoundryVTT: battlemap combat à la porte
 - [ ] FoundryVTT: battlemap combat boss
-- [ ] FoundryVTT: objet "Fragment d'exuvie" et "Marquage phéromonal"
+- [x] FoundryVTT: objet "Fragment d'exuvie" et "Marquage phéromonal"
 - [x] Scène 4: dialogue du boss en une fois avant le combat
 
 ## Intro
