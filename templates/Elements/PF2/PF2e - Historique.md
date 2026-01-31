@@ -8,7 +8,7 @@ tags:
 ---
 
 ```pf2e-stats
-# Nom
+# {{title}}
 ## Historique
 ---
 Description.

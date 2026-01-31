@@ -5,12 +5,14 @@ name: Chasseur Cisarelle
 level: 0
 pv: 12
 ca: 15
-faction: Cisarelles
+faction:
+  - "[[Cisarelles]]"
 tags:
   - bestiaire
   - cisarelle
   - bête
 updated: 2026-01-17
+warband: snatchers
 ---
 
 > [!statblocks|columns]

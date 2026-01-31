@@ -5,12 +5,14 @@ name: Brute Cisarelle
 level: 1
 pv: 26
 ca: 15
-faction: Cisarelles
+faction:
+  - "[[Cisarelles]]"
 tags:
   - bestiaire
   - cisarelle
   - bête
 updated: 17/01/2026
+warband: snatchers
 ---
 
 > [!statblocks|columns]

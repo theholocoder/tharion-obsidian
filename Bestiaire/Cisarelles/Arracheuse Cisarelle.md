@@ -5,10 +5,12 @@ name: Arracheuse Cisarelle
 level: -1
 pv: 25
 ca: 12
-faction: Cisarelles
+faction:
+  - "[[Cisarelles]]"
 tags:
   - bestiaire
 updated: 19/01/2026
+warband: snatchers
 ---
 
 > [!statblocks|columns]

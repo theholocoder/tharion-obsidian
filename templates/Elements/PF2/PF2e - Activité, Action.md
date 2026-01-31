@@ -12,7 +12,7 @@ tags:
   - activite
 ---
 ```pf2e-stats
-# Nom
+# {{title}}
 ## `[one-action]`
 ---
 

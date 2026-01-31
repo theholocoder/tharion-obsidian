@@ -1,5 +1,5 @@
 ```pf2e-stats
-# Nom de la rumeur
+# {{title}}
 ---
 
 ==Exploration== ==Social==

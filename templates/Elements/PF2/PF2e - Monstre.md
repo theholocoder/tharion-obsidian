@@ -14,7 +14,7 @@ updated: {{date}}
 > [!statblocks|columns]
 >>```pf2e-stats
 >># {{title}}
->>## Créature 0
+>>## Créature <% tp.frontmatter.level %>
 >>---
 >>
 >>==Moyenne== ==Trait==
@@ -24,8 +24,8 @@ updated: {{date}}
 >>**Compétences** Compétence +0
 >>**For** +0, **Dex** +0, **Con** +0, **Int** +0, **Sag** +0, **Cha** +0
 >>---
->>**CA** 10; **Vig** +0, **Réf** +0, **Vol** +0
->>**PV** 10; **Résistances** types; **Faiblesses** types
+>>**CA** <% tp.frontmatter.ca %>; **Vig** +0, **Réf** +0, **Vol** +0
+>>**PV** <% tp.frontmatter.pv %>; **Résistances** types; **Faiblesses** types
 >>---
 >>**Vitesse** 25ft
 >>

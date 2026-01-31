@@ -59,6 +59,7 @@ LIMIT 1
 - [ ] FoundryVTT: battlemap combat à la porte
 - [ ] FoundryVTT: battlemap combat boss
 - [ ] FoundryVTT: objet "Fragment d'exuvie" et "Marquage phéromonal"
+- [x] Scène 4: dialogue du boss en une fois avant le combat
 
 ## Intro
 
@@ -84,35 +85,13 @@ TABLE WHERE type = "scene" AND contains(file.folder, this.file.folder) SORT file
 
 ![[Scène 3c - Entrepôt des docks]]
 
+![[Scène 4 - la Citadelle Blanche]]
+
+
 
 
 ---
 
-
-### Room 5 — Citadelle Blanche : climax & révélation implicite
-- Une “cheffe” coordonne l’essaim via antennes/vibrations/stridulations.
-- **Révélation hive mind** : au moment où elle est repoussée, arrêt net de l’essaim, une seconde de silence, puis retrait à l’unisson vers le nord-ouest.
-- La corne du fort retentit *après* : signal humain tardif.
-- Aelys fait un débrief : « des faits, pas des impressions ».
-
-### Notes combat (à faire plus tard)
-- Difficulté visée : **Sévère**.
-
-#### Snatchers
-1 [[Arracheuse Cisarelle]], 2 [[Chasseur Cisarelle]] et 1 [[Brute Cisarelle]]
-
-#### Mutalide
-
-
-## Événements / Décisions
-- Les PJ choisissent l’ordre de résolution des crises (Room 2/3/4).
-- Selon l’ordre : pertes de vivres, morts/enlèvements, dégâts logistiques aux quais.
-
-## Indices / Pistes
-- [[Cisarelles]] = faction (page à créer/importer).
-- Indices “hive mind” : micro-pauses collectives, repositionnements simultanés, vibrations/antennes comme signaux.
-- Indice “collecte/logistique” : elles privilégient nourriture/abats/salaisons plutôt que des cibles faciles.
-- Piste long terme : enlèvements possibles → où emmènent-elles les vivants ?
-
-
 ## À reporter / Prépa prochaine
+
+- Reporter les rumeurs et POI sur FoundryVTT

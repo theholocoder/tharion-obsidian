@@ -3,16 +3,21 @@
 TABLE
 	level as "Niveau",
 	pv as "PV",
-	ca as "CA"
+	ca as "CA",
+	warband as "Warband"
 FROM "Bestiaire/Cisarelles"
 WHERE type = "Monstre"
-SORT level ASC
+SORT warband ASC, level ASC
 ```
 
-## Idées
-- Des "Sentin'ailes" [[Cisarelles]] dont le but est d'attraper et d'emporter avec elles leurs proies. Grosse CA, gros DC mais pas beaucoup de PV ?
-- Créatures qui facilitent la capture par les Sentin'ailes : poison léthargique, déclenchement d'une réaction de la Sentin'aile (move and grab), etc.
+## Warbands
+
 - Résistances psychique et/ou mental grace au hive mind.
-- Utiliser une composition de statblock "modulaire" :
-	- Une compétence donnée est la même pour toutes les créatures qui l'ont (sauf scaling)
-	- Plus haut niveau = plus de "modules"
+
+### Psyché
+- Un Psyché est un relais du "hive mind" du Psylith, il possède des compétences psioniques et dirige les troupes et appelle des renforts.
+- Mécanique de submersion des PJ avec l'arrivée constante de renforts et du focus sur une cible unique.
+
+### Snatchers
+- Le but est d'attraper et d'emporter avec elles leurs proies. Utilisation de [[Arracheuse Cisarelle]].
+- Créatures qui facilitent la capture : poison léthargique, déclenchement du déplacement de [[Arracheuse Cisarelle]] sur une réaction ou utilisation de compétences avec le tag **==Cisarelle==**.

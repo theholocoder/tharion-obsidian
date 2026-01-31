@@ -10,7 +10,7 @@ tags:
 ---
 
 ```pf2e-stats
-# Nom
+# {{title}}
 ## Don 1
 ---
 ==Trait 1== ==Trait 2==
