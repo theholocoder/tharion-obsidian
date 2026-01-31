@@ -34,8 +34,8 @@ Trésor, mystère.
 
 ---
 
-**Notes MJ**  
-TODO
+**Notes MJ**
+La [[Ligue de Veyra]] vend du matériel à la [[Loge des Sans-Passé]] (des sortes de tubes, permettant à [[Kaelen, l'Architecte de Fer]] de catalyser les [[Cristaux d’Ether]]).
 ```
 
 ### Journal

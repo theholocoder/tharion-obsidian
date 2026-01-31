@@ -9,9 +9,9 @@ updated: 2026-01-19
 ---
 
 > [!danger] Menace Principale
-> **[[Varkesh, le Héraut du Silence]]**, veut briser le cycle éternel des Saisons du Feu en détruisant **Pyrrhos** (le soleil chaud) lors de la prochaine grande conjonction.
-> **Conséquence :** Nyssor sera éjectée de son orbite actuelle pour se stabiliser autour d'**Ignaris** (le soleil froid).
-> **La Vérité cachée :** La destruction de Pyrrhos provoquera une onde de choc thermique qui stérilisera toute la surface de la planète (Kaerith inclus) avant la stabilisation. Varkesh sacrifie toute vie actuelle pour sauver la "structure" planétaire et l'ADN stocké dans son arche.
+> **[[Varkesh, le Héraut du Silence]]**, veut briser le cycle éternel des Saisons du Feu en détruisant **Pyrrhos** lors de la prochaine grande conjonction.
+> **Conséquence :** Nyssor sera éjectée de son orbite actuelle pour se stabiliser autour d'**Ignaris**.
+> **La Vérité cachée :** La destruction de Pyrrhos provoquera une onde de choc thermique qui stérilisera toute la surface de la planète avant la stabilisation. Varkesh sacrifie toute vie actuelle pour sauver la "structure" planétaire et l'ADN stocké dans son arche.
 
 ## Les Mensonges de Varkesh
 

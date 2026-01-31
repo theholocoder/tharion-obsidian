@@ -50,12 +50,13 @@ Le Conseil de la Brèche est l'organe exécutif qui maintient un équilibre pré
 
 Le Conseil fonctionne selon un principe d'égalité formelle : chaque voix compte équitablement, mais les alliances informelles et les rapports de force influencent souvent les décisions. Le siège du Conseil se trouve dans la Citadelle Blanche, dans une salle circulaire où chaque membre dispose d'un espace égal.
 
-| Membre | Faction | Âge | Rôle(s) | Description |
-| ------ | ------- | ---- | ------ | ----------- |
-| **Amiral Borin Poingdacier** | [[Royaume d'Halvorn]] | 142 ans | Maître des docks et commissaire aux affaires maritimes | Nain de haute lignée, barbe tressée avec anneaux de navigation. Porte une prothèse de jambes en fer forgé. Rugueux mais juste, a connu un Kaerith prospère. |
-| **Archistratège adjoint Marcus Valerius** | [[République de Thaldris]] | 58 ans | Commandant suprême des forces de Port-Lointain | Vétéran cicatrisé, ancien instructeur à l'académie de guerre. Discipliné jusqu'à l'excès, parle toujours en termes tactiques. |
-| **Oracle Lyraelle** | [[Ordre de Myrr]] | 287 ans (apparaît 50 ans) | Conseillère spirituelle principale et médiatrice | Elfe à la chevelure argentée, a connu le Kaerith d'avant la famine. Voix calme, parle par métaphores. |
-| **Intendant Sébastien Valerion** | [[Ligue de Veyra]] | 62 ans | Trésorier en chef et négociateur principal | Homme d'affaires élégant, manipulateur né. Chaleureux en public, impitoyable en privé, maître du "cadeau empoisonné". |
+| Membre                           | Faction                    | Âge                       | Rôle(s)                                                | Description                                                                                                                                                 |
+| -------------------------------- | -------------------------- | ------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Amiral Borin Poingdacier**     | [[Royaume d'Halvorn]]      | 142 ans                   | Maître des docks et commissaire aux affaires maritimes | Nain de haute lignée, barbe tressée avec anneaux de navigation. Porte une prothèse de jambes en fer forgé. Rugueux mais juste, a connu un Kaerith prospère. |
+| **Stratège Marcus Valerius**     | [[République de Thaldris]] | 58 ans                    | Commandant suprême des forces de Port-Lointain         | Vétéran cicatrisé, ancien instructeur à l'académie de guerre. Discipliné jusqu'à l'excès, parle toujours en termes tactiques.                               |
+| **Oracle Lyraelle**              | [[Ordre de Myrr]]          | 287 ans (apparaît 50 ans) | Conseillère spirituelle principale et médiatrice       | Elfe à la chevelure argentée, a connu le Kaerith d'avant la famine. Voix calme, parle par métaphores.                                                       |
+| **Intendant Sébastien Valerion** | [[Ligue de Veyra]]         | 62 ans                    | Trésorier en chef et négociateur principal             | Homme d'affaires élégant, manipulateur né. Chaleureux en public, impitoyable en privé, maître du "cadeau empoisonné".                                       |
+|                                  |                            |                           |                                                        |                                                                                                                                                             |
 
 ## Relations
 

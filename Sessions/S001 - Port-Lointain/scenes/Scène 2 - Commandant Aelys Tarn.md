@@ -1,11 +1,13 @@
 ---
 type: scene
-parent: ""
-tags: [scene, lieu]
+parent: "[[S001 - Port-Lointain]]"
+tags:
+  - scene
+  - lieu
 ---
 # Scène 2 - Commandant Aelys Tarn
 
-`BUTTON[btn-001-scene1]` `BUTTON[btn-001-home]` `BUTTON[btn-001-scene3]`
+`BUTTON[btn-001-scene1]` `BUTTON[btn-001-home]` `BUTTON[btn-001-scene3,btn-001-scene3b,btn-001-scene3c]`
 ```meta-bind-button
 style: primary
 label: < Scène 1 - L'Hydre à Deux Choppes
@@ -26,6 +28,25 @@ actions:
 ```
 ```meta-bind-button
 style: primary
+label: Scène 3b - Rue Gelevrod >
+id: btn-001-scene3b
+hidden: true
+actions:
+  - type: open
+    link: "Scène 3b - Rue Gelevrod"
+```
+```meta-bind-button
+style: primary
+label: Scène 3c - Entrepôt des docks >
+id: btn-001-scene3c
+hidden: true
+actions:
+  - type: open
+    link: "Scène 3c - Entrepôt des docks"
+```
+
+```meta-bind-button
+style: primary
 label: S001 - Port-Lointain
 id: btn-001-home
 hidden: true
@@ -41,10 +62,13 @@ actions:
 >Le bruit est partout maintenant, un vacarme qui semble venir de toutes les directions à la fois. Olgar a déjà disparu sous le comptoir pour attraper son marteau de guerre, tandis que Bruna se fige au milieu de la salle, son visage tourné vers l'extérieur comme si elle pouvait voir l'invisible apocalypse qui s'abat sur Port-Lointain. Les cloches continuent leur appel désespéré. C'est alors que les premiers cris commencent à percer les mur de la taverne - des cris de surprise, puis de terreur, venant de la rue dehors. Quelque chose est arrivé. Et le bourdonnement continue.
 
 *Lorsque les joueurs sortent de la taverne, ils tombent nez à nez avec une [[Cisarelles|Cisarelle]] immense, Aelys Tarn la découpe en deux*
+*Montrer l'illustration de la Cisarelle*
 
 >En poussant la porte de la taverne, le PJ qui sort en premier se retrouve nez à nez avec l'horreur : un insecte, une mante religieuse géante, haute de trois mètres, sa carapace verte et noire brillant sous le soleil. Ses multiples yeux composés fixent leur nouvelle cible avec une curiosité glaciale, et ses faucilles tranchantes, longues comme des épées, se lèvent dans un mouvement sinistre, sur le point de s'abattre sur le PJ.
 >Vous n'avez même pas le temps de sortir une arme qu'une silhouette déchire l'air sur votre gauche. Une épée bâtarde dessine un arc d'argent dans le dos de la créature, la lame s'enfonçant dans l'articulation entre le thorax et l'abdomen avec un bruit déchirant de carapace brisée. L'insecte pousse un cri strident. Le vacarme de mandibules frottantes s'arrête net quand l'épée achève sa rotation, découpant la créature en deux avec une puissance incroyable. Les deux moitiés du monstre s'effondrent sur le pavé dans un fracas glissant de fluides et de viscères, révélant votre [[Commandant Aelys Tarn]] debout, son visage impassible, son épée dégoulinante de sang verdâtre. Son regard se tourne vers vous.
 >*"La ville est attaquée, vous êtes réquisitionnés"*
+
+*Montrer l'illustration de Aelys Tarn*
 
 [[Commandant Aelys Tarn]] pose une carte de la ville sur une caisse puis demande aux PJ de s'occuper, dans l'ordre qui leur semblera le meilleur (tout est urgent) de :
 - Fermer la Porte de la Noue avant que d'autres monstres l'utilisent pour entrer dans le quartier du Rempart.
@@ -53,6 +77,8 @@ actions:
 Une fois ces objectifs atteints, ou si c'est trop tard, converger et rejoindre le Commandant vers la Citadelle Blanche, ou les plus gros spécimens ont l'air d'aller.
 
 **Il est impératif d'agir rapidement, chaque minute compte pour sauver le plus de vies et de ressources possibles.**
+
+*Enclencher un timer sur Foundry ?*
 
 ## Créatures / PNJ
 

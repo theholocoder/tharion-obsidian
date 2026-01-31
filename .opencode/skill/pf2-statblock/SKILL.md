@@ -74,14 +74,33 @@ PNJ.
 **Oral, signe distinctif** <ACCENT OU VOIX>, <SIGNE>
 
 ---
-**Découverte** Connaissances XXX DD 13, Perception DD 18, Société DD 16
-**Compétences d'influence** Connaissances XXX DD 16, Intimidation DD 20, Diplomatie DD 22, Duperie DD 24
+**Découverte** Connaissances XXX DD 13 (élément découvert), Perception DD 18, Société DD 16 (élément découvert)
+**Compétences d'influence** Connaissances XXX DD 16, Intimidation DD 20, Duperie DD 22 (précisions contexte), Diplomatie DD <10+SCORE VOLONTE>
 **Influence 4.** Information ou avantage.
 **Influence 6.** Information ou avantage.
 **Influence 8.** Information ou avantage.
 **Résistances.** Ce qui augmente de 2-5 le DD.
 **Faiblesses.** Ce qui réduit de 2-5 le DD.
 ```
+
+Précisions sur les règles d'influence de Pathfinder 2e:
+
+- "Découverte" c'est les compétences et difficulté pour trouver des informations sur le PNJ. Il est intéressant de
+préciser ce qu'on découvre sur le PNJ avec chaque compétence, par exemple Médecine DD 13 (Le PNJ est en état de choc).
+Il peut être intéressant d'ajouter une compétence "Lore"/"Connaissance" qui correspond à l'historique du PNJ,
+généralement avec le DD le plus faible car très personnel.
+- "Compétences d'influence" liste les compétences que les PJ peuvent utiliser pour influencer le PNJ avec leur DD trié
+du plus bas au plus élevé. Diplomatie figure généralement dans cette liste mais rarement comme la meilleure compétence
+pour influencer le PNJ (son DD minimum est 10+SCORE VOLONTE). Il est possible de préciser le contexte de chaque
+compétence si elle doit être utilisée d'une façon "RP" particulière pour fonctionner.
+- "Influence X" sont les différents seuils en nombre de points d'influence nécessaires pour obtenir l'information qui en
+decoule.
+- La "résistance" c'est pour indiquer les comportements des PJ qui vont augmenter la difficulté à obtenir des
+informations de la part du PNJ.
+- A l'inverse la "faiblesse" c'est tout ce qui peut permettre d'amadouer le PNJ afin qu'il livre ses informations
+(volontairement) plus facilement.
+- Les PJ otiennent un point d'influence sur un succès à un test de "compétence d'influence". Sur un succès critique,
+ils en obtiennent deux.
 
 ### Monstre
 

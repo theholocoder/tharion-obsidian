@@ -60,10 +60,24 @@
             "id": "aad617b31ac8ae87",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "S001 - Port-Lointain"
             }
           },
           {
@@ -152,7 +166,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -167,7 +181,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Scène 2 - Commandant Aelys Tarn"
+              "title": "S001 - Port-Lointain"
             }
           },
           {
@@ -176,7 +190,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -191,7 +205,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Bestiaire - S001"
+              "title": "Scène 4 - la Citadelle Blanche"
+            }
+          },
+          {
+            "id": "20e7041367f72295",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rumeurs/Le Marché Secret.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Le Marché Secret"
             }
           },
           {
@@ -200,7 +238,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/PNJ/Bruna.md",
+                "file": "Bestiaire/Cisarelles/Arracheuse Cisarelle.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -215,7 +253,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Bruna"
+              "title": "Arracheuse Cisarelle"
             }
           },
           {
@@ -224,7 +262,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rumeurs/La Route de Soif.md",
+                "file": "Lore/Organisations/Conseil de la Brèche.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -239,10 +277,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "La Route de Soif"
+              "title": "Conseil de la Brèche"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "9aa9e74260a0ab64",
@@ -296,7 +335,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorateur de fichiers"
             }
           },
           {
@@ -451,6 +490,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -478,7 +518,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graphique de Scène 4 - la Citadelle Blanche"
             }
           }
         ],
@@ -525,13 +565,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "workspaces:Manage workspace layouts": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "markdown-importer:Ouvrir l'importateur Markdown": false,
+      "workspaces:Gérer les espaces de travail": false,
       "bases:Create new base": true,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
@@ -543,44 +583,44 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "aad617b31ac8ae87",
+  "active": "e45ecfd4502fbe55",
   "lastOpenFiles": [
     "Lore/Organisations/Conseil de la Brèche.md",
-    "TODO.md",
+    "assets/pnj/oracle-lyraelle.webp",
+    "assets/pnj/intendant-sebastien-valerion.webp",
+    "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
+    "assets/pnj/amiral-borin-poingdacier.webp",
+    "Lore/Organisations/Cisarelles.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
+    "assets/factions/cisarelles/cisarelle-psyche.webp",
+    "Règles/PF2/États/Confus.md",
+    "Règles/PF2/États/Drainé.md",
+    "Règles/PF2/États/Maladroit.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
+    "Rumeurs/La Route de Soif.md",
+    "Campagnes/EFG/01 - Intrigue.md",
+    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
-    "Lore/Lieux/Port-Lointain.md",
+    "Rumeurs/Le Marché Secret.md",
+    "Campagnes/EFG/EFG Intro.md",
+    "Campagnes/EFG/00 - Hub.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
+    "Bestiaire/Cisarelles/Arracheuse Cisarelle.md",
+    "templates/PNJ.md",
+    "templates/Elements/PF2/PF2e - PNJ.md",
+    "Bestiaire/Cisarelles/Chasseur Cisarelle.md",
+    "Rumeurs/L'enfant Arraché.md",
     "Lore/Lieux/Nyssor.md",
-    "IMAGES A GENERER.md",
-    "README.md",
-    "Session 01 - L'Essaim de Nyssor.md",
-    "Lore/Organisations/Expédition des Fendeurs de Glace.md",
-    "Lore/Organisations/Concorde de Kaerith.md",
+    "Lore/Lieux/Port-Lointain.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+    "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
+    "Lore/PNJ/Bruna.md",
     "assets/factions/sceau-expedition-fendeurs-de-glace.webp",
     "assets/factions/sceau-conseil-de-la-breche.webp",
     "assets/factions/seau-expedition-fendeurs-de-glace.webp",
     "assets/factions/seau-conseil-de-la-breche.webp",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
-    "Scene 2 - Commandant Aelys Tarn.md",
-    "Sessions/S001 - Port-Lointain/Mecanique - Jauges de Crise.md",
-    "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
-    "Sessions/S001 - Port-Lointain/Handouts.md",
-    "Lore/PNJ/Olgar Le Borgne.md",
-    "Lore/Organisations/Cisarelles.md",
     "assets/factions/cisarelles/cisarelle-greffe.webp",
-    "assets/factions/cisarelles/cisarelle-hunter.webp",
-    "assets/factions/cisarelles/cisarelle-brute.webp",
-    "assets/factions/cisarelles/sentinaile.webp",
-    "Lore/PNJ/Bruna.md",
-    "Lore/PNJ/Commandant Aelys Tarn.md",
-    "assets/pnj/olgar.webp",
-    "assets/pnj/bruna.webp",
-    "Lore/PNJ/Vespera, la Sibylle des Cendres.md",
-    "Lore/PNJ/Varkesh, le Héraut du Silence.md",
-    "Lore/PNJ/Mangeur d'Astre.md",
-    "Lore/PNJ/Kaelen, l'Architecte de Fer.md",
-    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
     "assets/pnj",
     "Rumeurs",
     "Sessions/S001 - Port-Lointain/scenes",
