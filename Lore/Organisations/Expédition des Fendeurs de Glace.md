@@ -43,15 +43,15 @@ INPUT[progressBar(title('Réputation de la Concorde'), minValue(-100), maxValue(
 
 L'Expédition des Fendeurs de Glace est une structure militaire hybride qui combine une hiérarchie stricte avec une progression par mérites. Dirigée par le [[Commandant Aelys Tarn]], elle s'organise autour de grades honorifiques qui reconnaissent les contributions des aventuriers à la sécurisation de [[Nyssor]].
 
-| Rang                          | Rôle                       | Description                                                                           | Particularité                                         |
-| ----------------------------- | -------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| **Commandant**                | Direction suprême          | Dirige l'ensemble des opérations, représente l'Expédition au [[Conseil de la Brèche]] | Détenu par [[Aelys Tarn]], inamovible                 |
-| **Lieutenant d'Expédition**   | Commandement intermédiaire | Coordonne les escouades, influence les décisions stratégiques                         | Plus haut grade accessible aux PJ (Acte 3)            |
-| **Vétéran du Silence Blanc**  | Expertise terrain          | Maîtrise complète des dangers de [[Nyssor]], mentorat                                 | Siège consultatif au Conseil, accès équipements rares |
-| **Sentinelle des Frontières** | Exploration avancée        | Sécurise les territoires éloignés, étend l'influence                                  | Droit de recrutement, bonus de réputation             |
-| **Guetteurs du Rempart**      | Défense locale             | Protège [[Port-Lointain]] et ses environs immédiats                                   | Influence accrue, avantages pratiques en ville        |
-| **Éclaireur**                 | Initiation terrain         | Premiers pas dans l'exploration de [[Nyssor]]                                         | Accès prioritaire aux missions de base                |
-| **Recrue**                    | Fraîchement débarqué       |                                                                                       |                                                       |
+| Rang                          | Rôle                       | Description                                                                           | Particularité                                                |
+| ----------------------------- | -------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| **Commandant**                | Direction suprême          | Dirige l'ensemble des opérations, représente l'Expédition au [[Conseil de la Brèche]] | Détenu par [[Commandant Aelys Tarn\|Aelys Tarn]], inamovible |
+| **Lieutenant d'Expédition**   | Commandement intermédiaire | Coordonne les escouades, influence les décisions stratégiques                         | Plus haut grade accessible aux PJ (Acte 3)                   |
+| **Vétéran du Silence Blanc**  | Expertise terrain          | Maîtrise complète des dangers de [[Nyssor]], mentorat                                 | Siège consultatif au Conseil, accès équipements rares        |
+| **Sentinelle des Frontières** | Exploration avancée        | Sécurise les territoires éloignés, étend l'influence                                  | Droit de recrutement, bonus de réputation                    |
+| **Guetteurs du Rempart**      | Défense locale             | Protège [[Port-Lointain]] et ses environs immédiats                                   | Influence accrue, avantages pratiques en ville               |
+| **Éclaireur**                 | Initiation terrain         | Premiers pas dans l'exploration de [[Nyssor]]                                         | Accès prioritaire aux missions de base                       |
+| **Recrue**                    | Fraîchement débarqué       |                                                                                       |                                                              |
 
 ## Relations
 - **Alliés :**

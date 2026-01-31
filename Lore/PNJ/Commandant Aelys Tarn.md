@@ -1,6 +1,6 @@
 ---
-id: aelys_tarn
-type: PNJ
+id: Commandant Aelys Tarn
+type: Monstre
 nom_complet: Aelys Tarn
 titre: Commandant
 region: "[[Port-Lointain]]"
@@ -9,12 +9,16 @@ tags:
   - pnj
   - important
   - militaire
+  - bestiaire
 ancestry: Humain
 gender: F
 class: Guerrier
 level: 5
 status: Vivant
-updated: 2026-01-14
+updated: 01/02/2026
+name: Commandant Aelys Tarn
+pv: 63
+ca: 21
 ---
 
 > [!infobox|left]
@@ -37,8 +41,8 @@ updated: 2026-01-14
 > 
 > Sa présence impose le silence. Elle dégage une aura de contrôle permanent, ses gestes sont économes et précis. Lorsqu'elle écoute, elle reste parfaitement immobile, ne trahissant aucune émotion, ce qui a tendance à déstabiliser ses interlocuteurs les plus bavards.
 
-## Statblock
-
+## Statblocks
+### Statblock PNJ
 ```pf2e-stats
 # Commandant Aelys Tarn
 ## Niveau 5
@@ -54,6 +58,59 @@ Lien vital entre le [[Conseil de la Brèche]] et les aventuriers, elle orchestre
 **Personnalité** Pragmatique, Droite, Sous tension.
 **Oral, signe distinctif** Voix basse et contrôlée. Elle lisse souvent nerveusement les cartes posées devant elle, comme pour ordonner le chaos du monde.
 ```
+
+### Statblock combat
+> [!statblocks|columns]
+>>```pf2e-stats
+>># Commandant Aelys Tarn
+>>## Créature 5
+>>---
+>>
+>>==Moyenne== ==Humanoïde== ==Humain==
+>>
+>>**Perception** +11
+>>**Compétences** Athlétisme +12, Duperie +8, Diplomatie +8, Intimidation +12, Société +10
+>>**For** +5, **Dex** +3, **Con** +3, **Int** +2, **Sag** +2, **Cha** +2
+>>**Objets** Epée bâtarde de la Couronne Blanche, Armure de plate +1
+>>---
+>>**CA** 21; **Vig** +14, **Réf** +11, **Vol** +11
+>>**PV** 63
+>> Perception +11
+>>---
+>>**Vitesse** 25ft
+>>
+>>**Corps à corps** `[one-action]` Epée batarde de la Couronne Blanche +15 (deux mains d12, magique), **Dégâts** 2d6+7 tranchants + 1d6 froid
+>>
+>>---
+>>```
+>
+>>```pf2e-stats
+>>**Ordre d'officier Thaldrissien** `[one-action]`
+>>**Limite** 1/round
+>>
+>>Donne un ordre tactique rapide à un membre de la **République de Thaldris**, la cible gagne un bonus de circonstances de +2 sur son prochain jet d'attaque.
+>>```
+
+### Equipement
+```pf2e-stats
+# Epée bâtarde de la Couronne Blanche
+## Objet 8
+
+---
+==Rare== ==froid== ==magique== ==deux mains d12==
+
+**Utilisation** tenue à une main; **Encombrement** 1; **Matériau** fer froid
+
+---
+Cette *épée bâtarde de frappe de froid +1* est dotée d'un fragment de glace de la Couronne Blanche entre la garde et le pommeau.
+
+**Rune de froid.** Cette arme inflige 1d6 dégâts de froid supplémentaires sur une Frappe réussie. En cas de coup critique, la cible est également Ralentie 1 jusqu'à la fin de votre prochain tour, à moins qu'elle ne réussisse un jet de Vigueur DD 24.
+
+**Activation - Aspersion de froid** `[two-actions]` (cône, froid);
+	**Fréquence** 2/jour;
+	**Effet.** Lance le sort *Aspersion de froid* au rang 2 en utilisant votre DD de classe.
+```
+
 
 ---
 

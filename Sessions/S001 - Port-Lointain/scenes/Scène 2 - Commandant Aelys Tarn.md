@@ -82,4 +82,4 @@ Une fois ces objectifs atteints, ou si c'est trop tard, converger et rejoindre l
 
 ## Créatures / PNJ
 
-![[Commandant Aelys Tarn#Statblock]]
+![[Commandant Aelys Tarn#Statblock PNJ]]

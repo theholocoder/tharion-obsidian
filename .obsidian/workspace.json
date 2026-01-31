@@ -214,7 +214,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bestiaire/Cisarelles/Psyché Cisarelle.md",
+                "file": "Lore/PNJ/Commandant Aelys Tarn.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -229,7 +229,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Psyché Cisarelle"
+              "title": "Commandant Aelys Tarn"
             }
           },
           {
@@ -281,7 +281,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "9aa9e74260a0ab64",
@@ -490,7 +490,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "file": "Lore/PNJ/Commandant Aelys Tarn.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -518,7 +518,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphique de S001 - Port-Lointain"
+              "title": "Graphique de Commandant Aelys Tarn"
             }
           }
         ],
@@ -583,13 +583,16 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "aad617b31ac8ae87",
+  "active": "20e7041367f72295",
   "lastOpenFiles": [
-    "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
-    "Lore/Organisations/Expédition des Fendeurs de Glace.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+    "Lore/PNJ/Commandant Aelys Tarn.md",
     "Bestiaire/Cisarelles/Psyché Cisarelle.md",
+    "Aelys Tarn.md",
+    "Lore/Organisations/Expédition des Fendeurs de Glace.md",
+    "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
     "templates/Elements/PF2/PF2e - Monstre.md",
     "templates/Session - Scène.md",
     "templates/Session - Combat.md",
@@ -608,13 +611,10 @@
     "Bestiaire/Cisarelles/Brute Cisarelle.md",
     "Bestiaire/Cisarelles/Chasseur Cisarelle.md",
     "Rumeurs/Le Marché Secret.md",
-    "Lore/Lieux/Port-Lointain.md",
-    "Lore/Organisations/Conseil de la Brèche.md",
     "assets/pnj/oracle-lyraelle.webp",
     "assets/pnj/intendant-sebastien-valerion.webp",
     "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
     "assets/pnj/amiral-borin-poingdacier.webp",
-    "Lore/Organisations/Cisarelles.md",
     "assets/factions/cisarelles/cisarelle-psyche.webp",
     "assets/factions/sceau-expedition-fendeurs-de-glace.webp",
     "assets/factions/sceau-conseil-de-la-breche.webp",
