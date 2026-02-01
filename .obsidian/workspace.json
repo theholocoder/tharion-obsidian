@@ -619,6 +619,54 @@
                 }
               },
               {
+                "id": "95b9b5c8dd79accd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Scène 1 - L'Hydre à Deux Choppes"
+                }
+              },
+              {
+                "id": "4ec1eb092f917c62",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Scène 2 - Commandant Aelys Tarn"
+                }
+              },
+              {
                 "id": "733400a792946be6",
                 "type": "leaf",
                 "state": {
@@ -655,17 +703,21 @@
       }
     ]
   },
-  "active": "388d095340ce96fa",
+  "active": "c0e88caa7e2d940d",
   "lastOpenFiles": [
+    "Sessions/S001 - Port-Lointain/S001 - Checklist post-session.md",
     "Sessions/S001 - Port-Lointain/S001 - Notes.md",
+    "Sessions/S001 - Port-Lointain/S001 - Checklist.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Lore/Organisations/Conseil de la Brèche.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+    "templates/Session - Checklist.md",
+    "Sessions/S001 - Port-Lointain/Mecanique - Jauges de Crise.md",
+    "Lore/Organisations/Conseil de la Brèche.md",
     "Lore/Organisations/République de Thaldris.md",
     "templates/Elements/PF2/PF2e - Monstre.md",
     "Lore/PNJ/Commandant Aelys Tarn.md",
     "Campagnes/EFG/01 - Intrigue.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
     "assets/maps/entrepot.dd2vtt",
     "assets/maps/entrepot.dd2vtt.png",
@@ -683,10 +735,6 @@
     "templates/Session.md",
     "templates/Rumeur.md",
     "templates/PNJ.md",
-    "templates/PJ.md",
-    "templates/Elements/Rumeur.md",
-    "templates/Elements/PF2/PF2e - PNJ.md",
-    "templates/Elements/PF2/PF2e - Historique.md",
     "assets/pnj/oracle-lyraelle.webp",
     "assets/pnj/intendant-sebastien-valerion.webp",
     "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
