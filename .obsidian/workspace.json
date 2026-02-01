@@ -190,7 +190,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -205,7 +205,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Scène 4 - la Citadelle Blanche"
+              "title": "Scène 3b - Rue Gelevrod"
             }
           },
           {
@@ -281,7 +281,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "9aa9e74260a0ab64",
@@ -362,7 +362,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Signets"
             }
           }
         ]
@@ -490,7 +490,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Lore/PNJ/Commandant Aelys Tarn.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -518,7 +518,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphique de Commandant Aelys Tarn"
+              "title": "Graphique de S001 - Port-Lointain"
             }
           }
         ],
@@ -583,16 +583,18 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "20e7041367f72295",
+  "active": "6726be930f10ebb2",
   "lastOpenFiles": [
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "Lore/PNJ/Commandant Aelys Tarn.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "Bestiaire/Cisarelles/Psyché Cisarelle.md",
     "Aelys Tarn.md",
     "Lore/Organisations/Expédition des Fendeurs de Glace.md",
     "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
     "templates/Elements/PF2/PF2e - Monstre.md",
     "templates/Session - Scène.md",
     "templates/Session - Combat.md",
@@ -609,8 +611,6 @@
     "Bestiaire/Cisarelles/00-Cisarelles Warband.md",
     "Lore/Lieux/Nyssor.md",
     "Bestiaire/Cisarelles/Brute Cisarelle.md",
-    "Bestiaire/Cisarelles/Chasseur Cisarelle.md",
-    "Rumeurs/Le Marché Secret.md",
     "assets/pnj/oracle-lyraelle.webp",
     "assets/pnj/intendant-sebastien-valerion.webp",
     "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
