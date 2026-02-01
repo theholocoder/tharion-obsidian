@@ -190,7 +190,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -205,7 +205,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Scène 3b - Rue Gelevrod"
+              "title": "Scène 1 - L'Hydre à Deux Choppes"
             }
           },
           {
@@ -280,8 +280,7 @@
               "title": "Conseil de la Brèche"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "9aa9e74260a0ab64",
@@ -583,19 +582,102 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "6726be930f10ebb2",
+  "floating": {
+    "id": "aaea343f8ea30af8",
+    "type": "floating",
+    "children": [
+      {
+        "id": "69a778ad490386f3",
+        "type": "window",
+        "children": [
+          {
+            "id": "24d6d044f212428d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "388d095340ce96fa",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "S001 - Port-Lointain"
+                }
+              },
+              {
+                "id": "733400a792946be6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Sessions/S001 - Port-Lointain/S001 - Notes.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "S001 - Notes"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 1710,
+        "height": 1394,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "388d095340ce96fa",
   "lastOpenFiles": [
+    "Sessions/S001 - Port-Lointain/S001 - Notes.md",
+    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+    "Lore/Organisations/Conseil de la Brèche.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+    "Lore/Organisations/République de Thaldris.md",
+    "templates/Elements/PF2/PF2e - Monstre.md",
+    "Lore/PNJ/Commandant Aelys Tarn.md",
+    "Campagnes/EFG/01 - Intrigue.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
+    "assets/maps/entrepot.dd2vtt",
+    "assets/maps/entrepot.dd2vtt.png",
+    "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
+    "assets/maps/entrepot.dungeondraft_map",
+    "assets/maps/entrepot.temporary",
     "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
-    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Lore/PNJ/Commandant Aelys Tarn.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "Bestiaire/Cisarelles/Psyché Cisarelle.md",
     "Aelys Tarn.md",
     "Lore/Organisations/Expédition des Fendeurs de Glace.md",
     "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
-    "templates/Elements/PF2/PF2e - Monstre.md",
     "templates/Session - Scène.md",
     "templates/Session - Combat.md",
     "templates/Session.md",
@@ -605,12 +687,6 @@
     "templates/Elements/Rumeur.md",
     "templates/Elements/PF2/PF2e - PNJ.md",
     "templates/Elements/PF2/PF2e - Historique.md",
-    "templates/Elements/PF2/PF2e - Activité, Action.md",
-    "templates/Elements/PF2/PF2e - Don.md",
-    "Bestiaire/Cisarelles/Arracheuse Cisarelle.md",
-    "Bestiaire/Cisarelles/00-Cisarelles Warband.md",
-    "Lore/Lieux/Nyssor.md",
-    "Bestiaire/Cisarelles/Brute Cisarelle.md",
     "assets/pnj/oracle-lyraelle.webp",
     "assets/pnj/intendant-sebastien-valerion.webp",
     "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
@@ -620,7 +696,6 @@
     "assets/factions/sceau-conseil-de-la-breche.webp",
     "assets/factions/seau-expedition-fendeurs-de-glace.webp",
     "assets/factions/seau-conseil-de-la-breche.webp",
-    "assets/factions/cisarelles/cisarelle-greffe.webp",
     "assets/pnj",
     "Rumeurs",
     "Sessions/S001 - Port-Lointain/scenes",
@@ -628,9 +703,6 @@
     "Règles/PF2/États",
     "Bestiaire/Gobe'liés",
     "Bestiaire/Cisarelles",
-    "undefined.json",
-    "//undefined.json",
-    "Sessions/S002 - Test",
     "Untitled.canvas"
   ]
 }

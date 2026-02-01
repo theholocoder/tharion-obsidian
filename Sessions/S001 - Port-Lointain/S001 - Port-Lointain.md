@@ -49,29 +49,14 @@ LIMIT 1
 
 ---
 
-## TODO
-
-- [ ] Audio bourdonnements + cloches d'alarme
-- [ ] Intro + musique d'intro pour la campagne
-- [x] Statblock [[Commandant Aelys Tarn]]
-- [x] Handout: document du [[Conseil de la Brèche]] indiquant que si le PJ permet la destruction des Mantes Géantes, le conseil lui accordera un droit de propriété sur la parcelle de son choix dans le quartier des Hautes-Terrasses ou le terrain de son choix au delà des murs de la ville. Ils gagneront également le rang d'Eclaireur
-- [ ] FoundryVTT: configurer un timer ou un resource bar pour la limite de temps après Aelys Tarn
-- [x] FoundryVTT: battlemap rue Gelevrod
-- [x] FoundryVTT: battlemap combat à la porte
-- [x] FoundryVTT: battlemap combat boss
-- [x] FoundryVTT: objet "Fragment d'exuvie" et "Marquage phéromonal"
-- [x] Scène 4: dialogue du boss en une fois avant le combat
-- [ ] Statblock PNJ de la famille à sauver (y inclure un PNJ "alchimiste" capable de faire des recherches sur la chitine ?)
-- [ ] Statblock Conseil de la Brèche + Gardes ?
+## Aperçu de la session
+Les joueurs sont arrivés depuis peu à [[Port-Lointain]], ils sont réunis dans la taverne [[L'Hydre à Deux Choppes]]. Ils sociabilisent et découvrent l'abondance de [[Nyssor]] lorsqu'ils sont interrompus par un bourdonnement et les cloches d'alarmes : les [[Cisarelles]] attaquent la ville.
 
 ## Intro
 
-> TODO
-
-
-
-## Aperçu de la session
-Les joueurs sont arrivés depuis peu à [[Port-Lointain]], ils sont réunis dans la taverne [[L'Hydre à Deux Choppes]]. Ils sociabilisent et découvrent l'abondance de [[Nyssor]] lorsqu'ils sont interrompus par un bourdonnement et les cloches d'alarmes : les [[Cisarelles]] attaquent la ville.
+> Nyssor... 
+> Au-delà de la Couronne Blanche, s'étendent des terres sans cartes et des ruines sans noms.
+> Bienvenue, **recrue** de l'Expédition des Fendeurs de Glace. On vous envoie là ou les palissades s'arrêtent : explorer l'inconnu, découvrir des ressources, repousser les menaces ou nouer des alliances quand c'est possible. Et ramener à Port-Lointain ce que l'on ne peut pas cultiver : des réponses.
 
 ### Scènes
 ```dataview
