@@ -68,7 +68,7 @@ Les PJ arrivent à l'une des portes massives séparant le quartier des Remparts 
 - **La menace :** Juste derrière eux (à 40 mètres), plusieurs mantes de taille humaine les poursuivent.
 
 ## Indices
-Peu importe l'issue du **dilemme**, sur une Perception Passive 15+ les PJ remarquent quelque chose d'étrange pendant la scène :
+Peu importe l'issue du **dilemme**, sur une Perception Passive 17+ les PJ remarquent quelque chose d'étrange pendant la scène :
 - Les **[[Cisarelles]]** ne tuaient pas les civils sur place. Elles essayaient de les **agripper** et de les tirer en arrière, sans les mordre mortellement puis font appel à des créatures volantes. Elles enlèvent les gens vivants.
 
 ### Le Dilemme

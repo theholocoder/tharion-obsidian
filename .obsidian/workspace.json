@@ -81,12 +81,12 @@
             }
           },
           {
-            "id": "bca659d6c39b3af5",
+            "id": "c843f8db53a116d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
+                "file": "templates/Rumeur.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -101,55 +101,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Éclaireur Cisarelle"
-            }
-          },
-          {
-            "id": "730e5f7dfc102601",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Lieux/Nyssor.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Nyssor"
-            }
-          },
-          {
-            "id": "1a088d702bbe8301",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sessions/Liste des rumeurs.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Liste des rumeurs"
+              "title": "Rumeur"
             }
           }
         ],
@@ -162,30 +114,6 @@
         "children": [
           {
             "id": "c0e88caa7e2d940d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "S001 - Port-Lointain"
-            }
-          },
-          {
-            "id": "e45ecfd4502fbe55",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -209,12 +137,12 @@
             }
           },
           {
-            "id": "20e7041367f72295",
+            "id": "93abaa84ff16a6ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lore/PNJ/Commandant Aelys Tarn.md",
+                "file": "Campagnes/EFG/00 - Hub.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -229,58 +157,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Commandant Aelys Tarn"
-            }
-          },
-          {
-            "id": "db10fa33487c4241",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/Elements/PF2/PF2e - Monstre.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "PF2e - Monstre"
-            }
-          },
-          {
-            "id": "425d1fd4fd4560f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lore/Organisations/Conseil de la Brèche.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Conseil de la Brèche"
+              "title": "00 - Hub"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "9aa9e74260a0ab64",
@@ -361,7 +242,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Signets"
+              "title": "Bookmarks"
             }
           }
         ]
@@ -582,135 +463,22 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "floating": {
-    "id": "aaea343f8ea30af8",
-    "type": "floating",
-    "children": [
-      {
-        "id": "69a778ad490386f3",
-        "type": "window",
-        "children": [
-          {
-            "id": "24d6d044f212428d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "388d095340ce96fa",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "S001 - Port-Lointain"
-                }
-              },
-              {
-                "id": "95b9b5c8dd79accd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Scène 1 - L'Hydre à Deux Choppes"
-                }
-              },
-              {
-                "id": "4ec1eb092f917c62",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Scène 2 - Commandant Aelys Tarn"
-                }
-              },
-              {
-                "id": "733400a792946be6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Sessions/S001 - Port-Lointain/S001 - Notes.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "S001 - Notes"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 0,
-        "width": 1710,
-        "height": 1394,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "c0e88caa7e2d940d",
+  "active": "aad617b31ac8ae87",
   "lastOpenFiles": [
-    "Sessions/S001 - Port-Lointain/S001 - Checklist post-session.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
     "Sessions/S001 - Port-Lointain/S001 - Notes.md",
-    "Sessions/S001 - Port-Lointain/S001 - Checklist.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
+    "Rumeurs/Le Marché Secret.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+    "Rumeurs/La Route de Soif.md",
+    "assets/pnj/eliror.webp",
+    "Lore/Lieux/Port-Lointain.md",
+    "Règles/PF2/États/Index des États.md",
+    "Sessions/S001 - Port-Lointain/S001 - Checklist post-session.md",
+    "Sessions/S001 - Port-Lointain/S001 - Checklist.md",
     "templates/Session - Checklist.md",
     "Sessions/S001 - Port-Lointain/Mecanique - Jauges de Crise.md",
     "Lore/Organisations/Conseil de la Brèche.md",
@@ -724,17 +492,10 @@
     "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
     "assets/maps/entrepot.dungeondraft_map",
     "assets/maps/entrepot.temporary",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
     "Bestiaire/Cisarelles/Psyché Cisarelle.md",
     "Aelys Tarn.md",
     "Lore/Organisations/Expédition des Fendeurs de Glace.md",
     "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
-    "templates/Session - Scène.md",
-    "templates/Session - Combat.md",
-    "templates/Session.md",
-    "templates/Rumeur.md",
-    "templates/PNJ.md",
     "assets/pnj/oracle-lyraelle.webp",
     "assets/pnj/intendant-sebastien-valerion.webp",
     "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
@@ -743,7 +504,6 @@
     "assets/factions/sceau-expedition-fendeurs-de-glace.webp",
     "assets/factions/sceau-conseil-de-la-breche.webp",
     "assets/factions/seau-expedition-fendeurs-de-glace.webp",
-    "assets/factions/seau-conseil-de-la-breche.webp",
     "assets/pnj",
     "Rumeurs",
     "Sessions/S001 - Port-Lointain/scenes",

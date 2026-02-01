@@ -467,6 +467,666 @@
       },
       "active": "aad617b31ac8ae87",
       "mtime": "2026-01-29T16:34:58+01:00"
+    },
+    "Ecran de jeu": {
+      "main": {
+        "id": "15f8779628b26923",
+        "type": "split",
+        "children": [
+          {
+            "id": "f61e5b80dead5a27",
+            "type": "split",
+            "dimension": 47.70554493307839,
+            "children": [
+              {
+                "id": "a75a33fc85f846ec",
+                "type": "tabs",
+                "dimension": 52.01438848920863,
+                "children": [
+                  {
+                    "id": "d5d4e39e2c1b70cb",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "TODO.md",
+                        "kanbanViewState": {
+                          "kanban-plugin": "board",
+                          "list-collapse": [
+                            false,
+                            false,
+                            false
+                          ]
+                        }
+                      },
+                      "pinned": true,
+                      "icon": "lucide-trello",
+                      "title": "TODO"
+                    }
+                  },
+                  {
+                    "id": "c0e681947fe10ba4",
+                    "type": "leaf",
+                    "pinned": true,
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Campagnes/EFG/00 - Hub.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "pinned": true,
+                      "icon": "lucide-file",
+                      "title": "00 - Hub"
+                    }
+                  },
+                  {
+                    "id": "aad617b31ac8ae87",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "S001 - Port-Lointain"
+                    }
+                  }
+                ],
+                "currentTab": 2
+              },
+              {
+                "id": "296540dc6da2c66e",
+                "type": "tabs",
+                "dimension": 47.985611510791365,
+                "children": [
+                  {
+                    "id": "c7e9c3724432ff70",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Lore/Lieux/Port-Lointain.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Port-Lointain"
+                    }
+                  },
+                  {
+                    "id": "c5138aa269c7ad14",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Campagnes/EFG/01 - Intrigue.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "01 - Intrigue"
+                    }
+                  }
+                ],
+                "currentTab": 1
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "8d7141c5072b73f9",
+            "type": "split",
+            "dimension": 52.29445506692161,
+            "children": [
+              {
+                "id": "3579a91a2f405f90",
+                "type": "tabs",
+                "dimension": 52.01438848920863,
+                "children": [
+                  {
+                    "id": "e45ecfd4502fbe55",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Scène 1 - L'Hydre à Deux Choppes"
+                    }
+                  },
+                  {
+                    "id": "20e7041367f72295",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Lore/PNJ/Commandant Aelys Tarn.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Commandant Aelys Tarn"
+                    }
+                  },
+                  {
+                    "id": "425d1fd4fd4560f2",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Lore/Organisations/Conseil de la Brèche.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Conseil de la Brèche"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "fdba81c92868a013",
+                "type": "tabs",
+                "dimension": 47.985611510791365,
+                "children": [
+                  {
+                    "id": "44f36ee5040fa4c1",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Règles/PF2/États/Index des États.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Index des États"
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "992acb2a8d49f727",
+        "type": "split",
+        "children": [
+          {
+            "id": "9e6c6f18bd720ae7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6726be930f10ebb2",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": true
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Explorateur de fichiers"
+                }
+              },
+              {
+                "id": "7ea987a8a13528c9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "Cisarelles",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "f456e3876a5d8a4a",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Signets"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "617fb1e7a61f1db6",
+        "type": "split",
+        "children": [
+          {
+            "id": "b83162bbcaabbe3c",
+            "type": "tabs",
+            "dimension": 45.29058116232465,
+            "children": [
+              {
+                "id": "d7a6bea1813f2cb2",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "TODO.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for TODO"
+                }
+              },
+              {
+                "id": "9828b0ebfa905a85",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "TODO.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from TODO"
+                }
+              },
+              {
+                "id": "2b15e82dc659c93a",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "5196b62e0e75e235",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "8884ec69975e88fa",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "9294bbd48fa51349",
+                "type": "leaf",
+                "state": {
+                  "type": "CALENDARIUM",
+                  "state": {
+                    "calendar": "ID_492bfa5b2bc9",
+                    "ephemeral": {
+                      "viewing": {
+                        "day": 8,
+                        "month": 4,
+                        "year": 2942
+                      },
+                      "viewState": 1,
+                      "displaying": {
+                        "day": 8,
+                        "month": 4,
+                        "year": 2942
+                      },
+                      "displayDayNumber": false,
+                      "displaySeasonColors": false,
+                      "interpolateColors": true,
+                      "displayMoons": true,
+                      "displayWeather": true,
+                      "location": ""
+                    },
+                    "id": "ID_ebf95a0afb6a"
+                  },
+                  "icon": "CALENDARIUM",
+                  "title": "Calendarium"
+                }
+              },
+              {
+                "id": "89120b7eeed09030",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.674689822228881,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graphique de Scène 1 - L'Hydre à Deux Choppes"
+                }
+              }
+            ],
+            "currentTab": 6
+          },
+          {
+            "id": "eb414f56f9b3a09f",
+            "type": "tabs",
+            "dimension": 54.70941883767535,
+            "children": [
+              {
+                "id": "a50b5c25152e53e2",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Lore/Lieux/L'Hydre à Deux Choppes.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Plan de L'Hydre à Deux Choppes"
+                }
+              },
+              {
+                "id": "4f6c6f1bcb97ff7f",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 200
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Ouvrir le sélecteur rapide": false,
+          "graph:Ouvrir la vue graphique": false,
+          "canvas:Créer une nouvelle toile": false,
+          "templates:Insérer le modèle": false,
+          "command-palette:Ouvrir la palette de commandes": false,
+          "markdown-importer:Ouvrir l'importateur Markdown": false,
+          "workspaces:Gérer les espaces de travail": false,
+          "bases:Create new base": true,
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-git:Open Git source control": false,
+          "obsidian-kanban:Create new board": false,
+          "fantasy-content-generator:Fantasy Generators": false,
+          "obsidian-leaflet-plugin:Open Leaflet Map": false,
+          "sheet-plus:Create excel file": false,
+          "templater-obsidian:Templater": false,
+          "calendarium:Open Calendarium": false
+        }
+      },
+      "floating": {
+        "id": "aaea343f8ea30af8",
+        "type": "floating",
+        "children": [
+          {
+            "id": "69a778ad490386f3",
+            "type": "window",
+            "children": [
+              {
+                "id": "24d6d044f212428d",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "388d095340ce96fa",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "S001 - Port-Lointain"
+                    }
+                  },
+                  {
+                    "id": "95b9b5c8dd79accd",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Scène 1 - L'Hydre à Deux Choppes"
+                    }
+                  },
+                  {
+                    "id": "4ec1eb092f917c62",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Scène 2 - Commandant Aelys Tarn"
+                    }
+                  },
+                  {
+                    "id": "733400a792946be6",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Sessions/S001 - Port-Lointain/S001 - Notes.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": true,
+                        "backlinkOpts": {
+                          "collapseAll": false,
+                          "extraContext": false,
+                          "sortOrder": "alphabetical",
+                          "showSearch": false,
+                          "searchQuery": "",
+                          "backlinkCollapsed": false,
+                          "unlinkedCollapsed": true
+                        }
+                      },
+                      "icon": "lucide-file",
+                      "title": "S001 - Notes"
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical",
+            "x": 0,
+            "y": 0,
+            "width": 1710,
+            "height": 1394,
+            "maximize": true,
+            "zoom": 0
+          }
+        ]
+      },
+      "active": "e45ecfd4502fbe55",
+      "mtime": "2026-02-01T20:05:50+01:00"
     }
   },
   "active": "Session prep"
