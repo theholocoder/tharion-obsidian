@@ -6,7 +6,6 @@
       {
         "id": "a75a33fc85f846ec",
         "type": "tabs",
-        "dimension": 37.01780415430267,
         "children": [
           {
             "id": "d5d4e39e2c1b70cb",
@@ -57,12 +56,36 @@
             }
           },
           {
+            "id": "1304ac6a4be114bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rumeurs/Le Marché Secret.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Le Marché Secret"
+            }
+          },
+          {
             "id": "aad617b31ac8ae87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -77,16 +100,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "S001 - Port-Lointain"
+              "title": "S001 - Notes"
             }
           },
           {
-            "id": "c843f8db53a116d8",
+            "id": "0bde34c984098ddd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Rumeur.md",
+                "file": "Rumeurs/L'enfant Arraché.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -101,98 +124,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Rumeur"
+              "title": "L'enfant Arraché"
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "3579a91a2f405f90",
-        "type": "tabs",
-        "dimension": 40.57863501483679,
-        "children": [
-          {
-            "id": "c0e88caa7e2d940d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Scène 1 - L'Hydre à Deux Choppes"
-            }
-          },
-          {
-            "id": "93abaa84ff16a6ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Campagnes/EFG/00 - Hub.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "00 - Hub"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "9aa9e74260a0ab64",
-        "type": "tabs",
-        "dimension": 22.403560830860535,
-        "children": [
-          {
-            "id": "c5138aa269c7ad14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Campagnes/EFG/01 - Intrigue.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "01 - Intrigue"
-            }
-          }
-        ]
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -370,7 +306,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "file": "Rumeurs/L'enfant Arraché.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -398,7 +334,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphique de S001 - Port-Lointain"
+              "title": "Graphique de L'enfant Arraché"
             }
           }
         ],
@@ -463,39 +399,39 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "aad617b31ac8ae87",
+  "active": "0bde34c984098ddd",
   "lastOpenFiles": [
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
-    "Sessions/S001 - Port-Lointain/S001 - Notes.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
+    "Campagnes/EFG/00 - Hub.md",
     "Rumeurs/Le Marché Secret.md",
-    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
     "Rumeurs/La Route de Soif.md",
-    "assets/pnj/eliror.webp",
-    "Lore/Lieux/Port-Lointain.md",
-    "Règles/PF2/États/Index des États.md",
-    "Sessions/S001 - Port-Lointain/S001 - Checklist post-session.md",
-    "Sessions/S001 - Port-Lointain/S001 - Checklist.md",
-    "templates/Session - Checklist.md",
-    "Sessions/S001 - Port-Lointain/Mecanique - Jauges de Crise.md",
-    "Lore/Organisations/Conseil de la Brèche.md",
-    "Lore/Organisations/République de Thaldris.md",
-    "templates/Elements/PF2/PF2e - Monstre.md",
-    "Lore/PNJ/Commandant Aelys Tarn.md",
+    "TODO.md",
+    "Sessions/S001 - Port-Lointain/S001 - Notes.md",
+    "Rumeurs/L'enfant Arraché.md",
+    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
     "Campagnes/EFG/01 - Intrigue.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
+    "Lore/PNJ/Varkesh, le Héraut du Silence.md",
+    "Lore/PNJ/Vespera, la Sibylle des Cendres.md",
+    "Lore/PNJ/Mangeur d'Astre.md",
+    "Lore/Hégémonie Aethelgard.md",
+    "Lore/Lieux/Observatoire du Néant.md",
+    "Lore/Lieux/Nyssor.md",
+    "Lore/Lieux/Port-Lointain.md",
+    "Lore/Lieux/L'Hydre à Deux Choppes.md",
+    "Lore/Lieux/Lieu-Cendre.md",
+    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+    "Campagnes/EFG/PJ/Fenn Brindebois.md",
+    "Campagnes/EFG/PJ/Yoko.md",
+    "Campagnes/EFG/PJ/Lyra.md",
+    "templates/Rumeur.md",
+    "Campagnes/EFG/PJ/Voss Vitriox.md",
+    "Sessions/S001 - Port-Lointain/S001 - Checklist.md",
+    "Sessions/S001 - Port-Lointain/S001 - Checklist post-session.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
+    "assets/pnj/eliror.webp",
     "assets/maps/entrepot.dd2vtt",
     "assets/maps/entrepot.dd2vtt.png",
-    "Sessions/S001 - Port-Lointain/Bestiaire - S001.md",
     "assets/maps/entrepot.dungeondraft_map",
     "assets/maps/entrepot.temporary",
-    "Bestiaire/Cisarelles/Psyché Cisarelle.md",
-    "Aelys Tarn.md",
-    "Lore/Organisations/Expédition des Fendeurs de Glace.md",
-    "Bestiaire/Cisarelles/Éclaireur Cisarelle.md",
     "assets/pnj/oracle-lyraelle.webp",
     "assets/pnj/intendant-sebastien-valerion.webp",
     "assets/pnj/archistratege-adjoint-marcus-valerius.webp",

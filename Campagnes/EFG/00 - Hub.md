@@ -6,11 +6,25 @@ updated: 2026-01-09
 ---
 # EFG — Hub
 
+```leaflet  
+id: nyssor-map  
+lock: true
+darkMode: false
+image: [[Nyssor.webp]]
+bounds: [[0,0], [4096,4096]]
+height: 850px
+width: 95%
+lat: 2280
+long: 1700
+unit: km
+scale: 0.16853932584269662
+minZoom: -2
+maxZoom: 2
+defaultZoom: -2
+zoomDelta: 0.5
+```
 ## Accès rapide
 - Intro joueurs : [[EFG Intro]]
-- Prépa : [[30 - Prépa prochaine session]]
-- Arcs/Fronts : [[10 - Arcs & Fronts]]
-- Quêtes : [[11 - Quêtes & Missions]]
 - Rumeurs : [[Liste des rumeurs]]
 
 ## Sessions `BUTTON[button-new-session]`

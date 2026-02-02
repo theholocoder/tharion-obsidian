@@ -40,7 +40,7 @@ La [[Ligue de Veyra]] vend du matériel à la [[Loge des Sans-Passé]] (des sort
 
 ### Journal
 
-| Session | Date | Notes |
-| ------- | ---- | ----- |
-|         |      |       |
-|         |      |       |
+| Session                  | Date    | Notes                                                                      |
+| ------------------------ | ------- | -------------------------------------------------------------------------- |
+| [[S001 - Port-Lointain]] | 8-11-42 | Trouvé une caisse estampillé "Ligue de Veyra" contenant des tubes en métal |
+|                          |         |                                                                            |

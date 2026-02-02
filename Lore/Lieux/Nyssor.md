@@ -38,6 +38,6 @@ zoomDelta: 0.5
 ## Lieux attachés
 
 ```dataview
-TABLE faction as "Faction" WHERE categorie and categorie = "lieu" and region = "Nyssor" SORT file.name
+TABLE faction as "Faction" WHERE categorie and categorie = "lieu" and region = [[Nyssor]] SORT file.name
 ```
 

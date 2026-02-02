@@ -40,7 +40,7 @@ TODO
 
 ### Journal
 
-| Session | Date | Notes |
-| ------- | ---- | ----- |
-|         |      |       |
-|         |      |       |
+| Session                  | Date    | Notes                                                                                                                                                                |
+| ------------------------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[S001 - Port-Lointain]] | 8-11-42 | Les PJ interrogent [[Bruna]] qui leur conte l'histoire d'un missionnaire revenu des plaines au nord, qui aurait vu des ruines avec un système d'irrigation complexe. |
+|                          |         |                                                                                                                                                                      |

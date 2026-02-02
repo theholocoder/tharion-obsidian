@@ -259,86 +259,9 @@
       ]
     },
     {
-      "id": "nyssor-map",
-      "locked": true,
-      "lastAccessed": 1769856808716,
-      "markers": [
-        {
-          "id": "ID_ab89894bda28",
-          "type": "Bourg",
-          "loc": [
-            2281.027471383691,
-            490.3833953281717
-          ],
-          "link": "Port-Lointain",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_b9f91819b98b",
-          "type": "Cisarelles",
-          "loc": [
-            1637.8897859486378,
-            1043.2049759023785
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Lieu-Cendre",
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_28380b6b9ada",
-          "type": "Camp",
-          "loc": [
-            1812.3955013475643,
-            425.4868441652089
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Silk'Arak",
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_ab4b3b3ba889",
-          "type": "Forêt",
-          "loc": [
-            2050.569369385283,
-            319.1872748446251
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Forêt à nommer",
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [],
-      "files": [
-        "Lore/Lieux/Nyssor.md"
-      ]
-    },
-    {
       "id": "map-port-lointain",
       "locked": false,
-      "lastAccessed": 1769972660571,
+      "lastAccessed": 1770039943360,
       "markers": [
         {
           "id": "ID_9bfa9bdba9cb",
@@ -526,6 +449,135 @@
       "files": [
         "Lore/Lieux/Port-Lointain.md"
       ]
+    },
+    {
+      "id": "nyssor-map",
+      "locked": true,
+      "lastAccessed": 1770041120497,
+      "markers": [
+        {
+          "id": "ID_ab89894bda28",
+          "type": "Bourg",
+          "loc": [
+            2281.027471383691,
+            490.3833953281717
+          ],
+          "link": "Port-Lointain",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_b9f91819b98b",
+          "type": "Cisarelles",
+          "loc": [
+            1637.8897859486378,
+            1043.2049759023785
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Lieu-Cendre",
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_28380b6b9ada",
+          "type": "Camp",
+          "loc": [
+            1812.3955013475643,
+            425.4868441652089
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Silk'Arak",
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ab4b3b3ba889",
+          "type": "Forêt",
+          "loc": [
+            2050.569369385283,
+            319.1872748446251
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Forêt à nommer",
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_d92849eafb0b",
+          "type": "Rumeur",
+          "loc": [
+            1995.82421875,
+            476.1925836015493
+          ],
+          "link": "L'enfant Arraché",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ab195ad96aca",
+          "type": "Rumeur",
+          "loc": [
+            2586.64453125,
+            667.3725565071918
+          ],
+          "link": "La Route de Soif",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_c9bb087b2a0a",
+          "type": "Rumeur",
+          "loc": [
+            2148.7421875,
+            437.1034586220064
+          ],
+          "link": "Le Marché Secret",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Lore/Lieux/Nyssor.md",
+        "Campagnes/EFG/00 - Hub.md"
+      ]
     }
   ],
   "defaultMarker": {
@@ -554,8 +606,8 @@
       },
       "isImage": false,
       "tags": [],
-      "minZoom": null,
-      "maxZoom": null
+      "minZoom": -0.5,
+      "maxZoom": 2
     },
     {
       "type": "Cisarelles",
@@ -570,8 +622,8 @@
       },
       "isImage": false,
       "tags": [],
-      "minZoom": null,
-      "maxZoom": null
+      "minZoom": -0.5,
+      "maxZoom": 2
     },
     {
       "type": "Forêt",
@@ -586,8 +638,8 @@
       },
       "isImage": false,
       "tags": [],
-      "minZoom": null,
-      "maxZoom": null
+      "minZoom": -0.5,
+      "maxZoom": 2
     },
     {
       "type": "Donjon",
@@ -602,8 +654,8 @@
       },
       "isImage": false,
       "tags": [],
-      "minZoom": null,
-      "maxZoom": null
+      "minZoom": -0.5,
+      "maxZoom": 2
     },
     {
       "type": "Camp",
@@ -618,8 +670,8 @@
       },
       "isImage": false,
       "tags": [],
-      "minZoom": null,
-      "maxZoom": null
+      "minZoom": -0.5,
+      "maxZoom": 2
     },
     {
       "type": "Bourg - Quartier",
@@ -652,6 +704,22 @@
       "tags": [],
       "minZoom": 0,
       "maxZoom": 3
+    },
+    {
+      "type": "Rumeur",
+      "iconName": "exclamation",
+      "color": "#dc932e",
+      "alpha": 1,
+      "layer": false,
+      "transform": {
+        "size": 15,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": -0.5,
+      "maxZoom": 2
     }
   ],
   "color": "#dddddd",

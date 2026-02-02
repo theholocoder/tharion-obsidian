@@ -13,7 +13,7 @@ ancestry: Elfe (ou Sang-mêlé)
 gender: F
 class: Ensorceleuse / Oracle
 level: 12
-status: Vivant
+status: En gestation
 updated: 2026-01-19
 aliases:
   - Vespera

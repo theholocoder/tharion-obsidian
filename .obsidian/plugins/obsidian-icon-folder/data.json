@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiLockKeyhole",
+      "🛑",
       "LiEar",
       "🗣",
-      "LiKanbanSquare",
-      "LiHandHeart",
-      "LiHexagon"
+      "LiKanbanSquare"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -47,5 +47,13 @@
   "Hexagones": "LiHexagon",
   "Handouts": "LiHandHeart",
   "IMAGES A GENERER.md": "LiKanbanSquare",
-  "Rumeurs": "LiEar"
+  "Rumeurs": "LiEar",
+  "Lore/Lieux/Observatoire du Néant.md": "LiLockKeyhole",
+  "Lore/Hégémonie Aethelgard.md": "LiLockKeyhole",
+  "Lore/PNJ/Varkesh, le Héraut du Silence.md": "LiLockKeyhole",
+  "Lore/PNJ/Vespera, la Sibylle des Cendres.md": "LiLockKeyhole",
+  "Lore/PNJ/Mangeur d'Astre.md": "LiLockKeyhole",
+  "Lore/PNJ/Kaelen, l'Architecte de Fer.md": "LiLockKeyhole",
+  "Lore/PNJ/Golgotha, la Mère des Chairs.md": "LiLockKeyhole",
+  "Campagnes/EFG/01 - Intrigue.md": "LiLockKeyhole"
 }
