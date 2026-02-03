@@ -10,6 +10,7 @@ kanban-plugin: board
 - [ ] Dons Animanthrope niveau 9 sur foundry #priorite/faible
 - [ ] Dons Animanthrope niveau 13 sur foundry #priorite/faible
 - [ ] Dons Animanthrope niveau 17 sur foundry #priorite/faible
+- [ ] empyréen = langue officielle des textes sacré [[Ordre de Myrr|Myrr]]
 
 
 ## In progress
