@@ -11,7 +11,10 @@ tags:
   - categorie/faction
 updated: 2026-01-08
 ---
-> Monarchie féodale dirigée par [[Reine Ydris Halvorn|Ydris Halvorn]], puissance navale et métallurgique cherchant à sécuriser ports et routes maritimes.
+>  *« Le fer ne ment jamais, et la mer ne pardonne pas aux faibles. Nous sommes l'ancre qui retient ce monde à la dérive. Tant que la Reine de Fer tiendra debout, Halvorn ne pliera pas. »*
+>— Amiral Kaelen Var, lors du lancement de la Flotte de l'Exode.
+
+Monarchie féodale dirigée par [[Reine Ydris Halvorn|Ydris Halvorn]], puissance navale et métallurgique cherchant à sécuriser ports et routes maritimes.
 ## Résumé
 
 ![[cdk-halvorn.webp|loc left profile medium]]

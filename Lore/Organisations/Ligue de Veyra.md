@@ -11,7 +11,9 @@ tags:
   - categorie/faction
 updated: 2026-01-08
 ---
-> Confédération marchande dirigée par le [[Le Conseil des Cinq Clés|Conseil des Cinq Clés]], obsédée par le monopole des ressources rares et des routes commerciales.
+> *Il n'y a pas d'ennemis éternels, seulement des contrats mal négociés. Tout s'achète sur Nyssor, même l'espoir. Surtout l'espoir.*
+
+Confédération marchande dirigée par le [[Le Conseil des Cinq Clés|Conseil des Cinq Clés]], obsédée par le monopole des ressources rares et des routes commerciales.
 
 ![[foundry-thumbnail.webp|banner]]
 ## Résumé

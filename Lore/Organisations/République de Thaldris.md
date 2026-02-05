@@ -11,7 +11,10 @@ tags:
   - categorie/faction
 updated: 2026-01-08
 ---
-> République militaire et élective, dirigée par le [[Sénat des Stratèges]] et menée par l'[[Archistratège Korvan Drael]]. Sur [[Nyssor]], elle cherche des avant-postes stratégiques et des avancées d’ingénierie de guerre.
+>*« Le chaos est l'état naturel du monde ; l'ordre est une conquête de chaque instant. Nous ne bâtissons pas des murs pour nous cacher, mais pour définir où la civilisation commence et où la barbarie s'arrête. »*
+>— Archistratège Korvan Drael.
+
+République militaire et élective, dirigée par le [[Sénat des Stratèges]] et menée par l'[[Archistratège Korvan Drael]]. Sur [[Nyssor]], elle cherche des avant-postes stratégiques et des avancées d’ingénierie de guerre.
 
 ## Résumé
 
