@@ -18,13 +18,14 @@ reputation: 0
 INPUT[progressBar(title('Réputation de la Concorde'), minValue(-100), maxValue(100), defaultValue(0), stepSize(1)):reputation]
 ```
 
-> *« Citation ou rumeur définissant la faction. »*
+> *« Port-Lointain est le cœur qui bat, mais nous sommes le sang qui circule dans les terres sauvages. Sans nous, la colonie est aveugle. Sans nous, elle est déjà morte. »*
+> — Commandant Aelys Tarn, discours d'accueil aux nouveaux arrivants.
 
 ![[Image.webp|banner]]
 
 ## Résumé
 
-![[Image.webp|loc left profile medium]]
+![[campaign-logo.webp|loc left profile medium]]
 
 | Type de faction   | Cohésion | Méthodes |
 | ----------------- | -------- | -------- |

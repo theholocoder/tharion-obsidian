@@ -34,7 +34,7 @@ INPUT[progressBar(title('Influence de Halvorn'), minValue(-100), maxValue(100), 
 
 ## Résumé
 
-![[Image.webp|loc left profile medium]]
+![[sceau-conseil-de-la-breche.webp|loc left profile medium]]
 
 Le Conseil de la Brèche est l'organe exécutif qui maintient un équilibre précaire entre les quatre factions de la [[Concorde de Kaerith]]. Chaque décision est une négociation constante où les intérêts factionnels s'opposent à la survie commune. Le siège du conseil se trouve dans la Citadelle Blanche de [[Port-Lointain]], dans une salle circulaire symbolisant l'égalité formelle des membres. Composé des plus hauts dirigeants du continent, il représente l'élite politique et militaire venue sauver ce qui peut l'être sur le continent oublié de [[Nyssor]].
 

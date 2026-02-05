@@ -13,7 +13,9 @@ updated: 2026-01-08
 ---
 > République militaire et élective, dirigée par le [[Sénat des Stratèges]] et menée par l'[[Archistratège Korvan Drael]]. Sur [[Nyssor]], elle cherche des avant-postes stratégiques et des avancées d’ingénierie de guerre.
 
-## Identité
+## Résumé
+
+![[cdk-thaldris.webp|loc left profile medium]]
 - **Catégorie :** faction
 
 ## Buts & méthodes

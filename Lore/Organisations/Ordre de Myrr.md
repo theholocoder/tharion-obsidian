@@ -13,7 +13,9 @@ updated: 2026-01-08
 ---
 > Théocratie guidée par le [[Synode d’Aranys]] et la [[Grande Oracle Serelith]], convaincue d’accomplir une mission sacrée sur [[Nyssor]].
 
-## Identité
+## Résumé
+
+![[cdk-myrr.webp|loc left profile medium]]
 - **Catégorie :** faction
 
 ## Buts & méthodes

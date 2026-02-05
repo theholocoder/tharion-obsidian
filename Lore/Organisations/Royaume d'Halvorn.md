@@ -12,8 +12,9 @@ tags:
 updated: 2026-01-08
 ---
 > Monarchie féodale dirigée par [[Reine Ydris Halvorn|Ydris Halvorn]], puissance navale et métallurgique cherchant à sécuriser ports et routes maritimes.
+## Résumé
 
-## Identité
+![[cdk-halvorn.webp|loc left profile medium]]
 - **Catégorie :** faction
 
 ## Buts & méthodes

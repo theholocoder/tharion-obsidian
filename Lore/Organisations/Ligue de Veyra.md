@@ -14,7 +14,9 @@ updated: 2026-01-08
 > Confédération marchande dirigée par le [[Le Conseil des Cinq Clés|Conseil des Cinq Clés]], obsédée par le monopole des ressources rares et des routes commerciales.
 
 ![[foundry-thumbnail.webp|banner]]
-## Identité
+## Résumé
+
+![[cdk-veyra.webp|loc left profile medium]]
 - **Catégorie :** faction
 
 ## Organisation interne

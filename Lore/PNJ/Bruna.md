@@ -28,7 +28,7 @@ updated: 2026-01-20
 > Faire prospérer l'auberge et empêcher [[Olgar Le Borgne|Olgar]] de trop boire ou de se battre inutilement.
 
 > [!warning]- Secret
-> Elle apprend à lire et écrire en cachette grâce à un scribe de la [[Port-Lointain#La Citadelle Blanche|Citadelle]] qui vient boire ici, car elle veut tenir les comptes officiels elle-même.
+> Elle rêve secrètement de voir le monde au-delà des murs de [[Port-Lointain]], mais sa loyauté envers son père adoptif la retient pour l'instant.
 
 > [!quote]+ Description
 > Une jeune femme robuste à la tresse châtain stricte et au regard calculateur.
@@ -65,4 +65,4 @@ Fille adoptive d'Olgar, elle gère la taverne avec une efficacité redoutable.
 ```
 
 ## Histoire Détaillée
-Bruna est le véritable cerveau logistique de l'[[L'Hydre à Deux Choppes|Hydre]]. Elle gère les stocks, négocie avec les fournisseurs de [[La Noue]] et tient les ardoises des soldats. Elle rêve secrètement de voir le monde au-delà des murs de [[Port-Lointain]], mais sa loyauté envers son père adoptif la retient pour l'instant.
+Bruna est le véritable cerveau logistique de l'[[L'Hydre à Deux Choppes|Hydre]]. Elle gère les stocks, négocie avec les fournisseurs de [[La Noue]] et tient les ardoises des soldats. 

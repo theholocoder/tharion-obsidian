@@ -14,7 +14,9 @@ updated: 2026-01-08
 ---
 > Coalition inter-factions formée pour survivre aux bouleversements climatiques et organiser l’exode vers [[Nyssor]].
 
-## Identité
+## Résumé
+
+![[cdk-blason.webp|loc left profile medium]]
 - **Catégorie :** faction
 - **Nature :** alliance politique / militaire / logistique
 
