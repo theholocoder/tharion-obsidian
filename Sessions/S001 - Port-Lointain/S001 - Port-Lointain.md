@@ -4,8 +4,8 @@ campagne: "[[L'Expédition des Fendeurs de Glace]]"
 numero: 1
 code: S001
 date_irl: 2026-02-01
-date_ig_debut: 08/11/42
-date_ig_fin: 08/11/42
+date_ig_debut: 08/05/42
+date_ig_fin: 08/05/42
 pjs:
   - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
   - "[[Campagnes/EFG/PJ/Chiro Kono.md|Chiro Kono]]"
@@ -14,12 +14,11 @@ pjs:
   - "[[Campagnes/EFG/PJ/Yoko.md|Yoko]]"
   - "[[Campagnes/EFG/PJ/Lyra.md|Lyra]]"
   - "[[Campagnes/EFG/PJ/Noctis.md|Noctis]]"
-  - "[[Myca Libre-Spore]]"
   - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
   - "[[Campagnes/EFG/PJ/Korvax Oeil-de-fer.md|Korvax Oeil-de-fer]]"
-resume: ""
+resume: "L'arrivée des recrues de l'Expédition des Fendeurs de Glace est perturbée par une attaque de Mantes Géantes sur la ville. Le Commandant Aelys Tarn demande aux missionnaires de l'aider à repousser l'attaque en fournissant 3 objectifs au groupe. Seuls deux objectifs sont atteints avant d'atteindre et de vaincre la menace principale : une mante immense dotée de pouvoirs psioniques."
 updated: 2026-01-09
-termine: false
+termine: true
 ---
 ## Informations sur la session
 

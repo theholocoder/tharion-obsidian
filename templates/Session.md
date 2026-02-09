@@ -52,9 +52,9 @@ code: <% code %>
 date_irl: <% tp.date.now("YYYY-MM-DD") %>
 date_ig_debut: ""
 date_ig_fin: ""
+resume: ""
 joueurs: []
 persos: []
-resume: ""
 updated: <% tp.date.now("YYYY-MM-DD") %>
 termine: false
 ---
@@ -68,7 +68,7 @@ INPUT[textArea(title('Résumé de la session en 2-5 phrases max. ')):resume]
 ```
 
 ```meta-bind
-INPUT[listSuggester(title('Personnages'), optionQuery('Campagnes/EFG/PJ'), useLinks(partial)):pjs]
+INPUT[listSuggester(title('Personnages'), optionQuery("Campagnes/EFG/PJ")):pjs]
 ```
 
 ---
@@ -79,7 +79,6 @@ INPUT[listSuggester(title('Personnages'), optionQuery('Campagnes/EFG/PJ'), useLi
 TABLE choice(length(resume) > 0, resume, "*Aucun résumé renseigné pour la session précédente.*") AS "Résumé"
 FROM "Sessions"
 WHERE type = "session"
-  AND campagne = "[[L'Expédition des Fendeurs de Glace]]"
   AND numero = this.numero - 1
 LIMIT 1
 ```

@@ -78,7 +78,7 @@ En fonction de l'avancement/timer, faire jeter `1d3` et l'un des membres de la f
 ## Niveau 1
 ---
 
-==Moyenne== ==Humaine==
+==Moyenne== ==Néphilim==
 
 Apothicaire de campagne affectée à Port-Lointain, Maela fait partie des premiers civils venus soutenir l’[[Expédition des Fendeurs de Glace]].
 

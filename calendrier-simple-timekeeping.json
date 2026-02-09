@@ -1,0 +1,148 @@
+{
+  "name": "Pyrrhian Calendar",
+  "years": {
+    "yearZero": 0,
+    "firstWeekday": 0,
+    "leapYear": null
+  },
+  "months": {
+    "values": [
+      {
+        "name": "Flamme de Pyrrhos",
+        "ordinal": 1,
+        "days": 1,
+        "abbreviation": "Fla"
+      },
+      {
+        "name": "Pyrrhal",
+        "ordinal": 2,
+        "days": 35,
+        "abbreviation": "Pyr"
+      },
+      {
+        "name": "Clairval",
+        "ordinal": 3,
+        "days": 35,
+        "abbreviation": "Cla"
+      },
+      {
+        "name": "Voile d'Aranys",
+        "ordinal": 4,
+        "days": 1,
+        "abbreviation": "VdA"
+      },
+      {
+        "name": "Grivaille",
+        "ordinal": 5,
+        "days": 35,
+        "abbreviation": "Gri"
+      },
+      {
+        "name": "Mandaille",
+        "ordinal": 6,
+        "days": 35,
+        "abbreviation": "Man"
+      },
+      {
+        "name": "Le Jugement d'Ignaris",
+        "ordinal": 7,
+        "days": 1,
+        "abbreviation": "LJI"
+      },
+      {
+        "name": "Fermine",
+        "ordinal": 8,
+        "days": 35,
+        "abbreviation": "Fer"
+      },
+      {
+        "name": "Cendrine",
+        "ordinal": 9,
+        "days": 35,
+        "abbreviation": "Cen"
+      },
+      {
+        "name": "L'Éclat des Étoiles",
+        "ordinal": 10,
+        "days": 1,
+        "abbreviation": "LdE"
+      },
+      {
+        "name": "Giraudre",
+        "ordinal": 11,
+        "days": 35,
+        "abbreviation": "Gir"
+      },
+      {
+        "name": "Maraudre",
+        "ordinal": 12,
+        "days": 35,
+        "abbreviation": "Mar"
+      },
+      {
+        "name": "La Nuit des Ancêtres",
+        "ordinal": 13,
+        "days": 1,
+        "abbreviation": "LNA"
+      },
+      {
+        "name": "Morlin",
+        "ordinal": 14,
+        "days": 35,
+        "abbreviation": "Mor"
+      },
+      {
+        "name": "Gavrin",
+        "ordinal": 15,
+        "days": 35,
+        "abbreviation": "Gav"
+      }
+    ]
+  },
+  "days": {
+    "values": [
+      {
+        "name": "Aubain",
+        "abbreviation": "Aub",
+        "ordinal": 1,
+        "isRestDay": true
+      },
+      {
+        "name": "Pyrrhin",
+        "abbreviation": "Pyh",
+        "ordinal": 2
+      },
+      {
+        "name": "Ignain",
+        "abbreviation": "Ign",
+        "ordinal": 3
+      },
+      {
+        "name": "Aranain",
+        "abbreviation": "Ara",
+        "ordinal": 4
+      },
+      {
+        "name": "Croissain",
+        "abbreviation": "Cro",
+        "ordinal": 5
+      },
+      {
+        "name": "Voilain",
+        "abbreviation": "Vol",
+        "ordinal": 6
+      },
+      {
+        "name": "Ombrin",
+        "abbreviation": "Omb",
+        "ordinal": 7,
+        "isRestDay": true
+      }
+    ],
+    "daysPerYear": 355,
+    "hoursPerDay": 24,
+    "minutesPerHour": 60,
+    "secondsPerMinute": 60
+  },
+  "description": "A calendar of 355 days featuring five single-day holidays intercalated between pairs of 35-day months. The week consists of 7 days: Aubain, Pyrrhin, Ignain, Aranain, Croissain, Voilain, and Ombrin."
+}

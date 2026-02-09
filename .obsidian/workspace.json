@@ -6,6 +6,7 @@
       {
         "id": "a75a33fc85f846ec",
         "type": "tabs",
+        "dimension": 37.01780415430267,
         "children": [
           {
             "id": "d5d4e39e2c1b70cb",
@@ -56,36 +57,12 @@
             }
           },
           {
-            "id": "1304ac6a4be114bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rumeurs/Le Marché Secret.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Le Marché Secret"
-            }
-          },
-          {
             "id": "aad617b31ac8ae87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Notes.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,31 +77,122 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "S001 - Notes"
+              "title": "S001 - Port-Lointain"
             }
           },
           {
-            "id": "0bde34c984098ddd",
+            "id": "c843f8db53a116d8",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "TODO.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
+                "file": "templates/Rumeur.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-trello",
-              "title": "TODO"
+              "icon": "lucide-file",
+              "title": "Rumeur"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
+      },
+      {
+        "id": "3579a91a2f405f90",
+        "type": "tabs",
+        "dimension": 40.57863501483679,
+        "children": [
+          {
+            "id": "c0e88caa7e2d940d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Scène 1 - L'Hydre à Deux Choppes"
+            }
+          },
+          {
+            "id": "93abaa84ff16a6ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Campagnes/EFG/00 - Hub.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "00 - Hub"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "9aa9e74260a0ab64",
+        "type": "tabs",
+        "dimension": 22.403560830860535,
+        "children": [
+          {
+            "id": "c5138aa269c7ad14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Campagnes/EFG/01 - Intrigue.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "01 - Intrigue"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,7 +258,6 @@
       {
         "id": "b83162bbcaabbe3c",
         "type": "tabs",
-        "dimension": 45.29058116232465,
         "children": [
           {
             "id": "d7a6bea1813f2cb2",
@@ -272,11 +339,7 @@
               "state": {
                 "calendar": "ID_492bfa5b2bc9",
                 "ephemeral": {
-                  "viewing": {
-                    "day": 8,
-                    "month": 4,
-                    "year": 2942
-                  },
+                  "viewing": null,
                   "viewState": 1,
                   "displaying": {
                     "day": 8,
@@ -302,7 +365,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "TODO.md",
+                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -330,7 +393,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphique de TODO"
+              "title": "Graphique de S001 - Port-Lointain"
             }
           }
         ],
@@ -339,7 +402,6 @@
       {
         "id": "eb414f56f9b3a09f",
         "type": "tabs",
-        "dimension": 54.70941883767535,
         "children": [
           {
             "id": "a50b5c25152e53e2",
@@ -395,54 +457,54 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "0bde34c984098ddd",
+  "active": "89120b7eeed09030",
   "lastOpenFiles": [
-    "Lore/Panthéon (PF2e).md",
-    "Lore/Panthéon.md",
-    "Rumeurs/L'enfant Arraché.md",
-    "Campagnes/EFG/00 - Hub.md",
-    "Rumeurs/Le Marché Secret.md",
-    "Rumeurs/La Route de Soif.md",
-    "TODO.md",
+    "Sessions/S002 - La Main de Platine/S002 - Le Parapheur de Platine.md",
+    "Sessions/S002 - La Main de Platine/S002 - Notes.md",
+    "Lore/Organisations/Ligue de Veyra.md",
+    "Lore/PNJ/Korran Vraxx.md",
+    "Lore/PNJ/Soren Carthain.md",
     "Sessions/S001 - Port-Lointain/S001 - Notes.md",
-    "Lore/PNJ/Golgotha, la Mère des Chairs.md",
-    "Campagnes/EFG/01 - Intrigue.md",
-    "Lore/PNJ/Varkesh, le Héraut du Silence.md",
-    "Lore/PNJ/Vespera, la Sibylle des Cendres.md",
-    "Lore/PNJ/Mangeur d'Astre.md",
-    "Lore/Hégémonie Aethelgard.md",
-    "Lore/Lieux/Observatoire du Néant.md",
-    "Lore/Lieux/Nyssor.md",
-    "Lore/Lieux/Port-Lointain.md",
-    "Lore/Lieux/L'Hydre à Deux Choppes.md",
-    "Lore/Lieux/Lieu-Cendre.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
     "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
-    "Campagnes/EFG/PJ/Fenn Brindebois.md",
-    "Campagnes/EFG/PJ/Yoko.md",
-    "Campagnes/EFG/PJ/Lyra.md",
-    "templates/Rumeur.md",
-    "Campagnes/EFG/PJ/Voss Vitriox.md",
-    "Sessions/S001 - Port-Lointain/S001 - Checklist.md",
-    "assets/pnj/eliror.webp",
+    "templates/Session.md",
+    "assets/pnj/soren-carthain.webp",
+    "assets/pnj/korran-vraxx.webp",
+    "Campagnes/EFG/00 - Hub.md",
+    "Sessions/S002 - La Main de Platine",
+    "Campagnes/EFG/EFG Intro.md",
+    "Rumeurs/Le Marché Secret.md",
+    "Campagnes/EFG/02 - Intermèdes.md",
+    "calendrier-simple-timekeeping.json~",
+    "calendrier-simple-timekeeping.json",
+    "Règles/PF2/États/Fatigué.md",
+    "Règles/PF2/États/Mourant.md",
+    "Règles/PF2/États/Ralenti.md",
+    "Règles/PF2/États/Drainé.md",
+    "Lore/Calendrier/L'Exode.md",
+    "calendar-seasons-and-stars.json~",
+    "calendar-seasons-and-stars.json",
+    "Règles/PF2/États/Affaibli.md",
+    "Règles/Hexploration.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
+    "Rumeurs/L'enfant Arraché.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
+    "assets/astro-map.webp",
+    "assets/foundry-thumbnail.webp",
+    "assets/campain-logo.webp",
+    "assets/astro-symbol.png",
+    "assets/lieux/port-lointain.webp",
+    "assets/lieux/cdk-veyra-clefmont.webp",
+    "assets/lieux/cdk-thaldris-thal-vorum.webp",
+    "assets/lieux/cdk-myrr-aetherys.webp",
+    "assets/lieux",
+    "assets/factions/concorde-de-kaerith",
     "assets/maps/entrepot.dd2vtt",
-    "assets/maps/entrepot.dd2vtt.png",
     "assets/maps/entrepot.dungeondraft_map",
     "assets/maps/entrepot.temporary",
-    "assets/pnj/oracle-lyraelle.webp",
-    "assets/pnj/intendant-sebastien-valerion.webp",
-    "assets/pnj/archistratege-adjoint-marcus-valerius.webp",
-    "assets/pnj/amiral-borin-poingdacier.webp",
-    "assets/factions/cisarelles/cisarelle-psyche.webp",
-    "assets/factions/sceau-expedition-fendeurs-de-glace.webp",
-    "assets/factions/sceau-conseil-de-la-breche.webp",
-    "assets/factions/seau-expedition-fendeurs-de-glace.webp",
-    "assets/pnj",
-    "Rumeurs",
-    "Sessions/S001 - Port-Lointain/scenes",
-    "opencode.json~",
-    "Règles/PF2/États",
-    "Bestiaire/Gobe'liés",
-    "Bestiaire/Cisarelles",
     "Untitled.canvas"
   ]
 }

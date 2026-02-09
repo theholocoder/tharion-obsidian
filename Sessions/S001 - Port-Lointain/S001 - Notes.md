@@ -51,18 +51,18 @@ Heure in-game de fin de session : 18h41.
 
 ## Suivi par PJ (rapide)
 
-| PJ                     | Faction                    | Conditions | Notes                               |
-| ---------------------- | :------------------------- | ---------- | ----------------------------------- |
-| [[Logan]]              | [[Ligue de Veyra]]         |            |                                     |
-| [[Chiro Kono]]         | [[Ligue de Veyra]]         |            |                                     |
-| [[Lyra]]               | [[République de Thaldris]] |            | Regarder pour son cone pour sa rage |
-| [[Théobald Greyheart]] | [[Ligue de Veyra]]         |            |                                     |
-| [[Voss Vitriox]]       | [[Ligue de Veyra]]         |            |                                     |
-| [[Yoko]]               | [[Royaume d'Halvorn]]      |            |                                     |
-| [[Fenn Brindebois]]    | [[Royaume d'Halvorn]]      |            |                                     |
-| [[Myca Libre-Spore]]   | [[République de Thaldris]] |            |                                     |
-| [[Noctis]]             | [[République de Thaldris]] |            |                                     |
-| [[Korvax Oeil-de-fer]] | [[République de Thaldris]] |            |                                     |
+| PJ                     | Faction                    | Conditions | Notes                                      |
+| ---------------------- | :------------------------- | ---------- | ------------------------------------------ |
+| [[Logan]]              | [[Ligue de Veyra]]         |            |                                            |
+| [[Chiro Kono]]         | [[Ligue de Veyra]]         |            |                                            |
+| [[Lyra]]               | [[République de Thaldris]] |            | Regarder pour son cone pour sa rage (done) |
+| [[Théobald Greyheart]] | [[Ligue de Veyra]]         |            |                                            |
+| [[Voss Vitriox]]       | [[Ligue de Veyra]]         |            |                                            |
+| [[Yoko]]               | [[Royaume d'Halvorn]]      |            |                                            |
+| [[Fenn Brindebois]]    | [[Royaume d'Halvorn]]      |            |                                            |
+| [[Myca Libre-Spore]]   | [[République de Thaldris]] |            |                                            |
+| [[Noctis]]             | [[République de Thaldris]] |            |                                            |
+| [[Korvax Oeil-de-fer]] | [[République de Thaldris]] |            |                                            |
 
 ---
 

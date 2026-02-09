@@ -41,7 +41,9 @@ FROM "Sessions"
 WHERE type = "session" AND campagne = [[L'Expédition des Fendeurs de Glace]]
 SORT numero DESC
 ```
-
+colonne1;colonne2
+test;csv
+peut;marcher
 ## Joueurs `BUTTON[button-new-pj]`
 ```dataview
 TABLE
