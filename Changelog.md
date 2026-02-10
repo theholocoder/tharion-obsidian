@@ -18,3 +18,7 @@ updated: 2026-01-08
 - Renommage `Rules/` → `Règles/`.
 - Ajout des sous-dossiers `Lore/Factions/` et `Lore/Lieux/`, puis renommage `Lore/Factions/` → `Lore/Organisations/`.
 - Mise à jour de `README.md` et `AGENTS.md` pour refléter la structure.
+
+## 2026-02-10
+
+- Ajout lien factuel Synode Mechanis ↔ Kaelen/Varkesh/[[Cristaux d’Ether]].

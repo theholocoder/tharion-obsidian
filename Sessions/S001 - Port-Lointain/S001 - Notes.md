@@ -25,9 +25,9 @@ Pas fait. -> enfant enlevé ? à voir en fonction des autres. cc [[L'enfant Arra
 
 ### [[Scène 3c - Entrepôt des docks]]
 
-Ils discutent avec le gnome Eliror, qui leur indique la caisse de Veyra.
+Ils discutent avec le gnome [[Eliror Thruwin Stromo|Eliror]], qui leur indique la caisse de Veyra.
 La caisse contenant les tubes de la ligue de Veyra (20 petits tubes en métal, tient dans la paume, assez lourd) -> [[Le Marché Secret]] -> divisé entre les 4 membres de la ligue présents (5 chacun).
-Les PJ demandent à Eliror de les suivre à la Citadelle Blanche. Il était là à la fin.
+Les PJ demandent à [[Eliror Thruwin Stromo|Eliror]] de les suivre à la Citadelle Blanche. Il était là à la fin.
 
 
 ### [[Scène 4 - la Citadelle Blanche]]

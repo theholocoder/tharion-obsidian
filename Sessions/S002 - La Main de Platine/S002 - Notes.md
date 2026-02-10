@@ -2,13 +2,15 @@
 fv_veyra: 1
 ---
 ## Notes en vrac
- - femme d'Eliror était une aventurière, peut être marchande pour Logan ?
- - le mec de la ligue du coffre est 20-30ans, cheveux bruns, tenue verte, cape avec capuche sombre, grande épée, il y a 3 jours
- - signe de la guilde de la lanterne, poignée de main spéciale pour  reconnaître les membres
- - message donné
- - Hodert Ferdo Gedge le garde halfelin
- - Logan a vu une carte de Kaerith+Couronne Blanche+Nyssor avec des épingles sur les ruines au nord-est et dans la forêt au sud-ouest.
+ - les PJ vont retrouver [[Eliror Thruwin Stromo|Eliror]], ils veulent quelques infos supplémentaires par rapport à la S001 et le recruter pour être marchand dans leur magasin (boutique itinérante de matériel d'aventure).
+ La femme de [[Eliror Thruwin Stromo|Eliror]] était une aventurière, peut être peut-elle être marchande pour Logan ?
+ - [[Eliror Thruwin Stromo|Eliror]] dit que le mec de la ligue qui est venu voir le coffre a 20-30ans, cheveux bruns, tenue verte, cape avec capuche sombre, grande épée, il est passé il y a 3 jours
+ - (Veyra) signe de la guilde de la lanterne, poignée de main spéciale pour  reconnaître les membres
+ - message de convocation donné
+ - Hodert Ferdo Gedge le garde halfelin, les PJ lui demandent leur chemin pour trouver la Galerie des Archives.
+ - En rejoingnant le bureau, dans une pièce entre-ouverte, Logan a vu une carte de Kaerith+Couronne Blanche+Nyssor avec des épingles sur les ruines au nord-est et dans la forêt au sud-ouest.
 
+## Entretien avec Soren Carthain
 1) *Ambition* — pourquoi vous, pourquoi maintenant ?
 	- Gens ambitieux, fiables, réfléchis
 	- Références : anciens contacts
@@ -20,15 +22,13 @@ fv_veyra: 1
 	- pourquoi ils étaient à l'entrepôt : Logan: aider le gnome + montrer un tube.
 	- 2 autres personnes ont le reste de tuyaux : Chiro Kono et Voss Vitriox.
 3) *Utilité* — qu'avez-vous de concret à déposer dans un parapheur ?
-- ils donnent les tubes
-- un humain 20-30ans s'est servi dedans
+    - ils donnent les tubes
+    - un humain 20-30ans s'est servi dedans
 
 Contrat : dépôt de scellé des tubes, les PJ ne les gardent pas. Clause pour récupérer les tubes des deux autres PJ absents. Clause de non divulgation.
 
-
-
-
 ## PNJ rencontrés (nom + 2 mots)
+- [[Eliror Thruwin Stromo]]
 - Soren Carthain
 - Korran Vraxx
 - Hodert Ferdo Gedge le garde halfelin

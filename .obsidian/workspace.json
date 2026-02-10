@@ -142,7 +142,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Campagnes/EFG/00 - Hub.md",
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -157,7 +157,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "00 - Hub"
+              "title": "Scène 3c - Entrepôt des docks"
             }
           }
         ],
@@ -215,7 +215,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -365,7 +365,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                "file": "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -393,7 +393,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphique de S001 - Port-Lointain"
+              "title": "Graph of Scène 3c - Entrepôt des docks"
             }
           }
         ],
@@ -439,13 +439,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "markdown-importer:Ouvrir l'importateur Markdown": false,
-      "workspaces:Gérer les espaces de travail": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
       "bases:Create new base": true,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
@@ -457,8 +457,28 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "89120b7eeed09030",
+  "active": "93abaa84ff16a6ef",
   "lastOpenFiles": [
+    "Lore/PNJ/Kaelen, l'Architecte de Fer.md~",
+    "Lore/Organisations/Loge des Sans-Passé.md~",
+    "Lore/Organisations/Synode Mechanis.md~",
+    "Lore/Organisations/Sceau Arcanique.md~",
+    "Lore/Organisations/Kroass-Goll.md",
+    "Lore/Organisations/Gobeliés.md",
+    "Lore/PNJ/Eliror Thruwin Stromo.md~",
+    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md~",
+    "Lore/PNJ/Eliror Thruwin Stromo.md",
+    "Sessions/S002 - La Main de Platine/S002 - Notes.md~",
+    "S003 - Idées.md",
+    "Rumeurs/La Route de Soif.md",
+    "Lore/Organisations/Kroass'Goll.md",
+    "Lore/Organisations/Gobe'liés.md",
+    "Lore/Organisations/Sceau Arcanique.md",
+    "Lore/Organisations/Synode Mechanis.md",
+    "Lore/Organisations/Loge des Sans-Passé.md",
+    "Lore/Organisations/Cisarelles.md",
+    "Campagnes/EFG/00 - Hub.md",
+    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
     "Sessions/S002 - La Main de Platine/S002 - Le Parapheur de Platine.md",
     "Sessions/S002 - La Main de Platine/S002 - Notes.md",
     "Lore/Organisations/Ligue de Veyra.md",
@@ -466,11 +486,9 @@
     "Lore/PNJ/Soren Carthain.md",
     "Sessions/S001 - Port-Lointain/S001 - Notes.md",
     "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
-    "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
     "templates/Session.md",
     "assets/pnj/soren-carthain.webp",
     "assets/pnj/korran-vraxx.webp",
-    "Campagnes/EFG/00 - Hub.md",
     "Sessions/S002 - La Main de Platine",
     "Campagnes/EFG/EFG Intro.md",
     "Rumeurs/Le Marché Secret.md",
@@ -478,20 +496,7 @@
     "calendrier-simple-timekeeping.json~",
     "calendrier-simple-timekeeping.json",
     "Règles/PF2/États/Fatigué.md",
-    "Règles/PF2/États/Mourant.md",
-    "Règles/PF2/États/Ralenti.md",
-    "Règles/PF2/États/Drainé.md",
-    "Lore/Calendrier/L'Exode.md",
     "calendar-seasons-and-stars.json~",
-    "calendar-seasons-and-stars.json",
-    "Règles/PF2/États/Affaibli.md",
-    "Règles/Hexploration.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 4 - la Citadelle Blanche.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3c - Entrepôt des docks.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3b - Rue Gelevrod.md",
-    "Rumeurs/L'enfant Arraché.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 3a - La Porte de la Noue.md",
-    "Sessions/S001 - Port-Lointain/scenes/Scène 2 - Commandant Aelys Tarn.md",
     "assets/astro-map.webp",
     "assets/foundry-thumbnail.webp",
     "assets/campain-logo.webp",
@@ -500,11 +505,6 @@
     "assets/lieux/cdk-veyra-clefmont.webp",
     "assets/lieux/cdk-thaldris-thal-vorum.webp",
     "assets/lieux/cdk-myrr-aetherys.webp",
-    "assets/lieux",
-    "assets/factions/concorde-de-kaerith",
-    "assets/maps/entrepot.dd2vtt",
-    "assets/maps/entrepot.dungeondraft_map",
-    "assets/maps/entrepot.temporary",
     "Untitled.canvas"
   ]
 }

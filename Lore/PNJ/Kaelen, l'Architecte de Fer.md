@@ -29,6 +29,9 @@ aliases:
 > **Mission :** Concevoir et construire le harnais de survie et de propulsion pour le [[Mangeur d'Astre]]. La créature doit pouvoir survivre au vide spatial et être dirigée vers le soleil.
 > **Personnel :** Kaelen veut prouver au [[Synode Mechanis]] que leur dogme de "préservation" est une chaîne qui empêche le progrès. Il voit le projet de [[Varkesh, le Héraut du Silence]] comme le défi technique ultime.
 
+> [!gm] Lien factuel (intrigue)
+> Ex-ingénieur du [[Synode Mechanis]], banni pour ses expériences non-éthiques ; il travaille pour [[Varkesh, le Héraut du Silence]] (Acte 2) et requiert des [[Cristaux d’Ether]] pour construire l’Armure du Vide et la propulsion du [[Mangeur d'Astre]].
+
 > [!warning]- Note MJ : À développer
 > Ce PNJ est un antagoniste prévu pour le **Niveau 8**.
 > Ses statistiques, sa localisation exacte et ses ressources dépendront de l'évolution de la campagne (Tier 2).

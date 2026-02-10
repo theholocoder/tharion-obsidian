@@ -109,23 +109,7 @@ actions:
 
 > [!statblocks|columns]
 >>```pf2e-stats
->># Eliror Thruwin Stromo
->>## Niveau 0
->>---
->>
->>==Petite== ==Gnome==
->>
->>Un employé des entrepôts de Port-Lointain, terrifié mais témoin oculaire direct de la coordination des Cisarelles.
->>
->>**Perception** +3
->>**Artisanat** +4, **Intimidation** +2
->>**Volonté** +6
->>
->>---
->>**Historique** Employé des entrepôts depuis l'arrivée à Port-Lointain, spécialisé dans le tri et la conservation des denrées. A vu plusieurs attaques de créatures mais jamais rien d'aussi organisé. Vit seul dans le quartier du Rempart.
->>**Apparence** Petit et nerveux (1m10), doigts fins et habiles marqués par le travail de triage. Porte des lunettes de protection et une tunique de bureau adaptée aux entrepôts. Cheveux en bataille, regard perçant mais fatigué.
->>**Personnalité** Meticuleux, anxieux, observateur.
->>**Oral, signe distinctif** Voix aiguë qui tremble quand il est stressé. Cligne des yeux fréquemment, joue avec un petit outil de tri quand il réfléchit.
+>># [[Eliror Thruwin Stromo]]
 >>```
 >
 >> ```pf2e-stats
