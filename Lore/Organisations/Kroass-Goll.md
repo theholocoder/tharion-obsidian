@@ -47,6 +47,31 @@ La **Vase Vivante** est une entité-mère : les Sachants affirment qu’elle pos
 ### Société & communication
 Coassements modulés, grondements, battements de gorge et signes des mains : la communication est autant **sonore** que **gestuelle**. Le mensonge est un acte hautement répréhensible.
 
+#### Linguistique (propositions à trier/sélectionner)
+> [!note] Voix Kroass-Goll — tics de langage
+> Idées de mots/remplacements/expression pour donner une “signature” (à **trier** et **retenir** seulement quelques-uns).
+>
+> 1) **« Ce Kroass… »** = *je* (parler de soi à la 3e personne)
+>    - *« Ce Kroass veut commerce, pas guerre. »*
+> 2) **« pas-secs » / « peau-sèche »** = *vous / étrangers des terres sèches* (vocatif)
+>    - *« Peau-sèche, tu sens la corde neuve. Bon. »*
+> 3) **« Brume-bonne »** = salutation / approbation prudente
+>    - *« Brume-bonne à toi. Tu viens sans lame levée. »*
+> 4) **« Brume-mauvaise »** = alerte / désaccord (“ça sent le piège”)
+>    - *« Brume-mauvaise. Tes yeux disent deux choses. »*
+> 5) **« Vase-vrai »** = marqueur de vérité (tabou du mensonge)
+>    - *« Vase-vrai : pas de piège. Juste sel et métal. »*
+> 6) **« Par la Vase ! »** = juron / serment (plus fort si doublé)
+>    - *« Par la Vase—par la Vase, ne touche pas la Statue-Chaman ! »*
+> 7) **« Roseau-plié… »** = excuse / politesse (désamorcer)
+>    - *« Roseau-plié… ce Kroass a grondé trop fort. »*
+> 8) **« Cœur-de-vase »** = terme affectif / respectueux (ami, invité, protecteur)
+>    - *« Cœur-de-vase, tu portes le sel : tu portes la vie. »*
+> 9) **« Chant-court »** = “résume / parle clair”
+>    - *« Chant-court, peau-sèche : outil contre pont. Oui ? »*
+> 10) **« Gorge-batte »** = ponctuation d’insistance (ils “tapent” la gorge)
+>     - *« Gorge-batte : promesse tenue, brume tenue. »*
+
 La “famille” est le **Chose-Goll** (clan territorial) : les œufs sont évalués puis redistribués selon les besoins. Leur territoire collectif est le **Goll-Tout**.
 
 ### Survie, habitat & apparence
@@ -116,7 +141,9 @@ Le peuple est officiellement dirigé par **Nénuvaar Milmouch**, Grand Chef hist
 
 ## Relations
 - **Alliés :**
+- [[Port-Lointain]] (potentiel ; protection/outils contre routes/ponts/défense)
 - **Rivaux :**
+- [[Cisarelles]] (prédateurs ; raids et prédation sur les rivières et marais)
 - **Neutres / opportunistes :**
 
 ## Notes MJ
@@ -125,3 +152,25 @@ Le peuple est officiellement dirigé par **Nénuvaar Milmouch**, Grand Chef hist
 > - Un **Héraut de la Tourbe** est autant un rempart qu’un incident (caprice, frénésie, victime collatérale).
 > - Les **Statues-Chamans** sont des totems narratifs : savoir interdit, magie résiduelle, déclencheurs d’initiation.
 > - Le “réveil” de **Nénuvaar** peut être espoir, chantage… ou catastrophe.
+
+> [!gm] Arc MJ — Unifier le Goll-Tout (alliés fiables mais fragiles)
+> **Prémisse :** une tribu (Chose-Goll) cherche à **unir les clans** (Souch-Goll, Brouss-Goll, Roc-Goll, Vase-Goll) pour cesser d’être une proie “facile” des [[Cisarelles]] et stabiliser des routes de survie.
+>
+> **Ce qu’ils demandent à [[Port-Lointain]] / aux PJ (concret) :**
+> - **Outils** et consommables : lames, clous/rivets, cordage, filets, sel, pots en métal, couvertures sèches.
+> - Une **zone humide protégée** (“Enclave des Roseaux”) où ils peuvent vivre/travailler sans être harcelés.
+> - **Protection ponctuelle** de chantiers (ponts/pilotis) et d’émissaires entre clans.
+> - Un pacte simple : **pas de mensonge** sur l’intention immédiate ; ne pas profaner Statue-Chaman / Cœur de Vase.
+>
+> **Ce qu’ils peuvent offrir en échange (leviers de négociation) :**
+> - **Ponts, passerelles, pilotis** : ouvrir des itinéraires d’exploration et sécuriser des franchissements.
+> - **Logistique “marais”** : fibres, jarres, argile, filtration simple, postes de pêche.
+> - **Défense anti-[[Cisarelles]]** : filets/pièges et écrans de brume tactiques ; certains **Hérauts de la Tourbe** particulièrement massifs peuvent **gober** des Cisarelles de taille humaine (pas les plus grosses).
+>
+> **Missions-types pour sceller l’union :**
+> 1) Escorter des émissaires entre Chose-Goll (sous pression de raids).
+> 2) Sécuriser un chantier de pont/pilotis (attaque en vagues).
+> 3) Récupérer des outils/sel volés (preuve de bonne foi de Port-Lointain).
+> 4) Détruire/repousser une couvée ou un site de chasse Cisarelle proche d’un passage vital.
+>
+> **Fragilité (à jouer) :** si Port-Lointain promet puis tarde, ou si les PJ mentent, l’union se fissure : retrait des chantiers, routes “fermées”, et perte de l’appui défensif.

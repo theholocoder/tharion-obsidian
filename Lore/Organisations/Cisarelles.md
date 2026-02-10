@@ -7,7 +7,7 @@ aliases: []
 tags:
   - organisation
   - categorie/faction
-updated: 2026-01-15
+updated: 2026-02-10
 reputation: 0
 ---
 
@@ -56,7 +56,7 @@ defaultZoom: 0
 zoomDelta: 0.5
 ```
 
-Le territoire des Cisarelles est constitué du [[Lieu-Cendre]], une ancienne forêt brûlée, et leur influence s'étend sur les territoires à l'ouest et au nord incluant une bonne partie des rivières des [[Croass-golls]].
+Le territoire des Cisarelles est constitué du [[Lieu-Cendre]], une ancienne forêt brûlée, et leur influence s'étend sur les territoires à l'ouest et au nord incluant une bonne partie des rivières des [[Kroass-Goll]].
 
 ## Organisation interne
 
@@ -85,8 +85,9 @@ Les mâles, eux, sont considérés comme plus sacrifiables. Leurs droits sont qu
 ## Relations
 - **Alliés :**
 - **Rivaux :**
+- [[Kroass-Goll]] (proies régulières ; contrôle disputé des rivières et marais)
 - **Neutres / opportunistes :**
 
 ## Notes MJ
 > [!gm] Secrets, leviers, plans
-> - 
+> - Les [[Kroass-Goll]] sont une source de **nourriture** et de matière organique : les Cisarelles les chassent dans/aux abords du Goll-Tout, ce qui pousse les Bourbiérins à chercher des alliances et des outils.
