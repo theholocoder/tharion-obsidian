@@ -28,7 +28,7 @@ Rappel rumeur : ruines au nord-est de [[Port-Lointain]], **2 jours de marche**, 
 ---
 
 ## Pitch 1 — Le Bourbier Sacré (diplomatie + ingénierie)
-**Faction rencontrée :** [[Kroass'Goll]] (Brouss-Goll)
+**Faction rencontrée :** [[Kroass-Goll]] (Brouss-Goll)
 
 ### Promesse
 L’irrigation a créé un **marécage artificiel** devenu “lieu saint” pour une bande de Kroass’Goll. Réparer/optimiser l’eau aiderait [[Port-Lointain]]… mais menacerait leur survie et leurs rites.
@@ -75,7 +75,7 @@ Une seule escarmouche “capture”, courte : la Loge cherche à **entraver et f
 ---
 
 ## Pitch 3 — L’Eau qui Mord (purge + horreur légère)
-**Faction rencontrée :** [[Kroass'Goll]] (survivants apeurés) + échos de [[Golgotha, la Mère des Chairs]]
+**Faction rencontrée :** [[Kroass-Goll]] (survivants apeurés) + échos de [[Golgotha, la Mère des Chairs]]
 
 ### Promesse
 L’eau est contaminée (visqueuse, odeur métallique, reflets organiques). Des Kroass’Goll sont retranchés. Quelque chose utilise les conduites comme des artères.
@@ -120,7 +120,7 @@ Un unique “gardien” peut se réveiller **à la toute fin** (ou être évité
 ---
 
 ## Pitch 5 — La Symphonie des Tuyaux (rituel + diplomatie sonore)
-**Faction rencontrée :** [[Kroass'Goll]]
+**Faction rencontrée :** [[Kroass-Goll]]
 
 ### Promesse
 Les Kroass’Goll utilisent les conduites comme **instrument** : le bourdonnement entretient une brume protectrice (et/ou stabilise la pression). Couper l’eau “brutalement” pourrait causer un effondrement ou une libération de gaz.
