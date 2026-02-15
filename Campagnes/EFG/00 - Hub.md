@@ -27,23 +27,6 @@ zoomDelta: 0.5
 - Intro joueurs : [[EFG Intro]]
 - Rumeurs : [[Liste des rumeurs]]
 
-## Sessions `BUTTON[button-new-session]`
-```dataview
-TABLE
-  code AS "Code",
-  dateformat(date(date_irl), "dd/LL/yy") AS "Date IRL",
-  date_ig_debut AS "IG début",
-  date_ig_fin AS "IG fin",
-  joueurs AS "Joueurs",
-  resume AS "Résumé",
-  choice(termine, "☑", "☐") as "Terminée?"
-FROM "Sessions"
-WHERE type = "session" AND campagne = [[L'Expédition des Fendeurs de Glace]]
-SORT numero DESC
-```
-colonne1;colonne2
-test;csv
-peut;marcher
 ## Joueurs `BUTTON[button-new-pj]`
 ```dataview
 TABLE
@@ -55,6 +38,20 @@ WHERE type = "PJ"
 SORT file.name ASC
 ```
 
+## Sessions `BUTTON[button-new-session]`
+```dataview
+TABLE
+  code AS "Code",
+  dateformat(date(date_irl), "dd/LL/yy") AS "Date IRL",
+  dateformat(fc-date, "dd/LL/yy") AS "IG début",
+  dateformat(fc-end, "dd/LL/yy") AS "IG fin",
+  pjs AS "Joueurs",
+  resume AS "Résumé",
+  choice(termine, "☑", "☐") as "Terminée?"
+FROM "Sessions"
+WHERE type = "session" AND campagne = [[L'Expédition des Fendeurs de Glace]]
+SORT numero DESC
+```
 
 
 ```meta-bind-button

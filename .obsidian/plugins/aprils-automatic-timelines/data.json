@@ -5,7 +5,7 @@
   "eventRenderToggleKey": "aat-render-enabled",
   "inlineEventEndOfBodyMarker": "%%aat-event-end-of-body%%",
   "markdownBlockTagsToFindSeparator": ",",
-  "metadataKeyEventBodyOverride": "aat-event-body",
+  "metadataKeyEventBodyOverride": "resume",
   "metadataKeyEventEndDate": "fc-end",
   "metadataKeyEventPictureOverride": "aat-event-picture",
   "metadataKeyEventStartDate": "fc-date",

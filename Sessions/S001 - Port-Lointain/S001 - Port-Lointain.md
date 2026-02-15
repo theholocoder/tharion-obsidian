@@ -5,7 +5,9 @@ numero: 1
 code: S001
 date_irl: 2026-02-01
 date_ig_debut: 08/05/42
+fc-date: 2942-05-08
 date_ig_fin: 08/05/42
+fc-end: 2942-05-08
 pjs:
   - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
   - "[[Campagnes/EFG/PJ/Chiro Kono.md|Chiro Kono]]"
@@ -16,9 +18,13 @@ pjs:
   - "[[Campagnes/EFG/PJ/Noctis.md|Noctis]]"
   - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
   - "[[Campagnes/EFG/PJ/Korvax Oeil-de-fer.md|Korvax Oeil-de-fer]]"
+  - "[[Campagnes/EFG/PJ/Citolin.md|Citolin]]"
 resume: "L'arrivée des recrues de l'Expédition des Fendeurs de Glace est perturbée par une attaque de Mantes Géantes sur la ville. Le Commandant Aelys Tarn demande aux missionnaires de l'aider à repousser l'attaque en fournissant 3 objectifs au groupe. Seuls deux objectifs sont atteints avant d'atteindre et de vaincre la menace principale : une mante immense dotée de pouvoirs psioniques."
 updated: 2026-01-09
 termine: true
+timelines:
+  - session
+aat-render-enabled: true
 ---
 ## Informations sur la session
 

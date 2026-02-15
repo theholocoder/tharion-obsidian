@@ -19,6 +19,7 @@
     "sessions": "multitext",
     "exploree": "checkbox",
     "revelee": "checkbox",
-    "arc": "number"
+    "arc": "number",
+    "campagne": "text"
   }
 }

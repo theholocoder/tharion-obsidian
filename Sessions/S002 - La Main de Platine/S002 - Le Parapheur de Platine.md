@@ -1,17 +1,20 @@
 ---
 type: session
-campagne: EFG
+campagne: "[[L'Expédition des Fendeurs de Glace]]"
 numero: 2
 code: S002
 date_irl: 2026-02-07
-date_ig_debut: 09/05/42
-date_ig_fin: 09/05/42
+fc-date: 2942-05-08
+fc-end: 2942-05-09
 resume: "Mini-session : un émissaire de la Main de Platine reçoit les PJ dans son bureau à la Citadelle Blanche pour cadrer leur loyauté et leur discrétion. Les PJ peuvent révéler l'existence des tubes trouvés à l'entrepôt et, s'ils le souhaitent, signer une clause de confidentialité provisoire. Aucun ordre n'est donné : la Ligue déclenche un audit interne et promet un retour ultérieur."
 updated: 2026-02-07
-termine: false
+termine: true
 pjs:
   - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
   - "[[Campagnes/EFG/PJ/Théobald Greyheart.md|Théobald Greyheart]]"
+aat-render-enabled: true
+timelines:
+  - session
 ---
 
 ## Informations sur la session

@@ -1,0 +1,1 @@
+La Technomagie est un mélange de technologie et de magie utilisé par l'[[Hégémonie Aethelgard]]. Son style pourrait être décrit comme du "steampunk" avec des tuyaux, du cuivre, des engrenages, mais alimenté par la magie plutôt que par la vapeur.

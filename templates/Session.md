@@ -46,17 +46,19 @@ await tp.file.move(`${newFolderPath}/${baseName}`);
 -%>
 ---
 type: session
-campagne: EFG
+campagne: [[L'Expédition des Fendeurs de Glace]]
 numero: <% numero %>
 code: <% code %>
 date_irl: <% tp.date.now("YYYY-MM-DD") %>
-date_ig_debut: ""
-date_ig_fin: ""
+fc-date: ""
+fc-end: ""
 resume: ""
 joueurs: []
 persos: []
 updated: <% tp.date.now("YYYY-MM-DD") %>
 termine: false
+timelines: ["session"]
+aat-render-enabled: true
 ---
 
 ## Informations sur la session

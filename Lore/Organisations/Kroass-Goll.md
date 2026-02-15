@@ -53,24 +53,16 @@ Coassements modulés, grondements, battements de gorge et signes des mains : la 
 >
 > 1) **« Ce Kroass… »** = *je* (parler de soi à la 3e personne)
 >    - *« Ce Kroass veut commerce, pas guerre. »*
-> 2) **« pas-secs » / « peau-sèche »** = *vous / étrangers des terres sèches* (vocatif)
+> 2) **« Peau-sèche »** = *vous / étrangers des terres sèches* (vocatif)
 >    - *« Peau-sèche, tu sens la corde neuve. Bon. »*
 > 3) **« Brume-bonne »** = salutation / approbation prudente
 >    - *« Brume-bonne à toi. Tu viens sans lame levée. »*
-> 4) **« Brume-mauvaise »** = alerte / désaccord (“ça sent le piège”)
->    - *« Brume-mauvaise. Tes yeux disent deux choses. »*
-> 5) **« Vase-vrai »** = marqueur de vérité (tabou du mensonge)
+> 4) **« Vase-vrai »** = marqueur de vérité (tabou du mensonge)
 >    - *« Vase-vrai : pas de piège. Juste sel et métal. »*
-> 6) **« Par la Vase ! »** = juron / serment (plus fort si doublé)
+> 5) **« Par la Vase ! »** = juron / serment (plus fort si doublé)
 >    - *« Par la Vase—par la Vase, ne touche pas la Statue-Chaman ! »*
-> 7) **« Roseau-plié… »** = excuse / politesse (désamorcer)
->    - *« Roseau-plié… ce Kroass a grondé trop fort. »*
-> 8) **« Cœur-de-vase »** = terme affectif / respectueux (ami, invité, protecteur)
->    - *« Cœur-de-vase, tu portes le sel : tu portes la vie. »*
-> 9) **« Chant-court »** = “résume / parle clair”
->    - *« Chant-court, peau-sèche : outil contre pont. Oui ? »*
-> 10) **« Gorge-batte »** = ponctuation d’insistance (ils “tapent” la gorge)
->     - *« Gorge-batte : promesse tenue, brume tenue. »*
+> 6) **« Boutou »** = *courage, bravoure guerrière*
+>   - *« Ce peau-sèche a un grand boutou ! »*
 
 La “famille” est le **Chose-Goll** (clan territorial) : les œufs sont évalués puis redistribués selon les besoins. Leur territoire collectif est le **Goll-Tout**.
 
@@ -91,11 +83,11 @@ Commerce occasionnel (plantes rares, argiles, artisanat) contre outils, armes ou
 
 ## Buts & méthodes
 
-|  |  |
-| --- | --- |
-| **Court terme** | - Maintenir la brume et la sécurité du **Goll-Tout**.<br>- Protéger les **Statues-Chamans**, les **Sachants** et le **Cœur de Vase**. |
-| **Long terme** | - Trouver un moyen d’éveiller **Nénuvaar Milmouch**.<br>- Assurer la survie et la mémoire des Chose-Goll, quel qu’en soit le prix. |
-| **Tabous / lignes rouges** | - Mentir à un Kroass-Goll.<br>- Profaner/toucher une **Statue-Chaman** ou le **Cœur de Vase**.<br>- Refuser un rite après invitation. |
+|                            |                                                                                                                                                                                                  |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Court terme**            | - Maintenir la brume et la sécurité du **Goll-Tout**.<br>- Protéger les **Statues-Chamans**, les **Sachants** et le **Cœur de Vase**.<br>- Stopper les Cisarelles qui empiètent sur leur marais. |
+| **Long terme**             | - Trouver un moyen d’éveiller **Nénuvaar Milmouch**.<br>- Assurer la survie et la mémoire des Chose-Goll, quel qu’en soit le prix.                                                               |
+| **Tabous / lignes rouges** | - Mentir à un Kroass-Goll.<br>- Profaner/toucher une **Statue-Chaman** ou le **Cœur de Vase**.<br>- Refuser un rite après invitation.                                                            |
 
 ## Territoire & influence
 
@@ -140,13 +132,17 @@ Le peuple est officiellement dirigé par **Nénuvaar Milmouch**, Grand Chef hist
 | **Têtards** | Enfants | Enfants jusqu’à devenir Mueurs. | Élevage collectif par le Chose-Goll. |
 
 ## Relations
-- **Alliés :**
-- [[Port-Lointain]] (potentiel ; protection/outils contre routes/ponts/défense)
-- **Rivaux :**
-- [[Cisarelles]] (prédateurs ; raids et prédation sur les rivières et marais)
+- **Alliés :** [[Port-Lointain]] (potentiel ; protection/outils contre routes/ponts/défense)
+- **Rivaux :** [[Cisarelles]] (prédateurs ; raids et prédation sur les rivières et marais, territoire)
 - **Neutres / opportunistes :**
 
 ## Notes MJ
+
+### Liste de noms
+
+Gollak, Brum’Nok, Vassu, Tourb’Rok, Nénuvar, Milmouch, Kroa’hrak, Sabrillek, Mueurri, Têtar’Lun, Coassor, Gorgu, Gruk’Vase, Brûmala, Vezrok, Rass’Goll, Moukk, Plop’Ti, Nokk’Brume, Vaal’Rit, Chor’Drou, Bourbik, Toub’Mare, Roulg, Krekka, Brel’Nénu, Mouss’Kra, Zoug’Sel, Klo’Boue, Drim’Roseau, Grokk’Pilo, Urru, Karr’Spore, Spoorik, Glaap, Brum’Yen, Vas’Kori, Gollu, Mouch’Ner, Rekt’Chant, Chooru, Nénu’Mok, Tourba, Boug’Radeau, Krosh’Vif, Plouf’Roc, Brum’Kess, Vase’Murm, Rook’Goll, Rassu, Krek’Mare, Grolm, Vezza, Chantaq, Muu’Rin, Têtar’Bri, Sabril’Doh, Kroa’Nok, Goll’Mii, Bourb’Zok, Brum’Jarr, Vase’Plein, Tourb’Krag, Coass’Raal, Nénu’Vaar, Mil’Mouch, Grok’Brou, Souch’Mok, Brouss’Kra, Roc’Dru, Vase’Goll, Brum’Boutu, Parla’Vase, Brume-Bonne, Vase-Vrai
+
+### Secrets
 > [!gm] Secrets, leviers, plans
 > - La **brume** peut servir de baromètre moral (indice/menace) selon l’attitude des PJ.
 > - Un **Héraut de la Tourbe** est autant un rempart qu’un incident (caprice, frénésie, victime collatérale).

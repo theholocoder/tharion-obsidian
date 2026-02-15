@@ -218,7 +218,7 @@
         "defaultLocation": ""
       },
       "current": {
-        "day": 9,
+        "day": 12,
         "month": 4,
         "year": 2942
       },
@@ -339,6 +339,11 @@
           "id": "ID_bb390b6a3b79",
           "color": "#f936ab",
           "name": "Fêtes"
+        },
+        {
+          "id": "ID_3a2ab9ab1869",
+          "color": "#80e5c7",
+          "name": "session"
         }
       ],
       "path": [],
