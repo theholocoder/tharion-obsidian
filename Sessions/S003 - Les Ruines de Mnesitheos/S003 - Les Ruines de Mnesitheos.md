@@ -7,8 +7,6 @@ date_irl: 2026-02-15
 fc-date: 2942-05-12
 fc-end: ""
 resume: ""
-joueurs: []
-persos: []
 updated: 2026-02-15
 termine: false
 timelines:
@@ -24,7 +22,7 @@ pjs:
 
 ## Informations sur la session
 
-**Date IRL :** `INPUT[datePicker:date_irl]` | **Début IG :** `INPUT[text(placeholder('08/11/42')):date_ig_debut]` | **Fin IG :** `INPUT[text(placeholder('10/11/42 / vide')):date_ig_fin]` | **Terminée ?** `INPUT[toggle:termine]`
+**Date IRL :** `INPUT[datePicker:date_irl]` | **Début IG :** `INPUT[text(placeholder('08/11/42')):fc-date]` | **Fin IG :** `INPUT[text(placeholder('10/11/42 / vide')):fc-end]` | **Terminée ?** `INPUT[toggle:termine]`
 
 ```meta-bind
 INPUT[textArea(title('Résumé de la session en 2-5 phrases max. ')):resume]
@@ -57,6 +55,7 @@ LIMIT 1
 - [ ] Conversations avec portraits dans Foundry
 - [ ] Rencontre aléatoire
 - [ ] Ajouter les journaux sur l'hexmap dans Foundry
+- [ ] Prep. downtime activities
 
 ## Intro
 
@@ -128,6 +127,13 @@ Entrée en mode Hexploration, sur la carte de Nyssor.
 - *« Ce Kroass dit vase-vrai : la Statue doit rentrer. Pas pour l’or. Pour le souffle du Marais. »*
 - *« Peau-sèche… tu portes corde et fer. Bon. Grand boutou. »*
 - *« Ne touche pas la Statue comme trophée. On la porte comme ancêtre. »*
+
+**Dès qu'Uuroch est prêt à parler aux PJ ou si les PJ leur demande ce qu'ils font ici :**
+> L'homme-grenouille s’accroupit, paume contre la boue, puis trace dans la vase un petit cercle, un autre, et une ligne entre les deux. Il inspire longuement la brume, comme on écoute une voix lointaine. Derrière lui, deux Kroass-Goll portent un grand panier tressé de roseaux, vide, mais tenu avec le même respect qu’un berceau.
+> *« Ce Kroass… vient pour Ancêtre. Statue-Chaman. »* Il tapote le panier, puis pose ses doigts sur sa gorge, et secoue la tête : *« Sans Statue… chant cassé. Brume faible. Marais… saigne. »*
+> Il pointe vers les ruines, puis fait un geste d’arrêt net, les deux mains ouvertes. Sa voix baisse, plus grave. *« Dans pierre-fer… y a Gardien. Pas chair. Pas esprit. Pas bête. »* Il mime quelque chose de haut, immobile, puis des bras qui se déploient avec des angles trop droits. *« Fer-dur qui marche. Œils-verre. Il écoute l’eau. Il compte les gouttes. »*
+> *« Il dit : “pas prendre”. Il frappe les Kroass. »* Puis il relève la tête vers vous, l’air solennel. *« Nous-Kroass pas assez grand boutou pour reprendre Ancêtre. Peau-sèches ont corde et fer, savent parler fort. Peau-sèches grand boutou. Peau-sèche reprendre Ancêtre sans casser. »*
+> Il pose une main sur son cœur, l’autre vers vous : *« Vase-vrai : si vous aidez, peau-sèches bienvenue au Marais. »*
 
 ```pf2e-stats
 # Uuroch « Brume-Sûre », Sachant Kroass-Goll
@@ -296,6 +302,7 @@ Automate de maintenance chargé de préserver l’irrigation. La **Statue-Chaman
 > Quand la Statue-Chaman est enfin libérée, la brume change. Elle ne disparaît pas — elle se **réorganise**.
 > Uuroch s’agenouille, pose ses paumes sur l’argile sombre, et murmure un chant presque inaudible. Autour, les Kroass-Goll répondent en cadence.
 > *« Vase-vrai… peau-sèches. Ce Kroass… n’oublie pas. »*
+> Uuroch tend une amulette aux PJ.
 
 **Clôture**
 - Rituel bref ; Uuroch repart vite.
@@ -310,8 +317,6 @@ Automate de maintenance chargé de préserver l’irrigation. La **Statue-Chaman
 
 - **Yeux de la Brume (lunettes)** — *Niv. 3* : +1 bonus d’objet à la **Perception** (repérage dans brume/obscurité légère).
 - **Bottes de Roseau** — *Niv. 3* : 1/j, 10 min, ignorer terrain difficile dû à boue/eaux peu profondes.
-- **Corde d’Écluse** — *Niv. 3* : s’amarre d’elle-même ; +1 bonus d’objet aux manœuvres impliquant la corde.
-- **Gourde de Vanne** — *Niv. 4* : 1/j, créer un débit d’eau contrôlé (exploration / mécanismes).
 - **Amulette « Vase-vrai »** — *Niv. 4* : +1 bonus d’objet à **Déceler un mensonge** ; 1/j, réaction quand on te ment directement → sensation brève de “saveur de vase”.
 
 ## À reporter / Prépa prochaine

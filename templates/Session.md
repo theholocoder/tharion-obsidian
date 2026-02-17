@@ -53,8 +53,7 @@ date_irl: <% tp.date.now("YYYY-MM-DD") %>
 fc-date: ""
 fc-end: ""
 resume: ""
-joueurs: []
-persos: []
+pjs: []
 updated: <% tp.date.now("YYYY-MM-DD") %>
 termine: false
 timelines: ["session"]
@@ -63,7 +62,7 @@ aat-render-enabled: true
 
 ## Informations sur la session
 
-**Date IRL :** `INPUT[datePicker:date_irl]` | **Début IG :** `INPUT[text(placeholder('08/11/42')):date_ig_debut]` | **Fin IG :** `INPUT[text(placeholder('10/11/42 / vide')):date_ig_fin]` | **Terminée ?** `INPUT[toggle:termine]`
+**Date IRL :** `INPUT[datePicker:date_irl]` | **Début IG :** `INPUT[text(placeholder('08/11/42')):fc-date]` | **Fin IG :** `INPUT[text(placeholder('10/11/42 / vide')):fc-end]` | **Terminée ?** `INPUT[toggle:termine]`
 
 ```meta-bind
 INPUT[textArea(title('Résumé de la session en 2-5 phrases max. ')):resume]
