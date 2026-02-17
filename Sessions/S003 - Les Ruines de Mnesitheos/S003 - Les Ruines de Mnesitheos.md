@@ -48,14 +48,20 @@ LIMIT 1
 
 ## TODO
 
-- [ ] Visuel des ruines
+- [x] Visuel des ruines
 - [ ] Visuel du gardien
-- [ ] Visuel de Sachant
+- [x] Visuel de Sachant
+- [ ] Statblock Gardien
+- [ ] Statblock Kroass ?
 - [ ] Battlemap des ruines
+- [ ] Battlemap terrain rivière avec les kroass-goll
 - [ ] Conversations avec portraits dans Foundry
 - [ ] Rencontre aléatoire
 - [ ] Ajouter les journaux sur l'hexmap dans Foundry
 - [ ] Prep. downtime activities
+- [x] Portrait + handout de Gruk'Vase
+- [ ] Pour l'intermède de Maxime regarder le sous système de recherche
+- [ ] Items récompenses
 
 ## Intro
 
@@ -86,7 +92,7 @@ Entrée en mode Hexploration, sur la carte de Nyssor.
 
 ### Scène 2 : Système d'irrigation
 
-> Dans suivez la rivière jusqu'à un creux où l'atmosphère est empli d'une brume lourde et humide.
+> Vous suivez la rivière jusqu'à un creux où l'atmosphère est empli d'une brume lourde et humide.
 > Entre les hautes herbes, des murs bas émergent par fragments : blocs taillés, angles trop nets, dalles disjointes qui tracent encore un ancien canal peu profond. Plus loin, à travers la brume, vous devinez les ruines dont on vous a parlé : une ligne de façades effondrées et d’arches cassées.
 > Le canal principal file vers un bâtiment qui ne ressemble pas à une maison : un ouvrage. Un long volume de pierre recouvert de toute sortes de mousses et de lichens, renforcé de bandes de métal riveté et rouillé, partiellement enfoncé dans la berge. Là où il devrait y avoir des fenêtres, il y a des ouvertures techniques : grilles épaisses, volets de maintenance, anneaux d’arrimage, et une grande porte cintrée à demi tordue.
 > Autour de certains canaux, des bandes de terre sont dénuées de hautes herbes, comme si la friche avait évité ces endroits.
@@ -104,7 +110,7 @@ Entrée en mode Hexploration, sur la carte de Nyssor.
   - **Succès critique** : + routine (réparations régulières) : ce n’est pas un coup unique.
 
 3) **La rivière n’alimente pas le système**
-- **Survie** DD 15 (lire les écoulements) ou **Perception** DD 15 (trop-pleins)
+- **Survie** DD 13 (lire les écoulements) ou **Perception** DD 13 (trop-pleins)
   - **Succès** : la rivière reçoit l’excédent ; le canal est plus humide en allant *vers* les ruines.
   - **Succès critique** : retour d’eau “propre” (condensation/filtration).
 
@@ -198,7 +204,7 @@ Devant ce réservoir ce tient un grand "golem" mécanique de [[Technomagie]] : l
 - **Survie** DD 15 : certaines conduites forment le système d'irrigation, certaines partent dans l'autre direction à travers les murs ou vers le sol, suggérant une alimentation possible en eau d'autres systèmes/lieux.
 
 **Indice Sans-Passé (récent)**
-> Dans une alcôve sèche, des **os** rangés, des lambeaux de vêtement sombre, une ceinture utilitaire… et une poussière blanche (craie) comme un marquage.
+> Dans une alcôve sèche, des os, des lambeaux de vêtement sombre, une ceinture utilitaire… et une poussière blanche (craie) comme un marquage.
 
 - **Médecine** DD 15 : mort récente.
 - **Perception** DD 16 : craie = signe menant vers un interstice sous dalle (à garder pour plus tard).
