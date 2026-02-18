@@ -49,12 +49,12 @@ LIMIT 1
 ## TODO
 
 - [x] Visuel des ruines
-- [ ] Visuel du gardien
+- [x] Visuel du gardien
 - [x] Visuel de Sachant
-- [ ] Statblock Gardien
-- [ ] Statblock Kroass ?
-- [ ] Battlemap des ruines
-- [ ] Battlemap terrain rivière avec les kroass-goll
+- [x] Statblock Gardien
+- [x] Statblock Kroass ?
+- [x] Battlemap des ruines
+- [x] Battlemap terrain rivière avec les kroass-goll
 - [ ] Conversations avec portraits dans Foundry
 - [ ] Rencontre aléatoire
 - [ ] Ajouter les journaux sur l'hexmap dans Foundry
@@ -269,7 +269,7 @@ Automate de maintenance chargé de préserver l’irrigation. La **Statue-Chaman
 >>## Créature 3
 >>---
 >>
->>==Moyen== ==Construit== ==Aethelgard==
+>>==Grande== ==Construit== ==Aethelgard==
 >>
 >>**Perception** +9; vision dans la brume (ignore dissimulation due à brume non-magique)
 >>**Langues** —
