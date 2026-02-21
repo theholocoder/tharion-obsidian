@@ -49,7 +49,7 @@ TABLE
   resume AS "Résumé",
   choice(termine, "☑", "☐") as "Terminée?"
 FROM "Sessions"
-WHERE type = "session" AND campagne = [[L'Expédition des Fendeurs de Glace]]
+WHERE type = "session"
 SORT numero DESC
 ```
 

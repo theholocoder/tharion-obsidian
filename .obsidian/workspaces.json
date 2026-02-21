@@ -1160,7 +1160,7 @@
                 }
               },
               {
-                "id": "c0e681947fe10ba4",
+                "id": "62d5e96521c9de96",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
@@ -1186,12 +1186,12 @@
                 }
               },
               {
-                "id": "aad617b31ac8ae87",
+                "id": "6c1e44b804d29d07",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Sessions/S003 - Les Ruines de Mnesitheos/S003 - Les Ruines de Mnesitheos.md",
+                    "file": "Sessions/S004 - L'épave de la Clef d'Ecume/S004 - L'épave de la Clef d'Ecume.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -1206,7 +1206,31 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "S003 - Les Ruines de Mnesitheos"
+                  "title": "S004 - L'épave de la Clef d'Ecume"
+                }
+              },
+              {
+                "id": "aad617b31ac8ae87",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "004 - Idées.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "004 - Idées"
                 }
               }
             ],
@@ -1272,7 +1296,145 @@
       "right": {
         "id": "617fb1e7a61f1db6",
         "type": "split",
-        "children": [],
+        "children": [
+          {
+            "id": "0c6b6903e9575141",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "73078704ee5f922f",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Campagnes/EFG/00 - Hub.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Rétrolien pour 00 - Hub"
+                }
+              },
+              {
+                "id": "8eeeb3840ff4f1d9",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Sessions/S003 - Les Ruines de Mnesitheos/S003 - Notes.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Liens sortants de S003 - Notes"
+                }
+              },
+              {
+                "id": "4c1af9f2c80e2d22",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Mots-clés"
+                }
+              },
+              {
+                "id": "14ea303d566302e2",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "Toutes les propriétés"
+                }
+              },
+              {
+                "id": "e4e187abdce83db7",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Sessions/S003 - Les Ruines de Mnesitheos/S003 - Notes.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Plan de S003 - Notes"
+                }
+              },
+              {
+                "id": "48913dd3f743827f",
+                "type": "leaf",
+                "state": {
+                  "type": "CALENDARIUM",
+                  "state": {
+                    "calendar": "ID_492bfa5b2bc9",
+                    "ephemeral": {
+                      "viewing": {
+                        "day": 17,
+                        "month": 4,
+                        "year": 2942
+                      },
+                      "viewState": 1,
+                      "displaying": {
+                        "day": 12,
+                        "month": 4,
+                        "year": 2942
+                      },
+                      "displayDayNumber": false,
+                      "displaySeasonColors": false,
+                      "interpolateColors": true,
+                      "displayMoons": true,
+                      "displayWeather": true,
+                      "location": ""
+                    },
+                    "id": "ID_19b8eb591b69",
+                    "child": "ID_3b1ba8ea5b9b"
+                  },
+                  "icon": "CALENDARIUM",
+                  "title": "Calendarium"
+                }
+              }
+            ],
+            "currentTab": 5
+          },
+          {
+            "id": "0f16a22670abcc68",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "eb0bace6ef62c8fe",
+                "type": "leaf",
+                "state": {
+                  "type": "CALENDARIUM_AGENDA",
+                  "state": {
+                    "calendar": "ID_492bfa5b2bc9",
+                    "id": "ID_3b1ba8ea5b9b",
+                    "parent": "ID_19b8eb591b69"
+                  },
+                  "icon": "CALENDARIUM_AGENDA",
+                  "title": "Agenda"
+                }
+              }
+            ]
+          }
+        ],
         "direction": "horizontal",
         "width": 380.5,
         "collapsed": true
@@ -1297,8 +1459,8 @@
           "calendarium:Open Calendarium": false
         }
       },
-      "active": "aad617b31ac8ae87",
-      "mtime": "2026-02-17T13:47:33+01:00"
+      "active": "62d5e96521c9de96",
+      "mtime": "2026-02-21T10:32:08+01:00"
     }
   },
   "active": "Half screen"

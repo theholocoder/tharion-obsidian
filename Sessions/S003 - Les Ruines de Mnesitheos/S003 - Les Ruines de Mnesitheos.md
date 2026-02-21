@@ -5,10 +5,10 @@ numero: 3
 code: S003
 date_irl: 2026-02-15
 fc-date: 2942-05-12
-fc-end: ""
-resume: ""
+fc-end: 2942-05-17
+resume: Le groupe a suivi la rivière jusqu’aux ruines de Mnesitheos, traversant un brouillard magique et repérant des traces de pas reptiliennes. Sur place, ils ont rencontré des [[Kroass-Goll]] menés par le Sachant Uuroch, qui leur ont demandé de récupérer une statue sacrée capable de protéger le marais des [[Cisarelles]]. Après une infiltration, ils ont négocié avec le Gardien-golem pour qu’il dévie l’eau de la rivière afin de remplir le réservoir, puis ont extrait la statue et quitté les lieux. Avant de partir, Voss a saboté les tuyaux de recharge du Gardien avec une bombe de tonnerre et une fiole d’acide — un choix qui pourrait avoir des conséquences. Uuroch a promis d’envoyer des ambassadeurs kroass à [[Port-Lointain]] et d’indiquer la route vers le [[Marais Vase-Goll|Marais]].
 updated: 2026-02-15
-termine: false
+termine: true
 timelines:
   - session
 aat-render-enabled: true
@@ -55,13 +55,13 @@ LIMIT 1
 - [x] Statblock Kroass ?
 - [x] Battlemap des ruines
 - [x] Battlemap terrain rivière avec les kroass-goll
-- [ ] Conversations avec portraits dans Foundry
-- [ ] Rencontre aléatoire
-- [ ] Ajouter les journaux sur l'hexmap dans Foundry
-- [ ] Prep. downtime activities
+- [x] Conversations avec portraits dans Foundry
+- [x] Rencontre aléatoire
+- [x] Ajouter les journaux sur l'hexmap dans Foundry
+- [x] Prep. downtime activities
 - [x] Portrait + handout de Gruk'Vase
-- [ ] Pour l'intermède de Maxime regarder le sous système de recherche
-- [ ] Items récompenses
+- [x] Pour l'intermède de Maxime regarder le sous système de recherche
+- [x] Items récompenses
 
 ## Intro
 
@@ -322,8 +322,8 @@ Automate de maintenance chargé de préserver l’irrigation. La **Statue-Chaman
 ## Butin / Récompenses
 
 - **Yeux de la Brume (lunettes)** — *Niv. 3* : +1 bonus d’objet à la **Perception** (repérage dans brume/obscurité légère).
-- **Bottes de Roseau** — *Niv. 3* : 1/j, 10 min, ignorer terrain difficile dû à boue/eaux peu profondes.
-- **Amulette « Vase-vrai »** — *Niv. 4* : +1 bonus d’objet à **Déceler un mensonge** ; 1/j, réaction quand on te ment directement → sensation brève de “saveur de vase”.
+- **Bottes de Roseau** — *Niv. 1* : 1/j, 10 min, ignorer terrain difficile dû à boue/eaux peu profondes.
+- **Amulette « Vase-vrai »** — *Niv. 3* : +1 bonus d’objet à **Déceler un mensonge** ; 1/j, réaction quand on te ment directement → sensation brève de “saveur de vase”.
 
 ## À reporter / Prépa prochaine
 

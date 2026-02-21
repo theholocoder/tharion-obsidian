@@ -453,7 +453,7 @@
     {
       "id": "nyssor-map",
       "locked": true,
-      "lastAccessed": 1771163369872,
+      "lastAccessed": 1771665990710,
       "markers": [
         {
           "id": "ID_ab89894bda28",
@@ -575,8 +575,7 @@
       "overlays": [],
       "shapes": [],
       "files": [
-        "Campagnes/EFG/00 - Hub.md",
-        "Lore/Lieux/Nyssor.md"
+        "Campagnes/EFG/00 - Hub.md"
       ]
     }
   ],

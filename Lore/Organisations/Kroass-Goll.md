@@ -77,7 +77,7 @@ Amphibiens à peau lisse et luisante : adultes brillants et colorés ; très jeu
 Ils évitent la guerre frontale : ruse, discrétion, brume et spores hallucinogènes. Les **Sachants** guident par le chant ; les **Kroa’hr** mènent embuscades et manœuvres ; les **Hérauts de la Tourbe** brisent les lignes, au risque d’être aussi dangereux pour les leurs.
 
 ### Étrangers
-Un visiteur qui survit au marais jusqu’au **Vase-Goll** est toléré s’il se montre respectueux. On dit que la brume “juge” : plus clémente avec les amicaux, plus opaque avec les hostiles.
+Un visiteur qui survit au marais jusqu’au **[[Marais Vase-Goll|Vase-Goll]]** est toléré s’il se montre respectueux. On dit que la brume “juge” : plus clémente avec les amicaux, plus opaque avec les hostiles.
 
 Commerce occasionnel (plantes rares, argiles, artisanat) contre outils, armes ou bijoux jugés “beaux”. Être invité à un rite impose d’y participer pleinement : refuser est un affront. Si le doute s’installe, un étranger peut être endormi/assommé et offert à la Vase Vivante.
 

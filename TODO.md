@@ -16,18 +16,18 @@ kanban-plugin: board
 ## In progress
 
 - [ ] Checklist post session pour vérifier que tout est dans les journaux, dans Obsidian, etc. #priorite/moyenne
-- [ ] Reprendre la map sur Obsidian :
-	- importer des pins
-	- marquer les POI connus
-	- mettre les zones des factions 
-	
-	#priorite/moyenne
 - [ ] IA : ajouter des "skills" pour chaque type de bloc pathfinder avec l'exemple markdown approprié #priorite/faible
 
 
 ## Done
 
 **Complete**
+- [x] Reprendre la map sur Obsidian :
+	- importer des pins
+	- marquer les POI connus
+	- mettre les zones des factions 
+	
+	#priorite/moyenne
 - [x] S001 première session #priorite/forte
 - [x] Rappatrier le lore de Legend Keeper
 - [x] Dons Animanthrope niveau 1 sur foundry
