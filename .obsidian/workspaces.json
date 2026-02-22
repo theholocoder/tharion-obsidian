@@ -81,33 +81,9 @@
                   "icon": "lucide-file",
                   "title": "004 - Idées"
                 }
-              },
-              {
-                "id": "ea3dcdc1fa242504",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Rumeurs/Les Pillards.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Les Pillards"
-                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           },
           {
             "id": "3579a91a2f405f90",
@@ -137,33 +113,8 @@
                   "icon": "lucide-file",
                   "title": "S004 - L'épave de la Clef d'Ecume"
                 }
-              },
-              {
-                "id": "fe6051771279d252",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Rumeurs/Le Marais Saigne.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Le Marais Saigne"
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "9aa9e74260a0ab64",
@@ -372,7 +323,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Rumeurs/Le Marais Saigne.md",
+                    "file": "Sessions/S004 - L'épave de la Clef d'Ecume/004 - Idées.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -400,7 +351,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graphique de Le Marais Saigne"
+                  "title": "Graphique de 004 - Idées"
                 }
               }
             ],
@@ -447,13 +398,13 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "workspaces:Gérer les espaces de travail": false,
           "switcher:Ouvrir le sélecteur rapide": false,
           "graph:Ouvrir la vue graphique": false,
           "canvas:Créer une nouvelle toile": false,
           "templates:Insérer le modèle": false,
           "command-palette:Ouvrir la palette de commandes": false,
           "markdown-importer:Ouvrir l'importateur Markdown": false,
-          "workspaces:Gérer les espaces de travail": false,
           "bases:Create new base": true,
           "obsidian-excalidraw-plugin:New drawing": false,
           "obsidian-git:Open Git source control": false,
@@ -465,8 +416,8 @@
           "calendarium:Open Calendarium": false
         }
       },
-      "active": "fe6051771279d252",
-      "mtime": "2026-02-22T13:10:55+01:00"
+      "active": "aad617b31ac8ae87",
+      "mtime": "2026-02-22T14:39:51+01:00"
     },
     "Ecran de jeu": {
       "main": {

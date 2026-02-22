@@ -15,7 +15,7 @@ updated: 2026-02-19
 
 - Mission de récupération sur l’épave de **La Clef d’Écume** (45–50 m). Objectifs :
   - baliser **5 caisses** (1 par PJ) marquées **Concorde : bandes rouge + blanc** (armes de siège démontées + munitions magiques)
-  - (option) sauver **un survivant** coincé dans une poche d’air sur le *middle deck*
+  - investiguer sur la raison du naufrage
 - Les PJ ont : **ceinture de plomb** + **potion de respiration aquatique (2h temps réel)**. Visibilité/communication sous l’eau : OK.
 
 ## Vérité de fond (indices, pas de démon en combat)
@@ -27,7 +27,7 @@ updated: 2026-02-19
 ## Balises magiques (règle de table)
 
 - Les balises sont **magiques** : une fois fixées et activées, elles **téléportent** l’objet/la créature attachée sur un navire en surface (récupération instantanée).
-- Conséquence : choisir de sauver le survivant peut coûter une balise (donc une caisse non marquée).
+- Conséquence : le choix des joueurs de retarder la mission implique qu'il n'y a **pas de survivant** à sauver.
 
 ## Structure de l’épave
 
@@ -45,29 +45,31 @@ updated: 2026-02-19
 - Peuple sous-marin = **Azarketi** (re-skin Nyssor).
 - Langues : **Aquan** ou **elfique archaïque**.
 - Attitude : neutres, opportunistes, en train de piller discrètement.
-- Ils peuvent indiquer aux PJ l’existence d’un survivant (poche d’air), mais ne savent pas le remonter.
+- Ils peuvent indiquer aux PJ qu’un humain a survécu quelques jours après le naufrage… mais qu’il est mort depuis longtemps.
 
 ### Combat 3 — lower deck : boss “carapace”
 - Boss = **bernard-l’hermite géant** qui tente d’utiliser l’ouverture du *lower deck* pour s’installer dans le navire comme carapace.
 - Terrain : courant/aspiration via la brèche + débris (bon pour un combat sévère).
 
-## Le survivant (middle deck)
+## Le capitaine (mort) : message en bouteille
 
-- Survivant anonyme (inconnu des PJ) : **Odran Hellec**, matelot de la Concorde.
-- Localisation : une petite cabine du *middle deck* (poste de quart / cabine de service) restée scellée, avec **poche d’air**.
-- État : vivant depuis 4 jours, **au bord de la mort**, délirant, mal des profondeurs.
+- Aucun survivant (10 jours après le naufrage).
+- Le capitaine, **Capitaine Odran Hellec** (Concorde), a survécu **5 jours** à l’intérieur d’une poche d’air, le temps d’écrire une note.
+- Il l’a déposée **au sec** (dans un recoin d’un placard/casier haut) sous forme de **message en bouteille**.
 
-### Ce qu’il a vu (cohérent avec une traversée longue)
+### Contenu de la note (infos courtes, actionnables)
 
-- Il **n’a pas** vu “charger la cage” (c’était fait depuis longtemps).
-- Il a vu des **hommes aux chaînes noires** :
-  - inspecter une caisse/cage scellée pendant la traversée (contrôles réguliers),
-  - puis, après le naufrage, revenir brièvement près des débris pour **chercher quelque chose** (un élément du sceau, un registre, une pièce de contrôle), avant de repartir.
+- Il confirme que la “cage” était déjà à bord depuis longtemps (cargaison scellée).
+- Il décrit des **hommes aux chaînes noires** venus plonger dans l’épave pendant sa survie :
+  - ils ont **inspecté la cage** et le dispositif de scellement,
+  - ils ont fouillé les débris comme s’ils cherchaient **une pièce précise** (élément du sceau / registre / composant de contrôle),
+  - puis ils sont repartis.
+- Il mentionne des symboles de type **chaîne/obéissance** (sans nommer Tharun).
 
 ## Objectif secret — Ligue de Veyra (PJ)
 
 - La caisse à baliser pour la mission secrète porte le symbole de la Ligue avec **la clé peinte à l’envers**.
-- Contenu : **codebook des manifestes Mille Voiles** (codes de double-traçage, identifiants des caisses “sensibles”).
+- Contenu : **codex des manifestes Mille Voiles** (codes de double-traçage, identifiants des caisses “sensibles”).
 - Donneur : **[[Soren Carthain]]**, "Parapheur de Platine" (Main de Platine). Il paraît loyal à Valerion mais sert d’abord la guilde.
 
 ## Indices à disséminer (subtils)

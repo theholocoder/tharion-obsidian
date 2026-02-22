@@ -13,4 +13,6 @@ Elle n’accuse personne, mais elle dit que "ces caisses sensibles sont envoyée
 
 ## Networking Théobald
 Tu fais la rencontre de [[Nessa Varline]], gnome, une représentante de la Clef des Lanternes qui te souffle que la description du type louche de l'entrepôt correspond à homme de la ligue, qui serait de la guilde L’Œil de Verre, qui disparaît de temps en temps dans la forêt au sud de la ville.
+
+## Mission spéciale
 Tu reçois aussi un petit coffre accompagné d'une note anonyme disant "Une mission de récupération est prévue sur l'épave de La Clef d’Écume, faites en sorte que l'un de vous deux y soit, ou d'y envoyer quelqu'un de confiance. Placer la balise de récupération sur une caisse marquée du symbole de la Ligue dont la clé est à l'envers."

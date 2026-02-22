@@ -97,7 +97,7 @@ LIMIT 1
 ## Aperçu de la session
 - 
 
-### Scènes
+## Scènes
 ```dataview
 TABLE WHERE type = "scene" AND contains(file.folder, this.file.folder) SORT file.name
 ```
