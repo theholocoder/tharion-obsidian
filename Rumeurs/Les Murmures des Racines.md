@@ -4,7 +4,7 @@ type: rumeur
 hex: "[[0214]]"
 resume: Des missionnaires revenus du sud prétendent entendre des voix dans les bois, comme si les arbres eux-mêmes chuchotaient des avertissements. Ceux qui restent trop longtemps ont tendance à... disparaître.
 organisations:
-  - "[[Gobe'liés]]"
+  - "[[Gobeliés]]"
 revelee: false
 exploree: false
 sessions:
@@ -32,12 +32,12 @@ A deux jours de marche de [[Port-Lointain]] dans la forêt, direction sud/sud-ou
 Danger immédiat, mystère.
 
 **Liens**  
-[[Gobe'liés]], [[Silk'Arak]]
+[[Gobeliés]], [[Silk'Arak]]
 
 ---
 
 **Notes MJ**  
-Chasse des intrus par les [[Gobe'liés]].
+Chasse des intrus par les [[Gobeliés]].
 ```
 
 ### Journal

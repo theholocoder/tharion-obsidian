@@ -64,7 +64,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                    "file": "Sessions/S004 - L'épave de la Clef d'Ecume/004 - Idées.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -79,16 +79,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "S001 - Port-Lointain"
+                  "title": "004 - Idées"
                 }
               },
               {
-                "id": "c843f8db53a116d8",
+                "id": "ea3dcdc1fa242504",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "templates/Rumeur.md",
+                    "file": "Rumeurs/Les Pillards.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -103,11 +103,11 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Rumeur"
+                  "title": "Les Pillards"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           },
           {
             "id": "3579a91a2f405f90",
@@ -115,12 +115,12 @@
             "dimension": 40.57863501483679,
             "children": [
               {
-                "id": "c0e88caa7e2d940d",
+                "id": "4565002b5ad65123",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Sessions/S001 - Port-Lointain/scenes/Scène 1 - L'Hydre à Deux Choppes.md",
+                    "file": "Sessions/S004 - L'épave de la Clef d'Ecume/S004 - L'épave de la Clef d'Ecume.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -135,16 +135,16 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "Scène 1 - L'Hydre à Deux Choppes"
+                  "title": "S004 - L'épave de la Clef d'Ecume"
                 }
               },
               {
-                "id": "93abaa84ff16a6ef",
+                "id": "fe6051771279d252",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Campagnes/EFG/00 - Hub.md",
+                    "file": "Rumeurs/Le Marais Saigne.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": true,
@@ -159,7 +159,7 @@
                     }
                   },
                   "icon": "lucide-file",
-                  "title": "00 - Hub"
+                  "title": "Le Marais Saigne"
                 }
               }
             ],
@@ -217,7 +217,7 @@
                     "autoReveal": true
                   },
                   "icon": "lucide-folder-closed",
-                  "title": "Files"
+                  "title": "Explorateur de fichiers"
                 }
               },
               {
@@ -372,7 +372,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "Sessions/S001 - Port-Lointain/S001 - Port-Lointain.md",
+                    "file": "Rumeurs/Le Marais Saigne.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -400,7 +400,7 @@
                     }
                   },
                   "icon": "lucide-git-fork",
-                  "title": "Graph of S001 - Port-Lointain"
+                  "title": "Graphique de Le Marais Saigne"
                 }
               }
             ],
@@ -447,13 +447,13 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "switcher:Open quick switcher": false,
-          "graph:Open graph view": false,
-          "canvas:Create new canvas": false,
-          "templates:Insert template": false,
-          "command-palette:Open command palette": false,
-          "markdown-importer:Open format converter": false,
-          "workspaces:Manage workspace layouts": false,
+          "switcher:Ouvrir le sélecteur rapide": false,
+          "graph:Ouvrir la vue graphique": false,
+          "canvas:Créer une nouvelle toile": false,
+          "templates:Insérer le modèle": false,
+          "command-palette:Ouvrir la palette de commandes": false,
+          "markdown-importer:Ouvrir l'importateur Markdown": false,
+          "workspaces:Gérer les espaces de travail": false,
           "bases:Create new base": true,
           "obsidian-excalidraw-plugin:New drawing": false,
           "obsidian-git:Open Git source control": false,
@@ -465,8 +465,8 @@
           "calendarium:Open Calendarium": false
         }
       },
-      "active": "aad617b31ac8ae87",
-      "mtime": "2026-01-29T16:34:58+01:00"
+      "active": "fe6051771279d252",
+      "mtime": "2026-02-22T13:10:55+01:00"
     },
     "Ecran de jeu": {
       "main": {

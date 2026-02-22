@@ -165,7 +165,7 @@ Chaman gardien des chants ; venu loin du Marais (≈ 6 jours au sud) pour rapatr
 **Compétences d'influence** Diplomatie DD 19 (10 + Volonté), Nature DD 16, Religion DD 16, Société DD 18, Intimidation DD 20 (seulement si on prouve qu’on peut protéger : « grand boutou »)
 **Influence 2.** *Rumeur — « Le Marais saigne »* : raids de [[Cisarelles]] (piste : **sud**, brume persistante).
 **Influence 4.** Détail concret : un **passage vital** (pont/pilotis) harcelé ; ils cherchent **escorte** ou **réparation** (cordes, clous, haches, sel).
-**Influence 6.** *Rumeur — « D’autres peaux-sèches »* : [[Gobe'liés]] (sud/sud-ouest) ; **gens sous la terre** : [[Loge des Sans-Passé]] (craie puis disparition).
+**Influence 6.** *Rumeur — « D’autres peaux-sèches »* : [[Gobeliés]] (sud/sud-ouest) ; **gens sous la terre** : [[Loge des Sans-Passé]] (craie puis disparition).
 **Influence 8.** Contact : Uuroch accepte d’être un relais si les PJ restent “Vase-vrai”.
 **Résistances.** Mensonge, plaisanteries sur les rites, profanation Statue-Chaman : +3 DD.
 **Faiblesses.** Serment clair, respect physique, offrir **sel** ou **outils** : −2 DD.
@@ -317,7 +317,7 @@ Automate de maintenance chargé de préserver l’irrigation. La **Statue-Chaman
 ## Rumeurs possibles
 
 - **« Le Marais saigne »** : des [[Cisarelles]] harcèlent les routes d’eau Kroass-Goll (piste : **sud**).
-- **« D’autres peaux-sèches »** : [[Gobe'liés]] (sud/sud-ouest) ; [[Loge des Sans-Passé]] (craie puis disparition).
+- **« D’autres peaux-sèches »** : [[Gobeliés]] (sud/sud-ouest) ; [[Loge des Sans-Passé]] (craie puis disparition).
 
 ## Butin / Récompenses
 

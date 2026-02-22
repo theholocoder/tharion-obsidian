@@ -28,7 +28,7 @@ INPUT[progressBar(title('Réputation de la Concorde'), minValue(-100), maxValue(
 | --- | --- | --- |
 | faction | Forte | brume, chants, rites, embuscades |
 
-Les **Kroass-Goll** (Bourbiérins) vivent dans les restes d’un marais ancien, protégé par un **brouillard** persistant et par des rites chamaniques. Peuple de voix et de gestes, ils n’écrivent rien : la mémoire se transmet par les **chants**. Leur foi, centrée sur la **Vase Vivante**, mêle festivité, survie, entraide… et sacrifices.
+Les **Kroass-Goll** (Bourbiérins) vivent dans les restes d’un marais ancien, protégé par un **brouillard** persistant et par des rites chamaniques. Peuple de voix et de gestes, ils n’écrivent rien : la mémoire se transmet par les **chants**. Leur foi, centrée sur la **[[Vase Vivante]]**, mêle festivité, survie, entraide… et sacrifices.
 
 ### Origines — la Saison du Feu
 Lors de la Saison du Feu, les eaux bouillirent et les marais devinrent inhabitables. Les chamans murmurèrent : *« Endormez-vous, la vase vous gardera. »* Le peuple s’enfouit pour hiberner, tandis que les chamans restèrent et chantèrent pour appeler une **brume** censée préserver la surface.
@@ -36,13 +36,13 @@ Lors de la Saison du Feu, les eaux bouillirent et les marais devinrent inhabitab
 À la fin de la Saison, le monde était ravagé : marais asséchés, roseaux calcinés. Les chamans périrent et demeurent figés en **statues d’argile et de cendres agglomérées**. Une part de leur magie subsiste ; la brume protège encore ce qui reste des marais, où vivent les Kroass-Goll au milieu des silhouettes pétrifiées de leurs gardiens.
 
 ### Foi — la Vase Vivante
-La **Vase Vivante** est une entité-mère : les Sachants affirment qu’elle possède une conscience réelle, faite de la somme des Bourbiérins engloutis au fil des siècles. La dévotion est ambivalente : joyeuse au quotidien, cruelle dans ses rites. Célébrer **la vie** et **la mort** est une même offrande.
+La **Vase Vivante** est une entité-mère : les Sachants affirment qu’elle possède une conscience réelle, faite de la somme des Kroass-golls engloutis au fil des siècles. La dévotion est ambivalente : joyeuse au quotidien, cruelle dans ses rites. Célébrer **la vie** et **la mort** est une même offrande.
 
 ### Rites majeurs
 - **Rite de la Brume** : visions collectives partagées par tout le clan, induites par bouillons fermentés et spores.
 - **Chant Sans Voix** : avènement d’un **Sachant** par immobilité et silence devant une **Statue-Chaman** ; les échecs sont livrés à la Vase.
 - **Repas des Mues** : crémation de l’ancienne peau ; la fumée est lue comme présage.
-- **Grand Festin** : sacrifices destinés à nourrir la Vase Vivante et **Nénuvaar**.
+- **Grand Festin** : sacrifices destinés à nourrir la Vase Vivante et **[[Nénuvaar]]**.
 
 ### Société & communication
 Coassements modulés, grondements, battements de gorge et signes des mains : la communication est autant **sonore** que **gestuelle**. Le mensonge est un acte hautement répréhensible.

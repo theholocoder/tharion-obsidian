@@ -12,8 +12,8 @@ TABLE
 	hex as "Hex",
 	resume as "Résumé",
 	organisations as "Liens",
-	choice(revelee, "☑", "☐") as "Révélée?",
-	choice(exploree, "☑", "☐") as "Explorée?",
+	choice(revelee, "✅", "☐") as "Révélée?",
+	choice(exploree, "✅", "☐") as "Explorée?",
 	sessions as "Sessions"
 FROM "Rumeurs"
 SORT arc, hex, revelee, exploree

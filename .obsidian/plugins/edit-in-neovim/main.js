@@ -1671,7 +1671,7 @@ var require_has_flag = __commonJS({
 var require_supports_colors = __commonJS({
   "node_modules/@colors/colors/lib/system/supports-colors.js"(exports, module2) {
     "use strict";
-    var os2 = require("os");
+    var os4 = require("os");
     var hasFlag = require_has_flag();
     var env = process.env;
     var forceColor = void 0;
@@ -1709,7 +1709,7 @@ var require_supports_colors = __commonJS({
       }
       var min = forceColor ? 1 : 0;
       if (process.platform === "win32") {
-        var osRelease = os2.release().split(".");
+        var osRelease = os4.release().split(".");
         if (Number(process.versions.node.split(".")[0]) >= 8 && Number(osRelease[0]) >= 10 && Number(osRelease[2]) >= 10586) {
           return Number(osRelease[2]) >= 14931 ? 3 : 2;
         }
@@ -6809,7 +6809,7 @@ var require_winston_transport = __commonJS({
 var require_console = __commonJS({
   "node_modules/winston/lib/winston/transports/console.js"(exports, module2) {
     "use strict";
-    var os2 = require("os");
+    var os4 = require("os");
     var { LEVEL, MESSAGE } = require_triple_beam();
     var TransportStream = require_winston_transport();
     module2.exports = class Console extends TransportStream {
@@ -6829,7 +6829,7 @@ var require_console = __commonJS({
         this.name = options.name || "console";
         this.stderrLevels = this._stringArrayToSet(options.stderrLevels);
         this.consoleWarnLevels = this._stringArrayToSet(options.consoleWarnLevels);
-        this.eol = typeof options.eol === "string" ? options.eol : os2.EOL;
+        this.eol = typeof options.eol === "string" ? options.eol : os4.EOL;
         this.forceConsole = options.forceConsole || false;
         this.setMaxListeners(30);
       }
@@ -9610,8 +9610,8 @@ var require_colorspace = __commonJS({
     "use strict";
     var color = require_color();
     var hex = require_text_hex();
-    module2.exports = function colorspace(namespace, delimiter2) {
-      var split = namespace.split(delimiter2 || ":");
+    module2.exports = function colorspace(namespace, delimiter3) {
+      var split = namespace.split(delimiter3 || ":");
       var base = hex(split[0]);
       if (!split.length)
         return base;
@@ -9886,7 +9886,7 @@ var require_file = __commonJS({
     var { Stream, PassThrough } = require_readable();
     var TransportStream = require_winston_transport();
     var debug = require_node2()("winston:file");
-    var os2 = require("os");
+    var os4 = require("os");
     var tailFile = require_tail_file();
     module2.exports = class File extends TransportStream {
       /**
@@ -9924,7 +9924,7 @@ var require_file = __commonJS({
         this.rotationFormat = options.rotationFormat || false;
         this.zippedArchive = options.zippedArchive || false;
         this.maxFiles = options.maxFiles || null;
-        this.eol = typeof options.eol === "string" ? options.eol : os2.EOL;
+        this.eol = typeof options.eol === "string" ? options.eol : os4.EOL;
         this.tailable = options.tailable || false;
         this.lazy = options.lazy || false;
         this._size = 0;
@@ -10710,7 +10710,7 @@ var require_stream3 = __commonJS({
     "use strict";
     var isStream = require_is_stream();
     var { MESSAGE } = require_triple_beam();
-    var os2 = require("os");
+    var os4 = require("os");
     var TransportStream = require_winston_transport();
     module2.exports = class Stream extends TransportStream {
       /**
@@ -10726,7 +10726,7 @@ var require_stream3 = __commonJS({
         this._stream = options.stream;
         this._stream.setMaxListeners(Infinity);
         this.isObjectMode = options.stream._writableState.objectMode;
-        this.eol = typeof options.eol === "string" ? options.eol : os2.EOL;
+        this.eol = typeof options.eol === "string" ? options.eol : os4.EOL;
       }
       /**
        * Core logging method exposed to Winston.
@@ -11112,7 +11112,7 @@ var require_exception_stream = __commonJS({
 var require_exception_handler = __commonJS({
   "node_modules/winston/lib/winston/exception-handler.js"(exports, module2) {
     "use strict";
-    var os2 = require("os");
+    var os4 = require("os");
     var asyncForEach = require_forEach();
     var debug = require_node2()("winston:exception");
     var once = require_one_time();
@@ -11207,8 +11207,8 @@ var require_exception_handler = __commonJS({
        */
       getOsInfo() {
         return {
-          loadavg: os2.loadavg(),
-          uptime: os2.uptime()
+          loadavg: os4.loadavg(),
+          uptime: os4.uptime()
         };
       }
       /**
@@ -11350,7 +11350,7 @@ var require_rejection_stream = __commonJS({
 var require_rejection_handler = __commonJS({
   "node_modules/winston/lib/winston/rejection-handler.js"(exports, module2) {
     "use strict";
-    var os2 = require("os");
+    var os4 = require("os");
     var asyncForEach = require_forEach();
     var debug = require_node2()("winston:rejection");
     var once = require_one_time();
@@ -11447,8 +11447,8 @@ var require_rejection_handler = __commonJS({
        */
       getOsInfo() {
         return {
-          loadavg: os2.loadavg(),
-          uptime: os2.uptime()
+          loadavg: os4.loadavg(),
+          uptime: os4.uptime()
         };
       }
       /**
@@ -14899,7 +14899,7 @@ var require_findNvim = __commonJS({
     var nvimVersionRegex = /^NVIM\s+v(.+)$/m;
     var buildTypeRegex = /^Build\s+type:\s+(.+)$/m;
     var luaJitVersionRegex = /^LuaJIT\s+(.+)$/m;
-    var windows2 = process.platform === "win32";
+    var windows = process.platform === "win32";
     function parseVersion(version) {
       if (typeof version !== "string") {
         throw new TypeError("Invalid version format: not a string");
@@ -14944,27 +14944,27 @@ var require_findNvim = __commonJS({
       }
       return 0;
     }
-    function normalizePath2(path) {
-      return (0, node_path_1.normalize)(windows2 ? path.toLowerCase() : path);
+    function normalizePath(path) {
+      return (0, node_path_1.normalize)(windows ? path.toLowerCase() : path);
     }
     function getPlatformSearchDirs() {
       const paths = /* @__PURE__ */ new Set();
       const { PATH, USERPROFILE, LOCALAPPDATA, PROGRAMFILES, HOME } = process.env;
-      PATH === null || PATH === void 0 ? void 0 : PATH.split(node_path_1.delimiter).forEach((p) => paths.add(normalizePath2(p)));
-      if (windows2) {
+      PATH === null || PATH === void 0 ? void 0 : PATH.split(node_path_1.delimiter).forEach((p) => paths.add(normalizePath(p)));
+      if (windows) {
         if (USERPROFILE) {
-          paths.add(normalizePath2(`${USERPROFILE}/scoop/shims`));
+          paths.add(normalizePath(`${USERPROFILE}/scoop/shims`));
         }
-        paths.add(normalizePath2("C:/ProgramData/scoop/shims"));
+        paths.add(normalizePath("C:/ProgramData/scoop/shims"));
         if (LOCALAPPDATA) {
-          paths.add(normalizePath2(`${LOCALAPPDATA}/Microsoft/WindowsApps`));
-          paths.add(normalizePath2(`${LOCALAPPDATA}/Microsoft/WinGet/Packages`));
+          paths.add(normalizePath(`${LOCALAPPDATA}/Microsoft/WindowsApps`));
+          paths.add(normalizePath(`${LOCALAPPDATA}/Microsoft/WinGet/Packages`));
         }
         if (PROGRAMFILES) {
-          paths.add(normalizePath2(`${PROGRAMFILES}/Neovim/bin`));
-          paths.add(normalizePath2(`${PROGRAMFILES} (x86)/Neovim/bin`));
-          paths.add(normalizePath2(`${PROGRAMFILES}/WinGet/Packages`));
-          paths.add(normalizePath2(`${PROGRAMFILES} (x86)/WinGet/Packages`));
+          paths.add(normalizePath(`${PROGRAMFILES}/Neovim/bin`));
+          paths.add(normalizePath(`${PROGRAMFILES} (x86)/Neovim/bin`));
+          paths.add(normalizePath(`${PROGRAMFILES}/WinGet/Packages`));
+          paths.add(normalizePath(`${PROGRAMFILES} (x86)/WinGet/Packages`));
         }
       } else {
         [
@@ -14975,8 +14975,8 @@ var require_findNvim = __commonJS({
           "/snap/nvim/current/usr/bin"
         ].forEach((p) => paths.add(p));
         if (HOME) {
-          paths.add(normalizePath2(`${HOME}/bin`));
-          paths.add(normalizePath2(`${HOME}/.linuxbrew/bin`));
+          paths.add(normalizePath(`${HOME}/bin`));
+          paths.add(normalizePath(`${HOME}/.linuxbrew/bin`));
         }
       }
       return paths;
@@ -14984,11 +14984,11 @@ var require_findNvim = __commonJS({
     function findNvim3(opt = {}) {
       var _a, _b, _c;
       const platformDirs = getPlatformSearchDirs();
-      const nvimExecutable = windows2 ? "nvim.exe" : "nvim";
-      const normalizedPathsFromUser = ((_a = opt.paths) !== null && _a !== void 0 ? _a : []).map(normalizePath2);
+      const nvimExecutable = windows ? "nvim.exe" : "nvim";
+      const normalizedPathsFromUser = ((_a = opt.paths) !== null && _a !== void 0 ? _a : []).map(normalizePath);
       const allPaths = /* @__PURE__ */ new Set([
         ...normalizedPathsFromUser,
-        ...((_b = opt.dirs) !== null && _b !== void 0 ? _b : []).map((dir) => normalizePath2((0, node_path_1.join)(dir, nvimExecutable))),
+        ...((_b = opt.dirs) !== null && _b !== void 0 ? _b : []).map((dir) => normalizePath((0, node_path_1.join)(dir, nvimExecutable))),
         ...[...platformDirs].map((dir) => (0, node_path_1.join)(dir, nvimExecutable))
       ]);
       const matches = new Array();
@@ -15049,7 +15049,7 @@ var require_findNvim = __commonJS({
       exports.exportsForTesting = {
         parseVersion,
         compareVersions,
-        normalizePath: normalizePath2
+        normalizePath
       };
     }
   }
@@ -15114,7 +15114,7 @@ var require_package2 = __commonJS({
   "node_modules/systeminformation/package.json"(exports, module2) {
     module2.exports = {
       name: "systeminformation",
-      version: "5.25.11",
+      version: "5.31.1",
       description: "Advanced, lightweight system and OS information library",
       license: "MIT",
       author: "Sebastian Hildebrandt <hildebrandt@plus-innovations.com> (https://plus-innovations.com)",
@@ -15193,7 +15193,7 @@ var require_package2 = __commonJS({
       ],
       repository: {
         type: "git",
-        url: "https://github.com/sebhildebrandt/systeminformation.git"
+        url: "git+https://github.com/sebhildebrandt/systeminformation.git"
       },
       funding: {
         type: "Buy me a coffee",
@@ -15220,11 +15220,11 @@ var require_package2 = __commonJS({
 var require_util2 = __commonJS({
   "node_modules/systeminformation/lib/util.js"(exports) {
     "use strict";
-    var os2 = require("os");
+    var os4 = require("os");
     var fs = require("fs");
     var path = require("path");
     var spawn2 = require("child_process").spawn;
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var util = require("util");
     var _platform = process.platform;
@@ -15235,7 +15235,6 @@ var require_util2 = __commonJS({
     var _openbsd = _platform === "openbsd";
     var _netbsd = _platform === "netbsd";
     var _cores = 0;
-    var wmicPath = "";
     var codepage = "";
     var _smartMonToolsInstalled = null;
     var _rpi_cpuinfo = null;
@@ -15252,12 +15251,12 @@ var require_util2 = __commonJS({
     var _psIdSeperator = "--##ID##--";
     var execOptsWin = {
       windowsHide: true,
-      maxBuffer: 1024 * 2e4,
+      maxBuffer: 1024 * 102400,
       encoding: "UTF-8",
       env: Object.assign({}, process.env, { LANG: "en_US.UTF-8" })
     };
     var execOptsLinux = {
-      maxBuffer: 1024 * 2e4,
+      maxBuffer: 1024 * 102400,
       encoding: "UTF-8",
       stdio: ["pipe", "pipe", "ignore"]
     };
@@ -15296,11 +15295,11 @@ var require_util2 = __commonJS({
       return functionToCheck && getType.toString.call(functionToCheck) === "[object Function]";
     }
     function unique(obj) {
-      let uniques = [];
-      let stringify = {};
+      const uniques = [];
+      const stringify = {};
       for (let i = 0; i < obj.length; i++) {
         let keys = Object.keys(obj[i]);
-        keys.sort(function(a, b) {
+        keys.sort((a, b) => {
           return a - b;
         });
         let str = "";
@@ -15316,10 +15315,10 @@ var require_util2 = __commonJS({
       return uniques;
     }
     function sortByKey(array, keys) {
-      return array.sort(function(a, b) {
+      return array.sort((a, b) => {
         let x = "";
         let y = "";
-        keys.forEach(function(key) {
+        keys.forEach((key) => {
           x = x + a[key];
           y = y + b[key];
         });
@@ -15328,7 +15327,7 @@ var require_util2 = __commonJS({
     }
     function cores() {
       if (_cores === 0) {
-        _cores = os2.cpus().length;
+        _cores = os4.cpus().length;
       }
       return _cores;
     }
@@ -15351,6 +15350,7 @@ var require_util2 = __commonJS({
             return true;
           }
         }
+        return false;
       });
       return result2;
     }
@@ -15384,8 +15384,8 @@ var require_util2 = __commonJS({
       t = t.toUpperCase();
       let hour = 0;
       let min = 0;
-      let splitter = detectSplit(t);
-      let parts = t.split(splitter);
+      const splitter = detectSplit(t);
+      const parts = t.split(splitter);
       if (parts.length >= 2) {
         if (parts[2]) {
           parts[1] += parts[2];
@@ -15403,8 +15403,8 @@ var require_util2 = __commonJS({
         time: ""
       };
       culture = culture || {};
-      let dateFormat = (culture.dateFormat || "").toLowerCase();
-      let pmDesignator = culture.pmDesignator || "";
+      const dateFormat = (culture.dateFormat || "").toLowerCase();
+      const pmDesignator = culture.pmDesignator || "";
       const parts = dt.split(" ");
       if (parts[0]) {
         if (parts[0].indexOf("/") >= 0) {
@@ -15447,7 +15447,7 @@ var require_util2 = __commonJS({
       }
       if (parts[1]) {
         parts.shift();
-        let time = parts.join(" ");
+        const time = parts.join(" ");
         result2.time = parseTime(time, pmDesignator);
       }
       return result2;
@@ -15457,7 +15457,7 @@ var require_util2 = __commonJS({
       let count = 1;
       let from = 0;
       let to = 0;
-      let result2 = [];
+      const result2 = [];
       for (let i = 0; i < head.length; i++) {
         if (count <= rights) {
           if (/\s/.test(head[i]) && !space) {
@@ -15523,37 +15523,6 @@ var require_util2 = __commonJS({
         }
       }
     }
-    function getWmic() {
-      if (os2.type() === "Windows_NT" && !wmicPath) {
-        wmicPath = WINDIR + "\\system32\\wbem\\wmic.exe";
-        if (!fs.existsSync(wmicPath)) {
-          try {
-            const wmicPathArray = execSync("WHERE WMIC", execOptsWin).toString().split("\r\n");
-            if (wmicPathArray && wmicPathArray.length) {
-              wmicPath = wmicPathArray[0];
-            } else {
-              wmicPath = "wmic";
-            }
-          } catch (e) {
-            wmicPath = "wmic";
-          }
-        }
-      }
-      return wmicPath;
-    }
-    function wmic(command) {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          try {
-            powerShell(getWmic() + " " + command).then((stdout) => {
-              resolve(stdout, "");
-            });
-          } catch (e) {
-            resolve("", e);
-          }
-        });
-      });
-    }
     function getVboxmanage() {
       return _windows ? `"${process.env.VBOX_INSTALL_PATH || process.env.VBOX_MSI_INSTALL_PATH}\\VBoxManage.exe"` : "vboxmanage";
     }
@@ -15589,26 +15558,26 @@ var require_util2 = __commonJS({
         _psChild = spawn2(_powerShell, ["-NoProfile", "-NoLogo", "-InputFormat", "Text", "-NoExit", "-Command", "-"], {
           stdio: "pipe",
           windowsHide: true,
-          maxBuffer: 1024 * 2e4,
+          maxBuffer: 1024 * 102400,
           encoding: "UTF-8",
           env: Object.assign({}, process.env, { LANG: "en_US.UTF-8" })
         });
         if (_psChild && _psChild.pid) {
           _psPersistent = true;
-          _psChild.stdout.on("data", function(data) {
+          _psChild.stdout.on("data", (data) => {
             _psResult = _psResult + data.toString("utf8");
             if (data.indexOf(_psCmdSeperator) >= 0) {
               powerShellProceedResults(_psResult);
               _psResult = "";
             }
           });
-          _psChild.stderr.on("data", function() {
+          _psChild.stderr.on("data", () => {
             powerShellProceedResults(_psResult + _psError);
           });
-          _psChild.on("error", function() {
+          _psChild.on("error", () => {
             powerShellProceedResults(_psResult + _psError);
           });
-          _psChild.on("close", function() {
+          _psChild.on("close", () => {
             if (_psChild) {
               _psChild.kill();
             }
@@ -15619,15 +15588,15 @@ var require_util2 = __commonJS({
     function powerShellRelease() {
       try {
         if (_psChild) {
-          _psChild.stdin.write("exit" + os2.EOL);
+          _psChild.stdin.write("exit" + os4.EOL);
           _psChild.stdin.end();
-          _psPersistent = false;
         }
       } catch (e) {
         if (_psChild) {
           _psChild.kill();
         }
       }
+      _psPersistent = false;
       _psChild = null;
     }
     function powerShell(cmd) {
@@ -15646,7 +15615,7 @@ var require_util2 = __commonJS({
             });
             try {
               if (_psChild && _psChild.pid) {
-                _psChild.stdin.write(_psToUTF8 + "echo " + _psCmdStart + id + _psIdSeperator + "; " + os2.EOL + cmd + os2.EOL + "echo " + _psCmdSeperator + os2.EOL);
+                _psChild.stdin.write(_psToUTF8 + "echo " + _psCmdStart + id + _psIdSeperator + "; " + os4.EOL + cmd + os4.EOL + "echo " + _psCmdSeperator + os4.EOL);
               }
             } catch (e) {
               resolve("");
@@ -15658,41 +15627,45 @@ var require_util2 = __commonJS({
         return new Promise((resolve) => {
           process.nextTick(() => {
             try {
-              const child = spawn2(_powerShell, ["-NoProfile", "-NoLogo", "-InputFormat", "Text", "-NoExit", "-ExecutionPolicy", "Unrestricted", "-Command", "-"], {
+              const osVersion = os4.release().split(".").map(Number);
+              const spanOptions = osVersion[0] < 10 ? ["-NoProfile", "-NoLogo", "-InputFormat", "Text", "-NoExit", "-ExecutionPolicy", "Unrestricted", "-Command", "-"] : ["-NoProfile", "-NoLogo", "-InputFormat", "Text", "-ExecutionPolicy", "Unrestricted", "-Command", _psToUTF8 + cmd];
+              const child = spawn2(_powerShell, spanOptions, {
                 stdio: "pipe",
                 windowsHide: true,
-                maxBuffer: 1024 * 2e4,
+                maxBuffer: 1024 * 102400,
                 encoding: "UTF-8",
                 env: Object.assign({}, process.env, { LANG: "en_US.UTF-8" })
               });
               if (child && !child.pid) {
-                child.on("error", function() {
+                child.on("error", () => {
                   resolve(result2);
                 });
               }
               if (child && child.pid) {
-                child.stdout.on("data", function(data) {
+                child.stdout.on("data", (data) => {
                   result2 = result2 + data.toString("utf8");
                 });
-                child.stderr.on("data", function() {
+                child.stderr.on("data", () => {
                   child.kill();
                   resolve(result2);
                 });
-                child.on("close", function() {
+                child.on("close", () => {
                   child.kill();
                   resolve(result2);
                 });
-                child.on("error", function() {
+                child.on("error", () => {
                   child.kill();
                   resolve(result2);
                 });
-                try {
-                  child.stdin.write(_psToUTF8 + cmd + os2.EOL);
-                  child.stdin.write("exit" + os2.EOL);
-                  child.stdin.end();
-                } catch (e) {
-                  child.kill();
-                  resolve(result2);
+                if (osVersion[0] < 10) {
+                  try {
+                    child.stdin.write(_psToUTF8 + cmd + os4.EOL);
+                    child.stdin.write("exit" + os4.EOL);
+                    child.stdin.end();
+                  } catch (e) {
+                    child.kill();
+                    resolve(result2);
+                  }
                 }
               } else {
                 resolve(result2);
@@ -15712,19 +15685,19 @@ var require_util2 = __commonJS({
           try {
             const child = spawn2(cmd, args, options);
             if (child && !child.pid) {
-              child.on("error", function() {
+              child.on("error", () => {
                 resolve(result2);
               });
             }
             if (child && child.pid) {
-              child.stdout.on("data", function(data) {
+              child.stdout.on("data", (data) => {
                 result2 += data.toString();
               });
-              child.on("close", function() {
+              child.on("close", () => {
                 child.kill();
                 resolve(result2);
               });
-              child.on("error", function() {
+              child.on("error", () => {
                 child.kill();
                 resolve(result2);
               });
@@ -15745,7 +15718,7 @@ var require_util2 = __commonJS({
             const lines = stdout.toString().split("\r\n");
             const parts = lines[0].split(":");
             codepage = parts.length > 1 ? parts[1].replace(".", "").trim() : "";
-          } catch (err) {
+          } catch (e) {
             codepage = "437";
           }
         }
@@ -15761,7 +15734,7 @@ var require_util2 = __commonJS({
             if (!codepage) {
               codepage = "UTF-8";
             }
-          } catch (err) {
+          } catch (e) {
             codepage = "UTF-8";
           }
         }
@@ -15796,17 +15769,7 @@ var require_util2 = __commonJS({
       return _smartMonToolsInstalled;
     }
     function isRaspberry(cpuinfo) {
-      const PI_MODEL_NO = [
-        "BCM2708",
-        "BCM2709",
-        "BCM2710",
-        "BCM2711",
-        "BCM2712",
-        "BCM2835",
-        "BCM2836",
-        "BCM2837",
-        "BCM2837B0"
-      ];
+      const PI_MODEL_NO = ["BCM2708", "BCM2709", "BCM2710", "BCM2711", "BCM2712", "BCM2835", "BCM2836", "BCM2837", "BCM2837B0"];
       if (_rpi_cpuinfo !== null) {
         cpuinfo = _rpi_cpuinfo;
       } else if (cpuinfo === void 0) {
@@ -15837,7 +15800,7 @@ var require_util2 = __commonJS({
         opts = execOptsWin;
       }
       let newCmd = "chcp 65001 > nul && cmd /C " + cmd + " && chcp " + codepage + " > nul";
-      exec2(newCmd, opts, function(error, stdout) {
+      exec(newCmd, opts, (error, stdout) => {
         callback(error, stdout);
       });
     }
@@ -15884,7 +15847,7 @@ var require_util2 = __commonJS({
       let result2 = "";
       const l = mathMin(s.length, 2e3);
       for (let i = 0; i <= l; i++) {
-        if (!(s[i] === void 0 || s[i] === ">" || s[i] === "<" || s[i] === "*" || s[i] === "?" || s[i] === "[" || s[i] === "]" || s[i] === "|" || s[i] === "\u02DA" || s[i] === "$" || s[i] === ";" || s[i] === "&" || s[i] === "]" || s[i] === "#" || s[i] === "\\" || s[i] === "	" || s[i] === "\n" || s[i] === "\r" || s[i] === "'" || s[i] === "`" || s[i] === '"' || s[i].length > 1 || strict && s[i] === "(" || strict && s[i] === ")" || strict && s[i] === "@" || strict && s[i] === " " || strict && s[i] == "{" || strict && s[i] == ";" || strict && s[i] == "}")) {
+        if (!(s[i] === void 0 || s[i] === ">" || s[i] === "<" || s[i] === "*" || s[i] === "?" || s[i] === "[" || s[i] === "]" || s[i] === "|" || s[i] === "\u02DA" || s[i] === "$" || s[i] === ";" || s[i] === "&" || s[i] === "]" || s[i] === "#" || s[i] === "\\" || s[i] === "	" || s[i] === "\n" || s[i] === "\r" || s[i] === "'" || s[i] === "`" || s[i] === '"' || s[i].length > 1 || strict && s[i] === "(" || strict && s[i] === ")" || strict && s[i] === "@" || strict && s[i] === " " || strict && s[i] === "{" || strict && s[i] === ";" || strict && s[i] === "}")) {
           result2 = result2 + s[i];
         }
       }
@@ -15972,21 +15935,21 @@ var require_util2 = __commonJS({
         return lstatSync(source2).isFile();
       }
       function getDirectories(source2) {
-        return readdirSync(source2).map(function(name) {
+        return readdirSync(source2).map((name) => {
           return join2(source2, name);
         }).filter(isDirectory);
       }
       function getFiles(source2) {
-        return readdirSync(source2).map(function(name) {
+        return readdirSync(source2).map((name) => {
           return join2(source2, name);
         }).filter(isFile);
       }
       function getFilesRecursively(source2) {
         try {
-          let dirs = getDirectories(source2);
-          let files = dirs.map(function(dir) {
+          const dirs = getDirectories(source2);
+          const files = dirs.map((dir) => {
             return getFilesRecursively(dir);
-          }).reduce(function(a, b) {
+          }).reduce((a, b) => {
             return a.concat(b);
           }, []);
           return files.concat(getFiles(source2));
@@ -16127,21 +16090,8 @@ var require_util2 = __commonJS({
           processor: "BCM2835"
         }
       };
-      const processorList = [
-        "BCM2835",
-        "BCM2836",
-        "BCM2837",
-        "BCM2711",
-        "BCM2712"
-      ];
-      const manufacturerList = [
-        "Sony UK",
-        "Egoman",
-        "Embest",
-        "Sony Japan",
-        "Embest",
-        "Stadium"
-      ];
+      const processorList = ["BCM2835", "BCM2836", "BCM2837", "BCM2711", "BCM2712"];
+      const manufacturerList = ["Sony UK", "Egoman", "Embest", "Sony Japan", "Embest", "Stadium"];
       const typeList = {
         "00": "A",
         "01": "B",
@@ -16157,16 +16107,16 @@ var require_util2 = __commonJS({
         "0d": "3B+",
         "0e": "3A+",
         "0f": "Internal use only",
-        "10": "CM3+",
-        "11": "4B",
-        "12": "Zero 2 W",
-        "13": "400",
-        "14": "CM4",
-        "15": "CM4S",
-        "16": "Internal use only",
-        "17": "5",
-        "18": "CM5",
-        "19": "500",
+        10: "CM3+",
+        11: "4B",
+        12: "Zero 2 W",
+        13: "400",
+        14: "CM4",
+        15: "CM4S",
+        16: "Internal use only",
+        17: "5",
+        18: "CM5",
+        19: "500/500+",
         "1a": "CM5 Lite"
       };
       const revisionCode = getValue(lines, "revision", ":", true);
@@ -16226,22 +16176,22 @@ var require_util2 = __commonJS({
       return "VideoCore IV";
     }
     function promiseAll(promises) {
-      const resolvingPromises = promises.map(function(promise) {
-        return new Promise(function(resolve) {
-          let payload = new Array(2);
-          promise.then(function(result2) {
+      const resolvingPromises = promises.map(
+        (promise) => new Promise((resolve) => {
+          const payload = new Array(2);
+          promise.then((result2) => {
             payload[0] = result2;
-          }).catch(function(error) {
+          }).catch((error) => {
             payload[1] = error;
-          }).then(function() {
+          }).then(() => {
             resolve(payload);
           });
-        });
-      });
+        })
+      );
       const errors = [];
       const results = [];
-      return Promise.all(resolvingPromises).then(function(items) {
-        items.forEach(function(payload) {
+      return Promise.all(resolvingPromises).then((items) => {
+        items.forEach((payload) => {
           if (payload[1]) {
             errors.push(payload[1]);
             results.push(null);
@@ -16257,10 +16207,10 @@ var require_util2 = __commonJS({
       });
     }
     function promisify(nodeStyleFunction) {
-      return function() {
+      return () => {
         const args = Array.prototype.slice.call(arguments);
-        return new Promise(function(resolve, reject) {
-          args.push(function(err, data) {
+        return new Promise((resolve, reject) => {
+          args.push((err, data) => {
             if (err) {
               reject(err);
             } else {
@@ -16272,10 +16222,10 @@ var require_util2 = __commonJS({
       };
     }
     function promisifySave(nodeStyleFunction) {
-      return function() {
+      return () => {
         const args = Array.prototype.slice.call(arguments);
-        return new Promise(function(resolve) {
-          args.push(function(err, data) {
+        return new Promise((resolve) => {
+          args.push((err, data) => {
             resolve(data);
           });
           nodeStyleFunction.apply(null, args);
@@ -17191,7 +17141,7 @@ var require_util2 = __commonJS({
           key: "Mac14,13",
           name: "Mac Studio",
           size: "",
-          processor: "",
+          processor: "M2 Max",
           year: "2023",
           additional: ""
         },
@@ -17199,15 +17149,31 @@ var require_util2 = __commonJS({
           key: "Mac14,14",
           name: "Mac Studio",
           size: "",
-          processor: "",
+          processor: "M2 Ultra",
           year: "2023",
+          additional: ""
+        },
+        {
+          key: "Mac15,14",
+          name: "Mac Studio",
+          size: "",
+          processor: "M3 Ultra",
+          year: "2025",
+          additional: ""
+        },
+        {
+          key: "Mac16,9",
+          name: "Mac Studio",
+          size: "",
+          processor: "M4 Max",
+          year: "2025",
           additional: ""
         },
         {
           key: "Mac13,1",
           name: "Mac Studio",
           size: "",
-          processor: "",
+          processor: "M1 Max",
           year: "2022",
           additional: ""
         },
@@ -17215,7 +17181,7 @@ var require_util2 = __commonJS({
           key: "Mac13,2",
           name: "Mac Studio",
           size: "",
-          processor: "",
+          processor: "M1 Ultra",
           year: "2022",
           additional: ""
         },
@@ -17667,7 +17633,7 @@ var require_util2 = __commonJS({
       const http = url.startsWith("https:") || url.indexOf(":443/") > 0 || url.indexOf(":8443/") > 0 ? require("https") : require("http");
       const t = Date.now();
       return new Promise((resolve) => {
-        const request = http.get(url, function(res) {
+        const request = http.get(url, (res) => {
           res.on("data", () => {
           });
           res.on("end", () => {
@@ -17678,7 +17644,7 @@ var require_util2 = __commonJS({
               time: Date.now() - t
             });
           });
-        }).on("error", function(e) {
+        }).on("error", (e) => {
           resolve({
             url,
             statusCode: 404,
@@ -17686,7 +17652,7 @@ var require_util2 = __commonJS({
             time: Date.now() - t
           });
         }).setTimeout(timeout, () => {
-          request.close();
+          request.destroy();
           resolve({
             url,
             statusCode: 408,
@@ -17716,8 +17682,6 @@ var require_util2 = __commonJS({
     exports.parseDateTime = parseDateTime;
     exports.parseHead = parseHead;
     exports.findObjectByKey = findObjectByKey;
-    exports.getWmic = getWmic;
-    exports.wmic = wmic;
     exports.darwinXcodeExists = darwinXcodeExists;
     exports.getVboxmanage = getVboxmanage;
     exports.powerShell = powerShell;
@@ -17760,14 +17724,1252 @@ var require_util2 = __commonJS({
   }
 });
 
+// node_modules/systeminformation/lib/osinfo.js
+var require_osinfo = __commonJS({
+  "node_modules/systeminformation/lib/osinfo.js"(exports) {
+    "use strict";
+    var os4 = require("os");
+    var fs = require("fs");
+    var util = require_util2();
+    var exec = require("child_process").exec;
+    var execSync = require("child_process").execSync;
+    var _platform = process.platform;
+    var _linux = _platform === "linux" || _platform === "android";
+    var _darwin = _platform === "darwin";
+    var _windows = _platform === "win32";
+    var _freebsd = _platform === "freebsd";
+    var _openbsd = _platform === "openbsd";
+    var _netbsd = _platform === "netbsd";
+    var _sunos = _platform === "sunos";
+    function time() {
+      const t = new Date().toString().split(" ");
+      let timezoneName = "";
+      try {
+        timezoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      } catch (e) {
+        timezoneName = t.length >= 7 ? t.slice(6).join(" ").replace(/\(/g, "").replace(/\)/g, "") : "";
+      }
+      const result2 = {
+        current: Date.now(),
+        uptime: os4.uptime(),
+        timezone: t.length >= 7 ? t[5] : "",
+        timezoneName
+      };
+      if (_darwin || _linux) {
+        try {
+          const stdout = execSync("date +%Z && date +%z && ls -l /etc/localtime 2>/dev/null", util.execOptsLinux);
+          const lines = stdout.toString().split(os4.EOL);
+          if (lines.length > 3 && !lines[0]) {
+            lines.shift();
+          }
+          let timezone = lines[0] || "";
+          if (timezone.startsWith("+") || timezone.startsWith("-")) {
+            timezone = "GMT";
+          }
+          return {
+            current: Date.now(),
+            uptime: os4.uptime(),
+            timezone: lines[1] ? timezone + lines[1] : timezone,
+            timezoneName: lines[2] && lines[2].indexOf("/zoneinfo/") > 0 ? lines[2].split("/zoneinfo/")[1] || "" : ""
+          };
+        } catch (e) {
+          util.noop();
+        }
+      }
+      return result2;
+    }
+    exports.time = time;
+    function getLogoFile(distro) {
+      distro = distro || "";
+      distro = distro.toLowerCase();
+      let result2 = _platform;
+      if (_windows) {
+        result2 = "windows";
+      } else if (distro.indexOf("mac os") !== -1 || distro.indexOf("macos") !== -1) {
+        result2 = "apple";
+      } else if (distro.indexOf("arch") !== -1) {
+        result2 = "arch";
+      } else if (distro.indexOf("cachy") !== -1) {
+        result2 = "cachy";
+      } else if (distro.indexOf("centos") !== -1) {
+        result2 = "centos";
+      } else if (distro.indexOf("coreos") !== -1) {
+        result2 = "coreos";
+      } else if (distro.indexOf("debian") !== -1) {
+        result2 = "debian";
+      } else if (distro.indexOf("deepin") !== -1) {
+        result2 = "deepin";
+      } else if (distro.indexOf("elementary") !== -1) {
+        result2 = "elementary";
+      } else if (distro.indexOf("endeavour") !== -1) {
+        result2 = "endeavour";
+      } else if (distro.indexOf("fedora") !== -1) {
+        result2 = "fedora";
+      } else if (distro.indexOf("gentoo") !== -1) {
+        result2 = "gentoo";
+      } else if (distro.indexOf("mageia") !== -1) {
+        result2 = "mageia";
+      } else if (distro.indexOf("mandriva") !== -1) {
+        result2 = "mandriva";
+      } else if (distro.indexOf("manjaro") !== -1) {
+        result2 = "manjaro";
+      } else if (distro.indexOf("mint") !== -1) {
+        result2 = "mint";
+      } else if (distro.indexOf("mx") !== -1) {
+        result2 = "mx";
+      } else if (distro.indexOf("openbsd") !== -1) {
+        result2 = "openbsd";
+      } else if (distro.indexOf("freebsd") !== -1) {
+        result2 = "freebsd";
+      } else if (distro.indexOf("opensuse") !== -1) {
+        result2 = "opensuse";
+      } else if (distro.indexOf("pclinuxos") !== -1) {
+        result2 = "pclinuxos";
+      } else if (distro.indexOf("puppy") !== -1) {
+        result2 = "puppy";
+      } else if (distro.indexOf("popos") !== -1) {
+        result2 = "popos";
+      } else if (distro.indexOf("raspbian") !== -1) {
+        result2 = "raspbian";
+      } else if (distro.indexOf("reactos") !== -1) {
+        result2 = "reactos";
+      } else if (distro.indexOf("redhat") !== -1) {
+        result2 = "redhat";
+      } else if (distro.indexOf("slackware") !== -1) {
+        result2 = "slackware";
+      } else if (distro.indexOf("sugar") !== -1) {
+        result2 = "sugar";
+      } else if (distro.indexOf("steam") !== -1) {
+        result2 = "steam";
+      } else if (distro.indexOf("suse") !== -1) {
+        result2 = "suse";
+      } else if (distro.indexOf("mate") !== -1) {
+        result2 = "ubuntu-mate";
+      } else if (distro.indexOf("lubuntu") !== -1) {
+        result2 = "lubuntu";
+      } else if (distro.indexOf("xubuntu") !== -1) {
+        result2 = "xubuntu";
+      } else if (distro.indexOf("ubuntu") !== -1) {
+        result2 = "ubuntu";
+      } else if (distro.indexOf("solaris") !== -1) {
+        result2 = "solaris";
+      } else if (distro.indexOf("tails") !== -1) {
+        result2 = "tails";
+      } else if (distro.indexOf("feren") !== -1) {
+        result2 = "ferenos";
+      } else if (distro.indexOf("robolinux") !== -1) {
+        result2 = "robolinux";
+      } else if (_linux && distro) {
+        result2 = distro.toLowerCase().trim().replace(/\s+/g, "-");
+      }
+      return result2;
+    }
+    var WINDOWS_RELEASES = [
+      [26200, "25H2"],
+      [26100, "24H2"],
+      [22631, "23H2"],
+      [22621, "22H2"],
+      [19045, "22H2"],
+      [22e3, "21H2"],
+      [19044, "21H2"],
+      [19043, "21H1"],
+      [19042, "20H2"],
+      [19041, "2004"],
+      [18363, "1909"],
+      [18362, "1903"],
+      [17763, "1809"],
+      [17134, "1803"]
+    ];
+    function getWindowsRelease(build) {
+      for (const [minBuild, label] of WINDOWS_RELEASES) {
+        if (build >= minBuild)
+          return label;
+      }
+      return "";
+    }
+    function getFQDN() {
+      let fqdn = os4.hostname;
+      if (_linux || _darwin) {
+        try {
+          const stdout = execSync("hostname -f 2>/dev/null", util.execOptsLinux);
+          fqdn = stdout.toString().split(os4.EOL)[0];
+        } catch (e) {
+          util.noop();
+        }
+      }
+      if (_freebsd || _openbsd || _netbsd) {
+        try {
+          const stdout = execSync("hostname 2>/dev/null");
+          fqdn = stdout.toString().split(os4.EOL)[0];
+        } catch (e) {
+          util.noop();
+        }
+      }
+      if (_windows) {
+        try {
+          const stdout = execSync("echo %COMPUTERNAME%.%USERDNSDOMAIN%", util.execOptsWin);
+          fqdn = stdout.toString().replace(".%USERDNSDOMAIN%", "").split(os4.EOL)[0];
+        } catch (e) {
+          util.noop();
+        }
+      }
+      return fqdn;
+    }
+    function osInfo(callback) {
+      return new Promise((resolve) => {
+        process.nextTick(() => {
+          let result2 = {
+            platform: _platform === "win32" ? "Windows" : _platform,
+            distro: "unknown",
+            release: "unknown",
+            codename: "",
+            kernel: os4.release(),
+            arch: os4.arch(),
+            hostname: os4.hostname(),
+            fqdn: getFQDN(),
+            codepage: "",
+            logofile: "",
+            serial: "",
+            build: "",
+            servicepack: "",
+            uefi: false
+          };
+          if (_linux) {
+            exec("cat /etc/*-release; cat /usr/lib/os-release; cat /etc/openwrt_release", (error, stdout) => {
+              let release = {};
+              let lines = stdout.toString().split("\n");
+              lines.forEach((line) => {
+                if (line.indexOf("=") !== -1) {
+                  release[line.split("=")[0].trim().toUpperCase()] = line.split("=")[1].trim();
+                }
+              });
+              result2.distro = (release.DISTRIB_ID || release.NAME || "unknown").replace(/"/g, "");
+              result2.logofile = getLogoFile(result2.distro);
+              let releaseVersion = (release.VERSION || "").replace(/"/g, "");
+              let codename = (release.DISTRIB_CODENAME || release.VERSION_CODENAME || "").replace(/"/g, "");
+              const prettyName = (release.PRETTY_NAME || "").replace(/"/g, "");
+              if (prettyName.indexOf(result2.distro + " ") === 0) {
+                releaseVersion = prettyName.replace(result2.distro + " ", "").trim();
+              }
+              if (releaseVersion.indexOf("(") >= 0) {
+                codename = releaseVersion.split("(")[1].replace(/[()]/g, "").trim();
+                releaseVersion = releaseVersion.split("(")[0].trim();
+              }
+              result2.release = (releaseVersion || release.DISTRIB_RELEASE || release.VERSION_ID || "unknown").replace(/"/g, "");
+              result2.codename = codename;
+              result2.codepage = util.getCodepage();
+              result2.build = (release.BUILD_ID || "").replace(/"/g, "").trim();
+              isUefiLinux().then((uefi) => {
+                result2.uefi = uefi;
+                uuid().then((data) => {
+                  result2.serial = data.os;
+                  if (callback) {
+                    callback(result2);
+                  }
+                  resolve(result2);
+                });
+              });
+            });
+          }
+          if (_freebsd || _openbsd || _netbsd) {
+            exec("sysctl kern.ostype kern.osrelease kern.osrevision kern.hostuuid machdep.bootmethod kern.geom.confxml", (error, stdout) => {
+              let lines = stdout.toString().split("\n");
+              const distro = util.getValue(lines, "kern.ostype");
+              const logofile = getLogoFile(distro);
+              const release = util.getValue(lines, "kern.osrelease").split("-")[0];
+              const serial = util.getValue(lines, "kern.uuid");
+              const bootmethod = util.getValue(lines, "machdep.bootmethod");
+              const uefiConf = stdout.toString().indexOf("<type>efi</type>") >= 0;
+              const uefi = bootmethod ? bootmethod.toLowerCase().indexOf("uefi") >= 0 : uefiConf ? uefiConf : null;
+              result2.distro = distro || result2.distro;
+              result2.logofile = logofile || result2.logofile;
+              result2.release = release || result2.release;
+              result2.serial = serial || result2.serial;
+              result2.codename = "";
+              result2.codepage = util.getCodepage();
+              result2.uefi = uefi || null;
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+          if (_darwin) {
+            exec("sw_vers; sysctl kern.ostype kern.osrelease kern.osrevision kern.uuid", (error, stdout) => {
+              let lines = stdout.toString().split("\n");
+              result2.serial = util.getValue(lines, "kern.uuid");
+              result2.distro = util.getValue(lines, "ProductName");
+              result2.release = (util.getValue(lines, "ProductVersion", ":", true, true) + " " + util.getValue(lines, "ProductVersionExtra", ":", true, true)).trim();
+              result2.build = util.getValue(lines, "BuildVersion");
+              result2.logofile = getLogoFile(result2.distro);
+              result2.codename = "macOS";
+              result2.codename = result2.release.indexOf("10.4") > -1 ? "OS X Tiger" : result2.codename;
+              result2.codename = result2.release.indexOf("10.5") > -1 ? "OS X Leopard" : result2.codename;
+              result2.codename = result2.release.indexOf("10.6") > -1 ? "OS X Snow Leopard" : result2.codename;
+              result2.codename = result2.release.indexOf("10.7") > -1 ? "OS X Lion" : result2.codename;
+              result2.codename = result2.release.indexOf("10.8") > -1 ? "OS X Mountain Lion" : result2.codename;
+              result2.codename = result2.release.indexOf("10.9") > -1 ? "OS X Mavericks" : result2.codename;
+              result2.codename = result2.release.indexOf("10.10") > -1 ? "OS X Yosemite" : result2.codename;
+              result2.codename = result2.release.indexOf("10.11") > -1 ? "OS X El Capitan" : result2.codename;
+              result2.codename = result2.release.indexOf("10.12") > -1 ? "Sierra" : result2.codename;
+              result2.codename = result2.release.indexOf("10.13") > -1 ? "High Sierra" : result2.codename;
+              result2.codename = result2.release.indexOf("10.14") > -1 ? "Mojave" : result2.codename;
+              result2.codename = result2.release.indexOf("10.15") > -1 ? "Catalina" : result2.codename;
+              result2.codename = result2.release.startsWith("11.") ? "Big Sur" : result2.codename;
+              result2.codename = result2.release.startsWith("12.") ? "Monterey" : result2.codename;
+              result2.codename = result2.release.startsWith("13.") ? "Ventura" : result2.codename;
+              result2.codename = result2.release.startsWith("14.") ? "Sonoma" : result2.codename;
+              result2.codename = result2.release.startsWith("15.") ? "Sequoia" : result2.codename;
+              result2.codename = result2.release.startsWith("26.") ? "Tahoe" : result2.codename;
+              result2.uefi = true;
+              result2.codepage = util.getCodepage();
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+          if (_sunos) {
+            result2.release = result2.kernel;
+            exec("uname -o", (error, stdout) => {
+              const lines = stdout.toString().split("\n");
+              result2.distro = lines[0];
+              result2.logofile = getLogoFile(result2.distro);
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+          if (_windows) {
+            result2.logofile = getLogoFile();
+            result2.release = result2.kernel;
+            try {
+              const workload = [];
+              workload.push(util.powerShell("Get-CimInstance Win32_OperatingSystem | select Caption,SerialNumber,BuildNumber,ServicePackMajorVersion,ServicePackMinorVersion | fl"));
+              workload.push(util.powerShell("(Get-CimInstance Win32_ComputerSystem).HypervisorPresent"));
+              workload.push(util.powerShell("Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SystemInformation]::TerminalServerSession"));
+              workload.push(util.powerShell('reg query "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" /v DisplayVersion'));
+              util.promiseAll(workload).then((data) => {
+                const lines = data.results[0] ? data.results[0].toString().split("\r\n") : [""];
+                result2.distro = util.getValue(lines, "Caption", ":").trim();
+                result2.serial = util.getValue(lines, "SerialNumber", ":").trim();
+                result2.build = util.getValue(lines, "BuildNumber", ":").trim();
+                result2.servicepack = util.getValue(lines, "ServicePackMajorVersion", ":").trim() + "." + util.getValue(lines, "ServicePackMinorVersion", ":").trim();
+                result2.codepage = util.getCodepage();
+                const hyperv = data.results[1] ? data.results[1].toString().toLowerCase() : "";
+                result2.hypervisor = hyperv.indexOf("true") !== -1;
+                const term = data.results[2] ? data.results[2].toString() : "";
+                if (data.results[3]) {
+                  const codenameParts = data.results[3].split("REG_SZ");
+                  result2.codename = codenameParts.length > 1 ? codenameParts[1].trim() : "";
+                }
+                if (!result2.codename) {
+                  const buildNum = parseInt(result2.build, 10);
+                  result2.codename = getWindowsRelease(buildNum);
+                }
+                result2.remoteSession = term.toString().toLowerCase().indexOf("true") >= 0;
+                isUefiWindows().then((uefi) => {
+                  result2.uefi = uefi;
+                  if (callback) {
+                    callback(result2);
+                  }
+                  resolve(result2);
+                });
+              });
+            } catch (e) {
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            }
+          }
+        });
+      });
+    }
+    exports.osInfo = osInfo;
+    function isUefiLinux() {
+      return new Promise((resolve) => {
+        process.nextTick(() => {
+          fs.stat("/sys/firmware/efi", (err) => {
+            if (!err) {
+              return resolve(true);
+            } else {
+              exec('dmesg | grep -E "EFI v"', (error, stdout) => {
+                if (!error) {
+                  const lines = stdout.toString().split("\n");
+                  return resolve(lines.length > 0);
+                }
+                return resolve(false);
+              });
+            }
+          });
+        });
+      });
+    }
+    function isUefiWindows() {
+      return new Promise((resolve) => {
+        process.nextTick(() => {
+          try {
+            exec('findstr /C:"Detected boot environment" "%windir%\\Panther\\setupact.log"', util.execOptsWin, (error, stdout) => {
+              if (!error) {
+                const line = stdout.toString().split("\n\r")[0];
+                return resolve(line.toLowerCase().indexOf("efi") >= 0);
+              } else {
+                exec("echo %firmware_type%", util.execOptsWin, (error2, stdout2) => {
+                  if (!error2) {
+                    const line = stdout2.toString() || "";
+                    return resolve(line.toLowerCase().indexOf("efi") >= 0);
+                  } else {
+                    return resolve(false);
+                  }
+                });
+              }
+            });
+          } catch (e) {
+            return resolve(false);
+          }
+        });
+      });
+    }
+    function versions(apps, callback) {
+      let versionObject = {
+        kernel: os4.release(),
+        apache: "",
+        bash: "",
+        bun: "",
+        deno: "",
+        docker: "",
+        dotnet: "",
+        fish: "",
+        gcc: "",
+        git: "",
+        grunt: "",
+        gulp: "",
+        homebrew: "",
+        java: "",
+        mongodb: "",
+        mysql: "",
+        nginx: "",
+        node: "",
+        //process.versions.node,
+        npm: "",
+        openssl: "",
+        perl: "",
+        php: "",
+        pip3: "",
+        pip: "",
+        pm2: "",
+        postfix: "",
+        postgresql: "",
+        powershell: "",
+        python3: "",
+        python: "",
+        redis: "",
+        systemOpenssl: "",
+        systemOpensslLib: "",
+        tsc: "",
+        v8: process.versions.v8,
+        virtualbox: "",
+        yarn: "",
+        zsh: ""
+      };
+      function checkVersionParam(apps2) {
+        if (apps2 === "*") {
+          return {
+            versions: versionObject,
+            counter: 34
+          };
+        }
+        if (!Array.isArray(apps2)) {
+          apps2 = apps2.trim().toLowerCase().replace(/,+/g, "|").replace(/ /g, "|");
+          apps2 = apps2.split("|");
+          const result2 = {
+            versions: {},
+            counter: 0
+          };
+          apps2.forEach((el) => {
+            if (el) {
+              for (let key in versionObject) {
+                if ({}.hasOwnProperty.call(versionObject, key)) {
+                  if (key.toLowerCase() === el.toLowerCase() && !{}.hasOwnProperty.call(result2.versions, key)) {
+                    result2.versions[key] = versionObject[key];
+                    if (key === "openssl") {
+                      result2.versions.systemOpenssl = "";
+                      result2.versions.systemOpensslLib = "";
+                    }
+                    if (!result2.versions[key]) {
+                      result2.counter++;
+                    }
+                  }
+                }
+              }
+            }
+          });
+          return result2;
+        }
+      }
+      return new Promise((resolve) => {
+        process.nextTick(() => {
+          if (util.isFunction(apps) && !callback) {
+            callback = apps;
+            apps = "*";
+          } else {
+            apps = apps || "*";
+            if (typeof apps !== "string") {
+              if (callback) {
+                callback({});
+              }
+              return resolve({});
+            }
+          }
+          const appsObj = checkVersionParam(apps);
+          let totalFunctions = appsObj.counter;
+          let functionProcessed = (() => {
+            return () => {
+              if (--totalFunctions === 0) {
+                if (callback) {
+                  callback(appsObj.versions);
+                }
+                resolve(appsObj.versions);
+              }
+            };
+          })();
+          let cmd = "";
+          try {
+            if ({}.hasOwnProperty.call(appsObj.versions, "openssl")) {
+              appsObj.versions.openssl = process.versions.openssl;
+              exec("openssl version", (error, stdout) => {
+                if (!error) {
+                  let openssl_string = stdout.toString().split("\n")[0].trim();
+                  let openssl = openssl_string.split(" ");
+                  appsObj.versions.systemOpenssl = openssl.length > 0 ? openssl[1] : openssl[0];
+                  appsObj.versions.systemOpensslLib = openssl.length > 0 ? openssl[0] : "openssl";
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "npm")) {
+              exec("npm -v", (error, stdout) => {
+                if (!error) {
+                  appsObj.versions.npm = stdout.toString().split("\n")[0];
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "pm2")) {
+              cmd = "pm2";
+              if (_windows) {
+                cmd += ".cmd";
+              }
+              exec(`${cmd} -v`, (error, stdout) => {
+                if (!error) {
+                  let pm2 = stdout.toString().split("\n")[0].trim();
+                  if (!pm2.startsWith("[PM2]")) {
+                    appsObj.versions.pm2 = pm2;
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "yarn")) {
+              exec("yarn --version", (error, stdout) => {
+                if (!error) {
+                  appsObj.versions.yarn = stdout.toString().split("\n")[0];
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "gulp")) {
+              cmd = "gulp";
+              if (_windows) {
+                cmd += ".cmd";
+              }
+              exec(`${cmd} --version`, (error, stdout) => {
+                if (!error) {
+                  const gulp = stdout.toString().split("\n")[0] || "";
+                  appsObj.versions.gulp = (gulp.toLowerCase().split("version")[1] || "").trim();
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "homebrew")) {
+              cmd = "brew";
+              exec(`${cmd} --version`, (error, stdout) => {
+                if (!error) {
+                  const brew = stdout.toString().split("\n")[0] || "";
+                  appsObj.versions.homebrew = (brew.toLowerCase().split(" ")[1] || "").trim();
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "tsc")) {
+              cmd = "tsc";
+              if (_windows) {
+                cmd += ".cmd";
+              }
+              exec(`${cmd} --version`, (error, stdout) => {
+                if (!error) {
+                  const tsc = stdout.toString().split("\n")[0] || "";
+                  appsObj.versions.tsc = (tsc.toLowerCase().split("version")[1] || "").trim();
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "grunt")) {
+              cmd = "grunt";
+              if (_windows) {
+                cmd += ".cmd";
+              }
+              exec(`${cmd} --version`, (error, stdout) => {
+                if (!error) {
+                  const grunt = stdout.toString().split("\n")[0] || "";
+                  appsObj.versions.grunt = (grunt.toLowerCase().split("cli v")[1] || "").trim();
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "git")) {
+              if (_darwin) {
+                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/git") || fs.existsSync("/opt/homebrew/bin/git");
+                if (util.darwinXcodeExists() || gitHomebrewExists) {
+                  exec("git --version", (error, stdout) => {
+                    if (!error) {
+                      let git = stdout.toString().split("\n")[0] || "";
+                      git = (git.toLowerCase().split("version")[1] || "").trim();
+                      appsObj.versions.git = (git.split(" ")[0] || "").trim();
+                    }
+                    functionProcessed();
+                  });
+                } else {
+                  functionProcessed();
+                }
+              } else {
+                exec("git --version", (error, stdout) => {
+                  if (!error) {
+                    let git = stdout.toString().split("\n")[0] || "";
+                    git = (git.toLowerCase().split("version")[1] || "").trim();
+                    appsObj.versions.git = (git.split(" ")[0] || "").trim();
+                  }
+                  functionProcessed();
+                });
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "apache")) {
+              exec("apachectl -v 2>&1", (error, stdout) => {
+                if (!error) {
+                  const apache = (stdout.toString().split("\n")[0] || "").split(":");
+                  appsObj.versions.apache = apache.length > 1 ? apache[1].replace("Apache", "").replace("/", "").split("(")[0].trim() : "";
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "nginx")) {
+              exec("nginx -v 2>&1", (error, stdout) => {
+                if (!error) {
+                  const nginx = stdout.toString().split("\n")[0] || "";
+                  appsObj.versions.nginx = (nginx.toLowerCase().split("/")[1] || "").trim();
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "mysql")) {
+              exec("mysql -V", (error, stdout) => {
+                if (!error) {
+                  let mysql = stdout.toString().split("\n")[0] || "";
+                  mysql = mysql.toLowerCase();
+                  if (mysql.indexOf(",") > -1) {
+                    mysql = (mysql.split(",")[0] || "").trim();
+                    const parts = mysql.split(" ");
+                    appsObj.versions.mysql = (parts[parts.length - 1] || "").trim();
+                  } else {
+                    if (mysql.indexOf(" ver ") > -1) {
+                      mysql = mysql.split(" ver ")[1];
+                      appsObj.versions.mysql = mysql.split(" ")[0];
+                    }
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "php")) {
+              exec("php -v", (error, stdout) => {
+                if (!error) {
+                  const php = stdout.toString().split("\n")[0] || "";
+                  let parts = php.split("(");
+                  if (parts[0].indexOf("-")) {
+                    parts = parts[0].split("-");
+                  }
+                  appsObj.versions.php = parts[0].replace(/[^0-9.]/g, "");
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "redis")) {
+              exec("redis-server --version", (error, stdout) => {
+                if (!error) {
+                  const redis = stdout.toString().split("\n")[0] || "";
+                  const parts = redis.split(" ");
+                  appsObj.versions.redis = util.getValue(parts, "v", "=", true);
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "docker")) {
+              exec("docker --version", (error, stdout) => {
+                if (!error) {
+                  const docker = stdout.toString().split("\n")[0] || "";
+                  const parts = docker.split(" ");
+                  appsObj.versions.docker = parts.length > 2 && parts[2].endsWith(",") ? parts[2].slice(0, -1) : "";
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "postfix")) {
+              exec("postconf -d | grep mail_version", (error, stdout) => {
+                if (!error) {
+                  const postfix = stdout.toString().split("\n") || [];
+                  appsObj.versions.postfix = util.getValue(postfix, "mail_version", "=", true);
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "mongodb")) {
+              exec("mongod --version", (error, stdout) => {
+                if (!error) {
+                  const mongodb = stdout.toString().split("\n")[0] || "";
+                  appsObj.versions.mongodb = (mongodb.toLowerCase().split(",")[0] || "").replace(/[^0-9.]/g, "");
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "postgresql")) {
+              if (_linux) {
+                exec("locate bin/postgres", (error, stdout) => {
+                  if (!error) {
+                    const safePath = /^[a-zA-Z0-9/_.-]+$/;
+                    const postgresqlBin = stdout.toString().split("\n").filter((p) => safePath.test(p.trim())).sort();
+                    if (postgresqlBin.length) {
+                      execFile(postgresqlBin[postgresqlBin.length - 1], ["-V"], (error2, stdout2) => {
+                        if (!error2) {
+                          const postgresql = stdout2.toString().split("\n")[0].split(" ") || [];
+                          appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
+                        }
+                        functionProcessed();
+                      });
+                    } else {
+                      functionProcessed();
+                    }
+                  } else {
+                    exec("psql -V", (error2, stdout2) => {
+                      if (!error2) {
+                        const postgresql = stdout2.toString().split("\n")[0].split(" ") || [];
+                        appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
+                        appsObj.versions.postgresql = appsObj.versions.postgresql.split("-")[0];
+                      }
+                      functionProcessed();
+                    });
+                  }
+                });
+              } else {
+                if (_windows) {
+                  util.powerShell("Get-CimInstance Win32_Service | select caption | fl").then((stdout) => {
+                    let serviceSections = stdout.split(/\n\s*\n/);
+                    serviceSections.forEach((item) => {
+                      if (item.trim() !== "") {
+                        let lines = item.trim().split("\r\n");
+                        let srvCaption = util.getValue(lines, "caption", ":", true).toLowerCase();
+                        if (srvCaption.indexOf("postgresql") > -1) {
+                          const parts = srvCaption.split(" server ");
+                          if (parts.length > 1) {
+                            appsObj.versions.postgresql = parts[1];
+                          }
+                        }
+                      }
+                    });
+                    functionProcessed();
+                  });
+                } else {
+                  exec("postgres -V", (error, stdout) => {
+                    if (!error) {
+                      const postgresql = stdout.toString().split("\n")[0].split(" ") || [];
+                      appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
+                    } else {
+                      exec("pg_config --version", (error2, stdout2) => {
+                        if (!error2) {
+                          const postgresql = stdout2.toString().split("\n")[0].split(" ") || [];
+                          appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
+                        }
+                      });
+                    }
+                    functionProcessed();
+                  });
+                }
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "perl")) {
+              exec("perl -v", (error, stdout) => {
+                if (!error) {
+                  const perl = stdout.toString().split("\n") || "";
+                  while (perl.length > 0 && perl[0].trim() === "") {
+                    perl.shift();
+                  }
+                  if (perl.length > 0) {
+                    appsObj.versions.perl = perl[0].split("(").pop().split(")")[0].replace("v", "");
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "python")) {
+              if (_darwin) {
+                try {
+                  const stdout = execSync("sw_vers");
+                  const lines = stdout.toString().split("\n");
+                  const osVersion = util.getValue(lines, "ProductVersion", ":");
+                  const gitHomebrewExists1 = fs.existsSync("/usr/local/Cellar/python");
+                  const gitHomebrewExists2 = fs.existsSync("/opt/homebrew/bin/python");
+                  if (util.darwinXcodeExists() && util.semverCompare("12.0.1", osVersion) < 0 || gitHomebrewExists1 || gitHomebrewExists2) {
+                    const cmd2 = gitHomebrewExists1 ? "/usr/local/Cellar/python -V 2>&1" : gitHomebrewExists2 ? "/opt/homebrew/bin/python -V 2>&1" : "python -V 2>&1";
+                    exec(cmd2, (error, stdout2) => {
+                      if (!error) {
+                        const python = stdout2.toString().split("\n")[0] || "";
+                        appsObj.versions.python = python.toLowerCase().replace("python", "").trim();
+                      }
+                      functionProcessed();
+                    });
+                  } else {
+                    functionProcessed();
+                  }
+                } catch (e) {
+                  functionProcessed();
+                }
+              } else {
+                exec("python -V 2>&1", (error, stdout) => {
+                  if (!error) {
+                    const python = stdout.toString().split("\n")[0] || "";
+                    appsObj.versions.python = python.toLowerCase().replace("python", "").trim();
+                  }
+                  functionProcessed();
+                });
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "python3")) {
+              if (_darwin) {
+                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/python3") || fs.existsSync("/opt/homebrew/bin/python3");
+                if (util.darwinXcodeExists() || gitHomebrewExists) {
+                  exec("python3 -V 2>&1", (error, stdout) => {
+                    if (!error) {
+                      const python = stdout.toString().split("\n")[0] || "";
+                      appsObj.versions.python3 = python.toLowerCase().replace("python", "").trim();
+                    }
+                    functionProcessed();
+                  });
+                } else {
+                  functionProcessed();
+                }
+              } else {
+                exec("python3 -V 2>&1", (error, stdout) => {
+                  if (!error) {
+                    const python = stdout.toString().split("\n")[0] || "";
+                    appsObj.versions.python3 = python.toLowerCase().replace("python", "").trim();
+                  }
+                  functionProcessed();
+                });
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "pip")) {
+              if (_darwin) {
+                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/pip") || fs.existsSync("/opt/homebrew/bin/pip");
+                if (util.darwinXcodeExists() || gitHomebrewExists) {
+                  exec("pip -V 2>&1", (error, stdout) => {
+                    if (!error) {
+                      const pip = stdout.toString().split("\n")[0] || "";
+                      const parts = pip.split(" ");
+                      appsObj.versions.pip = parts.length >= 2 ? parts[1] : "";
+                    }
+                    functionProcessed();
+                  });
+                } else {
+                  functionProcessed();
+                }
+              } else {
+                exec("pip -V 2>&1", (error, stdout) => {
+                  if (!error) {
+                    const pip = stdout.toString().split("\n")[0] || "";
+                    const parts = pip.split(" ");
+                    appsObj.versions.pip = parts.length >= 2 ? parts[1] : "";
+                  }
+                  functionProcessed();
+                });
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "pip3")) {
+              if (_darwin) {
+                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/pip3") || fs.existsSync("/opt/homebrew/bin/pip3");
+                if (util.darwinXcodeExists() || gitHomebrewExists) {
+                  exec("pip3 -V 2>&1", (error, stdout) => {
+                    if (!error) {
+                      const pip = stdout.toString().split("\n")[0] || "";
+                      const parts = pip.split(" ");
+                      appsObj.versions.pip3 = parts.length >= 2 ? parts[1] : "";
+                    }
+                    functionProcessed();
+                  });
+                } else {
+                  functionProcessed();
+                }
+              } else {
+                exec("pip3 -V 2>&1", (error, stdout) => {
+                  if (!error) {
+                    const pip = stdout.toString().split("\n")[0] || "";
+                    const parts = pip.split(" ");
+                    appsObj.versions.pip3 = parts.length >= 2 ? parts[1] : "";
+                  }
+                  functionProcessed();
+                });
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "java")) {
+              if (_darwin) {
+                exec("/usr/libexec/java_home -V 2>&1", (error, stdout) => {
+                  if (!error && stdout.toString().toLowerCase().indexOf("no java runtime") === -1) {
+                    exec("java -version 2>&1", (error2, stdout2) => {
+                      if (!error2) {
+                        const java = stdout2.toString().split("\n")[0] || "";
+                        const parts = java.split('"');
+                        appsObj.versions.java = parts.length === 3 ? parts[1].trim() : "";
+                      }
+                      functionProcessed();
+                    });
+                  } else {
+                    functionProcessed();
+                  }
+                });
+              } else {
+                exec("java -version 2>&1", (error, stdout) => {
+                  if (!error) {
+                    const java = stdout.toString().split("\n")[0] || "";
+                    const parts = java.split('"');
+                    appsObj.versions.java = parts.length === 3 ? parts[1].trim() : "";
+                  }
+                  functionProcessed();
+                });
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "gcc")) {
+              if (_darwin && util.darwinXcodeExists() || !_darwin) {
+                exec("gcc -dumpversion", (error, stdout) => {
+                  if (!error) {
+                    appsObj.versions.gcc = stdout.toString().split("\n")[0].trim() || "";
+                  }
+                  if (appsObj.versions.gcc.indexOf(".") > -1) {
+                    functionProcessed();
+                  } else {
+                    exec("gcc --version", (error2, stdout2) => {
+                      if (!error2) {
+                        const gcc = stdout2.toString().split("\n")[0].trim();
+                        if (gcc.indexOf("gcc") > -1 && gcc.indexOf(")") > -1) {
+                          const parts = gcc.split(")");
+                          appsObj.versions.gcc = parts[1].trim() || appsObj.versions.gcc;
+                        }
+                      }
+                      functionProcessed();
+                    });
+                  }
+                });
+              } else {
+                functionProcessed();
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "virtualbox")) {
+              exec(util.getVboxmanage() + " -v 2>&1", (error, stdout) => {
+                if (!error) {
+                  const vbox = stdout.toString().split("\n")[0] || "";
+                  const parts = vbox.split("r");
+                  appsObj.versions.virtualbox = parts[0];
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "bash")) {
+              exec("bash --version", (error, stdout) => {
+                if (!error) {
+                  const line = stdout.toString().split("\n")[0];
+                  const parts = line.split(" version ");
+                  if (parts.length > 1) {
+                    appsObj.versions.bash = parts[1].split(" ")[0].split("(")[0];
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "zsh")) {
+              exec("zsh --version", (error, stdout) => {
+                if (!error) {
+                  const line = stdout.toString().split("\n")[0];
+                  const parts = line.split("zsh ");
+                  if (parts.length > 1) {
+                    appsObj.versions.zsh = parts[1].split(" ")[0];
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "fish")) {
+              exec("fish --version", (error, stdout) => {
+                if (!error) {
+                  const line = stdout.toString().split("\n")[0];
+                  const parts = line.split(" version ");
+                  if (parts.length > 1) {
+                    appsObj.versions.fish = parts[1].split(" ")[0];
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "bun")) {
+              exec("bun -v", (error, stdout) => {
+                if (!error) {
+                  const line = stdout.toString().split("\n")[0].trim();
+                  appsObj.versions.bun = line;
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "deno")) {
+              exec("deno -v", (error, stdout) => {
+                if (!error) {
+                  const line = stdout.toString().split("\n")[0].trim();
+                  const parts = line.split(" ");
+                  if (parts.length > 1) {
+                    appsObj.versions.deno = parts[1];
+                  }
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "node")) {
+              exec("node -v", (error, stdout) => {
+                if (!error) {
+                  let line = stdout.toString().split("\n")[0].trim();
+                  if (line.startsWith("v")) {
+                    line = line.slice(1);
+                  }
+                  appsObj.versions.node = line;
+                }
+                functionProcessed();
+              });
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "powershell")) {
+              if (_windows) {
+                util.powerShell("$PSVersionTable").then((stdout) => {
+                  const lines = stdout.toString().toLowerCase().split("\n").map((line) => line.replace(/ +/g, " ").replace(/ +/g, ":"));
+                  appsObj.versions.powershell = util.getValue(lines, "psversion");
+                  functionProcessed();
+                });
+              } else {
+                functionProcessed();
+              }
+            }
+            if ({}.hasOwnProperty.call(appsObj.versions, "dotnet")) {
+              if (_windows) {
+                util.powerShell(
+                  'gci "HKLM:\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP" -recurse | gp -name Version,Release -EA 0 | where { $_.PSChildName -match "^(?!S)\\p{L}"} | select PSChildName, Version, Release'
+                ).then((stdout) => {
+                  const lines = stdout.toString().split("\r\n");
+                  let dotnet = "";
+                  lines.forEach((line) => {
+                    line = line.replace(/ +/g, " ");
+                    const parts = line.split(" ");
+                    dotnet = dotnet || (parts[0].toLowerCase().startsWith("client") && parts.length > 2 ? parts[1].trim() : parts[0].toLowerCase().startsWith("full") && parts.length > 2 ? parts[1].trim() : "");
+                  });
+                  appsObj.versions.dotnet = dotnet.trim();
+                  functionProcessed();
+                });
+              } else {
+                functionProcessed();
+              }
+            }
+          } catch (e) {
+            if (callback) {
+              callback(appsObj.versions);
+            }
+            resolve(appsObj.versions);
+          }
+        });
+      });
+    }
+    exports.versions = versions;
+    function shell(callback) {
+      return new Promise((resolve) => {
+        process.nextTick(() => {
+          if (_windows) {
+            try {
+              const result2 = "CMD";
+              util.powerShell(`Get-CimInstance -className win32_process | where-object {$_.ProcessId -eq ${process.ppid} } | select Name`).then((stdout) => {
+                let result3 = "CMD";
+                if (stdout) {
+                  if (stdout.toString().toLowerCase().indexOf("powershell") >= 0) {
+                    result3 = "PowerShell";
+                  }
+                }
+                if (callback) {
+                  callback(result3);
+                }
+                resolve(result3);
+              });
+            } catch (e) {
+              if (callback) {
+                callback(result);
+              }
+              resolve(result);
+            }
+          } else {
+            let result2 = "";
+            exec("echo $SHELL", (error, stdout) => {
+              if (!error) {
+                result2 = stdout.toString().split("\n")[0];
+              }
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+        });
+      });
+    }
+    exports.shell = shell;
+    function getUniqueMacAdresses() {
+      let macs = [];
+      try {
+        const ifaces = os4.networkInterfaces();
+        for (let dev in ifaces) {
+          if ({}.hasOwnProperty.call(ifaces, dev)) {
+            ifaces[dev].forEach((details) => {
+              if (details && details.mac && details.mac !== "00:00:00:00:00:00") {
+                const mac = details.mac.toLowerCase();
+                if (macs.indexOf(mac) === -1) {
+                  macs.push(mac);
+                }
+              }
+            });
+          }
+        }
+        macs = macs.sort((a, b) => {
+          if (a < b) {
+            return -1;
+          }
+          if (a > b) {
+            return 1;
+          }
+          return 0;
+        });
+      } catch (e) {
+        macs.push("00:00:00:00:00:00");
+      }
+      return macs;
+    }
+    function uuid(callback) {
+      return new Promise((resolve) => {
+        process.nextTick(() => {
+          let result2 = {
+            os: "",
+            hardware: "",
+            macs: getUniqueMacAdresses()
+          };
+          let parts;
+          if (_darwin) {
+            exec("system_profiler SPHardwareDataType -json", (error, stdout) => {
+              if (!error) {
+                try {
+                  const jsonObj = JSON.parse(stdout.toString());
+                  if (jsonObj.SPHardwareDataType && jsonObj.SPHardwareDataType.length > 0) {
+                    const spHardware = jsonObj.SPHardwareDataType[0];
+                    result2.os = spHardware.platform_UUID.toLowerCase();
+                    result2.hardware = spHardware.serial_number;
+                  }
+                } catch (e) {
+                  util.noop();
+                }
+              }
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+          if (_linux) {
+            const cmd = `echo -n "os: "; cat /var/lib/dbus/machine-id 2> /dev/null ||
+cat /etc/machine-id 2> /dev/null; echo;
+echo -n "hardware: "; cat /sys/class/dmi/id/product_uuid 2> /dev/null; echo;`;
+            exec(cmd, (error, stdout) => {
+              const lines = stdout.toString().split("\n");
+              result2.os = util.getValue(lines, "os").toLowerCase();
+              result2.hardware = util.getValue(lines, "hardware").toLowerCase();
+              if (!result2.hardware) {
+                const lines2 = fs.readFileSync("/proc/cpuinfo", { encoding: "utf8" }).toString().split("\n");
+                const serial = util.getValue(lines2, "serial");
+                result2.hardware = serial || "";
+              }
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+          if (_freebsd || _openbsd || _netbsd) {
+            exec("sysctl -i kern.hostid kern.hostuuid", (error, stdout) => {
+              const lines = stdout.toString().split("\n");
+              result2.hardware = util.getValue(lines, "kern.hostid", ":").toLowerCase();
+              result2.os = util.getValue(lines, "kern.hostuuid", ":").toLowerCase();
+              if (result2.os.indexOf("unknown") >= 0) {
+                result2.os = "";
+              }
+              if (result2.hardware.indexOf("unknown") >= 0) {
+                result2.hardware = "";
+              }
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          }
+          if (_windows) {
+            let sysdir = "%windir%\\System32";
+            if (process.arch === "ia32" && Object.prototype.hasOwnProperty.call(process.env, "PROCESSOR_ARCHITEW6432")) {
+              sysdir = "%windir%\\sysnative\\cmd.exe /c %windir%\\System32";
+            }
+            util.powerShell("Get-CimInstance Win32_ComputerSystemProduct | select UUID | fl").then((stdout) => {
+              let lines = stdout.split("\r\n");
+              result2.hardware = util.getValue(lines, "uuid", ":").toLowerCase();
+              exec(`${sysdir}\\reg query "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid`, util.execOptsWin, (error, stdout2) => {
+                parts = stdout2.toString().split("\n\r")[0].split("REG_SZ");
+                result2.os = parts.length > 1 ? parts[1].replace(/\r+|\n+|\s+/gi, "").toLowerCase() : "";
+                if (callback) {
+                  callback(result2);
+                }
+                resolve(result2);
+              });
+            });
+          }
+        });
+      });
+    }
+    exports.uuid = uuid;
+  }
+});
+
 // node_modules/systeminformation/lib/system.js
 var require_system = __commonJS({
   "node_modules/systeminformation/lib/system.js"(exports) {
     "use strict";
     var fs = require("fs");
-    var os2 = require("os");
+    var os4 = require("os");
     var util = require_util2();
-    var exec2 = require("child_process").exec;
+    var { uuid } = require_osinfo();
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var execPromise = util.promisify(require("child_process").exec);
     var _platform = process.platform;
@@ -17791,7 +18993,7 @@ var require_system = __commonJS({
             virtual: false
           };
           if (_linux || _freebsd || _openbsd || _netbsd) {
-            exec2("export LC_ALL=C; dmidecode -t system 2>/dev/null; unset LC_ALL", function(error, stdout) {
+            exec("export LC_ALL=C; dmidecode -t system 2>/dev/null; unset LC_ALL", (error, stdout) => {
               let lines = stdout.toString().split("\n");
               result2.manufacturer = cleanDefaults(util.getValue(lines, "manufacturer"));
               result2.model = cleanDefaults(util.getValue(lines, "product name"));
@@ -17859,8 +19061,8 @@ var require_system = __commonJS({
               }
               if (!result2.virtual) {
                 try {
-                  const disksById = execSync("ls -1 /dev/disk/by-id/ 2>/dev/null", util.execOptsLinux).toString();
-                  if (disksById.indexOf("_QEMU_") >= 0) {
+                  const disksById = execSync("ls -1 /dev/disk/by-id/ 2>/dev/null; pciconf -lv  2>/dev/null", util.execOptsLinux).toString();
+                  if (disksById.indexOf("_QEMU_") >= 0 || disksById.indexOf("QEMU ") >= 0) {
                     result2.virtual = true;
                     result2.virtualHost = "QEMU";
                   }
@@ -17872,8 +19074,24 @@ var require_system = __commonJS({
                   util.noop();
                 }
               }
-              if (!result2.virtual && (os2.release().toLowerCase().indexOf("microsoft") >= 0 || os2.release().toLowerCase().endsWith("wsl2"))) {
-                const kernelVersion = parseFloat(os2.release().toLowerCase());
+              if (_freebsd || _openbsd || _netbsd) {
+                try {
+                  const lines2 = execSync("sysctl -i kern.hostuuid kern.hostid hw.model", util.execOptsLinux).toString().split("\n");
+                  if (!result2.uuid) {
+                    result2.uuid = util.getValue(lines2, "kern.hostuuid", ":").toLowerCase();
+                  }
+                  if (!result2.serial || result2.serial === "-") {
+                    result2.serial = util.getValue(lines2, "kern.hostid", ":").toLowerCase();
+                  }
+                  if (!result2.model || result2.model === "Computer") {
+                    result2.model = util.getValue(lines2, "hw.model", ":").trim();
+                  }
+                } catch (e) {
+                  util.noop();
+                }
+              }
+              if (!result2.virtual && (os4.release().toLowerCase().indexOf("microsoft") >= 0 || os4.release().toLowerCase().endsWith("wsl2"))) {
+                const kernelVersion = parseFloat(os4.release().toLowerCase());
                 result2.virtual = true;
                 result2.manufacturer = "Microsoft";
                 result2.model = "WSL";
@@ -17907,7 +19125,7 @@ var require_system = __commonJS({
               }
               try {
                 const stdout2 = execSync('dmesg 2>/dev/null | grep -iE "virtual|hypervisor" | grep -iE "vmware|qemu|kvm|xen" | grep -viE "Nested Virtualization|/virtual/"');
-                let lines2 = stdout2.toString().split("\n");
+                const lines2 = stdout2.toString().split("\n");
                 if (lines2.length > 0) {
                   if (result2.model === "Computer") {
                     result2.model = "Virtual machine";
@@ -17930,7 +19148,7 @@ var require_system = __commonJS({
                 util.noop();
               }
               if (result2.manufacturer === "" && result2.model === "Computer" && result2.version === "") {
-                fs.readFile("/proc/cpuinfo", function(error2, stdout2) {
+                fs.readFile("/proc/cpuinfo", (error2, stdout2) => {
                   if (!error2) {
                     let lines2 = stdout2.toString().split("\n");
                     result2.model = util.getValue(lines2, "hardware", ":", true).toUpperCase();
@@ -17964,9 +19182,9 @@ var require_system = __commonJS({
             });
           }
           if (_darwin) {
-            exec2("ioreg -c IOPlatformExpertDevice -d 2", function(error, stdout) {
+            exec("ioreg -c IOPlatformExpertDevice -d 2", (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().replace(/[<>"]/g, "").split("\n");
+                const lines = stdout.toString().replace(/[<>"]/g, "").split("\n");
                 const model = util.getAppleModel(util.getValue(lines, "model", "=", true));
                 result2.manufacturer = util.getValue(lines, "manufacturer", "=", true);
                 result2.model = model.key;
@@ -17992,7 +19210,7 @@ var require_system = __commonJS({
             try {
               util.powerShell("Get-CimInstance Win32_ComputerSystemProduct | select Name,Vendor,Version,IdentifyingNumber,UUID | fl").then((stdout, error) => {
                 if (!error) {
-                  let lines = stdout.split("\r\n");
+                  const lines = stdout.split("\r\n");
                   result2.manufacturer = util.getValue(lines, "vendor", ":");
                   result2.model = util.getValue(lines, "name", ":");
                   result2.version = util.getValue(lines, "version", ":");
@@ -18038,7 +19256,7 @@ var require_system = __commonJS({
                   }
                   util.powerShell('Get-CimInstance MS_Systeminformation -Namespace "root/wmi" | select systemsku | fl ').then((stdout2, error2) => {
                     if (!error2) {
-                      let lines2 = stdout2.split("\r\n");
+                      const lines2 = stdout2.split("\r\n");
                       result2.sku = util.getValue(lines2, "systemsku", ":");
                     }
                     if (!result2.virtual) {
@@ -18125,7 +19343,7 @@ var require_system = __commonJS({
             } else {
               cmd = "export LC_ALL=C; dmidecode -t bios 2>/dev/null; unset LC_ALL";
             }
-            exec2(cmd, function(error, stdout) {
+            exec(cmd, (error, stdout) => {
               let lines = stdout.toString().split("\n");
               result2.vendor = util.getValue(lines, "Vendor");
               result2.version = util.getValue(lines, "Version");
@@ -18167,25 +19385,22 @@ var require_system = __commonJS({
           }
           if (_darwin) {
             result2.vendor = "Apple Inc.";
-            exec2(
-              "system_profiler SPHardwareDataType -json",
-              function(error, stdout) {
-                try {
-                  const hardwareData = JSON.parse(stdout.toString());
-                  if (hardwareData && hardwareData.SPHardwareDataType && hardwareData.SPHardwareDataType.length) {
-                    let bootRomVersion = hardwareData.SPHardwareDataType[0].boot_rom_version;
-                    bootRomVersion = bootRomVersion ? bootRomVersion.split("(")[0].trim() : null;
-                    result2.version = bootRomVersion;
-                  }
-                } catch (e) {
-                  util.noop();
+            exec("system_profiler SPHardwareDataType -json", (error, stdout) => {
+              try {
+                const hardwareData = JSON.parse(stdout.toString());
+                if (hardwareData && hardwareData.SPHardwareDataType && hardwareData.SPHardwareDataType.length) {
+                  let bootRomVersion = hardwareData.SPHardwareDataType[0].boot_rom_version;
+                  bootRomVersion = bootRomVersion ? bootRomVersion.split("(")[0].trim() : null;
+                  result2.version = bootRomVersion;
                 }
-                if (callback) {
-                  callback(result2);
-                }
-                resolve(result2);
+              } catch (e) {
+                util.noop();
               }
-            );
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
           }
           if (_sunos) {
             result2.vendor = "Sun Microsystems";
@@ -18196,7 +19411,9 @@ var require_system = __commonJS({
           }
           if (_windows) {
             try {
-              util.powerShell('Get-CimInstance Win32_bios | select Description,Version,Manufacturer,@{n="ReleaseDate";e={$_.ReleaseDate.ToString("yyyy-MM-dd")}},BuildNumber,SerialNumber,SMBIOSBIOSVersion | fl').then((stdout, error) => {
+              util.powerShell(
+                'Get-CimInstance Win32_bios | select Description,Version,Manufacturer,@{n="ReleaseDate";e={$_.ReleaseDate.ToString("yyyy-MM-dd")}},BuildNumber,SerialNumber,SMBIOSBIOSVersion | fl'
+              ).then((stdout, error) => {
                 if (!error) {
                   let lines = stdout.toString().split("\r\n");
                   const description = util.getValue(lines, "description", ":");
@@ -18234,7 +19451,7 @@ var require_system = __commonJS({
     function baseboard(callback) {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let result2 = {
+          const result2 = {
             manufacturer: "",
             model: "",
             version: "",
@@ -18253,9 +19470,7 @@ var require_system = __commonJS({
             const workload = [];
             workload.push(execPromise(cmd));
             workload.push(execPromise("export LC_ALL=C; dmidecode -t memory 2>/dev/null"));
-            util.promiseAll(
-              workload
-            ).then((data) => {
+            util.promiseAll(workload).then((data) => {
               let lines = data.results[0] ? data.results[0].toString().split("\n") : [""];
               result2.manufacturer = cleanDefaults(util.getValue(lines, "Manufacturer"));
               result2.model = cleanDefaults(util.getValue(lines, "Product Name"));
@@ -18286,7 +19501,7 @@ var require_system = __commonJS({
                 result2.model = "Raspberry Pi";
                 result2.serial = rpi.serial;
                 result2.version = rpi.type + " - " + rpi.revision;
-                result2.memMax = os2.totalmem();
+                result2.memMax = os4.totalmem();
                 result2.memSlots = 0;
               }
               if (callback) {
@@ -18299,10 +19514,8 @@ var require_system = __commonJS({
             const workload = [];
             workload.push(execPromise("ioreg -c IOPlatformExpertDevice -d 2"));
             workload.push(execPromise("system_profiler SPMemoryDataType"));
-            util.promiseAll(
-              workload
-            ).then((data) => {
-              let lines = data.results[0] ? data.results[0].toString().replace(/[<>"]/g, "").split("\n") : [""];
+            util.promiseAll(workload).then((data) => {
+              const lines = data.results[0] ? data.results[0].toString().replace(/[<>"]/g, "").split("\n") : [""];
               result2.manufacturer = util.getValue(lines, "manufacturer", "=", true);
               result2.model = util.getValue(lines, "model", "=", true);
               result2.version = util.getValue(lines, "version", "=", true);
@@ -18314,9 +19527,9 @@ var require_system = __commonJS({
               }
               devices.shift();
               result2.memSlots = devices.length;
-              if (os2.arch() === "arm64") {
+              if (os4.arch() === "arm64") {
                 result2.memSlots = 0;
-                result2.memMax = os2.totalmem();
+                result2.memMax = os4.totalmem();
               }
               if (callback) {
                 callback(result2);
@@ -18333,13 +19546,11 @@ var require_system = __commonJS({
           if (_windows) {
             try {
               const workload = [];
-              const win10plus = parseInt(os2.release()) >= 10;
+              const win10plus = parseInt(os4.release()) >= 10;
               const maxCapacityAttribute = win10plus ? "MaxCapacityEx" : "MaxCapacity";
               workload.push(util.powerShell("Get-CimInstance Win32_baseboard | select Model,Manufacturer,Product,Version,SerialNumber,PartNumber,SKU | fl"));
               workload.push(util.powerShell(`Get-CimInstance Win32_physicalmemoryarray | select ${maxCapacityAttribute}, MemoryDevices | fl`));
-              util.promiseAll(
-                workload
-              ).then((data) => {
+              util.promiseAll(workload).then((data) => {
                 let lines = data.results[0] ? data.results[0].toString().split("\r\n") : [""];
                 result2.manufacturer = cleanDefaults(util.getValue(lines, "manufacturer", ":"));
                 result2.model = cleanDefaults(util.getValue(lines, "model", ":"));
@@ -18452,7 +19663,7 @@ var require_system = __commonJS({
             echo -n "chassis_type: "; cat /sys/devices/virtual/dmi/id/chassis_type 2>/dev/null; echo;
             echo -n "chassis_vendor: "; cat /sys/devices/virtual/dmi/id/chassis_vendor 2>/dev/null; echo;
             echo -n "chassis_version: "; cat /sys/devices/virtual/dmi/id/chassis_version 2>/dev/null; echo;`;
-            exec2(cmd, function(error, stdout) {
+            exec(cmd, (error, stdout) => {
               let lines = stdout.toString().split("\n");
               result2.manufacturer = cleanDefaults(util.getValue(lines, "chassis_vendor"));
               const ctype = parseInt(util.getValue(lines, "chassis_type").replace(/\D/g, ""));
@@ -18467,9 +19678,9 @@ var require_system = __commonJS({
             });
           }
           if (_darwin) {
-            exec2("ioreg -c IOPlatformExpertDevice -d 2", function(error, stdout) {
+            exec("ioreg -c IOPlatformExpertDevice -d 2", (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().replace(/[<>"]/g, "").split("\n");
+                const lines = stdout.toString().replace(/[<>"]/g, "").split("\n");
                 const model = util.getAppleModel(util.getValue(lines, "model", "=", true));
                 result2.manufacturer = util.getValue(lines, "manufacturer", "=", true);
                 result2.model = model.key;
@@ -18527,1209 +19738,12 @@ var require_system = __commonJS({
   }
 });
 
-// node_modules/systeminformation/lib/osinfo.js
-var require_osinfo = __commonJS({
-  "node_modules/systeminformation/lib/osinfo.js"(exports) {
-    "use strict";
-    var os2 = require("os");
-    var fs = require("fs");
-    var util = require_util2();
-    var exec2 = require("child_process").exec;
-    var execSync = require("child_process").execSync;
-    var _platform = process.platform;
-    var _linux = _platform === "linux" || _platform === "android";
-    var _darwin = _platform === "darwin";
-    var _windows = _platform === "win32";
-    var _freebsd = _platform === "freebsd";
-    var _openbsd = _platform === "openbsd";
-    var _netbsd = _platform === "netbsd";
-    var _sunos = _platform === "sunos";
-    function time() {
-      let t = new Date().toString().split(" ");
-      const result2 = {
-        current: Date.now(),
-        uptime: os2.uptime(),
-        timezone: t.length >= 7 ? t[5] : "",
-        timezoneName: Intl ? Intl.DateTimeFormat().resolvedOptions().timeZone : t.length >= 7 ? t.slice(6).join(" ").replace(/\(/g, "").replace(/\)/g, "") : ""
-      };
-      if (_darwin || _linux) {
-        try {
-          const stdout = execSync("date +%Z && date +%z && ls -l /etc/localtime 2>/dev/null", util.execOptsLinux);
-          const lines = stdout.toString().split(os2.EOL);
-          if (lines.length > 3 && !lines[0]) {
-            lines.shift();
-          }
-          let timezone = lines[0] || "";
-          if (timezone.startsWith("+") || timezone.startsWith("-")) {
-            timezone = "GMT";
-          }
-          return {
-            current: Date.now(),
-            uptime: os2.uptime(),
-            timezone: lines[1] ? timezone + lines[1] : timezone,
-            timezoneName: lines[2] && lines[2].indexOf("/zoneinfo/") > 0 ? lines[2].split("/zoneinfo/")[1] || "" : ""
-          };
-        } catch (e) {
-          util.noop();
-        }
-      }
-      return result2;
-    }
-    exports.time = time;
-    function getLogoFile(distro) {
-      distro = distro || "";
-      distro = distro.toLowerCase();
-      let result2 = _platform;
-      if (_windows) {
-        result2 = "windows";
-      } else if (distro.indexOf("mac os") !== -1 || distro.indexOf("macos") !== -1) {
-        result2 = "apple";
-      } else if (distro.indexOf("arch") !== -1) {
-        result2 = "arch";
-      } else if (distro.indexOf("cachy") !== -1) {
-        result2 = "cachy";
-      } else if (distro.indexOf("centos") !== -1) {
-        result2 = "centos";
-      } else if (distro.indexOf("coreos") !== -1) {
-        result2 = "coreos";
-      } else if (distro.indexOf("debian") !== -1) {
-        result2 = "debian";
-      } else if (distro.indexOf("deepin") !== -1) {
-        result2 = "deepin";
-      } else if (distro.indexOf("elementary") !== -1) {
-        result2 = "elementary";
-      } else if (distro.indexOf("endeavour") !== -1) {
-        result2 = "endeavour";
-      } else if (distro.indexOf("fedora") !== -1) {
-        result2 = "fedora";
-      } else if (distro.indexOf("gentoo") !== -1) {
-        result2 = "gentoo";
-      } else if (distro.indexOf("mageia") !== -1) {
-        result2 = "mageia";
-      } else if (distro.indexOf("mandriva") !== -1) {
-        result2 = "mandriva";
-      } else if (distro.indexOf("manjaro") !== -1) {
-        result2 = "manjaro";
-      } else if (distro.indexOf("mint") !== -1) {
-        result2 = "mint";
-      } else if (distro.indexOf("mx") !== -1) {
-        result2 = "mx";
-      } else if (distro.indexOf("openbsd") !== -1) {
-        result2 = "openbsd";
-      } else if (distro.indexOf("freebsd") !== -1) {
-        result2 = "freebsd";
-      } else if (distro.indexOf("opensuse") !== -1) {
-        result2 = "opensuse";
-      } else if (distro.indexOf("pclinuxos") !== -1) {
-        result2 = "pclinuxos";
-      } else if (distro.indexOf("puppy") !== -1) {
-        result2 = "puppy";
-      } else if (distro.indexOf("popos") !== -1) {
-        result2 = "popos";
-      } else if (distro.indexOf("raspbian") !== -1) {
-        result2 = "raspbian";
-      } else if (distro.indexOf("reactos") !== -1) {
-        result2 = "reactos";
-      } else if (distro.indexOf("redhat") !== -1) {
-        result2 = "redhat";
-      } else if (distro.indexOf("slackware") !== -1) {
-        result2 = "slackware";
-      } else if (distro.indexOf("sugar") !== -1) {
-        result2 = "sugar";
-      } else if (distro.indexOf("steam") !== -1) {
-        result2 = "steam";
-      } else if (distro.indexOf("suse") !== -1) {
-        result2 = "suse";
-      } else if (distro.indexOf("mate") !== -1) {
-        result2 = "ubuntu-mate";
-      } else if (distro.indexOf("lubuntu") !== -1) {
-        result2 = "lubuntu";
-      } else if (distro.indexOf("xubuntu") !== -1) {
-        result2 = "xubuntu";
-      } else if (distro.indexOf("ubuntu") !== -1) {
-        result2 = "ubuntu";
-      } else if (distro.indexOf("solaris") !== -1) {
-        result2 = "solaris";
-      } else if (distro.indexOf("tails") !== -1) {
-        result2 = "tails";
-      } else if (distro.indexOf("feren") !== -1) {
-        result2 = "ferenos";
-      } else if (distro.indexOf("robolinux") !== -1) {
-        result2 = "robolinux";
-      } else if (_linux && distro) {
-        result2 = distro.toLowerCase().trim().replace(/\s+/g, "-");
-      }
-      return result2;
-    }
-    function getFQDN() {
-      let fqdn = os2.hostname;
-      if (_linux || _darwin) {
-        try {
-          const stdout = execSync("hostname -f 2>/dev/null", util.execOptsLinux);
-          fqdn = stdout.toString().split(os2.EOL)[0];
-        } catch (e) {
-          util.noop();
-        }
-      }
-      if (_freebsd || _openbsd || _netbsd) {
-        try {
-          const stdout = execSync("hostname 2>/dev/null");
-          fqdn = stdout.toString().split(os2.EOL)[0];
-        } catch (e) {
-          util.noop();
-        }
-      }
-      if (_windows) {
-        try {
-          const stdout = execSync("echo %COMPUTERNAME%.%USERDNSDOMAIN%", util.execOptsWin);
-          fqdn = stdout.toString().replace(".%USERDNSDOMAIN%", "").split(os2.EOL)[0];
-        } catch (e) {
-          util.noop();
-        }
-      }
-      return fqdn;
-    }
-    function osInfo(callback) {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          let result2 = {
-            platform: _platform === "win32" ? "Windows" : _platform,
-            distro: "unknown",
-            release: "unknown",
-            codename: "",
-            kernel: os2.release(),
-            arch: os2.arch(),
-            hostname: os2.hostname(),
-            fqdn: getFQDN(),
-            codepage: "",
-            logofile: "",
-            serial: "",
-            build: "",
-            servicepack: "",
-            uefi: false
-          };
-          if (_linux) {
-            exec2("cat /etc/*-release; cat /usr/lib/os-release; cat /etc/openwrt_release", function(error, stdout) {
-              let release = {};
-              let lines = stdout.toString().split("\n");
-              lines.forEach(function(line) {
-                if (line.indexOf("=") !== -1) {
-                  release[line.split("=")[0].trim().toUpperCase()] = line.split("=")[1].trim();
-                }
-              });
-              result2.distro = (release.DISTRIB_ID || release.NAME || "unknown").replace(/"/g, "");
-              result2.logofile = getLogoFile(result2.distro);
-              let releaseVersion = (release.VERSION || "").replace(/"/g, "");
-              let codename = (release.DISTRIB_CODENAME || release.VERSION_CODENAME || "").replace(/"/g, "");
-              const prettyName = (release.PRETTY_NAME || "").replace(/"/g, "");
-              if (prettyName.indexOf(result2.distro + " ") === 0) {
-                releaseVersion = prettyName.replace(result2.distro + " ", "").trim();
-              }
-              if (releaseVersion.indexOf("(") >= 0) {
-                codename = releaseVersion.split("(")[1].replace(/[()]/g, "").trim();
-                releaseVersion = releaseVersion.split("(")[0].trim();
-              }
-              result2.release = (releaseVersion || release.DISTRIB_RELEASE || release.VERSION_ID || "unknown").replace(/"/g, "");
-              result2.codename = codename;
-              result2.codepage = util.getCodepage();
-              result2.build = (release.BUILD_ID || "").replace(/"/g, "").trim();
-              isUefiLinux().then((uefi) => {
-                result2.uefi = uefi;
-                uuid().then((data) => {
-                  result2.serial = data.os;
-                  if (callback) {
-                    callback(result2);
-                  }
-                  resolve(result2);
-                });
-              });
-            });
-          }
-          if (_freebsd || _openbsd || _netbsd) {
-            exec2("sysctl kern.ostype kern.osrelease kern.osrevision kern.hostuuid machdep.bootmethod kern.geom.confxml", function(error, stdout) {
-              let lines = stdout.toString().split("\n");
-              const distro = util.getValue(lines, "kern.ostype");
-              const logofile = getLogoFile(distro);
-              const release = util.getValue(lines, "kern.osrelease").split("-")[0];
-              const serial = util.getValue(lines, "kern.uuid");
-              const bootmethod = util.getValue(lines, "machdep.bootmethod");
-              const uefiConf = stdout.toString().indexOf("<type>efi</type>") >= 0;
-              const uefi = bootmethod ? bootmethod.toLowerCase().indexOf("uefi") >= 0 : uefiConf ? uefiConf : null;
-              result2.distro = distro || result2.distro;
-              result2.logofile = logofile || result2.logofile;
-              result2.release = release || result2.release;
-              result2.serial = serial || result2.serial;
-              result2.codename = "";
-              result2.codepage = util.getCodepage();
-              result2.uefi = uefi || null;
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-          if (_darwin) {
-            exec2("sw_vers; sysctl kern.ostype kern.osrelease kern.osrevision kern.uuid", function(error, stdout) {
-              let lines = stdout.toString().split("\n");
-              result2.serial = util.getValue(lines, "kern.uuid");
-              result2.distro = util.getValue(lines, "ProductName");
-              result2.release = (util.getValue(lines, "ProductVersion", ":", true, true) + " " + util.getValue(lines, "ProductVersionExtra", ":", true, true)).trim();
-              result2.build = util.getValue(lines, "BuildVersion");
-              result2.logofile = getLogoFile(result2.distro);
-              result2.codename = "macOS";
-              result2.codename = result2.release.indexOf("10.4") > -1 ? "OS X Tiger" : result2.codename;
-              result2.codename = result2.release.indexOf("10.5") > -1 ? "OS X Leopard" : result2.codename;
-              result2.codename = result2.release.indexOf("10.6") > -1 ? "OS X Snow Leopard" : result2.codename;
-              result2.codename = result2.release.indexOf("10.7") > -1 ? "OS X Lion" : result2.codename;
-              result2.codename = result2.release.indexOf("10.8") > -1 ? "OS X Mountain Lion" : result2.codename;
-              result2.codename = result2.release.indexOf("10.9") > -1 ? "OS X Mavericks" : result2.codename;
-              result2.codename = result2.release.indexOf("10.10") > -1 ? "OS X Yosemite" : result2.codename;
-              result2.codename = result2.release.indexOf("10.11") > -1 ? "OS X El Capitan" : result2.codename;
-              result2.codename = result2.release.indexOf("10.12") > -1 ? "Sierra" : result2.codename;
-              result2.codename = result2.release.indexOf("10.13") > -1 ? "High Sierra" : result2.codename;
-              result2.codename = result2.release.indexOf("10.14") > -1 ? "Mojave" : result2.codename;
-              result2.codename = result2.release.indexOf("10.15") > -1 ? "Catalina" : result2.codename;
-              result2.codename = result2.release.startsWith("11.") ? "Big Sur" : result2.codename;
-              result2.codename = result2.release.startsWith("12.") ? "Monterey" : result2.codename;
-              result2.codename = result2.release.startsWith("13.") ? "Ventura" : result2.codename;
-              result2.codename = result2.release.startsWith("14.") ? "Sonoma" : result2.codename;
-              result2.codename = result2.release.startsWith("15.") ? "Sequoia" : result2.codename;
-              result2.uefi = true;
-              result2.codepage = util.getCodepage();
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-          if (_sunos) {
-            result2.release = result2.kernel;
-            exec2("uname -o", function(error, stdout) {
-              let lines = stdout.toString().split("\n");
-              result2.distro = lines[0];
-              result2.logofile = getLogoFile(result2.distro);
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-          if (_windows) {
-            result2.logofile = getLogoFile();
-            result2.release = result2.kernel;
-            try {
-              const workload = [];
-              workload.push(util.powerShell("Get-CimInstance Win32_OperatingSystem | select Caption,SerialNumber,BuildNumber,ServicePackMajorVersion,ServicePackMinorVersion | fl"));
-              workload.push(util.powerShell("(Get-CimInstance Win32_ComputerSystem).HypervisorPresent"));
-              workload.push(util.powerShell("Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SystemInformation]::TerminalServerSession"));
-              util.promiseAll(
-                workload
-              ).then((data) => {
-                let lines = data.results[0] ? data.results[0].toString().split("\r\n") : [""];
-                result2.distro = util.getValue(lines, "Caption", ":").trim();
-                result2.serial = util.getValue(lines, "SerialNumber", ":").trim();
-                result2.build = util.getValue(lines, "BuildNumber", ":").trim();
-                result2.servicepack = util.getValue(lines, "ServicePackMajorVersion", ":").trim() + "." + util.getValue(lines, "ServicePackMinorVersion", ":").trim();
-                result2.codepage = util.getCodepage();
-                const hyperv = data.results[1] ? data.results[1].toString().toLowerCase() : "";
-                result2.hypervisor = hyperv.indexOf("true") !== -1;
-                const term = data.results[2] ? data.results[2].toString() : "";
-                result2.remoteSession = term.toString().toLowerCase().indexOf("true") >= 0;
-                isUefiWindows().then((uefi) => {
-                  result2.uefi = uefi;
-                  if (callback) {
-                    callback(result2);
-                  }
-                  resolve(result2);
-                });
-              });
-            } catch (e) {
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            }
-          }
-        });
-      });
-    }
-    exports.osInfo = osInfo;
-    function isUefiLinux() {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          fs.stat("/sys/firmware/efi", function(err) {
-            if (!err) {
-              return resolve(true);
-            } else {
-              exec2('dmesg | grep -E "EFI v"', function(error, stdout) {
-                if (!error) {
-                  const lines = stdout.toString().split("\n");
-                  return resolve(lines.length > 0);
-                }
-                return resolve(false);
-              });
-            }
-          });
-        });
-      });
-    }
-    function isUefiWindows() {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          try {
-            exec2('findstr /C:"Detected boot environment" "%windir%\\Panther\\setupact.log"', util.execOptsWin, function(error, stdout) {
-              if (!error) {
-                const line = stdout.toString().split("\n\r")[0];
-                return resolve(line.toLowerCase().indexOf("efi") >= 0);
-              } else {
-                exec2("echo %firmware_type%", util.execOptsWin, function(error2, stdout2) {
-                  if (!error2) {
-                    const line = stdout2.toString() || "";
-                    return resolve(line.toLowerCase().indexOf("efi") >= 0);
-                  } else {
-                    return resolve(false);
-                  }
-                });
-              }
-            });
-          } catch (e) {
-            return resolve(false);
-          }
-        });
-      });
-    }
-    function versions(apps, callback) {
-      let versionObject = {
-        kernel: os2.release(),
-        apache: "",
-        bash: "",
-        bun: "",
-        deno: "",
-        docker: "",
-        dotnet: "",
-        fish: "",
-        gcc: "",
-        git: "",
-        grunt: "",
-        gulp: "",
-        homebrew: "",
-        java: "",
-        mongodb: "",
-        mysql: "",
-        nginx: "",
-        node: "",
-        //process.versions.node,
-        npm: "",
-        openssl: "",
-        perl: "",
-        php: "",
-        pip3: "",
-        pip: "",
-        pm2: "",
-        postfix: "",
-        postgresql: "",
-        powershell: "",
-        python3: "",
-        python: "",
-        redis: "",
-        systemOpenssl: "",
-        systemOpensslLib: "",
-        tsc: "",
-        v8: process.versions.v8,
-        virtualbox: "",
-        yarn: "",
-        zsh: ""
-      };
-      function checkVersionParam(apps2) {
-        if (apps2 === "*") {
-          return {
-            versions: versionObject,
-            counter: 34
-          };
-        }
-        if (!Array.isArray(apps2)) {
-          apps2 = apps2.trim().toLowerCase().replace(/,+/g, "|").replace(/ /g, "|");
-          apps2 = apps2.split("|");
-          const result2 = {
-            versions: {},
-            counter: 0
-          };
-          apps2.forEach((el) => {
-            if (el) {
-              for (let key in versionObject) {
-                if ({}.hasOwnProperty.call(versionObject, key)) {
-                  if (key.toLowerCase() === el.toLowerCase() && !{}.hasOwnProperty.call(result2.versions, key)) {
-                    result2.versions[key] = versionObject[key];
-                    if (key === "openssl") {
-                      result2.versions.systemOpenssl = "";
-                      result2.versions.systemOpensslLib = "";
-                    }
-                    if (!result2.versions[key]) {
-                      result2.counter++;
-                    }
-                  }
-                }
-              }
-            }
-          });
-          return result2;
-        }
-      }
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          if (util.isFunction(apps) && !callback) {
-            callback = apps;
-            apps = "*";
-          } else {
-            apps = apps || "*";
-            if (typeof apps !== "string") {
-              if (callback) {
-                callback({});
-              }
-              return resolve({});
-            }
-          }
-          const appsObj = checkVersionParam(apps);
-          let totalFunctions = appsObj.counter;
-          let functionProcessed = function() {
-            return function() {
-              if (--totalFunctions === 0) {
-                if (callback) {
-                  callback(appsObj.versions);
-                }
-                resolve(appsObj.versions);
-              }
-            };
-          }();
-          let cmd = "";
-          try {
-            if ({}.hasOwnProperty.call(appsObj.versions, "openssl")) {
-              appsObj.versions.openssl = process.versions.openssl;
-              exec2("openssl version", function(error, stdout) {
-                if (!error) {
-                  let openssl_string = stdout.toString().split("\n")[0].trim();
-                  let openssl = openssl_string.split(" ");
-                  appsObj.versions.systemOpenssl = openssl.length > 0 ? openssl[1] : openssl[0];
-                  appsObj.versions.systemOpensslLib = openssl.length > 0 ? openssl[0] : "openssl";
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "npm")) {
-              exec2("npm -v", function(error, stdout) {
-                if (!error) {
-                  appsObj.versions.npm = stdout.toString().split("\n")[0];
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "pm2")) {
-              cmd = "pm2";
-              if (_windows) {
-                cmd += ".cmd";
-              }
-              exec2(`${cmd} -v`, function(error, stdout) {
-                if (!error) {
-                  let pm2 = stdout.toString().split("\n")[0].trim();
-                  if (!pm2.startsWith("[PM2]")) {
-                    appsObj.versions.pm2 = pm2;
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "yarn")) {
-              exec2("yarn --version", function(error, stdout) {
-                if (!error) {
-                  appsObj.versions.yarn = stdout.toString().split("\n")[0];
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "gulp")) {
-              cmd = "gulp";
-              if (_windows) {
-                cmd += ".cmd";
-              }
-              exec2(`${cmd} --version`, function(error, stdout) {
-                if (!error) {
-                  const gulp = stdout.toString().split("\n")[0] || "";
-                  appsObj.versions.gulp = (gulp.toLowerCase().split("version")[1] || "").trim();
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "homebrew")) {
-              cmd = "brew";
-              exec2(`${cmd} --version`, function(error, stdout) {
-                if (!error) {
-                  const brew = stdout.toString().split("\n")[0] || "";
-                  appsObj.versions.homebrew = (brew.toLowerCase().split(" ")[1] || "").trim();
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "tsc")) {
-              cmd = "tsc";
-              if (_windows) {
-                cmd += ".cmd";
-              }
-              exec2(`${cmd} --version`, function(error, stdout) {
-                if (!error) {
-                  const tsc = stdout.toString().split("\n")[0] || "";
-                  appsObj.versions.tsc = (tsc.toLowerCase().split("version")[1] || "").trim();
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "grunt")) {
-              cmd = "grunt";
-              if (_windows) {
-                cmd += ".cmd";
-              }
-              exec2(`${cmd} --version`, function(error, stdout) {
-                if (!error) {
-                  const grunt = stdout.toString().split("\n")[0] || "";
-                  appsObj.versions.grunt = (grunt.toLowerCase().split("cli v")[1] || "").trim();
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "git")) {
-              if (_darwin) {
-                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/git") || fs.existsSync("/opt/homebrew/bin/git");
-                if (util.darwinXcodeExists() || gitHomebrewExists) {
-                  exec2("git --version", function(error, stdout) {
-                    if (!error) {
-                      let git = stdout.toString().split("\n")[0] || "";
-                      git = (git.toLowerCase().split("version")[1] || "").trim();
-                      appsObj.versions.git = (git.split(" ")[0] || "").trim();
-                    }
-                    functionProcessed();
-                  });
-                } else {
-                  functionProcessed();
-                }
-              } else {
-                exec2("git --version", function(error, stdout) {
-                  if (!error) {
-                    let git = stdout.toString().split("\n")[0] || "";
-                    git = (git.toLowerCase().split("version")[1] || "").trim();
-                    appsObj.versions.git = (git.split(" ")[0] || "").trim();
-                  }
-                  functionProcessed();
-                });
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "apache")) {
-              exec2("apachectl -v 2>&1", function(error, stdout) {
-                if (!error) {
-                  const apache = (stdout.toString().split("\n")[0] || "").split(":");
-                  appsObj.versions.apache = apache.length > 1 ? apache[1].replace("Apache", "").replace("/", "").split("(")[0].trim() : "";
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "nginx")) {
-              exec2("nginx -v 2>&1", function(error, stdout) {
-                if (!error) {
-                  const nginx = stdout.toString().split("\n")[0] || "";
-                  appsObj.versions.nginx = (nginx.toLowerCase().split("/")[1] || "").trim();
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "mysql")) {
-              exec2("mysql -V", function(error, stdout) {
-                if (!error) {
-                  let mysql = stdout.toString().split("\n")[0] || "";
-                  mysql = mysql.toLowerCase();
-                  if (mysql.indexOf(",") > -1) {
-                    mysql = (mysql.split(",")[0] || "").trim();
-                    const parts = mysql.split(" ");
-                    appsObj.versions.mysql = (parts[parts.length - 1] || "").trim();
-                  } else {
-                    if (mysql.indexOf(" ver ") > -1) {
-                      mysql = mysql.split(" ver ")[1];
-                      appsObj.versions.mysql = mysql.split(" ")[0];
-                    }
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "php")) {
-              exec2("php -v", function(error, stdout) {
-                if (!error) {
-                  const php = stdout.toString().split("\n")[0] || "";
-                  let parts = php.split("(");
-                  if (parts[0].indexOf("-")) {
-                    parts = parts[0].split("-");
-                  }
-                  appsObj.versions.php = parts[0].replace(/[^0-9.]/g, "");
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "redis")) {
-              exec2("redis-server --version", function(error, stdout) {
-                if (!error) {
-                  const redis = stdout.toString().split("\n")[0] || "";
-                  const parts = redis.split(" ");
-                  appsObj.versions.redis = util.getValue(parts, "v", "=", true);
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "docker")) {
-              exec2("docker --version", function(error, stdout) {
-                if (!error) {
-                  const docker = stdout.toString().split("\n")[0] || "";
-                  const parts = docker.split(" ");
-                  appsObj.versions.docker = parts.length > 2 && parts[2].endsWith(",") ? parts[2].slice(0, -1) : "";
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "postfix")) {
-              exec2("postconf -d | grep mail_version", function(error, stdout) {
-                if (!error) {
-                  const postfix = stdout.toString().split("\n") || [];
-                  appsObj.versions.postfix = util.getValue(postfix, "mail_version", "=", true);
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "mongodb")) {
-              exec2("mongod --version", function(error, stdout) {
-                if (!error) {
-                  const mongodb = stdout.toString().split("\n")[0] || "";
-                  appsObj.versions.mongodb = (mongodb.toLowerCase().split(",")[0] || "").replace(/[^0-9.]/g, "");
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "postgresql")) {
-              if (_linux) {
-                exec2("locate bin/postgres", function(error, stdout) {
-                  if (!error) {
-                    const postgresqlBin = stdout.toString().split("\n").sort();
-                    if (postgresqlBin.length) {
-                      exec2(postgresqlBin[postgresqlBin.length - 1] + " -V", function(error2, stdout2) {
-                        if (!error2) {
-                          const postgresql = stdout2.toString().split("\n")[0].split(" ") || [];
-                          appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
-                        }
-                        functionProcessed();
-                      });
-                    } else {
-                      functionProcessed();
-                    }
-                  } else {
-                    exec2("psql -V", function(error2, stdout2) {
-                      if (!error2) {
-                        const postgresql = stdout2.toString().split("\n")[0].split(" ") || [];
-                        appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
-                        appsObj.versions.postgresql = appsObj.versions.postgresql.split("-")[0];
-                      }
-                      functionProcessed();
-                    });
-                  }
-                });
-              } else {
-                if (_windows) {
-                  util.powerShell("Get-CimInstance Win32_Service | select caption | fl").then((stdout) => {
-                    let serviceSections = stdout.split(/\n\s*\n/);
-                    serviceSections.forEach((item) => {
-                      if (item.trim() !== "") {
-                        let lines = item.trim().split("\r\n");
-                        let srvCaption = util.getValue(lines, "caption", ":", true).toLowerCase();
-                        if (srvCaption.indexOf("postgresql") > -1) {
-                          const parts = srvCaption.split(" server ");
-                          if (parts.length > 1) {
-                            appsObj.versions.postgresql = parts[1];
-                          }
-                        }
-                      }
-                    });
-                    functionProcessed();
-                  });
-                } else {
-                  exec2("postgres -V", function(error, stdout) {
-                    if (!error) {
-                      const postgresql = stdout.toString().split("\n")[0].split(" ") || [];
-                      appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
-                    } else {
-                      exec2("pg_config --version", function(error2, stdout2) {
-                        if (!error2) {
-                          const postgresql = stdout2.toString().split("\n")[0].split(" ") || [];
-                          appsObj.versions.postgresql = postgresql.length ? postgresql[postgresql.length - 1] : "";
-                        }
-                      });
-                    }
-                    functionProcessed();
-                  });
-                }
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "perl")) {
-              exec2("perl -v", function(error, stdout) {
-                if (!error) {
-                  const perl = stdout.toString().split("\n") || "";
-                  while (perl.length > 0 && perl[0].trim() === "") {
-                    perl.shift();
-                  }
-                  if (perl.length > 0) {
-                    appsObj.versions.perl = perl[0].split("(").pop().split(")")[0].replace("v", "");
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "python")) {
-              if (_darwin) {
-                try {
-                  const stdout = execSync("sw_vers");
-                  const lines = stdout.toString().split("\n");
-                  const osVersion = util.getValue(lines, "ProductVersion", ":");
-                  const gitHomebrewExists1 = fs.existsSync("/usr/local/Cellar/python");
-                  const gitHomebrewExists2 = fs.existsSync("/opt/homebrew/bin/python");
-                  if (util.darwinXcodeExists() && util.semverCompare("12.0.1", osVersion) < 0 || gitHomebrewExists1 || gitHomebrewExists2) {
-                    const cmd2 = gitHomebrewExists1 ? "/usr/local/Cellar/python -V 2>&1" : gitHomebrewExists2 ? "/opt/homebrew/bin/python -V 2>&1" : "python -V 2>&1";
-                    exec2(cmd2, function(error, stdout2) {
-                      if (!error) {
-                        const python = stdout2.toString().split("\n")[0] || "";
-                        appsObj.versions.python = python.toLowerCase().replace("python", "").trim();
-                      }
-                      functionProcessed();
-                    });
-                  } else {
-                    functionProcessed();
-                  }
-                } catch (e) {
-                  functionProcessed();
-                }
-              } else {
-                exec2("python -V 2>&1", function(error, stdout) {
-                  if (!error) {
-                    const python = stdout.toString().split("\n")[0] || "";
-                    appsObj.versions.python = python.toLowerCase().replace("python", "").trim();
-                  }
-                  functionProcessed();
-                });
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "python3")) {
-              if (_darwin) {
-                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/python3") || fs.existsSync("/opt/homebrew/bin/python3");
-                if (util.darwinXcodeExists() || gitHomebrewExists) {
-                  exec2("python3 -V 2>&1", function(error, stdout) {
-                    if (!error) {
-                      const python = stdout.toString().split("\n")[0] || "";
-                      appsObj.versions.python3 = python.toLowerCase().replace("python", "").trim();
-                    }
-                    functionProcessed();
-                  });
-                } else {
-                  functionProcessed();
-                }
-              } else {
-                exec2("python3 -V 2>&1", function(error, stdout) {
-                  if (!error) {
-                    const python = stdout.toString().split("\n")[0] || "";
-                    appsObj.versions.python3 = python.toLowerCase().replace("python", "").trim();
-                  }
-                  functionProcessed();
-                });
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "pip")) {
-              if (_darwin) {
-                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/pip") || fs.existsSync("/opt/homebrew/bin/pip");
-                if (util.darwinXcodeExists() || gitHomebrewExists) {
-                  exec2("pip -V 2>&1", function(error, stdout) {
-                    if (!error) {
-                      const pip = stdout.toString().split("\n")[0] || "";
-                      const parts = pip.split(" ");
-                      appsObj.versions.pip = parts.length >= 2 ? parts[1] : "";
-                    }
-                    functionProcessed();
-                  });
-                } else {
-                  functionProcessed();
-                }
-              } else {
-                exec2("pip -V 2>&1", function(error, stdout) {
-                  if (!error) {
-                    const pip = stdout.toString().split("\n")[0] || "";
-                    const parts = pip.split(" ");
-                    appsObj.versions.pip = parts.length >= 2 ? parts[1] : "";
-                  }
-                  functionProcessed();
-                });
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "pip3")) {
-              if (_darwin) {
-                const gitHomebrewExists = fs.existsSync("/usr/local/Cellar/pip3") || fs.existsSync("/opt/homebrew/bin/pip3");
-                if (util.darwinXcodeExists() || gitHomebrewExists) {
-                  exec2("pip3 -V 2>&1", function(error, stdout) {
-                    if (!error) {
-                      const pip = stdout.toString().split("\n")[0] || "";
-                      const parts = pip.split(" ");
-                      appsObj.versions.pip3 = parts.length >= 2 ? parts[1] : "";
-                    }
-                    functionProcessed();
-                  });
-                } else {
-                  functionProcessed();
-                }
-              } else {
-                exec2("pip3 -V 2>&1", function(error, stdout) {
-                  if (!error) {
-                    const pip = stdout.toString().split("\n")[0] || "";
-                    const parts = pip.split(" ");
-                    appsObj.versions.pip3 = parts.length >= 2 ? parts[1] : "";
-                  }
-                  functionProcessed();
-                });
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "java")) {
-              if (_darwin) {
-                exec2("/usr/libexec/java_home -V 2>&1", function(error, stdout) {
-                  if (!error && stdout.toString().toLowerCase().indexOf("no java runtime") === -1) {
-                    exec2("java -version 2>&1", function(error2, stdout2) {
-                      if (!error2) {
-                        const java = stdout2.toString().split("\n")[0] || "";
-                        const parts = java.split('"');
-                        appsObj.versions.java = parts.length === 3 ? parts[1].trim() : "";
-                      }
-                      functionProcessed();
-                    });
-                  } else {
-                    functionProcessed();
-                  }
-                });
-              } else {
-                exec2("java -version 2>&1", function(error, stdout) {
-                  if (!error) {
-                    const java = stdout.toString().split("\n")[0] || "";
-                    const parts = java.split('"');
-                    appsObj.versions.java = parts.length === 3 ? parts[1].trim() : "";
-                  }
-                  functionProcessed();
-                });
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "gcc")) {
-              if (_darwin && util.darwinXcodeExists() || !_darwin) {
-                exec2("gcc -dumpversion", function(error, stdout) {
-                  if (!error) {
-                    appsObj.versions.gcc = stdout.toString().split("\n")[0].trim() || "";
-                  }
-                  if (appsObj.versions.gcc.indexOf(".") > -1) {
-                    functionProcessed();
-                  } else {
-                    exec2("gcc --version", function(error2, stdout2) {
-                      if (!error2) {
-                        const gcc = stdout2.toString().split("\n")[0].trim();
-                        if (gcc.indexOf("gcc") > -1 && gcc.indexOf(")") > -1) {
-                          const parts = gcc.split(")");
-                          appsObj.versions.gcc = parts[1].trim() || appsObj.versions.gcc;
-                        }
-                      }
-                      functionProcessed();
-                    });
-                  }
-                });
-              } else {
-                functionProcessed();
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "virtualbox")) {
-              exec2(util.getVboxmanage() + " -v 2>&1", function(error, stdout) {
-                if (!error) {
-                  const vbox = stdout.toString().split("\n")[0] || "";
-                  const parts = vbox.split("r");
-                  appsObj.versions.virtualbox = parts[0];
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "bash")) {
-              exec2("bash --version", function(error, stdout) {
-                if (!error) {
-                  const line = stdout.toString().split("\n")[0];
-                  const parts = line.split(" version ");
-                  if (parts.length > 1) {
-                    appsObj.versions.bash = parts[1].split(" ")[0].split("(")[0];
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "zsh")) {
-              exec2("zsh --version", function(error, stdout) {
-                if (!error) {
-                  const line = stdout.toString().split("\n")[0];
-                  const parts = line.split("zsh ");
-                  if (parts.length > 1) {
-                    appsObj.versions.zsh = parts[1].split(" ")[0];
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "fish")) {
-              exec2("fish --version", function(error, stdout) {
-                if (!error) {
-                  const line = stdout.toString().split("\n")[0];
-                  const parts = line.split(" version ");
-                  if (parts.length > 1) {
-                    appsObj.versions.fish = parts[1].split(" ")[0];
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "bun")) {
-              exec2("bun -v", function(error, stdout) {
-                if (!error) {
-                  const line = stdout.toString().split("\n")[0].trim();
-                  appsObj.versions.bun = line;
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "deno")) {
-              exec2("deno -v", function(error, stdout) {
-                if (!error) {
-                  const line = stdout.toString().split("\n")[0].trim();
-                  const parts = line.split(" ");
-                  if (parts.length > 1) {
-                    appsObj.versions.deno = parts[1];
-                  }
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "node")) {
-              exec2("node -v", function(error, stdout) {
-                if (!error) {
-                  let line = stdout.toString().split("\n")[0].trim();
-                  if (line.startsWith("v")) {
-                    line = line.slice(1);
-                  }
-                  appsObj.versions.node = line;
-                }
-                functionProcessed();
-              });
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "powershell")) {
-              if (_windows) {
-                util.powerShell("$PSVersionTable").then((stdout) => {
-                  const lines = stdout.toString().toLowerCase().split("\n").map((line) => line.replace(/ +/g, " ").replace(/ +/g, ":"));
-                  appsObj.versions.powershell = util.getValue(lines, "psversion");
-                  functionProcessed();
-                });
-              } else {
-                functionProcessed();
-              }
-            }
-            if ({}.hasOwnProperty.call(appsObj.versions, "dotnet")) {
-              if (_windows) {
-                util.powerShell('gci "HKLM:\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP" -recurse | gp -name Version,Release -EA 0 | where { $_.PSChildName -match "^(?!S)\\p{L}"} | select PSChildName, Version, Release').then((stdout) => {
-                  const lines = stdout.toString().split("\r\n");
-                  let dotnet = "";
-                  lines.forEach((line) => {
-                    line = line.replace(/ +/g, " ");
-                    const parts = line.split(" ");
-                    dotnet = dotnet || (parts[0].toLowerCase().startsWith("client") && parts.length > 2 ? parts[1].trim() : parts[0].toLowerCase().startsWith("full") && parts.length > 2 ? parts[1].trim() : "");
-                  });
-                  appsObj.versions.dotnet = dotnet.trim();
-                  functionProcessed();
-                });
-              } else {
-                functionProcessed();
-              }
-            }
-          } catch (e) {
-            if (callback) {
-              callback(appsObj.versions);
-            }
-            resolve(appsObj.versions);
-          }
-        });
-      });
-    }
-    exports.versions = versions;
-    function shell(callback) {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          if (_windows) {
-            try {
-              const result2 = "CMD";
-              util.powerShell(`Get-CimInstance -className win32_process | where-object {$_.ProcessId -eq ${process.ppid} } | select Name`).then((stdout) => {
-                let result3 = "CMD";
-                if (stdout) {
-                  if (stdout.toString().toLowerCase().indexOf("powershell") >= 0) {
-                    result3 = "PowerShell";
-                  }
-                }
-                if (callback) {
-                  callback(result3);
-                }
-                resolve(result3);
-              });
-            } catch (e) {
-              if (callback) {
-                callback(result);
-              }
-              resolve(result);
-            }
-          } else {
-            let result2 = "";
-            exec2("echo $SHELL", function(error, stdout) {
-              if (!error) {
-                result2 = stdout.toString().split("\n")[0];
-              }
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-        });
-      });
-    }
-    exports.shell = shell;
-    function getUniqueMacAdresses() {
-      let macs = [];
-      try {
-        const ifaces = os2.networkInterfaces();
-        for (let dev in ifaces) {
-          if ({}.hasOwnProperty.call(ifaces, dev)) {
-            ifaces[dev].forEach(function(details) {
-              if (details && details.mac && details.mac !== "00:00:00:00:00:00") {
-                const mac = details.mac.toLowerCase();
-                if (macs.indexOf(mac) === -1) {
-                  macs.push(mac);
-                }
-              }
-            });
-          }
-        }
-        macs = macs.sort(function(a, b) {
-          if (a < b) {
-            return -1;
-          }
-          if (a > b) {
-            return 1;
-          }
-          return 0;
-        });
-      } catch (e) {
-        macs.push("00:00:00:00:00:00");
-      }
-      return macs;
-    }
-    function uuid(callback) {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          let result2 = {
-            os: "",
-            hardware: "",
-            macs: getUniqueMacAdresses()
-          };
-          let parts;
-          if (_darwin) {
-            exec2("system_profiler SPHardwareDataType -json", function(error, stdout) {
-              if (!error) {
-                try {
-                  const jsonObj = JSON.parse(stdout.toString());
-                  if (jsonObj.SPHardwareDataType && jsonObj.SPHardwareDataType.length > 0) {
-                    const spHardware = jsonObj.SPHardwareDataType[0];
-                    result2.os = spHardware.platform_UUID.toLowerCase();
-                    result2.hardware = spHardware.serial_number;
-                  }
-                } catch (e) {
-                  util.noop();
-                }
-              }
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-          if (_linux) {
-            const cmd = `echo -n "os: "; cat /var/lib/dbus/machine-id 2> /dev/null ||
-cat /etc/machine-id 2> /dev/null; echo;
-echo -n "hardware: "; cat /sys/class/dmi/id/product_uuid 2> /dev/null; echo;`;
-            exec2(cmd, function(error, stdout) {
-              const lines = stdout.toString().split("\n");
-              result2.os = util.getValue(lines, "os").toLowerCase();
-              result2.hardware = util.getValue(lines, "hardware").toLowerCase();
-              if (!result2.hardware) {
-                const lines2 = fs.readFileSync("/proc/cpuinfo", { encoding: "utf8" }).toString().split("\n");
-                const serial = util.getValue(lines2, "serial");
-                result2.hardware = serial || "";
-              }
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-          if (_freebsd || _openbsd || _netbsd) {
-            exec2("sysctl -i kern.hostid kern.hostuuid", function(error, stdout) {
-              const lines = stdout.toString().split("\n");
-              result2.os = util.getValue(lines, "kern.hostid", ":").toLowerCase();
-              result2.hardware = util.getValue(lines, "kern.hostuuid", ":").toLowerCase();
-              if (result2.os.indexOf("unknown") >= 0) {
-                result2.os = "";
-              }
-              if (result2.hardware.indexOf("unknown") >= 0) {
-                result2.hardware = "";
-              }
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
-          }
-          if (_windows) {
-            let sysdir = "%windir%\\System32";
-            if (process.arch === "ia32" && Object.prototype.hasOwnProperty.call(process.env, "PROCESSOR_ARCHITEW6432")) {
-              sysdir = "%windir%\\sysnative\\cmd.exe /c %windir%\\System32";
-            }
-            util.powerShell("Get-CimInstance Win32_ComputerSystemProduct | select UUID | fl").then((stdout) => {
-              let lines = stdout.split("\r\n");
-              result2.hardware = util.getValue(lines, "uuid", ":").toLowerCase();
-              exec2(`${sysdir}\\reg query "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid`, util.execOptsWin, function(error, stdout2) {
-                parts = stdout2.toString().split("\n\r")[0].split("REG_SZ");
-                result2.os = parts.length > 1 ? parts[1].replace(/\r+|\n+|\s+/ig, "").toLowerCase() : "";
-                if (callback) {
-                  callback(result2);
-                }
-                resolve(result2);
-              });
-            });
-          }
-        });
-      });
-    }
-    exports.uuid = uuid;
-  }
-});
-
 // node_modules/systeminformation/lib/cpu.js
 var require_cpu = __commonJS({
   "node_modules/systeminformation/lib/cpu.js"(exports) {
     "use strict";
-    var os2 = require("os");
-    var exec2 = require("child_process").exec;
+    var os4 = require("os");
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var fs = require("fs");
     var util = require_util2();
@@ -19773,113 +19787,113 @@ var require_cpu = __commonJS({
     var _cpus = [];
     var _corecount = 0;
     var AMDBaseFrequencies = {
-      "8346": "1.8",
-      "8347": "1.9",
-      "8350": "2.0",
-      "8354": "2.2",
+      8346: "1.8",
+      8347: "1.9",
+      8350: "2.0",
+      8354: "2.2",
       "8356|SE": "2.4",
-      "8356": "2.3",
-      "8360": "2.5",
-      "2372": "2.1",
-      "2373": "2.1",
-      "2374": "2.2",
-      "2376": "2.3",
-      "2377": "2.3",
-      "2378": "2.4",
-      "2379": "2.4",
-      "2380": "2.5",
-      "2381": "2.5",
-      "2382": "2.6",
-      "2384": "2.7",
-      "2386": "2.8",
-      "2387": "2.8",
-      "2389": "2.9",
-      "2393": "3.1",
-      "8374": "2.2",
-      "8376": "2.3",
-      "8378": "2.4",
-      "8379": "2.4",
-      "8380": "2.5",
-      "8381": "2.5",
-      "8382": "2.6",
-      "8384": "2.7",
-      "8386": "2.8",
-      "8387": "2.8",
-      "8389": "2.9",
-      "8393": "3.1",
+      8356: "2.3",
+      8360: "2.5",
+      2372: "2.1",
+      2373: "2.1",
+      2374: "2.2",
+      2376: "2.3",
+      2377: "2.3",
+      2378: "2.4",
+      2379: "2.4",
+      2380: "2.5",
+      2381: "2.5",
+      2382: "2.6",
+      2384: "2.7",
+      2386: "2.8",
+      2387: "2.8",
+      2389: "2.9",
+      2393: "3.1",
+      8374: "2.2",
+      8376: "2.3",
+      8378: "2.4",
+      8379: "2.4",
+      8380: "2.5",
+      8381: "2.5",
+      8382: "2.6",
+      8384: "2.7",
+      8386: "2.8",
+      8387: "2.8",
+      8389: "2.9",
+      8393: "3.1",
       "2419EE": "1.8",
       "2423HE": "2.0",
       "2425HE": "2.1",
-      "2427": "2.2",
-      "2431": "2.4",
-      "2435": "2.6",
+      2427: "2.2",
+      2431: "2.4",
+      2435: "2.6",
       "2439SE": "2.8",
       "8425HE": "2.1",
-      "8431": "2.4",
-      "8435": "2.6",
+      8431: "2.4",
+      8435: "2.6",
       "8439SE": "2.8",
-      "4122": "2.2",
-      "4130": "2.6",
+      4122: "2.2",
+      4130: "2.6",
       "4162EE": "1.7",
       "4164EE": "1.8",
       "4170HE": "2.1",
       "4174HE": "2.3",
       "4176HE": "2.4",
-      "4180": "2.6",
-      "4184": "2.8",
+      4180: "2.6",
+      4184: "2.8",
       "6124HE": "1.8",
       "6128HE": "2.0",
       "6132HE": "2.2",
-      "6128": "2.0",
-      "6134": "2.3",
-      "6136": "2.4",
-      "6140": "2.6",
+      6128: "2.0",
+      6134: "2.3",
+      6136: "2.4",
+      6140: "2.6",
       "6164HE": "1.7",
       "6166HE": "1.8",
-      "6168": "1.9",
-      "6172": "2.1",
-      "6174": "2.2",
-      "6176": "2.3",
+      6168: "1.9",
+      6172: "2.1",
+      6174: "2.2",
+      6176: "2.3",
       "6176SE": "2.3",
       "6180SE": "2.5",
-      "3250": "2.5",
-      "3260": "2.7",
-      "3280": "2.4",
-      "4226": "2.7",
-      "4228": "2.8",
-      "4230": "2.9",
-      "4234": "3.1",
-      "4238": "3.3",
-      "4240": "3.4",
-      "4256": "1.6",
-      "4274": "2.5",
-      "4276": "2.6",
-      "4280": "2.8",
-      "4284": "3.0",
-      "6204": "3.3",
-      "6212": "2.6",
-      "6220": "3.0",
-      "6234": "2.4",
-      "6238": "2.6",
+      3250: "2.5",
+      3260: "2.7",
+      3280: "2.4",
+      4226: "2.7",
+      4228: "2.8",
+      4230: "2.9",
+      4234: "3.1",
+      4238: "3.3",
+      4240: "3.4",
+      4256: "1.6",
+      4274: "2.5",
+      4276: "2.6",
+      4280: "2.8",
+      4284: "3.0",
+      6204: "3.3",
+      6212: "2.6",
+      6220: "3.0",
+      6234: "2.4",
+      6238: "2.6",
       "6262HE": "1.6",
-      "6272": "2.1",
-      "6274": "2.2",
-      "6276": "2.3",
-      "6278": "2.4",
+      6272: "2.1",
+      6274: "2.2",
+      6276: "2.3",
+      6278: "2.4",
       "6282SE": "2.6",
       "6284SE": "2.7",
-      "6308": "3.5",
-      "6320": "2.8",
-      "6328": "3.2",
+      6308: "3.5",
+      6320: "2.8",
+      6328: "3.2",
       "6338P": "2.3",
-      "6344": "2.6",
-      "6348": "2.8",
-      "6366": "1.8",
+      6344: "2.6",
+      6348: "2.8",
+      6366: "1.8",
       "6370P": "2.0",
-      "6376": "2.3",
-      "6378": "2.4",
-      "6380": "2.5",
-      "6386": "2.8",
+      6376: "2.3",
+      6378: "2.4",
+      6380: "2.5",
+      6386: "2.8",
       "FX|4100": "3.6",
       "FX|4120": "3.9",
       "FX|4130": "3.8",
@@ -19909,23 +19923,23 @@ var require_cpu = __commonJS({
       "FX|8320E": "3.2",
       "FX|8370E": "3.3",
       // ZEN Desktop CPUs
-      "1200": "3.1",
+      1200: "3.1",
       "Pro 1200": "3.1",
       "1300X": "3.5",
       "Pro 1300": "3.5",
-      "1400": "3.2",
+      1400: "3.2",
       "1500X": "3.5",
       "Pro 1500": "3.5",
-      "1600": "3.2",
+      1600: "3.2",
       "1600X": "3.6",
       "Pro 1600": "3.2",
-      "1700": "3.0",
+      1700: "3.0",
       "Pro 1700": "3.0",
       "1700X": "3.4",
       "Pro 1700X": "3.4",
       "1800X": "3.6",
       "1900X": "3.8",
-      "1920": "3.2",
+      1920: "3.2",
       "1920X": "3.5",
       "1950X": "3.4",
       // ZEN Desktop APUs
@@ -19958,47 +19972,47 @@ var require_cpu = __commonJS({
       "Pro 2700U": "2.2",
       "2800H": "3.3",
       // ZEN Server Processors
-      "7351": "2.4",
+      7351: "2.4",
       "7351P": "2.4",
-      "7401": "2.0",
+      7401: "2.0",
       "7401P": "2.0",
       "7551P": "2.0",
-      "7551": "2.0",
-      "7251": "2.1",
-      "7261": "2.5",
-      "7281": "2.1",
-      "7301": "2.2",
-      "7371": "3.1",
-      "7451": "2.3",
-      "7501": "2.0",
-      "7571": "2.2",
-      "7601": "2.2",
+      7551: "2.0",
+      7251: "2.1",
+      7261: "2.5",
+      7281: "2.1",
+      7301: "2.2",
+      7371: "3.1",
+      7451: "2.3",
+      7501: "2.0",
+      7571: "2.2",
+      7601: "2.2",
       // ZEN Embedded Processors
-      "V1500B": "2.2",
-      "V1780B": "3.35",
-      "V1202B": "2.3",
-      "V1404I": "2.0",
-      "V1605B": "2.0",
-      "V1756B": "3.25",
-      "V1807B": "3.35",
-      "3101": "2.1",
-      "3151": "2.7",
-      "3201": "1.5",
-      "3251": "2.5",
-      "3255": "2.5",
-      "3301": "2.0",
-      "3351": "1.9",
-      "3401": "1.85",
-      "3451": "2.15",
+      V1500B: "2.2",
+      V1780B: "3.35",
+      V1202B: "2.3",
+      V1404I: "2.0",
+      V1605B: "2.0",
+      V1756B: "3.25",
+      V1807B: "3.35",
+      3101: "2.1",
+      3151: "2.7",
+      3201: "1.5",
+      3251: "2.5",
+      3255: "2.5",
+      3301: "2.0",
+      3351: "1.9",
+      3401: "1.85",
+      3451: "2.15",
       // ZEN+ Desktop
       "1200|AF": "3.1",
       "2300X": "3.5",
       "2500X": "3.6",
-      "2600": "3.4",
+      2600: "3.4",
       "2600E": "3.1",
       "1600|AF": "3.2",
       "2600X": "3.6",
-      "2700": "3.2",
+      2700: "3.2",
       "2700E": "2.8",
       "Pro 2700": "3.2",
       "2700X": "3.7",
@@ -20041,11 +20055,11 @@ var require_cpu = __commonJS({
       "3750H": "2.3",
       "3780U": "2.3",
       // ZEN2 Desktop CPUS
-      "3100": "3.6",
+      3100: "3.6",
       "3300X": "3.8",
-      "3500": "3.6",
+      3500: "3.6",
       "3500X": "3.6",
-      "3600": "3.6",
+      3600: "3.6",
       "Pro 3600": "3.6",
       "3600X": "3.8",
       "3600XT": "3.8",
@@ -20053,7 +20067,7 @@ var require_cpu = __commonJS({
       "3700X": "3.6",
       "3800X": "3.9",
       "3800XT": "3.9",
-      "3900": "3.1",
+      3900: "3.1",
       "Pro 3900": "3.1",
       "3900X": "3.8",
       "3900XT": "3.8",
@@ -20103,48 +20117,48 @@ var require_cpu = __commonJS({
       "7402P": "2.8",
       "7502P": "2.5",
       "7702P": "2.0",
-      "7252": "3.1",
-      "7262": "3.2",
-      "7272": "2.9",
-      "7282": "2.8",
-      "7302": "3.0",
-      "7352": "2.3",
-      "7402": "2.8",
-      "7452": "2.35",
-      "7502": "2.5",
-      "7532": "2.4",
-      "7542": "2.9",
-      "7552": "2.2",
-      "7642": "2.3",
-      "7662": "2.0",
-      "7702": "2.0",
-      "7742": "2.25",
+      7252: "3.1",
+      7262: "3.2",
+      7272: "2.9",
+      7282: "2.8",
+      7302: "3.0",
+      7352: "2.3",
+      7402: "2.8",
+      7452: "2.35",
+      7502: "2.5",
+      7532: "2.4",
+      7542: "2.9",
+      7552: "2.2",
+      7642: "2.3",
+      7662: "2.0",
+      7702: "2.0",
+      7742: "2.25",
       "7H12": "2.6",
       "7F32": "3.7",
       "7F52": "3.5",
       "7F72": "3.2",
       // Epyc (Milan)
       "7773X": "2.2",
-      "7763": "2.45",
-      "7713": "2.0",
+      7763: "2.45",
+      7713: "2.0",
       "7713P": "2.0",
-      "7663": "2.0",
-      "7643": "2.3",
+      7663: "2.0",
+      7643: "2.3",
       "7573X": "2.8",
       "75F3": "2.95",
-      "7543": "2.8",
+      7543: "2.8",
       "7543P": "2.8",
-      "7513": "2.6",
+      7513: "2.6",
       "7473X": "2.8",
-      "7453": "2.75",
+      7453: "2.75",
       "74F3": "3.2",
-      "7443": "2.85",
+      7443: "2.85",
       "7443P": "2.85",
-      "7413": "2.65",
+      7413: "2.65",
       "7373X": "3.05",
       "73F3": "3.5",
-      "7343": "3.2",
-      "7313": "3.0",
+      7343: "3.2",
+      7313: "3.0",
       "7313P": "3.0",
       "72F3": "3.7",
       // ZEN3
@@ -20165,30 +20179,202 @@ var require_cpu = __commonJS({
       "7985WX": "3.2",
       "7995WX": "2.5",
       // ZEN4
-      "9754": "2.25",
+      9754: "2.25",
       "9754S": "2.25",
-      "9734": "2.2",
+      9734: "2.2",
       "9684X": "2.55",
       "9384X": "3.1",
       "9184X": "3.55",
       "9654P": "2.4",
-      "9654": "2.4",
-      "9634": "2.25",
+      9654: "2.4",
+      9634: "2.25",
       "9554P": "3.1",
-      "9554": "3.1",
-      "9534": "2.45",
+      9554: "3.1",
+      9534: "2.45",
       "9474F": "3.6",
       "9454P": "2.75",
-      "9454": "2.75",
+      9454: "2.75",
       "9374F": "3.85",
       "9354P": "3.25",
-      "9354": "3.25",
-      "9334": "2.7",
+      9354: "3.25",
+      9334: "2.7",
       "9274F": "4.05",
-      "9254": "2.9",
-      "9224": "2.5",
+      9254: "2.9",
+      9224: "2.5",
       "9174F": "4.1",
-      "9124": "3.0"
+      9124: "3.0",
+      // Epyc 4th gen
+      "4124P": "3.8",
+      "4244P": "3.8",
+      "4344P": "3.8",
+      "4364P": "4.5",
+      "4464P": "3.7",
+      "4484PX": "4.4",
+      "4564P": "4.5",
+      "4584PX": "4.2",
+      "8024P": "2.4",
+      "8024PN": "2.05",
+      "8124P": "2.45",
+      "8124PN": "2.0",
+      "8224P": "2.55",
+      "8224PN": "2.0",
+      "8324P": "2.65",
+      "8324PN": "2.05",
+      "8434P": "2.5",
+      "8434PN": "2.0",
+      "8534P": "2.3",
+      "8534PN": "2.0",
+      // Epyc 5th gen
+      9115: "2.6",
+      9135: "3.65",
+      "9175F": "4.2",
+      9255: "3.25",
+      "9275F": "4.1",
+      9335: "3.0",
+      "9355P": "3.55",
+      9355: "3.55",
+      "9375F": "3.8",
+      9365: "3.4",
+      "9455P": "3.15",
+      9455: "3.15",
+      "9475F": "3.65",
+      9535: "2.4",
+      "9555P": "3.2",
+      9555: "3.2",
+      "9575F": "3.3",
+      9565: "3.15",
+      "9655P": "2.5",
+      9655: "2.5",
+      9755: "2.7",
+      "4245P": "3.9",
+      "4345P": "3.8",
+      "4465P": "3.4",
+      "4545P": "3.0",
+      "4565P": "4.3",
+      "4585PX": "4.3",
+      "5900XT": "3.3",
+      5900: "3.0",
+      5945: "3.0",
+      "5800X3D": "3.4",
+      "5800XT": "3.8",
+      5800: "3.4",
+      "5700X3D": "3.0",
+      "5700X": "3.4",
+      5845: "3.4",
+      "5600X3D": "3.3",
+      "5600XT": "3.7",
+      "5600T": "3.5",
+      5600: "3.5",
+      "5600F": "3.0",
+      5645: "3.7",
+      "5500X3D": "3.0",
+      "5980HX": "3.3",
+      "5980HS": "3.0",
+      "5900HX": "3.3",
+      "5900HS": "3.0",
+      "5800H": "3.2",
+      "5800HS": "2.8",
+      "5800U": "1.9",
+      "5600H": "3.3",
+      "5600HS": "3.0",
+      "5600U": "2.3",
+      "5560U": "2.3",
+      "5400U": "2.7",
+      "5825U": "2.0",
+      "5625U": "2.3",
+      "5425U": "2.7",
+      "5125C": "3.0",
+      "7730U": "2.0",
+      "7530U": "2.0",
+      "7430U": "2.3",
+      "7330U": "2.3",
+      7203: "2.8",
+      7303: "2.4",
+      "7663P": "2.0",
+      "6980HX": "3.3",
+      "6980HS": "3.3",
+      "6900HX": "3.3",
+      "6900HS": "3.3",
+      "6800H": "3.2",
+      "6800HS": "3.2",
+      "6800U": "2.7",
+      "6600H": "3.3",
+      "6600HS": "3.3",
+      "6600U": "2.9",
+      "7735HS": "3.2",
+      "7735H": "3.2",
+      "7736U": "2.7",
+      "7735U": "2.7",
+      "7435HS": "3.1",
+      "7435H": "3.1",
+      "7535HS": "3.3",
+      "7535H": "3.3",
+      "7535U": "2.9",
+      "7235HS": "3.2",
+      "7235H": "3.2",
+      "7335U": "3.0",
+      270: "4.0",
+      260: "3.8",
+      250: "3.3",
+      240: "4.3",
+      230: "3.5",
+      220: "3.0",
+      210: "2.8",
+      "8945HS": "4.0",
+      "8845HS": "3.8",
+      "8840HS": "3.3",
+      "8840U": "3.3",
+      "8645HS": "4.3",
+      "8640HS": "3.5",
+      "8640U": "3.5",
+      "8540U": "3.0",
+      "8440U": "2.8",
+      "9950X3D": "4.3",
+      "9950X": "4.3",
+      "9900X3D": "4.4",
+      "9900X": "4.4",
+      "9800X3D": "4.7",
+      "9700X": "3.8",
+      "9700F": "3.8",
+      "9600X": "3.9",
+      9600: "3.8",
+      "9500F": "3.8",
+      "9995WX": "2.5",
+      "9985WX": "3.2",
+      "9975WX": "4.0",
+      "9965WX": "4.2",
+      "9955WX": "4.5",
+      "9945WX": "4.7",
+      "9980X": "3.2",
+      "9970X": "4.0",
+      "9960X": "4.2",
+      "PRO HX375": "2.0",
+      HX375: "2.0",
+      "PRO HX370": "2.0",
+      HX370: "2.0",
+      365: "2.0",
+      "PRO 360": "2.0",
+      350: "2.0",
+      "PRO 350": "2.0",
+      340: "2.0",
+      "PRO 340": "2.0",
+      330: "2.0",
+      395: "3.0",
+      "PRO 395": "3.0",
+      390: "3.2",
+      "PRO 390": "3.2",
+      385: "3.6",
+      "PRO 385": "3.6",
+      "PRO 380": "3.6",
+      "9955HX3D": "2.3",
+      "9955HX": "2.5",
+      "9850HX": "3.0",
+      9015: "3.6",
+      9965: "2.25",
+      9845: "2.1",
+      9825: "2.2",
+      9745: "2.4",
+      9645: "2.3"
     };
     var socketTypes = {
       1: "Other",
@@ -20262,12 +20448,27 @@ var require_cpu = __commonJS({
       69: "LGA1211",
       70: "LGA2422",
       71: "LGA5773",
-      72: "BGA5773"
+      72: "BGA5773",
+      73: "AM5",
+      74: "SP5",
+      75: "SP6",
+      76: "BGA883",
+      77: "BGA1190",
+      78: "BGA4129",
+      79: "LGA4710",
+      80: "LGA7529",
+      81: "BGA1964",
+      82: "BGA1792",
+      83: "BGA2049",
+      84: "BGA2551",
+      85: "LGA1851",
+      86: "BGA2114",
+      87: "BGA2833"
     };
     var socketTypesByName = {
-      "LGA1150": "i7-5775C i3-4340 i3-4170 G3250 i3-4160T i3-4160 E3-1231 G3258 G3240 i7-4790S i7-4790K i7-4790 i5-4690K i5-4690 i5-4590T i5-4590S i5-4590 i5-4460 i3-4360 i3-4150 G1820 G3420 G3220 i7-4771 i5-4440 i3-4330 i3-4130T i3-4130 E3-1230 i7-4770S i7-4770K i7-4770 i5-4670K i5-4670 i5-4570T i5-4570S i5-4570 i5-4430",
-      "LGA1151": "i9-9900KS E-2288G E-2224 G5420 i9-9900T i9-9900 i7-9700T i7-9700F i7-9700E i7-9700 i5-9600 i5-9500T i5-9500F i5-9500 i5-9400T i3-9350K i3-9300 i3-9100T i3-9100F i3-9100 G4930 i9-9900KF i7-9700KF i5-9600KF i5-9400F i5-9400 i3-9350KF i9-9900K i7-9700K i5-9600K G5500 G5400 i7-8700T i7-8086K i5-8600 i5-8500T i5-8500 i5-8400T i3-8300 i3-8100T G4900 i7-8700K i7-8700 i5-8600K i5-8400 i3-8350K i3-8100 E3-1270 G4600 G4560 i7-7700T i7-7700K i7-7700 i5-7600K i5-7600 i5-7500T i5-7500 i5-7400 i3-7350K i3-7300 i3-7100T i3-7100 G3930 G3900 G4400 i7-6700T i7-6700K i7-6700 i5-6600K i5-6600 i5-6500T i5-6500 i5-6400T i5-6400 i3-6300 i3-6100T i3-6100 E3-1270 E3-1270 T4500 T4400",
-      "1155": "G440 G460 G465 G470 G530T G540T G550T G1610T G1620T G530 G540 G1610 G550 G1620 G555 G1630 i3-2100T i3-2120T i3-3220T i3-3240T i3-3250T i3-2100 i3-2105 i3-2102 i3-3210 i3-3220 i3-2125 i3-2120 i3-3225 i3-2130 i3-3245 i3-3240 i3-3250 i5-3570T i5-2500T i5-2400S i5-2405S i5-2390T i5-3330S i5-2500S i5-3335S i5-2300 i5-3450S i5-3340S i5-3470S i5-3475S i5-3470T i5-2310 i5-3550S i5-2320 i5-3330 i5-3350P i5-3450 i5-2400 i5-3340 i5-3570S i5-2380P i5-2450P i5-3470 i5-2500K i5-3550 i5-2500 i5-3570 i5-3570K i5-2550K i7-3770T i7-2600S i7-3770S i7-2600K i7-2600 i7-3770 i7-3770K i7-2700K G620T G630T G640T G2020T G645T G2100T G2030T G622 G860T G620 G632 G2120T G630 G640 G2010 G840 G2020 G850 G645 G2030 G860 G2120 G870 G2130 G2140 E3-1220L E3-1220L E3-1260L E3-1265L E3-1220 E3-1225 E3-1220 E3-1235 E3-1225 E3-1230 E3-1230 E3-1240 E3-1245 E3-1270 E3-1275 E3-1240 E3-1245 E3-1270 E3-1280 E3-1275 E3-1290 E3-1280 E3-1290"
+      LGA1150: "i7-5775C i3-4340 i3-4170 G3250 i3-4160T i3-4160 E3-1231 G3258 G3240 i7-4790S i7-4790K i7-4790 i5-4690K i5-4690 i5-4590T i5-4590S i5-4590 i5-4460 i3-4360 i3-4150 G1820 G3420 G3220 i7-4771 i5-4440 i3-4330 i3-4130T i3-4130 E3-1230 i7-4770S i7-4770K i7-4770 i5-4670K i5-4670 i5-4570T i5-4570S i5-4570 i5-4430",
+      LGA1151: "i9-9900KS E-2288G E-2224 G5420 i9-9900T i9-9900 i7-9700T i7-9700F i7-9700E i7-9700 i5-9600 i5-9500T i5-9500F i5-9500 i5-9400T i3-9350K i3-9300 i3-9100T i3-9100F i3-9100 G4930 i9-9900KF i7-9700KF i5-9600KF i5-9400F i5-9400 i3-9350KF i9-9900K i7-9700K i5-9600K G5500 G5400 i7-8700T i7-8086K i5-8600 i5-8500T i5-8500 i5-8400T i3-8300 i3-8100T G4900 i7-8700K i7-8700 i5-8600K i5-8400 i3-8350K i3-8100 E3-1270 G4600 G4560 i7-7700T i7-7700K i7-7700 i5-7600K i5-7600 i5-7500T i5-7500 i5-7400 i3-7350K i3-7300 i3-7100T i3-7100 G3930 G3900 G4400 i7-6700T i7-6700K i7-6700 i5-6600K i5-6600 i5-6500T i5-6500 i5-6400T i5-6400 i3-6300 i3-6100T i3-6100 E3-1270 E3-1270 T4500 T4400",
+      1155: "G440 G460 G465 G470 G530T G540T G550T G1610T G1620T G530 G540 G1610 G550 G1620 G555 G1630 i3-2100T i3-2120T i3-3220T i3-3240T i3-3250T i3-2100 i3-2105 i3-2102 i3-3210 i3-3220 i3-2125 i3-2120 i3-3225 i3-2130 i3-3245 i3-3240 i3-3250 i5-3570T i5-2500T i5-2400S i5-2405S i5-2390T i5-3330S i5-2500S i5-3335S i5-2300 i5-3450S i5-3340S i5-3470S i5-3475S i5-3470T i5-2310 i5-3550S i5-2320 i5-3330 i5-3350P i5-3450 i5-2400 i5-3340 i5-3570S i5-2380P i5-2450P i5-3470 i5-2500K i5-3550 i5-2500 i5-3570 i5-3570K i5-2550K i7-3770T i7-2600S i7-3770S i7-2600K i7-2600 i7-3770 i7-3770K i7-2700K G620T G630T G640T G2020T G645T G2100T G2030T G622 G860T G620 G632 G2120T G630 G640 G2010 G840 G2020 G850 G645 G2030 G860 G2120 G870 G2130 G2140 E3-1220L E3-1220L E3-1260L E3-1265L E3-1220 E3-1225 E3-1220 E3-1235 E3-1225 E3-1230 E3-1230 E3-1240 E3-1245 E3-1270 E3-1275 E3-1240 E3-1245 E3-1270 E3-1280 E3-1275 E3-1290 E3-1280 E3-1290"
     };
     function getSocketTypesByName(str) {
       let result2 = "";
@@ -20382,8 +20583,8 @@ var require_cpu = __commonJS({
             result2.flags = flags;
             result2.virtualization = flags.indexOf("vmx") > -1 || flags.indexOf("svm") > -1;
             if (_darwin) {
-              exec2("sysctl machdep.cpu hw.cpufrequency_max hw.cpufrequency_min hw.packages hw.physicalcpu_max hw.ncpu hw.tbfrequency hw.cpufamily hw.cpusubfamily", function(error, stdout) {
-                let lines = stdout.toString().split("\n");
+              exec("sysctl machdep.cpu hw.cpufrequency_max hw.cpufrequency_min hw.packages hw.physicalcpu_max hw.ncpu hw.tbfrequency hw.cpufamily hw.cpusubfamily", (error, stdout) => {
+                const lines = stdout.toString().split("\n");
                 const modelline = util.getValue(lines, "machdep.cpu.brand_string");
                 const modellineParts = modelline.split("@");
                 result2.brand = modellineParts[0].trim();
@@ -20404,7 +20605,7 @@ var require_cpu = __commonJS({
                 const countProcessors = util.getValue(lines, "hw.packages");
                 const countCores = util.getValue(lines, "hw.physicalcpu_max");
                 const countThreads = util.getValue(lines, "hw.ncpu");
-                if (os2.arch() === "arm64") {
+                if (os4.arch() === "arm64") {
                   result2.socket = "SOC";
                   try {
                     const clusters = execSync("ioreg -c IOPlatformDevice -d 3 -r | grep cluster-type").toString().split("\n");
@@ -20417,7 +20618,7 @@ var require_cpu = __commonJS({
                   }
                 }
                 if (countProcessors) {
-                  result2.processors = parseInt(countProcessors) || 1;
+                  result2.processors = parseInt(countProcessors, 10) || 1;
                 }
                 if (countCores && countThreads) {
                   result2.cores = parseInt(countThreads) || util.cores();
@@ -20432,10 +20633,10 @@ var require_cpu = __commonJS({
             if (_linux) {
               let modelline = "";
               let lines = [];
-              if (os2.cpus()[0] && os2.cpus()[0].model) {
-                modelline = os2.cpus()[0].model;
+              if (os4.cpus()[0] && os4.cpus()[0].model) {
+                modelline = os4.cpus()[0].model;
               }
-              exec2('export LC_ALL=C; lscpu; echo -n "Governor: "; cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null; echo; unset LC_ALL', function(error, stdout) {
+              exec('export LC_ALL=C; lscpu; echo -n "Governor: "; cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 2>/dev/null; echo; unset LC_ALL', (error, stdout) => {
                 if (!error) {
                   lines = stdout.toString().split("\n");
                 }
@@ -20444,6 +20645,9 @@ var require_cpu = __commonJS({
                 modelline = util.cleanString(modelline);
                 const modellineParts = modelline.split("@");
                 result2.brand = modellineParts[0].trim();
+                if (result2.brand.indexOf("Unknown") >= 0) {
+                  result2.brand = result2.brand.split("Unknown")[0].trim();
+                }
                 result2.speed = modellineParts[1] ? parseFloat(modellineParts[1].trim()) : 0;
                 if (result2.speed === 0 && (result2.brand.indexOf("AMD") > -1 || result2.brand.toLowerCase().indexOf("ryzen") > -1)) {
                   result2.speed = getAMDSpeed(result2.brand);
@@ -20507,7 +20711,7 @@ var require_cpu = __commonJS({
                   }
                 }
                 let lines2 = [];
-                exec2('export LC_ALL=C; dmidecode \u2013t 4 2>/dev/null | grep "Upgrade: Socket"; unset LC_ALL', function(error2, stdout2) {
+                exec('export LC_ALL=C; dmidecode \u2013t 4 2>/dev/null | grep "Upgrade: Socket"; unset LC_ALL', (error2, stdout2) => {
                   lines2 = stdout2.toString().split("\n");
                   if (lines2 && lines2.length) {
                     result2.socket = util.getValue(lines2, "Upgrade").replace("Socket", "").trim() || result2.socket;
@@ -20519,10 +20723,10 @@ var require_cpu = __commonJS({
             if (_freebsd || _openbsd || _netbsd) {
               let modelline = "";
               let lines = [];
-              if (os2.cpus()[0] && os2.cpus()[0].model) {
-                modelline = os2.cpus()[0].model;
+              if (os4.cpus()[0] && os4.cpus()[0].model) {
+                modelline = os4.cpus()[0].model;
               }
-              exec2("export LC_ALL=C; dmidecode -t 4; dmidecode -t 7 unset LC_ALL", function(error, stdout) {
+              exec("export LC_ALL=C; dmidecode -t 4; dmidecode -t 7 unset LC_ALL", (error, stdout) => {
                 let cache = [];
                 if (!error) {
                   const data = stdout.toString().split("# dmidecode");
@@ -20590,12 +20794,14 @@ var require_cpu = __commonJS({
             if (_windows) {
               try {
                 const workload = [];
-                workload.push(util.powerShell("Get-CimInstance Win32_processor | select Name, Revision, L2CacheSize, L3CacheSize, Manufacturer, MaxClockSpeed, Description, UpgradeMethod, Caption, NumberOfLogicalProcessors, NumberOfCores | fl"));
+                workload.push(
+                  util.powerShell(
+                    "Get-CimInstance Win32_processor | select Name, Revision, L2CacheSize, L3CacheSize, Manufacturer, MaxClockSpeed, Description, UpgradeMethod, Caption, NumberOfLogicalProcessors, NumberOfCores | fl"
+                  )
+                );
                 workload.push(util.powerShell("Get-CimInstance Win32_CacheMemory | select CacheType,InstalledSize,Level | fl"));
                 workload.push(util.powerShell("(Get-CimInstance Win32_ComputerSystem).HypervisorPresent"));
-                Promise.all(
-                  workload
-                ).then((data) => {
+                Promise.all(workload).then((data) => {
                   let lines = data[0].split("\r\n");
                   let name = util.getValue(lines, "name", ":") || "";
                   if (name.indexOf("@") >= 0) {
@@ -20678,13 +20884,13 @@ var require_cpu = __commonJS({
     }
     exports.cpu = cpu;
     function getCpuCurrentSpeedSync() {
-      let cpus = os2.cpus();
+      const cpus = os4.cpus();
       let minFreq = 999999999;
       let maxFreq = 0;
       let avgFreq = 0;
-      let cores = [];
-      let speeds = [];
-      if (cpus && cpus.length && cpus[0].speed) {
+      const cores = [];
+      const speeds = [];
+      if (cpus && cpus.length && Object.prototype.hasOwnProperty.call(cpus[0], "speed")) {
         for (let i in cpus) {
           speeds.push(cpus[i].speed > 100 ? (cpus[i].speed + 1) / 1e3 : cpus[i].speed / 10);
         }
@@ -20699,23 +20905,32 @@ var require_cpu = __commonJS({
         }
       }
       if (speeds && speeds.length) {
-        for (let i in speeds) {
-          avgFreq = avgFreq + speeds[i];
-          if (speeds[i] > maxFreq) {
-            maxFreq = speeds[i];
+        try {
+          for (const i in speeds) {
+            avgFreq = avgFreq + speeds[i];
+            if (speeds[i] > maxFreq) {
+              maxFreq = speeds[i];
+            }
+            if (speeds[i] < minFreq) {
+              minFreq = speeds[i];
+            }
+            cores.push(parseFloat(speeds[i].toFixed(2)));
           }
-          if (speeds[i] < minFreq) {
-            minFreq = speeds[i];
-          }
-          cores.push(parseFloat(speeds[i].toFixed(2)));
+          avgFreq = avgFreq / speeds.length;
+          return {
+            min: parseFloat(minFreq.toFixed(2)),
+            max: parseFloat(maxFreq.toFixed(2)),
+            avg: parseFloat(avgFreq.toFixed(2)),
+            cores
+          };
+        } catch (e) {
+          return {
+            min: 0,
+            max: 0,
+            avg: 0,
+            cores
+          };
         }
-        avgFreq = avgFreq / speeds.length;
-        return {
-          min: parseFloat(minFreq.toFixed(2)),
-          max: parseFloat(maxFreq.toFixed(2)),
-          avg: parseFloat(avgFreq.toFixed(2)),
-          cores
-        };
       } else {
         return {
           min: 0,
@@ -20778,13 +20993,13 @@ var require_cpu = __commonJS({
             }
             const cmd = 'for mon in /sys/class/hwmon/hwmon*; do for label in "$mon"/temp*_label; do if [ -f $label ]; then value=${label%_*}_input; echo $(cat "$label")___$(cat "$value"); fi; done; done;';
             try {
-              exec2(cmd, function(error, stdout) {
+              exec(cmd, (error, stdout) => {
                 stdout = stdout.toString();
                 const tdiePos = stdout.toLowerCase().indexOf("tdie");
                 if (tdiePos !== -1) {
                   stdout = stdout.substring(tdiePos);
                 }
-                let lines = stdout.split("\n");
+                const lines = stdout.split("\n");
                 let tctl = 0;
                 lines.forEach((line) => {
                   const parts = line.split("___");
@@ -20819,13 +21034,13 @@ var require_cpu = __commonJS({
                   resolve(result2);
                   return;
                 }
-                exec2("sensors", function(error2, stdout2) {
+                exec("sensors", (error2, stdout2) => {
                   if (!error2) {
-                    let lines2 = stdout2.toString().split("\n");
+                    const lines2 = stdout2.toString().split("\n");
                     let tdieTemp = null;
                     let newSectionStarts = true;
                     let section = "";
-                    lines2.forEach(function(line) {
+                    lines2.forEach((line) => {
                       if (line.trim() === "") {
                         newSectionStarts = true;
                       } else if (newSectionStarts) {
@@ -20838,11 +21053,14 @@ var require_cpu = __commonJS({
                         if (line.trim().toLowerCase().startsWith("core")) {
                           section = "core";
                         }
+                        if (line.trim().toLowerCase().startsWith("k10temp")) {
+                          section = "coreAMD";
+                        }
                         newSectionStarts = false;
                       }
-                      let regex = /[+-]([^°]*)/g;
-                      let temps = line.match(regex);
-                      let firstPart = line.split(":")[0].toUpperCase();
+                      const regex = /[+-]([^°]*)/g;
+                      const temps = line.match(regex);
+                      const firstPart = line.split(":")[0].toUpperCase();
                       if (section === "acpi") {
                         if (firstPart.indexOf("TEMP") !== -1) {
                           result2.socket.push(parseFloat(temps));
@@ -20852,7 +21070,7 @@ var require_cpu = __commonJS({
                           result2.chipset = parseFloat(temps);
                         }
                       }
-                      if (firstPart.indexOf("PHYSICAL") !== -1 || firstPart.indexOf("PACKAGE") !== -1) {
+                      if (firstPart.indexOf("PHYSICAL") !== -1 || firstPart.indexOf("PACKAGE") !== -1 || section === "coreAMD" && firstPart.indexOf("TDIE") !== -1 || firstPart.indexOf("TEMP") !== -1) {
                         result2.main = parseFloat(temps);
                       }
                       if (firstPart.indexOf("CORE ") !== -1) {
@@ -20864,13 +21082,16 @@ var require_cpu = __commonJS({
                     });
                     if (result2.cores.length > 0) {
                       result2.main = Math.round(result2.cores.reduce((a, b) => a + b, 0) / result2.cores.length);
-                      let maxtmp = Math.max.apply(Math, result2.cores);
+                      const maxtmp = Math.max.apply(Math, result2.cores);
                       result2.max = maxtmp > result2.main ? maxtmp : result2.main;
                     } else {
                       if (result2.main === null && tdieTemp !== null) {
                         result2.main = tdieTemp;
                         result2.max = tdieTemp;
                       }
+                    }
+                    if (result2.main !== null && result2.max === null) {
+                      result2.max = result2.main;
                     }
                     if (result2.main !== null || result2.max !== null) {
                       if (callback) {
@@ -20880,11 +21101,11 @@ var require_cpu = __commonJS({
                       return;
                     }
                   }
-                  fs.stat("/sys/class/thermal/thermal_zone0/temp", function(err) {
+                  fs.stat("/sys/class/thermal/thermal_zone0/temp", (err) => {
                     if (err === null) {
-                      fs.readFile("/sys/class/thermal/thermal_zone0/temp", function(error3, stdout3) {
+                      fs.readFile("/sys/class/thermal/thermal_zone0/temp", (error3, stdout3) => {
                         if (!error3) {
-                          let lines2 = stdout3.toString().split("\n");
+                          const lines2 = stdout3.toString().split("\n");
                           if (lines2.length > 0) {
                             result2.main = parseFloat(lines2[0]) / 1e3;
                             result2.max = result2.main;
@@ -20896,9 +21117,9 @@ var require_cpu = __commonJS({
                         resolve(result2);
                       });
                     } else {
-                      exec2("/opt/vc/bin/vcgencmd measure_temp", function(error3, stdout3) {
+                      exec("/opt/vc/bin/vcgencmd measure_temp", (error3, stdout3) => {
                         if (!error3) {
-                          let lines2 = stdout3.toString().split("\n");
+                          const lines2 = stdout3.toString().split("\n");
                           if (lines2.length > 0 && lines2[0].indexOf("=")) {
                             result2.main = parseFloat(lines2[0].split("=")[1]);
                             result2.max = result2.main;
@@ -20913,7 +21134,7 @@ var require_cpu = __commonJS({
                   });
                 });
               });
-            } catch (er) {
+            } catch (e) {
               if (callback) {
                 callback(result2);
               }
@@ -20921,11 +21142,11 @@ var require_cpu = __commonJS({
             }
           }
           if (_freebsd || _openbsd || _netbsd) {
-            exec2("sysctl dev.cpu | grep temp", function(error, stdout) {
+            exec("sysctl dev.cpu | grep temp", (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 let sum = 0;
-                lines.forEach(function(line) {
+                lines.forEach((line) => {
                   const parts = line.split(":");
                   if (parts.length > 1) {
                     const temp = parseFloat(parts[1].replace(",", "."));
@@ -20947,13 +21168,8 @@ var require_cpu = __commonJS({
             });
           }
           if (_darwin) {
-            let osxTemp = null;
             try {
-              osxTemp = require("osx-temperature-sensor");
-            } catch (er) {
-              osxTemp = null;
-            }
-            if (osxTemp) {
+              const osxTemp = require("osx-temperature-sensor");
               result2 = osxTemp.cpuTemperature();
               if (result2.main) {
                 result2.main = Math.round(result2.main * 100) / 100;
@@ -20961,11 +21177,31 @@ var require_cpu = __commonJS({
               if (result2.max) {
                 result2.max = Math.round(result2.max * 100) / 100;
               }
-              if (result2.cores && result2.cores.length) {
+              if (result2 && result2.cores && result2.cores.length) {
                 for (let i = 0; i < result2.cores.length; i++) {
                   result2.cores[i] = Math.round(result2.cores[i] * 100) / 100;
                 }
               }
+            } catch (e) {
+              util.noop();
+            }
+            try {
+              const macosTemp = require("macos-temperature-sensor");
+              const res = macosTemp.temperature();
+              if (res.cpu) {
+                result2.main = Math.round(res.cpu * 100) / 100;
+                result2.max = result2.main;
+              }
+              if (res.soc) {
+                result2.chipset = Math.round(res.soc * 100) / 100;
+              }
+              if (res && res.cpuDieTemps.length) {
+                for (const temp of res.cpuDieTemps) {
+                  result2.cores.push(Math.round(temp * 100) / 100);
+                }
+              }
+            } catch (e) {
+              util.noop();
             }
             if (callback) {
               callback(result2);
@@ -20983,9 +21219,9 @@ var require_cpu = __commonJS({
               util.powerShell('Get-CimInstance MSAcpi_ThermalZoneTemperature -Namespace "root/wmi" | Select CurrentTemperature').then((stdout, error) => {
                 if (!error) {
                   let sum = 0;
-                  let lines = stdout.split("\r\n").filter((line) => line.trim() !== "").filter((line, idx) => idx > 0);
-                  lines.forEach(function(line) {
-                    let value = (parseInt(line, 10) - 2732) / 10;
+                  const lines = stdout.split("\r\n").filter((line) => line.trim() !== "").filter((line, idx) => idx > 0);
+                  lines.forEach((line) => {
+                    const value = (parseInt(line, 10) - 2732) / 10;
                     if (!isNaN(value)) {
                       sum = sum + value;
                       if (value > result2.max) {
@@ -21020,7 +21256,7 @@ var require_cpu = __commonJS({
           let result2 = "";
           if (_windows) {
             try {
-              exec2('reg query "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0" /v FeatureSet', util.execOptsWin, function(error, stdout) {
+              exec('reg query "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0" /v FeatureSet', util.execOptsWin, (error, stdout) => {
                 if (!error) {
                   let flag_hex = stdout.split("0x").pop().trim();
                   let flag_bin_unpadded = parseInt(flag_hex, 16).toString(2);
@@ -21080,17 +21316,17 @@ var require_cpu = __commonJS({
           }
           if (_linux) {
             try {
-              exec2("export LC_ALL=C; lscpu; unset LC_ALL", function(error, stdout) {
+              exec("export LC_ALL=C; lscpu; unset LC_ALL", (error, stdout) => {
                 if (!error) {
                   let lines = stdout.toString().split("\n");
-                  lines.forEach(function(line) {
+                  lines.forEach((line) => {
                     if (line.split(":")[0].toUpperCase().indexOf("FLAGS") !== -1) {
                       result2 = line.split(":")[1].trim().toLowerCase();
                     }
                   });
                 }
                 if (!result2) {
-                  fs.readFile("/proc/cpuinfo", function(error2, stdout2) {
+                  fs.readFile("/proc/cpuinfo", (error2, stdout2) => {
                     if (!error2) {
                       let lines = stdout2.toString().split("\n");
                       result2 = util.getValue(lines, "features", ":", true).toLowerCase();
@@ -21115,13 +21351,13 @@ var require_cpu = __commonJS({
             }
           }
           if (_freebsd || _openbsd || _netbsd) {
-            exec2("export LC_ALL=C; dmidecode -t 4 2>/dev/null; unset LC_ALL", function(error, stdout) {
-              let flags = [];
+            exec("export LC_ALL=C; dmidecode -t 4 2>/dev/null; unset LC_ALL", (error, stdout) => {
+              const flags = [];
               if (!error) {
-                let parts = stdout.toString().split("	Flags:");
+                const parts = stdout.toString().split("	Flags:");
                 const lines = parts.length > 1 ? parts[1].split("	Version:")[0].split("\n") : [];
-                lines.forEach(function(line) {
-                  let flag = (line.indexOf("(") ? line.split("(")[0].toLowerCase() : "").trim().replace(/\t/g, "");
+                lines.forEach((line) => {
+                  const flag = (line.indexOf("(") ? line.split("(")[0].toLowerCase() : "").trim().replace(/\t/g, "");
                   if (flag) {
                     flags.push(flag);
                   }
@@ -21135,7 +21371,7 @@ var require_cpu = __commonJS({
             });
           }
           if (_darwin) {
-            exec2("sysctl machdep.cpu.features", function(error, stdout) {
+            exec("sysctl machdep.cpu.features", (error, stdout) => {
               if (!error) {
                 let lines = stdout.toString().split("\n");
                 if (lines.length > 0 && lines[0].indexOf("machdep.cpu.features:") !== -1) {
@@ -21169,11 +21405,11 @@ var require_cpu = __commonJS({
           };
           if (_linux) {
             try {
-              exec2("export LC_ALL=C; lscpu; unset LC_ALL", function(error, stdout) {
+              exec("export LC_ALL=C; lscpu; unset LC_ALL", (error, stdout) => {
                 if (!error) {
-                  let lines = stdout.toString().split("\n");
-                  lines.forEach(function(line) {
-                    let parts = line.split(":");
+                  const lines = stdout.toString().split("\n");
+                  lines.forEach((line) => {
+                    const parts = line.split(":");
                     if (parts[0].toUpperCase().indexOf("L1D CACHE") !== -1) {
                       result2.l1d = parseInt(parts[1].trim()) * (parts[1].indexOf("M") !== -1 ? 1024 * 1024 : parts[1].indexOf("K") !== -1 ? 1024 : 1);
                     }
@@ -21201,7 +21437,7 @@ var require_cpu = __commonJS({
             }
           }
           if (_freebsd || _openbsd || _netbsd) {
-            exec2("export LC_ALL=C; dmidecode -t 7 2>/dev/null; unset LC_ALL", function(error, stdout) {
+            exec("export LC_ALL=C; dmidecode -t 7 2>/dev/null; unset LC_ALL", (error, stdout) => {
               let cache = [];
               if (!error) {
                 const data = stdout.toString();
@@ -21232,10 +21468,10 @@ var require_cpu = __commonJS({
             });
           }
           if (_darwin) {
-            exec2("sysctl hw.l1icachesize hw.l1dcachesize hw.l2cachesize hw.l3cachesize", function(error, stdout) {
+            exec("sysctl hw.l1icachesize hw.l1dcachesize hw.l2cachesize hw.l3cachesize", (error, stdout) => {
               if (!error) {
                 let lines = stdout.toString().split("\n");
-                lines.forEach(function(line) {
+                lines.forEach((line) => {
                   let parts = line.split(":");
                   if (parts[0].toLowerCase().indexOf("hw.l1icachesize") !== -1) {
                     result2.l1d = parseInt(parts[1].trim()) * (parts[1].indexOf("K") !== -1 ? 1024 : 1);
@@ -21268,9 +21504,7 @@ var require_cpu = __commonJS({
               const workload = [];
               workload.push(util.powerShell("Get-CimInstance Win32_processor | select L2CacheSize, L3CacheSize | fl"));
               workload.push(util.powerShell("Get-CimInstance Win32_CacheMemory | select CacheType,InstalledSize,Level | fl"));
-              Promise.all(
-                workload
-              ).then((data) => {
+              Promise.all(workload).then((data) => {
                 result2 = parseWinCache(data[0], data[1]);
                 if (callback) {
                   callback(result2);
@@ -21288,7 +21522,7 @@ var require_cpu = __commonJS({
       });
     }
     function parseWinCache(linesProc, linesCache) {
-      let result2 = {
+      const result2 = {
         l1d: null,
         l1i: null,
         l2: null,
@@ -21313,7 +21547,7 @@ var require_cpu = __commonJS({
       let l1i = 0;
       let l1d = 0;
       let l2 = 0;
-      parts.forEach(function(part) {
+      parts.forEach((part) => {
         const lines2 = part.split("\r\n");
         const cacheType = util.getValue(lines2, "CacheType");
         const level = util.getValue(lines2, "Level");
@@ -21345,15 +21579,15 @@ var require_cpu = __commonJS({
     function getLoad() {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let loads = os2.loadavg().map(function(x) {
+          const loads = os4.loadavg().map((x) => {
             return x / util.cores();
           });
-          let avgLoad = parseFloat(Math.max.apply(Math, loads).toFixed(2));
+          const avgLoad = parseFloat(Math.max.apply(Math, loads).toFixed(2));
           let result2 = {};
-          let now = Date.now() - _current_cpu.ms;
+          const now = Date.now() - _current_cpu.ms;
           if (now >= 200) {
             _current_cpu.ms = Date.now();
-            const cpus = os2.cpus().map(function(cpu2) {
+            const cpus = os4.cpus().map((cpu2) => {
               cpu2.times.steal = 0;
               cpu2.times.guest = 0;
               return cpu2;
@@ -21365,7 +21599,7 @@ var require_cpu = __commonJS({
             let totalIdle = 0;
             let totalSteal = 0;
             let totalGuest = 0;
-            let cores = [];
+            const cores = [];
             _corecount = cpus && cpus.length ? cpus.length : 0;
             if (_linux) {
               try {
@@ -21397,15 +21631,15 @@ var require_cpu = __commonJS({
               totalIrq += cpu2.irq;
               totalSteal += cpu2.steal || 0;
               totalGuest += cpu2.guest || 0;
-              let tmpTick = _cpus && _cpus[i] && _cpus[i].totalTick ? _cpus[i].totalTick : 0;
-              let tmpLoad = _cpus && _cpus[i] && _cpus[i].totalLoad ? _cpus[i].totalLoad : 0;
-              let tmpUser = _cpus && _cpus[i] && _cpus[i].user ? _cpus[i].user : 0;
-              let tmpSystem = _cpus && _cpus[i] && _cpus[i].sys ? _cpus[i].sys : 0;
-              let tmpNice = _cpus && _cpus[i] && _cpus[i].nice ? _cpus[i].nice : 0;
-              let tmpIdle = _cpus && _cpus[i] && _cpus[i].idle ? _cpus[i].idle : 0;
-              let tmpIrq = _cpus && _cpus[i] && _cpus[i].irq ? _cpus[i].irq : 0;
-              let tmpSteal = _cpus && _cpus[i] && _cpus[i].steal ? _cpus[i].steal : 0;
-              let tmpGuest = _cpus && _cpus[i] && _cpus[i].guest ? _cpus[i].guest : 0;
+              const tmpTick = _cpus && _cpus[i] && _cpus[i].totalTick ? _cpus[i].totalTick : 0;
+              const tmpLoad = _cpus && _cpus[i] && _cpus[i].totalLoad ? _cpus[i].totalLoad : 0;
+              const tmpUser = _cpus && _cpus[i] && _cpus[i].user ? _cpus[i].user : 0;
+              const tmpSystem = _cpus && _cpus[i] && _cpus[i].sys ? _cpus[i].sys : 0;
+              const tmpNice = _cpus && _cpus[i] && _cpus[i].nice ? _cpus[i].nice : 0;
+              const tmpIdle = _cpus && _cpus[i] && _cpus[i].idle ? _cpus[i].idle : 0;
+              const tmpIrq = _cpus && _cpus[i] && _cpus[i].irq ? _cpus[i].irq : 0;
+              const tmpSteal = _cpus && _cpus[i] && _cpus[i].steal ? _cpus[i].steal : 0;
+              const tmpGuest = _cpus && _cpus[i] && _cpus[i].guest ? _cpus[i].guest : 0;
               _cpus[i] = cpu2;
               _cpus[i].totalTick = _cpus[i].user + _cpus[i].sys + _cpus[i].nice + _cpus[i].irq + _cpus[i].steal + _cpus[i].guest + _cpus[i].idle;
               _cpus[i].totalLoad = _cpus[i].user + _cpus[i].sys + _cpus[i].nice + _cpus[i].irq + _cpus[i].steal + _cpus[i].guest;
@@ -21436,9 +21670,9 @@ var require_cpu = __commonJS({
               cores[i].rawLoadSteal = _cpus[i].loadSteal;
               cores[i].rawLoadGuest = _cpus[i].loadGuest;
             }
-            let totalTick = totalUser + totalSystem + totalNice + totalIrq + totalSteal + totalGuest + totalIdle;
-            let totalLoad = totalUser + totalSystem + totalNice + totalIrq + totalSteal + totalGuest;
-            let currentTick = totalTick - _current_cpu.tick;
+            const totalTick = totalUser + totalSystem + totalNice + totalIrq + totalSteal + totalGuest + totalIdle;
+            const totalLoad = totalUser + totalSystem + totalNice + totalIrq + totalSteal + totalGuest;
+            const currentTick = totalTick - _current_cpu.tick;
             result2 = {
               avgLoad,
               currentLoad: (totalLoad - _current_cpu.load) / currentTick * 100,
@@ -21488,7 +21722,7 @@ var require_cpu = __commonJS({
               rawCurrentLoadGuest: result2.rawCurrentLoadGuest
             };
           } else {
-            let cores = [];
+            const cores = [];
             for (let i = 0; i < _corecount; i++) {
               cores[i] = {};
               cores[i].load = _cpus[i].load / _cpus[i].currentTick * 100;
@@ -21547,7 +21781,7 @@ var require_cpu = __commonJS({
     function getFullLoad() {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          const cpus = os2.cpus();
+          const cpus = os4.cpus();
           let totalUser = 0;
           let totalSystem = 0;
           let totalNice = 0;
@@ -21563,7 +21797,7 @@ var require_cpu = __commonJS({
               totalIrq += cpu2.irq;
               totalIdle += cpu2.idle;
             }
-            let totalTicks = totalIdle + totalIrq + totalNice + totalSystem + totalUser;
+            const totalTicks = totalIdle + totalIrq + totalNice + totalSystem + totalUser;
             result2 = (totalTicks - totalIdle) / totalTicks * 100;
           }
           resolve(result2);
@@ -21590,8 +21824,8 @@ var require_cpu = __commonJS({
 var require_memory = __commonJS({
   "node_modules/systeminformation/lib/memory.js"(exports) {
     "use strict";
-    var os2 = require("os");
-    var exec2 = require("child_process").exec;
+    var os4 = require("os");
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var util = require_util2();
     var fs = require("fs");
@@ -21603,56 +21837,51 @@ var require_memory = __commonJS({
     var _openbsd = _platform === "openbsd";
     var _netbsd = _platform === "netbsd";
     var _sunos = _platform === "sunos";
-    var OSX_RAM_manufacturers = {
-      "0x014F": "Transcend Information",
-      "0x2C00": "Micron Technology Inc.",
-      "0x802C": "Micron Technology Inc.",
-      "0x80AD": "Hynix Semiconductor Inc.",
-      "0x80CE": "Samsung Electronics Inc.",
-      "0xAD00": "Hynix Semiconductor Inc.",
-      "0xCE00": "Samsung Electronics Inc.",
-      "0x02FE": "Elpida",
-      "0x5105": "Qimonda AG i. In.",
-      "0x8551": "Qimonda AG i. In.",
-      "0x859B": "Crucial",
-      "0x04CD": "G-Skill"
-    };
-    var LINUX_RAM_manufacturers = {
-      "017A": "Apacer",
+    var RAM_manufacturers = {
+      "00CE": "Samsung Electronics Inc",
+      "014F": "Transcend Information Inc.",
+      "017A": "Apacer Technology Inc.",
       "0198": "HyperX",
       "029E": "Corsair",
+      "02FE": "Elpida",
       "04CB": "A-DATA",
-      "04CD": "G-Skill",
+      "04CD": "G.Skill International Enterprise",
       "059B": "Crucial",
-      "00CE": "Samsung",
-      "1315": "Crucial",
-      "014F": "Transcend Information",
+      1315: "Crucial",
       "2C00": "Micron Technology Inc.",
+      5105: "Qimonda AG i. In.",
       "802C": "Micron Technology Inc.",
       "80AD": "Hynix Semiconductor Inc.",
       "80CE": "Samsung Electronics Inc.",
-      "AD00": "Hynix Semiconductor Inc.",
-      "CE00": "Samsung Electronics Inc.",
-      "02FE": "Elpida",
-      "5105": "Qimonda AG i. In.",
-      "8551": "Qimonda AG i. In.",
-      "859B": "Crucial"
+      8551: "Qimonda AG i. In.",
+      "859B": "Crucial",
+      AD00: "Hynix Semiconductor Inc.",
+      CE00: "Samsung Electronics Inc.",
+      SAMSUNG: "Samsung Electronics Inc.",
+      HYNIX: "Hynix Semiconductor Inc.",
+      "G-SKILL": "G-Skill International Enterprise",
+      "G.SKILL": "G-Skill International Enterprise",
+      TRANSCEND: "Transcend Information",
+      APACER: "Apacer Technology Inc",
+      MICRON: "Micron Technology Inc.",
+      QIMONDA: "Qimonda AG i. In."
     };
     function mem(callback) {
       return new Promise((resolve) => {
         process.nextTick(() => {
           let result2 = {
-            total: os2.totalmem(),
-            free: os2.freemem(),
-            used: os2.totalmem() - os2.freemem(),
-            active: os2.totalmem() - os2.freemem(),
+            total: os4.totalmem(),
+            free: os4.freemem(),
+            used: os4.totalmem() - os4.freemem(),
+            active: os4.totalmem() - os4.freemem(),
             // temporarily (fallback)
-            available: os2.freemem(),
+            available: os4.freemem(),
             // temporarily (fallback)
             buffers: 0,
             cached: 0,
             slab: 0,
             buffcache: 0,
+            reclaimable: 0,
             swaptotal: 0,
             swapused: 0,
             swapfree: 0,
@@ -21661,13 +21890,13 @@ var require_memory = __commonJS({
           };
           if (_linux) {
             try {
-              fs.readFile("/proc/meminfo", function(error, stdout) {
+              fs.readFile("/proc/meminfo", (error, stdout) => {
                 if (!error) {
                   const lines = stdout.toString().split("\n");
                   result2.total = parseInt(util.getValue(lines, "memtotal"), 10);
-                  result2.total = result2.total ? result2.total * 1024 : os2.totalmem();
+                  result2.total = result2.total ? result2.total * 1024 : os4.totalmem();
                   result2.free = parseInt(util.getValue(lines, "memfree"), 10);
-                  result2.free = result2.free ? result2.free * 1024 : os2.freemem();
+                  result2.free = result2.free ? result2.free * 1024 : os4.freemem();
                   result2.used = result2.total - result2.free;
                   result2.buffers = parseInt(util.getValue(lines, "buffers"), 10);
                   result2.buffers = result2.buffers ? result2.buffers * 1024 : 0;
@@ -21688,6 +21917,8 @@ var require_memory = __commonJS({
                   result2.writeback = result2.writeback ? result2.writeback * 1024 : 0;
                   result2.dirty = parseInt(util.getValue(lines, "dirty"), 10);
                   result2.dirty = result2.dirty ? result2.dirty * 1024 : 0;
+                  result2.reclaimable = parseInt(util.getValue(lines, "sreclaimable"), 10);
+                  result2.reclaimable = result2.reclaimable ? result2.reclaimable * 1024 : 0;
                 }
                 if (callback) {
                   callback(result2);
@@ -21703,29 +21934,32 @@ var require_memory = __commonJS({
           }
           if (_freebsd || _openbsd || _netbsd) {
             try {
-              exec2("/sbin/sysctl hw.realmem hw.physmem vm.stats.vm.v_page_count vm.stats.vm.v_wire_count vm.stats.vm.v_active_count vm.stats.vm.v_inactive_count vm.stats.vm.v_cache_count vm.stats.vm.v_free_count vm.stats.vm.v_page_size", function(error, stdout) {
-                if (!error) {
-                  let lines = stdout.toString().split("\n");
-                  const pagesize = parseInt(util.getValue(lines, "vm.stats.vm.v_page_size"), 10);
-                  const inactive = parseInt(util.getValue(lines, "vm.stats.vm.v_inactive_count"), 10) * pagesize;
-                  const cache = parseInt(util.getValue(lines, "vm.stats.vm.v_cache_count"), 10) * pagesize;
-                  result2.total = parseInt(util.getValue(lines, "hw.realmem"), 10);
-                  if (isNaN(result2.total)) {
-                    result2.total = parseInt(util.getValue(lines, "hw.physmem"), 10);
+              exec(
+                "/sbin/sysctl hw.realmem hw.physmem vm.stats.vm.v_page_count vm.stats.vm.v_wire_count vm.stats.vm.v_active_count vm.stats.vm.v_inactive_count vm.stats.vm.v_cache_count vm.stats.vm.v_free_count vm.stats.vm.v_page_size",
+                (error, stdout) => {
+                  if (!error) {
+                    const lines = stdout.toString().split("\n");
+                    const pagesize = parseInt(util.getValue(lines, "vm.stats.vm.v_page_size"), 10);
+                    const inactive = parseInt(util.getValue(lines, "vm.stats.vm.v_inactive_count"), 10) * pagesize;
+                    const cache = parseInt(util.getValue(lines, "vm.stats.vm.v_cache_count"), 10) * pagesize;
+                    result2.total = parseInt(util.getValue(lines, "hw.realmem"), 10);
+                    if (isNaN(result2.total)) {
+                      result2.total = parseInt(util.getValue(lines, "hw.physmem"), 10);
+                    }
+                    result2.free = parseInt(util.getValue(lines, "vm.stats.vm.v_free_count"), 10) * pagesize;
+                    result2.buffcache = inactive + cache;
+                    result2.available = result2.buffcache + result2.free;
+                    result2.active = result2.total - result2.free - result2.buffcache;
+                    result2.swaptotal = 0;
+                    result2.swapfree = 0;
+                    result2.swapused = 0;
                   }
-                  result2.free = parseInt(util.getValue(lines, "vm.stats.vm.v_free_count"), 10) * pagesize;
-                  result2.buffcache = inactive + cache;
-                  result2.available = result2.buffcache + result2.free;
-                  result2.active = result2.total - result2.free - result2.buffcache;
-                  result2.swaptotal = 0;
-                  result2.swapfree = 0;
-                  result2.swapused = 0;
+                  if (callback) {
+                    callback(result2);
+                  }
+                  resolve(result2);
                 }
-                if (callback) {
-                  callback(result2);
-                }
-                resolve(result2);
-              });
+              );
             } catch (e) {
               if (callback) {
                 callback(result2);
@@ -21748,14 +21982,15 @@ var require_memory = __commonJS({
               util.noop();
             }
             try {
-              exec2('vm_stat 2>/dev/null | grep "Pages active"', function(error, stdout) {
+              exec('vm_stat 2>/dev/null | egrep "Pages active|Pages inactive"', (error, stdout) => {
                 if (!error) {
                   let lines = stdout.toString().split("\n");
-                  result2.active = parseInt(lines[0].split(":")[1], 10) * pageSize;
+                  result2.active = (parseInt(util.getValue(lines, "Pages active"), 10) || 0) * pageSize;
+                  result2.reclaimable = (parseInt(util.getValue(lines, "Pages inactive"), 10) || 0) * pageSize;
                   result2.buffcache = result2.used - result2.active;
                   result2.available = result2.free + result2.buffcache;
                 }
-                exec2("sysctl -n vm.swapusage 2>/dev/null", function(error2, stdout2) {
+                exec("sysctl -n vm.swapusage 2>/dev/null", (error2, stdout2) => {
                   if (!error2) {
                     let lines = stdout2.toString().split("\n");
                     if (lines.length > 0) {
@@ -21794,7 +22029,7 @@ var require_memory = __commonJS({
               util.powerShell("Get-CimInstance Win32_PageFileUsage | Select AllocatedBaseSize, CurrentUsage").then((stdout, error) => {
                 if (!error) {
                   let lines = stdout.split("\r\n").filter((line) => line.trim() !== "").filter((line, idx) => idx > 0);
-                  lines.forEach(function(line) {
+                  lines.forEach((line) => {
                     if (line !== "") {
                       line = line.trim().split(/\s\s+/);
                       swaptotal = swaptotal + (parseInt(line[0], 10) || 0);
@@ -21822,16 +22057,10 @@ var require_memory = __commonJS({
     }
     exports.mem = mem;
     function memLayout(callback) {
-      function getManufacturerDarwin(manId) {
-        if ({}.hasOwnProperty.call(OSX_RAM_manufacturers, manId)) {
-          return OSX_RAM_manufacturers[manId];
-        }
-        return manId;
-      }
-      function getManufacturerLinux(manId) {
+      function getManufacturer(manId) {
         const manIdSearch = manId.replace("0x", "").toUpperCase();
-        if (manIdSearch.length === 4 && {}.hasOwnProperty.call(LINUX_RAM_manufacturers, manIdSearch)) {
-          return LINUX_RAM_manufacturers[manIdSearch];
+        if (manIdSearch.length >= 4 && {}.hasOwnProperty.call(RAM_manufacturers, manIdSearch)) {
+          return RAM_manufacturers[manIdSearch];
         }
         return manId;
       }
@@ -21839,112 +22068,115 @@ var require_memory = __commonJS({
         process.nextTick(() => {
           let result2 = [];
           if (_linux || _freebsd || _openbsd || _netbsd) {
-            exec2('export LC_ALL=C; dmidecode -t memory 2>/dev/null | grep -iE "Size:|Type|Speed|Manufacturer|Form Factor|Locator|Memory Device|Serial Number|Voltage|Part Number"; unset LC_ALL', function(error, stdout) {
-              if (!error) {
-                let devices = stdout.toString().split("Memory Device");
-                devices.shift();
-                devices.forEach(function(device) {
-                  let lines = device.split("\n");
-                  const sizeString = util.getValue(lines, "Size");
-                  const size = sizeString.indexOf("GB") >= 0 ? parseInt(sizeString, 10) * 1024 * 1024 * 1024 : parseInt(sizeString, 10) * 1024 * 1024;
-                  let bank = util.getValue(lines, "Bank Locator");
-                  if (bank.toLowerCase().indexOf("bad") >= 0) {
-                    bank = "";
-                  }
-                  if (parseInt(util.getValue(lines, "Size"), 10) > 0) {
-                    const totalWidth = util.toInt(util.getValue(lines, "Total Width"));
-                    const dataWidth = util.toInt(util.getValue(lines, "Data Width"));
-                    result2.push({
-                      size,
-                      bank,
-                      type: util.getValue(lines, "Type:"),
-                      ecc: dataWidth && totalWidth ? totalWidth > dataWidth : false,
-                      clockSpeed: util.getValue(lines, "Configured Clock Speed:") ? parseInt(util.getValue(lines, "Configured Clock Speed:"), 10) : util.getValue(lines, "Speed:") ? parseInt(util.getValue(lines, "Speed:"), 10) : null,
-                      formFactor: util.getValue(lines, "Form Factor:"),
-                      manufacturer: getManufacturerLinux(util.getValue(lines, "Manufacturer:")),
-                      partNum: util.getValue(lines, "Part Number:"),
-                      serialNum: util.getValue(lines, "Serial Number:"),
-                      voltageConfigured: parseFloat(util.getValue(lines, "Configured Voltage:")) || null,
-                      voltageMin: parseFloat(util.getValue(lines, "Minimum Voltage:")) || null,
-                      voltageMax: parseFloat(util.getValue(lines, "Maximum Voltage:")) || null
-                    });
-                  } else {
-                    result2.push({
-                      size: 0,
-                      bank,
-                      type: "Empty",
-                      ecc: null,
-                      clockSpeed: 0,
-                      formFactor: util.getValue(lines, "Form Factor:"),
-                      partNum: "",
-                      serialNum: "",
-                      voltageConfigured: null,
-                      voltageMin: null,
-                      voltageMax: null
-                    });
-                  }
-                });
-              }
-              if (!result2.length) {
-                result2.push({
-                  size: os2.totalmem(),
-                  bank: "",
-                  type: "",
-                  ecc: null,
-                  clockSpeed: 0,
-                  formFactor: "",
-                  partNum: "",
-                  serialNum: "",
-                  voltageConfigured: null,
-                  voltageMin: null,
-                  voltageMax: null
-                });
-                try {
-                  let stdout2 = execSync("cat /proc/cpuinfo 2>/dev/null", util.execOptsLinux);
-                  let lines = stdout2.toString().split("\n");
-                  let version = util.getValue(lines, "revision", ":", true).toLowerCase();
-                  if (util.isRaspberry(lines)) {
-                    const clockSpeed = {
-                      "0": 400,
-                      "1": 450,
-                      "2": 450,
-                      "3": 3200,
-                      "4": 4267
-                    };
-                    result2[0].type = "LPDDR2";
-                    result2[0].type = version && version[2] && version[2] === "3" ? "LPDDR4" : result2[0].type;
-                    result2[0].type = version && version[2] && version[2] === "4" ? "LPDDR4X" : result2[0].type;
-                    result2[0].ecc = false;
-                    result2[0].clockSpeed = version && version[2] && clockSpeed[version[2]] || 400;
-                    result2[0].clockSpeed = version && version[4] && version[4] === "d" ? 500 : result2[0].clockSpeed;
-                    result2[0].formFactor = "SoC";
-                    stdout2 = execSync("vcgencmd get_config sdram_freq 2>/dev/null", util.execOptsLinux);
-                    lines = stdout2.toString().split("\n");
-                    let freq = parseInt(util.getValue(lines, "sdram_freq", "=", true), 10) || 0;
-                    if (freq) {
-                      result2[0].clockSpeed = freq;
+            exec(
+              'export LC_ALL=C; dmidecode -t memory 2>/dev/null | grep -iE "Size:|Type|Speed|Manufacturer|Form Factor|Locator|Memory Device|Serial Number|Voltage|Part Number"; unset LC_ALL',
+              (error, stdout) => {
+                if (!error) {
+                  const devices = stdout.toString().split("Memory Device");
+                  devices.shift();
+                  devices.forEach((device) => {
+                    const lines = device.split("\n");
+                    const sizeString = util.getValue(lines, "Size");
+                    const size = sizeString.indexOf("GB") >= 0 ? parseInt(sizeString, 10) * 1024 * 1024 * 1024 : parseInt(sizeString, 10) * 1024 * 1024;
+                    let bank = util.getValue(lines, "Bank Locator");
+                    if (bank.toLowerCase().indexOf("bad") >= 0) {
+                      bank = "";
                     }
-                    stdout2 = execSync("vcgencmd measure_volts sdram_p 2>/dev/null", util.execOptsLinux);
-                    lines = stdout2.toString().split("\n");
-                    let voltage = parseFloat(util.getValue(lines, "volt", "=", true)) || 0;
-                    if (voltage) {
-                      result2[0].voltageConfigured = voltage;
-                      result2[0].voltageMin = voltage;
-                      result2[0].voltageMax = voltage;
+                    if (parseInt(util.getValue(lines, "Size"), 10) > 0) {
+                      const totalWidth = util.toInt(util.getValue(lines, "Total Width"));
+                      const dataWidth = util.toInt(util.getValue(lines, "Data Width"));
+                      result2.push({
+                        size,
+                        bank,
+                        type: util.getValue(lines, "Type:"),
+                        ecc: dataWidth && totalWidth ? totalWidth > dataWidth : false,
+                        clockSpeed: util.getValue(lines, "Configured Clock Speed:") ? parseInt(util.getValue(lines, "Configured Clock Speed:"), 10) : util.getValue(lines, "Speed:") ? parseInt(util.getValue(lines, "Speed:"), 10) : null,
+                        formFactor: util.getValue(lines, "Form Factor:"),
+                        manufacturer: getManufacturer(util.getValue(lines, "Manufacturer:")),
+                        partNum: util.getValue(lines, "Part Number:"),
+                        serialNum: util.getValue(lines, "Serial Number:"),
+                        voltageConfigured: parseFloat(util.getValue(lines, "Configured Voltage:")) || null,
+                        voltageMin: parseFloat(util.getValue(lines, "Minimum Voltage:")) || null,
+                        voltageMax: parseFloat(util.getValue(lines, "Maximum Voltage:")) || null
+                      });
+                    } else {
+                      result2.push({
+                        size: 0,
+                        bank,
+                        type: "Empty",
+                        ecc: null,
+                        clockSpeed: 0,
+                        formFactor: util.getValue(lines, "Form Factor:"),
+                        partNum: "",
+                        serialNum: "",
+                        voltageConfigured: null,
+                        voltageMin: null,
+                        voltageMax: null
+                      });
                     }
-                  }
-                } catch (e) {
-                  util.noop();
+                  });
                 }
+                if (!result2.length) {
+                  result2.push({
+                    size: os4.totalmem(),
+                    bank: "",
+                    type: "",
+                    ecc: null,
+                    clockSpeed: 0,
+                    formFactor: "",
+                    partNum: "",
+                    serialNum: "",
+                    voltageConfigured: null,
+                    voltageMin: null,
+                    voltageMax: null
+                  });
+                  try {
+                    let stdout2 = execSync("cat /proc/cpuinfo 2>/dev/null", util.execOptsLinux);
+                    let lines = stdout2.toString().split("\n");
+                    let version = util.getValue(lines, "revision", ":", true).toLowerCase();
+                    if (util.isRaspberry(lines)) {
+                      const clockSpeed = {
+                        0: 400,
+                        1: 450,
+                        2: 450,
+                        3: 3200,
+                        4: 4267
+                      };
+                      result2[0].type = "LPDDR2";
+                      result2[0].type = version && version[2] && version[2] === "3" ? "LPDDR4" : result2[0].type;
+                      result2[0].type = version && version[2] && version[2] === "4" ? "LPDDR4X" : result2[0].type;
+                      result2[0].ecc = false;
+                      result2[0].clockSpeed = version && version[2] && clockSpeed[version[2]] || 400;
+                      result2[0].clockSpeed = version && version[4] && version[4] === "d" ? 500 : result2[0].clockSpeed;
+                      result2[0].formFactor = "SoC";
+                      stdout2 = execSync("vcgencmd get_config sdram_freq 2>/dev/null", util.execOptsLinux);
+                      lines = stdout2.toString().split("\n");
+                      let freq = parseInt(util.getValue(lines, "sdram_freq", "=", true), 10) || 0;
+                      if (freq) {
+                        result2[0].clockSpeed = freq;
+                      }
+                      stdout2 = execSync("vcgencmd measure_volts sdram_p 2>/dev/null", util.execOptsLinux);
+                      lines = stdout2.toString().split("\n");
+                      let voltage = parseFloat(util.getValue(lines, "volt", "=", true)) || 0;
+                      if (voltage) {
+                        result2[0].voltageConfigured = voltage;
+                        result2[0].voltageMin = voltage;
+                        result2[0].voltageMax = voltage;
+                      }
+                    }
+                  } catch (e) {
+                    util.noop();
+                  }
+                }
+                if (callback) {
+                  callback(result2);
+                }
+                resolve(result2);
               }
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            });
+            );
           }
           if (_darwin) {
-            exec2("system_profiler SPMemoryDataType", function(error, stdout) {
+            exec("system_profiler SPMemoryDataType", (error, stdout) => {
               if (!error) {
                 const allLines = stdout.toString().split("\n");
                 const eccStatus = util.getValue(allLines, "ecc", ":", true).toLowerCase();
@@ -21955,8 +22187,8 @@ var require_memory = __commonJS({
                   hasBank = false;
                 }
                 devices.shift();
-                devices.forEach(function(device) {
-                  let lines = device.split("\n");
+                devices.forEach((device) => {
+                  const lines = device.split("\n");
                   const bank = (hasBank ? "BANK " : "DIMM") + lines[0].trim().split("/")[0];
                   const size = parseInt(util.getValue(lines, "          Size"));
                   if (size) {
@@ -21967,7 +22199,7 @@ var require_memory = __commonJS({
                       ecc: eccStatus ? eccStatus === "enabled" : null,
                       clockSpeed: parseInt(util.getValue(lines, "          Speed:"), 10),
                       formFactor: "",
-                      manufacturer: getManufacturerDarwin(util.getValue(lines, "          Manufacturer:")),
+                      manufacturer: getManufacturer(util.getValue(lines, "          Manufacturer:")),
                       partNum: util.getValue(lines, "          Part Number:"),
                       serialNum: util.getValue(lines, "          Serial Number:"),
                       voltageConfigured: null,
@@ -22005,7 +22237,7 @@ var require_memory = __commonJS({
                     ecc: false,
                     clockSpeed: null,
                     formFactor: "SOC",
-                    manufacturer: getManufacturerDarwin(manufacturerId),
+                    manufacturer: getManufacturer(manufacturerId),
                     partNum: "",
                     serialNum: "",
                     voltageConfigured: null,
@@ -22027,15 +22259,19 @@ var require_memory = __commonJS({
             resolve(result2);
           }
           if (_windows) {
-            const memoryTypes = "Unknown|Other|DRAM|Synchronous DRAM|Cache DRAM|EDO|EDRAM|VRAM|SRAM|RAM|ROM|FLASH|EEPROM|FEPROM|EPROM|CDRAM|3DRAM|SDRAM|SGRAM|RDRAM|DDR|DDR2|DDR2 FB-DIMM|Reserved|DDR3|FBD2|DDR4|LPDDR|LPDDR2|LPDDR3|LPDDR4|Logical non-volatile device|HBM|HBM2|DDR5|LPDDR5".split("|");
+            const memoryTypes = "Unknown|Other|DRAM|Synchronous DRAM|Cache DRAM|EDO|EDRAM|VRAM|SRAM|RAM|ROM|FLASH|EEPROM|FEPROM|EPROM|CDRAM|3DRAM|SDRAM|SGRAM|RDRAM|DDR|DDR2|DDR2 FB-DIMM|Reserved|DDR3|FBD2|DDR4|LPDDR|LPDDR2|LPDDR3|LPDDR4|Logical non-volatile device|HBM|HBM2|DDR5|LPDDR5".split(
+              "|"
+            );
             const FormFactors = "Unknown|Other|SIP|DIP|ZIP|SOJ|Proprietary|SIMM|DIMM|TSOP|PGA|RIMM|SODIMM|SRIMM|SMD|SSMP|QFP|TQFP|SOIC|LCC|PLCC|BGA|FPBGA|LGA".split("|");
             try {
-              util.powerShell("Get-CimInstance Win32_PhysicalMemory | select DataWidth,TotalWidth,Capacity,BankLabel,MemoryType,SMBIOSMemoryType,ConfiguredClockSpeed,Speed,FormFactor,Manufacturer,PartNumber,SerialNumber,ConfiguredVoltage,MinVoltage,MaxVoltage,Tag | fl").then((stdout, error) => {
+              util.powerShell(
+                "Get-CimInstance Win32_PhysicalMemory | select DataWidth,TotalWidth,Capacity,BankLabel,MemoryType,SMBIOSMemoryType,ConfiguredClockSpeed,Speed,FormFactor,Manufacturer,PartNumber,SerialNumber,ConfiguredVoltage,MinVoltage,MaxVoltage,Tag | fl"
+              ).then((stdout, error) => {
                 if (!error) {
-                  let devices = stdout.toString().split(/\n\s*\n/);
+                  const devices = stdout.toString().split(/\n\s*\n/);
                   devices.shift();
-                  devices.forEach(function(device) {
-                    let lines = device.split("\r\n");
+                  devices.forEach((device) => {
+                    const lines = device.split("\r\n");
                     const dataWidth = util.toInt(util.getValue(lines, "DataWidth", ":"));
                     const totalWidth = util.toInt(util.getValue(lines, "TotalWidth", ":"));
                     const size = parseInt(util.getValue(lines, "Capacity", ":"), 10) || 0;
@@ -22050,7 +22286,7 @@ var require_memory = __commonJS({
                         ecc: dataWidth && totalWidth ? totalWidth > dataWidth : false,
                         clockSpeed: parseInt(util.getValue(lines, "ConfiguredClockSpeed", ":"), 10) || parseInt(util.getValue(lines, "Speed", ":"), 10) || 0,
                         formFactor: FormFactors[parseInt(util.getValue(lines, "FormFactor", ":"), 10) || 0],
-                        manufacturer: util.getValue(lines, "Manufacturer", ":"),
+                        manufacturer: getManufacturer(util.getValue(lines, "Manufacturer", ":")),
                         partNum: util.getValue(lines, "PartNumber", ":"),
                         serialNum: util.getValue(lines, "SerialNumber", ":"),
                         voltageConfigured: (parseInt(util.getValue(lines, "ConfiguredVoltage", ":"), 10) || 0) / 1e3,
@@ -22083,7 +22319,7 @@ var require_memory = __commonJS({
 var require_battery = __commonJS({
   "node_modules/systeminformation/lib/battery.js"(exports, module2) {
     "use strict";
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var fs = require("fs");
     var util = require_util2();
     var _platform = process.platform;
@@ -22096,16 +22332,16 @@ var require_battery = __commonJS({
     var _sunos = _platform === "sunos";
     function parseWinBatteryPart(lines, designedCapacity, fullChargeCapacity) {
       const result2 = {};
-      let status = util.getValue(lines, "BatteryStatus", ":").trim();
+      let status = parseInt(util.getValue(lines, "BatteryStatus", ":").trim(), 10) || 0;
       if (status >= 0) {
-        const statusValue = status ? parseInt(status) : 0;
+        const statusValue = status;
         result2.status = statusValue;
         result2.hasBattery = true;
         result2.maxCapacity = fullChargeCapacity || parseInt(util.getValue(lines, "DesignCapacity", ":") || 0);
         result2.designedCapacity = parseInt(util.getValue(lines, "DesignCapacity", ":") || designedCapacity);
-        result2.voltage = parseInt(util.getValue(lines, "DesignVoltage", ":") || 0) / 1e3;
+        result2.voltage = (parseInt(util.getValue(lines, "DesignVoltage", ":"), 10) || 0) / 1e3;
         result2.capacityUnit = "mWh";
-        result2.percent = parseInt(util.getValue(lines, "EstimatedChargeRemaining", ":") || 0);
+        result2.percent = parseInt(util.getValue(lines, "EstimatedChargeRemaining", ":"), 10) || 0;
         result2.currentCapacity = parseInt(result2.maxCapacity * result2.percent / 100);
         result2.isCharging = statusValue >= 6 && statusValue <= 9 || statusValue === 11 || statusValue !== 3 && statusValue !== 1 && result2.percent < 100;
         result2.acConnected = result2.isCharging || statusValue === 2;
@@ -22115,127 +22351,130 @@ var require_battery = __commonJS({
       }
       return result2;
     }
-    module2.exports = function(callback) {
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          let result2 = {
-            hasBattery: false,
-            cycleCount: 0,
-            isCharging: false,
-            designedCapacity: 0,
-            maxCapacity: 0,
-            currentCapacity: 0,
-            voltage: 0,
-            capacityUnit: "",
-            percent: 0,
-            timeRemaining: null,
-            acConnected: true,
-            type: "",
-            model: "",
-            manufacturer: "",
-            serial: ""
-          };
-          if (_linux) {
-            let battery_path = "";
-            if (fs.existsSync("/sys/class/power_supply/BAT1/uevent")) {
-              battery_path = "/sys/class/power_supply/BAT1/";
-            } else if (fs.existsSync("/sys/class/power_supply/BAT0/uevent")) {
-              battery_path = "/sys/class/power_supply/BAT0/";
-            }
-            let acConnected = false;
-            let acPath = "";
-            if (fs.existsSync("/sys/class/power_supply/AC/online")) {
-              acPath = "/sys/class/power_supply/AC/online";
-            } else if (fs.existsSync("/sys/class/power_supply/AC0/online")) {
-              acPath = "/sys/class/power_supply/AC0/online";
-            }
-            if (acPath) {
-              const file = fs.readFileSync(acPath);
-              acConnected = file.toString().trim() === "1";
-            }
-            if (battery_path) {
-              fs.readFile(battery_path + "uevent", function(error, stdout) {
-                if (!error) {
-                  let lines = stdout.toString().split("\n");
-                  result2.isCharging = util.getValue(lines, "POWER_SUPPLY_STATUS", "=").toLowerCase() === "charging";
-                  result2.acConnected = acConnected || result2.isCharging;
-                  result2.voltage = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_VOLTAGE_NOW", "="), 10) / 1e6;
-                  result2.capacityUnit = result2.voltage ? "mWh" : "mAh";
-                  result2.cycleCount = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CYCLE_COUNT", "="), 10);
-                  result2.maxCapacity = Math.round(parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_FULL", "=", true, true), 10) / 1e3 * (result2.voltage || 1));
-                  const desingedMinVoltage = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_VOLTAGE_MIN_DESIGN", "="), 10) / 1e6;
-                  result2.designedCapacity = Math.round(parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_FULL_DESIGN", "=", true, true), 10) / 1e3 * (desingedMinVoltage || result2.voltage || 1));
-                  result2.currentCapacity = Math.round(parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_NOW", "="), 10) / 1e3 * (result2.voltage || 1));
-                  if (!result2.maxCapacity) {
-                    result2.maxCapacity = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_FULL", "=", true, true), 10) / 1e3;
-                    result2.designedCapacity = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_FULL_DESIGN", "=", true, true), 10) / 1e3 | result2.maxCapacity;
-                    result2.currentCapacity = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_NOW", "="), 10) / 1e3;
-                  }
-                  const percent = util.getValue(lines, "POWER_SUPPLY_CAPACITY", "=");
-                  const energy = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_NOW", "="), 10);
-                  const power = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_POWER_NOW", "="), 10);
-                  const current = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CURRENT_NOW", "="), 10);
-                  const charge = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_NOW", "="), 10);
-                  result2.percent = parseInt("0" + percent, 10);
-                  if (result2.maxCapacity && result2.currentCapacity) {
-                    result2.hasBattery = true;
-                    if (!percent) {
-                      result2.percent = 100 * result2.currentCapacity / result2.maxCapacity;
-                    }
-                  }
-                  if (result2.isCharging) {
-                    result2.hasBattery = true;
-                  }
-                  if (energy && power) {
-                    result2.timeRemaining = Math.floor(energy / power * 60);
-                  } else if (current && charge) {
-                    result2.timeRemaining = Math.floor(charge / current * 60);
-                  } else if (current && result2.currentCapacity) {
-                    result2.timeRemaining = Math.floor(result2.currentCapacity / current * 60);
-                  }
-                  result2.type = util.getValue(lines, "POWER_SUPPLY_TECHNOLOGY", "=");
-                  result2.model = util.getValue(lines, "POWER_SUPPLY_MODEL_NAME", "=");
-                  result2.manufacturer = util.getValue(lines, "POWER_SUPPLY_MANUFACTURER", "=");
-                  result2.serial = util.getValue(lines, "POWER_SUPPLY_SERIAL_NUMBER", "=");
-                  if (callback) {
-                    callback(result2);
-                  }
-                  resolve(result2);
-                } else {
-                  if (callback) {
-                    callback(result2);
-                  }
-                  resolve(result2);
+    module2.exports = (callback) => new Promise((resolve) => {
+      process.nextTick(() => {
+        let result2 = {
+          hasBattery: false,
+          cycleCount: 0,
+          isCharging: false,
+          designedCapacity: 0,
+          maxCapacity: 0,
+          currentCapacity: 0,
+          voltage: 0,
+          capacityUnit: "",
+          percent: 0,
+          timeRemaining: null,
+          acConnected: true,
+          type: "",
+          model: "",
+          manufacturer: "",
+          serial: ""
+        };
+        if (_linux) {
+          let battery_path = "";
+          if (fs.existsSync("/sys/class/power_supply/BAT1/uevent")) {
+            battery_path = "/sys/class/power_supply/BAT1/";
+          } else if (fs.existsSync("/sys/class/power_supply/BAT0/uevent")) {
+            battery_path = "/sys/class/power_supply/BAT0/";
+          }
+          let acConnected = false;
+          let acPath = "";
+          if (fs.existsSync("/sys/class/power_supply/AC/online")) {
+            acPath = "/sys/class/power_supply/AC/online";
+          } else if (fs.existsSync("/sys/class/power_supply/AC0/online")) {
+            acPath = "/sys/class/power_supply/AC0/online";
+          }
+          if (acPath) {
+            const file = fs.readFileSync(acPath);
+            acConnected = file.toString().trim() === "1";
+          }
+          if (battery_path) {
+            fs.readFile(battery_path + "uevent", (error, stdout) => {
+              if (!error) {
+                let lines = stdout.toString().split("\n");
+                result2.isCharging = util.getValue(lines, "POWER_SUPPLY_STATUS", "=").toLowerCase() === "charging";
+                result2.acConnected = acConnected || result2.isCharging;
+                result2.voltage = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_VOLTAGE_NOW", "="), 10) / 1e6;
+                result2.capacityUnit = result2.voltage ? "mWh" : "mAh";
+                result2.cycleCount = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CYCLE_COUNT", "="), 10);
+                result2.maxCapacity = Math.round(parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_FULL", "=", true, true), 10) / 1e3 * (result2.voltage || 1));
+                const desingedMinVoltage = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_VOLTAGE_MIN_DESIGN", "="), 10) / 1e6;
+                result2.designedCapacity = Math.round(
+                  parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_FULL_DESIGN", "=", true, true), 10) / 1e3 * (desingedMinVoltage || result2.voltage || 1)
+                );
+                result2.currentCapacity = Math.round(parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_NOW", "="), 10) / 1e3 * (result2.voltage || 1));
+                if (!result2.maxCapacity) {
+                  result2.maxCapacity = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_FULL", "=", true, true), 10) / 1e3;
+                  result2.designedCapacity = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_FULL_DESIGN", "=", true, true), 10) / 1e3 | result2.maxCapacity;
+                  result2.currentCapacity = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_NOW", "="), 10) / 1e3;
                 }
-              });
-            } else {
-              if (callback) {
-                callback(result2);
+                const percent = util.getValue(lines, "POWER_SUPPLY_CAPACITY", "=");
+                const energy = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_ENERGY_NOW", "="), 10);
+                const power = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_POWER_NOW", "="), 10);
+                const current = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CURRENT_NOW", "="), 10);
+                const charge = parseInt("0" + util.getValue(lines, "POWER_SUPPLY_CHARGE_NOW", "="), 10);
+                result2.percent = parseInt("0" + percent, 10);
+                if (result2.maxCapacity && result2.currentCapacity) {
+                  result2.hasBattery = true;
+                  if (!percent) {
+                    result2.percent = 100 * result2.currentCapacity / result2.maxCapacity;
+                  }
+                }
+                if (result2.isCharging) {
+                  result2.hasBattery = true;
+                }
+                if (energy && power) {
+                  result2.timeRemaining = Math.floor(energy / power * 60);
+                } else if (current && charge) {
+                  result2.timeRemaining = Math.floor(charge / current * 60);
+                } else if (current && result2.currentCapacity) {
+                  result2.timeRemaining = Math.floor(result2.currentCapacity / current * 60);
+                }
+                result2.type = util.getValue(lines, "POWER_SUPPLY_TECHNOLOGY", "=");
+                result2.model = util.getValue(lines, "POWER_SUPPLY_MODEL_NAME", "=");
+                result2.manufacturer = util.getValue(lines, "POWER_SUPPLY_MANUFACTURER", "=");
+                result2.serial = util.getValue(lines, "POWER_SUPPLY_SERIAL_NUMBER", "=");
+                if (callback) {
+                  callback(result2);
+                }
+                resolve(result2);
+              } else {
+                if (callback) {
+                  callback(result2);
+                }
+                resolve(result2);
               }
-              resolve(result2);
-            }
-          }
-          if (_freebsd || _openbsd || _netbsd) {
-            exec2("sysctl -i hw.acpi.battery hw.acpi.acline", function(error, stdout) {
-              let lines = stdout.toString().split("\n");
-              const batteries = parseInt("0" + util.getValue(lines, "hw.acpi.battery.units"), 10);
-              const percent = parseInt("0" + util.getValue(lines, "hw.acpi.battery.life"), 10);
-              result2.hasBattery = batteries > 0;
-              result2.cycleCount = null;
-              result2.isCharging = util.getValue(lines, "hw.acpi.acline") !== "1";
-              result2.acConnected = result2.isCharging;
-              result2.maxCapacity = null;
-              result2.currentCapacity = null;
-              result2.capacityUnit = "unknown";
-              result2.percent = batteries ? percent : null;
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
             });
+          } else {
+            if (callback) {
+              callback(result2);
+            }
+            resolve(result2);
           }
-          if (_darwin) {
-            exec2('ioreg -n AppleSmartBattery -r | egrep "CycleCount|IsCharging|DesignCapacity|MaxCapacity|CurrentCapacity|DeviceName|BatterySerialNumber|Serial|TimeRemaining|Voltage"; pmset -g batt | grep %', function(error, stdout) {
+        }
+        if (_freebsd || _openbsd || _netbsd) {
+          exec("sysctl -i hw.acpi.battery hw.acpi.acline", (error, stdout) => {
+            let lines = stdout.toString().split("\n");
+            const batteries = parseInt("0" + util.getValue(lines, "hw.acpi.battery.units"), 10);
+            const percent = parseInt("0" + util.getValue(lines, "hw.acpi.battery.life"), 10);
+            result2.hasBattery = batteries > 0;
+            result2.cycleCount = null;
+            result2.isCharging = util.getValue(lines, "hw.acpi.acline") !== "1";
+            result2.acConnected = result2.isCharging;
+            result2.maxCapacity = null;
+            result2.currentCapacity = null;
+            result2.capacityUnit = "unknown";
+            result2.percent = batteries ? percent : null;
+            if (callback) {
+              callback(result2);
+            }
+            resolve(result2);
+          });
+        }
+        if (_darwin) {
+          exec(
+            'ioreg -n AppleSmartBattery -r | egrep "CycleCount|IsCharging|DesignCapacity|MaxCapacity|CurrentCapacity|DeviceName|BatterySerialNumber|Serial|TimeRemaining|Voltage"; pmset -g batt | grep %',
+            (error, stdout) => {
               if (stdout) {
                 let lines = stdout.toString().replace(/ +/g, "").replace(/"+/g, "").replace(/-/g, "").split("\n");
                 result2.cycleCount = parseInt("0" + util.getValue(lines, "cyclecount", "="), 10);
@@ -22276,102 +22515,95 @@ var require_battery = __commonJS({
                 callback(result2);
               }
               resolve(result2);
-            });
+            }
+          );
+        }
+        if (_sunos) {
+          if (callback) {
+            callback(result2);
           }
-          if (_sunos) {
+          resolve(result2);
+        }
+        if (_windows) {
+          try {
+            const workload = [];
+            workload.push(util.powerShell("Get-CimInstance Win32_Battery | select BatteryStatus, DesignCapacity, DesignVoltage, EstimatedChargeRemaining, DeviceID | fl"));
+            workload.push(util.powerShell("(Get-WmiObject -Class BatteryStaticData -Namespace ROOT/WMI).DesignedCapacity"));
+            workload.push(util.powerShell("(Get-CimInstance -Class BatteryFullChargedCapacity -Namespace ROOT/WMI).FullChargedCapacity"));
+            util.promiseAll(workload).then((data) => {
+              if (data) {
+                const parts = data.results[0].split(/\n\s*\n/);
+                const batteries = [];
+                const hasValue = (value) => /\S/.test(value);
+                for (let i = 0; i < parts.length; i++) {
+                  if (hasValue(parts[i])) {
+                    batteries.push(parts[i]);
+                  }
+                }
+                const designCapacities = data.results[1].split("\r\n").filter((e) => e);
+                const fullChargeCapacities = data.results[2].split("\r\n").filter((e) => e);
+                if (batteries.length) {
+                  let first = false;
+                  const additionalBatteries = [];
+                  for (let i = 0; i < batteries.length; i++) {
+                    const lines = batteries[i].split("\r\n");
+                    const designedCapacity = designCapacities && designCapacities.length >= i + 1 && designCapacities[i] ? util.toInt(designCapacities[i]) : 0;
+                    const fullChargeCapacity = fullChargeCapacities && fullChargeCapacities.length >= i + 1 && fullChargeCapacities[i] ? util.toInt(fullChargeCapacities[i]) : 0;
+                    const parsed = parseWinBatteryPart(lines, designedCapacity, fullChargeCapacity);
+                    if (!first && parsed.status > 0 && parsed.status !== 10) {
+                      result2.hasBattery = parsed.hasBattery;
+                      result2.maxCapacity = parsed.maxCapacity;
+                      result2.designedCapacity = parsed.designedCapacity;
+                      result2.voltage = parsed.voltage;
+                      result2.capacityUnit = parsed.capacityUnit;
+                      result2.percent = parsed.percent;
+                      result2.currentCapacity = parsed.currentCapacity;
+                      result2.isCharging = parsed.isCharging;
+                      result2.acConnected = parsed.acConnected;
+                      result2.model = parsed.model;
+                      first = true;
+                    } else if (parsed.status !== -1) {
+                      additionalBatteries.push({
+                        hasBattery: parsed.hasBattery,
+                        maxCapacity: parsed.maxCapacity,
+                        designedCapacity: parsed.designedCapacity,
+                        voltage: parsed.voltage,
+                        capacityUnit: parsed.capacityUnit,
+                        percent: parsed.percent,
+                        currentCapacity: parsed.currentCapacity,
+                        isCharging: parsed.isCharging,
+                        timeRemaining: null,
+                        acConnected: parsed.acConnected,
+                        model: parsed.model,
+                        type: "",
+                        manufacturer: "",
+                        serial: ""
+                      });
+                    }
+                  }
+                  if (!first && additionalBatteries.length) {
+                    result2 = additionalBatteries[0];
+                    additionalBatteries.shift();
+                  }
+                  if (additionalBatteries.length) {
+                    result2.additionalBatteries = additionalBatteries;
+                  }
+                }
+              }
+              if (callback) {
+                callback(result2);
+              }
+              resolve(result2);
+            });
+          } catch (e) {
             if (callback) {
               callback(result2);
             }
             resolve(result2);
           }
-          if (_windows) {
-            try {
-              const workload = [];
-              workload.push(util.powerShell("Get-CimInstance Win32_Battery | select BatteryStatus, DesignCapacity, DesignVoltage, EstimatedChargeRemaining, DeviceID | fl"));
-              workload.push(util.powerShell("(Get-WmiObject -Class BatteryStaticData -Namespace ROOT/WMI).DesignedCapacity"));
-              workload.push(util.powerShell("(Get-CimInstance -Class BatteryFullChargedCapacity -Namespace ROOT/WMI).FullChargedCapacity"));
-              util.promiseAll(
-                workload
-              ).then((data) => {
-                if (data) {
-                  let parts = data.results[0].split(/\n\s*\n/);
-                  let batteries = [];
-                  const hasValue = (value) => /\S/.test(value);
-                  for (let i = 0; i < parts.length; i++) {
-                    if (hasValue(parts[i]) && (!batteries.length || !hasValue(parts[i - 1]))) {
-                      batteries.push([]);
-                    }
-                    if (hasValue(parts[i])) {
-                      batteries[batteries.length - 1].push(parts[i]);
-                    }
-                  }
-                  let designCapacities = data.results[1].split("\r\n").filter((e) => e);
-                  let fullChargeCapacities = data.results[2].split("\r\n").filter((e) => e);
-                  if (batteries.length) {
-                    let first = false;
-                    let additionalBatteries = [];
-                    for (let i = 0; i < batteries.length; i++) {
-                      let lines = batteries[i][0].split("\r\n");
-                      const designedCapacity = designCapacities && designCapacities.length >= i + 1 && designCapacities[i] ? util.toInt(designCapacities[i]) : 0;
-                      const fullChargeCapacity = fullChargeCapacities && fullChargeCapacities.length >= i + 1 && fullChargeCapacities[i] ? util.toInt(fullChargeCapacities[i]) : 0;
-                      const parsed = parseWinBatteryPart(lines, designedCapacity, fullChargeCapacity);
-                      if (!first && parsed.status > 0 && parsed.status !== 10) {
-                        result2.hasBattery = parsed.hasBattery;
-                        result2.maxCapacity = parsed.maxCapacity;
-                        result2.designedCapacity = parsed.designedCapacity;
-                        result2.voltage = parsed.voltage;
-                        result2.capacityUnit = parsed.capacityUnit;
-                        result2.percent = parsed.percent;
-                        result2.currentCapacity = parsed.currentCapacity;
-                        result2.isCharging = parsed.isCharging;
-                        result2.acConnected = parsed.acConnected;
-                        result2.model = parsed.model;
-                        first = true;
-                      } else if (parsed.status !== -1) {
-                        additionalBatteries.push(
-                          {
-                            hasBattery: parsed.hasBattery,
-                            maxCapacity: parsed.maxCapacity,
-                            designedCapacity: parsed.designedCapacity,
-                            voltage: parsed.voltage,
-                            capacityUnit: parsed.capacityUnit,
-                            percent: parsed.percent,
-                            currentCapacity: parsed.currentCapacity,
-                            isCharging: parsed.isCharging,
-                            timeRemaining: null,
-                            acConnected: parsed.acConnected,
-                            model: parsed.model,
-                            type: "",
-                            manufacturer: "",
-                            serial: ""
-                          }
-                        );
-                      }
-                    }
-                    if (!first && additionalBatteries.length) {
-                      result2 = additionalBatteries[0];
-                      additionalBatteries.shift();
-                    }
-                    if (additionalBatteries.length) {
-                      result2.additionalBatteries = additionalBatteries;
-                    }
-                  }
-                }
-                if (callback) {
-                  callback(result2);
-                }
-                resolve(result2);
-              });
-            } catch (e) {
-              if (callback) {
-                callback(result2);
-              }
-              resolve(result2);
-            }
-          }
-        });
+        }
       });
-    };
+    });
   }
 });
 
@@ -22380,7 +22612,8 @@ var require_graphics = __commonJS({
   "node_modules/systeminformation/lib/graphics.js"(exports) {
     "use strict";
     var fs = require("fs");
-    var exec2 = require("child_process").exec;
+    var path = require("path");
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var util = require_util2();
     var _platform = process.platform;
@@ -22399,22 +22632,22 @@ var require_graphics = __commonJS({
     var videoTypes = {
       "-2": "UNINITIALIZED",
       "-1": "OTHER",
-      "0": "HD15",
-      "1": "SVIDEO",
-      "2": "Composite video",
-      "3": "Component video",
-      "4": "DVI",
-      "5": "HDMI",
-      "6": "LVDS",
-      "8": "D_JPN",
-      "9": "SDI",
-      "10": "DP",
-      "11": "DP embedded",
-      "12": "UDI",
-      "13": "UDI embedded",
-      "14": "SDTVDONGLE",
-      "15": "MIRACAST",
-      "2147483648": "INTERNAL"
+      0: "HD15",
+      1: "SVIDEO",
+      2: "Composite video",
+      3: "Component video",
+      4: "DVI",
+      5: "HDMI",
+      6: "LVDS",
+      8: "D_JPN",
+      9: "SDI",
+      10: "DP",
+      11: "DP embedded",
+      12: "UDI",
+      13: "UDI embedded",
+      14: "SDTVDONGLE",
+      15: "MIRACAST",
+      2147483648: "INTERNAL"
     };
     function getVendorFromModel(model) {
       const manufacturers = [
@@ -22454,7 +22687,7 @@ var require_graphics = __commonJS({
     }
     function getVendorFromId(id) {
       const vendors = {
-        "610": "Apple",
+        610: "Apple",
         "1e6d": "LG",
         "10ac": "DELL",
         "4dd9": "Sony",
@@ -22478,20 +22711,20 @@ var require_graphics = __commonJS({
     }
     function getMetalVersion(id) {
       const families = {
-        "spdisplays_mtlgpufamilymac1": "mac1",
-        "spdisplays_mtlgpufamilymac2": "mac2",
-        "spdisplays_mtlgpufamilyapple1": "apple1",
-        "spdisplays_mtlgpufamilyapple2": "apple2",
-        "spdisplays_mtlgpufamilyapple3": "apple3",
-        "spdisplays_mtlgpufamilyapple4": "apple4",
-        "spdisplays_mtlgpufamilyapple5": "apple5",
-        "spdisplays_mtlgpufamilyapple6": "apple6",
-        "spdisplays_mtlgpufamilyapple7": "apple7",
-        "spdisplays_metalfeaturesetfamily11": "family1_v1",
-        "spdisplays_metalfeaturesetfamily12": "family1_v2",
-        "spdisplays_metalfeaturesetfamily13": "family1_v3",
-        "spdisplays_metalfeaturesetfamily14": "family1_v4",
-        "spdisplays_metalfeaturesetfamily21": "family2_v1"
+        spdisplays_mtlgpufamilymac1: "mac1",
+        spdisplays_mtlgpufamilymac2: "mac2",
+        spdisplays_mtlgpufamilyapple1: "apple1",
+        spdisplays_mtlgpufamilyapple2: "apple2",
+        spdisplays_mtlgpufamilyapple3: "apple3",
+        spdisplays_mtlgpufamilyapple4: "apple4",
+        spdisplays_mtlgpufamilyapple5: "apple5",
+        spdisplays_mtlgpufamilyapple6: "apple6",
+        spdisplays_mtlgpufamilyapple7: "apple7",
+        spdisplays_metalfeaturesetfamily11: "family1_v1",
+        spdisplays_metalfeaturesetfamily12: "family1_v2",
+        spdisplays_metalfeaturesetfamily13: "family1_v3",
+        spdisplays_metalfeaturesetfamily14: "family1_v4",
+        spdisplays_metalfeaturesetfamily21: "family2_v1"
       };
       return families[id] || "";
     }
@@ -22502,7 +22735,7 @@ var require_graphics = __commonJS({
           displays: []
         };
         try {
-          graphicsArr.forEach(function(item) {
+          graphicsArr.forEach((item) => {
             const bus = (item.sppci_bus || "").indexOf("builtin") > -1 ? "Built-In" : (item.sppci_bus || "").indexOf("pcie") > -1 ? "PCIe" : "";
             const vram = (parseInt(item.spdisplays_vram || "", 10) || 0) * ((item.spdisplays_vram || "").indexOf("GB") > -1 ? 1024 : 1);
             const vramDyn = (parseInt(item.spdisplays_vram_shared || "", 10) || 0) * ((item.spdisplays_vram_shared || "").indexOf("GB") > -1 ? 1024 : 1);
@@ -22520,7 +22753,7 @@ var require_graphics = __commonJS({
               metalVersion
             });
             if (item.spdisplays_ndrvs && item.spdisplays_ndrvs.length) {
-              item.spdisplays_ndrvs.forEach(function(displayItem) {
+              item.spdisplays_ndrvs.forEach((displayItem) => {
                 const connectionType = displayItem["spdisplays_connection_type"] || "";
                 const currentResolutionParts = (displayItem["_spdisplays_resolution"] || "").split("@");
                 const currentResolution = currentResolutionParts[0].split("x");
@@ -22575,9 +22808,7 @@ var require_graphics = __commonJS({
           for (let i2 = 0; i2 < pciIDs.length; i2++) {
             pciIDs[i2] = pciIDs[i2].replace("Bus Address:", "").replace("0000:", "").trim();
           }
-          pciIDs = pciIDs.filter(function(el) {
-            return el != null && el;
-          });
+          pciIDs = pciIDs.filter((el) => el != null && el);
         } catch (e) {
           util.noop();
         }
@@ -22742,17 +22973,18 @@ var require_graphics = __commonJS({
         }
         if (_windows) {
           try {
-            const basePath = util.WINDIR + "\\System32\\DriverStore\\FileRepository";
-            const candidateDirs = fs.readdirSync(basePath).filter((dir) => {
-              return fs.readdirSync([basePath, dir].join("/")).includes("nvidia-smi.exe");
-            });
-            const targetDir = candidateDirs.reduce((prevDir, currentDir) => {
-              const previousNvidiaSmi = fs.statSync([basePath, prevDir, "nvidia-smi.exe"].join("/"));
-              const currentNvidiaSmi = fs.statSync([basePath, currentDir, "nvidia-smi.exe"].join("/"));
-              return previousNvidiaSmi.ctimeMs > currentNvidiaSmi.ctimeMs ? prevDir : currentDir;
-            });
-            if (targetDir) {
-              _nvidiaSmiPath = [basePath, targetDir, "nvidia-smi.exe"].join("/");
+            const basePath = path.join(util.WINDIR, "System32", "DriverStore", "FileRepository");
+            const candidates = fs.readdirSync(basePath, { withFileTypes: true }).filter((dir) => dir.isDirectory()).map((dir) => {
+              const nvidiaSmiPath = path.join(basePath, dir.name, "nvidia-smi.exe");
+              try {
+                const stats = fs.statSync(nvidiaSmiPath);
+                return { path: nvidiaSmiPath, ctime: stats.ctimeMs };
+              } catch (e) {
+                return null;
+              }
+            }).filter(Boolean);
+            if (candidates.length > 0) {
+              _nvidiaSmiPath = candidates.reduce((prev, curr) => curr.ctime > prev.ctime ? curr : prev).path;
             }
           } catch (e) {
             util.noop();
@@ -22767,12 +22999,13 @@ var require_graphics = __commonJS({
         options = options || util.execOptsWin;
         if (nvidiaSmiExe) {
           const nvidiaSmiOpts = "--query-gpu=driver_version,pci.sub_device_id,name,pci.bus_id,fan.speed,memory.total,memory.used,memory.free,utilization.gpu,utilization.memory,temperature.gpu,temperature.memory,power.draw,power.limit,clocks.gr,clocks.mem --format=csv,noheader,nounits";
-          const cmd = nvidiaSmiExe + " " + nvidiaSmiOpts + (_linux ? "  2>/dev/null" : "");
+          const cmd = `"${nvidiaSmiExe}" ${nvidiaSmiOpts}`;
           if (_linux) {
             options.stdio = ["pipe", "pipe", "ignore"];
           }
           try {
-            const res = execSync(cmd, options).toString();
+            const sanitized = cmd + (_linux ? "  2>/dev/null" : "") + (_windows ? "  2> nul" : "");
+            const res = execSync(sanitized, options).toString();
             return res;
           } catch (e) {
             util.noop();
@@ -22876,7 +23109,7 @@ var require_graphics = __commonJS({
         return controller;
       }
       function parseLinesLinuxEdid(edid) {
-        let result2 = {
+        const result2 = {
           vendor: "",
           model: "",
           deviceName: "",
@@ -22919,9 +23152,7 @@ var require_graphics = __commonJS({
           }
           try {
             if (model_raw.length > 2) {
-              result2.model = model_raw.match(/.{1,2}/g).map(function(v) {
-                return String.fromCharCode(parseInt(v, 16));
-              }).join("");
+              result2.model = model_raw.match(/.{1,2}/g).map((v) => String.fromCharCode(parseInt(v, 16))).join("");
             }
           } catch (e) {
             util.noop();
@@ -22932,7 +23163,7 @@ var require_graphics = __commonJS({
         return result2;
       }
       function parseLinesLinuxDisplays(lines, depth) {
-        let displays = [];
+        const displays = [];
         let currentDisplay = {
           vendor: "",
           model: "",
@@ -23032,8 +23263,8 @@ var require_graphics = __commonJS({
             displays: []
           };
           if (_darwin) {
-            let cmd = "system_profiler -xml -detailLevel full SPDisplaysDataType";
-            exec2(cmd, function(error, stdout) {
+            const cmd = "system_profiler -xml -detailLevel full SPDisplaysDataType";
+            exec(cmd, (error, stdout) => {
               if (!error) {
                 try {
                   const output = stdout.toString();
@@ -23042,7 +23273,10 @@ var require_graphics = __commonJS({
                   util.noop();
                 }
                 try {
-                  stdout = execSync('defaults read /Library/Preferences/com.apple.windowserver.plist 2>/dev/null;defaults read /Library/Preferences/com.apple.windowserver.displays.plist 2>/dev/null; echo ""', { maxBuffer: 1024 * 2e4 });
+                  stdout = execSync(
+                    'defaults read /Library/Preferences/com.apple.windowserver.plist 2>/dev/null;defaults read /Library/Preferences/com.apple.windowserver.displays.plist 2>/dev/null; echo ""',
+                    { maxBuffer: 1024 * 102400 }
+                  );
                   const output = (stdout || "").toString();
                   const obj = util.plistReader(output);
                   if (obj["DisplayAnyUserSets"] && obj["DisplayAnyUserSets"]["Configs"] && obj["DisplayAnyUserSets"]["Configs"][0] && obj["DisplayAnyUserSets"]["Configs"][0]["DisplayConfig"]) {
@@ -23086,9 +23320,9 @@ var require_graphics = __commonJS({
           }
           if (_linux) {
             if (util.isRaspberry()) {
-              let cmd2 = `fbset -s 2> /dev/null | grep 'mode "' ; vcgencmd get_mem gpu 2> /dev/null; tvservice -s 2> /dev/null; tvservice -n 2> /dev/null;`;
-              exec2(cmd2, function(error, stdout) {
-                let lines = stdout.toString().split("\n");
+              const cmd2 = `fbset -s 2> /dev/null | grep 'mode "' ; vcgencmd get_mem gpu 2> /dev/null; tvservice -s 2> /dev/null; tvservice -n 2> /dev/null;`;
+              exec(cmd2, (error, stdout) => {
+                const lines = stdout.toString().split("\n");
                 if (lines.length > 3 && lines[0].indexOf('mode "') >= -1 && lines[2].indexOf("0x12000a") > -1) {
                   const parts = lines[0].replace("mode", "").replace(/"/g, "").trim().split("x");
                   if (parts.length === 2) {
@@ -23122,10 +23356,10 @@ var require_graphics = __commonJS({
                 }
               });
             }
-            let cmd = "lspci -vvv  2>/dev/null";
-            exec2(cmd, function(error, stdout) {
+            const cmd = "lspci -vvv  2>/dev/null";
+            exec(cmd, (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 if (result2.controllers.length === 0) {
                   result2.controllers = parseLinesLinuxControllers(lines);
                   const nvidiaData = nvidiaDevices();
@@ -23134,23 +23368,23 @@ var require_graphics = __commonJS({
                   });
                 }
               }
-              let cmd2 = "clinfo --raw";
-              exec2(cmd2, function(error2, stdout2) {
+              const cmd2 = "clinfo --raw";
+              exec(cmd2, (error2, stdout2) => {
                 if (!error2) {
-                  let lines = stdout2.toString().split("\n");
+                  const lines = stdout2.toString().split("\n");
                   result2.controllers = parseLinesLinuxClinfo(result2.controllers, lines);
                 }
-                let cmd3 = "xdpyinfo 2>/dev/null | grep 'depth of root window' | awk '{ print $5 }'";
-                exec2(cmd3, function(error3, stdout3) {
+                const cmd3 = "xdpyinfo 2>/dev/null | grep 'depth of root window' | awk '{ print $5 }'";
+                exec(cmd3, (error3, stdout3) => {
                   let depth = 0;
                   if (!error3) {
-                    let lines = stdout3.toString().split("\n");
+                    const lines = stdout3.toString().split("\n");
                     depth = parseInt(lines[0]) || 0;
                   }
-                  let cmd4 = "xrandr --verbose 2>/dev/null";
-                  exec2(cmd4, function(error4, stdout4) {
+                  const cmd4 = "xrandr --verbose 2>/dev/null";
+                  exec(cmd4, (error4, stdout4) => {
                     if (!error4) {
-                      let lines = stdout4.toString().split("\n");
+                      const lines = stdout4.toString().split("\n");
                       result2.displays = parseLinesLinuxDisplays(lines, depth);
                     }
                     if (callback) {
@@ -23178,56 +23412,65 @@ var require_graphics = __commonJS({
             try {
               const workload = [];
               workload.push(util.powerShell("Get-CimInstance win32_VideoController | fl *"));
-              workload.push(util.powerShell('gp "HKLM:\\SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\*" -ErrorAction SilentlyContinue | where MatchingDeviceId $null -NE | select MatchingDeviceId,HardwareInformation.qwMemorySize | fl'));
+              workload.push(
+                util.powerShell(
+                  'gp "HKLM:\\SYSTEM\\ControlSet001\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\*" -ErrorAction SilentlyContinue | where MatchingDeviceId $null -NE | select MatchingDeviceId,HardwareInformation.qwMemorySize | fl'
+                )
+              );
               workload.push(util.powerShell("Get-CimInstance win32_desktopmonitor | fl *"));
               workload.push(util.powerShell("Get-CimInstance -Namespace root\\wmi -ClassName WmiMonitorBasicDisplayParams | fl"));
               workload.push(util.powerShell("Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Screen]::AllScreens"));
               workload.push(util.powerShell("Get-CimInstance -Namespace root\\wmi -ClassName WmiMonitorConnectionParams | fl"));
-              workload.push(util.powerShell('gwmi WmiMonitorID -Namespace root\\wmi | ForEach-Object {(($_.ManufacturerName -notmatch 0 | foreach {[char]$_}) -join "") + "|" + (($_.ProductCodeID -notmatch 0 | foreach {[char]$_}) -join "") + "|" + (($_.UserFriendlyName -notmatch 0 | foreach {[char]$_}) -join "") + "|" + (($_.SerialNumberID -notmatch 0 | foreach {[char]$_}) -join "") + "|" + $_.InstanceName}'));
+              workload.push(
+                util.powerShell(
+                  'gwmi WmiMonitorID -Namespace root\\wmi | ForEach-Object {(($_.ManufacturerName -notmatch 0 | foreach {[char]$_}) -join "") + "|" + (($_.ProductCodeID -notmatch 0 | foreach {[char]$_}) -join "") + "|" + (($_.UserFriendlyName -notmatch 0 | foreach {[char]$_}) -join "") + "|" + (($_.SerialNumberID -notmatch 0 | foreach {[char]$_}) -join "") + "|" + $_.InstanceName}'
+                )
+              );
               const nvidiaData = nvidiaDevices();
-              Promise.all(
-                workload
-              ).then((data) => {
-                let csections = data[0].replace(/\r/g, "").split(/\n\s*\n/);
-                let vsections = data[1].replace(/\r/g, "").split(/\n\s*\n/);
+              Promise.all(workload).then((data) => {
+                const csections = data[0].replace(/\r/g, "").split(/\n\s*\n/);
+                const vsections = data[1].replace(/\r/g, "").split(/\n\s*\n/);
                 result2.controllers = parseLinesWindowsControllers(csections, vsections);
                 result2.controllers = result2.controllers.map((controller) => {
                   if (controller.vendor.toLowerCase() === "nvidia") {
-                    return mergeControllerNvidia(controller, nvidiaData.find((device) => {
-                      let windowsSubDeviceId = (controller.subDeviceId || "").toLowerCase();
-                      const nvidiaSubDeviceIdParts = device.subDeviceId.split("x");
-                      let nvidiaSubDeviceId = nvidiaSubDeviceIdParts.length > 1 ? nvidiaSubDeviceIdParts[1].toLowerCase() : nvidiaSubDeviceIdParts[0].toLowerCase();
-                      const lengthDifference = Math.abs(windowsSubDeviceId.length - nvidiaSubDeviceId.length);
-                      if (windowsSubDeviceId.length > nvidiaSubDeviceId.length) {
-                        for (let i = 0; i < lengthDifference; i++) {
-                          nvidiaSubDeviceId = "0" + nvidiaSubDeviceId;
+                    return mergeControllerNvidia(
+                      controller,
+                      nvidiaData.find((device) => {
+                        let windowsSubDeviceId = (controller.subDeviceId || "").toLowerCase();
+                        const nvidiaSubDeviceIdParts = device.subDeviceId.split("x");
+                        let nvidiaSubDeviceId = nvidiaSubDeviceIdParts.length > 1 ? nvidiaSubDeviceIdParts[1].toLowerCase() : nvidiaSubDeviceIdParts[0].toLowerCase();
+                        const lengthDifference = Math.abs(windowsSubDeviceId.length - nvidiaSubDeviceId.length);
+                        if (windowsSubDeviceId.length > nvidiaSubDeviceId.length) {
+                          for (let i = 0; i < lengthDifference; i++) {
+                            nvidiaSubDeviceId = "0" + nvidiaSubDeviceId;
+                          }
+                        } else if (windowsSubDeviceId.length < nvidiaSubDeviceId.length) {
+                          for (let i = 0; i < lengthDifference; i++) {
+                            windowsSubDeviceId = "0" + windowsSubDeviceId;
+                          }
                         }
-                      } else if (windowsSubDeviceId.length < nvidiaSubDeviceId.length) {
-                        for (let i = 0; i < lengthDifference; i++) {
-                          windowsSubDeviceId = "0" + windowsSubDeviceId;
-                        }
-                      }
-                      return windowsSubDeviceId === nvidiaSubDeviceId;
-                    }) || {});
+                        return windowsSubDeviceId === nvidiaSubDeviceId;
+                      }) || {}
+                    );
                   } else {
                     return controller;
                   }
                 });
-                let dsections = data[2].replace(/\r/g, "").split(/\n\s*\n/);
+                const dsections = data[2].replace(/\r/g, "").split(/\n\s*\n/);
                 if (dsections[0].trim() === "") {
                   dsections.shift();
                 }
                 if (dsections.length && dsections[dsections.length - 1].trim() === "") {
                   dsections.pop();
                 }
-                let msections = data[3].replace(/\r/g, "").split("Active ");
+                const msections = data[3].replace(/\r/g, "").split("Active ");
                 msections.shift();
-                let ssections = data[4].replace(/\r/g, "").split("BitsPerPixel ");
+                const ssections = data[4].replace(/\r/g, "").split("BitsPerPixel ");
                 ssections.shift();
-                let tsections = data[5].replace(/\r/g, "").split(/\n\s*\n/);
+                const tsections = data[5].replace(/\r/g, "").split(/\n\s*\n/);
                 tsections.shift();
                 const res = data[6].replace(/\r/g, "").split(/\n/);
-                let isections = [];
+                const isections = [];
                 res.forEach((element) => {
                   const parts = element.split("|");
                   if (parts.length === 5) {
@@ -23306,12 +23549,12 @@ var require_graphics = __commonJS({
             }
           }
         }
-        let controllers = [];
-        for (let i in sections) {
+        const controllers = [];
+        for (const i in sections) {
           if ({}.hasOwnProperty.call(sections, i)) {
             if (sections[i].trim() !== "") {
-              let lines = sections[i].trim().split("\n");
-              let pnpDeviceId = util.getValue(lines, "PNPDeviceID", ":").match(/PCI\\(VEN_[0-9A-F]{4})&(DEV_[0-9A-F]{4})(?:&(SUBSYS_[0-9A-F]{8}))?(?:&(REV_[0-9A-F]{2}))?/i);
+              const lines = sections[i].trim().split("\n");
+              const pnpDeviceId = util.getValue(lines, "PNPDeviceID", ":").match(/PCI\\(VEN_[0-9A-F]{4})&(DEV_[0-9A-F]{4})(?:&(SUBSYS_[0-9A-F]{8}))?(?:&(REV_[0-9A-F]{2}))?/i);
               let subDeviceId = null;
               let memorySize = null;
               if (pnpDeviceId) {
@@ -23362,14 +23605,14 @@ var require_graphics = __commonJS({
         return controllers;
       }
       function parseLinesWindowsDisplaysPowershell(ssections, msections, dsections, tsections, isections) {
-        let displays = [];
+        const displays = [];
         let vendor = "";
         let model = "";
         let deviceID = "";
         let resolutionX = 0;
         let resolutionY = 0;
         if (dsections && dsections.length) {
-          let linesDisplay = dsections[0].split("\n");
+          const linesDisplay = dsections[0].split("\n");
           vendor = util.getValue(linesDisplay, "MonitorManufacturer", ":");
           model = util.getValue(linesDisplay, "Name", ":");
           deviceID = util.getValue(linesDisplay, "PNPDeviceID", ":").replace(/&amp;/g, "&").toLowerCase();
@@ -23383,9 +23626,9 @@ var require_graphics = __commonJS({
             if (tsections.length === 0 || tsections[i] === void 0) {
               tsections[i] = "Unknown";
             }
-            let linesScreen = ssections[i].split("\n");
-            let linesMonitor = msections[i].split("\n");
-            let linesConnection = tsections[i].split("\n");
+            const linesScreen = ssections[i].split("\n");
+            const linesMonitor = msections[i].split("\n");
+            const linesConnection = tsections[i].split("\n");
             const bitsPerPixel = util.getValue(linesScreen, "BitsPerPixel");
             const bounds = util.getValue(linesScreen, "Bounds").replace("{", "").replace("}", "").replace(/=/g, ":").split(",");
             const primary = util.getValue(linesScreen, "Primary");
@@ -23450,7 +23693,7 @@ var require_filesystem = __commonJS({
     "use strict";
     var util = require_util2();
     var fs = require("fs");
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var execPromiseSave = util.promisifySave(require("child_process").exec);
     var _platform = process.platform;
@@ -23493,7 +23736,7 @@ var require_filesystem = __commonJS({
         return result2;
       }
       function filterLines(stdout) {
-        let lines = stdout.toString().split("\n");
+        const lines = stdout.toString().split("\n");
         lines.shift();
         if (stdout.toString().toLowerCase().indexOf("filesystem")) {
           let removeLines = 0;
@@ -23509,21 +23752,21 @@ var require_filesystem = __commonJS({
         return lines;
       }
       function parseDf(lines) {
-        let data = [];
-        lines.forEach(function(line) {
+        const data = [];
+        lines.forEach((line) => {
           if (line !== "") {
             line = line.replace(/ +/g, " ").split(" ");
             if (line && (line[0].startsWith("/") || line[6] && line[6] === "/" || line[0].indexOf("/") > 0 || line[0].indexOf(":") === 1 || !_darwin && !isLinuxTmpFs(line[1]))) {
               const fs2 = line[0];
               const fsType = _linux || _freebsd || _openbsd || _netbsd ? line[1] : getmacOsFsType(line[0]);
-              const size = parseInt(_linux || _freebsd || _openbsd || _netbsd ? line[2] : line[1]) * 1024;
-              const used = parseInt(_linux || _freebsd || _openbsd || _netbsd ? line[3] : line[2]) * 1024;
-              const available = parseInt(_linux || _freebsd || _openbsd || _netbsd ? line[4] : line[3]) * 1024;
+              const size = parseInt(_linux || _freebsd || _openbsd || _netbsd ? line[2] : line[1], 10) * 1024;
+              const used = parseInt(_linux || _freebsd || _openbsd || _netbsd ? line[3] : line[2], 10) * 1024;
+              const available = parseInt(_linux || _freebsd || _openbsd || _netbsd ? line[4] : line[3], 10) * 1024;
               const use = parseFloat((100 * (used / (used + available))).toFixed(2));
-              let rw = osMounts && Object.keys(osMounts).length > 0 ? osMounts[fs2] || false : null;
+              const rw = osMounts && Object.keys(osMounts).length > 0 ? osMounts[fs2] || false : null;
               line.splice(0, _linux || _freebsd || _openbsd || _netbsd ? 6 : 5);
               const mount = line.join(" ");
-              if (!data.find((el) => el.fs === fs2 && el.type === fsType)) {
+              if (!data.find((el) => el.fs === fs2 && el.type === fsType && el.mount === mount)) {
                 data.push({
                   fs: fs2,
                   type: fsType,
@@ -23564,7 +23807,7 @@ var require_filesystem = __commonJS({
             }
             if (_linux) {
               try {
-                cmd = "export LC_ALL=C; df -lkPTx squashfs; unset LC_ALL";
+                cmd = "export LC_ALL=C; df -kPTx squashfs; unset LC_ALL";
                 execSync("cat /proc/mounts 2>/dev/null", util.execOptsLinux).toString().split("\n").filter((line) => {
                   return line.startsWith("/");
                 }).forEach((line) => {
@@ -23579,7 +23822,7 @@ var require_filesystem = __commonJS({
             }
             if (_freebsd || _openbsd || _netbsd) {
               try {
-                cmd = "df -lkPT";
+                cmd = "df -kPT";
                 execSync("mount").toString().split("\n").forEach((line) => {
                   osMounts[line.split(" ")[0]] = line.toLowerCase().indexOf("read-only") === -1;
                 });
@@ -23587,8 +23830,8 @@ var require_filesystem = __commonJS({
                 util.noop();
               }
             }
-            exec2(cmd, { maxBuffer: 1024 * 1024 }, function(error, stdout) {
-              let lines = filterLines(stdout);
+            exec(cmd, { maxBuffer: 1024 * 1024 }, (error, stdout) => {
+              const lines = filterLines(stdout);
               data = parseDf(lines);
               if (drive) {
                 data = data.filter((item) => {
@@ -23601,11 +23844,9 @@ var require_filesystem = __commonJS({
                 }
                 resolve(data);
               } else {
-                exec2("df -kPT", { maxBuffer: 1024 * 1024 }, function(error2, stdout2) {
-                  if (!error2) {
-                    let lines2 = filterLines(stdout2);
-                    data = parseDf(lines2);
-                  }
+                exec("df -kPT 2>/dev/null", { maxBuffer: 1024 * 1024 }, (error2, stdout2) => {
+                  const lines2 = filterLines(stdout2);
+                  data = parseDf(lines2);
                   if (callback) {
                     callback(data);
                   }
@@ -23622,12 +23863,13 @@ var require_filesystem = __commonJS({
           }
           if (_windows) {
             try {
-              const cmd = `Get-WmiObject Win32_logicaldisk | select Access,Caption,FileSystem,FreeSpace,Size ${drive ? "| where -property Caption -eq " + drive : ""} | fl`;
+              const driveSanitized = drive ? util.sanitizeShellString(drive, true) : "";
+              const cmd = `Get-WmiObject Win32_logicaldisk | select Access,Caption,FileSystem,FreeSpace,Size ${driveSanitized ? "| where -property Caption -eq " + driveSanitized : ""} | fl`;
               util.powerShell(cmd).then((stdout, error) => {
                 if (!error) {
-                  let devices = stdout.toString().split(/\n\s*\n/);
-                  devices.forEach(function(device) {
-                    let lines = device.split("\r\n");
+                  const devices = stdout.toString().split(/\n\s*\n/);
+                  devices.forEach((device) => {
+                    const lines = device.split("\r\n");
                     const size = util.toInt(util.getValue(lines, "size", ":"));
                     const free = util.toInt(util.getValue(lines, "freespace", ":"));
                     const caption = util.getValue(lines, "caption", ":");
@@ -23672,10 +23914,10 @@ var require_filesystem = __commonJS({
             available: null
           };
           if (_freebsd || _openbsd || _netbsd || _darwin) {
-            let cmd = "sysctl -i kern.maxfiles kern.num_files kern.open_files";
-            exec2(cmd, { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+            const cmd = "sysctl -i kern.maxfiles kern.num_files kern.open_files";
+            exec(cmd, { maxBuffer: 1024 * 1024 }, (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 result2.max = parseInt(util.getValue(lines, "kern.maxfiles", ":"), 10);
                 result2.allocated = parseInt(util.getValue(lines, "kern.num_files", ":"), 10) || parseInt(util.getValue(lines, "kern.open_files", ":"), 10);
                 result2.available = result2.max - result2.allocated;
@@ -23687,9 +23929,9 @@ var require_filesystem = __commonJS({
             });
           }
           if (_linux) {
-            fs.readFile("/proc/sys/fs/file-nr", function(error, stdout) {
+            fs.readFile("/proc/sys/fs/file-nr", (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 if (lines[0]) {
                   const parts = lines[0].replace(/\s+/g, " ").split(" ");
                   if (parts.length === 3) {
@@ -23706,9 +23948,9 @@ var require_filesystem = __commonJS({
                 }
                 resolve(result2);
               } else {
-                fs.readFile("/proc/sys/fs/file-max", function(error2, stdout2) {
+                fs.readFile("/proc/sys/fs/file-max", (error2, stdout2) => {
                   if (!error2) {
-                    let lines = stdout2.toString().split("\n");
+                    const lines = stdout2.toString().split("\n");
                     if (lines[0]) {
                       result2.max = parseInt(lines[0], 10);
                     }
@@ -23738,17 +23980,17 @@ var require_filesystem = __commonJS({
     }
     exports.fsOpenFiles = fsOpenFiles;
     function parseBytes(s) {
-      return parseInt(s.substr(s.indexOf(" (") + 2, s.indexOf(" Bytes)") - 10));
+      return parseInt(s.substr(s.indexOf(" (") + 2, s.indexOf(" Bytes)") - 10), 10);
     }
     function parseDevices(lines) {
-      let devices = [];
+      const devices = [];
       let i = 0;
       lines.forEach((line) => {
         if (line.length > 0) {
           if (line[0] === "*") {
             i++;
           } else {
-            let parts = line.split(":");
+            const parts = line.split(":");
             if (parts.length > 1) {
               if (!devices[i]) {
                 devices[i] = {
@@ -23827,21 +24069,21 @@ var require_filesystem = __commonJS({
         try {
           line = decodeURIComponent(line.replace(/\\x/g, "%"));
           line = line.replace(/\\/g, "\\\\");
-          let disk = JSON.parse(line);
+          const disk = JSON.parse(line);
           data.push({
-            "name": disk.name,
-            "type": disk.type,
-            "fsType": disk.fsType,
-            "mount": disk.mountpoint,
-            "size": parseInt(disk.size),
-            "physical": disk.type === "disk" ? disk.rota === "0" ? "SSD" : "HDD" : disk.type === "rom" ? "CD/DVD" : "",
-            "uuid": disk.uuid,
-            "label": disk.label,
-            "model": (disk.model || "").trim(),
-            "serial": disk.serial,
-            "removable": disk.rm === "1",
-            "protocol": disk.tran,
-            "group": disk.group || ""
+            name: util.sanitizeShellString(disk.name),
+            type: disk.type,
+            fsType: disk.fsType,
+            mount: disk.mountpoint,
+            size: parseInt(disk.size, 10),
+            physical: disk.type === "disk" ? disk.rota === "0" ? "SSD" : "HDD" : disk.type === "rom" ? "CD/DVD" : "",
+            uuid: disk.uuid,
+            label: disk.label,
+            model: (disk.model || "").trim(),
+            serial: disk.serial,
+            removable: disk.rm === "1",
+            protocol: disk.tran,
+            group: disk.group || ""
           });
         } catch (e) {
           util.noop();
@@ -23877,7 +24119,7 @@ var require_filesystem = __commonJS({
             const mdData = decodeMdabmData(lines);
             element.label = mdData.label;
             element.uuid = mdData.uuid;
-            if (mdData.members && mdData.members.length && mdData.raid === element.type) {
+            if (mdData && mdData.members && mdData.members.length && mdData.raid === element.type) {
               result2 = result2.map((blockdevice) => {
                 if (blockdevice.fsType === "linux_raid_member" && mdData.members.indexOf(blockdevice.name) >= 0) {
                   blockdevice.group = element.name;
@@ -23995,9 +24237,9 @@ var require_filesystem = __commonJS({
         process.nextTick(() => {
           let data = [];
           if (_linux) {
-            exec2("lsblk -bPo NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,UUID,ROTA,RO,RM,TRAN,SERIAL,LABEL,MODEL,OWNER 2>/dev/null", { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+            const procLsblk1 = exec("lsblk -bPo NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,UUID,ROTA,RO,RM,TRAN,SERIAL,LABEL,MODEL,OWNER 2>/dev/null", { maxBuffer: 1024 * 1024 }, (error, stdout) => {
               if (!error) {
-                let lines = blkStdoutToObject(stdout).split("\n");
+                const lines = blkStdoutToObject(stdout).split("\n");
                 data = parseBlk(lines);
                 data = raidMatchLinux(data);
                 data = matchDevicesLinux(data);
@@ -24006,9 +24248,9 @@ var require_filesystem = __commonJS({
                 }
                 resolve(data);
               } else {
-                exec2("lsblk -bPo NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,UUID,ROTA,RO,RM,LABEL,MODEL,OWNER 2>/dev/null", { maxBuffer: 1024 * 1024 }, function(error2, stdout2) {
+                const procLsblk2 = exec("lsblk -bPo NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,UUID,ROTA,RO,RM,LABEL,MODEL,OWNER 2>/dev/null", { maxBuffer: 1024 * 1024 }, (error2, stdout2) => {
                   if (!error2) {
-                    let lines = blkStdoutToObject(stdout2).split("\n");
+                    const lines = blkStdoutToObject(stdout2).split("\n");
                     data = parseBlk(lines);
                     data = raidMatchLinux(data);
                   }
@@ -24017,16 +24259,34 @@ var require_filesystem = __commonJS({
                   }
                   resolve(data);
                 });
+                procLsblk2.on("error", () => {
+                  if (callback) {
+                    callback(data);
+                  }
+                  resolve(data);
+                });
               }
+            });
+            procLsblk1.on("error", () => {
+              if (callback) {
+                callback(data);
+              }
+              resolve(data);
             });
           }
           if (_darwin) {
-            exec2("diskutil info -all", { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+            const procDskutil = exec("diskutil info -all", { maxBuffer: 1024 * 1024 }, (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 data = parseDevices(lines);
                 data = matchDevicesMac(data);
               }
+              if (callback) {
+                callback(data);
+              }
+              resolve(data);
+            });
+            procDskutil.on("error", () => {
               if (callback) {
                 callback(data);
               }
@@ -24040,19 +24300,21 @@ var require_filesystem = __commonJS({
             resolve(data);
           }
           if (_windows) {
-            let drivetypes = ["Unknown", "NoRoot", "Removable", "Local", "Network", "CD/DVD", "RAM"];
+            const drivetypes = ["Unknown", "NoRoot", "Removable", "Local", "Network", "CD/DVD", "RAM"];
             try {
               const workload = [];
               workload.push(util.powerShell("Get-CimInstance -ClassName Win32_LogicalDisk | select Caption,DriveType,Name,FileSystem,Size,VolumeSerialNumber,VolumeName | fl"));
-              workload.push(util.powerShell("Get-WmiObject -Class Win32_diskdrive | Select-Object -Property PNPDeviceId,DeviceID, Model, Size, @{L='Partitions'; E={$_.GetRelated('Win32_DiskPartition').GetRelated('Win32_LogicalDisk') | Select-Object -Property DeviceID, VolumeName, Size, FreeSpace}} | fl"));
-              util.promiseAll(
-                workload
-              ).then((res) => {
-                let logicalDisks = res.results[0].toString().split(/\n\s*\n/);
-                let diskDrives = res.results[1].toString().split(/\n\s*\n/);
-                logicalDisks.forEach(function(device) {
-                  let lines = device.split("\r\n");
-                  let drivetype = util.getValue(lines, "drivetype", ":");
+              workload.push(
+                util.powerShell(
+                  "Get-WmiObject -Class Win32_diskdrive | Select-Object -Property PNPDeviceId,DeviceID, Model, Size, @{L='Partitions'; E={$_.GetRelated('Win32_DiskPartition').GetRelated('Win32_LogicalDisk') | Select-Object -Property DeviceID, VolumeName, Size, FreeSpace}} | fl"
+                )
+              );
+              util.promiseAll(workload).then((res) => {
+                const logicalDisks = res.results[0].toString().split(/\n\s*\n/);
+                const diskDrives = res.results[1].toString().split(/\n\s*\n/);
+                logicalDisks.forEach((device) => {
+                  const lines = device.split("\r\n");
+                  const drivetype = util.getValue(lines, "drivetype", ":");
                   if (drivetype) {
                     data.push({
                       name: util.getValue(lines, "name", ":"),
@@ -24097,7 +24359,7 @@ var require_filesystem = __commonJS({
     }
     exports.blockDevices = blockDevices;
     function calcFsSpeed(rx, wx) {
-      let result2 = {
+      const result2 = {
         rx: 0,
         wx: 0,
         tx: 0,
@@ -24156,11 +24418,11 @@ var require_filesystem = __commonJS({
           let wx = 0;
           if (_fs_speed && !_fs_speed.ms || _fs_speed && _fs_speed.ms && Date.now() - _fs_speed.ms >= 500) {
             if (_linux) {
-              exec2("lsblk -r 2>/dev/null | grep /", { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+              const procLsblk = exec("lsblk -r 2>/dev/null | grep /", { maxBuffer: 1024 * 1024 }, (error, stdout) => {
                 if (!error) {
-                  let lines = stdout.toString().split("\n");
-                  let fs_filter = [];
-                  lines.forEach(function(line) {
+                  const lines = stdout.toString().split("\n");
+                  const fs_filter = [];
+                  lines.forEach((line) => {
                     if (line !== "") {
                       line = line.trim().split(" ");
                       if (fs_filter.indexOf(line[0]) === -1) {
@@ -24168,20 +24430,26 @@ var require_filesystem = __commonJS({
                       }
                     }
                   });
-                  let output = fs_filter.join("|");
-                  exec2('cat /proc/diskstats | egrep "' + output + '"', { maxBuffer: 1024 * 1024 }, function(error2, stdout2) {
+                  const output = fs_filter.join("|");
+                  const procCat = exec('cat /proc/diskstats | egrep "' + output + '"', { maxBuffer: 1024 * 1024 }, (error2, stdout2) => {
                     if (!error2) {
-                      let lines2 = stdout2.toString().split("\n");
-                      lines2.forEach(function(line) {
+                      const lines2 = stdout2.toString().split("\n");
+                      lines2.forEach((line) => {
                         line = line.trim();
                         if (line !== "") {
                           line = line.replace(/ +/g, " ").split(" ");
-                          rx += parseInt(line[5]) * 512;
-                          wx += parseInt(line[9]) * 512;
+                          rx += parseInt(line[5], 10) * 512;
+                          wx += parseInt(line[9], 10) * 512;
                         }
                       });
                       result2 = calcFsSpeed(rx, wx);
                     }
+                    if (callback) {
+                      callback(result2);
+                    }
+                    resolve(result2);
+                  });
+                  procCat.on("error", () => {
                     if (callback) {
                       callback(result2);
                     }
@@ -24194,21 +24462,37 @@ var require_filesystem = __commonJS({
                   resolve(result2);
                 }
               });
+              procLsblk.on("error", () => {
+                if (callback) {
+                  callback(result2);
+                }
+                resolve(result2);
+              });
             }
             if (_darwin) {
-              exec2('ioreg -c IOBlockStorageDriver -k Statistics -r -w0 | sed -n "/IOBlockStorageDriver/,/Statistics/p" | grep "Statistics" | tr -cd "01234567890,\n"', { maxBuffer: 1024 * 1024 }, function(error, stdout) {
-                if (!error) {
-                  let lines = stdout.toString().split("\n");
-                  lines.forEach(function(line) {
-                    line = line.trim();
-                    if (line !== "") {
-                      line = line.split(",");
-                      rx += parseInt(line[2]);
-                      wx += parseInt(line[9]);
-                    }
-                  });
-                  result2 = calcFsSpeed(rx, wx);
+              const procIoreg = exec(
+                'ioreg -c IOBlockStorageDriver -k Statistics -r -w0 | sed -n "/IOBlockStorageDriver/,/Statistics/p" | grep "Statistics" | tr -cd "01234567890,\n"',
+                { maxBuffer: 1024 * 1024 },
+                (error, stdout) => {
+                  if (!error) {
+                    const lines = stdout.toString().split("\n");
+                    lines.forEach((line) => {
+                      line = line.trim();
+                      if (line !== "") {
+                        line = line.split(",");
+                        rx += parseInt(line[2], 10);
+                        wx += parseInt(line[9], 10);
+                      }
+                    });
+                    result2 = calcFsSpeed(rx, wx);
+                  }
+                  if (callback) {
+                    callback(result2);
+                  }
+                  resolve(result2);
                 }
+              );
+              procIoreg.on("error", () => {
                 if (callback) {
                   callback(result2);
                 }
@@ -24233,7 +24517,7 @@ var require_filesystem = __commonJS({
     }
     exports.fsStats = fsStats;
     function calcDiskIO(rIO, wIO, rWaitTime, wWaitTime, tWaitTime) {
-      let result2 = {
+      const result2 = {
         rIO: 0,
         wIO: 0,
         tIO: 0,
@@ -24329,20 +24613,20 @@ var require_filesystem = __commonJS({
           let tWaitTime = 0;
           if (_disk_io && !_disk_io.ms || _disk_io && _disk_io.ms && Date.now() - _disk_io.ms >= 500) {
             if (_linux || _freebsd || _openbsd || _netbsd) {
-              let cmd = 'for mount in `lsblk 2>/dev/null | grep " disk " | sed "s/[\u2502\u2514\u2500\u251C]//g" | awk \'{$1=$1};1\' | cut -d " " -f 1 | sort -u`; do cat /sys/block/$mount/stat | sed -r "s/ +/;/g" | sed -r "s/^;//"; done';
-              exec2(cmd, { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+              const cmd = 'for mount in `lsblk 2>/dev/null | grep " disk " | sed "s/[\u2502\u2514\u2500\u251C]//g" | awk \'{$1=$1};1\' | cut -d " " -f 1 | sort -u`; do cat /sys/block/$mount/stat | sed -r "s/ +/;/g" | sed -r "s/^;//"; done';
+              exec(cmd, { maxBuffer: 1024 * 1024 }, (error, stdout) => {
                 if (!error) {
-                  let lines = stdout.split("\n");
-                  lines.forEach(function(line) {
+                  const lines = stdout.split("\n");
+                  lines.forEach((line) => {
                     if (!line) {
                       return;
                     }
-                    let stats = line.split(";");
-                    rIO += parseInt(stats[0]);
-                    wIO += parseInt(stats[4]);
-                    rWaitTime += parseInt(stats[3]);
-                    wWaitTime += parseInt(stats[7]);
-                    tWaitTime += parseInt(stats[10]);
+                    const stats = line.split(";");
+                    rIO += parseInt(stats[0], 10);
+                    wIO += parseInt(stats[4], 10);
+                    rWaitTime += parseInt(stats[3], 10);
+                    wWaitTime += parseInt(stats[7], 10);
+                    tWaitTime += parseInt(stats[10], 10);
                   });
                   result2 = calcDiskIO(rIO, wIO, rWaitTime, wWaitTime, tWaitTime);
                   if (callback) {
@@ -24358,24 +24642,28 @@ var require_filesystem = __commonJS({
               });
             }
             if (_darwin) {
-              exec2('ioreg -c IOBlockStorageDriver -k Statistics -r -w0 | sed -n "/IOBlockStorageDriver/,/Statistics/p" | grep "Statistics" | tr -cd "01234567890,\n"', { maxBuffer: 1024 * 1024 }, function(error, stdout) {
-                if (!error) {
-                  let lines = stdout.toString().split("\n");
-                  lines.forEach(function(line) {
-                    line = line.trim();
-                    if (line !== "") {
-                      line = line.split(",");
-                      rIO += parseInt(line[10]);
-                      wIO += parseInt(line[0]);
-                    }
-                  });
-                  result2 = calcDiskIO(rIO, wIO, rWaitTime, wWaitTime, tWaitTime);
+              exec(
+                'ioreg -c IOBlockStorageDriver -k Statistics -r -w0 | sed -n "/IOBlockStorageDriver/,/Statistics/p" | grep "Statistics" | tr -cd "01234567890,\n"',
+                { maxBuffer: 1024 * 1024 },
+                (error, stdout) => {
+                  if (!error) {
+                    const lines = stdout.toString().split("\n");
+                    lines.forEach((line) => {
+                      line = line.trim();
+                      if (line !== "") {
+                        line = line.split(",");
+                        rIO += parseInt(line[10], 10);
+                        wIO += parseInt(line[0], 10);
+                      }
+                    });
+                    result2 = calcDiskIO(rIO, wIO, rWaitTime, wWaitTime, tWaitTime);
+                  }
+                  if (callback) {
+                    callback(result2);
+                  }
+                  resolve(result2);
                 }
-                if (callback) {
-                  callback(result2);
-                }
-                resolve(result2);
-              });
+              );
             }
           } else {
             result2.rIO = _disk_io.rIO;
@@ -24458,11 +24746,11 @@ var require_filesystem = __commonJS({
             }
             resolve(res);
           };
-          let result2 = [];
+          const result2 = [];
           let cmd = "";
           if (_linux) {
             let cmdFullSmart = "";
-            exec2("export LC_ALL=C; lsblk -ablJO 2>/dev/null; unset LC_ALL", { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+            exec("export LC_ALL=C; lsblk -ablJO 2>/dev/null; unset LC_ALL", { maxBuffer: 1024 * 1024 }, (error, stdout) => {
               if (!error) {
                 try {
                   const out = stdout.toString().trim();
@@ -24476,8 +24764,11 @@ var require_filesystem = __commonJS({
                     }
                   } catch (e) {
                     try {
-                      const out2 = execSync("export LC_ALL=C; lsblk -bPo NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,UUID,ROTA,RO,RM,LABEL,MODEL,OWNER,GROUP 2>/dev/null; unset LC_ALL", util.execOptsLinux).toString();
-                      let lines = blkStdoutToObject(out2).split("\n");
+                      const out2 = execSync(
+                        "export LC_ALL=C; lsblk -bPo NAME,TYPE,SIZE,FSTYPE,MOUNTPOINT,UUID,ROTA,RO,RM,LABEL,MODEL,OWNER,GROUP 2>/dev/null; unset LC_ALL",
+                        util.execOptsLinux
+                      ).toString();
+                      const lines = blkStdoutToObject(out2).split("\n");
                       const data = parseBlk(lines);
                       devices = data.filter((item) => {
                         return item.type === "disk" && item.size > 0 && (item.model !== null && item.model !== "" || item.mount === "" && item.label === "" && item.fsType === "");
@@ -24529,7 +24820,7 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                 }
               }
               if (cmdFullSmart) {
-                exec2(cmdFullSmart, { maxBuffer: 1024 * 1024 }, function(error2, stdout2) {
+                exec(cmdFullSmart, { maxBuffer: 1024 * 1024 }, (error2, stdout2) => {
                   try {
                     const data = JSON.parse(`[${stdout2}]`);
                     data.forEach((disk) => {
@@ -24548,18 +24839,18 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                   } catch (e) {
                     if (cmd) {
                       cmd = cmd + 'printf "\n"';
-                      exec2(cmd, { maxBuffer: 1024 * 1024 }, function(error3, stdout3) {
-                        let lines = stdout3.toString().split("\n");
+                      exec(cmd, { maxBuffer: 1024 * 1024 }, (error3, stdout3) => {
+                        const lines = stdout3.toString().split("\n");
                         lines.forEach((line) => {
                           if (line) {
-                            let parts = line.split("|");
+                            const parts = line.split("|");
                             if (parts.length === 2) {
-                              let BSDName = parts[0];
+                              const BSDName = parts[0];
                               parts[1] = parts[1].trim();
-                              let parts2 = parts[1].split(":");
+                              const parts2 = parts[1].split(":");
                               if (parts2.length === 2) {
                                 parts2[1] = parts2[1].trim();
-                                let status = parts2[1].toLowerCase();
+                                const status = parts2[1].toLowerCase();
                                 for (let i = 0; i < result2.length; i++) {
                                   if (result2[i].BSDName === BSDName) {
                                     result2[i].smartStatus = status === "passed" ? "Ok" : status === "failed!" ? "Predicted Failure" : "unknown";
@@ -24594,12 +24885,13 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
             resolve(result2);
           }
           if (_darwin) {
-            exec2("system_profiler SPSerialATADataType SPNVMeDataType SPUSBDataType", { maxBuffer: 1024 * 1024 }, function(error, stdout) {
+            let cmdFullSmart = "";
+            exec("system_profiler SPSerialATADataType SPNVMeDataType SPUSBDataType", { maxBuffer: 1024 * 1024 }, (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
-                let linesSATA = [];
-                let linesNVMe = [];
-                let linesUSB = [];
+                const lines = stdout.toString().split("\n");
+                const linesSATA = [];
+                const linesNVMe = [];
+                const linesUSB = [];
                 let dataType = "SATA";
                 lines.forEach((line) => {
                   if (line === "NVMExpress:") {
@@ -24617,21 +24909,24 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                   }
                 });
                 try {
-                  let devices = linesSATA.join("\n").split(" Physical Interconnect: ");
+                  const devices = linesSATA.join("\n").split(" Physical Interconnect: ");
                   devices.shift();
-                  devices.forEach(function(device) {
+                  devices.forEach((device) => {
                     device = "InterfaceType: " + device;
-                    let lines2 = device.split("\n");
+                    const lines2 = device.split("\n");
                     const mediumType = util.getValue(lines2, "Medium Type", ":", true).trim();
                     const sizeStr = util.getValue(lines2, "capacity", ":", true).trim();
                     const BSDName = util.getValue(lines2, "BSD Name", ":", true).trim();
                     if (sizeStr) {
                       let sizeValue = 0;
                       if (sizeStr.indexOf("(") >= 0) {
-                        sizeValue = parseInt(sizeStr.match(/\(([^)]+)\)/)[1].replace(/\./g, "").replace(/,/g, "").replace(/\s/g, ""));
+                        sizeValue = parseInt(
+                          sizeStr.match(/\(([^)]+)\)/)[1].replace(/\./g, "").replace(/,/g, "").replace(/\s/g, ""),
+                          10
+                        );
                       }
                       if (!sizeValue) {
-                        sizeValue = parseInt(sizeStr);
+                        sizeValue = parseInt(sizeStr, 10);
                       }
                       if (sizeValue) {
                         const smartStatusString = util.getValue(lines2, "S.M.A.R.T. status", ":", true).trim().toLowerCase();
@@ -24656,6 +24951,7 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                           BSDName
                         });
                         cmd = cmd + 'printf "\n' + BSDName + '|"; diskutil info /dev/' + BSDName + " | grep SMART;";
+                        cmdFullSmart += `${cmdFullSmart ? 'printf ",";' : ""}smartctl -a -j ${BSDName};`;
                       }
                     }
                   });
@@ -24663,21 +24959,24 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                   util.noop();
                 }
                 try {
-                  let devices = linesNVMe.join("\n").split("\n\n          Capacity:");
+                  const devices = linesNVMe.join("\n").split("\n\n          Capacity:");
                   devices.shift();
-                  devices.forEach(function(device) {
-                    device = "!Capacity: " + device;
-                    let lines2 = device.split("\n");
+                  devices.forEach((device) => {
+                    device = `!Capacity: ${device}`;
+                    const lines2 = device.split("\n");
                     const linkWidth = util.getValue(lines2, "link width", ":", true).trim();
                     const sizeStr = util.getValue(lines2, "!capacity", ":", true).trim();
                     const BSDName = util.getValue(lines2, "BSD Name", ":", true).trim();
                     if (sizeStr) {
                       let sizeValue = 0;
                       if (sizeStr.indexOf("(") >= 0) {
-                        sizeValue = parseInt(sizeStr.match(/\(([^)]+)\)/)[1].replace(/\./g, "").replace(/,/g, "").replace(/\s/g, ""));
+                        sizeValue = parseInt(
+                          sizeStr.match(/\(([^)]+)\)/)[1].replace(/\./g, "").replace(/,/g, "").replace(/\s/g, ""),
+                          10
+                        );
                       }
                       if (!sizeValue) {
-                        sizeValue = parseInt(sizeStr);
+                        sizeValue = parseInt(sizeStr, 10);
                       }
                       if (sizeValue) {
                         const smartStatusString = util.getValue(lines2, "S.M.A.R.T. status", ":", true).trim().toLowerCase();
@@ -24701,7 +25000,9 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                           temperature: null,
                           BSDName
                         });
-                        cmd = cmd + 'printf "\n' + BSDName + '|"; diskutil info /dev/' + BSDName + " | grep SMART;";
+                        cmd = `${cmd}printf "
+${BSDName}|"; diskutil info /dev/${BSDName} | grep SMART;`;
+                        cmdFullSmart += `${cmdFullSmart ? 'printf ",";' : ""}smartctl -a -j ${BSDName};`;
                       }
                     }
                   });
@@ -24709,19 +25010,22 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                   util.noop();
                 }
                 try {
-                  let devices = linesUSB.join("\n").replaceAll("Media:\n ", "Model:").split("\n\n          Product ID:");
+                  const devices = linesUSB.join("\n").replaceAll("Media:\n ", "Model:").split("\n\n          Product ID:");
                   devices.shift();
-                  devices.forEach(function(device) {
-                    let lines2 = device.split("\n");
+                  devices.forEach((device) => {
+                    const lines2 = device.split("\n");
                     const sizeStr = util.getValue(lines2, "Capacity", ":", true).trim();
                     const BSDName = util.getValue(lines2, "BSD Name", ":", true).trim();
                     if (sizeStr) {
                       let sizeValue = 0;
                       if (sizeStr.indexOf("(") >= 0) {
-                        sizeValue = parseInt(sizeStr.match(/\(([^)]+)\)/)[1].replace(/\./g, "").replace(/,/g, "").replace(/\s/g, ""));
+                        sizeValue = parseInt(
+                          sizeStr.match(/\(([^)]+)\)/)[1].replace(/\./g, "").replace(/,/g, "").replace(/\s/g, ""),
+                          10
+                        );
                       }
                       if (!sizeValue) {
-                        sizeValue = parseInt(sizeStr);
+                        sizeValue = parseInt(sizeStr, 10);
                       }
                       if (sizeValue) {
                         const smartStatusString = util.getValue(lines2, "S.M.A.R.T. status", ":", true).trim().toLowerCase();
@@ -24746,26 +25050,75 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                           BSDName
                         });
                         cmd = cmd + 'printf "\n' + BSDName + '|"; diskutil info /dev/' + BSDName + " | grep SMART;";
+                        cmdFullSmart += `${cmdFullSmart ? 'printf ",";' : ""}smartctl -a -j ${BSDName};`;
                       }
                     }
                   });
                 } catch (e) {
                   util.noop();
                 }
-                if (cmd) {
+                if (cmdFullSmart) {
+                  exec(cmdFullSmart, { maxBuffer: 1024 * 1024 }, (error2, stdout2) => {
+                    try {
+                      const data = JSON.parse(`[${stdout2}]`);
+                      data.forEach((disk) => {
+                        const diskBSDName = disk.smartctl.argv[disk.smartctl.argv.length - 1];
+                        for (let i = 0; i < result2.length; i++) {
+                          if (result2[i].BSDName === diskBSDName) {
+                            result2[i].smartStatus = disk.smart_status.passed ? "Ok" : disk.smart_status.passed === false ? "Predicted Failure" : "unknown";
+                            if (disk.temperature && disk.temperature.current) {
+                              result2[i].temperature = disk.temperature.current;
+                            }
+                            result2[i].smartData = disk;
+                          }
+                        }
+                      });
+                      commitResult(result2);
+                    } catch (e) {
+                      if (cmd) {
+                        cmd = cmd + 'printf "\n"';
+                        exec(cmd, { maxBuffer: 1024 * 1024 }, (error3, stdout3) => {
+                          const lines2 = stdout3.toString().split("\n");
+                          lines2.forEach((line) => {
+                            if (line) {
+                              const parts = line.split("|");
+                              if (parts.length === 2) {
+                                const BSDName = parts[0];
+                                parts[1] = parts[1].trim();
+                                const parts2 = parts[1].split(":");
+                                if (parts2.length === 2) {
+                                  parts2[1] = parts2[1].trim();
+                                  const status = parts2[1].toLowerCase();
+                                  for (let i = 0; i < result2.length; i++) {
+                                    if (result2[i].BSDName === BSDName) {
+                                      result2[i].smartStatus = status === "passed" ? "Ok" : status === "failed!" ? "Predicted Failure" : "unknown";
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          });
+                          commitResult(result2);
+                        });
+                      } else {
+                        commitResult(result2);
+                      }
+                    }
+                  });
+                } else if (cmd) {
                   cmd = cmd + 'printf "\n"';
-                  exec2(cmd, { maxBuffer: 1024 * 1024 }, function(error2, stdout2) {
-                    let lines2 = stdout2.toString().split("\n");
+                  exec(cmd, { maxBuffer: 1024 * 1024 }, (error2, stdout2) => {
+                    const lines2 = stdout2.toString().split("\n");
                     lines2.forEach((line) => {
                       if (line) {
-                        let parts = line.split("|");
+                        const parts = line.split("|");
                         if (parts.length === 2) {
-                          let BSDName = parts[0];
+                          const BSDName = parts[0];
                           parts[1] = parts[1].trim();
-                          let parts2 = parts[1].split(":");
+                          const parts2 = parts[1].split(":");
                           if (parts2.length === 2) {
                             parts2[1] = parts2[1].trim();
-                            let status = parts2[1].toLowerCase();
+                            const status = parts2[1].toLowerCase();
                             for (let i = 0; i < result2.length; i++) {
                               if (result2[i].BSDName === BSDName) {
                                 result2[i].smartStatus = status === "not supported" ? "not supported" : status === "verified" ? "Ok" : status === "failing" ? "Predicted Failure" : "unknown";
@@ -24775,30 +25128,24 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                         }
                       }
                     });
-                    for (let i = 0; i < result2.length; i++) {
-                      delete result2[i].BSDName;
-                    }
-                    if (callback) {
-                      callback(result2);
-                    }
-                    resolve(result2);
+                    commitResult(result2);
                   });
                 } else {
-                  for (let i = 0; i < result2.length; i++) {
-                    delete result2[i].BSDName;
-                  }
-                  if (callback) {
-                    callback(result2);
-                  }
-                  resolve(result2);
+                  commitResult(result2);
                 }
+              } else {
+                commitResult(result2);
               }
             });
           }
           if (_windows) {
             try {
               const workload = [];
-              workload.push(util.powerShell("Get-CimInstance Win32_DiskDrive | select Caption,Size,Status,PNPDeviceId,DeviceId,BytesPerSector,TotalCylinders,TotalHeads,TotalSectors,TotalTracks,TracksPerCylinder,SectorsPerTrack,FirmwareRevision,SerialNumber,InterfaceType | fl"));
+              workload.push(
+                util.powerShell(
+                  "Get-CimInstance Win32_DiskDrive | select Caption,Size,Status,PNPDeviceId,DeviceId,BytesPerSector,TotalCylinders,TotalHeads,TotalSectors,TotalTracks,TracksPerCylinder,SectorsPerTrack,FirmwareRevision,SerialNumber,InterfaceType | fl"
+                )
+              );
               workload.push(util.powerShell("Get-PhysicalDisk | select BusType,MediaType,FriendlyName,Model,SerialNumber,Size | fl"));
               if (util.smartMonToolsInstalled()) {
                 try {
@@ -24812,12 +25159,10 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                   util.noop();
                 }
               }
-              util.promiseAll(
-                workload
-              ).then((data) => {
+              util.promiseAll(workload).then((data) => {
                 let devices = data.results[0].toString().split(/\n\s*\n/);
-                devices.forEach(function(device) {
-                  let lines = device.split("\r\n");
+                devices.forEach((device) => {
+                  const lines = device.split("\r\n");
                   const size = util.getValue(lines, "Size", ":").trim();
                   const status = util.getValue(lines, "Status", ":").trim().toLowerCase();
                   if (size) {
@@ -24828,14 +25173,14 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                       // just a starting point ... better: MSFT_PhysicalDisk - Media Type ... see below
                       name: util.getValue(lines, "Caption", ":"),
                       vendor: getVendorFromModel(util.getValue(lines, "Caption", ":", true).trim()),
-                      size: parseInt(size),
-                      bytesPerSector: parseInt(util.getValue(lines, "BytesPerSector", ":")),
-                      totalCylinders: parseInt(util.getValue(lines, "TotalCylinders", ":")),
-                      totalHeads: parseInt(util.getValue(lines, "TotalHeads", ":")),
-                      totalSectors: parseInt(util.getValue(lines, "TotalSectors", ":")),
-                      totalTracks: parseInt(util.getValue(lines, "TotalTracks", ":")),
-                      tracksPerCylinder: parseInt(util.getValue(lines, "TracksPerCylinder", ":")),
-                      sectorsPerTrack: parseInt(util.getValue(lines, "SectorsPerTrack", ":")),
+                      size: parseInt(size, 10),
+                      bytesPerSector: parseInt(util.getValue(lines, "BytesPerSector", ":"), 10),
+                      totalCylinders: parseInt(util.getValue(lines, "TotalCylinders", ":"), 10),
+                      totalHeads: parseInt(util.getValue(lines, "TotalHeads", ":"), 10),
+                      totalSectors: parseInt(util.getValue(lines, "TotalSectors", ":"), 10),
+                      totalTracks: parseInt(util.getValue(lines, "TotalTracks", ":"), 10),
+                      tracksPerCylinder: parseInt(util.getValue(lines, "TracksPerCylinder", ":"), 10),
+                      sectorsPerTrack: parseInt(util.getValue(lines, "SectorsPerTrack", ":"), 10),
                       firmwareRevision: util.getValue(lines, "FirmwareRevision", ":").trim(),
                       serialNum: util.getValue(lines, "SerialNumber", ":").trim(),
                       interfaceType: util.getValue(lines, "InterfaceType", ":").trim(),
@@ -24845,8 +25190,8 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                   }
                 });
                 devices = data.results[1].split(/\n\s*\n/);
-                devices.forEach(function(device) {
-                  let lines = device.split("\r\n");
+                devices.forEach((device) => {
+                  const lines = device.split("\r\n");
                   const serialNum = util.getValue(lines, "SerialNumber", ":").trim();
                   const name = util.getValue(lines, "FriendlyName", ":").trim().replace("Msft ", "Microsoft");
                   const size = util.getValue(lines, "Size", ":").trim();
@@ -24870,7 +25215,7 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                     if (i === -1 || serialNum === "") {
                       i = util.findObjectByKey(result2, "name", name);
                     }
-                    if (i != -1) {
+                    if (i !== -1) {
                       result2[i].type = mediaType;
                       result2[i].interfaceType = interfaceType;
                     }
@@ -24884,8 +25229,8 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
                       const smartData = JSON.parse(smartStr);
                       if (smartData.serial_number) {
                         const serialNum = smartData.serial_number;
-                        let i = util.findObjectByKey(result2, "serialNum", serialNum);
-                        if (i != -1) {
+                        const i = util.findObjectByKey(result2, "serialNum", serialNum);
+                        if (i !== -1) {
                           result2[i].smartStatus = smartData.smart_status && smartData.smart_status.passed ? "Ok" : smartData.smart_status && smartData.smart_status.passed === false ? "Predicted Failure" : "unknown";
                           if (smartData.temperature && smartData.temperature.current) {
                             result2[i].temperature = smartData.temperature.current;
@@ -24921,8 +25266,8 @@ ${BSDName}|"; smartctl -H ${BSDName} | grep overall;`;
 var require_network = __commonJS({
   "node_modules/systeminformation/lib/network.js"(exports) {
     "use strict";
-    var os2 = require("os");
-    var exec2 = require("child_process").exec;
+    var os4 = require("os");
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var fs = require("fs");
     var util = require_util2();
@@ -24945,11 +25290,11 @@ var require_network = __commonJS({
       let ifacename = "";
       let ifacenameFirst = "";
       try {
-        let ifaces = os2.networkInterfaces();
+        const ifaces = os4.networkInterfaces();
         let scopeid = 9999;
         for (let dev in ifaces) {
           if ({}.hasOwnProperty.call(ifaces, dev)) {
-            ifaces[dev].forEach(function(details) {
+            ifaces[dev].forEach((details) => {
               if (details && details.internal === false) {
                 ifacenameFirst = ifacenameFirst || dev;
                 if (details.scopeid && details.scopeid < scopeid) {
@@ -24965,7 +25310,7 @@ var require_network = __commonJS({
           let defaultIp = "";
           const cmd = "netstat -r";
           const result2 = execSync(cmd, util.execOptsWin);
-          const lines = result2.toString().split(os2.EOL);
+          const lines = result2.toString().split(os4.EOL);
           lines.forEach((line) => {
             line = line.replace(/\s+/g, " ").trim();
             if (line.indexOf("0.0.0.0 0.0.0.0") > -1 && !/[a-zA-Z]/.test(line)) {
@@ -24978,7 +25323,7 @@ var require_network = __commonJS({
           if (defaultIp) {
             for (let dev in ifaces) {
               if ({}.hasOwnProperty.call(ifaces, dev)) {
-                ifaces[dev].forEach(function(details) {
+                ifaces[dev].forEach((details) => {
                   if (details && details.address && details.address === defaultIp) {
                     ifacename = dev;
                   }
@@ -24988,9 +25333,9 @@ var require_network = __commonJS({
           }
         }
         if (_linux) {
-          let cmd = "ip route 2> /dev/null | grep default";
-          let result2 = execSync(cmd, util.execOptsLinux);
-          let parts = result2.toString().split("\n")[0].split(/\s+/);
+          const cmd = "ip route 2> /dev/null | grep default";
+          const result2 = execSync(cmd, util.execOptsLinux);
+          const parts = result2.toString().split("\n")[0].split(/\s+/);
           if (parts[0] === "none" && parts[5]) {
             ifacename = parts[5];
           } else if (parts[4]) {
@@ -25011,7 +25356,7 @@ var require_network = __commonJS({
           if (_freebsd || _openbsd || _netbsd || _sunos) {
             cmd = "route get 0.0.0.0 | grep interface:";
           }
-          let result2 = execSync(cmd);
+          const result2 = execSync(cmd);
           ifacename = result2.toString().split("\n")[0];
           if (ifacename.indexOf(":") > -1) {
             ifacename = ifacename.split(":")[1].trim();
@@ -25029,7 +25374,7 @@ var require_network = __commonJS({
     function getMacAddresses() {
       let iface = "";
       let mac = "";
-      let result2 = {};
+      const result2 = {};
       if (_linux || _freebsd || _openbsd || _netbsd) {
         if (typeof pathToIp === "undefined") {
           try {
@@ -25045,12 +25390,12 @@ var require_network = __commonJS({
         }
         try {
           const cmd = "export LC_ALL=C; " + (pathToIp ? pathToIp + " link show up" : "/sbin/ifconfig") + "; unset LC_ALL";
-          let res = execSync(cmd, util.execOptsLinux);
+          const res = execSync(cmd, util.execOptsLinux);
           const lines = res.toString().split("\n");
           for (let i = 0; i < lines.length; i++) {
             if (lines[i] && lines[i][0] !== " ") {
               if (pathToIp) {
-                let nextline = lines[i + 1].trim().split(" ");
+                const nextline = lines[i + 1].trim().split(" ");
                 if (nextline[0] === "link/ether") {
                   iface = lines[i].split(" ")[1];
                   iface = iface.slice(0, iface.length - 1);
@@ -25074,7 +25419,7 @@ var require_network = __commonJS({
       if (_darwin) {
         try {
           const cmd = "/sbin/ifconfig";
-          let res = execSync(cmd);
+          const res = execSync(cmd);
           const lines = res.toString().split("\n");
           for (let i = 0; i < lines.length; i++) {
             if (lines[i] && lines[i][0] !== "	" && lines[i].indexOf(":") > 0) {
@@ -25097,7 +25442,7 @@ var require_network = __commonJS({
     function networkInterfaceDefault(callback) {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let result2 = getDefaultNetworkInterface();
+          const result2 = getDefaultNetworkInterface();
           if (callback) {
             callback(result2);
           }
@@ -25107,22 +25452,22 @@ var require_network = __commonJS({
     }
     exports.networkInterfaceDefault = networkInterfaceDefault;
     function parseLinesWindowsNics(sections, nconfigsections) {
-      let nics = [];
+      const nics = [];
       for (let i in sections) {
         try {
           if ({}.hasOwnProperty.call(sections, i)) {
             if (sections[i].trim() !== "") {
-              let lines = sections[i].trim().split("\r\n");
+              const lines = sections[i].trim().split("\r\n");
               let linesNicConfig = null;
               try {
                 linesNicConfig = nconfigsections && nconfigsections[i] ? nconfigsections[i].trim().split("\r\n") : [];
               } catch (e) {
                 util.noop();
               }
-              let netEnabled = util.getValue(lines, "NetEnabled", ":");
+              const netEnabled = util.getValue(lines, "NetEnabled", ":");
               let adapterType = util.getValue(lines, "AdapterTypeID", ":") === "9" ? "wireless" : "wired";
-              let ifacename = util.getValue(lines, "Name", ":").replace(/\]/g, ")").replace(/\[/g, "(");
-              let iface = util.getValue(lines, "NetConnectionID", ":").replace(/\]/g, ")").replace(/\[/g, "(");
+              const ifacename = util.getValue(lines, "Name", ":").replace(/\]/g, ")").replace(/\[/g, "(");
+              const iface = util.getValue(lines, "NetConnectionID", ":").replace(/\]/g, ")").replace(/\[/g, "(");
               if (ifacename.toLowerCase().indexOf("wi-fi") >= 0 || ifacename.toLowerCase().indexOf("wireless") >= 0) {
                 adapterType = "wireless";
               }
@@ -25167,7 +25512,7 @@ var require_network = __commonJS({
     }
     function getWindowsDNSsuffixes() {
       let iface = {};
-      let dnsSuffixes = {
+      const dnsSuffixes = {
         primaryDNS: "",
         exitCode: 0,
         ifaces: []
@@ -25176,7 +25521,7 @@ var require_network = __commonJS({
         const ipconfig = execSync("ipconfig /all", util.execOptsWin);
         const ipconfigArray = ipconfig.split("\r\n\r\n");
         ipconfigArray.forEach((element, index) => {
-          if (index == 1) {
+          if (index === 1) {
             const longPrimaryDNS = element.split("\r\n").filter((element2) => {
               return element2.toUpperCase().includes("DNS");
             });
@@ -25187,7 +25532,7 @@ var require_network = __commonJS({
             }
           }
           if (index > 1) {
-            if (index % 2 == 0) {
+            if (index % 2 === 0) {
               const name = element.substring(element.lastIndexOf(" ") + 1).replace(":", "");
               iface.name = name;
             } else {
@@ -25202,7 +25547,7 @@ var require_network = __commonJS({
           }
         });
         return dnsSuffixes;
-      } catch (error) {
+      } catch (e) {
         return {
           primaryDNS: "",
           exitCode: 0,
@@ -25224,7 +25569,7 @@ var require_network = __commonJS({
           dnsSuffix = "";
         }
         return dnsSuffix;
-      } catch (error) {
+      } catch (e) {
         return "Unknown";
       }
     }
@@ -25246,12 +25591,12 @@ var require_network = __commonJS({
         const SSID = result2.split("\r\n").shift();
         const parseSSID = SSID.split(":").pop().trim();
         return parseSSID;
-      } catch (error) {
+      } catch (e) {
         return "Unknown";
       }
     }
     function getWindowsIEEE8021x(connectionType, iface, ifaces) {
-      let i8021x = {
+      const i8021x = {
         state: "Unknown",
         protocol: "Unknown"
       };
@@ -25260,7 +25605,7 @@ var require_network = __commonJS({
         i8021x.protocol = "Not defined";
         return i8021x;
       }
-      if (connectionType == "wired" && ifaces.length > 0) {
+      if (connectionType === "wired" && ifaces.length > 0) {
         try {
           const iface8021xInfo = ifaces.find((element) => {
             return element.includes(iface + "\r\n");
@@ -25279,10 +25624,10 @@ var require_network = __commonJS({
             i8021x.protocol = protocol8021x.split(":").pop();
             i8021x.state = "Enabled";
           }
-        } catch (error) {
+        } catch (e) {
           return i8021x;
         }
-      } else if (connectionType == "wireless") {
+      } else if (connectionType === "wireless") {
         let i8021xState = "";
         let i8021xProtocol = "";
         try {
@@ -25296,8 +25641,9 @@ var require_network = __commonJS({
                 ifaceSanitized = ifaceSanitized + s[i];
               }
             }
-            i8021xState = execSync(`netsh wlan show profiles "${ifaceSanitized}" | findstr "802.1X"`, util.execOptsWin);
-            i8021xProtocol = execSync(`netsh wlan show profiles "${ifaceSanitized}" | findstr "EAP"`, util.execOptsWin);
+            const profiles = execSync(`netsh wlan show profiles "${ifaceSanitized}"`, util.execOptsWin).split("\r\n");
+            i8021xState = (profiles.find((l2) => l2.indexOf("802.1X") >= 0) || "").trim();
+            i8021xProtocol = (profiles.find((l2) => l2.indexOf("EAP") >= 0) || "").trim();
           }
           if (i8021xState.includes(":") && i8021xProtocol.includes(":")) {
             i8021x.state = i8021xState.split(":").pop();
@@ -25316,7 +25662,7 @@ var require_network = __commonJS({
     function splitSectionsNics(lines) {
       const result2 = [];
       let section = [];
-      lines.forEach(function(line) {
+      lines.forEach((line) => {
         if (!line.startsWith("	") && !line.startsWith(" ")) {
           if (section.length) {
             result2.push(section);
@@ -25331,9 +25677,9 @@ var require_network = __commonJS({
       return result2;
     }
     function parseLinesDarwinNics(sections) {
-      let nics = [];
+      const nics = [];
       sections.forEach((section) => {
-        let nic = {
+        const nic = {
           iface: "",
           mtu: null,
           mac: "",
@@ -25347,7 +25693,7 @@ var require_network = __commonJS({
         };
         const first = section[0];
         nic.iface = first.split(":")[0].trim();
-        let parts = first.split("> mtu");
+        const parts = first.split("> mtu");
         nic.mtu = parts.length > 1 ? parseInt(parts[1], 10) : null;
         if (isNaN(nic.mtu)) {
           nic.mtu = null;
@@ -25390,7 +25736,7 @@ var require_network = __commonJS({
     function getDarwinNics() {
       const cmd = "/sbin/ifconfig -v";
       try {
-        const lines = execSync(cmd, { maxBuffer: 1024 * 2e4 }).toString().split("\n");
+        const lines = execSync(cmd, { maxBuffer: 1024 * 102400 }).toString().split("\n");
         const nsections = splitSectionsNics(lines);
         return parseLinesDarwinNics(nsections);
       } catch (e) {
@@ -25404,7 +25750,7 @@ var require_network = __commonJS({
         const resultFormat = result2.replace(/\s+/g, " ").trim();
         const connectionNameLines = resultFormat.split(" ").slice(3);
         const connectionName = connectionNameLines.join(" ");
-        return connectionName != "--" ? connectionName : "";
+        return connectionName !== "--" ? connectionName : "";
       } catch (e) {
         return "";
       }
@@ -25412,7 +25758,7 @@ var require_network = __commonJS({
     function checkLinuxDCHPInterfaces(file) {
       let result2 = [];
       try {
-        let cmd = `cat ${file} 2> /dev/null | grep 'iface\\|source'`;
+        const cmd = `cat ${file} 2> /dev/null | grep 'iface\\|source'`;
         const lines = execSync(cmd, util.execOptsLinux).toString().split("\n");
         lines.forEach((line) => {
           const parts = line.replace(/\s+/g, " ").trim().split(" ");
@@ -25422,7 +25768,7 @@ var require_network = __commonJS({
             }
           }
           if (line.toLowerCase().includes("source")) {
-            let file2 = line.split(" ")[1];
+            const file2 = line.split(" ")[1];
             result2 = result2.concat(checkLinuxDCHPInterfaces(file2));
           }
         });
@@ -25432,7 +25778,7 @@ var require_network = __commonJS({
       return result2;
     }
     function getLinuxDHCPNics() {
-      let cmd = "ip a 2> /dev/null";
+      const cmd = "ip a 2> /dev/null";
       let result2 = [];
       try {
         const lines = execSync(cmd, util.execOptsLinux).toString().split("\n");
@@ -25476,7 +25822,7 @@ var require_network = __commonJS({
         try {
           const lines = execSync(cmd, util.execOptsLinux).toString();
           const resultFormat = lines.replace(/\s+/g, " ").trim();
-          let dhcStatus = resultFormat.split(" ").slice(1).toString();
+          const dhcStatus = resultFormat.split(" ").slice(1).toString();
           switch (dhcStatus) {
             case "auto":
               result2 = true;
@@ -25513,7 +25859,7 @@ var require_network = __commonJS({
           const result2 = execSync(cmd, util.execOptsLinux).toString();
           const resultFormat = result2.replace(/\s+/g, " ").trim();
           const dnsSuffix = resultFormat.split(" ").slice(1).toString();
-          return dnsSuffix == "--" ? "Not defined" : dnsSuffix;
+          return dnsSuffix === "--" ? "Not defined" : dnsSuffix;
         } catch (e) {
           return "Unknown";
         }
@@ -25528,7 +25874,7 @@ var require_network = __commonJS({
           const result2 = execSync(cmd, util.execOptsLinux).toString();
           const resultFormat = result2.replace(/\s+/g, " ").trim();
           const authenticationProtocol = resultFormat.split(" ").slice(1).toString();
-          return authenticationProtocol == "--" ? "" : authenticationProtocol;
+          return authenticationProtocol === "--" ? "" : authenticationProtocol;
         } catch (e) {
           return "Not defined";
         }
@@ -25538,7 +25884,7 @@ var require_network = __commonJS({
     }
     function getLinuxIfaceIEEE8021xState(authenticationProtocol) {
       if (authenticationProtocol) {
-        if (authenticationProtocol == "Not defined") {
+        if (authenticationProtocol === "Not defined") {
           return "Disabled";
         }
         return "Enabled";
@@ -25547,7 +25893,30 @@ var require_network = __commonJS({
       }
     }
     function testVirtualNic(iface, ifaceName, mac) {
-      const virtualMacs = ["00:00:00:00:00:00", "00:03:FF", "00:05:69", "00:0C:29", "00:0F:4B", "00:13:07", "00:13:BE", "00:15:5d", "00:16:3E", "00:1C:42", "00:21:F6", "00:24:0B", "00:50:56", "00:A0:B1", "00:E0:C8", "08:00:27", "0A:00:27", "18:92:2C", "16:DF:49", "3C:F3:92", "54:52:00", "FC:15:97"];
+      const virtualMacs = [
+        "00:00:00:00:00:00",
+        "00:03:FF",
+        "00:05:69",
+        "00:0C:29",
+        "00:0F:4B",
+        "00:13:07",
+        "00:13:BE",
+        "00:15:5d",
+        "00:16:3E",
+        "00:1C:42",
+        "00:21:F6",
+        "00:24:0B",
+        "00:50:56",
+        "00:A0:B1",
+        "00:E0:C8",
+        "08:00:27",
+        "0A:00:27",
+        "18:92:2C",
+        "16:DF:49",
+        "3C:F3:92",
+        "54:52:00",
+        "FC:15:97"
+      ];
       if (mac) {
         return virtualMacs.filter((item) => {
           return mac.toUpperCase().toUpperCase().startsWith(item.substring(0, mac.length));
@@ -25574,7 +25943,7 @@ var require_network = __commonJS({
       defaultString = "" + defaultString;
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let ifaces = os2.networkInterfaces();
+          const ifaces = os4.networkInterfaces();
           let result2 = [];
           let nics = [];
           let dnsSuffixes = [];
@@ -25591,15 +25960,43 @@ var require_network = __commonJS({
               _ifaces = JSON.parse(JSON.stringify(ifaces));
               nics = getDarwinNics();
               nics.forEach((nic) => {
+                let ip4link = "";
+                let ip4linksubnet = "";
+                let ip6link = "";
+                let ip6linksubnet = "";
+                nic.ip4 = "";
+                nic.ip6 = "";
                 if ({}.hasOwnProperty.call(ifaces, nic.iface)) {
-                  ifaces[nic.iface].forEach(function(details) {
+                  ifaces[nic.iface].forEach((details) => {
                     if (details.family === "IPv4" || details.family === 4) {
-                      nic.ip4subnet = details.netmask;
+                      if (!nic.ip4 && !nic.ip4.match(/^169.254/i)) {
+                        nic.ip4 = details.address;
+                        nic.ip4subnet = details.netmask;
+                      }
+                      if (nic.ip4.match(/^169.254/i)) {
+                        ip4link = details.address;
+                        ip4linksubnet = details.netmask;
+                      }
                     }
                     if (details.family === "IPv6" || details.family === 6) {
-                      nic.ip6subnet = details.netmask;
+                      if (!nic.ip6 && !nic.ip6.match(/^fe80::/i)) {
+                        nic.ip6 = details.address;
+                        nic.ip6subnet = details.netmask;
+                      }
+                      if (nic.ip6.match(/^fe80::/i)) {
+                        ip6link = details.address;
+                        ip6linksubnet = details.netmask;
+                      }
                     }
                   });
+                }
+                if (!nic.ip4 && ip4link) {
+                  nic.ip4 = ip4link;
+                  nic.ip4subnet = ip4linksubnet;
+                }
+                if (!nic.ip6 && ip6link) {
+                  nic.ip6 = ip6link;
+                  nic.ip6subnet = ip6linksubnet;
                 }
                 let ifaceSanitized = "";
                 const s = util.isPrototypePolluted() ? "---" : util.sanitizeShellString(nic.iface);
@@ -25673,17 +26070,31 @@ var require_network = __commonJS({
                 let ieee8021xAuth = "";
                 let ieee8021xState = "";
                 let type = "";
+                let ip4link = "";
+                let ip4linksubnet = "";
+                let ip6link = "";
+                let ip6linksubnet = "";
                 if ({}.hasOwnProperty.call(ifaces, dev)) {
-                  let ifaceName = dev;
-                  ifaces[dev].forEach(function(details) {
+                  const ifaceName = dev;
+                  ifaces[dev].forEach((details) => {
                     if (details.family === "IPv4" || details.family === 4) {
-                      ip4 = details.address;
-                      ip4subnet = details.netmask;
+                      if (!ip4 && !ip4.match(/^169.254/i)) {
+                        ip4 = details.address;
+                        ip4subnet = details.netmask;
+                      }
+                      if (ip4.match(/^169.254/i)) {
+                        ip4link = details.address;
+                        ip4linksubnet = details.netmask;
+                      }
                     }
                     if (details.family === "IPv6" || details.family === 6) {
-                      if (!ip6 || ip6.match(/^fe80::/i)) {
+                      if (!ip6 && !ip6.match(/^fe80::/i)) {
                         ip6 = details.address;
                         ip6subnet = details.netmask;
+                      }
+                      if (ip6.match(/^fe80::/i)) {
+                        ip6link = details.address;
+                        ip6linksubnet = details.netmask;
                       }
                     }
                     mac = details.mac;
@@ -25695,7 +26106,15 @@ var require_network = __commonJS({
                       mac = _mac[dev] || "";
                     }
                   });
-                  let iface = dev.split(":")[0].trim().toLowerCase();
+                  if (!ip4 && ip4link) {
+                    ip4 = ip4link;
+                    ip4subnet = ip4linksubnet;
+                  }
+                  if (!ip6 && ip6link) {
+                    ip6 = ip6link;
+                    ip6subnet = ip6linksubnet;
+                  }
+                  const iface = dev.split(":")[0].trim();
                   let ifaceSanitized = "";
                   const s = util.isPrototypePolluted() ? "---" : util.sanitizeShellString(iface);
                   const l = util.mathMin(s.length, 2e3);
@@ -25745,9 +26164,9 @@ var require_network = __commonJS({
                   mtu = parseInt(util.getValue(lines, "mtu"), 10);
                   let myspeed = parseInt(util.getValue(lines, "speed"), 10);
                   speed = isNaN(myspeed) ? null : myspeed;
-                  let wirelessspeed = util.getValue(lines, "wirelessspeed").split("tx bitrate: ");
-                  if (speed === null && wirelessspeed.length === 2) {
-                    myspeed = parseFloat(wirelessspeed[1]);
+                  const wirelessspeed = util.getValue(lines, "tx bitrate");
+                  if (speed === null && wirelessspeed) {
+                    myspeed = parseFloat(wirelessspeed);
                     speed = isNaN(myspeed) ? null : myspeed;
                   }
                   carrierChanges = parseInt(util.getValue(lines, "carrier_changes"), 10);
@@ -25810,7 +26229,7 @@ var require_network = __commonJS({
             } else {
               _ifaces = JSON.parse(JSON.stringify(ifaces));
               const defaultInterface = getDefaultNetworkInterface();
-              getWindowsNics().then(function(nics2) {
+              getWindowsNics().then((nics2) => {
                 nics2.forEach((nic) => {
                   let found = false;
                   Object.keys(ifaces).forEach((key) => {
@@ -25855,7 +26274,7 @@ var require_network = __commonJS({
                   let type = "";
                   if ({}.hasOwnProperty.call(ifaces, dev)) {
                     let ifaceName = dev;
-                    ifaces[dev].forEach(function(details) {
+                    ifaces[dev].forEach((details) => {
                       if (details.family === "IPv4" || details.family === 4) {
                         ip4 = details.address;
                         ip4subnet = details.netmask;
@@ -25944,7 +26363,7 @@ var require_network = __commonJS({
     }
     exports.networkInterfaces = networkInterfaces;
     function calcNetworkSpeed(iface, rx_bytes, tx_bytes, operstate, rx_dropped, rx_errors, tx_dropped, tx_errors) {
-      let result2 = {
+      const result2 = {
         iface,
         operstate,
         rx_bytes,
@@ -26008,7 +26427,7 @@ var require_network = __commonJS({
             } catch (e) {
               Object.setPrototypeOf(ifaces, util.stringObj);
             }
-            ifaces = ifaces.trim().toLowerCase().replace(/,+/g, "|");
+            ifaces = ifaces.trim().replace(/,+/g, "|");
             ifacesArray = ifaces.split("|");
           }
           const result2 = [];
@@ -26031,9 +26450,7 @@ var require_network = __commonJS({
               workload.push(networkStatsSingle(iface.trim()));
             }
             if (workload.length) {
-              Promise.all(
-                workload
-              ).then((data) => {
+              Promise.all(workload).then((data) => {
                 if (callback) {
                   callback(data);
                 }
@@ -26051,11 +26468,11 @@ var require_network = __commonJS({
     }
     function networkStatsSingle(iface) {
       function parseLinesWindowsPerfData(sections) {
-        let perfData = [];
+        const perfData = [];
         for (let i in sections) {
           if ({}.hasOwnProperty.call(sections, i)) {
             if (sections[i].trim() !== "") {
-              let lines = sections[i].trim().split("\r\n");
+              const lines = sections[i].trim().split("\r\n");
               perfData.push({
                 name: util.getValue(lines, "Name", ":").replace(/[()[\] ]+/g, "").replace(/#|\//g, "_").toLowerCase(),
                 rx_bytes: parseInt(util.getValue(lines, "BytesReceivedPersec", ":"), 10),
@@ -26105,7 +26522,7 @@ var require_network = __commonJS({
             if (_linux) {
               if (fs.existsSync("/sys/class/net/" + ifaceSanitized)) {
                 cmd = "cat /sys/class/net/" + ifaceSanitized + "/operstate; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_bytes; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_bytes; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_dropped; cat /sys/class/net/" + ifaceSanitized + "/statistics/rx_errors; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_dropped; cat /sys/class/net/" + ifaceSanitized + "/statistics/tx_errors; ";
-                exec2(cmd, function(error, stdout) {
+                exec(cmd, (error, stdout) => {
                   if (!error) {
                     lines = stdout.toString().split("\n");
                     operstate = lines[0].trim();
@@ -26125,7 +26542,7 @@ var require_network = __commonJS({
             }
             if (_freebsd || _openbsd || _netbsd) {
               cmd = "netstat -ibndI " + ifaceSanitized;
-              exec2(cmd, function(error, stdout) {
+              exec(cmd, (error, stdout) => {
                 if (!error) {
                   lines = stdout.toString().split("\n");
                   for (let i = 1; i < lines.length; i++) {
@@ -26155,12 +26572,12 @@ var require_network = __commonJS({
             }
             if (_darwin) {
               cmd = "ifconfig " + ifaceSanitized + ' | grep "status"';
-              exec2(cmd, function(error, stdout) {
+              exec(cmd, (error, stdout) => {
                 result2.operstate = (stdout.toString().split(":")[1] || "").trim();
                 result2.operstate = (result2.operstate || "").toLowerCase();
                 result2.operstate = result2.operstate === "active" ? "up" : result2.operstate === "inactive" ? "down" : "unknown";
                 cmd = "netstat -bdI " + ifaceSanitized;
-                exec2(cmd, function(error2, stdout2) {
+                exec(cmd, (error2, stdout2) => {
                   if (!error2) {
                     lines = stdout2.toString().split("\n");
                     if (lines.length > 1 && lines[1].trim() !== "") {
@@ -26182,7 +26599,9 @@ var require_network = __commonJS({
             if (_windows) {
               let perfData = [];
               let ifaceName = ifaceSanitized;
-              util.powerShell("Get-CimInstance Win32_PerfRawData_Tcpip_NetworkInterface | select Name,BytesReceivedPersec,PacketsReceivedErrors,PacketsReceivedDiscarded,BytesSentPersec,PacketsOutboundErrors,PacketsOutboundDiscarded | fl").then((stdout, error) => {
+              util.powerShell(
+                "Get-CimInstance Win32_PerfRawData_Tcpip_NetworkInterface | select Name,BytesReceivedPersec,PacketsReceivedErrors,PacketsReceivedDiscarded,BytesSentPersec,PacketsOutboundErrors,PacketsOutboundDiscarded | fl"
+              ).then((stdout, error) => {
                 if (!error) {
                   const psections = stdout.toString().split(/\n\s*\n/);
                   perfData = parseLinesWindowsPerfData(psections);
@@ -26241,21 +26660,21 @@ var require_network = __commonJS({
     function networkConnections(callback) {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let result2 = [];
+          const result2 = [];
           if (_linux || _freebsd || _openbsd || _netbsd) {
             let cmd = 'export LC_ALL=C; netstat -tunap | grep "ESTABLISHED\\|SYN_SENT\\|SYN_RECV\\|FIN_WAIT1\\|FIN_WAIT2\\|TIME_WAIT\\|CLOSE\\|CLOSE_WAIT\\|LAST_ACK\\|LISTEN\\|CLOSING\\|UNKNOWN"; unset LC_ALL';
             if (_freebsd || _openbsd || _netbsd) {
               cmd = 'export LC_ALL=C; netstat -na | grep "ESTABLISHED\\|SYN_SENT\\|SYN_RECV\\|FIN_WAIT1\\|FIN_WAIT2\\|TIME_WAIT\\|CLOSE\\|CLOSE_WAIT\\|LAST_ACK\\|LISTEN\\|CLOSING\\|UNKNOWN"; unset LC_ALL';
             }
-            exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout) {
+            exec(cmd, { maxBuffer: 1024 * 102400 }, (error, stdout) => {
               let lines = stdout.toString().split("\n");
-              if (!error && (lines.length > 1 || lines[0] != "")) {
-                lines.forEach(function(line) {
+              if (!error && (lines.length > 1 || lines[0] !== "")) {
+                lines.forEach((line) => {
                   line = line.replace(/ +/g, " ").split(" ");
                   if (line.length >= 7) {
                     let localip = line[3];
                     let localport = "";
-                    let localaddress = line[3].split(":");
+                    const localaddress = line[3].split(":");
                     if (localaddress.length > 1) {
                       localport = localaddress[localaddress.length - 1];
                       localaddress.pop();
@@ -26263,14 +26682,14 @@ var require_network = __commonJS({
                     }
                     let peerip = line[4];
                     let peerport = "";
-                    let peeraddress = line[4].split(":");
+                    const peeraddress = line[4].split(":");
                     if (peeraddress.length > 1) {
                       peerport = peeraddress[peeraddress.length - 1];
                       peeraddress.pop();
                       peerip = peeraddress.join(":");
                     }
-                    let connstate = line[5];
-                    let proc = line[6].split("/");
+                    const connstate = line[5];
+                    const proc = line[6].split("/");
                     if (connstate) {
                       result2.push({
                         protocol: line[0],
@@ -26291,15 +26710,15 @@ var require_network = __commonJS({
                 resolve(result2);
               } else {
                 cmd = 'ss -tunap | grep "ESTAB\\|SYN-SENT\\|SYN-RECV\\|FIN-WAIT1\\|FIN-WAIT2\\|TIME-WAIT\\|CLOSE\\|CLOSE-WAIT\\|LAST-ACK\\|LISTEN\\|CLOSING"';
-                exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error2, stdout2) {
+                exec(cmd, { maxBuffer: 1024 * 102400 }, (error2, stdout2) => {
                   if (!error2) {
-                    let lines2 = stdout2.toString().split("\n");
-                    lines2.forEach(function(line) {
+                    const lines2 = stdout2.toString().split("\n");
+                    lines2.forEach((line) => {
                       line = line.replace(/ +/g, " ").split(" ");
                       if (line.length >= 6) {
                         let localip = line[4];
                         let localport = "";
-                        let localaddress = line[4].split(":");
+                        const localaddress = line[4].split(":");
                         if (localaddress.length > 1) {
                           localport = localaddress[localaddress.length - 1];
                           localaddress.pop();
@@ -26307,7 +26726,7 @@ var require_network = __commonJS({
                         }
                         let peerip = line[5];
                         let peerport = "";
-                        let peeraddress = line[5].split(":");
+                        const peeraddress = line[5].split(":");
                         if (peeraddress.length > 1) {
                           peerport = peeraddress[peeraddress.length - 1];
                           peeraddress.pop();
@@ -26323,10 +26742,13 @@ var require_network = __commonJS({
                         let pid = null;
                         let process2 = "";
                         if (line.length >= 7 && line[6].indexOf("users:") > -1) {
-                          let proc = line[6].replace('users:(("', "").replace(/"/g, "").split(",");
+                          const proc = line[6].replace('users:(("', "").replace(/"/g, "").replace("pid=", "").split(",");
                           if (proc.length > 2) {
-                            process2 = proc[0].split(" ")[0].split(":")[0];
-                            pid = parseInt(proc[1], 10);
+                            process2 = proc[0];
+                            const pidValue = parseInt(proc[1], 10);
+                            if (pidValue > 0) {
+                              pid = pidValue;
+                            }
                           }
                         }
                         if (connstate) {
@@ -26353,28 +26775,28 @@ var require_network = __commonJS({
             });
           }
           if (_darwin) {
-            let cmd = 'netstat -natvln | head -n2; netstat -natvln | grep "tcp4\\|tcp6\\|udp4\\|udp6"';
+            const cmd = 'netstat -natvln | head -n2; netstat -natvln | grep "tcp4\\|tcp6\\|udp4\\|udp6"';
             const states = "ESTABLISHED|SYN_SENT|SYN_RECV|FIN_WAIT1|FIN_WAIT_1|FIN_WAIT2|FIN_WAIT_2|TIME_WAIT|CLOSE|CLOSE_WAIT|LAST_ACK|LISTEN|CLOSING|UNKNOWN".split("|");
-            exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout) {
+            exec(cmd, { maxBuffer: 1024 * 102400 }, (error, stdout) => {
               if (!error) {
-                exec2("ps -axo pid,command", { maxBuffer: 1024 * 2e4 }, function(err2, stdout2) {
+                exec("ps -axo pid,command", { maxBuffer: 1024 * 102400 }, (err2, stdout2) => {
                   let processes = stdout2.toString().split("\n");
                   processes = processes.map((line) => {
                     return line.trim().replace(/ +/g, " ");
                   });
-                  let lines = stdout.toString().split("\n");
+                  const lines = stdout.toString().split("\n");
                   lines.shift();
                   let pidPos = 8;
                   if (lines.length > 1 && lines[0].indexOf("pid") > 0) {
-                    const header = (lines.shift() || "").replace(/ Address/g, "_Address").replace(/ +/g, " ").split(" ");
+                    const header = (lines.shift() || "").replace(/ Address/g, "_Address").replace(/process:/g, "").replace(/ +/g, " ").split(" ");
                     pidPos = header.indexOf("pid");
                   }
-                  lines.forEach(function(line) {
+                  lines.forEach((line) => {
                     line = line.replace(/ +/g, " ").split(" ");
                     if (line.length >= 8) {
                       let localip = line[3];
                       let localport = "";
-                      let localaddress = line[3].split(".");
+                      const localaddress = line[3].split(".");
                       if (localaddress.length > 1) {
                         localport = localaddress[localaddress.length - 1];
                         localaddress.pop();
@@ -26382,15 +26804,24 @@ var require_network = __commonJS({
                       }
                       let peerip = line[4];
                       let peerport = "";
-                      let peeraddress = line[4].split(".");
+                      const peeraddress = line[4].split(".");
                       if (peeraddress.length > 1) {
                         peerport = peeraddress[peeraddress.length - 1];
                         peeraddress.pop();
                         peerip = peeraddress.join(".");
                       }
                       const hasState = states.indexOf(line[5]) >= 0;
-                      let connstate = hasState ? line[5] : "UNKNOWN";
-                      let pid = parseInt(line[pidPos + (hasState ? 0 : -1)], 10);
+                      const connstate = hasState ? line[5] : "UNKNOWN";
+                      let pidField = "";
+                      if (line[line.length - 9].indexOf(":") >= 0) {
+                        pidField = line[line.length - 9].split(":")[1];
+                      } else {
+                        pidField = line[pidPos + (hasState ? 0 : -1)];
+                        if (pidField.indexOf(":") >= 0) {
+                          pidField = pidField.split(":")[1];
+                        }
+                      }
+                      const pid = parseInt(pidField, 10);
                       if (connstate) {
                         result2.push({
                           protocol: line[0],
@@ -26416,15 +26847,15 @@ var require_network = __commonJS({
           if (_windows) {
             let cmd = "netstat -nao";
             try {
-              exec2(cmd, util.execOptsWin, function(error, stdout) {
+              exec(cmd, util.execOptsWin, (error, stdout) => {
                 if (!error) {
                   let lines = stdout.toString().split("\r\n");
-                  lines.forEach(function(line) {
+                  lines.forEach((line) => {
                     line = line.trim().replace(/ +/g, " ").split(" ");
                     if (line.length >= 4) {
                       let localip = line[1];
                       let localport = "";
-                      let localaddress = line[1].split(":");
+                      const localaddress = line[1].split(":");
                       if (localaddress.length > 1) {
                         localport = localaddress[localaddress.length - 1];
                         localaddress.pop();
@@ -26433,14 +26864,14 @@ var require_network = __commonJS({
                       localip = localip.replace(/\[/g, "").replace(/\]/g, "");
                       let peerip = line[2];
                       let peerport = "";
-                      let peeraddress = line[2].split(":");
+                      const peeraddress = line[2].split(":");
                       if (peeraddress.length > 1) {
                         peerport = peeraddress[peeraddress.length - 1];
                         peeraddress.pop();
                         peerip = peeraddress.join(":");
                       }
                       peerip = peerip.replace(/\[/g, "").replace(/\]/g, "");
-                      let pid = util.toInt(line[4]);
+                      const pid = util.toInt(line[4]);
                       let connstate = line[3];
                       if (connstate === "HERGESTELLT") {
                         connstate = "ESTABLISHED";
@@ -26516,9 +26947,9 @@ var require_network = __commonJS({
         process.nextTick(() => {
           let result2 = "";
           if (_linux || _freebsd || _openbsd || _netbsd) {
-            let cmd = "ip route get 1";
+            const cmd = "ip route get 1";
             try {
-              exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout) {
+              exec(cmd, { maxBuffer: 1024 * 102400 }, (error, stdout) => {
                 if (!error) {
                   let lines = stdout.toString().split("\n");
                   const line = lines && lines[0] ? lines[0] : "";
@@ -26548,16 +26979,18 @@ var require_network = __commonJS({
           if (_darwin) {
             let cmd = "route -n get default";
             try {
-              exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout) {
+              exec(cmd, { maxBuffer: 1024 * 102400 }, (error, stdout) => {
                 if (!error) {
                   const lines = stdout.toString().split("\n").map((line) => line.trim());
                   result2 = util.getValue(lines, "gateway");
                 }
                 if (!result2) {
                   cmd = "netstat -rn | awk '/default/ {print $2}'";
-                  exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error2, stdout2) {
+                  exec(cmd, { maxBuffer: 1024 * 102400 }, (error2, stdout2) => {
                     const lines = stdout2.toString().split("\n").map((line) => line.trim());
-                    result2 = lines.find((line) => /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(line));
+                    result2 = lines.find(
+                      (line) => /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(line)
+                    );
                     if (callback) {
                       callback(result2);
                     }
@@ -26579,8 +27012,8 @@ var require_network = __commonJS({
           }
           if (_windows) {
             try {
-              exec2("netstat -r", util.execOptsWin, function(error, stdout) {
-                const lines = stdout.toString().split(os2.EOL);
+              exec("netstat -r", util.execOptsWin, (error, stdout) => {
+                const lines = stdout.toString().split(os4.EOL);
                 lines.forEach((line) => {
                   line = line.replace(/\s+/g, " ").trim();
                   if (line.indexOf("0.0.0.0 0.0.0.0") > -1 && !/[a-zA-Z]/.test(line)) {
@@ -26626,8 +27059,8 @@ var require_network = __commonJS({
 var require_wifi = __commonJS({
   "node_modules/systeminformation/lib/wifi.js"(exports) {
     "use strict";
-    var os2 = require("os");
-    var exec2 = require("child_process").exec;
+    var os4 = require("os");
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var util = require_util2();
     var _platform = process.platform;
@@ -26848,7 +27281,7 @@ var require_wifi = __commonJS({
         parts.shift();
         parts.forEach((part) => {
           part = "ACTIVE:" + part;
-          const lines = part.split(os2.EOL);
+          const lines = part.split(os4.EOL);
           const channel = util.getValue(lines, "CHAN");
           const frequency = util.getValue(lines, "FREQ").toLowerCase().replace("mhz", "").trim();
           const security = util.getValue(lines, "SECURITY").replace("(", "").replace(")", "");
@@ -26904,7 +27337,7 @@ var require_wifi = __commonJS({
             }
             const wpaFlags = [];
             let wpaFlag = "";
-            lines.forEach(function(line) {
+            lines.forEach((line) => {
               const l = line.trim().toLowerCase();
               if (l.indexOf("group cipher") >= 0) {
                 if (wpaFlag) {
@@ -26965,9 +27398,9 @@ var require_wifi = __commonJS({
       try {
         let wifiObj = JSON.parse(wifiStr);
         wifiObj = wifiObj.SPAirPortDataType[0].spairport_airport_interfaces[0].spairport_airport_other_local_wireless_networks;
-        wifiObj.forEach(function(wifiItem) {
-          let security = [];
-          const sm = wifiItem.spairport_security_mode;
+        wifiObj.forEach((wifiItem) => {
+          const security = [];
+          const sm = wifiItem.spairport_security_mode || "";
           if (sm === "spairport_security_mode_wep") {
             security.push("WEP");
           } else if (sm === "spairport_security_mode_wpa2_personal") {
@@ -27025,9 +27458,9 @@ var require_wifi = __commonJS({
                   }
                   const res = getWifiNetworkListIw(ifaceSanitized);
                   if (res === -1) {
-                    setTimeout(function(iface2) {
-                      const res2 = getWifiNetworkListIw(iface2);
-                      if (res2 != -1) {
+                    setTimeout(() => {
+                      const res2 = getWifiNetworkListIw(ifaceSanitized);
+                      if (res2 !== -1) {
                         result2 = res2;
                       }
                       if (callback) {
@@ -27061,8 +27494,8 @@ var require_wifi = __commonJS({
               resolve(result2);
             }
           } else if (_darwin) {
-            let cmd = "system_profiler SPAirPortDataType -json 2>/dev/null";
-            exec2(cmd, { maxBuffer: 1024 * 4e4 }, function(error, stdout) {
+            const cmd = "system_profiler SPAirPortDataType -json 2>/dev/null";
+            exec(cmd, { maxBuffer: 1024 * 4e4 }, (error, stdout) => {
               result2 = parseWifiDarwin(stdout.toString());
               if (callback) {
                 callback(result2);
@@ -27070,17 +27503,17 @@ var require_wifi = __commonJS({
               resolve(result2);
             });
           } else if (_windows) {
-            let cmd = "netsh wlan show networks mode=Bssid";
+            const cmd = "netsh wlan show networks mode=Bssid";
             util.powerShell(cmd).then((stdout) => {
-              const ssidParts = stdout.toString("utf8").split(os2.EOL + os2.EOL + "SSID ");
+              const ssidParts = stdout.toString("utf8").split(os4.EOL + os4.EOL + "SSID ");
               ssidParts.shift();
               ssidParts.forEach((ssidPart) => {
-                const ssidLines = ssidPart.split(os2.EOL);
+                const ssidLines = ssidPart.split(os4.EOL);
                 if (ssidLines && ssidLines.length >= 8 && ssidLines[0].indexOf(":") >= 0) {
                   const bssidsParts = ssidPart.split(" BSSID");
                   bssidsParts.shift();
                   bssidsParts.forEach((bssidPart) => {
-                    const bssidLines = bssidPart.split(os2.EOL);
+                    const bssidLines = bssidPart.split(os4.EOL);
                     const bssidLine = bssidLines[0].split(":");
                     bssidLine.shift();
                     const bssid = bssidLine.join(":").trim().toLowerCase();
@@ -27202,8 +27635,8 @@ var require_wifi = __commonJS({
             }
             resolve(result2);
           } else if (_darwin) {
-            let cmd = 'system_profiler SPNetworkDataType SPAirPortDataType -xml 2>/dev/null; echo "######" ; ioreg -n AppleBCMWLANSkywalkInterface -r 2>/dev/null';
-            exec2(cmd, function(error, stdout) {
+            const cmd = 'system_profiler SPNetworkDataType SPAirPortDataType -xml 2>/dev/null; echo "######" ; ioreg -n AppleBCMWLANSkywalkInterface -r 2>/dev/null';
+            exec(cmd, (error, stdout) => {
               try {
                 const parts = stdout.toString().split("######");
                 const profilerObj = util.plistParser(parts[0]);
@@ -27217,10 +27650,10 @@ var require_wifi = __commonJS({
                   return item._name === "Wi-Fi";
                 });
                 const airportWifiObj = airportObj[0].spairport_current_network_information;
-                const channel = parseInt(("" + airportWifiObj.spairport_network_channel).split(" ")[0]) || 0;
+                const channel = parseInt(("" + airportWifiObj.spairport_network_channel).split(" ")[0], 10) || 0;
                 const signalLevel = airportWifiObj.spairport_signal_noise || null;
-                let security = [];
-                const sm = airportWifiObj.spairport_security_mode;
+                const security = [];
+                const sm = airportWifiObj.spairport_security_mode || "";
                 if (sm === "spairport_security_mode_wep") {
                   security.push("WEP");
                 } else if (sm === "spairport_security_mode_wpa2_personal") {
@@ -27236,7 +27669,7 @@ var require_wifi = __commonJS({
                   id: networkWifiObj._name || "Wi-Fi",
                   iface: networkWifiObj.interface || "",
                   model: networkWifiObj.hardware || "",
-                  ssid: airportWifiObj._name || "",
+                  ssid: (airportWifiObj._name || "").replace("&lt;", "<").replace("&gt;", ">"),
                   bssid: airportWifiObj.spairport_network_bssid || "",
                   channel,
                   frequency: channel ? wifiFrequencyFromChannel(channel) : null,
@@ -27255,8 +27688,8 @@ var require_wifi = __commonJS({
               resolve(result2);
             });
           } else if (_windows) {
-            let cmd = "netsh wlan show interfaces";
-            util.powerShell(cmd).then(function(stdout) {
+            const cmd = "netsh wlan show interfaces";
+            util.powerShell(cmd).then((stdout) => {
               const allLines = stdout.toString().split("\r\n");
               for (let i = 0; i < allLines.length; i++) {
                 allLines[i] = allLines[i].trim();
@@ -27331,8 +27764,8 @@ var require_wifi = __commonJS({
             }
             resolve(result2);
           } else if (_darwin) {
-            let cmd = "system_profiler SPNetworkDataType";
-            exec2(cmd, function(error, stdout) {
+            const cmd = "system_profiler SPNetworkDataType";
+            exec(cmd, (error, stdout) => {
               const parts1 = stdout.toString().split("\n\n    Wi-Fi:\n\n");
               if (parts1.length > 1) {
                 const lines = parts1[1].split("\n\n")[0].split("\n");
@@ -27353,8 +27786,8 @@ var require_wifi = __commonJS({
               resolve(result2);
             });
           } else if (_windows) {
-            let cmd = "netsh wlan show interfaces";
-            util.powerShell(cmd).then(function(stdout) {
+            const cmd = "netsh wlan show interfaces";
+            util.powerShell(cmd).then((stdout) => {
               const allLines = stdout.toString().split("\r\n");
               for (let i = 0; i < allLines.length; i++) {
                 allLines[i] = allLines[i].trim();
@@ -27404,10 +27837,10 @@ var require_wifi = __commonJS({
 var require_processes = __commonJS({
   "node_modules/systeminformation/lib/processes.js"(exports) {
     "use strict";
-    var os2 = require("os");
+    var os4 = require("os");
     var fs = require("fs");
     var path = require("path");
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var util = require_util2();
     var _platform = process.platform;
@@ -27443,16 +27876,16 @@ var require_processes = __commonJS({
       result: {}
     };
     var _winStatusValues = {
-      "0": "unknown",
-      "1": "other",
-      "2": "ready",
-      "3": "running",
-      "4": "blocked",
-      "5": "suspended blocked",
-      "6": "suspended ready",
-      "7": "terminated",
-      "8": "stopped",
-      "9": "growing"
+      0: "unknown",
+      1: "other",
+      2: "ready",
+      3: "running",
+      4: "blocked",
+      5: "suspended blocked",
+      6: "suspended ready",
+      7: "terminated",
+      8: "stopped",
+      9: "growing"
     };
     function parseTimeUnix(time) {
       let result2 = time;
@@ -27589,7 +28022,7 @@ var require_processes = __commonJS({
                         });
                       } else {
                         ps = lines.filter(function(e) {
-                          return e.toLowerCase().indexOf(" " + srv2.toLowerCase() + ":") !== -1 || e.toLowerCase().indexOf("/" + srv2.toLowerCase()) !== -1;
+                          return e.toLowerCase().indexOf(" " + srv2.toLowerCase() + ":") !== -1 || e.toLowerCase().indexOf("(" + srv2.toLowerCase() + " ") !== -1 || e.toLowerCase().indexOf("(" + srv2.toLowerCase() + ")") !== -1 || e.toLowerCase().indexOf(" " + srv2.toLowerCase().replace(/[0-9.]/g, "") + ":") !== -1 || e.toLowerCase().indexOf("/" + srv2.toLowerCase()) !== -1;
                         });
                       }
                       const pids = [];
@@ -27604,12 +28037,16 @@ var require_processes = __commonJS({
                         running: ps.length > 0,
                         startmode: "",
                         pids,
-                        cpu: parseFloat(ps.reduce(function(pv, cv) {
-                          return pv + parseFloat(cv.trim().split(" ")[0]);
-                        }, 0).toFixed(2)),
-                        mem: parseFloat(ps.reduce(function(pv, cv) {
-                          return pv + parseFloat(cv.trim().split(" ")[1]);
-                        }, 0).toFixed(2))
+                        cpu: parseFloat(
+                          ps.reduce(function(pv, cv) {
+                            return pv + parseFloat(cv.trim().split(" ")[0]);
+                          }, 0).toFixed(2)
+                        ),
+                        mem: parseFloat(
+                          ps.reduce(function(pv, cv) {
+                            return pv + parseFloat(cv.trim().split(" ")[1]);
+                          }, 0).toFixed(2)
+                        )
                       });
                     });
                     if (_linux) {
@@ -27619,7 +28056,7 @@ var require_processes = __commonJS({
                           cmd += ";cat /proc/" + result2[i].pids[j] + "/stat";
                         }
                       }
-                      exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout2) {
+                      exec(cmd, { maxBuffer: 1024 * 102400 }, function(error, stdout2) {
                         let curr_processes = stdout2.toString().split("\n");
                         let all = parseProcStat(curr_processes.shift());
                         let list_new = {};
@@ -27746,10 +28183,8 @@ var require_processes = __commonJS({
                       }
                     });
                     if (srvString !== "*") {
-                      let srvsMissing = srvs.filter(function(e) {
-                        return dataSrv.indexOf(e) === -1;
-                      });
-                      srvsMissing.forEach(function(srvName) {
+                      const srvsMissing = srvs.filter((e) => dataSrv.indexOf(e) === -1);
+                      srvsMissing.forEach((srvName) => {
                         result2.push({
                           name: srvName,
                           running: false,
@@ -27765,7 +28200,7 @@ var require_processes = __commonJS({
                     }
                     resolve(result2);
                   } else {
-                    srvs.forEach(function(srvName) {
+                    srvs.forEach((srvName) => {
                       result2.push({
                         name: srvName,
                         running: false,
@@ -27798,17 +28233,17 @@ var require_processes = __commonJS({
     }
     exports.services = services;
     function parseProcStat(line) {
-      let parts = line.replace(/ +/g, " ").split(" ");
-      let user = parts.length >= 2 ? parseInt(parts[1]) : 0;
-      let nice = parts.length >= 3 ? parseInt(parts[2]) : 0;
-      let system = parts.length >= 4 ? parseInt(parts[3]) : 0;
-      let idle = parts.length >= 5 ? parseInt(parts[4]) : 0;
-      let iowait = parts.length >= 6 ? parseInt(parts[5]) : 0;
-      let irq = parts.length >= 7 ? parseInt(parts[6]) : 0;
-      let softirq = parts.length >= 8 ? parseInt(parts[7]) : 0;
-      let steal = parts.length >= 9 ? parseInt(parts[8]) : 0;
-      let guest = parts.length >= 10 ? parseInt(parts[9]) : 0;
-      let guest_nice = parts.length >= 11 ? parseInt(parts[10]) : 0;
+      const parts = line.replace(/ +/g, " ").split(" ");
+      const user = parts.length >= 2 ? parseInt(parts[1]) : 0;
+      const nice = parts.length >= 3 ? parseInt(parts[2]) : 0;
+      const system = parts.length >= 4 ? parseInt(parts[3]) : 0;
+      const idle = parts.length >= 5 ? parseInt(parts[4]) : 0;
+      const iowait = parts.length >= 6 ? parseInt(parts[5]) : 0;
+      const irq = parts.length >= 7 ? parseInt(parts[6]) : 0;
+      const softirq = parts.length >= 8 ? parseInt(parts[7]) : 0;
+      const steal = parts.length >= 9 ? parseInt(parts[8]) : 0;
+      const guest = parts.length >= 10 ? parseInt(parts[9]) : 0;
+      const guest_nice = parts.length >= 11 ? parseInt(parts[10]) : 0;
       return user + nice + system + idle + iowait + irq + softirq + steal + guest + guest_nice;
     }
     function calcProcStatLinux(line, all, _cpu_old) {
@@ -28015,7 +28450,7 @@ var require_processes = __commonJS({
           let head = lines[0];
           parsedhead = util.parseHead(head, 8);
           lines.shift();
-          lines.forEach(function(line) {
+          lines.forEach((line) => {
             if (line.trim() !== "") {
               result2.push(parseLine(line));
             }
@@ -28048,12 +28483,12 @@ var require_processes = __commonJS({
           return started;
         }
         let result2 = [];
-        lines.forEach(function(line) {
+        lines.forEach((line) => {
           if (line.trim() !== "") {
             line = line.trim().replace(/ +/g, " ").replace(/,+/g, ".");
             const parts = line.split(" ");
             const command = parts.slice(9).join(" ");
-            const pmem = parseFloat((1 * parseInt(parts[3]) * 1024 / os2.totalmem()).toFixed(1));
+            const pmem = parseFloat((1 * parseInt(parts[3]) * 1024 / os4.totalmem()).toFixed(1));
             const started = parseElapsed(parts[5]);
             result2.push({
               pid: parseInt(parts[0]),
@@ -28102,180 +28537,179 @@ var require_processes = __commonJS({
               if (_sunos) {
                 cmd = "ps -Ao pid,ppid,pcpu,pmem,pri,vsz,rss,nice,stime,s,tty,user,comm";
               }
-              exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout) {
-                if (!error && stdout.toString().trim()) {
-                  result2.list = parseProcesses(stdout.toString().split("\n")).slice();
-                  result2.all = result2.list.length;
-                  result2.running = result2.list.filter(function(e) {
-                    return e.state === "running";
-                  }).length;
-                  result2.blocked = result2.list.filter(function(e) {
-                    return e.state === "blocked";
-                  }).length;
-                  result2.sleeping = result2.list.filter(function(e) {
-                    return e.state === "sleeping";
-                  }).length;
-                  if (_linux) {
-                    cmd = 'cat /proc/stat | grep "cpu "';
-                    result2.list.forEach((element) => {
-                      cmd += ";cat /proc/" + element.pid + "/stat";
-                    });
-                    exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error2, stdout2) {
-                      let curr_processes = stdout2.toString().split("\n");
-                      let all = parseProcStat(curr_processes.shift());
-                      let list_new = {};
-                      let resultProcess = {};
-                      curr_processes.forEach((element) => {
-                        resultProcess = calcProcStatLinux(element, all, _processes_cpu);
-                        if (resultProcess.pid) {
-                          let listPos = result2.list.map(function(e) {
-                            return e.pid;
-                          }).indexOf(resultProcess.pid);
-                          if (listPos >= 0) {
-                            result2.list[listPos].cpu = resultProcess.cpuu + resultProcess.cpus;
-                            result2.list[listPos].cpuu = resultProcess.cpuu;
-                            result2.list[listPos].cpus = resultProcess.cpus;
-                          }
-                          list_new[resultProcess.pid] = {
-                            cpuu: resultProcess.cpuu,
-                            cpus: resultProcess.cpus,
-                            utime: resultProcess.utime,
-                            stime: resultProcess.stime,
-                            cutime: resultProcess.cutime,
-                            cstime: resultProcess.cstime
-                          };
-                        }
+              try {
+                exec(cmd, { maxBuffer: 1024 * 102400 }, (error, stdout) => {
+                  if (!error && stdout.toString().trim()) {
+                    result2.list = parseProcesses(stdout.toString().split("\n")).slice();
+                    result2.all = result2.list.length;
+                    result2.running = result2.list.filter((e) => {
+                      return e.state === "running";
+                    }).length;
+                    result2.blocked = result2.list.filter((e) => {
+                      return e.state === "blocked";
+                    }).length;
+                    result2.sleeping = result2.list.filter((e) => {
+                      return e.state === "sleeping";
+                    }).length;
+                    if (_linux) {
+                      cmd = 'cat /proc/stat | grep "cpu "';
+                      result2.list.forEach((element) => {
+                        cmd += ";cat /proc/" + element.pid + "/stat";
                       });
-                      _processes_cpu.all = all;
-                      _processes_cpu.list = Object.assign({}, list_new);
-                      _processes_cpu.ms = Date.now() - _processes_cpu.ms;
-                      _processes_cpu.result = Object.assign({}, result2);
-                      if (callback) {
-                        callback(result2);
-                      }
-                      resolve(result2);
-                    });
-                  } else {
-                    if (callback) {
-                      callback(result2);
-                    }
-                    resolve(result2);
-                  }
-                } else {
-                  cmd = "ps -o pid,ppid,vsz,rss,nice,etime,stat,tty,user,comm";
-                  if (_sunos) {
-                    cmd = "ps -o pid,ppid,vsz,rss,nice,etime,s,tty,user,comm";
-                  }
-                  exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error2, stdout2) {
-                    if (!error2) {
-                      let lines = stdout2.toString().split("\n");
-                      lines.shift();
-                      result2.list = parseProcesses2(lines).slice();
-                      result2.all = result2.list.length;
-                      result2.running = result2.list.filter(function(e) {
-                        return e.state === "running";
-                      }).length;
-                      result2.blocked = result2.list.filter(function(e) {
-                        return e.state === "blocked";
-                      }).length;
-                      result2.sleeping = result2.list.filter(function(e) {
-                        return e.state === "sleeping";
-                      }).length;
-                      if (callback) {
-                        callback(result2);
-                      }
-                      resolve(result2);
+                      exec(cmd, { maxBuffer: 1024 * 102400 }, (error2, stdout2) => {
+                        let curr_processes = stdout2.toString().split("\n");
+                        let all = parseProcStat(curr_processes.shift());
+                        let list_new = {};
+                        let resultProcess = {};
+                        curr_processes.forEach((element) => {
+                          resultProcess = calcProcStatLinux(element, all, _processes_cpu);
+                          if (resultProcess.pid) {
+                            let listPos = result2.list.map((e) => {
+                              return e.pid;
+                            }).indexOf(resultProcess.pid);
+                            if (listPos >= 0) {
+                              result2.list[listPos].cpu = resultProcess.cpuu + resultProcess.cpus;
+                              result2.list[listPos].cpuu = resultProcess.cpuu;
+                              result2.list[listPos].cpus = resultProcess.cpus;
+                            }
+                            list_new[resultProcess.pid] = {
+                              cpuu: resultProcess.cpuu,
+                              cpus: resultProcess.cpus,
+                              utime: resultProcess.utime,
+                              stime: resultProcess.stime,
+                              cutime: resultProcess.cutime,
+                              cstime: resultProcess.cstime
+                            };
+                          }
+                        });
+                        _processes_cpu.all = all;
+                        _processes_cpu.list = Object.assign({}, list_new);
+                        _processes_cpu.ms = Date.now() - _processes_cpu.ms;
+                        _processes_cpu.result = Object.assign({}, result2);
+                        if (callback) {
+                          callback(result2);
+                        }
+                        resolve(result2);
+                      });
                     } else {
                       if (callback) {
                         callback(result2);
                       }
                       resolve(result2);
                     }
-                  });
+                  } else {
+                    cmd = "ps -o pid,ppid,vsz,rss,nice,etime,stat,tty,user,comm";
+                    if (_sunos) {
+                      cmd = "ps -o pid,ppid,vsz,rss,nice,etime,s,tty,user,comm";
+                    }
+                    exec(cmd, { maxBuffer: 1024 * 102400 }, (error2, stdout2) => {
+                      if (!error2) {
+                        let lines = stdout2.toString().split("\n");
+                        lines.shift();
+                        result2.list = parseProcesses2(lines).slice();
+                        result2.all = result2.list.length;
+                        result2.running = result2.list.filter((e) => {
+                          return e.state === "running";
+                        }).length;
+                        result2.blocked = result2.list.filter((e) => {
+                          return e.state === "blocked";
+                        }).length;
+                        result2.sleeping = result2.list.filter((e) => {
+                          return e.state === "sleeping";
+                        }).length;
+                        if (callback) {
+                          callback(result2);
+                        }
+                        resolve(result2);
+                      } else {
+                        if (callback) {
+                          callback(result2);
+                        }
+                        resolve(result2);
+                      }
+                    });
+                  }
+                });
+              } catch (e) {
+                if (callback) {
+                  callback(result2);
                 }
-              });
+                resolve(result2);
+              }
             } else if (_windows) {
               try {
-                util.powerShell('Get-CimInstance Win32_Process | select-Object ProcessId,ParentProcessId,ExecutionState,Caption,CommandLine,ExecutablePath,UserModeTime,KernelModeTime,WorkingSetSize,Priority,PageFileUsage, @{n="CreationDate";e={$_.CreationDate.ToString("yyyy-MM-dd HH:mm:ss")}} | fl').then((stdout, error) => {
+                util.powerShell(
+                  `Get-CimInstance Win32_Process | select-Object ProcessId,ParentProcessId,ExecutionState,Caption,CommandLine,ExecutablePath,UserModeTime,KernelModeTime,WorkingSetSize,Priority,PageFileUsage,
+                @{n="CreationDate";e={$_.CreationDate.ToString("yyyy-MM-dd HH:mm:ss")}} | ConvertTo-Json -compress`
+                ).then((stdout, error) => {
                   if (!error) {
-                    let processSections = stdout.split(/\n\s*\n/);
-                    let procs = [];
-                    let procStats = [];
-                    let list_new = {};
+                    const procs = [];
+                    const procStats = [];
+                    const list_new = {};
                     let allcpuu = 0;
                     let allcpus = 0;
-                    processSections.forEach((element) => {
-                      if (element.trim() !== "") {
-                        let lines = element.trim().split("\r\n");
-                        let pid = parseInt(util.getValue(lines, "ProcessId", ":", true), 10);
-                        let parentPid = parseInt(util.getValue(lines, "ParentProcessId", ":", true), 10);
-                        let statusValue = util.getValue(lines, "ExecutionState", ":");
-                        let name = util.getValue(lines, "Caption", ":", true);
-                        let commandLine = util.getValue(lines, "CommandLine", ":", true);
-                        let additionalCommand = false;
-                        lines.forEach((line) => {
-                          if (additionalCommand && line.toLowerCase().startsWith(" ")) {
-                            commandLine += " " + line.trim();
-                          } else {
-                            additionalCommand = false;
-                          }
-                          if (line.toLowerCase().startsWith("commandline")) {
-                            additionalCommand = true;
-                          }
-                        });
-                        let commandPath = util.getValue(lines, "ExecutablePath", ":", true);
-                        let utime = parseInt(util.getValue(lines, "UserModeTime", ":", true), 10);
-                        let stime = parseInt(util.getValue(lines, "KernelModeTime", ":", true), 10);
-                        let memw = parseInt(util.getValue(lines, "WorkingSetSize", ":", true), 10);
-                        allcpuu = allcpuu + utime;
-                        allcpus = allcpus + stime;
-                        result2.all++;
-                        if (!statusValue) {
-                          result2.unknown++;
-                        }
-                        if (statusValue === "3") {
-                          result2.running++;
-                        }
-                        if (statusValue === "4" || statusValue === "5") {
-                          result2.blocked++;
-                        }
-                        procStats.push({
-                          pid,
-                          utime,
-                          stime,
-                          cpu: 0,
-                          cpuu: 0,
-                          cpus: 0
-                        });
-                        procs.push({
-                          pid,
-                          parentPid,
-                          name,
-                          cpu: 0,
-                          cpuu: 0,
-                          cpus: 0,
-                          mem: memw / os2.totalmem() * 100,
-                          priority: parseInt(util.getValue(lines, "Priority", ":", true), 10),
-                          memVsz: parseInt(util.getValue(lines, "PageFileUsage", ":", true), 10),
-                          memRss: Math.floor(parseInt(util.getValue(lines, "WorkingSetSize", ":", true), 10) / 1024),
-                          nice: 0,
-                          started: util.getValue(lines, "CreationDate", ":", true),
-                          state: !statusValue ? _winStatusValues[0] : _winStatusValues[statusValue],
-                          tty: "",
-                          user: "",
-                          command: commandLine || name,
-                          path: commandPath,
-                          params: ""
-                        });
+                    let processArray = [];
+                    try {
+                      stdout = stdout.trim().replace(/^\uFEFF/, "");
+                      processArray = JSON.parse(stdout);
+                    } catch (e) {
+                    }
+                    processArray.forEach((element) => {
+                      const pid = element.ProcessId;
+                      const parentPid = element.ParentProcessId;
+                      const statusValue = element.ExecutionState || null;
+                      const name = element.Caption;
+                      const commandLine = element.CommandLine;
+                      const commandPath = element.ExecutablePath;
+                      const utime = element.UserModeTime;
+                      const stime = element.KernelModeTime;
+                      const memw = element.WorkingSetSize;
+                      allcpuu = allcpuu + utime;
+                      allcpus = allcpus + stime;
+                      result2.all++;
+                      if (!statusValue) {
+                        result2.unknown++;
                       }
+                      if (statusValue === "3") {
+                        result2.running++;
+                      }
+                      if (statusValue === "4" || statusValue === "5") {
+                        result2.blocked++;
+                      }
+                      procStats.push({
+                        pid,
+                        utime,
+                        stime,
+                        cpu: 0,
+                        cpuu: 0,
+                        cpus: 0
+                      });
+                      procs.push({
+                        pid,
+                        parentPid,
+                        name,
+                        cpu: 0,
+                        cpuu: 0,
+                        cpus: 0,
+                        mem: memw / os4.totalmem() * 100,
+                        priority: element.Priority | null,
+                        memVsz: element.PageFileUsage || null,
+                        memRss: Math.floor((element.WorkingSetSize || 0) / 1024),
+                        nice: 0,
+                        started: element.CreationDate,
+                        state: statusValue ? _winStatusValues[statusValue] : _winStatusValues[0],
+                        tty: "",
+                        user: "",
+                        command: commandLine || name,
+                        path: commandPath,
+                        params: ""
+                      });
                     });
                     result2.sleeping = result2.all - result2.running - result2.blocked - result2.unknown;
                     result2.list = procs;
                     procStats.forEach((element) => {
                       let resultProcess = calcProcStatWin(element, allcpuu + allcpus, _processes_cpu);
-                      let listPos = result2.list.map(function(e) {
-                        return e.pid;
-                      }).indexOf(resultProcess.pid);
+                      let listPos = result2.list.map((e) => e.pid).indexOf(resultProcess.pid);
                       if (listPos >= 0) {
                         result2.list[listPos].cpu = resultProcess.cpuu + resultProcess.cpus;
                         result2.list[listPos].cpuu = resultProcess.cpuu;
@@ -28368,69 +28802,67 @@ var require_processes = __commonJS({
           if (procSanitized && processes2.length && processes2[0] !== "------") {
             if (_windows) {
               try {
-                util.powerShell("Get-CimInstance Win32_Process | select ProcessId,Caption,UserModeTime,KernelModeTime,WorkingSetSize | fl").then((stdout, error) => {
+                util.powerShell("Get-CimInstance Win32_Process | select ProcessId,Caption,UserModeTime,KernelModeTime,WorkingSetSize | ConvertTo-Json -compress").then((stdout, error) => {
                   if (!error) {
-                    let processSections = stdout.split(/\n\s*\n/);
-                    let procStats = [];
-                    let list_new = {};
+                    const procStats = [];
+                    const list_new = {};
                     let allcpuu = 0;
                     let allcpus = 0;
-                    processSections.forEach((element) => {
-                      if (element.trim() !== "") {
-                        let lines = element.trim().split("\r\n");
-                        let pid = parseInt(util.getValue(lines, "ProcessId", ":", true), 10);
-                        let name = util.getValue(lines, "Caption", ":", true);
-                        let utime = parseInt(util.getValue(lines, "UserModeTime", ":", true), 10);
-                        let stime = parseInt(util.getValue(lines, "KernelModeTime", ":", true), 10);
-                        let mem = parseInt(util.getValue(lines, "WorkingSetSize", ":", true), 10);
-                        allcpuu = allcpuu + utime;
-                        allcpus = allcpus + stime;
-                        procStats.push({
-                          pid,
-                          name,
-                          utime,
-                          stime,
-                          cpu: 0,
-                          cpuu: 0,
-                          cpus: 0,
-                          mem
-                        });
-                        let pname = "";
-                        let inList = false;
-                        processes2.forEach(function(proc2) {
-                          if (name.toLowerCase().indexOf(proc2.toLowerCase()) >= 0 && !inList) {
-                            inList = true;
-                            pname = proc2;
+                    let processArray = [];
+                    try {
+                      stdout = stdout.trim().replace(/^\uFEFF/, "");
+                      processArray = JSON.parse(stdout);
+                    } catch (e) {
+                    }
+                    processArray.forEach((element) => {
+                      const pid = element.ProcessId;
+                      const name = element.Caption;
+                      const utime = element.UserModeTime;
+                      const stime = element.KernelModeTime;
+                      const mem = element.WorkingSetSize;
+                      allcpuu = allcpuu + utime;
+                      allcpus = allcpus + stime;
+                      procStats.push({
+                        pid,
+                        name,
+                        utime,
+                        stime,
+                        cpu: 0,
+                        cpuu: 0,
+                        cpus: 0,
+                        mem
+                      });
+                      let pname = "";
+                      let inList = false;
+                      processes2.forEach((proc2) => {
+                        if (name.toLowerCase().indexOf(proc2.toLowerCase()) >= 0 && !inList) {
+                          inList = true;
+                          pname = proc2;
+                        }
+                      });
+                      if (processesString === "*" || inList) {
+                        let processFound = false;
+                        result2.forEach((item) => {
+                          if (item.proc.toLowerCase() === pname.toLowerCase()) {
+                            item.pids.push(pid);
+                            item.mem += mem / os4.totalmem() * 100;
+                            processFound = true;
                           }
                         });
-                        if (processesString === "*" || inList) {
-                          let processFound = false;
-                          result2.forEach(function(item) {
-                            if (item.proc.toLowerCase() === pname.toLowerCase()) {
-                              item.pids.push(pid);
-                              item.mem += mem / os2.totalmem() * 100;
-                              processFound = true;
-                            }
+                        if (!processFound) {
+                          result2.push({
+                            proc: pname,
+                            pid,
+                            pids: [pid],
+                            cpu: 0,
+                            mem: mem / os4.totalmem() * 100
                           });
-                          if (!processFound) {
-                            result2.push({
-                              proc: pname,
-                              pid,
-                              pids: [pid],
-                              cpu: 0,
-                              mem: mem / os2.totalmem() * 100
-                            });
-                          }
                         }
                       }
                     });
                     if (processesString !== "*") {
-                      let processesMissing = processes2.filter(function(name) {
-                        return procStats.filter(function(item) {
-                          return item.name.toLowerCase().indexOf(name) >= 0;
-                        }).length === 0;
-                      });
-                      processesMissing.forEach(function(procName) {
+                      let processesMissing = processes2.filter((name) => procStats.filter((item) => item.name.toLowerCase().indexOf(name) >= 0).length === 0);
+                      processesMissing.forEach((procName) => {
                         result2.push({
                           proc: procName,
                           pid: null,
@@ -28481,8 +28913,8 @@ var require_processes = __commonJS({
               const params = ["-axo", "pid,ppid,pcpu,pmem,comm"];
               util.execSafe("ps", params).then((stdout) => {
                 if (stdout) {
-                  let procStats = [];
-                  let lines = stdout.toString().split("\n").filter(function(line) {
+                  const procStats = [];
+                  const lines = stdout.toString().split("\n").filter((line) => {
                     if (processesString === "*") {
                       return true;
                     }
@@ -28490,14 +28922,14 @@ var require_processes = __commonJS({
                       return false;
                     }
                     let found = false;
-                    processes2.forEach(function(item) {
+                    processes2.forEach((item) => {
                       found = found || line.toLowerCase().indexOf(item.toLowerCase()) >= 0;
                     });
                     return found;
                   });
                   lines.shift();
-                  lines.forEach(function(line) {
-                    let data = line.trim().replace(/ +/g, " ").split(" ");
+                  lines.forEach((line) => {
+                    const data = line.trim().replace(/ +/g, " ").split(" ");
                     if (data.length > 4) {
                       const linuxName = data[4].indexOf("/") >= 0 ? data[4].substring(0, data[4].indexOf("/")) : data[4];
                       const name = _linux ? linuxName : data[4].substring(data[4].lastIndexOf("/") + 1);
@@ -28510,7 +28942,7 @@ var require_processes = __commonJS({
                       });
                     }
                   });
-                  procStats.forEach(function(item) {
+                  procStats.forEach((item) => {
                     let listPos = -1;
                     let inList = false;
                     let name = item.name;
@@ -28519,7 +28951,7 @@ var require_processes = __commonJS({
                         listPos = j;
                       }
                     }
-                    processes2.forEach(function(proc2) {
+                    processes2.forEach((proc2) => {
                       if (item.name.toLowerCase().indexOf(proc2.toLowerCase()) >= 0 && !inList) {
                         inList = true;
                         name = proc2;
@@ -28547,12 +28979,12 @@ var require_processes = __commonJS({
                     }
                   });
                   if (processesString !== "*") {
-                    let processesMissing = processes2.filter(function(name) {
-                      return procStats.filter(function(item) {
+                    let processesMissing = processes2.filter((name) => {
+                      return procStats.filter((item) => {
                         return item.name.toLowerCase().indexOf(name) >= 0;
                       }).length === 0;
                     });
-                    processesMissing.forEach(function(procName) {
+                    processesMissing.forEach((procName) => {
                       result2.push({
                         proc: procName,
                         pid: null,
@@ -28563,7 +28995,7 @@ var require_processes = __commonJS({
                     });
                   }
                   if (_linux) {
-                    result2.forEach(function(item) {
+                    result2.forEach((item) => {
                       item.cpu = 0;
                     });
                     let cmd = 'cat /proc/stat | grep "cpu "';
@@ -28572,7 +29004,7 @@ var require_processes = __commonJS({
                         cmd += ";cat /proc/" + result2[i].pids[j] + "/stat";
                       }
                     }
-                    exec2(cmd, { maxBuffer: 1024 * 2e4 }, function(error, stdout2) {
+                    exec(cmd, { maxBuffer: 1024 * 102400 }, (error, stdout2) => {
                       let curr_processes = stdout2.toString().split("\n");
                       let all = parseProcStat(curr_processes.shift());
                       let list_new = {};
@@ -28599,7 +29031,7 @@ var require_processes = __commonJS({
                           };
                         }
                       });
-                      result2.forEach(function(item) {
+                      result2.forEach((item) => {
                         item.cpu = Math.round(item.cpu * 100) / 100;
                       });
                       _process_cpu.all = all;
@@ -28637,7 +29069,7 @@ var require_processes = __commonJS({
 var require_users = __commonJS({
   "node_modules/systeminformation/lib/users.js"(exports) {
     "use strict";
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var util = require_util2();
     var _platform = process.platform;
     var _linux = _platform === "linux" || _platform === "android";
@@ -28647,44 +29079,71 @@ var require_users = __commonJS({
     var _openbsd = _platform === "openbsd";
     var _netbsd = _platform === "netbsd";
     var _sunos = _platform === "sunos";
+    function parseDate(dtMon, dtDay) {
+      let dt = new Date().toISOString().slice(0, 10);
+      try {
+        dt = "" + new Date().getFullYear() + "-" + ("0" + ("JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC".indexOf(dtMon.toUpperCase()) / 3 + 1)).slice(-2) + "-" + ("0" + dtDay).slice(-2);
+        if (new Date(dt) > new Date()) {
+          dt = "" + (new Date().getFullYear() - 1) + "-" + ("0" + ("JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC".indexOf(dtMon.toUpperCase()) / 3 + 1)).slice(-2) + "-" + ("0" + dtDay).slice(-2);
+        }
+      } catch (e) {
+        util.noop();
+      }
+      return dt;
+    }
     function parseUsersLinux(lines, phase) {
-      let result2 = [];
+      const result2 = [];
       let result_who = [];
-      let result_w = {};
+      const result_w = {};
       let w_first = true;
       let w_header = [];
-      let w_pos = [];
+      const w_pos = [];
       let who_line = {};
       let is_whopart = true;
-      lines.forEach(function(line) {
+      let is_whoerror = false;
+      lines.forEach((line) => {
         if (line === "---") {
           is_whopart = false;
         } else {
-          let l = line.replace(/ +/g, " ").split(" ");
+          const l = line.replace(/ +/g, " ").split(" ");
           if (is_whopart) {
-            result_who.push({
-              user: l[0],
-              tty: l[1],
-              date: l[2],
-              time: l[3],
-              ip: l && l.length > 4 ? l[4].replace(/\(/g, "").replace(/\)/g, "") : ""
-            });
+            if (line.toLowerCase().indexOf("unexpected") >= 0 || line.toLowerCase().indexOf("unrecognized") >= 0) {
+              is_whoerror = true;
+              result_who = [];
+            }
+            if (!is_whoerror) {
+              const timePos = l && l.length > 4 && l[4].indexOf(":") > 0 ? 4 : 3;
+              result_who.push({
+                user: l[0],
+                tty: l[1],
+                date: timePos === 4 ? parseDate(l[2], l[3]) : l[2],
+                time: l[timePos],
+                ip: l && l.length > timePos + 1 ? l[timePos + 1].replace(/\(/g, "").replace(/\)/g, "") : "",
+                command: ""
+              });
+            }
           } else {
             if (w_first) {
-              w_header = l;
-              w_header.forEach(function(item) {
-                w_pos.push(line.indexOf(item));
-              });
-              w_first = false;
+              if (line[0] !== " ") {
+                w_header = l;
+                w_header.forEach((item) => {
+                  w_pos.push(line.indexOf(item));
+                });
+                w_first = false;
+              }
             } else {
               result_w.user = line.substring(w_pos[0], w_pos[1] - 1).trim();
               result_w.tty = line.substring(w_pos[1], w_pos[2] - 1).trim();
               result_w.ip = line.substring(w_pos[2], w_pos[3] - 1).replace(/\(/g, "").replace(/\)/g, "").trim();
               result_w.command = line.substring(w_pos[7], 1e3).trim();
-              who_line = result_who.filter(function(obj) {
-                return obj.user.substring(0, 8).trim() === result_w.user && obj.tty === result_w.tty;
-              });
-              if (who_line.length === 1) {
+              if (result_who.length || phase === 1) {
+                who_line = result_who.filter((obj) => {
+                  return obj.user.substring(0, 8).trim() === result_w.user && obj.tty === result_w.tty;
+                });
+              } else {
+                who_line = [{ user: result_w.user, tty: result_w.tty, date: "", time: "", ip: "" }];
+              }
+              if (who_line.length === 1 && who_line[0].user !== "") {
                 result2.push({
                   user: who_line[0].user,
                   tty: who_line[0].tty,
@@ -28705,29 +29164,21 @@ var require_users = __commonJS({
       }
     }
     function parseUsersDarwin(lines) {
-      let result2 = [];
-      let result_who = [];
-      let result_w = {};
+      const result2 = [];
+      const result_who = [];
+      const result_w = {};
       let who_line = {};
       let is_whopart = true;
-      lines.forEach(function(line) {
+      lines.forEach((line) => {
         if (line === "---") {
           is_whopart = false;
         } else {
-          let l = line.replace(/ +/g, " ").split(" ");
+          const l = line.replace(/ +/g, " ").split(" ");
           if (is_whopart) {
-            let dt = "" + new Date().getFullYear() + "-" + ("0" + ("JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC".indexOf(l[2].toUpperCase()) / 3 + 1)).slice(-2) + "-" + ("0" + l[3]).slice(-2);
-            try {
-              if (new Date(dt) > new Date()) {
-                dt = "" + (new Date().getFullYear() - 1) + "-" + ("0" + ("JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC".indexOf(l[2].toUpperCase()) / 3 + 1)).slice(-2) + "-" + ("0" + l[3]).slice(-2);
-              }
-            } catch (e) {
-              util.noop();
-            }
             result_who.push({
               user: l[0],
               tty: l[1],
-              date: dt,
+              date: parseDate(l[2], l[3]),
               time: l[4]
             });
           } else {
@@ -28735,9 +29186,7 @@ var require_users = __commonJS({
             result_w.tty = l[1];
             result_w.ip = l[2] !== "-" ? l[2] : "";
             result_w.command = l.slice(5, 1e3).join(" ");
-            who_line = result_who.filter(function(obj) {
-              return obj.user.substring(0, 10) === result_w.user.substring(0, 10) && (obj.tty.substring(3, 1e3) === result_w.tty || obj.tty === result_w.tty);
-            });
+            who_line = result_who.filter((obj) => obj.user.substring(0, 10) === result_w.user.substring(0, 10) && (obj.tty.substring(3, 1e3) === result_w.tty || obj.tty === result_w.tty));
             if (who_line.length === 1) {
               result2.push({
                 user: who_line[0].user,
@@ -28758,12 +29207,12 @@ var require_users = __commonJS({
         process.nextTick(() => {
           let result2 = [];
           if (_linux) {
-            exec2('export LC_ALL=C; who --ips; echo "---"; w; unset LC_ALL | tail -n +2', function(error, stdout) {
+            exec('export LC_ALL=C; who --ips; echo "---"; w; unset LC_ALL | tail -n +2', (error, stdout) => {
               if (!error) {
                 let lines = stdout.toString().split("\n");
                 result2 = parseUsersLinux(lines, 1);
                 if (result2.length === 0) {
-                  exec2('who; echo "---"; w | tail -n +2', function(error2, stdout2) {
+                  exec('who; echo "---"; w | tail -n +2', (error2, stdout2) => {
                     if (!error2) {
                       lines = stdout2.toString().split("\n");
                       result2 = parseUsersLinux(lines, 2);
@@ -28788,9 +29237,9 @@ var require_users = __commonJS({
             });
           }
           if (_freebsd || _openbsd || _netbsd) {
-            exec2('who; echo "---"; w -ih', function(error, stdout) {
+            exec('who; echo "---"; w -ih', (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 result2 = parseUsersDarwin(lines);
               }
               if (callback) {
@@ -28800,9 +29249,9 @@ var require_users = __commonJS({
             });
           }
           if (_sunos) {
-            exec2('who; echo "---"; w -h', function(error, stdout) {
+            exec('who; echo "---"; w -h', (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 result2 = parseUsersDarwin(lines);
               }
               if (callback) {
@@ -28812,9 +29261,9 @@ var require_users = __commonJS({
             });
           }
           if (_darwin) {
-            exec2('export LC_ALL=C; who; echo "---"; w -ih; unset LC_ALL', function(error, stdout) {
+            exec('export LC_ALL=C; who; echo "---"; w -ih; unset LC_ALL', (error, stdout) => {
               if (!error) {
-                let lines = stdout.toString().split("\n");
+                const lines = stdout.toString().split("\n");
                 result2 = parseUsersDarwin(lines);
               }
               if (callback) {
@@ -28832,10 +29281,10 @@ var require_users = __commonJS({
               util.powerShell(cmd).then((data) => {
                 if (data) {
                   data = data.split("#-#-#-#");
-                  let sessions = parseWinSessions((data[0] || "").split(/\n\s*\n/));
-                  let loggedons = parseWinLoggedOn((data[1] || "").split(/\n\s*\n/));
-                  let queryUser = parseWinUsersQuery((data[3] || "").split("\r\n"));
-                  let users2 = parseWinUsers((data[2] || "").split(/\n\s*\n/), queryUser);
+                  const sessions = parseWinSessions((data[0] || "").split(/\n\s*\n/));
+                  const loggedons = parseWinLoggedOn((data[1] || "").split(/\n\s*\n/));
+                  const queryUser = parseWinUsersQuery((data[3] || "").split("\r\n"));
+                  const users2 = parseWinUsers((data[2] || "").split(/\n\s*\n/), queryUser);
                   for (let id in loggedons) {
                     if ({}.hasOwnProperty.call(loggedons, id)) {
                       loggedons[id].dateTime = {}.hasOwnProperty.call(sessions, id) ? sessions[id] : "";
@@ -29039,7 +29488,6 @@ var require_internet = __commonJS({
               util.checkWebsite(urlSanitized).then((res) => {
                 result2.status = res.statusCode;
                 result2.ok = res.statusCode >= 200 && res.statusCode <= 399;
-                ;
                 result2.ms = result2.ok ? res.time : null;
                 if (callback) {
                   callback(result2);
@@ -29052,7 +29500,7 @@ var require_internet = __commonJS({
               }
               resolve(result2);
             }
-          } catch (err) {
+          } catch (e) {
             if (callback) {
               callback(result2);
             }
@@ -29159,9 +29607,9 @@ var require_internet = __commonJS({
               const params2 = [hostSanitized, "-n", "1"];
               util.execSafe("ping", params2, util.execOptsWin).then((stdout) => {
                 if (stdout) {
-                  let lines = stdout.split("\r\n");
+                  const lines = stdout.split("\r\n");
                   lines.shift();
-                  lines.forEach(function(line) {
+                  lines.forEach((line) => {
                     if ((line.toLowerCase().match(/ms/g) || []).length === 3) {
                       let l2 = line.replace(/ +/g, " ").split(" ");
                       if (l2.length > 6) {
@@ -29193,13 +29641,13 @@ var require_internet = __commonJS({
 var require_dockerSocket = __commonJS({
   "node_modules/systeminformation/lib/dockerSocket.js"(exports, module2) {
     "use strict";
-    var net = require("net");
+    var net2 = require("net");
     var isWin = require("os").type() === "Windows_NT";
     var socketPath = isWin ? "//./pipe/docker_engine" : "/var/run/docker.sock";
     var DockerSocket = class {
       getInfo(callback) {
         try {
-          let socket = net.createConnection({ path: socketPath });
+          let socket = net2.createConnection({ path: socketPath });
           let alldata = "";
           let data;
           socket.on("connect", () => {
@@ -29213,23 +29661,23 @@ var require_dockerSocket = __commonJS({
             callback({});
           });
           socket.on("end", () => {
-            let startbody = alldata.indexOf("\r\n\r\n");
+            const startbody = alldata.indexOf("\r\n\r\n");
             alldata = alldata.substring(startbody + 4);
             socket = false;
             try {
               data = JSON.parse(alldata);
               callback(data);
-            } catch (err) {
+            } catch (e) {
               callback({});
             }
           });
-        } catch (err) {
+        } catch (e) {
           callback({});
         }
       }
       listImages(all, callback) {
         try {
-          let socket = net.createConnection({ path: socketPath });
+          let socket = net2.createConnection({ path: socketPath });
           let alldata = "";
           let data;
           socket.on("connect", () => {
@@ -29243,17 +29691,17 @@ var require_dockerSocket = __commonJS({
             callback({});
           });
           socket.on("end", () => {
-            let startbody = alldata.indexOf("\r\n\r\n");
+            const startbody = alldata.indexOf("\r\n\r\n");
             alldata = alldata.substring(startbody + 4);
             socket = false;
             try {
               data = JSON.parse(alldata);
               callback(data);
-            } catch (err) {
+            } catch (e) {
               callback({});
             }
           });
-        } catch (err) {
+        } catch (e) {
           callback({});
         }
       }
@@ -29261,7 +29709,7 @@ var require_dockerSocket = __commonJS({
         id = id || "";
         if (id) {
           try {
-            let socket = net.createConnection({ path: socketPath });
+            let socket = net2.createConnection({ path: socketPath });
             let alldata = "";
             let data;
             socket.on("connect", () => {
@@ -29275,17 +29723,17 @@ var require_dockerSocket = __commonJS({
               callback({});
             });
             socket.on("end", () => {
-              let startbody = alldata.indexOf("\r\n\r\n");
+              const startbody = alldata.indexOf("\r\n\r\n");
               alldata = alldata.substring(startbody + 4);
               socket = false;
               try {
                 data = JSON.parse(alldata);
                 callback(data);
-              } catch (err) {
+              } catch (e) {
                 callback({});
               }
             });
-          } catch (err) {
+          } catch (e) {
             callback({});
           }
         } else {
@@ -29294,7 +29742,7 @@ var require_dockerSocket = __commonJS({
       }
       listContainers(all, callback) {
         try {
-          let socket = net.createConnection({ path: socketPath });
+          let socket = net2.createConnection({ path: socketPath });
           let alldata = "";
           let data;
           socket.on("connect", () => {
@@ -29308,17 +29756,17 @@ var require_dockerSocket = __commonJS({
             callback({});
           });
           socket.on("end", () => {
-            let startbody = alldata.indexOf("\r\n\r\n");
+            const startbody = alldata.indexOf("\r\n\r\n");
             alldata = alldata.substring(startbody + 4);
             socket = false;
             try {
               data = JSON.parse(alldata);
               callback(data);
-            } catch (err) {
+            } catch (e) {
               callback({});
             }
           });
-        } catch (err) {
+        } catch (e) {
           callback({});
         }
       }
@@ -29326,7 +29774,7 @@ var require_dockerSocket = __commonJS({
         id = id || "";
         if (id) {
           try {
-            let socket = net.createConnection({ path: socketPath });
+            let socket = net2.createConnection({ path: socketPath });
             let alldata = "";
             let data;
             socket.on("connect", () => {
@@ -29340,17 +29788,17 @@ var require_dockerSocket = __commonJS({
               callback({});
             });
             socket.on("end", () => {
-              let startbody = alldata.indexOf("\r\n\r\n");
+              const startbody = alldata.indexOf("\r\n\r\n");
               alldata = alldata.substring(startbody + 4);
               socket = false;
               try {
                 data = JSON.parse(alldata);
                 callback(data);
-              } catch (err) {
+              } catch (e) {
                 callback({});
               }
             });
-          } catch (err) {
+          } catch (e) {
             callback({});
           }
         } else {
@@ -29361,7 +29809,7 @@ var require_dockerSocket = __commonJS({
         id = id || "";
         if (id) {
           try {
-            let socket = net.createConnection({ path: socketPath });
+            let socket = net2.createConnection({ path: socketPath });
             let alldata = "";
             let data;
             socket.on("connect", () => {
@@ -29375,17 +29823,17 @@ var require_dockerSocket = __commonJS({
               callback({});
             });
             socket.on("end", () => {
-              let startbody = alldata.indexOf("\r\n\r\n");
+              const startbody = alldata.indexOf("\r\n\r\n");
               alldata = alldata.substring(startbody + 4);
               socket = false;
               try {
                 data = JSON.parse(alldata);
                 callback(data);
-              } catch (err) {
+              } catch (e) {
                 callback({});
               }
             });
-          } catch (err) {
+          } catch (e) {
             callback({});
           }
         } else {
@@ -29396,7 +29844,7 @@ var require_dockerSocket = __commonJS({
         id = id || "";
         if (id) {
           try {
-            let socket = net.createConnection({ path: socketPath });
+            let socket = net2.createConnection({ path: socketPath });
             let alldata = "";
             let data;
             socket.on("connect", () => {
@@ -29410,17 +29858,17 @@ var require_dockerSocket = __commonJS({
               callback({});
             });
             socket.on("end", () => {
-              let startbody = alldata.indexOf("\r\n\r\n");
+              const startbody = alldata.indexOf("\r\n\r\n");
               alldata = alldata.substring(startbody + 4);
               socket = false;
               try {
                 data = JSON.parse(alldata);
                 callback(data);
-              } catch (err) {
+              } catch (e) {
                 callback({});
               }
             });
-          } catch (err) {
+          } catch (e) {
             callback({});
           }
         } else {
@@ -29429,7 +29877,7 @@ var require_dockerSocket = __commonJS({
       }
       listVolumes(callback) {
         try {
-          let socket = net.createConnection({ path: socketPath });
+          let socket = net2.createConnection({ path: socketPath });
           let alldata = "";
           let data;
           socket.on("connect", () => {
@@ -29443,17 +29891,17 @@ var require_dockerSocket = __commonJS({
             callback({});
           });
           socket.on("end", () => {
-            let startbody = alldata.indexOf("\r\n\r\n");
+            const startbody = alldata.indexOf("\r\n\r\n");
             alldata = alldata.substring(startbody + 4);
             socket = false;
             try {
               data = JSON.parse(alldata);
               callback(data);
-            } catch (err) {
+            } catch (e) {
               callback({});
             }
           });
-        } catch (err) {
+        } catch (e) {
           callback({});
         }
       }
@@ -29560,16 +30008,14 @@ var require_docker = __commonJS({
             try {
               dockerImages2 = data;
               if (dockerImages2 && Object.prototype.toString.call(dockerImages2) === "[object Array]" && dockerImages2.length > 0) {
-                dockerImages2.forEach(function(element) {
+                dockerImages2.forEach((element) => {
                   if (element.Names && Object.prototype.toString.call(element.Names) === "[object Array]" && element.Names.length > 0) {
                     element.Name = element.Names[0].replace(/^\/|\/$/g, "");
                   }
                   workload.push(dockerImagesInspect(element.Id.trim(), element));
                 });
                 if (workload.length) {
-                  Promise.all(
-                    workload
-                  ).then((data2) => {
+                  Promise.all(workload).then((data2) => {
                     if (callback) {
                       callback(data2);
                     }
@@ -29587,7 +30033,7 @@ var require_docker = __commonJS({
                 }
                 resolve(result2);
               }
-            } catch (err) {
+            } catch (e) {
               if (callback) {
                 callback(result2);
               }
@@ -29631,7 +30077,7 @@ var require_docker = __commonJS({
                   config: data.Config ? data.Config : {},
                   rootFS: data.RootFS ? data.RootFS : {}
                 });
-              } catch (err) {
+              } catch (e) {
                 resolve();
               }
             });
@@ -29644,7 +30090,7 @@ var require_docker = __commonJS({
     exports.dockerImages = dockerImages;
     function dockerContainers(all, callback) {
       function inContainers(containers, id) {
-        let filtered = containers.filter((obj) => {
+        const filtered = containers.filter((obj) => {
           return obj.Id && obj.Id === id;
         });
         return filtered.length > 0;
@@ -29679,16 +30125,14 @@ var require_docker = __commonJS({
                     }
                   }
                 }
-                docker_containers.forEach(function(element) {
+                docker_containers.forEach((element) => {
                   if (element.Names && Object.prototype.toString.call(element.Names) === "[object Array]" && element.Names.length > 0) {
                     element.Name = element.Names[0].replace(/^\/|\/$/g, "");
                   }
                   workload.push(dockerContainerInspect(element.Id.trim(), element));
                 });
                 if (workload.length) {
-                  Promise.all(
-                    workload
-                  ).then((data2) => {
+                  Promise.all(workload).then((data2) => {
                     if (callback) {
                       callback(data2);
                     }
@@ -29758,7 +30202,7 @@ var require_docker = __commonJS({
                   // hostconfig: payload.HostConfig,
                   // network: payload.NetworkSettings
                 });
-              } catch (err) {
+              } catch (e) {
                 resolve();
               }
             });
@@ -29803,7 +30247,7 @@ var require_docker = __commonJS({
         if (!{}.hasOwnProperty.call(networks, key)) {
           continue;
         }
-        let obj = networks[key];
+        const obj = networks[key];
         rx = +obj.rx_bytes;
         wx = +obj.tx_bytes;
       }
@@ -29818,7 +30262,7 @@ var require_docker = __commonJS({
         w: 0
       };
       if (blkio_stats && blkio_stats.io_service_bytes_recursive && Object.prototype.toString.call(blkio_stats.io_service_bytes_recursive) === "[object Array]" && blkio_stats.io_service_bytes_recursive.length > 0) {
-        blkio_stats.io_service_bytes_recursive.forEach(function(element) {
+        blkio_stats.io_service_bytes_recursive.forEach((element) => {
           if (element.op && element.op.toLowerCase() === "read" && element.value) {
             result2.r += element.value;
           }
@@ -29902,9 +30346,7 @@ var require_docker = __commonJS({
               workload.push(dockerContainerStatsSingle(containerID.trim()));
             }
             if (workload.length) {
-              Promise.all(
-                workload
-              ).then((data) => {
+              Promise.all(workload).then((data) => {
                 if (callback) {
                   callback(data);
                 }
@@ -29922,7 +30364,7 @@ var require_docker = __commonJS({
     }
     function dockerContainerStatsSingle(containerID) {
       containerID = containerID || "";
-      let result2 = {
+      const result2 = {
         id: containerID,
         memUsage: 0,
         memLimit: 0,
@@ -29975,12 +30417,12 @@ var require_docker = __commonJS({
                       result2.memoryStats = stats.memory_stats ? stats.memory_stats : {};
                       result2.networks = stats.networks ? stats.networks : {};
                     }
-                  } catch (err) {
+                  } catch (e) {
                     util.noop();
                   }
                   resolve(result2);
                 });
-              } catch (err) {
+              } catch (e) {
                 util.noop();
               }
             });
@@ -30043,7 +30485,7 @@ var require_docker = __commonJS({
                     });
                   });
                 }
-              } catch (err) {
+              } catch (e) {
                 util.noop();
               }
               if (callback) {
@@ -30073,7 +30515,7 @@ var require_docker = __commonJS({
             try {
               dockerVolumes2 = data;
               if (dockerVolumes2 && dockerVolumes2.Volumes && Object.prototype.toString.call(dockerVolumes2.Volumes) === "[object Array]" && dockerVolumes2.Volumes.length > 0) {
-                dockerVolumes2.Volumes.forEach(function(element) {
+                dockerVolumes2.Volumes.forEach((element) => {
                   result2.push({
                     name: element.Name,
                     driver: element.Driver,
@@ -30094,7 +30536,7 @@ var require_docker = __commonJS({
                 }
                 resolve(result2);
               }
-            } catch (err) {
+            } catch (e) {
               if (callback) {
                 callback(result2);
               }
@@ -30111,7 +30553,7 @@ var require_docker = __commonJS({
           dockerContainers(true).then((result2) => {
             if (result2 && Object.prototype.toString.call(result2) === "[object Array]" && result2.length > 0) {
               let l = result2.length;
-              result2.forEach(function(element) {
+              result2.forEach((element) => {
                 dockerContainerStats(element.id).then((res) => {
                   element.memUsage = res[0].memUsage;
                   element.memLimit = res[0].memLimit;
@@ -30154,19 +30596,19 @@ var require_docker = __commonJS({
 var require_virtualbox = __commonJS({
   "node_modules/systeminformation/lib/virtualbox.js"(exports) {
     "use strict";
-    var os2 = require("os");
-    var exec2 = require("child_process").exec;
+    var os4 = require("os");
+    var exec = require("child_process").exec;
     var util = require_util2();
     function vboxInfo(callback) {
       let result2 = [];
       return new Promise((resolve) => {
         process.nextTick(() => {
           try {
-            exec2(util.getVboxmanage() + " list vms --long", function(error, stdout) {
-              let parts = (os2.EOL + stdout.toString()).split(os2.EOL + "Name:");
+            exec(util.getVboxmanage() + " list vms --long", (error, stdout) => {
+              let parts = (os4.EOL + stdout.toString()).split(os4.EOL + "Name:");
               parts.shift();
               parts.forEach((part) => {
-                const lines = ("Name:" + part).split(os2.EOL);
+                const lines = ("Name:" + part).split(os4.EOL);
                 const state = util.getValue(lines, "State");
                 const running = state.startsWith("running");
                 const runningSinceString = running ? state.replace("running (since ", "").replace(")", "").trim() : "";
@@ -30252,7 +30694,7 @@ var require_virtualbox = __commonJS({
 var require_printer = __commonJS({
   "node_modules/systeminformation/lib/printer.js"(exports) {
     "use strict";
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var util = require_util2();
     var _platform = process.platform;
     var _linux = _platform === "linux" || _platform === "android";
@@ -30342,7 +30784,7 @@ var require_printer = __commonJS({
           let result2 = [];
           if (_linux || _freebsd || _openbsd || _netbsd) {
             let cmd = "cat /etc/cups/printers.conf 2>/dev/null";
-            exec2(cmd, function(error, stdout) {
+            exec(cmd, (error, stdout) => {
               if (!error) {
                 const parts = stdout.toString().split("<Printer ");
                 const printerHeader = parseLinuxCupsHeader(parts[0]);
@@ -30358,7 +30800,7 @@ var require_printer = __commonJS({
               if (result2.length === 0) {
                 if (_linux) {
                   cmd = "export LC_ALL=C; lpstat -lp 2>/dev/null; unset LC_ALL";
-                  exec2(cmd, function(error2, stdout2) {
+                  exec(cmd, (error2, stdout2) => {
                     const parts = ("\n" + stdout2.toString()).split("\nprinter ");
                     for (let i = 1; i < parts.length; i++) {
                       const printers = parseLinuxLpstatPrinter(parts[i].split("\n"), i);
@@ -30385,7 +30827,7 @@ var require_printer = __commonJS({
           }
           if (_darwin) {
             let cmd = "system_profiler SPPrintersDataType -json";
-            exec2(cmd, function(error, stdout) {
+            exec(cmd, (error, stdout) => {
               if (!error) {
                 try {
                   const outObj = JSON.parse(stdout.toString());
@@ -30436,7 +30878,7 @@ var require_printer = __commonJS({
 var require_usb = __commonJS({
   "node_modules/systeminformation/lib/usb.js"(exports) {
     "use strict";
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var util = require_util2();
     var _platform = process.platform;
     var _linux = _platform === "linux" || _platform === "android";
@@ -30646,7 +31088,7 @@ var require_usb = __commonJS({
           let result2 = [];
           if (_linux) {
             const cmd = "export LC_ALL=C; lsusb -v 2>/dev/null; unset LC_ALL";
-            exec2(cmd, { maxBuffer: 1024 * 1024 * 128 }, function(error, stdout) {
+            exec(cmd, { maxBuffer: 1024 * 1024 * 128 }, function(error, stdout) {
               if (!error) {
                 const parts = ("\n\n" + stdout.toString()).split("\n\nBus ");
                 for (let i = 1; i < parts.length; i++) {
@@ -30662,7 +31104,7 @@ var require_usb = __commonJS({
           }
           if (_darwin) {
             let cmd = "ioreg -p IOUSB -c AppleUSBRootHubDevice -w0 -l";
-            exec2(cmd, { maxBuffer: 1024 * 1024 * 128 }, function(error, stdout) {
+            exec(cmd, { maxBuffer: 1024 * 1024 * 128 }, function(error, stdout) {
               if (!error) {
                 const parts = stdout.toString().split(" +-o ");
                 for (let i = 1; i < parts.length; i++) {
@@ -30713,7 +31155,7 @@ var require_usb = __commonJS({
 var require_audio = __commonJS({
   "node_modules/systeminformation/lib/audio.js"(exports) {
     "use strict";
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var util = require_util2();
     var _platform = process.platform;
@@ -30777,8 +31219,8 @@ var require_audio = __commonJS({
       return result2;
     }
     function getLinuxAudioPci() {
-      let cmd = "lspci -v 2>/dev/null";
-      let result2 = [];
+      const cmd = "lspci -v 2>/dev/null";
+      const result2 = [];
       try {
         const parts = execSync(cmd, util.execOptsLinux).toString().split("\n\n");
         parts.forEach((element) => {
@@ -30795,12 +31237,25 @@ var require_audio = __commonJS({
         return result2;
       }
     }
+    function parseWinAudioStatus(n) {
+      let status = n;
+      if (n === 1) {
+        status = "other";
+      } else if (n === 2) {
+        status = "unknown";
+      } else if (n === 3) {
+        status = "enabled";
+      } else if (n === 4) {
+        status = "disabled";
+      } else if (n === 5) {
+        status = "not applicable";
+      }
+      return status;
+    }
     function parseLinuxAudioPciMM(lines, audioPCI) {
       const result2 = {};
       const slotId = util.getValue(lines, "Slot");
-      const pciMatch = audioPCI.filter(function(item) {
-        return item.slotId === slotId;
-      });
+      const pciMatch = audioPCI.filter((item) => item.slotId === slotId);
       result2.id = slotId;
       result2.name = util.getValue(lines, "SDevice");
       result2.manufacturer = util.getValue(lines, "SVendor");
@@ -30854,7 +31309,7 @@ var require_audio = __commonJS({
     }
     function parseWindowsAudio(lines) {
       const result2 = {};
-      const status = util.getValue(lines, "StatusInfo", ":");
+      const status = parseWinAudioStatus(util.getValue(lines, "StatusInfo", ":"));
       result2.id = util.getValue(lines, "DeviceID", ":");
       result2.name = util.getValue(lines, "name", ":");
       result2.manufacturer = util.getValue(lines, "manufacturer", ":");
@@ -30871,10 +31326,10 @@ var require_audio = __commonJS({
     function audio(callback) {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let result2 = [];
+          const result2 = [];
           if (_linux || _freebsd || _openbsd || _netbsd) {
-            let cmd = "lspci -vmm 2>/dev/null";
-            exec2(cmd, function(error, stdout) {
+            const cmd = "lspci -vmm 2>/dev/null";
+            exec(cmd, (error, stdout) => {
               if (!error) {
                 const audioPCI = getLinuxAudioPci();
                 const parts = stdout.toString().split("\n\n");
@@ -30893,8 +31348,8 @@ var require_audio = __commonJS({
             });
           }
           if (_darwin) {
-            let cmd = "system_profiler SPAudioDataType -json";
-            exec2(cmd, function(error, stdout) {
+            const cmd = "system_profiler SPAudioDataType -json";
+            exec(cmd, (error, stdout) => {
               if (!error) {
                 try {
                   const outObj = JSON.parse(stdout.toString());
@@ -32088,7 +32543,7 @@ var require_bluetoothVendors = __commonJS({
 var require_bluetooth = __commonJS({
   "node_modules/systeminformation/lib/bluetooth.js"(exports) {
     "use strict";
-    var exec2 = require("child_process").exec;
+    var exec = require("child_process").exec;
     var execSync = require("child_process").execSync;
     var path = require("path");
     var util = require_util2();
@@ -32112,6 +32567,15 @@ var require_bluetooth = __commonJS({
       }
       if (str.indexOf("trackpad") >= 0) {
         result2 = "Trackpad";
+      }
+      if (str.indexOf("audio") >= 0) {
+        result2 = "Audio";
+      }
+      if (str.indexOf("sound") >= 0) {
+        result2 = "Audio";
+      }
+      if (str.indexOf("microph") >= 0) {
+        result2 = "Microphone";
       }
       if (str.indexOf("speaker") >= 0) {
         result2 = "Speaker";
@@ -32240,7 +32704,7 @@ var require_bluetooth = __commonJS({
           }
           if (_darwin) {
             let cmd = "system_profiler SPBluetoothDataType -json";
-            exec2(cmd, function(error, stdout) {
+            exec(cmd, (error, stdout) => {
               if (!error) {
                 try {
                   const outObj = JSON.parse(stdout.toString());
@@ -32299,12 +32763,16 @@ var require_bluetooth = __commonJS({
             });
           }
           if (_windows) {
-            util.powerShell("Get-CimInstance Win32_PNPEntity | select PNPClass, Name, Manufacturer | fl").then((stdout, error) => {
+            util.powerShell("Get-CimInstance Win32_PNPEntity | select PNPClass, Name, Manufacturer, Status, Service, ConfigManagerErrorCode, Present | fl").then((stdout, error) => {
               if (!error) {
                 const parts = stdout.toString().split(/\n\s*\n/);
                 parts.forEach((part) => {
-                  if (util.getValue(part.split("\n"), "PNPClass", ":") === "Bluetooth") {
-                    result2.push(parseWindowsBluetooth(part.split("\n")));
+                  const lines = part.split("\n");
+                  const service = util.getValue(lines, "Service", ":");
+                  const errorCode = util.getValue(lines, "ConfigManagerErrorCode", ":");
+                  const pnpClass = util.getValue(lines, "PNPClass", ":").toLowerCase();
+                  if (pnpClass === "bluetooth" && errorCode === "0" && service === "") {
+                    result2.push(parseWindowsBluetooth(lines));
                   }
                 });
               }
@@ -32364,7 +32832,7 @@ var require_lib2 = __commonJS({
     function getStaticData(callback) {
       return new Promise((resolve) => {
         process.nextTick(() => {
-          let data = {};
+          const data = {};
           data.version = version();
           Promise.all([
             system.system(),
@@ -32379,7 +32847,11 @@ var require_lib2 = __commonJS({
             graphics.graphics(),
             network.networkInterfaces(),
             memory.memLayout(),
-            filesystem.diskLayout()
+            filesystem.diskLayout(),
+            audio.audio(),
+            bluetooth.bluetoothDevices(),
+            usb.usb(),
+            printer.printer()
           ]).then((res) => {
             data.system = res[0];
             data.bios = res[1];
@@ -32394,6 +32866,10 @@ var require_lib2 = __commonJS({
             data.net = res[10];
             data.memLayout = res[11];
             data.diskLayout = res[12];
+            data.audio = res[13];
+            data.bluetooth = res[14];
+            data.usb = res[15];
+            data.printer = res[16];
             if (callback) {
               callback(data);
             }
@@ -32415,7 +32891,7 @@ var require_lib2 = __commonJS({
         process.nextTick(() => {
           iface = iface || network.getDefaultNetworkInterface();
           srv = srv || "";
-          let functionProcessed = function() {
+          let functionProcessed = (() => {
             let totalFunctions = 15;
             if (_windows) {
               totalFunctions = 13;
@@ -32434,8 +32910,8 @@ var require_lib2 = __commonJS({
                 resolve(data);
               }
             };
-          }();
-          let data = {};
+          })();
+          const data = {};
           data.time = osInfo.time();
           data.node = process.versions.node;
           data.v8 = process.versions.v8;
@@ -32600,11 +33076,11 @@ var require_lib2 = __commonJS({
                         if (filter && filterParts.length === 2) {
                           if ({}.hasOwnProperty.call(partialRes, filterParts[0].trim())) {
                             const val = partialRes[filterParts[0].trim()];
-                            if (typeof val == "number") {
+                            if (typeof val === "number") {
                               if (val === parseFloat(filterParts[1].trim())) {
                                 partialArray.push(partialRes);
                               }
-                            } else if (typeof val == "string") {
+                            } else if (typeof val === "string") {
                               if (val.toLowerCase() === filterParts[1].trim().toLowerCase()) {
                                 partialArray.push(partialRes);
                               }
@@ -32724,72 +33200,19 @@ var import_obsidian3 = require("obsidian");
 var import_neovim2 = __toESM(require_lib());
 
 // src/Neovim.ts
-var import_obsidian = require("obsidian");
 var import_neovim = __toESM(require_lib());
 var child_process = __toESM(require("child_process"));
+var net = __toESM(require("net"));
 
 // src/utils.ts
-var import_node_path = require("path");
 var import_node_fs = require("fs");
-var os = __toESM(require("os"));
-var import_systeminformation = __toESM(require_lib2());
-var windows = process.platform === "win32";
-var searchDirs = windows ? [] : [
-  "/usr/local/bin",
-  "/usr/bin",
-  "/opt/homebrew/bin",
-  "/home/linuxbrew/.linuxbrew/bin",
-  "/snap/nvim/current/usr/bin"
-];
-async function isPortInUse(port) {
-  const networkConnections = await import_systeminformation.default.networkConnections();
-  return networkConnections.find((networkConnection) => {
-    return networkConnection.localPort === String(port);
-  }) !== void 0;
+var import_obsidian = require("obsidian");
+function notifyDuration(msg) {
+  return msg.split(" ").length / 220 * 6e4;
 }
-function normalizePath(path) {
-  return (0, import_node_path.normalize)(windows ? path.toLowerCase() : path);
-}
-function configureProcessSpawnArgs(spawnOptions, terminalName, terminalPath, nvimPath, port) {
-  if (!windows) {
-    spawnOptions.spawnArgs = ["-e", nvimPath, "--listen", port];
-    spawnOptions.shell = os.userInfo().shell || true;
-    console.debug(`edit-in-neovim:
-Process spawn config for macos/linux: ${JSON.stringify(spawnOptions, null, 2)}`);
-    return spawnOptions;
-  }
-  if (terminalName === "alacritty.exe" || terminalName === "wezterm.exe" || terminalName === "kitty.exe") {
-    spawnOptions.spawnArgs = ["-e", nvimPath, "--listen", port];
-    console.debug(`edit-in-neovim:
-Process spawn config for windows and ${terminalName}: ${JSON.stringify(spawnOptions, null, 2)}`);
-    return spawnOptions;
-  }
-  if (terminalName === "wt.exe") {
-    spawnOptions.spawnArgs = ["new-tab", "--title", "Neovim", nvimPath, "--listen", port];
-    console.debug(`edit-in-neovim:
-Process spawn config for windows terminal: ${JSON.stringify(spawnOptions, null, 2)}`);
-    return spawnOptions;
-  }
-  if (terminalName === "powershell.exe" || terminalName === "pwsh.exe") {
-    const command = `Start-Process -FilePath '${nvimPath}' -ArgumentList '--listen ${port}' -WindowStyle Normal`;
-    spawnOptions.spawnArgs = ["-ExecutionPolicy", "Bypass", "-NoProfile", "-NoExit", "-Command", command];
-    spawnOptions.shell = true;
-    console.debug(`edit-in-neovim:
-Process spawn config for powershell: ${JSON.stringify(spawnOptions, null, 2)}`);
-    return spawnOptions;
-  }
-  if (terminalName === "cmd.exe") {
-    spawnOptions.spawnArgs = ["/c", "start", `"Neovim"`, `"${nvimPath}"`, "--listen", port];
-    spawnOptions.shell = true;
-    console.debug(`edit-in-neovim:
-Process spawn config for ${terminalName}: ${JSON.stringify(spawnOptions, null, 2)}`);
-    return spawnOptions;
-  }
-  console.warn(`Unknown/unhandled Windows terminal: ${terminalPath}. Using fallback, this is likely to fail.`);
-  spawnOptions.spawnArgs = ["-e", nvimPath, "--listen", port];
-  console.info(`edit-in-neovim:
-Process spawn config for ${terminalName}: ${JSON.stringify(spawnOptions, null, 2)}`);
-  return spawnOptions;
+function notify(msg, duration) {
+  new import_obsidian.Notice(`edit-in-neovim:
+${msg}`, duration || notifyDuration(msg));
 }
 function verifyPath(name) {
   if (!(0, import_node_fs.existsSync)(name)) {
@@ -32803,264 +33226,175 @@ function verifyPath(name) {
     return void 0;
   }
 }
-function searchForBinary(name) {
-  if ((0, import_node_path.isAbsolute)(name)) {
-    return verifyPath(name);
-  }
-  const paths = /* @__PURE__ */ new Set();
-  const { PATH, USERPROFILE, LOCALAPPDATA, PROGRAMFILES, HOME } = process.env;
-  PATH == null ? void 0 : PATH.split(import_node_path.delimiter).forEach((p) => paths.add(normalizePath(p)));
-  if (windows) {
-    name = windows ? `${name}.exe` : name;
-    if (USERPROFILE) {
-      paths.add(normalizePath(`${USERPROFILE}/scoop/shims`));
-    }
-    paths.add(normalizePath("C:/ProgramData/scoop/shims"));
-    if (LOCALAPPDATA) {
-      paths.add(normalizePath(`${LOCALAPPDATA}/Microsoft/WindowsApps`));
-      paths.add(normalizePath(`${LOCALAPPDATA}/Microsoft/WinGet/Packages`));
-    }
-    if (PROGRAMFILES) {
-      paths.add(normalizePath(`${PROGRAMFILES}/WinGet/Packages`));
-      paths.add(normalizePath(`${PROGRAMFILES} (x86)/WinGet/Packages`));
-    }
-  } else {
-    [
-      "/usr/local/bin",
-      "/usr/bin",
-      "/opt/homebrew/bin",
-      "/home/linuxbrew/.linuxbrew/bin"
-    ].forEach((p) => paths.add(p));
-    if (HOME) {
-      paths.add(normalizePath(`${HOME}/bin`));
-      paths.add(normalizePath(`${HOME}/.linuxbrew/bin`));
-    }
-  }
-  const allPaths = [...paths].map((p) => (0, import_node_path.join)(p, name));
-  for (const path of allPaths) {
-    const verifiedPath = verifyPath(path);
-    if (verifiedPath) {
-      return verifiedPath;
-    }
-  }
-  return void 0;
-}
 
 // src/Neovim.ts
 var Neovim = class {
-  constructor(settings, adapter, apiKey) {
-    this.getBuffers = async () => {
-      if (!this.instance)
-        return [];
-      try {
-        return await this.instance.buffers;
-      } catch (error) {
-        new import_obsidian.Notice(`edit-in-neovim:
-Unable to get Neovim buffers due to: ${error.message}`, 5e3);
-        return [];
-      }
-    };
-    this.openFile = async (file) => {
-      var _a, _b, _c;
-      if (!file)
-        return;
-      if (!((_a = this.nvimBinary) == null ? void 0 : _a.path))
-        return;
-      const isExcalidrawMd = file.extension === "md" && file.path.endsWith(".excalidraw.md");
-      let isSupported = this.settings.supportedFileTypes.includes(file.extension);
-      isSupported = isSupported || isExcalidrawMd && this.settings.supportedFileTypes.includes("excalidraw");
-      if (!isSupported)
-        return;
-      const port = this.settings.listenOn.split(":").at(-1);
-      if (!(this.instance && this.process) && !port) {
-        console.debug("No known neovim instance is running");
-        return;
-      }
-      ;
-      try {
-        if (!(port && await isPortInUse(port))) {
-          console.debug("Port is either missing, or nothing was listening on it, skipping command");
-          return;
-        }
-      } catch (error) {
-        console.error(`Error checking port ${port}: ${error.message}`);
-      }
-      const absolutePath = this.adapter.getFullPath(file.path);
-      const args = ["--server", this.settings.listenOn, "--remote", absolutePath];
-      console.debug(`Opening ${absolutePath} in neovim`);
-      child_process.exec(
-        `${(_b = this.nvimBinary) == null ? void 0 : _b.path} --server ${this.settings.listenOn} --remote '${absolutePath}'`
-      );
-      try {
-        child_process.execFile((_c = this.nvimBinary) == null ? void 0 : _c.path, args, (error, stdout, stderr) => {
-          var _a2;
-          if (error) {
-            let noticeMessage = `edit-in-neovim:
-Error opening file in Neovim: ${error.message}`;
-            if (error.code === "ENOENT") {
-              noticeMessage = `edit-in-neovim:
-Neovim executable not found at: ${(_a2 = this.nvimBinary) == null ? void 0 : _a2.path}`;
-            } else if (stderr && (stderr.includes("ECONNREFUSED") || stderr.includes("Connection refused"))) {
-              noticeMessage = `edit-in-neovim:
-Could not connect to Neovim server at ${this.settings.listenOn}. Is it running?`;
-            } else if (stderr && stderr.includes("No such file or directory") && stderr.includes(absolutePath)) {
-              noticeMessage = `edit-in-neovim:
-Neovim server reported error finding file: ${file.basename}`;
-            } else if (stderr) {
-              noticeMessage = `edit-in-neovim:
-Error opening file in Neovim: ${stderr.split("\n")[0]}`;
-            }
-            new import_obsidian.Notice(noticeMessage, 1e4);
-            return;
-          }
-          if (stdout)
-            console.log(`Neovim --remote stdout: ${stdout}`);
-          if (stderr)
-            console.warn(`Neovim --remote stderr: ${stderr}`);
-        });
-      } catch (execFileError) {
-        console.error("Error opening file in neovim", execFileError);
-        new import_obsidian.Notice(`Failed to run Neovim command: ${execFileError.message}`, 1e4);
-      }
-    };
-    this.close = () => {
-      var _a, _b;
-      (_a = this.process) == null ? void 0 : _a.kill();
-      (_b = this.instance) == null ? void 0 : _b.quit();
-      this.instance = void 0;
-      this.process = void 0;
-      new import_obsidian.Notice("edit-in-neovim:\nNeovim instance closed.", 3e3);
-    };
+  constructor(settings, adapter, options) {
     var _a, _b;
     this.adapter = adapter;
     this.settings = settings;
-    this.apiKey = apiKey;
-    this.termBinary = searchForBinary(settings.terminal);
     this.nvimBinary = void 0;
-    if (!this.termBinary) {
-      console.warn(`Could find binary for ${settings.terminal}, double check it's on your PATH`);
-    }
-    if (this.settings.pathToBinary) {
-      this.nvimBinary = { path: this.settings.pathToBinary, nvimVersion: "manual_path" };
+    if (this.settings.binaryPath) {
+      this.nvimBinary = {
+        path: this.settings.binaryPath,
+        nvimVersion: "manual_path"
+      };
       console.log(`Neovim Information:
-  - Term Path: ${this.termBinary || "NOT FOUND"}
   - Nvim Path: ${this.nvimBinary.path}
   - Version: ${this.nvimBinary.nvimVersion}
   - Error: ${(_a = this.nvimBinary.error) == null ? void 0 : _a.message}
 `);
       return;
     }
-    const foundNvimBinaries = (0, import_neovim.findNvim)({ orderBy: "desc", paths: searchDirs });
+    const foundNvimBinaries = (0, import_neovim.findNvim)({
+      orderBy: "desc",
+      paths: options == null ? void 0 : options.searchPaths
+    });
     if (foundNvimBinaries.matches.length > 0) {
       this.nvimBinary = foundNvimBinaries.matches[0];
       console.log(`Neovim Information:
-  - Term Path: ${this.termBinary || "NOT FOUND"}
   - Nvim Path: ${this.nvimBinary.path}
   - Version: ${this.nvimBinary.nvimVersion}
   - Error: ${(_b = this.nvimBinary.error) == null ? void 0 : _b.message}
 `);
       return;
     }
-    this.nvimBinary = { path: "", nvimVersion: void 0, error: new Error("Neovim binary not found, and no manual path specified") };
-    console.warn("Using fallback neovim configuration, plugin will likely not function");
-    if (!this.termBinary || !this.nvimBinary.nvimVersion || this.nvimBinary.error) {
-      new import_obsidian.Notice("edit-in-neovim:\nPotential issues in plugin config, check logs for more details", 5e3);
+    this.nvimBinary = {
+      path: "",
+      nvimVersion: void 0,
+      error: new Error("Neovim binary not found, and no manual path specified")
+    };
+    console.warn(
+      "Using fallback neovim configuration, plugin will likely not function"
+    );
+    if (!this.nvimBinary.nvimVersion || this.nvimBinary.error) {
+      notify("Potential issues in plugin config, check logs for more details");
     }
   }
-  async newInstance(adapter) {
-    var _a, _b, _c, _d, _e, _f;
-    if (this.process) {
-      new import_obsidian.Notice("edit-in-neovim:\nInstance already running", 5e3);
+  attach(host) {
+    if (this.instance)
       return;
-    }
-    if (!this.termBinary) {
-      new import_obsidian.Notice("Terminal undefined, skipping command", 5e3);
-      return;
-    }
-    if (!this.nvimBinary || ((_a = this.nvimBinary) == null ? void 0 : _a.path) === "") {
-      new import_obsidian.Notice("No path to valid nvim binary has been found, skipping command", 5e3);
-      return;
-    }
-    const extraEnvVars = {};
-    if (this.apiKey)
-      extraEnvVars["OBSIDIAN_REST_API_KEY"] = this.apiKey;
-    if (this.settings.appname !== "")
-      extraEnvVars["NVIM_APPNAME"] = this.settings.appname;
-    const terminalName = ((_b = this.termBinary.split("\\").pop()) == null ? void 0 : _b.toLowerCase()) || "";
-    const defaultSpawnOptions = {
-      spawnArgs: [],
-      cwd: adapter.getBasePath(),
-      env: { ...process.env, ...extraEnvVars },
-      shell: false,
-      detached: false
-    };
-    const spawnOptions = configureProcessSpawnArgs(defaultSpawnOptions, terminalName, this.termBinary, this.nvimBinary.path, this.settings.listenOn);
-    console.debug(`Attempting to spawn process:
-      Platform: ${process.platform}
-      Executable: ${this.termBinary}
-      Arguments: ${JSON.stringify(spawnOptions.spawnArgs)}
-      Options: ${JSON.stringify(spawnOptions)}`);
     try {
-      this.process = child_process.spawn(this.termBinary, spawnOptions.spawnArgs, spawnOptions);
-      if (!this.process || this.process.pid === void 0) {
-        new import_obsidian.Notice("Failed to create Neovim process", 5e3);
-        this.process = void 0;
-        return;
+      if (host.process) {
+        this.instance = (0, import_neovim.attach)({ proc: host.process });
+        console.debug("Connecting to plugin managed process");
+      } else {
+        const listenAddr = this.settings.listenOn;
+        const colonIdx = listenAddr.lastIndexOf(":");
+        if (colonIdx > 0) {
+          const host2 = listenAddr.substring(0, colonIdx);
+          const port = parseInt(listenAddr.substring(colonIdx + 1));
+          const socket = net.createConnection({ host: host2, port });
+          this.instance = (0, import_neovim.attach)({ reader: socket, writer: socket });
+        } else {
+          this.instance = (0, import_neovim.attach)({ socket: listenAddr });
+        }
       }
-      console.debug(`Neovim process running, PID: ${this.process.pid}`);
-      (_c = this.process) == null ? void 0 : _c.on("error", (err) => {
-        new import_obsidian.Notice("edit-in-neovim:\nNeovim ran into a error, see logs for details");
-        console.error(`Neovim process ran into an error: ${JSON.stringify(err, null, 2)}`);
-        this.process = void 0;
-        this.instance = void 0;
-      });
-      (_d = this.process) == null ? void 0 : _d.on("close", (code) => {
-        console.info(`nvim closed with code: ${code}`);
-        this.process = void 0;
-        this.instance = void 0;
-      });
-      (_e = this.process) == null ? void 0 : _e.on("disconnect", () => {
-        console.info("nvim disconnected");
-        this.process = void 0;
-        this.instance = void 0;
-      });
-      (_f = this.process) == null ? void 0 : _f.on("exit", (code) => {
-        console.info(`nvim closed with code: ${code}`);
-        this.process = void 0;
-        this.instance = void 0;
-      });
-      console.debug("Attaching to Neovim process...");
-      this.instance = (0, import_neovim.attach)({ proc: this.process });
       setTimeout(async () => {
         if (!this.instance)
           return;
         try {
           await this.instance.eval("1");
           console.debug("Neovim RPC connection test successful.");
-          new import_obsidian.Notice("Neovim instance started and connected.", 3e3);
+          notify("Neovim instance started and connected.", 3e3);
         } catch (error) {
           console.error("Neovim RPC connection failed after spawn:", error);
-          new import_obsidian.Notice(`Failed to establish RPC connection: ${error.message}`, 7e3);
+          notify(`Failed to establish RPC connection: ${error.message}`, 7e3);
           this.close();
         }
       }, 1500);
     } catch (error) {
-      console.error("Error caught during child_process.spawn call itself:", error);
-      new import_obsidian.Notice(`Error trying to spawn Neovim: ${error.message}`, 1e4);
-      this.process = void 0;
+      console.error(
+        "Error caught during child_process.spawn call itself:",
+        error
+      );
+      notify(`Error trying to spawn Neovim: ${error.message}`, 1e4);
       this.instance = void 0;
     }
+  }
+  async getBuffers() {
+    if (!this.instance)
+      return [];
+    try {
+      return await this.instance.buffers;
+    } catch (error) {
+      notify(`Unable to get Neovim buffers due to: ${error.message}`);
+      return [];
+    }
+  }
+  async openFile(file, host) {
+    var _a;
+    if (!file)
+      return;
+    if (!this.nvimBinary)
+      return;
+    const isExcalidrawMd = file.extension === "md" && file.path.endsWith(".excalidraw.md");
+    let isSupported = this.settings.supportedFileTypes.includes(file.extension);
+    isSupported = isSupported || isExcalidrawMd && this.settings.supportedFileTypes.includes("excalidraw");
+    if (!isSupported)
+      return;
+    const port = this.settings.listenOn.split(":").at(-1);
+    try {
+      if (!(port && await host.isPortInUse(port))) {
+        console.debug(
+          "Port is either missing, or nothing was listening on it, skipping command"
+        );
+        return;
+      }
+    } catch (error) {
+      console.error(`Error checking port ${port}: ${error.message}`);
+    }
+    const absolutePath = this.adapter.getFullPath(file.path);
+    const args = ["--server", this.settings.listenOn, "--remote", absolutePath];
+    console.debug(`Opening ${absolutePath} in neovim`);
+    try {
+      child_process.execFile(
+        (_a = this.nvimBinary) == null ? void 0 : _a.path,
+        args,
+        (error, stdout, stderr) => {
+          var _a2;
+          if (error) {
+            let noticeMessage = `Error opening file in Neovim: ${error.message}`;
+            if (error.code === "ENOENT") {
+              noticeMessage = `Neovim executable not found at: ${(_a2 = this.nvimBinary) == null ? void 0 : _a2.path}`;
+            } else if (stderr && (stderr.includes("ECONNREFUSED") || stderr.includes("Connection refused"))) {
+              noticeMessage = `Could not connect to Neovim server at ${this.settings.listenOn}. Is it running?`;
+            } else if (stderr && stderr.includes("No such file or directory") && stderr.includes(absolutePath)) {
+              noticeMessage = `Neovim server reported error finding file: ${file.basename}`;
+            } else if (stderr) {
+              noticeMessage = `Error opening file in Neovim: ${stderr.split("\n")[0]}`;
+            }
+            notify(noticeMessage, 1e4);
+            return;
+          }
+          if (stdout)
+            console.log(`Neovim --remote stdout: ${stdout}`);
+          if (stderr)
+            console.warn(`Neovim --remote stderr: ${stderr}`);
+        }
+      );
+    } catch (execFileError) {
+      console.error("Error opening file in neovim", execFileError);
+      notify(`Failed to run Neovim command: ${execFileError.message}`, 1e4);
+    }
+  }
+  close() {
+    var _a;
+    (_a = this.instance) == null ? void 0 : _a.quit();
+    this.instance = void 0;
+    notify("Neovim connection closed.", 3e3);
   }
 };
 
 // src/Settings.ts
 var import_obsidian2 = require("obsidian");
 var DEFAULT_SETTINGS = {
-  terminal: process.env.TERMINAL || "alacritty",
+  terminalPath: process.env.TERMINAL || "alacritty",
   listenOn: "127.0.0.1:2006",
   openNeovimOnLoad: true,
+  headless: false,
   supportedFileTypes: ["txt", "md", "css", "js", "ts", "tsx", "jsx", "json"],
-  pathToBinary: "",
+  binaryPath: "",
   appname: ""
 };
 var EditInNeovimSettingsTab = class extends import_obsidian2.PluginSettingTab {
@@ -33071,41 +33405,15 @@ var EditInNeovimSettingsTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian2.Setting(containerEl).setName("Terminal").setDesc(
-      "Which terminal emulator should I try and use for the neovim instance?"
-    ).addText(
-      (text) => text.setPlaceholder("E.g. alacritty, kitty, wezterm...").setValue(this.plugin.settings.terminal).onChange(async (value) => {
-        this.plugin.settings.terminal = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian2.Setting(containerEl).setName("Neovim server location").setDesc(
-      "The Neovim instance will be spawned using --listen and needs a socket or IP:PORT (not sure if sockets work so use at your own risk)"
-    ).addText(
-      (text) => text.setPlaceholder("127.0.0.1:2006").setValue(this.plugin.settings.listenOn).onChange(async (value) => {
-        this.plugin.settings.listenOn = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian2.Setting(containerEl).setName("Path to Neovim binary").setDesc(
-      "Manual override for detecting nvim binary. It's recommended you add nvim to your PATH instead. (requires reload)"
-    ).addText(
-      (text) => text.setPlaceholder("/path/to/nvim-bin/nvim").setValue(this.plugin.settings.pathToBinary).onChange(async (value) => {
-        this.plugin.settings.pathToBinary = value;
-        await this.plugin.saveSettings();
-      })
-    );
-    new import_obsidian2.Setting(containerEl).setName("NVIM_APPNAME").setDesc(
-      "If you have a specific neovim distro you'd like to use (lazyvim for example), leave blank to use your default neovim config."
-    ).addText(
-      (text) => text.setPlaceholder("lazyvim, my_writing_config, etc.").setValue(this.plugin.settings.appname).onChange(async (value) => {
-        this.plugin.settings.appname = value;
-        await this.plugin.saveSettings();
-      })
-    );
     new import_obsidian2.Setting(containerEl).setName("Open on startup").setDesc("Open the Neovim instance when Obsidian opens").addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.openNeovimOnLoad).onChange(async (value) => {
         this.plugin.settings.openNeovimOnLoad = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Headless").setDesc("Makes the instance used by the plugin headless, useful for remote connections.").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.headless).onChange(async (value) => {
+        this.plugin.settings.headless = value;
         await this.plugin.saveSettings();
       })
     );
@@ -33119,6 +33427,351 @@ var EditInNeovimSettingsTab = class extends import_obsidian2.PluginSettingTab {
         await this.plugin.saveSettings();
       })
     );
+    new import_obsidian2.Setting(containerEl).setName("Terminal Path").setDesc(
+      "Which terminal emulator should I try and use for the neovim instance?"
+    ).addText(
+      (text) => text.setPlaceholder(
+        "E.g. /usr/bin/kitty, /Applications/iTerm.app/Contents/MacOS/iTerm2..."
+      ).setValue(this.plugin.settings.terminalPath).onChange(async (value) => {
+        this.plugin.settings.terminalPath = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Path to Neovim binary").setDesc(
+      "Manual override for detecting nvim binary. It's recommended you add nvim to your PATH instead. (requires reload)"
+    ).addText(
+      (text) => text.setPlaceholder("/path/to/nvim-bin/nvim").setValue(this.plugin.settings.binaryPath).onChange(async (value) => {
+        this.plugin.settings.binaryPath = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("NVIM_APPNAME").setDesc(
+      "If you have a specific neovim distro you'd like to use (lazyvim for example), leave blank to use your default neovim config."
+    ).addText(
+      (text) => text.setPlaceholder("lazyvim, my_writing_config, etc.").setValue(this.plugin.settings.appname).onChange(async (value) => {
+        this.plugin.settings.appname = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Neovim server location").setDesc(
+      "The Neovim instance will be spawned using --listen and needs a socket or IP:PORT (not sure if sockets work so use at your own risk)"
+    ).addText(
+      (text) => text.setPlaceholder("127.0.0.1:2006").setValue(this.plugin.settings.listenOn).onChange(async (value) => {
+        this.plugin.settings.listenOn = value;
+        await this.plugin.saveSettings();
+      })
+    );
+  }
+};
+
+// src/main.ts
+var import_process = require("process");
+
+// src/system/Mac.ts
+var os2 = __toESM(require("os"));
+var import_node_path2 = require("path");
+
+// src/system/Host.ts
+var os = __toESM(require("os"));
+var import_systeminformation = __toESM(require_lib2());
+var child_process2 = __toESM(require("child_process"));
+var import_node_process = require("process");
+var import_node_path = require("path");
+var Host = class {
+  constructor(adapter, settings, options) {
+    this.close = () => {
+      var _a;
+      (_a = this.process) == null ? void 0 : _a.kill();
+      this.process = void 0;
+      notify("Closing host process.");
+    };
+    this.adapter = adapter;
+    this.settings = settings;
+    this.options = options;
+    this.hostBinary = this.searchForBinary(settings.terminalPath);
+  }
+  searchForBinary(name) {
+    if ((0, import_node_path.isAbsolute)(name)) {
+      return verifyPath(name);
+    }
+    const paths = this.getSearchPaths();
+    const allPaths = [...paths].map((p) => (0, import_node_path.join)(p, name));
+    for (const path of allPaths) {
+      const verifiedPath = verifyPath(path);
+      if (verifiedPath) {
+        return verifiedPath;
+      }
+    }
+    return void 0;
+  }
+  async newInstance(neovim, adapter) {
+    var _a, _b, _c, _d, _e, _f;
+    if (this.process) {
+      notify("Instance already running", 5e3);
+      return;
+    }
+    if (!this.hostBinary) {
+      notify("Terminal undefined, skipping", 5e3);
+      return;
+    }
+    if (!neovim.nvimBinary) {
+      notify(
+        "No path to valid nvim binary has been found, skipping command",
+        5e3
+      );
+      return;
+    }
+    const extraEnvVars = {};
+    if ((_a = this.options) == null ? void 0 : _a.restAPIKey)
+      extraEnvVars["OBSIDIAN_REST_API_KEY"] = this.options.restAPIKey;
+    if (this.settings.appname !== "")
+      extraEnvVars["NVIM_APPNAME"] = this.settings.appname;
+    const spawnOptions = this.configureHostArgs((_b = neovim.nvimBinary) == null ? void 0 : _b.path, {
+      spawnArgs: [],
+      cwd: adapter.getBasePath(),
+      env: { ...process.env, ...extraEnvVars },
+      shell: false,
+      detached: false
+    });
+    console.debug(`Attempting to spawn process:
+      Platform: ${process.platform}
+      Executable: ${this.hostBinary}
+      Arguments: ${JSON.stringify(spawnOptions.spawnArgs)}
+      Options: ${JSON.stringify(spawnOptions)}`);
+    try {
+      this.process = child_process2.spawn(
+        this.settings.headless ? neovim.nvimBinary.path : this.hostBinary,
+        spawnOptions.spawnArgs,
+        spawnOptions
+      );
+      if (!this.process || this.process.pid === void 0) {
+        notify("Failed to create host process", 5e3);
+        this.process = void 0;
+        return;
+      }
+      console.debug(`Neovim process running, PID: ${this.process.pid}`);
+      (_c = this.process) == null ? void 0 : _c.on("error", (err) => {
+        notify("Neovim ran into a error, see logs for details");
+        console.error(
+          `Neovim process ran into an error: ${JSON.stringify(err, null, 2)}`
+        );
+        this.process = void 0;
+        neovim.close();
+      });
+      (_d = this.process) == null ? void 0 : _d.on("close", (code) => {
+        console.info(`nvim closed with code: ${code}`);
+        this.process = void 0;
+        neovim.close();
+      });
+      (_e = this.process) == null ? void 0 : _e.on("disconnect", () => {
+        console.info("nvim disconnected");
+        this.process = void 0;
+        neovim.close();
+      });
+      (_f = this.process) == null ? void 0 : _f.on("exit", (code) => {
+        console.info(`nvim closed with code: ${code}`);
+        this.process = void 0;
+        neovim.close();
+      });
+      console.debug("Attaching to Neovim process...");
+      setTimeout(async () => {
+        var _a2;
+        if (!neovim.nvimBinary)
+          return;
+        try {
+          await ((_a2 = neovim.instance) == null ? void 0 : _a2.eval("1"));
+          console.debug("Neovim RPC connection test successful.");
+          notify("Neovim instance started and connected.", 3e3);
+        } catch (error) {
+          console.error("Neovim RPC connection failed after spawn:", error);
+          notify(`Failed to establish RPC connection: ${error.message}`, 7e3);
+          neovim.close();
+        }
+      }, 1500);
+    } catch (error) {
+      console.error(
+        "Error caught during child_process.spawn call itself:",
+        error
+      );
+      notify(`Error trying to spawn Neovim: ${error.message}`, 1e4);
+      this.process = void 0;
+      neovim.close();
+    }
+  }
+  async isPortInUse(port) {
+    const networkConnections = await import_systeminformation.default.networkConnections();
+    return networkConnections.find(
+      (networkConnection) => {
+        return networkConnection.localPort === String(port);
+      }
+    ) !== void 0;
+  }
+  configureHostArgs(_neovimPath, _defaults) {
+    notify(`edit-in-neovim: Unrecognised OS (${import_node_process.platform})`, 1e4);
+    throw new Error(`Unable to get search paths, unrecognised OS: ${import_node_process.platform}`);
+  }
+  configureHeadlessArgs(defaults) {
+    return {
+      ...defaults,
+      spawnArgs: ["--headless", "--listen", this.settings.listenOn],
+      shell: os.userInfo().shell || true
+    };
+  }
+  getSearchPaths() {
+    notify(`edit-in-neovim: Unrecognised OS (${import_node_process.platform})`, 1e4);
+    throw new Error(`Unable to get search paths, unrecognised OS: ${import_node_process.platform}`);
+  }
+};
+
+// src/system/Mac.ts
+var MacOS = class extends Host {
+  configureHostArgs(neovimPath, defaults) {
+    console.debug(
+      `edit-in-neovim:
+Process spawn config for Linux: ${JSON.stringify(defaults, null, 2)}`
+    );
+    if (defaults.headless)
+      return this.configureHeadlessArgs(defaults);
+    return {
+      ...defaults,
+      spawnArgs: ["-e", neovimPath, "--listen", this.settings.listenOn],
+      shell: os2.userInfo().shell || true
+    };
+  }
+  getSearchPaths() {
+    const paths = /* @__PURE__ */ new Set();
+    const { PATH, HOME } = process.env;
+    PATH == null ? void 0 : PATH.split(import_node_path2.delimiter).forEach((p) => paths.add((0, import_node_path2.normalize)(p)));
+    if (HOME) {
+      paths.add((0, import_node_path2.normalize)(`${HOME}/bin`));
+      paths.add((0, import_node_path2.normalize)(`${HOME}/.linuxbrew/bin`));
+    }
+    return paths;
+  }
+};
+
+// src/system/Windows.ts
+var import_node_path3 = require("path");
+var Windows = class extends Host {
+  configureHostArgs(neovimPath, defaults) {
+    var _a, _b;
+    if (defaults.headless)
+      return this.configureHeadlessArgs(defaults);
+    const terminalName = ((_b = (_a = this.hostBinary) == null ? void 0 : _a.split("\\").pop()) == null ? void 0 : _b.toLowerCase()) || "";
+    switch (terminalName) {
+      case "wt.exe":
+        console.debug(
+          `edit-in-neovim:
+Process spawn config for windows terminal: ${JSON.stringify(defaults, null, 2)}`
+        );
+        return {
+          ...defaults,
+          spawnArgs: [
+            "new-tab",
+            "--title",
+            "Neovim",
+            neovimPath,
+            "--listen",
+            this.settings.listenOn
+          ]
+        };
+      case "cmd.exe":
+        console.debug(
+          `edit-in-neovim:
+Process spawn config for ${terminalName}: ${JSON.stringify(defaults, null, 2)}`
+        );
+        return {
+          ...defaults,
+          spawnArgs: [
+            "/c",
+            "start",
+            `"Neovim"`,
+            `"${neovimPath}"`,
+            "--listen",
+            this.settings.listenOn
+          ],
+          shell: true
+        };
+      case "powershell.exe":
+      case "pwsh.exe":
+        const command = `Start-Process -FilePath '${neovimPath}' -ArgumentList '--listen ${this.settings.listenOn}' -WindowStyle Normal`;
+        console.debug(
+          `edit-in-neovim:
+Process spawn config for powershell: ${JSON.stringify(defaults, null, 2)}`
+        );
+        return {
+          ...defaults,
+          spawnArgs: [
+            "-ExecutionPolicy",
+            "Bypass",
+            "-NoProfile",
+            "-NoExit",
+            "-Command",
+            command
+          ],
+          shell: true
+        };
+      default:
+        console.debug(
+          `edit-in-neovim:
+Process spawn config for windows and ${terminalName}: ${JSON.stringify(defaults, null, 2)}`
+        );
+        return {
+          ...defaults,
+          spawnArgs: ["-e", neovimPath, "--listen", this.settings.listenOn]
+        };
+    }
+  }
+  getSearchPaths() {
+    const paths = /* @__PURE__ */ new Set();
+    const { USERPROFILE, LOCALAPPDATA, PROGRAMFILES } = process.env;
+    if (USERPROFILE) {
+      paths.add(Windows.normalizePath(`${USERPROFILE}/scoop/shims`));
+    }
+    paths.add(Windows.normalizePath("C:/ProgramData/scoop/shims"));
+    if (LOCALAPPDATA) {
+      paths.add(Windows.normalizePath(`${LOCALAPPDATA}/Microsoft/WindowsApps`));
+      paths.add(
+        Windows.normalizePath(`${LOCALAPPDATA}/Microsoft/WinGet/Packages`)
+      );
+    }
+    if (PROGRAMFILES) {
+      paths.add(Windows.normalizePath(`${PROGRAMFILES}/WinGet/Packages`));
+      paths.add(Windows.normalizePath(`${PROGRAMFILES} (x86)/WinGet/Packages`));
+    }
+    return paths;
+  }
+  static normalizePath(path) {
+    return (0, import_node_path3.normalize)(path.toLowerCase());
+  }
+};
+
+// src/system/Linux.ts
+var os3 = __toESM(require("os"));
+var import_node_path4 = require("path");
+var Linux = class extends Host {
+  configureHostArgs(neovimPath, defaults) {
+    console.debug(
+      `edit-in-neovim:
+Process spawn config for Linux: ${JSON.stringify(defaults, null, 2)}`
+    );
+    if (defaults.headless)
+      return this.configureHeadlessArgs(defaults);
+    return {
+      ...defaults,
+      spawnArgs: ["-e", neovimPath, "--listen", this.settings.listenOn],
+      shell: os3.userInfo().shell || true
+    };
+  }
+  getSearchPaths() {
+    const paths = /* @__PURE__ */ new Set();
+    const { PATH, HOME } = process.env;
+    PATH == null ? void 0 : PATH.split(import_node_path4.delimiter).forEach((p) => paths.add((0, import_node_path4.normalize)(p)));
+    if (HOME) {
+      paths.add((0, import_node_path4.normalize)(`${HOME}/bin`));
+      paths.add((0, import_node_path4.normalize)(`${HOME}/.linuxbrew/bin`));
+    }
+    return paths;
   }
 };
 
@@ -33129,20 +33782,46 @@ var EditInNeovim = class extends import_obsidian3.Plugin {
     await this.loadSettings();
     this.pluginChecks();
     const adapter = this.app.vault.adapter;
-    this.neovim = new Neovim(this.settings, adapter, this.restAPIEnabled());
+    switch (import_process.platform) {
+      case "darwin":
+        this.host = new MacOS(adapter, this.settings, {
+          restAPIKey: this.restAPIEnabled()
+        });
+        break;
+      case "win32":
+        this.host = new Windows(adapter, this.settings, {
+          restAPIKey: this.restAPIEnabled()
+        });
+        break;
+      case "linux":
+        this.host = new Linux(adapter, this.settings, {
+          restAPIKey: this.restAPIEnabled()
+        });
+        break;
+    }
+    this.neovim = new Neovim(this.settings, adapter, {
+      searchPaths: Array.from(this.host.getSearchPaths())
+    });
     if (this.settings.openNeovimOnLoad)
-      this.neovim.newInstance(adapter);
+      this.host.newInstance(this.neovim, adapter);
     this.registerEvent(
-      this.app.workspace.on("file-open", this.neovim.openFile)
+      this.app.workspace.on(
+        "file-open",
+        (f) => this.neovim.openFile(f, this.host)
+      )
     );
+    this.registerEvent(this.app.workspace.on("quit", () => this.onunload()));
     this.registerEvent(this.app.workspace.on("quit", (_a = this.neovim) == null ? void 0 : _a.close));
     this.addSettingTab(new EditInNeovimSettingsTab(this.app, this));
     this.addCommand({
       id: "edit-in-neovim-new-instance",
       name: "Open Neovim",
-      callback: async () => await this.neovim.newInstance(adapter).then(
+      callback: async () => await this.host.newInstance(this.neovim, adapter).then(
         () => setTimeout(
-          () => this.neovim.openFile(this.app.workspace.getActiveFile()),
+          () => this.neovim.openFile(
+            this.app.workspace.getActiveFile(),
+            this.host
+          ),
           1e3
         )
       )
@@ -33150,12 +33829,22 @@ var EditInNeovim = class extends import_obsidian3.Plugin {
     this.addCommand({
       id: "edit-in-neovim-close-instance",
       name: "Close Neovim",
-      callback: async () => this.neovim.close
+      callback: async () => {
+        if (this.host.process) {
+          this.host.close();
+          this.neovim.close();
+        }
+      }
+    });
+    this.addCommand({
+      id: "edit-in-neovim-open-file",
+      name: "Open File",
+      callback: async () => this.neovim.openFile(this.app.workspace.getActiveFile(), this.host)
     });
   }
   onunload() {
-    var _a;
-    (_a = this.neovim) == null ? void 0 : _a.close();
+    this.host.close();
+    this.neovim.close();
   }
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
@@ -33166,16 +33855,12 @@ var EditInNeovim = class extends import_obsidian3.Plugin {
   pluginChecks() {
     const found = (0, import_neovim2.findNvim)({ orderBy: "desc" });
     if (found.matches.length === 0) {
-      new import_obsidian3.Notice(
-        "Edit In Neovim: No Valid nvim binary found T_T \n\n make sure neovim is installed and on your PATH",
-        5e3
+      notify(
+        "No Valid nvim binary found T_T \n\n make sure neovim is installed and on your PATH"
       );
     }
     if (!(this.app.vault.adapter instanceof import_obsidian3.FileSystemAdapter)) {
-      new import_obsidian3.Notice(
-        "Edit In Neovim: unknown adapter, unable to access vault files",
-        5e3
-      );
+      notify("unknown adapter, unable to access vault files");
     }
   }
   restAPIEnabled() {

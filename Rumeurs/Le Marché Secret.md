@@ -4,9 +4,10 @@ type: rumeur
 hex: "[[0213]]"
 resume: Des habitants de Bois-Moulin prétendent avoir vu des lumières dans les bois la nuit et entendre des chants étranges. Ils pensent que des autochtones tiennent un marché secret où s'échangent des choses rares
 organisations:
-revelee: false
+revelee: true
 exploree: false
 sessions:
+  - "[[S001 - Port-Lointain]]"
 tags:
   - hexploration
   - rumeurs

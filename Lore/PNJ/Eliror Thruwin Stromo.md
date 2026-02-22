@@ -24,6 +24,7 @@ updated: 2026-02-10
 
 ## Aperçu rapide
 
+![[eliror.webp|loc left portrait+tall]]
 > [!info] But / Motivation
 > Rester en vie, garder son emploi, et éviter que les incidents des docks n'attirent l'attention des « mauvaises personnes ». Tenir bon jusqu'à l'arrivée de sa famille.
 
@@ -81,6 +82,7 @@ Employé des entrepôts de [[Port-Lointain]], traumatisé mais témoin direct de
 ### Relations & accroches
 - **Épouse (nom à définir) :** ancienne aventurière. Elle est **en route vers [[Port-Lointain]] depuis [[Kaerith]]**.
 - **Enfant (à déterminer) :** voyage avec elle. Eliror ne sait pas quand ils débarquent—« ça ne devrait plus tarder ».
+- **Collègues :** [[Maren Kestrel]]
 
 > [!gm]- Hook (optionnel)
 > À l'arrivée du convoi/navire, la famille d'Eliror est retardée, “redirigée” par une administration, ou prise dans un incident aux docks—ce qui force Eliror à demander l'aide des PJ.

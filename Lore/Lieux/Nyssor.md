@@ -1,9 +1,18 @@
 ---
-map_height_y: 4096
-map_width_x: 4096
-scale_pixels: 178
+mapCalc1: 0.11194029850746269
+id: marais-vase-goll
+type: ville
+categorie: lieu
+region: "[[Nyssor]]"
+faction:
+  - "[[Kroass-Goll]]"
+tags:
+  - categorie/lieu
+  - ville
+map_height_y: 2048
+map_width_x: 1642
+scale_pixels: 268
 scale_pixels_range: 30
-mapCalc1: 0.16853932584269662
 ---
 
 > [!NOTE]- Quick Calculator  

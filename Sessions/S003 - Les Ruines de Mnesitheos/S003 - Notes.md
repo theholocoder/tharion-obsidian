@@ -53,7 +53,7 @@ Items achetés :
 - 
 
 ## Indices / pistes (check + note courte)
-- [ ] Le marais évoqué -> 
+- [ ] Le marais évoqué -> [[Le Marais Saigne]]
 - [ ] Peaux-sèches "pas comme vous" -> D'autre peaux-sèches, 
 
 ## Factions (0–10)
