@@ -54,7 +54,8 @@ LIMIT 1
 - [ ] Statblocks bernard-l'hermite
 - [ ] Statblocks Azarkati
 - [ ] Rumeurs à trouver
-- [ ] Scène/battlemap de la descente
+- [x] Scène/battlemap surface
+- [x] Scène/battlemap de la descente
 - [ ] Scène de l'épave
 - [ ] Battle map upper deck
 - [ ] Battle map middle deck
@@ -132,7 +133,6 @@ Cette zone est constituée de l'extérieur du navire, de la gaillard d'avant, de
 Le gaillard d'avant est encombré de :
 - un **guindeau** tordu (chaîne d'ancre encore engagée)
 - des **râteliers vides** (armes légères emportées)
-- une **grande brèche** superficielle sur bâbord (bois éclaté, comme frappé de l'intérieur)
 
 > La proue grince doucement au rythme du courant. Le guindeau est figé, mangé de sel, et la chaîne d'ancre disparaît dans le noir sous la coque, comme si quelqu'un la tenait encore.
 
