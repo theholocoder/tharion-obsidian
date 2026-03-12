@@ -13,7 +13,7 @@ updated: 2026-01-08
 ---
 > *Nous portons la mémoire de ce qui a été perdu et la vision de ce qui doit advenir. Sans nous, l'humanité ne ferait que survivre. Avec nous, elle s'élèvera.*
 
-Théocratie guidée par le [[Synode d’Aranys]] et la [[Grande Oracle Serelith]], convaincue d’accomplir une mission sacrée sur [[Nyssor]].
+Théocratie guidée par le [[Synode d’Aranys]] et la [[Grande Oracle Serelith]], convaincue d’accomplir une mission sacrée sur [[Nyssor]]. La capitale est [[Aetherys]].
 
 ## Résumé
 

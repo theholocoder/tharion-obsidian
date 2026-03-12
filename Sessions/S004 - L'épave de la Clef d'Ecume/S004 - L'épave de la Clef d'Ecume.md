@@ -48,20 +48,19 @@ LIMIT 1
 
 ## TODO
 
-- [ ] Visuel des Azarkati
-- [ ] Visuel du bernard-l'hermite
-- [ ] Statblocks combat 1
-- [ ] Statblocks bernard-l'hermite
-- [ ] Statblocks Azarkati
+- [x] Visuel des Strangulots
+- [x] Visuel du bernard-l'hermite
+- [x] Statblocks combat 1
+- [x] Statblocks bernard-l'hermite
+- [x] Statblocks Strangulot
 - [ ] Rumeurs à trouver
-- [x] Scène/battlemap surface
 - [x] Scène/battlemap de la descente
-- [ ] Scène de l'épave
-- [ ] Battle map upper deck
-- [ ] Battle map middle deck
-- [ ] Battle map lower deck
-- [ ] Prep. downtime activities
-- [ ] Récompenses
+- [x] Scène de l'épave
+- [x] Battle map upper deck
+- [x] Battle map middle deck
+- [x] Battle map lower deck
+- [x] Prep. downtime activities
+- [x] Récompenses
 
 ## Intro
 
@@ -116,12 +115,6 @@ Puis les PJ peuvent sauter dans l'eau. Rappel des règles de nage (10m) et de co
 
 **Combat 1 (extérieur, pendant la descente).** Dès que les PJ traversent la zone de débris en suspension (bois, cordages, sable), un prédateur opportuniste se rapproche.
 
-*Option simple (rapide, létal mais gérable) :* **2 requins récifaux** (ou équivalent) + **banc de poissons carnivores** (swarm) si tu veux mettre la pression sur les lanceurs.
-
-*Tactique :* les prédateurs font des passes, tentent de finir une cible isolée ; si un PJ est déjà blessé ou séparé du groupe, ils le prennent pour cible.
-
-*Sortie propre :* après 3 rounds ou 1 requin tué, les prédateurs se dispersent si les PJ se regroupent et progressent vers l'épave.
-
 ### Scène 2 - La timonerie, les quartiers du capitaine et gaillard d'avant (upper deck)
 
 Cette zone est constituée de l'extérieur du navire, de la gaillard d'avant, de la timonerie et des quartiers du capitaine. La gaillard d'avant et la timonerie contiennent également des escaliers qui descendent vers le pont principal (middle).
@@ -164,22 +157,22 @@ On trouve ici :
 
 ### Scène 3 - Le pont principal (middle deck)
 
-Cette zone contient des caisses de marchandises, renversées lors du naufrage, ainsi que les quartiers de l'équipage, le tout dans une grande zone ouverte. Une partie de l'équipement à téléporter est ici. Il y a aussi des Azarketi présents, en train de piller ce qu'ils peuvent (harpons, cordes, etc.)
+Cette zone contient des caisses de marchandises, renversées lors du naufrage, ainsi que les quartiers de l'équipage, le tout dans une grande zone ouverte. Une partie de l'équipement à téléporter est ici. Il y a aussi des Strangulots présents, en train de piller ce qu'ils peuvent (harpons, cordes, etc.)
 
 > Le pont principal est une grande nef de bois noyée : des caisses éventrées, des tonneaux roulés contre les cloisons, des hamacs arrachés qui flottent comme des linceuls.
 > Ici et là, des **bandes rouge et blanc** sur des caisses plus lourdes. Une caisse massive, éventrée, semblant être faite de bois et de métal, repose au fond du pont. Des corps de marin flottent au plafond et se balancent au gré des remous.
 > Le silence est presque complet… sauf pour un cliquetis régulier : du métal qui heurte du métal.
 
-#### Les Azarketi
-> Des silhouettes vous observent depuis l'ombre des poutres : peau aux tons d'algues et de nacre, cheveux flottants comme des filaments, yeux immobiles. Ils se déplacent sans hésiter dans l'épave, avec des harpons courts et des filets.
-> Ils n'ont pas l'air surpris de vous voir. Ils ont l'air… *agacés*, comme si vous veniez dans une maison dont ils ont déjà commencé à vider les tiroirs.
+#### Les Strangulots
+> Des petites silhouettes trapues vous observent depuis l'ombre des poutres : **buste de gobelin** à la peau souvent **bleue**, visage pointu, yeux ronds trop grands et dents de travers… puis, au lieu de jambes, un paquet de **tentacules de pieuvre** qui se contractent et s’ancrent aux planches.
+> Ils se déplacent en se hissant et en “rampant”, alternant ventouses et doigts agiles, sûrs d’eux, harpons courts et filets à la main. Ils n'ont pas l'air surpris de vous voir. Ils ont l'air… *agacés*, comme si vous veniez dans une maison dont ils ont déjà commencé à vider les tiroirs.
 
 ```pf2e-stats
 # Ssaïl « Brise-Écume »
 ## Niveau 2
 ---
 
-==Azarketi== ==Humanoïde==
+==Petite== ==Strangulot== ==Aberration== ==Amphibie==
 
 Chef opportuniste d'une petite bande de récupérateurs. Ssaïl ne cherche pas la guerre : il cherche à **finir son pillage vivant**. Il respecte la force calme, déteste la panique et les gestes brusques.
 
@@ -189,9 +182,9 @@ Chef opportuniste d'une petite bande de récupérateurs. Ssaïl ne cherche pas l
 
 ---
 **Historique** Né dans des courants côtiers de Nyssor, Ssaïl a appris à lire les épaves comme d'autres lisent les livres : où l'eau passe, où le bois cède, où les humains cachent les choses “importantes”.
-**Apparence** Peau vert sombre marbrée, nageoires fines aux avant-bras, cicatrice pâle sur la joue. Porte des cordelettes de coquillages et un harpon court.
+**Apparence** Buste de gobelin à la peau bleu sombre, cicatrice pâle sur la joue ; à partir de la taille, des tentacules courts et puissants. Porte des cordelettes de coquillages et un harpon court.
 **Personnalité** Prudent, territorial.
-**Oral, signe distinctif** Parle vite en Aquan (ou elfique archaïque), ponctue ses phrases de claquements de langue; garde toujours un œil sur les issues.
+**Oral, signe distinctif** Parle vite en gobelin mâtiné d’Aquan, ponctue ses phrases de claquements humides et de “gloups” volontairement moqueurs ; garde toujours un œil sur les issues.
 
 ---
 **Découverte** Survie DD 14 (c'est un récupérateur expérimenté), Société DD 15 (il a une logique “territoire/partage”), Perception DD 16 (il jauge les balises des PJ plus que leurs armes)
@@ -212,7 +205,7 @@ Une grande cage, contenue dans ce qui reste d'une caisse, semble avoir été exp
 - **Perception DD 14** : remarquer la cire noire sur les barreaux et des traces de gants (inspection “post-naufrage”).
 - **Arcane DD 15** : comprendre que les balises/plaques sont un dispositif de **confinement** (scellement), pas une simple serrure.
 - **Occultisme DD 15** : identifier une logique de *contrainte* et de *pacte* (pas un rituel “bienveillant”).
-- **Religion DD 16** : associer l'iconographie de **chaîne/obéissance** à un courant dévot/hérétique lié à [[Tharun le Noir]] (sans nommer de cellule).
+- **Religion DD 16** : associer l'iconographie de **chaîne/obéissance** à un courant dévot/hérétique lié à [[Tharun le Sombre]] (sans nommer de cellule).
 - **Artisanat DD 17** : voir qu'il manque une **pièce** (plaque/anneau d'ancrage) arrachée volontairement (cohérent avec la fouille des "chaînes noires").
 - **Médecine DD 15** (si corps retrouvés ailleurs) : blessures incompatibles avec une noyade/attaque de mante : lacérations + brûlures froides/étranges (au choix).
 
@@ -226,40 +219,6 @@ Si les PJ descendent par l'avant (proue), alors ils tombent directement nez-à-n
 
 **Arrivée par l'arrière (poupe).**
 > Ici, le plancher tient encore. De nombreuses caisses lourdes reposent contre une cloison, toutes marquées des différents symboles des factions de la Concorde, certaines marquées **rouge et blanc**. Plus loin, une brèche traverse toute la largeur du navire : un rideau de débris y danse, aspiré puis recraché. Dans cette brèche, une créature trop grande gratte le bois, comme s'il essayait de *s'installer*.
-
-> [!statblocks|columns]
->>```pf2e-stats
->># Bernard-l'hermite des Épaves
->>## Créature 5
->>---
->>
->>==Grand== ==Animal== ==Aquatique==
->>
->>**Perception** +12; vision dans la pénombre
->>**Compétences** Athlétisme +15, Discrétion +10
->>**For** +5, **Dex** +1, **Con** +4, **Int** -4, **Sag** +2, **Cha** -2
->>---
->>**CA** 22; **Vig** +15, **Réf** +10, **Vol** +11
->>**PV** 95
->>---
->>**Vitesse** nage 30 ft, escalade 15 ft
->>
->>**Corps à corps** `[one-action]` Pince +16 (allonge 10 ft), **Dégâts** 2d10+7 contondants plus **Saisie**
->>**Corps à corps** `[one-action]` Patte +16 (agile), **Dégâts** 2d6+7 tranchants
->>---
->>```
->
->>```pf2e-stats
->>**Carapace verrouillée** `[one-action]`
->>Le bernard-l'hermite se cale contre une paroi ou le plancher (épave, roche). Jusqu'au début de son prochain tour, il gagne un **bonus de circonstances +2 à la CA** et une **résistance 5** aux dégâts physiques (sauf contondants). Il ne peut pas utiliser Patte pendant que cet effet est actif.
->>
->>---
->>
->>**Traction vers la brèche** `[reaction]`
->>**Déclencheur** Une créature commence son tour à 10 ft de la brèche (ou y est poussée/traînée).
->>
->>La cible doit réussir un jet de **Réflexes DD 20** ou être déplacée de 10 ft vers la brèche (Succès critique : aucun déplacement; Succès : 5 ft; Échec : 10 ft; Échec critique : 15 ft et tombe à terre/ballottée, à ton choix).
->>```
 
 *Note MJ (terrain) :* dans la cale, ajoute 2 dangers simples :
 - **courant/aspiration** (déplacement forcé vers la brèche, géré par la réaction ci-dessus)

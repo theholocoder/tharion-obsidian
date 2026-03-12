@@ -42,7 +42,8 @@ TODO
 
 ### Journal
 
-| Session                  | Date    | Notes                                                                                                                                                                |
-| ------------------------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[S001 - Port-Lointain]] | 8-11-42 | Les PJ interrogent [[Bruna]] qui leur conte l'histoire d'un missionnaire revenu des plaines au nord, qui aurait vu des ruines avec un système d'irrigation complexe. |
-|                          |         |                                                                                                                                                                      |
+| Session                             | Date     | Notes                                                                                                                                                                                                                                              |
+| ----------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[S001 - Port-Lointain]]            | 08/05/42 | Les PJ interrogent [[Bruna]] qui leur conte l'histoire d'un missionnaire revenu des plaines au nord, qui aurait vu des ruines avec un système d'irrigation complexe.                                                                               |
+| [[S003 - Les Ruines de Mnesitheos]] | 13/05/42 | Les PJ vont sur place et découvrent les ruines d'une ville dont il ne reste plus grand chose à part le système d'irrigation. Sur place, des [[Kroass-Goll]] demandent aux PJ de récupérer la statue-chaman gardée par un gardien mécanique ancien. |
+|                                     |          |                                                                                                                                                                                                                                                    |

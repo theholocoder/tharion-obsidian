@@ -22,7 +22,7 @@ updated: 2026-02-19
 
 - Attaque des **Cisarelles** en mer → durant l’assaut, le dispositif de contrôle d’une cargaison scellée (démon capturé) est compromis.
 - Le démon se réveille, massacre, le navire coule puis le démon s’échappe vers la terre ferme.
-- Responsable implicite : **cellule hérétique** liée à **[[Tharun le Noir]]** (infiltrée dans l’[[Ordre de Myrr]]). Les indices doivent rester **subtils** (Religion/Occultisme), sans nommer explicitement la cellule.
+- Responsable implicite : **cellule hérétique** liée à **[[Tharun le Sombre]]** (infiltrée dans l’[[Ordre de Myrr]]). Les indices doivent rester **subtils** (Religion/Occultisme), sans nommer explicitement la cellule.
 
 ## Balises magiques (règle de table)
 
@@ -71,6 +71,12 @@ updated: 2026-02-19
 - La caisse à baliser pour la mission secrète porte le symbole de la Ligue avec **la clé peinte à l’envers**.
 - Contenu : **codex des manifestes Mille Voiles** (codes de double-traçage, identifiants des caisses “sensibles”).
 - Donneur : **[[Soren Carthain]]**, "Parapheur de Platine" (Main de Platine). Il paraît loyal à Valerion mais sert d’abord la guilde.
+
+## Objectif secret — République de Thaldris (PJ)
+
+- Mission secrète trouver une caisse qui porte le symbole de la Ligue avec **la clé peinte à l’envers**.
+- Contenu : **codex des manifestes Mille Voiles** (codes de double-traçage, identifiants des caisses “sensibles”).
+- Donneur : **[[Commandant Aelys Tarn]]**
 
 ## Indices à disséminer (subtils)
 
