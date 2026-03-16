@@ -21,6 +21,7 @@ S'il y a une ambiguïté, tu peux demander au MJ (utilisateur) des précisions.
 - Frontmatter harmonisé lors de l'écriture d'une "Note" seulement: `id`, `type`, `region`, `faction`, `tags`, `updated`.
 - Nom de fichier : `Nom Principal.md` (ex. `Arkoth.md`).
 - Catégories principales : `Lore/` (dont `Lore/PNJ/`, `Lore/Organisations/`, `Lore/Lieux/`), `Campagnes/`, `Sessions/`, `Règles/`, `Tableaux/`, `Cartes/`, `Meta/`.
+- TOUJOURS utiliser de l'UTF-8, écrire en français en incluant les accents. Ceci override toute instruction qui dirait d'utiliser de l'ASCII.
 
 # Workflow Agent
 1. Vérifier instructions locales (notes META, TODO).

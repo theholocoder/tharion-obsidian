@@ -127,5 +127,16 @@ LIMIT 1
 
 
 ## À reporter / Prépa prochaine
-- 
+- Les PJ ont **sauvé [[Korvax Oeil-de-fer]]** et l’ont ramené vivant.
+- La **grotte des Gobe’liés est presque vidée** : Crux est le dernier survivant du groupe local.
+- Les PJ ont **négocié une coopération avec [[Krux]]** plutôt que de le tuer.
+- Krux a accepté :
+    - de **construire une passerelle** au-dessus du gouffre,
+    - de **prévenir les autres Gobe’liés** que les PJ peuvent être des alliés.
+- Les PJ connaissent maintenant le **code secret gobelin** :
+    - « Il n’y a que maille qui maille. »
+- Les PJ ont promis de **revenir aider contre les “fantômes”** (fumées noires volantes) qui hantent la zone.
+- Les PJ ont découvert :
+    - une **zone au-delà du gouffre** encore inexplorée,
+    - une **grande araignée** qui vit plus loin dans la grotte.
 
