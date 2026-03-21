@@ -29,431 +29,9 @@
       ]
     },
     {
-      "id": "cisarelles-influence-map",
-      "locked": false,
-      "lastAccessed": 1769721546915,
-      "markers": [
-        {
-          "id": "ID_0b8858e87a88",
-          "type": "Cisarelles",
-          "loc": [
-            1663.3081090749783,
-            1027.4133857515908
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.5016666922615189,
-            -0.8121621626342668
-          ],
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [
-        {
-          "type": "polygon",
-          "color": "#b649e9",
-          "vertices": [
-            {
-              "lat": 2045.2736444884572,
-              "lng": 1061.5916452198003,
-              "id": "ID_b958491b7a59",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1991.273012444065,
-              "lng": 1155.5356653226572,
-              "id": "ID_a8b919190b19",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1889.2718185824356,
-              "lng": 1149.539238507581,
-              "id": "ID_2a4b3a686a3a",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1845.2713035833012,
-              "lng": 1239.4856407337206,
-              "id": "ID_8989c9ababe9",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1735.2700160854652,
-              "lng": 1241.4844496720793,
-              "id": "ID_2b79a88bd8fb",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1685.2694308591763,
-              "lng": 1325.434425083143,
-              "id": "ID_ea3bab092b0b",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1581.2682135884947,
-              "lng": 1325.434425083143,
-              "id": "ID_ab8a59aafbb8",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1541.2677454074637,
-              "lng": 1237.4868317953621,
-              "id": "ID_e949a8b898cb",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1581.2682135884947,
-              "lng": 1155.5356653226572,
-              "id": "ID_6928780b1af9",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1529.2676049531542,
-              "lng": 1057.5940273430829,
-              "id": "ID_eafaabd82b98",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1579.2681901794433,
-              "lng": 977.6416698087367,
-              "id": "ID_88eb397b1bc9",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1535.9621382949604,
-              "lng": 887.102939918068,
-              "id": "ID_f94ab9db891a",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1584.4130468456087,
-              "lng": 799.5185022122723,
-              "id": "ID_2b2a1a6ad9eb",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1536.1413245123356,
-              "lng": 707.1017119770521,
-              "id": "ID_8b48f97abb2a",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1583.6734964187585,
-              "lng": 620.743014025437,
-              "id": "ID_5b8bb97bdb9a",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1689.2694776772792,
-              "lng": 621.8536787808958,
-              "id": "ID_d818eada589b",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1737.1598141370666,
-              "lng": 533.5223642620533,
-              "id": "ID_39eb0a5a7b8a",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1840.7749249498536,
-              "lng": 529.726298802062,
-              "id": "ID_0a7bb8d81989",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1893.2718654005387,
-              "lng": 617.8560609041785,
-              "id": "ID_fb380a283998",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1841.271256765198,
-              "lng": 707.8024631303181,
-              "id": "ID_592aa9592a28",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1887.271795173384,
-              "lng": 795.750056418099,
-              "id": "ID_aa5a286b7a08",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1999.2731060802714,
-              "lng": 803.7452921715336,
-              "id": "ID_99b98be94919",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 2049.2736913065605,
-              "lng": 881.6988407675212,
-              "id": "ID_29584939a908",
-              "targets": {
-                "vertexIds": []
-              }
-            },
-            {
-              "lat": 1991.273012444065,
-              "lng": 975.6428608703781,
-              "id": "ID_781b58894ac8",
-              "targets": {
-                "vertexIds": []
-              }
-            }
-          ]
-        }
-      ],
-      "files": [
-        "Lore/Organisations/Cisarelles.md"
-      ]
-    },
-    {
-      "id": "map-port-lointain",
-      "locked": false,
-      "lastAccessed": 1771162940506,
-      "markers": [
-        {
-          "id": "ID_9bfa9bdba9cb",
-          "type": "Bourg - Quartier",
-          "loc": [
-            892.568402006821,
-            651.8328680651646
-          ],
-          "link": "Port-Lointain#Le Rempart (Centre-Ville)",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.6365555352198873,
-            -1.162198440113048
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_9b99594978da",
-          "type": "Bourg - Quartier",
-          "loc": [
-            1048.3665745347419,
-            465.44014914582647
-          ],
-          "link": "Port-Lointain#L'Ancrage (Les Docks)",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.45453139565022116,
-            -1.3650606439254451
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_ca0888182aeb",
-          "type": "Bourg - Quartier",
-          "loc": [
-            1169.4640373591199,
-            922.8719933880682
-          ],
-          "link": "Port-Lointain#La Citadelle Blanche",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.9012421810430353,
-            -1.5227396319780206
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_89e958b8ea59",
-          "type": "Bourg - Quartier",
-          "loc": [
-            1471.4537350406854,
-            1174.5771042973183
-          ],
-          "link": "Port-Lointain#[[Fosse-Claire]]",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            1.14704795341535,
-            -1.9159553841675592
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_3acad9da29aa",
-          "type": "Bourg - Quartier",
-          "loc": [
-            888.0505692508874,
-            238.1159498005366
-          ],
-          "link": "Port-Lointain#Les Hautes-Terrasses",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.23253510722708653,
-            -1.1563158453787596
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_d80a6a19881a",
-          "type": "Bourg - Quartier",
-          "loc": [
-            677.4276055971031,
-            797.9620557247783
-          ],
-          "link": "Port-Lointain#[[La Noue]]",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.7792598200437288,
-            -0.8820671947878947
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_1b5a3a289a0a",
-          "type": "Bourg - Quartier",
-          "loc": [
-            337.81333728161195,
-            416.2437372458067
-          ],
-          "link": "Port-Lointain#[[Bois-Moulin]]",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.4064880246541081,
-            -0.4398611162520989
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_a8c8cb498be9",
-          "type": "Bourg - Quartier",
-          "loc": [
-            581.0805726396864,
-            1901.0131732495997
-          ],
-          "link": "Port-Lointain#[[Brèche-Rive]]",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            1.8564581770015622,
-            -0.7566153289579249
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_2af84b8aea39",
-          "type": "Bourg - Taverne",
-          "loc": [
-            909.7442412945985,
-            736.3068048647713
-          ],
-          "link": "L'Hydre à Deux Choppes",
-          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": [
-            0.7190496141257532,
-            -1.1845628141856752
-          ],
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 3,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [],
-      "files": [
-        "Lore/Lieux/Port-Lointain.md"
-      ]
-    },
-    {
       "id": "nyssor-map",
       "locked": true,
-      "lastAccessed": 1773516163177,
+      "lastAccessed": 1773619611437,
       "markers": [
         {
           "id": "ID_ab89894bda28",
@@ -747,6 +325,428 @@
       "files": [
         "Lore/Lieux/Nyssor.md",
         "Campagnes/EFG/00 - Hub.md"
+      ]
+    },
+    {
+      "id": "map-port-lointain",
+      "locked": false,
+      "lastAccessed": 1773746485446,
+      "markers": [
+        {
+          "id": "ID_9bfa9bdba9cb",
+          "type": "Bourg - Quartier",
+          "loc": [
+            892.568402006821,
+            651.8328680651646
+          ],
+          "link": "Port-Lointain#Le Rempart (Centre-Ville)",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.6365555352198873,
+            -1.162198440113048
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_9b99594978da",
+          "type": "Bourg - Quartier",
+          "loc": [
+            1048.3665745347419,
+            465.44014914582647
+          ],
+          "link": "Port-Lointain#L'Ancrage (Les Docks)",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.45453139565022116,
+            -1.3650606439254451
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ca0888182aeb",
+          "type": "Bourg - Quartier",
+          "loc": [
+            1169.4640373591199,
+            922.8719933880682
+          ],
+          "link": "Port-Lointain#La Citadelle Blanche",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.9012421810430353,
+            -1.5227396319780206
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_89e958b8ea59",
+          "type": "Bourg - Quartier",
+          "loc": [
+            1471.4537350406854,
+            1174.5771042973183
+          ],
+          "link": "Port-Lointain#[[Fosse-Claire]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            1.14704795341535,
+            -1.9159553841675592
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_3acad9da29aa",
+          "type": "Bourg - Quartier",
+          "loc": [
+            888.0505692508874,
+            238.1159498005366
+          ],
+          "link": "Port-Lointain#Les Hautes-Terrasses",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.23253510722708653,
+            -1.1563158453787596
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_d80a6a19881a",
+          "type": "Bourg - Quartier",
+          "loc": [
+            677.4276055971031,
+            797.9620557247783
+          ],
+          "link": "Port-Lointain#[[La Noue]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.7792598200437288,
+            -0.8820671947878947
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_1b5a3a289a0a",
+          "type": "Bourg - Quartier",
+          "loc": [
+            337.81333728161195,
+            416.2437372458067
+          ],
+          "link": "Port-Lointain#[[Bois-Moulin]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.4064880246541081,
+            -0.4398611162520989
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_a8c8cb498be9",
+          "type": "Bourg - Quartier",
+          "loc": [
+            581.0805726396864,
+            1901.0131732495997
+          ],
+          "link": "Port-Lointain#[[Brèche-Rive]]",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            1.8564581770015622,
+            -0.7566153289579249
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_2af84b8aea39",
+          "type": "Bourg - Taverne",
+          "loc": [
+            909.7442412945985,
+            736.3068048647713
+          ],
+          "link": "L'Hydre à Deux Choppes",
+          "layer": "%5B%5BPort-Lointain.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.7190496141257532,
+            -1.1845628141856752
+          ],
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 3,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Lore/Lieux/Port-Lointain.md"
+      ]
+    },
+    {
+      "id": "cisarelles-influence-map",
+      "locked": false,
+      "lastAccessed": 1773746488887,
+      "markers": [
+        {
+          "id": "ID_0b8858e87a88",
+          "type": "Cisarelles",
+          "loc": [
+            1663.3081090749783,
+            1027.4133857515908
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": [
+            0.5016666922615189,
+            -0.8121621626342668
+          ],
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [
+        {
+          "type": "polygon",
+          "color": "#b649e9",
+          "vertices": [
+            {
+              "lat": 2045.2736444884572,
+              "lng": 1061.5916452198003,
+              "id": "ID_b958491b7a59",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1991.273012444065,
+              "lng": 1155.5356653226572,
+              "id": "ID_a8b919190b19",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1889.2718185824356,
+              "lng": 1149.539238507581,
+              "id": "ID_2a4b3a686a3a",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1845.2713035833012,
+              "lng": 1239.4856407337206,
+              "id": "ID_8989c9ababe9",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1735.2700160854652,
+              "lng": 1241.4844496720793,
+              "id": "ID_2b79a88bd8fb",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1685.2694308591763,
+              "lng": 1325.434425083143,
+              "id": "ID_ea3bab092b0b",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1581.2682135884947,
+              "lng": 1325.434425083143,
+              "id": "ID_ab8a59aafbb8",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1541.2677454074637,
+              "lng": 1237.4868317953621,
+              "id": "ID_e949a8b898cb",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1581.2682135884947,
+              "lng": 1155.5356653226572,
+              "id": "ID_6928780b1af9",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1529.2676049531542,
+              "lng": 1057.5940273430829,
+              "id": "ID_eafaabd82b98",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1579.2681901794433,
+              "lng": 977.6416698087367,
+              "id": "ID_88eb397b1bc9",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1535.9621382949604,
+              "lng": 887.102939918068,
+              "id": "ID_f94ab9db891a",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1584.4130468456087,
+              "lng": 799.5185022122723,
+              "id": "ID_2b2a1a6ad9eb",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1536.1413245123356,
+              "lng": 707.1017119770521,
+              "id": "ID_8b48f97abb2a",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1583.6734964187585,
+              "lng": 620.743014025437,
+              "id": "ID_5b8bb97bdb9a",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1689.2694776772792,
+              "lng": 621.8536787808958,
+              "id": "ID_d818eada589b",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1737.1598141370666,
+              "lng": 533.5223642620533,
+              "id": "ID_39eb0a5a7b8a",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1840.7749249498536,
+              "lng": 529.726298802062,
+              "id": "ID_0a7bb8d81989",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1893.2718654005387,
+              "lng": 617.8560609041785,
+              "id": "ID_fb380a283998",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1841.271256765198,
+              "lng": 707.8024631303181,
+              "id": "ID_592aa9592a28",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1887.271795173384,
+              "lng": 795.750056418099,
+              "id": "ID_aa5a286b7a08",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1999.2731060802714,
+              "lng": 803.7452921715336,
+              "id": "ID_99b98be94919",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 2049.2736913065605,
+              "lng": 881.6988407675212,
+              "id": "ID_29584939a908",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 1991.273012444065,
+              "lng": 975.6428608703781,
+              "id": "ID_781b58894ac8",
+              "targets": {
+                "vertexIds": []
+              }
+            }
+          ]
+        }
+      ],
+      "files": [
+        "Lore/Organisations/Cisarelles.md"
       ]
     }
   ],
