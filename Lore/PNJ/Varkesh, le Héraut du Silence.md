@@ -28,7 +28,7 @@ aliases:
 
 > [!info] But / Motivation
 > **Absolu :** Arrêter le cycle éternel de destruction/renaissance imposé par les dieux et les astres.
-> **Moyen :** Provoquer la "Conjonction du Zénith Noir" pour détruire [[Pyrrhos]] (le soleil chaud) et placer Nyssor en orbite stable et éternelle autour d'[[Ignaris]] (le soleil froid).
+> **Moyen :** Provoquer la "Conjonction du Zénith Noir" pour détruire [[Pyrrhos]] et placer Nyssor en orbite stable et éternelle autour d'[[Ignaris]].
 > **Le Prix :** La destruction de Pyrrhos provoquera une "Super-Éruption" qui calcinera la surface entière de la planète (Kaerith et Nyssor) avant que l'orbite ne se stabilise. Varkesh compte repeupler la planète dans des millénaires grâce à une arche génétique, sacrifiant l'humanité actuelle.
 
 > [!warning]- Secret
@@ -59,6 +59,6 @@ L'architecte de la fin du monde, maître de la technomagie gravitionnelle.
 
 ## Histoire Détaillée
 
-Il y a 2500 ans, Varkesh était l'Astronome Royal de la cité flottante d'[[Aethelgard]]. Lorsque les calculs ont prouvé l'inéluctabilité de la [[Saison du Feu]] de [[Pyrrhos]], il a supplié le Conseil de lancer le "Projet Silence" (détruire le soleil). Ils ont refusé, préférant prier. Varkesh a saboté les boucliers de la ville pour les punir, puis s'est enfermé dans son sarcophage.
+Il y a 2500 ans, Varkesh était l'Astronome Royal de la cité flottante d'[[Aethelgard]]. Lorsque les calculs ont prouvé l'inéluctabilité de la [[Saison du Feu]] de [[Ignaris]], il a supplié le Conseil de lancer le "Projet Silence" (détruire le soleil). Ils ont refusé, préférant prier. Varkesh a saboté les boucliers de la ville pour les punir, puis s'est enfermé dans son sarcophage.
 
 Il se réveille dans un monde qu'il juge barbare et régressif. Il voit la [[Concorde de Kaerith]] comme des enfants jouant dans les ruines de leurs parents. Il n'a aucune haine pour eux, mais il ne laissera pas leur ignorance condamner la planète à un nouveau cycle de souffrance.

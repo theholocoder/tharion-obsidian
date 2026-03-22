@@ -31,7 +31,7 @@ L'Hégémonie n'a pas bâti son savoir à partir de rien. Ses fondateurs avaient
 
 ## Le Grand Schisme
 
-Lorsque les astronomes, menés par le Haut-Architecte [[Varkesh, le Héraut du Silence]], ont confirmé l'arrivée inéluctable d'une **Saison du Feu** causée par [[Pyrrhos]], la société s'est fracturée en deux idéologies inconciliables.
+Lorsque les astronomes, menés par le Haut-Architecte [[Varkesh, le Héraut du Silence]], ont confirmé l'arrivée inéluctable d'une **Saison du Feu** causée par [[Ignaris]], la société s'est fracturée en deux idéologies inconciliables.
 
 ### 1. Les Ascensionnistes
 L'élite intellectuelle, les scientifiques et l'armée.

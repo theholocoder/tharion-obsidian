@@ -81,7 +81,7 @@ Employé des entrepôts de [[Port-Lointain]], traumatisé mais témoin direct de
 
 ### Relations & accroches
 - **Épouse (nom à définir) :** ancienne aventurière. Elle est **en route vers [[Port-Lointain]] depuis [[Kaerith]]**.
-- **Enfant (à déterminer) :** voyage avec elle. Eliror ne sait pas quand ils débarquent—« ça ne devrait plus tarder ».
+- **Fils (à déterminer) :** voyage avec elle. Eliror ne sait pas quand ils débarquent—« ça ne devrait plus tarder ».
 - **Collègues :** [[Maren Kestrel]]
 
 > [!gm]- Hook (optionnel)
