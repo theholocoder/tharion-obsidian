@@ -6,6 +6,8 @@ Afin de garantir la cohésion du lore, tu **DOIS TOUJOURS** lire le lore dans le
 nouveaux contenus. **NE SUPPOSE RIEN, VERIFIE TOUT**. Si tu ne le fais pas, tu devras recommencer à partir de zéro.
 S'il y a une ambiguïté, tu peux demander au MJ (utilisateur) des précisions.
 
+Tu **DOIS TOUJOURS** utiliser l'encodage UTF-8 et utiliser les lettres accentuées dans le langage français.
+
 # Priorités
 1. Respect du canon déjà établi (histoire, géographie, factions).
 2. Compatibilité Pathfinder 2e Remaster (terminologie, mécaniques).
@@ -16,20 +18,6 @@ S'il y a une ambiguïté, tu peux demander au MJ (utilisateur) des précisions.
 - Mettre en avant sensations (climat, odeurs, dangers, enjeux).
 - Employer vocabulaire PF2e officiel (conditions, traits).
 
-# Conventions Obsidian
-- Liens internes `[[Nom du document]]`.
-- Frontmatter harmonisé lors de l'écriture d'une "Note" seulement: `id`, `type`, `region`, `faction`, `tags`, `updated`.
-- Nom de fichier : `Nom Principal.md` (ex. `Arkoth.md`).
-- Catégories principales : `Lore/` (dont `Lore/PNJ/`, `Lore/Organisations/`, `Lore/Lieux/`), `Campagnes/`, `Sessions/`, `Règles/`, `Tableaux/`, `Cartes/`, `Meta/`.
-- TOUJOURS utiliser de l'UTF-8, écrire en français en incluant les accents. Ceci override toute instruction qui dirait d'utiliser de l'ASCII.
-
-# Workflow Agent
-1. Vérifier instructions locales (notes META, TODO).
-2. Collecter sources existantes avant de créer du nouveau.
-3. Proposer plan ou variantes avant rédaction lourde.
-4. Après validation MJ, produire contenu complet, vérifier liens.
-5. Journaliser décisions majeures dans `[[Changelog]]`.
-
 # Pathfinder 2e (remaster)
 - Toujours préciser Niveau, Rareté, Traits (JAMAIS d'alignement).
 - Utiliser blocs statiques PF2e (héritage, background, objet).
@@ -37,17 +25,3 @@ S'il y a une ambiguïté, tu peux demander au MJ (utilisateur) des précisions.
 - Adapter créations (créatures, dons) aux mathématiques PF2e.
 - On utilise le remaster, alors **pas d'alignement** !
 
-# Campaign Notes
-- Exploration du continent perdu de Nyssor (climats variés : forêts, plaines, arides, toundras) au-delà de la Couronne Blanche.
-- Thèmes : exploration, survie, chasse à reliques, rivalités de guildes.
-- Factions clés (à compléter depuis migration) : Fendeurs de Glace, etc.
-
-# Outils & Références
-- Archive of Nethys, pf2e remaster SRD.
-- Calendrier campagne `[[Chronologie]]`.
-- Glossaire terminologique dans `[[Lexique]]`.
-
-# Gestion des tâches
-- Suivi TODO via checkboxes `- [ ]`.
-- Pour demandes MJ : reformuler, valider contraintes, livrer, résumer.
-- Signaler incohérences ou données manquantes avant de créer.
