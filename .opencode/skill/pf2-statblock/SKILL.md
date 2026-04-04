@@ -88,7 +88,8 @@ Précisions sur les règles d'influence de Pathfinder 2e:
 - "Découverte" c'est les compétences et difficulté pour trouver des informations sur le PNJ. Il est intéressant de
 préciser ce qu'on découvre sur le PNJ avec chaque compétence, par exemple Médecine DD 13 (Le PNJ est en état de choc).
 Il peut être intéressant d'ajouter une compétence "Lore"/"Connaissance" qui correspond à l'historique du PNJ,
-généralement avec le DD le plus faible car très personnel.
+généralement avec le DD le plus faible car très personnel. La comptétence "Perception" est toujours présente et son DD
+est le DD par niveau de la créature (par exemple, DD 18 au niveau 3). Les autres compétences ont des DD plus faibles.
 - "Compétences d'influence" liste les compétences que les PJ peuvent utiliser pour influencer le PNJ avec leur DD trié
 du plus bas au plus élevé. Diplomatie figure généralement dans cette liste mais rarement comme la meilleure compétence
 pour influencer le PNJ (son DD minimum est 10+SCORE VOLONTE). Il est possible de préciser le contexte de chaque
