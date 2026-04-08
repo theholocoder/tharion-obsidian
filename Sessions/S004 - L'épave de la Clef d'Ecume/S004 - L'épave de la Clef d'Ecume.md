@@ -14,7 +14,7 @@ pjs:
   - "[[Campagnes/EFG/PJ/Chiro Kono.md|Chiro Kono]]"
   - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
 updated: 2026-02-21
-termine: false
+termine: true
 timelines:
   - session
 aat-render-enabled: true

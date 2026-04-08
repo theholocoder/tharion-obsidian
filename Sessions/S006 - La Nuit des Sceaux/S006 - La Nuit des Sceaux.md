@@ -3,16 +3,21 @@ type: session
 campagne: "[[L'Expédition des Fendeurs de Glace]]"
 numero: 6
 code: S006
-date_irl:
-fc-date:
-fc-end:
-resume:
+date_irl: 2026-04-02
+fc-date: 35/05/42
+fc-end: 35/05/42
+resume: Rencontre des différents conseillers et influence.
 updated: 2026-03-15
-termine: false
+termine: true
 timelines:
   - session
 aat-render-enabled: true
-pjs: []
+pjs:
+  - "[[Campagnes/EFG/PJ/Chiro Kono.md|Chiro Kono]]"
+  - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
+  - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
+  - "[[Campagnes/EFG/PJ/Voss Vitriox.md|Voss Vitriox]]"
+  - "[[Campagnes/EFG/PJ/Théobald Greyheart.md|Théobald Greyheart]]"
 ---
 
 ## Informations sur la session

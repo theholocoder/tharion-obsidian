@@ -13,7 +13,7 @@ pjs:
   - "[[Campagnes/EFG/PJ/Voss Vitriox.md|Voss Vitriox]]"
   - "[[Campagnes/EFG/PJ/Korvax Oeil-de-fer.md|Korvax Oeil-de-fer]]"
 updated: 2026-03-14
-termine: false
+termine: true
 timelines:
   - session
 aat-render-enabled: true

@@ -80,8 +80,8 @@ Employé des entrepôts de [[Port-Lointain]], traumatisé mais témoin direct de
 - **Sur un visiteur récent :** un homme (20–30 ans), cheveux bruns, tenue verte, cape sombre à capuche, **grande épée** ; passé « il y a 3 jours » pour voir le coffre/la caisse.
 
 ### Relations & accroches
-- **Épouse (nom à définir) :** ancienne aventurière. Elle est **en route vers [[Port-Lointain]] depuis [[Kaerith]]**.
-- **Fils (à déterminer) :** voyage avec elle. Eliror ne sait pas quand ils débarquent—« ça ne devrait plus tarder ».
+- **Épouse ([[Maewyn]]) :** ancienne aventurière. Vient d'arriver à [[Port-Lointain]] depuis [[Kaerith]]**.
+- **Fils ([[Elicell]]) :** voyage avec elle.
 - **Collègues :** [[Maren Kestrel]]
 
 > [!gm]- Hook (optionnel)

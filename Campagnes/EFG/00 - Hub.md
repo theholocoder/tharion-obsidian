@@ -43,8 +43,6 @@ SORT file.name ASC
 TABLE
   code AS "Code",
   dateformat(date(date_irl), "dd/LL/yy") AS "Date IRL",
-  dateformat(fc-date, "dd/LL/yy") AS "IG début",
-  dateformat(fc-end, "dd/LL/yy") AS "IG fin",
   pjs AS "Joueurs",
   resume AS "Résumé",
   choice(termine, "☑", "☐") as "Terminée?"

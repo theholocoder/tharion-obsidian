@@ -26,7 +26,7 @@ Pas fait. -> enfant enlevé ? à voir en fonction des autres. cc [[L'enfant Arra
 ### [[Scène 3c - Entrepôt des docks]]
 
 Ils discutent avec le gnome [[Eliror Thruwin Stromo|Eliror]], qui leur indique la caisse de Veyra.
-La caisse contenant les tubes de la ligue de Veyra (20 petits tubes en métal, tient dans la paume, assez lourd) -> [[Le Marché Secret]] -> divisé entre les 4 membres de la ligue présents (5 chacun).
+La caisse contenant les tubes de la ligue de Veyra (20 petits tubes en métal, tient dans la paume, assez lourd) -> [[Le Marché Secret]] -> divisé entre les 4 membres de la ligue présents (5 chacun). Il a vu un homme (20–30 ans), cheveux bruns, tenue verte, cape sombre à capuche, **grande épée** ; passé « il y a 3 jours » pour voir le coffre/la caisse.
 Les PJ demandent à [[Eliror Thruwin Stromo|Eliror]] de les suivre à la Citadelle Blanche. Il était là à la fin.
 
 
