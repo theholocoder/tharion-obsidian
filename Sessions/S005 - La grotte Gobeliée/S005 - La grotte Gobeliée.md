@@ -129,8 +129,8 @@ LIMIT 1
 ## À reporter / Prépa prochaine
 - Les PJ ont **sauvé [[Korvax Oeil-de-fer]]** et l’ont ramené vivant.
 - La **grotte des Gobe’liés est presque vidée** : Crux est le dernier survivant du groupe local.
-- Les PJ ont **négocié une coopération avec [[Krux]]** plutôt que de le tuer.
-- Krux a accepté :
+- Les PJ ont **négocié une coopération avec [[Tisse-Chef Krux|Krux]]** plutôt que de le tuer. Krux devient chef ("Tisse-Chef Krux").
+- [[Tisse-Chef Krux]] a accepté :
     - de **construire une passerelle** au-dessus du gouffre,
     - de **prévenir les autres Gobe’liés** que les PJ peuvent être des alliés.
 - Les PJ connaissent maintenant le **code secret gobelin** :
@@ -139,4 +139,7 @@ LIMIT 1
 - Les PJ ont découvert :
     - une **zone au-delà du gouffre** encore inexplorée,
     - une **grande araignée** qui vit plus loin dans la grotte.
+
+## Conséquences
+- Exploitation du "fer sombre" promulguée par [[Acte du Conseil 1]].
 

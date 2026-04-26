@@ -303,6 +303,26 @@ Contexte :
 - Thaldris : "ligne de défense" / "temps de réponse" / "point d'appui et champ de vision"
 - Myrr : "qui protège-t-on en premier ?" / "quel serment, quel tabou ?" / "que sacrifie-t-on moralement pour survivre ?"
 
+## Fin de session : aperçu de la menace en cours
+
+Dialogue entre [[Golgotha, la Mère des Chairs]] et [[Varkesh, le Héraut du Silence]] :
+
+>La “caméra” quitte la chaleur de la salle de banquet, les rires étouffés, le tintement des verres. Elle recule, franchit les hautes fenêtres de la Citadelle Blanche, glisse au-dessus des toits de Port-Lointain, puis s’élance vers le sud. Les lumières du port deviennent des points, la côte disparaît, et Nyssor s’ouvre en étendues sombres, rivières comme des cicatrices, brume accrochée aux creux.
+>Plus loin, la terre change. Une forêt morte, brûlée jusqu’aux racines. Des troncs noirs, des cendres qui volent sans vent. Une chaleur sourde qui ne vient pas du soleil. Là, caché sous des arches calcinées et des parois de chitine, un couvoir palpite. L’air sent l’ozone et les produits chimiques, comme un laboratoire à ciel ouvert.
+>Au centre, Golgotha se tient penchée sur une masse ovoïde trop grande pour être naturelle. Son corps de mante mutante est boursouflé d’organes lumineux, traversé de tubes de verre où des fluides montent et redescendent en rythmes lents. Une de ses pinces a été remplacée par une main griffue, presque humaine, qui caresse la coque avec une précision écœurante.
+>Derrière elle, sans bruit, un humain est déjà là. Grand, pâle, vêtu d’une combinaison blanche et or. Des lignes de circuits bleu pâle courent sous sa peau. Il flotte à quelques centimètres du sol, comme s’il refusait de toucher la terre.
+>Golgotha ne se retourne pas tout de suite. Elle écoute. Puis sa voix cliquette, douce et froide.
+>*« Il bouge. La coque a pris. La chair apprend vite. »*
+>L'homme répond.
+>*« Combien de temps ? »*
+>Un frémissement traverse l’œuf. Une pulsation, comme un cœur qui n’a pas encore le droit d’exister.
+>*« Peu. Une rafle… ou deux. Après, il s’ouvrira. »*
+>L'homme incline légèrement la tête, presque un geste de politesse.
+>*« Continue. Et quand il éclora… tu ne laisseras rien ralentir sa première respiration. »*
+>Golgotha pose sa main griffue sur l’œuf. Sa voix devient un murmure, satisfait, affamé.
+>*« Par la Chair… il aura faim. »*
+>La “caméra” s’éloigne à nouveau, laissant le couvoir derrière, et la dernière chose que l’on entend n’est pas une voix—mais un craquement discret, comme une fine fissure qui naît, quelque part, sous la cendre.
+
 ---
 
 ## Intermède de Théobald

@@ -132,7 +132,7 @@ Le peuple est officiellement dirigé par **Nénuvaar Milmouch**, Grand Chef hist
 | **Têtards** | Enfants | Enfants jusqu’à devenir Mueurs. | Élevage collectif par le Chose-Goll. |
 
 ## Relations
-- **Alliés :** [[Port-Lointain]] (potentiel ; protection/outils contre routes/ponts/défense)
+- **Alliés :** [[Port-Lointain]] (potentiel ; protection/outils contre routes/ponts/défense). Traité économique passé avec le [[Conseil de la Brèche]] décrété dans [[Acte du Conseil 1]].
 - **Rivaux :** [[Cisarelles]] (prédateurs ; raids et prédation sur les rivières et marais, territoire)
 - **Neutres / opportunistes :**
 

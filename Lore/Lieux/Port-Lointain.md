@@ -81,7 +81,7 @@ Juste à l'est du Rempart. C'est le "grenier" immédiat de la ville, un village 
 À environ 2 km au sud. Un second village agricole, fournissant probablement le bois et la farine.
 
 ### [[Brèche-Rive]]
-À 3 ou 4 km à l'est. Un hameau stratégique situé au niveau du premier gué sur la rivière (nom à définir). C'est un point de passage obligé pour les transports terrestres vers le nord.
+À 3 ou 4 km à l'est. Un hameau stratégique situé au niveau du premier gué sur **L'Aulne**. C'est un point de passage obligé pour les transports terrestres vers le nord.
 
 ### [[Fosse-Claire]]
 Au nord, dans les reliefs accessibles via Brèche-Rive. C'est un camp de mineurs brut et poussiéreux, exploitant des carrières de pierre (pour la Citadelle et le futur mur) ainsi que des mines de fer et de charbon.

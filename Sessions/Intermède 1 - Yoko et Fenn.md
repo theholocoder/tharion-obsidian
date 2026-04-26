@@ -1,0 +1,9 @@
+- Vont voir la Conseillère Rosa Copperkettle
+	- parle du Culte des [[Les Chaines d'Ombre]] dédié à [[Tharun le Noir]], parias de l'[[Ordre de Myrr]].
+	- le dirigeant du culte est [[Valdris Nuévite]].
+	- utilise des limiers d'ether.
+	- robes noires, chaines sur eux.
+- Veut trouver le campement
+- Vont voir le Commandant
+	- sud ouest foret ou plaine (ouest)
+	- peut mettre équipement de base à dispo, un aide de camp. Donne aussi une ardoise à Yoko.
