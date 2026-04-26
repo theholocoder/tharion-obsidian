@@ -5,7 +5,7 @@ campagne: "[[L'Expédition des Fendeurs de Glace]]"
 joueur: Loïc
 ascendance: Léchi
 classe: Conjurateur
-niveau: 1
+niveau: 3
 statut: Vivant
 faction: "[[Ordre de Myrr]]"
 tags:

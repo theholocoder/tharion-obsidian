@@ -29,305 +29,6 @@
       ]
     },
     {
-      "id": "nyssor-map",
-      "locked": true,
-      "lastAccessed": 1773619611437,
-      "markers": [
-        {
-          "id": "ID_ab89894bda28",
-          "type": "Bourg",
-          "loc": [
-            2281.027471383691,
-            490.3833953281717
-          ],
-          "link": "Port-Lointain",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_b9f91819b98b",
-          "type": "Cisarelles",
-          "loc": [
-            1637.8897859486378,
-            1043.2049759023785
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Lieu-Cendre",
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_28380b6b9ada",
-          "type": "Camp",
-          "loc": [
-            1812.3955013475643,
-            425.4868441652089
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Silk'Arak",
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_ab4b3b3ba889",
-          "type": "Forêt",
-          "loc": [
-            2050.569369385283,
-            319.1872748446251
-          ],
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": "Forêt à nommer",
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_d92849eafb0b",
-          "type": "Rumeur",
-          "loc": [
-            1995.82421875,
-            476.1925836015493
-          ],
-          "link": "L'enfant Arraché",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_c9bb087b2a0a",
-          "type": "Rumeur",
-          "loc": [
-            2148.7421875,
-            437.1034586220064
-          ],
-          "link": "Le Marché Secret",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": 0,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_59da48ea284b",
-          "type": "Rumeur",
-          "loc": [
-            2271.9404296875,
-            872.636294267154
-          ],
-          "link": "La Sorcière Gentille",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_bb89ca390a0a",
-          "type": "Rumeur",
-          "loc": [
-            2112.951071891692,
-            974.2632930389678
-          ],
-          "link": "D'autres Peaux-Sèches",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_2a5818a9ca18",
-          "type": "Rumeur",
-          "loc": [
-            1967.2677400162154,
-            1238.4955264431449
-          ],
-          "link": "Le Marais Saigne",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_cb3a480b19da",
-          "type": "Rumeur",
-          "loc": [
-            2114.290707785737,
-            800.0667920105159
-          ],
-          "link": "Le Fer Trompeur",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_2849dbbb391b",
-          "type": "Rumeur",
-          "loc": [
-            2122.068882378789,
-            608.523253815314
-          ],
-          "link": "Les Moutons Merveilleux",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_fb88399bba0a",
-          "type": "Rumeur",
-          "loc": [
-            2108.202960341459,
-            412.09835930771123
-          ],
-          "link": "Les Pillards",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_7a7939297ba8",
-          "type": "Rumeur",
-          "loc": [
-            1966.0744973229632,
-            350.6065223225357
-          ],
-          "link": "Les Murmures des Racines",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_3a38b90bebc9",
-          "type": "Rumeur",
-          "loc": [
-            2271.5031947575917,
-            337.2048800485575
-          ],
-          "link": "S004 - L'épave de la Clef d'Ecume",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_198adac94a28",
-          "type": "Rumeur",
-          "loc": [
-            2253.390625,
-            671.7214739848885
-          ],
-          "link": "Les Abandons Précipités",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_19d9490bb92b",
-          "type": "Bourg",
-          "loc": [
-            1994.5769773036818,
-            1193.5952123053883
-          ],
-          "link": "Marais Vase-Goll",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        },
-        {
-          "id": "ID_db3a9a8b9be8",
-          "type": "Donjon",
-          "loc": [
-            2568.08203125,
-            705.3951620953376
-          ],
-          "link": "S003 - Les Ruines de Mnesitheos",
-          "layer": "%5B%5BNyssor.webp%5D%5D",
-          "mutable": true,
-          "command": false,
-          "percent": null,
-          "description": null,
-          "minZoom": -0.5,
-          "maxZoom": 2,
-          "tooltip": "hover"
-        }
-      ],
-      "overlays": [],
-      "shapes": [],
-      "files": [
-        "Lore/Lieux/Nyssor.md",
-        "Campagnes/EFG/00 - Hub.md"
-      ]
-    },
-    {
       "id": "cisarelles-influence-map",
       "locked": false,
       "lastAccessed": 1773746488887,
@@ -747,6 +448,304 @@
       "shapes": [],
       "files": [
         "Lore/Lieux/Port-Lointain.md"
+      ]
+    },
+    {
+      "id": "nyssor-map",
+      "locked": true,
+      "lastAccessed": 1777204085057,
+      "markers": [
+        {
+          "id": "ID_ab89894bda28",
+          "type": "Bourg",
+          "loc": [
+            2281.027471383691,
+            490.3833953281717
+          ],
+          "link": "Port-Lointain",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_b9f91819b98b",
+          "type": "Cisarelles",
+          "loc": [
+            1637.8897859486378,
+            1043.2049759023785
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Lieu-Cendre",
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_28380b6b9ada",
+          "type": "Camp",
+          "loc": [
+            1812.3955013475643,
+            425.4868441652089
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Silk'Arak",
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_ab4b3b3ba889",
+          "type": "Forêt",
+          "loc": [
+            2050.569369385283,
+            319.1872748446251
+          ],
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": "Forêt à nommer",
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_d92849eafb0b",
+          "type": "Rumeur",
+          "loc": [
+            1995.82421875,
+            476.1925836015493
+          ],
+          "link": "L'enfant Arraché",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_c9bb087b2a0a",
+          "type": "Rumeur",
+          "loc": [
+            2148.7421875,
+            437.1034586220064
+          ],
+          "link": "Le Marché Secret",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": 0,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_59da48ea284b",
+          "type": "Rumeur",
+          "loc": [
+            2271.9404296875,
+            872.636294267154
+          ],
+          "link": "La Sorcière Gentille",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_bb89ca390a0a",
+          "type": "Rumeur",
+          "loc": [
+            2112.951071891692,
+            974.2632930389678
+          ],
+          "link": "D'autres Peaux-Sèches",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_2a5818a9ca18",
+          "type": "Rumeur",
+          "loc": [
+            1967.2677400162154,
+            1238.4955264431449
+          ],
+          "link": "Le Marais Saigne",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_cb3a480b19da",
+          "type": "Rumeur",
+          "loc": [
+            2114.290707785737,
+            800.0667920105159
+          ],
+          "link": "Le Fer Trompeur",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_2849dbbb391b",
+          "type": "Rumeur",
+          "loc": [
+            2122.068882378789,
+            608.523253815314
+          ],
+          "link": "Les Moutons Merveilleux",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_fb88399bba0a",
+          "type": "Rumeur",
+          "loc": [
+            2108.202960341459,
+            412.09835930771123
+          ],
+          "link": "Les Pillards",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_7a7939297ba8",
+          "type": "Rumeur",
+          "loc": [
+            1966.0744973229632,
+            350.6065223225357
+          ],
+          "link": "Les Murmures des Racines",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_3a38b90bebc9",
+          "type": "Rumeur",
+          "loc": [
+            2271.5031947575917,
+            337.2048800485575
+          ],
+          "link": "S004 - L'épave de la Clef d'Ecume",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_198adac94a28",
+          "type": "Rumeur",
+          "loc": [
+            2253.390625,
+            671.7214739848885
+          ],
+          "link": "Les Abandons Précipités",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_19d9490bb92b",
+          "type": "Bourg",
+          "loc": [
+            1994.5769773036818,
+            1193.5952123053883
+          ],
+          "link": "Marais Vase-Goll",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        },
+        {
+          "id": "ID_db3a9a8b9be8",
+          "type": "Donjon",
+          "loc": [
+            2568.08203125,
+            705.3951620953376
+          ],
+          "link": "S003 - Les Ruines de Mnesitheos",
+          "layer": "%5B%5BNyssor.webp%5D%5D",
+          "mutable": true,
+          "command": false,
+          "percent": null,
+          "description": null,
+          "minZoom": -0.5,
+          "maxZoom": 2,
+          "tooltip": "hover"
+        }
+      ],
+      "overlays": [],
+      "shapes": [],
+      "files": [
+        "Campagnes/EFG/00 - Hub.md"
       ]
     }
   ],

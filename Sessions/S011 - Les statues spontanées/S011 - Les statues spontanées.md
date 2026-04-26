@@ -1,21 +1,20 @@
 ---
 type: session
 campagne: "[[L'Expédition des Fendeurs de Glace]]"
-numero: 10
-code: S010
-date_irl: 2026-04-09
-fc-date: 04/06/42
-fc-end: ""
+numero: 11
+code: S011
+date_irl: 2026-04-26
+fc-date: 14/06/42
+fc-end: 14/06/42
 resume: ""
 pjs:
-  - "[[Campagnes/EFG/PJ/Chiro Kono.md|Chiro Kono]]"
-  - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
-  - "[[Campagnes/EFG/PJ/Korvax Oeil-de-fer.md|Korvax Oeil-de-fer]]"
   - "[[Campagnes/EFG/PJ/Logan.md|Logan]]"
-  - "[[Campagnes/EFG/PJ/Voss Vitriox.md|Voss Vitriox]]"
-  - "[[Campagnes/EFG/PJ/Lyra.md|Lyra]]"
-updated: 2026-04-09
-termine: true
+  - "[[Campagnes/EFG/PJ/Noctis.md|Noctis]]"
+  - "[[Campagnes/EFG/PJ/Yoko.md|Yoko]]"
+  - "[[Campagnes/EFG/PJ/Théobald Greyheart.md|Théobald Greyheart]]"
+  - "[[Campagnes/EFG/PJ/Sylis et Sylorn.md|Sylis et Sylorn]]"
+updated: 2026-04-26
+termine: false
 timelines:
   - session
 aat-render-enabled: true
@@ -47,30 +46,4 @@ LIMIT 1
 
 ---
 
-## TODO
-
-- [ ] item
-
-## Intro
-
-> Todo
-
-## Aperçu de la session
-- 
-
-## Scènes
-```dataview
-TABLE WHERE type = "scene" AND contains(file.folder, this.file.folder) SORT file.name
-```
-
-## Événements / Décisions
-- 
-
-## Indices / Pistes
-- 
-
-## Butin / Récompenses
-- 
-
-## À reporter / Prépa prochaine
-- 
+Cette session a été gérée par un autre MJ (Maxime).
