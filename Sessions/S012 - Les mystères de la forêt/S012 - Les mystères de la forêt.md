@@ -64,6 +64,12 @@ La référence est pour la session [[S007 - Piste au sud-ouest]] et ils cherchen
 - [ ] Préparer les statblocks PF2e des cultistes retenus
 - [ ] Préparer un statblock PNG d'influence
 
+Idées statblocks :
+- https://2e.aonprd.com/NPCs.aspx?ID=3532
+- https://2e.aonprd.com/NPCs.aspx?ID=3537
+- https://2e.aonprd.com/NPCs.aspx?ID=3535
+- https://2e.aonprd.com/NPCs.aspx?ID=3534
+
 ## Beats
 
 ## Intro
