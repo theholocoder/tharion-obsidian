@@ -6,7 +6,7 @@ code: S012
 date_irl: 2026-04-26
 fc-date: 16/06/42
 fc-end: 16/06/42
-resume: ""
+resume: Les PJ découvrent un camp de cultistes près d'une grotte où l'on entendait des voix. En fouillant, ils trouvent une caisse doublée destinée à contenir un objet rond, une carte montrant un itinéraire lié à Port Lointain et des robes/chaînes de cérémonie. Déguisés en cultistes/prisonniers, ils infiltrent la grotte ; le rituel d'invocation démarre mais est perturbé par un combat violent où Biscotte et Crunch attaquent, plusieurs cultistes sont tués, Lyra et Yoko sont grièvement blessés (stabilisés/soignés ensuite), et le collier attrapé par Biscotte est jeté dans le bassin (fait progresser le rituel). Grâce aux actions combinées, le rituel échoue et la manifestation (Minotaure/démon) se dissipe ; le groupe récupère équipements et indices laissant des pistes vers Port Lointain et un point côtier.
 pjs:
   - "[[Campagnes/EFG/PJ/Voss Vitriox.md|Voss Vitriox]]"
   - "[[Campagnes/EFG/PJ/Yoko.md|Yoko]]"
@@ -14,7 +14,7 @@ pjs:
   - "[[Campagnes/EFG/PJ/Lyra.md|Lyra]]"
   - "[[Campagnes/EFG/PJ/Fenn Brindebois.md|Fenn Brindebois]]"
 updated: 2026-04-26
-termine: false
+termine: true
 timelines:
   - session
 aat-render-enabled: true
@@ -54,96 +54,79 @@ LIMIT 1
 
 La référence est pour la session [[S007 - Piste au sud-ouest]] et ils cherchent à trouver les cultistes de [[Les Chaines d'Ombre]], sans savoir que leur campement n'est pas dans la forêt mais à l'ouest sur la côte à [[Tharumar]].
 
-## TODO
-
-- [ ] Préparer carte/battlemap du campement-relais
-- [ ] Préparer rencontre 1 : sentinelles / occultistes de lisière
-- [ ] Préparer rencontre 2 : rituel de réinvocation du [[Le limier d'Ether]]
-- [ ] Préparer notes, carte et ordre de transit vers [[Tharumar]]
-- [ ] Préparer questions/réponses si un cultiste est capturé
-- [ ] Préparer les statblocks PF2e des cultistes retenus
-- [ ] Préparer un statblock PNG d'influence
-
-Idées statblocks :
-- https://2e.aonprd.com/NPCs.aspx?ID=3532
-- https://2e.aonprd.com/NPCs.aspx?ID=3537
-- https://2e.aonprd.com/NPCs.aspx?ID=3535
-- https://2e.aonprd.com/NPCs.aspx?ID=3534
-
-## Beats
-
 ## Intro
 
 > Les dernières heures de marche ont laissé derrière vous les sentiers praticables et les bruits familiers des éclaireurs de [[Port-Lointain]]. Ici, la forêt du sud-ouest étouffe le vent sous ses branches noires et ses troncs serrés. L'odeur de résine humide se mêle à autre chose : la cendre froide, l'huile brûlée, et ce parfum sec de corde goudronnée qu'on n'attend pas si loin des quais.
 > Entre les arbres, une lueur basse filtre par à-coups. Pas un feu de bivouac franc, pas la chaleur d'un camp de chasseurs. Plutôt quelque chose de couvert, de contenu, de volontairement discret.
-> En avançant encore, vous distinguez enfin le camp : quelques tentes sombres, des caisses, des piquets noirs plantés en cercle, et des silhouettes en robe qui bougent sans parler plus haut qu'un murmure. Ce n'est pas un repaire de fortune. C'est un relais. Et quoi qu'ils fassent ici, ils ont déjà commencé.
+> Quelques tentes sombres sont dressées. Des caisses, des cordages, des bâches épaisses, un brasero couvert dont la chaleur ne se voit qu'à peine sont éparpillés. Le sol est marqué par des piquets noirs, des chaînes sombres et des traces de cendre. Rien n'a l'air laissé au hasard.
+> Au fond, derrière le campement, vous apercevez une paroi rocheuse avec l'entrée d'une grotte. Et surtout, il manque quelque chose. Personne ne bouge. Personne ne parle. Le camp est là, intact, mais vide.
 
-### Beat 1 — La lisière du camp
+## Beats
+### Beat 1 — Le camp désert
 
-**Objectif :** ouvrir vite, identifier le culte, lancer l'alerte.
+**Objectif :** arrivée, lecture du lieu, premiers indices.
 
-À l'entrée du campement, les PJ tombent sur une petite cellule avancée : sentinelles ou occultistes occupés à décharger du matériel, surveiller le couvert, ou transporter des seaux de cendres noires vers l'intérieur du camp.
+Les PJ arrivent devant le campement-relais des cultistes, mais il est désert. Tout indique pourtant une activité récente : le brasero est encore tiède, les tentes sont en place, les chaînes et piquets rituels n'ont pas été démontés, et plusieurs éléments logistiques montrent qu'un départ n'a eu lieu que très récemment.
 
-**Ce que les PJ voient tout de suite :**
-- des robes sombres sans emblème visible de loin ;
-- des chaînes noires portées comme marque de dévotion ;
-- des caisses légères, des cordages huilés, des couvertures épaisses pour emballer des objets fragiles ;
-- un calme discipliné, presque religieux.
+**Ce que les PJ peuvent inspecter tout de suite :**
+- les tentes sombres, austères et montées pour un séjour court ;
+- les caisses, bâches et cordages de transport ;
+- une caisse vide doublée de feutre ayant contenu un objet rond et précieux ;
+- les piquets noirs et chaînes sombres plantés entre le camp et les menhirs ;
+- des traces allant vers l'ouverture dans la roche.
 
-> Vous écartez les dernières branches basses et tombez sur une clairière étroite, artificiellement dégagée. Deux silhouettes encapuchonnées se tiennent près d'un tronc abattu, une troisième va et vient entre une caisse ouverte et un petit brasero couvert. Des chaînes noires pendent à leurs poignets et à leur ceinture, ternes, sans éclat. Tout ici semble pensé pour être démonté vite et sans laisser grand-chose derrière soi.
+> Vous avancez entre les tentes sans croiser âme qui vive. Le camp n'a rien d'abandonné depuis des jours ; au contraire, tout semble avoir été utilisé il y a peu. Les bâches sont encore tendues proprement, une caisse est restée ouverte, le brasero garde une chaleur sourde sous sa cendre, et le sol porte assez de passages pour dire qu'on travaillait ici encore récemment.
+> Entre les tentes et les menhirs, les piquets noirs et les chaînes sombres marquent une zone préparée avec soin. Plus loin, au pied de la paroi rocheuse, des traces de bottes, de cendre traînée et de matériel déplacé convergent toutes vers une ouverture sombre dans la pierre.
 
-**Dialogue possible si les cultistes repèrent les PJ :**
-- *"Qui va là ?"*
-- *"Reculez. Ce lieu n'est pas pour vous."*
-
-**Cri d'alerte si le combat tourne mal :**
-- *"Intrus ! Vite — terminez le rituel !"*
-- *"Achevez le lien ! Qu'il revienne avant qu'ils n'entrent !"*
-
-**Transition :** ce cri lance la pression. Les PJ entendent ensuite, plus loin dans le camp, des voix qui montent enfin au-dessus du murmure.
+**Ce que les PJ peuvent comprendre :**
+- le camp n'est pas un lieu de vie durable, mais un relais ;
+- un objet important a déjà quitté les lieux ;
+- le vrai cœur de l'activité n'était probablement pas dans la clairière ;
+- les cultistes sont ou étaient retranchés dans la roche derrière le camp.
 
 ---
 
-### Beat 2 — Le cœur du camp révélé
+### Beat 2 — La grotte du rituel
 
-**Objectif :** montrer clairement l'enjeu avant la grande rencontre.
+**Objectif :** confrontation principale de la soirée, avec possibilité de discussion avant le combat.
 
-Après la première escarmouche, les PJ débouchent sur le vrai centre du relais : une zone rituelle semi-cachée au fond de la clairière, à l'abri d'un surplomb rocheux ou de grands pins.
+Les indices du camp mènent à l'ouverture dans le promontoire rocheux. À l'intérieur, les PJ tombent rapidement sur les premiers cultistes, qui donnent l'alerte. Il n'y a pas de vraie séparation entre première escarmouche et rencontre principale : dès que les PJ pénètrent dans la grotte, tout s'enchaîne vers la salle rituelle.
+
+Les cultistes ne veulent pas interrompre le rituel, mais ils ne cherchent pas non plus à mourir inutilement. S'ils pensent pouvoir gagner du temps, intimider les PJ, négocier un repli ou détourner leur attention, ils essaieront de parler avant d'engager le combat.
 
 **Éléments de décor importants :**
+- un couloir de roche humide où la lumière meurt vite ;
+- des traces de cendre, de bottes et de chaînes traînées ;
+- une cavité principale transformée en salle rituelle ;
 - un cercle de cendre noire mélangée à du sang séché ;
-- des chaînes tendues entre des piquets noirs gravés ;
+- des chaînes tendues entre pitons, piquets ou pierres anciennes ;
 - un foyer couvert où rougeoient des braises blanches ;
-- des caisses déjà refermées ou vides, dont l'une porte encore l'empreinte d'un objet circulaire retiré récemment ;
-- des feuillets, tablettes ou planches de notes techniques et cultuelles.
+- des notes, tablettes et matériel rituel.
 
-> Le fond du camp s'ouvre sous un rideau de branches taillées. Là, le silence discipliné de la lisière laisse place à une tension plus nue. Un cercle de cendre a été tracé au sol, épais comme une tombe remuée. Des chaînes noires relient des piquets gravés à un brasero couvert, et dans la chaleur étouffée qui s'en dégage, la cendre semble parfois respirer.
-> Une caisse doublée de feutre repose ouverte sur une table basse. Son intérieur garde la marque nette d'un objet rond, lourd, déjà retiré. Tout autour, des silhouettes en robe noire s'activent enfin avec urgence.
+> Vous entrez dans la grotte. L'air y est plus lourd, chargé de fumée froide et d'une odeur de cendre rance. Plus loin, un éclat rougeâtre danse sur les parois, accompagné d'un cliquetis de chaîne et de voix basses récitant des prières.
+> Quand vous débouchez sur la cavité principale, le lieu ne laisse plus de doute. Les cultistes ont installé un rituel au cœur même de la roche : cendres noires au sol, chaînes tendues, braises rougeoiyantes, et au fond une sorte de portail brûlant.
 
-**Ce que les PJ peuvent comprendre avant d'agir :**
-- le camp n'est pas une base durable mais un relais temporaire ;
-- un objet important a déjà quitté les lieux ;
-- les cultistes sont en train de tenter de refaire venir quelque chose à partir des cendres.
+**Ce qui se passe ici :**
+- les premiers cultistes rencontrés dans la grotte donnent l'alerte ;
+- le timer du rituel peut démarrer à partir de ce moment-là ;
+- toute la rencontre se joue sur la même battlemap / même zone de grotte ;
+- les cultistes cherchent à **réinvoquer / reforger** le lien démoniaque du [[Le limier d'Ether]].
 
-**Dialogue possible des officiants :**
-- *"Le passage vers [[Tharumar]] est déjà en route. Tenez le lien."*
-- *"Sans limier, la piste redevient aveugle. Continuez."*
-- *"Ne laissez pas les cendres refroidir."*
-
----
-
-### Beat 3 — Rencontre principale : le rituel du limier
-
-**Objectif :** affrontement central de la soirée.
-
-Les PJ interviennent pendant que les officiants cherchent à **réinvoquer / reforger** le lien démoniaque du [[Le limier d'Ether]].
+**Ouverture sociale possible :**
+- les cultistes ordonnent d'abord aux PJ de partir ;
+- ils peuvent prétendre protéger un lieu sacré, ou n'être que de simples pèlerins ;
+- ils peuvent proposer aux PJ de reculer et d'oublier ce qu'ils ont vu ;
+- pendant qu'ils parlent, ils cherchent surtout à gagner du temps pour le rituel.
 
 **Intentions des cultistes :**
+- gagner du temps si la parole peut suffire ;
 - achever le rituel ;
 - protéger les notes et les repères de piste ;
 - si besoin, fuir avec ce qui reste exploitable vers la côte.
 
 **Actions possibles des PJ :**
+- tenter d'ouvrir un dialogue ;
+- bluffer, menacer ou diviser les cultistes ;
 - foncer sur les officiants ;
 - briser le cercle ou les piquets ;
 - disperser les cendres ;
@@ -153,10 +136,26 @@ Les PJ interviennent pendant que les officiants cherchent à **réinvoquer / ref
 > Les officiants lèvent enfin la voix. Leurs mots ne ressemblent pas à un chant, mais à une suite d'ordres murmurés à quelque chose qui hésite encore à obéir. Dans le cercle, les cendres s'amassent, retombent, puis se soulèvent à nouveau comme sous un souffle qui n'appartient à personne. Une odeur de métal chauffé et de chair brûlée vous prend à la gorge.
 > Au centre, la forme n'est pas encore un corps. Seulement une promesse de cornes, de braise et de colère tenue ensemble par la chaîne, la volonté et la peur.
 
+**Répliques possibles au moment de l'alerte :**
+- *"Intrus. Restez où vous êtes."*
+- *"Encore un pas et vous mourrez pour une chose que vous ne comprenez pas."*
+- *"Terminez le rituel. Je les retiens."*
+
 **Répliques possibles de l'officiant principal :**
+- *"Vous n'avez rien vu. Faites demi-tour, et vous sortirez vivants."*
+- *"Ce lieu ne vous concerne pas. Partez maintenant."*
+- *"Vous croyez interrompre un crime ; vous ne faites que retarder une nécessité."*
 - *"Le premier lien a été brisé ; nous le forgeons de nouveau."*
 - *"Vous avez retardé l'œuvre, rien de plus."*
+- *"Le passage vers [[Tharumar]] est déjà en route. Tenez le lien."*
+- *"Sans limier, la piste redevient aveugle. Continuez."*
 - *"Tenez-les ! Même incomplet, il suffira !"*
+
+**Déclencheurs de combat évidents :**
+- les PJ avancent vers le cercle ;
+- les PJ touchent aux cendres, aux notes ou aux piquets ;
+- les PJ refusent de reculer après sommation ;
+- les cultistes estiment avoir assez gagné de temps.
 
 **Si le rituel dérape ou s'achève partiellement :**
 - *"Non… pas ainsi… maintenez-le !"*
@@ -164,13 +163,14 @@ Les PJ interviennent pendant que les officiants cherchent à **réinvoquer / ref
 
 ---
 
-### Beat 4 — Le camp après le sang
+### Beat 3 — Fouille finale / interrogatoire
 
-**Objectif :** laisser souffler, fouiller, comprendre.
+**Objectif :** révélation finale et crochet vers la suite.
 
-Une fois le combat terminé ou le rituel interrompu, le camp devient une scène d'investigation rapide. Les PJ peuvent fouiller, lire, comparer les éléments, et éventuellement sécuriser un prisonnier.
+Une fois les cultistes vaincus ou dispersés, les PJ peuvent fouiller le camp, fouiller la grotte, lire les notes, et interroger un survivant. C'est ici qu'ils comprennent que ce site n'était qu'un relais secondaire et que l'élément le plus important a déjà quitté les lieux.
 
-> Quand les derniers cris retombent, il ne reste plus dans la clairière que le grésillement du brasero couvert, le tintement léger des chaînes agitées par le vent, et cette odeur de cendre mouillée qui colle aux vêtements. Maintenant que plus personne ne protège l'ordre du camp, son sens apparaît mieux : rien ici n'était fait pour durer, tout était fait pour passer, transporter, réveiller, puis disparaître.
+> Quand le vacarme retombe, il ne reste plus que le souffle des braises, l'odeur de pierre humide et de cendre brûlée, et ce léger tintement des chaînes quand quelqu'un bouge encore. Entre le camp vide dehors et la grotte profanée derrière, l'ensemble prend enfin sens : ici, rien n'était fait pour durer. Seulement pour cacher, attendre, puis repartir.
+> Et ce qu'ils gardaient vraiment n'est déjà plus là.
 
 **Éléments à mettre sous leurs yeux :**
 - une carte ou un croquis côtier incomplet ;
@@ -179,14 +179,6 @@ Une fois le combat terminé ou le rituel interrompu, le camp devient une scène 
 - des repères de piste, listes de matériel, comptes de jours ;
 - une prière / doctrine sur l'obéissance et le lien.
 
----
-
-### Beat 5 — Interrogatoire et cliffhanger vers [[Tharumar]]
-
-**Objectif :** finir la soirée sur une révélation exploitable pour une prochaine session.
-
-Si les PJ capturent un cultiste vivant, ils peuvent obtenir le nom du culte, la nature du relais, et surtout l'information que l'objet important a déjà été expédié vers [[Tharumar]], où plusieurs pièces anciennes sont en cours d'assemblage.
-
 > Le prisonnier garde le silence tant qu'il le peut, lèvres serrées, regard fixe, comme s'il attendait un ordre qui ne viendra plus. Mais autour de lui, le camp parle déjà presque autant que lui : la caisse vide, les notes tachées, les repères de route, la cendre encore tiède.
 > Lorsqu'il cède enfin, ce n'est pas par peur seule. C'est par rage froide d'avoir été interrompu si près du but.
 
@@ -194,7 +186,7 @@ Si les PJ capturent un cultiste vivant, ils peuvent obtenir le nom du culte, la 
 - *"Ce camp n'est rien. Une halte. Un seuil."*
 - *"Vous êtes en retard. Ce qui comptait a déjà pris la route."*
 - *"À [[Tharumar]], les pièces seront unies. Ici, nous ne faisions que garder le passage et refaire venir le limier."*
-- *"Nous sommes les [[Les Chaines d'Ombre]]. Vous ne connaissez encore que nos traces."*
+- *"Nous sommes [[Les Chaines d'Ombre]]. Vous ne connaissez encore que nos traces."*
 
 **Cliffhanger conseillé :**
 Le prisonnier, la carte, ou l'ordre de transit confirment tous la même chose : un **artefact plus grand** est en cours d'assemblage à [[Tharumar]] à partir de plusieurs composants anciens, et les PJ ne viennent d'interrompre qu'un relais secondaire du plan.
@@ -238,3 +230,13 @@ Le prisonnier, la carte, ou l'ordre de transit confirment tous la même chose : 
 - Déterminer ce qu'est exactement la “lentille gravée” et son lien avec l'artefact en cours d'assemblage
 - Conséquences si un cultiste capturé parle au [[Conseil de la Brèche]] ou au [[Commandant Aelys Tarn]]
 - Déterminer si le rituel a été complètement stoppé, partiellement réussi, ou seulement retardé
+
+## Suivi par PJ (rapide)
+
+| PJ                     | Faction                    | Conditions | Notes          |
+| ---------------------- | :------------------------- | ---------- | -------------- |
+| [[Fenn Brindebois]]    | [[Royaume d'Halvorn]]      | -          | -              |
+| [[Lyra]]               | [[République de Thaldris]] | -          | 15pv, blessé 2 |
+| [[Théobald Greyheart]] | [[Ligue de Veyra]]         | -          | 15pv           |
+| [[Voss Vitriox]]       | [[Ligue de Veyra]]         | -          | 5pv            |
+| [[Yoko]]               | [[Royaume d'Halvorn]]      | -          | 5pv, blessé 2  |
